@@ -1,0 +1,6 @@
+# Generated intermediates. Outputs, not inputs.
+clean.csv
+chartdata.json
+__pycache__/
+*.pyc
+.DS_Store

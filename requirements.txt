@@ -1,0 +1,6 @@
+# Verified on Python 3.11.15. Nothing here uses a recent API, so older
+# releases of pandas and statsmodels should also work.
+pandas>=2.0
+numpy>=1.24
+statsmodels>=0.14
+scipy>=1.10
