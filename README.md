@@ -13,13 +13,20 @@ the four SVGs, from the raw file as downloaded. Nothing is hand-entered downstre
 
 ## The data
 
-**Source:** COE Bidding Results, Land Transport Authority, published through data.gov.sg
+**Source:** COE Bidding Results / Prices, Land Transport Authority, published through data.gov.sg
 **Dataset:** `d_69b3380ad7e51aff3a7dcc84eba52b8a`
 **Page:** https://data.gov.sg/datasets/d_69b3380ad7e51aff3a7dcc84eba52b8a/view
 **Retrieved:** 18 August 2026
 **Coverage:** January 2010 to August 2026. 1,965 records, 393 bidding exercises per category.
 
 `raw.csv` is that download, unmodified. Its MD5 is `7b68a001709821c71ece5b8ed209d4d3`.
+
+**This is a fixed snapshot, not a live mirror.** The dataset was updated on 19 August 2026, the
+day after this file was retrieved. Downloading it fresh today will not necessarily reproduce
+the MD5 above, and that is the point: every figure in both articles was computed from this
+exact file, so it is committed here rather than fetched at run time. To check the analysis
+against newer data, download the current file separately and compare, rather than replacing
+`raw.csv`.
 
 Columns: `month`, `bidding_no` (1 or 2), `vehicle_class` (Category A to E), `quota`,
 `bids_success`, `bids_received`, `premium`.
