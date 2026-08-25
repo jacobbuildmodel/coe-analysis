@@ -1,12 +1,13 @@
 # COE analysis
 
-Data and code behind two articles on Singapore's Certificate of Entitlement auction:
+Data and code behind three articles on Singapore's Certificate of Entitlement auction:
 
 - **The COE quota went up 62%. Prices tripled anyway.**
 - **Perfect COE timing is worth $1,840. Nobody has it.**
+- **Two in three COE bidders win. It is not a lottery.** (`win-rate/`)
 
-Running the scripts in the order below reproduces every figure in both articles, including
-the four SVGs, from the raw file as downloaded. Nothing is hand-entered downstream of
+Running the scripts in the order below reproduces every figure in every article, including
+all five SVGs, from the raw file as downloaded. Nothing is hand-entered downstream of
 `raw.csv`.
 
 ---
@@ -23,7 +24,7 @@ the four SVGs, from the raw file as downloaded. Nothing is hand-entered downstre
 
 **This is a fixed snapshot, not a live mirror.** The dataset was updated on 19 August 2026, the
 day after this file was retrieved. Downloading it fresh today will not necessarily reproduce
-the MD5 above, and that is the point: every figure in both articles was computed from this
+the MD5 above, and that is the point: every figure in every article was computed from this
 exact file, so it is committed here rather than fetched at run time. To check the analysis
 against newer data, download the current file separately and compare, rather than replacing
 `raw.csv`.
@@ -90,6 +91,21 @@ Or one at a time, in this order. Every script reads and writes in the working di
 
 `02` must run before anything numbered higher. `03` through `10` are independent of each
 other and can run in any order.
+
+### Analyses in subdirectories
+
+Later analyses live in their own folders, numbered continuously so run order across the whole
+repository stays unambiguous. Each has its own README and its own checksums, and each reads
+`analysis.csv` produced by `02_clean.py` in this directory. Run `02` first, then the scripts
+in the subdirectory in numerical order.
+
+| Directory | Scripts | Question | Article |
+|---|---|---|---|
+| `win-rate/` | `11_winrate.py`, `12_figures.py` | What share of COE bids actually succeed, and does the win rate or the price do the rationing? | Two in three COE bidders win. It is not a lottery. |
+
+One raw file and one cleaning step feed every analysis. A second repository would mean a
+second copy of `raw.csv` to keep identical, and the two would drift the first time the
+source file changed upstream.
 
 ### Checking your reproduction
 
