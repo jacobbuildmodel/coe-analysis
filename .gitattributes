@@ -1,9 +1,27 @@
-# Git rewrites LF to CRLF on Windows checkout by default, which changes the
-# bytes of every file and therefore every published MD5. A reader cloning on
-# Windows would get raw.csv at 4c0038e9f569bfe6e199116f6469732d instead of
-# 7b68a001709821c71ece5b8ed209d4d3 and reasonably conclude the data had been
-# altered. These patterns match at any depth, subdirectories included.
-*.csv -text
-*.svg -text
-*.md  -text
-*.py  -text
+# Line endings are load-bearing in this repository. Two separate reasons.
+#
+# 1. CHECKSUMS. The READMEs publish MD5s for raw.csv, analysis.csv and the
+#    figures, and the whole point is that a stranger can verify them. Git's
+#    default on Windows rewrites LF to CRLF on checkout, which changes every
+#    one of those hashes: raw.csv becomes 4c0038e9f569bfe6e199116f6469732d
+#    instead of 7b68a001709821c71ece5b8ed209d4d3. A reader following the
+#    instructions would get a mismatch and reasonably conclude the data had
+#    been altered. -text disables conversion entirely.
+#
+# 2. THE SHELL SCRIPT. run_all.sh is the one command the README tells people
+#    to run. With CRLF it fails immediately:
+#      run_all.sh: line 4: set: pipefail\r: invalid option name
+#    So it needs an explicit LF rule, not merely the absence of a CRLF rule.
+#
+# Patterns match at any depth, so win-rate/ and motorcycles/ outputs are
+# covered by this root file.
+
+# Checksummed data and figures: never touch the bytes.
+*.csv   -text
+*.svg   -text
+
+# Scripts and prose: force LF on checkout regardless of platform.
+*.sh    text eol=lf
+*.py    text eol=lf
+*.md    text eol=lf
+*.txt   text eol=lf
