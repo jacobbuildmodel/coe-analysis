@@ -1,22 +1,9 @@
-# Line endings must never be rewritten in this repository.
-#
-# The README publishes MD5 checksums for raw.csv and analysis.csv, and the
-# whole point of the repo is that a stranger can verify them. Git's default
-# on Windows converts LF to CRLF on checkout, which changes every one of
-# those hashes: raw.csv becomes 4c0038e9f569bfe6e199116f6469732d instead of
-# 7b68a001709821c71ece5b8ed209d4d3. A reader following the instructions would
-# get a mismatch and reasonably conclude the data had been altered.
-#
-# -text disables all conversion, so the bytes on disk are the bytes committed.
-
-raw.csv        -text
-analysis.csv   -text
-*.csv          -text
-*.svg          -text
-
-# Scripts and prose keep LF everywhere, so run_all.sh works under bash on any
-# platform. A CRLF shell script fails with a confusing "bad interpreter" error.
-*.py    text eol=lf
-*.sh    text eol=lf
-*.md    text eol=lf
-*.txt   text eol=lf
+# Git rewrites LF to CRLF on Windows checkout by default, which changes the
+# bytes of every file and therefore every published MD5. A reader cloning on
+# Windows would get raw.csv at 4c0038e9f569bfe6e199116f6469732d instead of
+# 7b68a001709821c71ece5b8ed209d4d3 and reasonably conclude the data had been
+# altered. These patterns match at any depth, subdirectories included.
+*.csv -text
+*.svg -text
+*.md  -text
+*.py  -text
