@@ -70,6 +70,23 @@ E4  COE premium. ALREADY IN THE REPOSITORY, no download needed.
     bids_success, bids_received, premium. NO PRE-2010 PREMIUMS. See
     office/SOURCES_REPORT.md for what that means for the tests.
 
+E4b Motor Vehicle Quota, Quota Premium And Prevailing Quota Premium, Monthly
+    (SingStat, table M651121)                          added 24 Sep 2026
+    dataset  d_22094bf608253d36c0c63b52d852dd6e
+    page     https://data.gov.sg/datasets/d_22094bf608253d36c0c63b52d852dd6e/view
+    also     https://tablebuilder.singstat.gov.sg/table/TS/M651121
+    save as  raw/e4b_quota_premium_monthly.csv
+    record   page "last updated" date; coverage (expected from 2002)
+
+E8  Length of Roads (Lane-Kilometres) (LTA)            added 24 Sep 2026
+    dataset  d_8415afe86e594bdc18f0f04a71d5f210
+    page     https://data.gov.sg/datasets/d_8415afe86e594bdc18f0f04a71d5f210/view
+    save as  raw/e8_lane_km.csv
+    and the LTA PDF, which may run later than the data.gov.sg file (index gives
+    that file as 2005-2017):
+             https://www.lta.gov.sg/content/dam/ltagov/who_we_are/statistics_and_publications/statistics/pdf/Road-Length-lane-km.pdf
+    save as  raw/e8b_lta_road_length_lane_km.pdf
+
 -------------------------------------------------------------------------------
 DOCUMENTS (save each page as PDF from the browser: Print > Save as PDF)
 -------------------------------------------------------------------------------
