@@ -48,7 +48,7 @@ STYLE = ("<style>"
          "</style>")
 
 w, h = 480, 310
-L, R, T, B = 42, 358, 32, 200
+L, R, T, B = 54, 350, 32, 200
 lo, hi = 0, 100
 X = lambda y: L + (R - L) * (y - 2010) / (2026 - 2010)
 Y = lambda v: B - (B - T) * (v - lo) / (hi - lo)
@@ -92,16 +92,16 @@ ad(f'<text x="{R+10}" y="{Y(last)+19:.1f}" font-size="14" fill="{INK3}">'
    f'{mean:.0f}% on average</text>')
 
 ad(f'<text x="{L}" y="{B+42}" font-size="14" fill="{INK3}">'
-   f'Share of Category A bids that succeeded, annual means of 24</text>')
+   f'Share of Category A bids that succeeded, annual</text>')
 ad(f'<text x="{L}" y="{B+58}" font-size="14" fill="{INK3}">'
-   f'bidding exercises.</text>')
+   f'means of 24 bidding exercises.</text>')
 ad(f'<text x="{L}" y="{B+80}" font-size="14" fill="{INK3}">'
-   f'Over the same years the average premium ran from $29,907 to</text>')
+   f'Over the same years the average premium ran from</text>')
 ad(f'<text x="{L}" y="{B+96}" font-size="14" fill="{INK3}">'
-   f'$117,548.</text>')
+   f'$29,907 to $117,548.</text>')
 ad("</svg>")
 
-with open("figs/winrate.svg", "w", encoding="utf-8") as f:
+with open("figs/winrate.svg", "w", encoding="utf-8", newline="\n") as f:
     f.write("\n".join(s) + "\n")
 print("  figs/winrate.svg")
 print(f"  check: mean {mean:.1f}%, min {rate.min():.1f}%, max {rate.max():.1f}%, 2026 {last:.1f}%")

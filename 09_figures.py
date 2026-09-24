@@ -82,7 +82,7 @@ HEAD = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" '
 
 
 def write(name, parts):
-    with open(f"figs/{name}", "w", encoding="utf-8") as f:
+    with open(f"figs/{name}", "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(parts) + "\n</svg>\n")
     print(f"  figs/{name}")
 
@@ -96,7 +96,7 @@ def write(name, parts):
 # down with the geometry, which is the whole point).
 def mechanism():
     w, h = 480, 310
-    L, R, T, B = 46, 430, 26, 205
+    L, R, T, B = 58, 430, 26, 205
     X0, K, C = 43.6, 7367.0, 212.4          # demand 2010: y = C - K/(x - X0)
     SHIFT = 98.2                             # demand 2026 sits this far above it
 
@@ -184,9 +184,9 @@ def mechanism():
 
     ad(f'<path d="M{qb+6} {yb_only-2:.1f} L{qb+22} {B-46}" fill="none" '
        f'stroke="{RULE}" stroke-width="1"/>')
-    ad(f'<text x="{qb+26}" y="{B-58}" font-size="14" fill="{INK3}">'
+    ad(f'<text x="{qb+20}" y="{B-58}" font-size="14" fill="{INK3}">'
        f'where the extra certificates</text>')
-    ad(f'<text x="{qb+26}" y="{B-44}" font-size="14" fill="{INK3}">'
+    ad(f'<text x="{qb+20}" y="{B-44}" font-size="14" fill="{INK3}">'
        f'alone would have left it</text>')
 
     ad(f'<text x="{L}" y="{B+42}" font-size="14" fill="{INK2}">'
@@ -268,7 +268,7 @@ def indexed():
 # fit the narrower canvas.
 def decomposition():
     w, h = 480, 220
-    L, R, Y0 = 72, 434, 100
+    L, R, Y0 = 80, 434, 100
     lo, hi = -60.0, 300.0
     X = lambda v: L + (R - L) * (v - lo) / (hi - lo)
     alt = ("Number line. What the 62 percent quota increase alone predicts for the "
@@ -376,7 +376,9 @@ def gap_distribution():
     ad(f'<text x="{L}" y="{B+80}" font-size="14" fill="{INK3}">'
        f'Category A, 196 complete months, January 2010 to July 2026.</text>')
     ad(f'<text x="{L}" y="{B+96}" font-size="14" fill="{INK3}">'
-       f'Positive means the second exercise of the month cleared higher.</text>')
+       f'Positive means the second exercise of the month</text>')
+    ad(f'<text x="{L}" y="{B+112}" font-size="14" fill="{INK3}">'
+       f'cleared higher.</text>')
     write("gap_distribution.svg", s)
 
 

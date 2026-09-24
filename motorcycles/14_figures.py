@@ -104,16 +104,16 @@ ad(f'<text x="{R+10}" y="{Y(m.iloc[-1])+2:.1f}" font-size="16" fill="{SUBJ}" fon
 ad(f'<text x="{R+10}" y="{Y(m.iloc[-1])+19:.1f}" font-size="14" fill="{INK3}">2026 part year</text>')
 
 ad(f'<text x="{L}" y="{B+42}" font-size="14" fill="{INK3}">'
-   f'Annual mean premiums, indexed to 100 in {BASE}. A full year holds 24</text>')
+   f'Annual mean premiums, indexed to 100 in {BASE}. A full</text>')
 ad(f'<text x="{L}" y="{B+58}" font-size="14" fill="{INK3}">'
-   f'bidding exercises.</text>')
+   f'year holds 24 bidding exercises.</text>')
 ad(f'<text x="{L}" y="{B+80}" font-size="14" fill="{INK3}">'
-   f'2026 has run 15, so the final point is a part year. Headline figures</text>')
+   f'2026 has run 15, so the final point is a part year.</text>')
 ad(f'<text x="{L}" y="{B+96}" font-size="14" fill="{INK3}">'
-   f'pool 2025 and 2026.</text>')
+   f'Headline figures pool 2025 and 2026.</text>')
 ad("</svg>")
 
-with open("figs/moto_vs_car.svg", "w", encoding="utf-8") as f:
+with open("figs/moto_vs_car.svg", "w", encoding="utf-8", newline="\n") as f:
     f.write("\n".join(s) + "\n")
 print("  figs/moto_vs_car.svg")
 print(f"  check: 2026 index, cars {a.iloc[-1]:.1f}, motorcycles {m.iloc[-1]:.1f}")
