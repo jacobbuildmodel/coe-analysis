@@ -96,7 +96,7 @@ def write(name, parts):
 # down with the geometry, which is the whole point).
 def mechanism():
     w, h = 480, 310
-    L, R, T, B = 58, 430, 26, 205
+    L, R, T, B = 64, 430, 26, 205
     X0, K, C = 43.6, 7367.0, 212.4          # demand 2010: y = C - K/(x - X0)
     SHIFT = 98.2                             # demand 2026 sits this far above it
 
@@ -206,7 +206,7 @@ def mechanism():
 # before -- only position, size and line-wrapping moved.
 def indexed():
     w, h = 480, 280
-    L, R, T, B = 44, 358, 40, 220
+    L, R, T, B = 44, 344, 40, 220
     yrs = list(a.index)
     qi = 100 * a.q / a.q.loc[2010]
     pi = 100 * a.p / a.p.loc[2010]
