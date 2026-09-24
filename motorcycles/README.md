@@ -21,6 +21,7 @@ a fresh download will not match the published checksums.
 ```
 python3 13_motorcycles.py    # every number in the piece
 python3 14_figures.py        # figs/moto_vs_car.svg, needs 13 to have run
+python3 ../tools/check_figure_overflow.py figs/moto_vs_car.svg   # DejaVu Sans margin check
 ```
 
 | Script | What it does | Reads | Writes |
@@ -35,10 +36,14 @@ python3 14_figures.py        # figs/moto_vs_car.svg, needs 13 to have run
 | `../raw.csv` | `7b68a001709821c71ece5b8ed209d4d3` |
 | `../analysis.csv` | `4480189cd99b4514885185843ac5f2cc` |
 | `moto_vs_car.csv` | `ecd6316b5bc4b06e35142c42d83f4c3b` |
-| `figs/moto_vs_car.svg` | `d18d1a5705f49d65a21923b1961518f3` |
+| `figs/moto_vs_car.svg` | `5c7a08cd03246b429f79de5682b79571` |
 
 Needs scipy for one t-test. Verified on Python 3.11.15 with pandas 3.0.2, numpy 2.4.4 and
 scipy 1.17.1.
+
+`figs/moto_vs_car.svg`'s hash changed 24 September 2026: redrawn for legibility (Phase 3
+shared figure tokens, 480px canvas, 14px minimum text, DejaVu-Sans-safe margins) and to write
+LF line endings on every platform. No data or reported value changed.
 
 ## The headline numbers
 

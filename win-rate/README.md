@@ -34,6 +34,7 @@ From this directory, after the parent's `02_clean.py` has produced `../analysis.
 ```
 python3 11_winrate.py     # all the numbers in the piece
 python3 12_figures.py     # figs/winrate.svg, needs 11 to have run
+python3 ../tools/check_figure_overflow.py figs/winrate.svg   # DejaVu Sans margin check
 ```
 
 Or from the repository root:
@@ -55,10 +56,14 @@ cd win-rate && python3 11_winrate.py && python3 12_figures.py
 | `../raw.csv` | `7b68a001709821c71ece5b8ed209d4d3` |
 | `../analysis.csv` | `4480189cd99b4514885185843ac5f2cc` |
 | `winrate_catA.csv` | `28c140661104ab9099f66bf73a0019df` |
-| `figs/winrate.svg` | `f3328f0965289f4ef952c3d67e510dbc` |
+| `figs/winrate.svg` | `f83012ca77825d4dac999f0ce3d79d31` |
 
 `11_winrate.py` needs scipy, for one correlation test. Everything else is pandas and numpy.
 Verified on Python 3.11.15 with pandas 3.0.2, numpy 2.4.4 and scipy 1.17.1.
+
+`figs/winrate.svg`'s hash changed 24 September 2026: redrawn for legibility (Phase 3 shared
+figure tokens, 480px canvas, 14px minimum text, DejaVu-Sans-safe margins) and to write LF
+line endings on every platform. No data or reported value changed.
 
 ## The headline numbers
 
