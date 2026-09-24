@@ -1,0 +1,135 @@
+RETRIEVED.txt -- erp piece, raw/ inventory
+
+STATE ON 24 September 2026: NOTHING RETRIEVED. raw/ holds no data file.
+
+Every download attempt from the researcher session failed at the network layer,
+not at the source. The sandbox egress proxy refused CONNECT (HTTP 403) to each of:
+
+  data.gov.sg
+  api-open.data.gov.sg
+  api-production.data.gov.sg
+  www.lta.gov.sg
+  www.mot.gov.sg
+  www.itf-oecd.org
+  web.archive.org
+
+Tested 24 September 2026 with curl through the session proxy and with the
+session's web-fetch tool; both refused. This matches PROJECT.md section 8
+("data.gov.sg, SingStat and MAS return 403 to sandboxes"). No md5 can be
+recorded for a file that was never received, so none is recorded here.
+
+The files below are for Jacob to download by hand and upload to erp/raw/ on
+branch erp-wip through github.com. Suggested filenames are given so that
+00_coverage.py and later scripts can find them. After upload, run
+
+    python3 erp/00_coverage.py
+
+and paste its output (bytes, md5, row count, columns, first and last period
+only) into the RECEIVED section at the end of this file, with the download
+date and the "last updated" date shown on each data.gov.sg page.
+
+-------------------------------------------------------------------------------
+DATA FILES (data.gov.sg, CSV download button on each page)
+-------------------------------------------------------------------------------
+
+E1  Average Speed During Peak Hours (LTA)
+    dataset  d_26f6afadf2f86b2004f9a1e28f5564cc
+    page     https://data.gov.sg/datasets/d_26f6afadf2f86b2004f9a1e28f5564cc/view
+    api      https://api-open.data.gov.sg/v1/public/api/datasets/d_26f6afadf2f86b2004f9a1e28f5564cc/initiate-download
+             then .../poll-download on the same path for the signed file URL
+    save as  raw/e1_peak_speed.csv
+    record   page "last updated" date; coverage shown on the page
+
+E2  Average Annual Kilometres Travelled Per Vehicle (LTA)
+    dataset  d_bdc4c6434e47b055de4b5f2fde10c1af
+    page     https://data.gov.sg/datasets/d_bdc4c6434e47b055de4b5f2fde10c1af/view
+    collection https://data.gov.sg/collections/311/view
+             ("Annual Mileage for Private Motor Vehicles"; check whether the
+             collection holds a second file, e.g. by car type, and take it too)
+    save as  raw/e2_km_per_vehicle.csv
+
+E3  Annual Motor Vehicle Population by Vehicle Type (LTA)
+    dataset  d_2873f3b1b2a836103f51f696350b98fa   (found 24 Sep 2026 by search;
+             title and agency confirmed from the search index, page not opened)
+    page     https://data.gov.sg/datasets/d_2873f3b1b2a836103f51f696350b98fa/view
+    save as  raw/e3_vehicle_population.csv
+    backup, if E3 stops before 2025:
+             LTA Annual Vehicle Statistics 2025, Motor Vehicle Population by
+             Vehicle Type (PDF)
+             https://www.lta.gov.sg/content/dam/ltagov/who_we_are/statistics_and_publications/statistics/pdf/MVP01-1_MVP_by_type.pdf
+             save as raw/e3b_lta_mvp_by_type_2025.pdf
+    alternative (monthly, not needed unless annual stops early):
+             d_2ecb009f1e1ec5a816a454944dec4022
+             https://data.gov.sg/datasets/d_2ecb009f1e1ec5a816a454944dec4022/view
+
+E4  COE premium. ALREADY IN THE REPOSITORY, no download needed.
+    ../raw.csv, dataset d_69b3380ad7e51aff3a7dcc84eba52b8a,
+    md5 7b68a001709821c71ece5b8ed209d4d3 (matches README.md).
+    Coverage checked 24 Sep 2026 by dates only: month 2010-01 to 2026-08,
+    1,965 data rows, columns month, bidding_no, vehicle_class, quota,
+    bids_success, bids_received, premium. NO PRE-2010 PREMIUMS. See
+    office/SOURCES_REPORT.md for what that means for the tests.
+
+-------------------------------------------------------------------------------
+DOCUMENTS (save each page as PDF from the browser: Print > Save as PDF)
+-------------------------------------------------------------------------------
+
+E6  Speed bands that trigger ERP rate changes
+    raw/e6_mot_erp_speed_booster.pdf
+      https://www.mot.gov.sg/news-resources/resources/how-erp-works-as-a-speed-booster/
+    raw/e6_mot_pq_higher_erp_rates.pdf
+      https://mot.gov.sg/news/details/written-reply-to-parliamentary-question-on-rationale-for-and-impact-of-higher-erp-rates-on-traffic-volumes
+    raw/e6_lta_erp_rates_7sep2026.pdf  (a current LTA release that states the bands)
+      https://www.lta.gov.sg/content/ltagov/en/newsroom/2026/8/news-releases/revised-erp-rates-from-7-september-2026.html
+
+E7  Sitewide suspension and cuts, 2020
+    raw/e7_lta_2020-03_erp_review.pdf
+      https://www.lta.gov.sg/content/ltagov/en/newsroom/2020/3/news-releases/electronic-road-pricing--erp--review.html
+    raw/e7_lta_2020-04_cessation.pdf
+      https://www.lta.gov.sg/content/ltagov/en/newsroom/2020/4/news-releases/cessation-of-electronic-road-pricing--erp--charging-with-the-imp.html
+    raw/e7_lta_2020-04_continue_suspended.pdf
+      https://www.lta.gov.sg/content/ltagov/en/newsroom/2020/4/news-releases/erp-charging-and-coe-bidding-continue-to-be-suspended-during-ext.html
+    raw/e7_lta_2020-05_resume_reviews.pdf
+      https://www.lta.gov.sg/content/ltagov/en/newsroom/2020/5/news-releases/lta-to-resume-erp-rate-reviews.html
+    raw/e7_lta_2020-07_second_review.pdf
+      https://www.lta.gov.sg/content/ltagov/en/newsroom/2020/7/news-releases/second-erp-rate-review-post-circuit-breaker.html
+    raw/e7_lta_2020-10_rate_review.pdf
+      https://www.lta.gov.sg/content/ltagov/en/newsroom/2020/10/news-releases/erp-rate-review.html
+    raw/e7_lta_2021-02_revised_rates.pdf
+      https://www.lta.gov.sg/content/ltagov/en/newsroom/2021/2/news-releases/revised-erp-rates-on-erp-priced-roads-and-expressways-from-22-fe.html
+    raw/e7_lta_2022-02_revised_rates.pdf
+      https://www.lta.gov.sg/content/ltagov/en/newsroom/2022/2/news-releases/Revised_ERP_rates.html
+    raw/e7_mot_2022_fuel_costs_deferral.pdf
+      https://www.mot.gov.sg/news-resources/newsroom/reviewing-implementation-of-increase-in-erp-rates-amid-rising-petrol-and-fuel-costs/
+    Also, if the LTA newsroom lists any release dated between 2020-07 and
+    2020-10 that is not above, take it: the chain above has a gap there.
+
+E5  Dated history of ERP rate changes and gantry additions
+    Route 1, LTA newsroom filtered for ERP (earliest release located by search
+    is March 2020; see SOURCES_REPORT.md):
+      https://www.lta.gov.sg/content/ltagov/en/newsroom.html?keyword=ERP+rates
+      Save each "Revised ERP Rates ..." release as
+      raw/e5_lta_YYYY-MM_<short>.pdf. Please also note the EARLIEST year the
+      newsroom's own filter offers; that settles how far back route 1 goes.
+    Route 2, pre-2020 releases: the Wayback Machine copy of the old LTA news
+      index, https://web.archive.org/web/2012*/www.lta.gov.sg/apps/news/*
+      (the researcher could not reach archive.org to confirm the path).
+    Route 3, secondary, for dating gantry additions only, never for a figure:
+      NLB Infopedia, "Electronic Road Pricing: Developments after phase I"
+      https://www.nlb.gov.sg/main/article-detail?cmsuuid=7d61ae5c-869e-41ac-9e76-28392219c249
+      save as raw/e5_nlb_erp_developments.pdf
+    Route 4, secondary, academic, for context on method and history:
+      W. Theseira (2020), "Congestion Control in Singapore", ITF/OECD
+      discussion paper
+      https://www.oecd.org/content/dam/oecd/en/publications/reports/2020/10/congestion-control-in-singapore_c3005a82/7d266609-en.pdf
+      save as raw/e5_itf_theseira_2020.pdf
+
+E1 cross-check (only if E1 stops before 2023)
+    raw/e1b_mot_pq_expressway_speeds_2019_2023.pdf
+      https://www.mot.gov.sg/news/details/written-reply-to-parliamentary-questions-on-data-on-average-speed-of-vehicles-on-expressways-during-peak-hours-from-2019-to-2023
+
+-------------------------------------------------------------------------------
+RECEIVED
+-------------------------------------------------------------------------------
+
+(none yet)
