@@ -41,12 +41,12 @@ catch below comes from.
 Two thought experiments, pure forms of each.
 
 **Extreme COE: the buffet.** A huge fee at the door, every plate free after.
-Few get in, but nobody inside holds back, and everyone eats at once. Few cars,
+Few get in, but nobody inside holds back; everyone eats at once. Few cars,
 but the 8am trip costs nothing extra, so they crowd the same roads at the same
 hour; having paid so much, owners may drive more.
 
 **Extreme ERP: surge pricing.** Anyone can own a car, but a jammed road at a
-jammed hour costs more until it moves. The roads move, but the charge is on the
+jammed hour costs more until it moves. Roads move, but the charge is on the
 trip, so car numbers, parking and total driving keep growing.
 
 ## My bets
