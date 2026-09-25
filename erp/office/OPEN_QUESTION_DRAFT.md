@@ -14,13 +14,13 @@ too, but are not scored.
 ## The argument
 
 **The case for COE.** A car never bought is never driven, parked or left idling
-at a junction. The quota is a hard ceiling, fixed in advance, so
-car numbers cannot run away, and it deals with every cost of a car at once.
+at a junction. The quota is a hard ceiling, fixed in advance, so car numbers
+cannot run away, and it deals with every cost of a car at once.
 
 **The case for ERP.** Congestion is about how many cars are in one place at one
 time. A charge on the jammed road at the jammed hour lands where the harm is
-done and corrects itself, rising when speeds fall. A fee paid
-once changes behaviour once; a charge on every trip changes it every morning.
+done and corrects itself, rising when speeds fall. A fee paid once changes
+behaviour once; a charge on every trip changes it every morning.
 
 ## What economic theory says
 
@@ -31,14 +31,14 @@ question: when a government cannot see the harm exactly, is it safer to set a
 price or to cap the quantity? It depends on how fast the harm rises. When harm
 climbs steeply past some point, a cap is safer, because a price set slightly
 wrong lets the harm run away. Congestion is like that: a road near capacity
-goes from moving to jammed quickly. On paper, that favours the cap, which
-is COE. But ERP is reviewed every quarter against a speed target, and a price
+goes from moving to jammed quickly. On paper, that favours the cap, which is
+COE. But ERP is reviewed every quarter against a speed target, and a price
 that keeps chasing a target starts to behave like a cap. That is where the
 catch below comes from.
 
 ## Push it to the extreme
 
-Two thought experiments, each instrument in its pure form.
+Two thought experiments, pure forms of each.
 
 **Extreme COE: the buffet.** A huge fee at the door, every plate free after.
 Few get in, but nobody inside holds back, and everyone eats at once. Few cars,
