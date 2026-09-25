@@ -1,28 +1,31 @@
 # THESIS: COE or ERP -- which one actually keeps Singapore's roads moving?
 
-**UNSEALED DRAFT, 24 September 2026. Not sealed. Nothing in this file binds
-until Jacob has reviewed it and a seal is committed on its own.**
+**UNSEALED DRAFT, final pre-seal text, 26 September 2026 (SGT). The seal is
+the next commit, on its own, message "erp: SEAL THESIS.md".**
 
 Author: `erp` (Claude Code session). Repository: coe-analysis, subdirectory
 `erp/`, branch `erp-wip`.
 
-Evidentiary basis at draft: no file received. E1, E2, E3, E4b and E8 located
-but not downloaded; E4 (COE premium) already in the repository, coverage checked
-by dates only, 2010-01 to 2026-08; E5 not closed (searched twice); E6 and E7
-located, not read. Expressway and arterial values for 2011, and the 2019-2023
-expressway average, were seen before the seal; see `office/SOURCES_REPORT.md`
-section 1 and T1 below. The seal is to be committed on its own, after coverage
-is known and before any E1, E2, E3, E4b or E8 value is opened by any script
-other than `00_coverage.py`, which prints shape and dates only.
+Evidentiary basis at seal: all five data files received on 26 September 2026
+(SGT) and checked for coverage only by `00_coverage.py` (shape, columns, first
+and last period; `raw/RETRIEVED.txt`). No data value from E1, E2, E3, E4b or E8
+has been opened by any script or person on the researcher side. Values seen
+before the seal, all disclosed in `office/SOURCES_REPORT.md` section 1: E1 for
+2011 (both road classes); the 2019-2023 expressway average (checker); and, from
+reading the E8b PDF for its year span, the number of digits in each of its
+values, which shows only that expressway lane-km had three digits in 2005-2007
+and four from 2008. The E3b, E5, E6 and E7 PDFs are in `raw/` and have not been
+read.
 
-Revised 24 September 2026 after the checker's review of `fafee65`: E4b and E8
-added, T2's main specification changed to cars per lane-km, T1's expressway
-exclusions widened, the weak-evidence sentence added to section 8, T3's
-threshold reason replaced, E5 searched again, and the checker's proposed
-answers to the section 10 items written in.
+Revision history before the seal: `fafee65` first draft; `da51ce3` checker
+review (E4b, E8, cars per lane-km, T1 expressway exclusions, weak-evidence
+sentence, T3 threshold reason, E5 second search); `bde81d4` proposed
+confidences; this revision: coverage written in as numbers, confidences set by
+Jacob, four predictions scored (T5 leg (a) unscored), the theory section added
+as context, answer due December 2026.
 
-Markers: `PENDING` = needs a file or a source. `JACOB` = a judgement call left
-open for Jacob before the seal.
+Markers: `PENDING` = checked at analysis, after the seal, with the outcome
+recorded as a dated AMENDMENT, never by editing the text above it.
 
 ---
 
@@ -92,12 +95,12 @@ does not license cause either. Reasons, stated rather than assumed:
   opening, roads being built, population and employment growth, and the
   private-hire build-up. Any speed-on-car-population slope carries all of those
   with it.
-- **About 20 annual points.** If E1 runs 2004-2025, that is 22 years, 20 after
-  2020 and 2021 are removed (section 5). Some tests have fewer: T2's main
-  specification is limited by E8 (13 points if only the data.gov.sg file,
-  2005-2017, is usable), T3 about 14 (E2, 2005-2018), T4 up to about 19 (E1,
-  E3 and E4b, 2005 on). At that size a two-variable regression has wide
-  intervals and a single odd year can move a slope.
+- **About 20 annual points.** E1 runs 2004-2025: 22 years, 20 after 2020 and
+  2021 are removed (section 5). Tests have fewer: T1 scores 16 expressway years
+  and 19 arterial years; T2's main specification runs on 13 (2005-2017, the E8
+  limit); T3 on 14 (2005-2018, the E2 limit); T4 on 19 (2005-2025 less 2020
+  and 2021). At that size a two-variable regression has wide intervals and a
+  single odd year can move a slope.
 
 **How every claim is sized as a result:**
 
@@ -117,35 +120,41 @@ does not license cause either. Reasons, stated rather than assumed:
 
 ## 4. Data (pointers; detail in `office/SOURCES_REPORT.md`)
 
-| Id | Series | Source | Coverage | State |
+| Id | Series | Source | Coverage (checked, `raw/RETRIEVED.txt`) | State |
 |---|---|---|---|---|
-| E1 | Average peak-hour speed, expressways and arterials, annual | data.gov.sg `d_26f6afadf2f86b2004f9a1e28f5564cc` | UNKNOWN | PENDING download |
-| E2 | Average annual km per vehicle, by type | data.gov.sg `d_bdc4c6434e47b055de4b5f2fde10c1af` | 2005-2018 per index, UNVERIFIED | PENDING download |
-| E3 | Car population, annual | data.gov.sg `d_2873f3b1b2a836103f51f696350b98fa` | 2005-2024 per index, UNVERIFIED | PENDING download |
-| E4 | COE premium, per bidding exercise | `../raw.csv`, `d_69b3380ad7e51aff3a7dcc84eba52b8a` | 2010-01 to 2026-08, checked | in repo; cross-check only |
-| E4b | Quota premium and PQP, monthly (SingStat M651121) | data.gov.sg `d_22094bf608253d36c0c63b52d852dd6e` | from 2002 per checker, UNVERIFIED | PENDING download |
-| E5 | Dated ERP rate and gantry history | LTA releases, 2020 on only | 2020-03 onward | NOT CLOSED before 2020 |
-| E6 | Speed bands, 45-65 / 20-30 km/h | MOT, LTA | current | PENDING PDF |
-| E7 | 2020 suspension | LTA releases, 2020 | dated | PENDING PDF; resumption date conflicted |
-| E8 | Road length in lane-km, expressway and arterial | data.gov.sg `d_8415afe86e594bdc18f0f04a71d5f210`; LTA `Road-Length-lane-km.pdf` | 2005-2017 per index for the data.gov.sg file, UNVERIFIED; PDF span unknown | PENDING download |
+| E1 | Average peak-hour speed; columns year, ave_speed_expressway, ave_speed_arterial_roads | data.gov.sg `d_26f6afadf2f86b2004f9a1e28f5564cc` | 2004-2025, 22 rows | in `raw/`, values unopened |
+| E2 | Average annual km per vehicle; columns year, vehicle_type, average_annual_mileage | data.gov.sg `d_bdc4c6434e47b055de4b5f2fde10c1af` | 2005-2018, 84 rows (6 types a year) | in `raw/`, values unopened |
+| E3 | Vehicle population; columns year, category, type, number | data.gov.sg `d_2873f3b1b2a836103f51f696350b98fa` | 2005-2024, 412 rows | in `raw/`, values unopened |
+| E3b | Vehicle population by type, 2025 | LTA PDF MVP01-1 | 2025, for the one year E3 lacks | in `raw/`, not read |
+| E4 | COE premium, per bidding exercise | `../raw.csv`, `d_69b3380ad7e51aff3a7dcc84eba52b8a` | 2010-01 to 2026-08 | in repo; cross-check only |
+| E4b | Quota premium and PQP, monthly (SingStat M651121), wide format | data.gov.sg `d_22094bf608253d36c0c63b52d852dd6e` | 2002-02 to 2026-08, 50 series | in `raw/`, values unopened |
+| E5 | Dated ERP rate releases | LTA newsroom and Wayback | June 2018 onward only | in `raw/`, not read; no intensity series |
+| E6 | Speed bands, 45-65 / 20-30 km/h | MOT, LTA | current | in `raw/`, not read |
+| E7 | 2020 suspension chain | LTA releases, 2020-2022 | dated | in `raw/`, not read |
+| E8 | Road length in lane-km; columns year, road_type, road_length | data.gov.sg `d_8415afe86e594bdc18f0f04a71d5f210` | 2005-2017, 52 rows (4 road types) | in `raw/`, values unopened |
+| E8b | Road length in lane-km, LTA PDF | LTA `Road-Length-lane-km.pdf` | 2005-2014 (year labels read, values not) | subset of E8's years; does not extend it |
 
 **Definitions fixed now.**
 
-- **Car population:** the E3 total for cars (all car sub-types E3 reports) for
-  T1, T2 and T4, because the road sees every car. Sensitivity: private cars
-  only, if E3 separates them.
+- **Car population:** the E3 total for cars (all car types E3 reports under
+  cars) for T1, T2 and T4, because the road sees every car; 2025 from E3b.
+  Sensitivity: private cars only, if E3 separates them.
 - **Cars per lane-km:** car population divided by the E8 lane-km of the same
   road class: expressway lane-km for the expressway fit, arterial lane-km for the
-  arterial fit. If the data.gov.sg file and the LTA PDF both cover a year and
-  disagree, the PDF wins and the difference is reported.
+  arterial fit. E8 is the source for every year, 2005-2017. E8b covers only
+  2005-2014, so it adds no year; where both cover a year and disagree, the
+  difference is reported and E8 is used, so the whole series comes from one
+  file. The arterial series is E8's arterial row only; collector and local
+  roads are not added in.
 - **Annual premium:** from E4b, the mean over the calendar year's months of the
   Category A and Category B quota premiums, months with no bidding left out.
   Sensitivity: Category A alone. E4 (`../raw.csv`) is used only to cross-check
   E4b for 2010 onward; any year where the two annual means differ by more than
   1 per cent is reported.
-- **km per car:** for T3, the E2 row for private cars if E2 separates them,
-  because the door fee is paid by owners; otherwise the E2 row for all cars,
-  with the private-hire bias in T3 stated beside the result.
+- **km per car:** for T3, the E2 row for cars. E2 has one cars row and does
+  not separate private cars from private-hire cars (Jacob, 26 September 2026,
+  from the dataset page), so T3 uses all cars, with the private-hire bias
+  stated in T3 and beside the result.
 - **Speed:** E1, expressway and arterial treated separately throughout. Neither
   is averaged into the other.
 
@@ -165,19 +174,49 @@ each of those expressway years effectively inside the band. All of these years
 stay in T2 and T4, where a single seen point does not decide the result, and
 they are flagged in those tables.
 
+**2004 has speed but no car population** (E3 starts in 2005). It is scored in T1,
+which needs only E1, and drops out of T1's informativeness check and of every
+fitted test.
+
+## 5A. What economic theory says (context only)
+
+This section adds no test and changes no threshold. It is here so the reader
+knows which way theory leans before the record is read.
+
+Pigou (1920) set out that the efficient charge for an activity that harms
+others equals the marginal harm it imposes. A charge on the jammed road at the
+jammed hour is that charge, and it is what ERP approximates. Vickrey (1969)
+worked out why congestion charges belong on the peak specifically: the harm a
+trip does depends on when it is made. Weitzman (1974) asked the sharper
+question: when the regulator cannot observe the harm exactly, is a price or a
+quantity cap the safer instrument? The answer turns on how steeply the harm
+rises. Where harm climbs steeply past some point, a cap is safer, because a
+price set slightly wrong lets the harm run away. Congestion is that kind of
+harm: a road near capacity goes from moving to jammed quickly. On paper, that
+favours the cap, which is COE. But ERP is not a fixed price. It is reviewed
+against a speed target every quarter, and a price that keeps chasing a quantity
+target starts to behave like a cap. That is where the thermostat problem in
+section 3 comes from.
+
+Sources: A. C. Pigou (1920), *The Economics of Welfare*; W. S. Vickrey (1969),
+"Congestion theory and transport investment", *American Economic Review*;
+M. L. Weitzman (1974), "Prices vs. Quantities", *Review of Economic Studies*.
+Not in `raw/`; cited for the argument, not for any figure.
+
 ## 6. Pre-registered tests
 
 A failed prediction is a finding to publish, not a reason to change the test.
 Thresholds marked "judgement" are the researcher's, stated with reasons, and
-open to Jacob's change **before** the seal only.
+accepted by Jacob before the seal. Confidences are Jacob's, set 25 September
+2026; the researcher's proposal and reason are kept beside each for the record.
 
 ### T1. Thermostat band (the ERP signature)
 
 If ERP holds speeds in a band, annual peak speeds sit in that band through the
 swings in car population and COE prices.
 
-- **Scored years.** Expressways: every E1 year except 2011, 2019, 2020, 2021,
-  2022 and 2023. Arterials: every E1 year except 2011, 2020 and 2021 (section 5).
+- **Scored years.** Expressways, 16 years: 2004-2010, 2012-2018, 2024, 2025.
+  Arterials, 19 years: 2004-2010, 2012-2019, 2022-2025 (section 5).
 - **Prediction.** In every scored year, expressway peak speed lies within
   45-65 km/h and arterial peak speed within 20-30 km/h.
 - **Survive if:** every scored year, both road classes, inside the band.
@@ -187,7 +226,8 @@ swings in car population and COE prices.
   congestion needs).
 - **Informativeness condition, fixed now.** T1 only says something if the
   "weather" changed. For each road class, over its scored years, the range of the
-  car population (maximum minus minimum) is computed as a share of its mean. If
+  car population (maximum minus minimum) is computed as a share of its mean,
+  over the scored years that have a car population (2004 has none). If
   that share is below 10 per cent (judgement), T1 is reported as scored but
   uninformative for that road class: speeds stayed flat while car numbers also
   stayed flat. The COE premium range (E4b) over the same years is reported
@@ -199,13 +239,15 @@ swings in car population and COE prices.
 - **What this cannot show:** see the thermostat problem, section 3. E1 is also a
   network average and the band applies per gantry per half hour (SOURCES_REPORT
   E1).
-- **Confidence at seal: 60% (PROPOSED; Jacob sets the final number).** The
-  expressway half is likely to hold, since the band is 20 km/h wide and LTA
-  steers toward it, but the arterial band is narrow (10 km/h) and has to hold in
-  every one of up to about 19 scored years, and the one arterial year already
-  seen (2011, SOURCES_REPORT section 1) sat in the upper part of the band, so a
-  single year above 30 km/h is a live risk; that disclosed value informs this
-  number and is named here for that reason.
+- **Confidence at seal: 35%, set by Jacob, 25 September 2026.**
+  Jacob's reason: "Every year, for both road types, with the years already seen
+  sitting near the top of the range, is a fragile bet: one fast year on the main
+  roads breaks it, even if the control is working."
+  Researcher's proposal: 60%. The expressway half is likely to hold, since the
+  band is 20 km/h wide and LTA steers toward it, but the arterial band is narrow
+  (10 km/h) and has to hold in every scored year, and the one arterial year
+  already seen (2011) sat in the upper part of the band, so a single year above
+  30 km/h is a live risk; that disclosed value informed the proposal.
 
 ### T2. Insensitivity to car density (magnitude)
 
@@ -213,17 +255,18 @@ Under extreme COE, speed falls as cars are packed onto the roads. Under extreme
 ERP, speed does not respond, because the charge moves instead.
 
 - **Main specification.** For each road class separately, OLS of log(annual peak
-  speed) on log(cars per lane-km of that road class) (section 4), over every
-  year that E1, E3 and E8 all cover, excluding 2020 and 2021. The slope is the
-  elasticity: the per cent change in peak speed for a 1 per cent change in cars
-  per lane-km. Reported with a 90 per cent interval (HC1).
+  speed) on log(cars per lane-km of that road class) (section 4), over
+  2005-2017: every year E1, E3 and E8 all cover (13 points; no excluded year
+  falls inside). The slope is the elasticity: the per cent change in peak
+  speed for a 1 per cent change in cars per lane-km. Reported with a 90 per cent interval (HC1).
 - **Why density is the main specification.** Road building adds lane-km, which
   raises speed at a given number of cars with no help from either instrument.
   Dividing by lane-km takes that channel out of the slope instead of leaving it
   as a stated bias. Rail and the other channels in section 9 are not taken out.
 - **Sensitivities, reported, not scored:** (i) log(speed) on log(car population),
-  the draft's original specification, over every E1 and E3 year excluding 2020
-  and 2021; (ii) the main specification with a linear time trend added.
+  the draft's original specification, over 2005-2025 less 2020 and 2021 (19
+  points, 2025 from E3b); (ii) the main specification with a linear time trend
+  added.
 - **Prediction.** For both road classes, the main-specification elasticity lies
   between -0.5 and +0.5.
 - **Survive if:** both point estimates lie in [-0.5, +0.5].
@@ -240,60 +283,68 @@ ERP, speed does not respond, because the charge moves instead.
   kept. Car population is still not traffic, and rail still pulls the slope
   toward zero even with no thermostat. That residual bias favours the
   prediction, and it is why the fail line is set at -1.0 rather than nearer zero.
-- **If E8 covers too few years.** If fewer than 10 years remain for the main
-  specification after exclusions, it is still estimated and reported, T2 is
-  scored on it, and the article says the slope rests on that many points.
+- **Thirteen points.** The main specification rests on 2005-2017 because E8
+  ends in 2017 and E8b does not extend it. The article says the slope rests on
+  13 points.
 - **Also reported, not scored:** R-squared of each fit.
-- **Confidence at seal: 60% (PROPOSED; Jacob sets the final number).** The
-  thermostat, rail and the lane-km control all pull the slope toward zero,
-  which favours the prediction, but it has to land inside a band 1.0 wide on
-  both road classes from about 13 points, and a shared time trend in speed and
-  density (in either direction) can push a small-sample slope past +/-0.5 on
-  its own.
+- **Confidence at seal: 65%, set by Jacob, 25 September 2026.**
+  Jacob's reason: "ERP is a feedback loop built to stop crowding from slowing
+  traffic, and I expect it to show. I am not higher because thirteen years is a
+  small sample and it has to hold on both kinds of road."
+  Researcher's proposal: 60%. The thermostat, rail and the lane-km control all
+  pull the slope toward zero, which favours the prediction, but it has to land
+  inside a band 1.0 wide on both road classes from 13 points, and a shared time
+  trend in speed and density (in either direction) can push a small-sample
+  slope past +/-0.5 on its own.
 
 ### T3. Door fee and usage (the COE mechanism)
 
 The buffet says a higher door fee does not make owners use the car less. Per-car
 mileage does not fall when premiums spike.
 
-- **Years.** Every year that E2 and E4b both cover (2005-2018 if the index is
-  right for E2 and the checker for E4b). Split into a high-premium half and a
-  low-premium half by annual premium (section 4). With an odd number of years,
-  the median year goes to the high half. The 2010-2013 premium run named in the
-  brief falls inside this window.
+- **Years.** 2005-2018, every year E2 and E4b both cover (14 points). Split
+  into the 7 years with the highest annual premium and the 7 with the lowest
+  (section 4); a tie at the boundary goes to the high half. The 2010-2013
+  premium run named in the brief falls inside this window.
 - **Prediction.** Mean km per car in the high-premium years is **no more than 3
   per cent below** the mean in the low-premium years.
 - **Survive if:** the high-premium mean is at least 97 per cent of the
   low-premium mean.
 - **Fail if:** it is below 97 per cent: owners drove measurably less when the
   door fee was high, which is the door fee doing some of ERP's work.
-- **Known bias, stated now.** Private-hire cars built up in the later E2 years.
-  If E2 mixes them in with other cars, those years get extra km per car for a
-  reason that has nothing to do with the premium. Which half they land in, and
-  so which way the bias pushes, is reported with the result.
+- **Known bias, stated now.** E2's cars row mixes private-hire cars in with
+  private cars. Private-hire cars built up in the later E2 years and typically
+  drive more than a private car, so the years they grew in get extra km per car for a
+  reason that has nothing to do with the premium. If those years are
+  low-premium years, the bias pushes toward FAIL. Which half they land in is
+  reported with the result.
 - **Why 3 per cent (judgement).** No source fixes the size of usage response
   that matters. 3 per cent is taken as the smallest fall in km per car that
   would amount to the door fee doing a visible share of a road charge's work;
   anything smaller is treated as no response. The E2 mileage survey's sampling
   error is not known; if the E2 page states one larger than 3 per cent, T3 is
   reported as below the data's resolution rather than scored.
-- **Low power, stated now:** about 14 annual points, one split.
-- **Confidence at seal: 50% (PROPOSED; Jacob sets the final number).** The
-  3 per cent window is narrow for a survey-based mileage estimate, and any slow
-  fall in per-car km over the period (ageing fleet, rail expansion; the
-  researcher's background knowledge leans that way, unverified) would line up
-  with a premium run that sits in the middle and later years, pushing toward
-  FAIL, while selection of heavy users into high-premium years pushes the other
-  way; no basis to favour either.
+- **Low power, stated now:** 14 annual points, one split.
+- **Confidence at seal: 20%, set by Jacob, 25 September 2026.**
+  Jacob's reason: "The mileage data counts Grab and other hire cars with private
+  cars, and they grew in the cheaper-COE years, which makes those years look
+  like heavier driving. I expect the pricey years to look more than 3 per cent
+  lower for that reason, not because owners drove less."
+  Researcher's proposal: 50%. The 3 per cent window is narrow for a
+  survey-based mileage estimate, and any slow fall in per-car km over the
+  period (ageing fleet, rail expansion; the researcher's background knowledge
+  leans that way, unverified) would line up with a premium run in the middle
+  and later years, pushing toward FAIL, while selection of heavy users into
+  high-premium years pushes the other way.
 
 ### T4. The premium adds little once car numbers are known (magnitude)
 
 If COE works only by setting how many cars exist, its price carries no
 further information about peak speed once the car population is in the model.
 
-- **Estimate.** For each road class, over every year that E1, E3 and E4b all
-  cover, excluding 2020 and 2021: OLS of log(speed) on log(car population), then
-  again with log(annual premium) added. Run on car population rather than cars
+- **Estimate.** For each road class, over 2005-2025 less 2020 and 2021 (19
+  points; every year E1, E3 or E3b, and E4b all cover): OLS of log(speed) on
+  log(car population), then again with log(annual premium) added. Run on car population rather than cars
   per lane-km so that the years are not limited by E8; the density version is
   reported as a sensitivity, not scored.
 - **Prediction.** Adding the premium raises adjusted R-squared by less than 0.10,
@@ -302,15 +353,19 @@ further information about peak speed once the car population is in the model.
 - **Fail if:** for either road class, the adjusted R-squared gain is 0.10 or more
   **and** the premium's interval excludes zero.
 - **Otherwise:** reported as mixed.
-- **Low power, stated now:** up to about 19 points, and car population and
+- **Low power, stated now:** 19 points, and car population and
   premium are related through the quota. A pass here is weak evidence; T4
   carries no weight in the verdict (section 8) and is reported as supporting
   only.
-- **Confidence at seal: 60% (PROPOSED; Jacob sets the final number).** If the
-  premium carries nothing, each road class would pass about 85-90 per cent of the
-  time by construction of a 90 per cent interval, but both classes must pass,
-  annual series that trend together produce spurious significance more often
-  than the nominal rate, and HC1 intervals run narrow at 19 points.
+- **Confidence at seal: 70%, set by Jacob, 25 September 2026.**
+  Jacob's reason: "Once the number of cars is known, the COE price has little
+  left to explain, and with about 19 years the data will struggle to show it
+  matters even if it does a little."
+  Researcher's proposal: 60%. If the premium carries nothing, each road class
+  would pass about 85-90 per cent of the time by construction of a 90 per cent
+  interval, but both classes must pass, annual series that trend together
+  produce spurious significance more often than the nominal rate, and HC1
+  intervals run narrow at 19 points.
 
 ### T5. What would make COE the winner (the mirror, stated in advance)
 
@@ -319,14 +374,13 @@ sets, with ERP changes adding little.
 
 - **Leg (a), testable:** T2's main-specification elasticity at or below -1.0 on
   either road class, **with** R-squared of 0.5 or more for that fit.
-- **Prediction for leg (a), scored:** leg (a) is **not** met. Holds if neither
-  road class shows both an elasticity at or below -1.0 and an R-squared of 0.5
-  or more; fails if either does.
-- **Confidence at seal: 90% (PROPOSED; Jacob sets the final number).** It needs
-  a steep slope and a tight fit at once, against every bias named in T2 and
-  section 8, on about 13 points; it is the strong-evidence outcome the design
-  is built to make hard, and it is closely tied to T2, so the two are not
-  independent.
+- **Leg (a) is described, not scored.** It holds automatically whenever T2
+  holds, because it reads the same slope: an elasticity inside [-0.5, +0.5]
+  cannot be at or below -1.0. Scoring it would add an almost free "held" to
+  the count, so it carries no confidence and does not enter the scorecard
+  (Jacob's ruling, 25 September 2026, pointing to the HDB financing thesis,
+  which removed a clause for the same reason). It is reported as the mirror of
+  a COE win.
 - **Leg (b), NOT testable, confirmed after a second search.** "ERP changes adding
   little" needs a year-by-year measure of ERP intensity. Two crude dated
   measures were searched for on 24 September 2026: annual ERP revenue and the
@@ -354,7 +408,7 @@ keep growing when roads are priced by use rather than by ownership. One
 descriptive series is built for this and nothing else:
 
 - **S1. Total car-km** = car population (E3) x km per car (E2), by year, over the
-  E2 years. No prediction, no score, no weight in the verdict.
+  E2 years, 2005-2018. No prediction, no score, no weight in the verdict.
 
 Emissions, road deaths and injuries, and land for roads and parking are named as
 the other parts of the car externality and are not measured. No source was
@@ -387,32 +441,36 @@ expects even under a weak thermostat, and a COE-like result has to overcome both
 Whatever the verdict, the article also carries the thermostat problem (section
 3) next to it, and says that the design shows a signature, not a cause.
 
-**Confidences and the scorecard.** Five predictions are scored for calibration:
-T1, T2, T3, T4 and T5 leg (a). A prediction "holds" when its survive-if
-condition is met (for T5 leg (a), when leg (a) is not met); "inconclusive",
-"mixed" and "uninformative" count as not holding, except that a test reported as
-not scored at all (T3 below the data's resolution) drops out of both the count
-and the Brier score, and the article says so. The confidences are PROPOSED by
-the researcher and are Jacob's to set before the seal.
+**Confidences and the scorecard.** Four predictions are scored for
+calibration: T1, T2, T3 and T4. T5 leg (a) is not scored (T5). A prediction
+"holds" when its survive-if condition is met; "inconclusive", "mixed" and
+"uninformative" count as not holding, except that a test reported as not
+scored at all (T3 below the data's resolution) drops out of both the count and
+the Brier score, and the article says so. The confidences are Jacob's, set 25
+September 2026.
 
 Expected number of predictions holding, if these confidences are well
-calibrated: 3.2 of 5 (0.60 + 0.60 + 0.50 + 0.60 + 0.90, PROPOSED). The
-predictions are correlated (T2 and T5 leg (a) share a regression; T1 and T2
-share a series), so the actual count is more spread out than five independent
-calls would be, but the expected count is the same.
+calibrated: 1.9 of 4 (0.35 + 0.65 + 0.20 + 0.70). The predictions are
+correlated (T1 and T2 share a series; T2 and T4 share a regressor), so the
+actual count is more spread out than four independent calls would be, but the
+expected count is the same.
 
 ## 9. What would prove the framing wrong, and what it leaves out
 
 - **E1 method changes.** If "key arterial roads" or the expressway set changed
   over the period, a level shift in E1 is a measurement change, not traffic.
-  `PENDING`: check the data.gov.sg page notes when the file arrives.
+  `PENDING`: the data.gov.sg page notes are read at analysis; any method break
+  found is recorded as an AMENDMENT and shown on the chart.
 - **Road supply.** Lane-km grew. More road at the same car numbers raises speed
   with no help from either instrument. Controlled for in T2's main specification
   through E8, by road class. What E8 does not capture (junction redesign,
   signal timing, roads not maintained by LTA) is not controlled.
 - **Rail.** New lines opened across the period. Same effect, not measured.
-- **The band itself.** If E6's bands changed within the period, T1 is scored
-  against the band in force each year, which needs a dated source (`PENDING`).
+- **The band itself.** T1 is scored against 45-65 and 20-30 km/h in every year.
+  `PENDING`: if the E5, E6 or E7 documents, read after the seal, show a
+  different band in force in some year, that year is scored against the band in
+  force and the change is recorded as an AMENDMENT; the prediction wording does
+  not change.
 - **ERP 2.0.** The switch from gantries to satellite-based charging began within
   the window's last years. Charging points and the rate rule were reported as
   unchanged; treated as no break unless a source says otherwise.
@@ -420,33 +478,24 @@ calls would be, but the expected count is the same.
   speed rule were held back in 2022, that year's thermostat was partly off by
   choice; noted on the chart.
 
-## 10. Open items before the seal
+## 10. Settled before the seal
 
-The checker's proposed answers to the `JACOB` items of the draft, dated 24
-September 2026, are written in below as **ACCEPTED unless Jacob says otherwise**.
-
-1. `PENDING` E1, E2, E3, E4b and E8 files (RETRIEVED.txt). Once received, only
-   `00_coverage.py` runs, and its output (shape, columns, first and last period)
-   is pasted into RETRIEVED.txt. Year ranges in T1-T4 are then written in as
-   numbers, not "all E1 years".
+1. Coverage: all five data files received and checked for coverage only;
+   year ranges written into every test as numbers (section 4, section 6).
 2. Thresholds: T1's 10 per cent informativeness share; T2's -0.5 / +0.5 survive
-   band and -1.0 fail line (kept for the density specification, reason in T2);
-   T3's 3 per cent (reason replaced, see T3); T4's 0.10 R-squared gain; T5's 0.5
-   R-squared. **ACCEPTED as drafted, unless Jacob says otherwise.**
+   band and -1.0 fail line; T3's 3 per cent; T4's 0.10 R-squared gain; T5's 0.5
+   R-squared (described, unscored). Accepted by Jacob.
 3. Years already seen: excluded from T1 scoring, 2011 for both road classes and
-   2019, 2022 and 2023 for expressways; kept and flagged in T2 and T4.
-   **ACCEPTED, unless Jacob says otherwise.**
-4. Car definition: all cars for T1, T2 and T4; private cars for T3 if E2
-   separates them. **ACCEPTED, unless Jacob says otherwise.**
-5. E5: searched twice; T5 leg (b) is untestable and the article says so.
-   CLOSED as untestable, unless a dated primary series turns up before the seal.
-6. `PENDING` E6: the band's history and the speed measure LTA uses.
-7. Seal: committed on its own, after coverage is known and before any value is
-   opened, as in the HDB financing piece. **ACCEPTED, unless Jacob says
-   otherwise.** Not sealed by this revision.
-8. `JACOB` Confidence at seal for T1, T2, T3, T4 and T5 leg (a): PROPOSED 60,
-   60, 50, 60 and 90 per cent, reasons beside each test. Jacob sets the final
-   numbers; the expected-count line in section 8 is recomputed from them.
-9. `PENDING` The open-question page (`office/OPEN_QUESTION_DRAFT.md`) takes the
-   seal date, the seal commit hash, the answer-due month and the final
-   confidences on the day of the seal, and goes live before any data is opened.
+   2019, 2022 and 2023 for expressways; kept and flagged in T2 and T4. Accepted
+   by Jacob.
+4. Car definition: all cars for T1, T2 and T4. T3 uses all cars because E2 has
+   no private-car row. Accepted by Jacob.
+5. E5: no year-by-year intensity series; releases reach back to June 2018 only
+   (RETRIEVED.txt). T5 leg (b) untestable, as stated in T5.
+6. Confidences: T1 35%, T2 65%, T3 20%, T4 70%, set by Jacob, 25 September 2026.
+   Expected number holding 1.9 of 4.
+7. **Answer due: December 2026.**
+8. The open-question page (`office/OPEN_QUESTION_DRAFT.md`) goes live with the
+   seal hash and date filled in, before any data value is opened.
+9. Still `PENDING`, for analysis, by AMENDMENT only: E1 method notes; the band's
+   history (E6); the speed measure LTA compares with the band.

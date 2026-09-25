@@ -52,6 +52,24 @@ The seal is only worth something if it is clear what had been seen. Three things
    gantry counts returned, in summaries, a few revenue figures for scattered
    years and gantry counts for four or five years. These are E5 values, not
    E1, E2 or E3 outcome data, and they enter no test (THESIS T5).
+6. **Coverage read of E8b, 26 September 2026 (SGT).** E8b is a PDF, so its
+   year span could not come from `00_coverage.py`. Its text was extracted and
+   only the year labels that begin each table row were printed: 2005 to 2014,
+   ten contiguous years, one page. To check the table's structure, every other
+   line was printed with each digit replaced by `#`. That masking still shows
+   how many digits each value has, and so discloses one thing: the expressway
+   lane-km column has three digits in 2005-2007 and four from 2008 (it crossed
+   1,000 lane-km between the end of 2007 and the end of 2008). No other digit
+   pattern differs between years. The column headers read Year, Expressway,
+   Arterial Road, Collector Road, Local Road, Total. This is the only E8 or
+   E8b information seen before the seal; it enters T2 only through the density
+   series, where it is one of 13 points' worth of level information and does
+   not fix the slope. Next time a PDF's span is needed, only the year labels
+   are printed.
+7. **After retrieval (26 September 2026), before the seal.** Jacob reported,
+   from the dataset page, that E2 has a single cars row that does not separate
+   private cars from private-hire cars. That is a statement about the file's
+   rows, not a value, and it is used in THESIS T3.
 
 ## 2. Item by item
 
@@ -135,9 +153,12 @@ The seal is only worth something if it is clear what had been seen. Three things
   Lane-Kilometer (end-of-year)", columns Year, Expressway, Arterial Road (per
   the search index).
 - **Status:** located, NOT downloaded (403).
-- **Coverage, from the search index, UNVERIFIED:** the data.gov.sg file runs
-  January 2005 to December 2017, last updated 6 June 2024. The PDF's span is
-  unknown. **If the PDF does not extend past 2017, T2's main specification has
+- **Coverage, checked 26 September 2026:** the data.gov.sg file runs 2005 to
+  2017 (52 rows, 4 road types). The LTA PDF (E8b) runs 2005 to 2014 (item 6 of
+  section 1), so it does not extend E8. **T2's main specification has 13
+  points, 2005-2017.**
+- **Earlier, from the search index:** the data.gov.sg file runs January 2005 to
+  December 2017, last updated 6 June 2024. **If the PDF does not extend past 2017, T2's main specification has
   about 13 points (2005-2017), not about 20.**
 - **Scope caveat:** covers roads maintained by LTA only; roads maintained by
   NParks, HDB, URA and others are excluded (per the index).

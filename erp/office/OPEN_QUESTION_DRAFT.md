@@ -1,71 +1,92 @@
 # COE or ERP: which one actually keeps Singapore's roads moving?
 
-Open question. Predictions sealed on [date]. Answer due [month year].
+Open question. Predictions sealed on [date]. Answer due December 2026.
 
-Singapore charges for a car twice. The Certificate of Entitlement charges for
-owning one, once. Electronic Road Pricing charges for using one, each time a
-priced road is used at a priced hour. This page sets out what I expect the
-record to show, before I have looked at the data, so the answer cannot be bent
-to fit.
+Singapore charges for a car twice: the Certificate of Entitlement for owning
+one, Electronic Road Pricing for using a priced road at a priced hour. William
+Vickrey, who later won the Nobel Prize, worked out why the charge belongs on the
+morning peak, and Singapore's 1975 Area Licensing Scheme was the first in the
+world to charge for entering a congested city centre.
 
-The yardstick is peak-hour road speed. Emissions, accidents and land for roads
-and parking are real costs of cars too, but they are not what this question
-scores.
+The yardstick is peak-hour road speed. Emissions, accidents and land matter
+too, but are not scored.
 
 ## The argument
 
-**The case for COE.** A car that is never bought is never driven, never parked
-and never idles at a junction. The quota is a hard ceiling: however much people
-want cars, the number on the road cannot run away. It is the one instrument that
-deals with every cost of a car at once, and it does so with certainty, because
-the ceiling is fixed in advance.
+**The case for COE.** A car never bought is never driven, parked or left idling
+at a junction. The quota is a hard ceiling, fixed in advance, so
+car numbers cannot run away, and it deals with every cost of a car at once.
 
-**The case for ERP.** Congestion is not about how many cars exist. It is about
-how many are in the same place at the same time. A charge on the jammed road at
-the jammed hour lands exactly where the harm is done: the owner who drives at
-11am pays nothing. It corrects itself, rising when speeds fall and falling when
-roads clear. A fee paid once changes behaviour once. A charge on every trip
-changes it every morning.
+**The case for ERP.** Congestion is about how many cars are in one place at one
+time. A charge on the jammed road at the jammed hour lands where the harm is
+done and corrects itself, rising when speeds fall. A fee paid
+once changes behaviour once; a charge on every trip changes it every morning.
+
+## What economic theory says
+
+In 1920 Arthur Pigou argued that the right charge for anything that harms other
+people is the size of the harm. A charge on the jammed road at the jammed hour
+is that charge, and it is what ERP does. In 1974 Martin Weitzman asked a sharper
+question: when a government cannot see the harm exactly, is it safer to set a
+price or to cap the quantity? It depends on how fast the harm rises. When harm
+climbs steeply past some point, a cap is safer, because a price set slightly
+wrong lets the harm run away. Congestion is like that: a road near capacity
+goes from moving to jammed quickly. On paper, that favours the cap, which
+is COE. But ERP is reviewed every quarter against a speed target, and a price
+that keeps chasing a target starts to behave like a cap. That is where the
+catch below comes from.
 
 ## Push it to the extreme
 
-These are thought experiments. Singapore runs both instruments together; each
-is pushed to its pure form to make plain what it predicts.
+Two thought experiments, each instrument in its pure form.
 
-**Extreme COE: the buffet.** A huge fee at the door, and every plate free after
-that. Few people get in, but once inside nobody has a reason to hold back, and
-everyone eats at the same time. On the roads: few cars, but the 8am trip costs
-the owner nothing extra, so the few cars still crowd the same roads at the same
-hour. Having paid so much at the door, owners may drive more, not less.
+**Extreme COE: the buffet.** A huge fee at the door, every plate free after.
+Few get in, but nobody inside holds back, and everyone eats at once. Few cars,
+but the 8am trip costs nothing extra, so they crowd the same roads at the same
+hour; having paid so much, owners may drive more.
 
-**Extreme ERP: surge pricing.** Anyone can own a car, but using a jammed road at
-a jammed hour carries a charge that rises until the road moves. The roads move.
-But the charge is on the trip, not the car, so car numbers, parking and total
-driving keep growing.
+**Extreme ERP: surge pricing.** Anyone can own a car, but a jammed road at a
+jammed hour costs more until it moves. The roads move, but the charge is on the
+trip, so car numbers, parking and total driving keep growing.
 
 ## My bets
 
 1. **The band holds.** Every scored year's average peak speed sits inside the
    range the Land Transport Authority aims for: 45 to 65 km/h on expressways,
    20 to 30 km/h on arterial roads. A miss if any year falls outside.
-   Confidence: [NN%].
+   Confidence: 35%.
+   Why: every year, for both road types, with the years already seen sitting
+   near the top of the range, is a fragile bet: one fast year on the main roads
+   breaks it, even if the control is working.
 2. **Speed ignores crowding.** Once road space is allowed for, peak speed barely
-   moves as the number of cars per lane-kilometre changes. Scored on the slope of
-   one against the other. Confidence: [NN%].
+   moves as the number of cars per lane-kilometre changes. Scored on the slope
+   of one against the other over 13 years. Confidence: 65%.
+   Why: ERP is a feedback loop built to stop crowding from slowing traffic, and
+   I expect it to show. I am not higher because thirteen years is a small
+   sample and it has to hold on both kinds of road.
 3. **A dearer door does not cut driving.** In the years when the COE premium was
    high, the average car was driven no more than 3 per cent less than in the
-   years when it was low. Confidence: [NN%].
+   years when it was low. Confidence: 20%.
+   Why: the mileage data counts Grab and other hire cars with private cars, and
+   they grew in the cheaper-COE years, which makes those years look like
+   heavier driving. I expect the pricey years to look more than 3 per cent
+   lower for that reason, not because owners drove less.
 4. **The price adds nothing beyond the count.** Once the number of cars is
-   known, the COE premium says nothing more about peak speed. Scored on
-   whether adding it improves the fit by a set margin. Confidence: [NN%].
-5. **The buffet does not show up.** Peak speed does not fall steeply and
-   reliably as roads get more crowded. Confidence: [NN%].
+   known, the COE premium says nothing more about peak speed. Scored on whether
+   adding it improves the fit by a set margin. Confidence: 70%.
+   Why: once the number of cars is known, the COE price has little left to
+   explain, and with about 19 years the data will struggle to show it matters
+   even if it does a little.
 
-If my confidences are right, about [X.X] of these 5 would hold.
+Bets 1 and 2 are not in conflict. I expect ERP to stop crowding from slowing
+traffic (bet 2), but not to keep every single year's average inside a narrow
+target range (bet 1). A control can work and still let an annual average sit
+just outside the band.
 
-Some years are left out of the scoring: 2020 and 2021, because the pandemic
-emptied the roads for reasons that had nothing to do with price, and a few
-years whose figures were already public before these bets were written.
+If my confidences are right, about 1.9 of these 4 would hold.
+
+Not scored: 2020 and 2021, when the pandemic emptied the roads, and, for bet 1,
+a few years whose figures were public before these bets were written.
 
 ## The catch I already know about
 
@@ -86,14 +107,12 @@ evidence, because the design leans toward the ERP reading.**
 - Owners driving clearly less in the years the premium was high, which would
   mean the door fee was doing part of the road charge's job.
 - A year-by-year record of how hard ERP was pushing. None was found before
-  2020, so half of the case for COE cannot be tested at all.
+  2018, so half of the case for COE cannot be tested at all.
 
-The answer could also be "the record cannot tell the two apart". If it is, that
-is what gets published.
+The answer could also be "the record cannot tell the two apart", and that would
+be published too.
 
 ## Proof
 
 Sealed in commit [hash], [date]:
 [THESIS.md on GitHub](https://github.com/jacobbuildmodel/coe-analysis/blob/[hash]/erp/THESIS.md).
-Every prediction, threshold and confidence above is in that file, as it stood
-before any data was opened.
