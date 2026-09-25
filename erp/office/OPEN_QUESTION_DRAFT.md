@@ -1,6 +1,6 @@
 # COE or ERP: which one actually keeps Singapore's roads moving?
 
-Open question. Predictions sealed on [date]. Answer due December 2026.
+Open question. Predictions sealed on 26 September 2026. Answer due December 2026.
 
 Singapore charges for a car twice: the Certificate of Entitlement for owning
 one, Electronic Road Pricing for using a priced road at a priced hour. William
@@ -114,5 +114,5 @@ be published too.
 
 ## Proof
 
-Sealed in commit [hash], [date]:
-[THESIS.md on GitHub](https://github.com/jacobbuildmodel/coe-analysis/blob/[hash]/erp/THESIS.md).
+Sealed in commit 6d2a345, 26 September 2026:
+[THESIS.md on GitHub](https://github.com/jacobbuildmodel/coe-analysis/blob/6d2a345d90015b8911e3be5ccfc76730a9d57206/erp/THESIS.md).
