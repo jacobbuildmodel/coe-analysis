@@ -1,5 +1,8 @@
 RETRIEVED.txt -- erp piece, raw/ inventory
 
+STATE ON 26 September 2026 (SGT): RETRIEVED. 53 files in raw/, see RECEIVED at
+the end. The paragraph below describes the 24 September attempt, kept for the record.
+
 STATE ON 24 September 2026: NOTHING RETRIEVED. raw/ holds no data file.
 
 Every download attempt from the researcher session failed at the network layer,
@@ -149,4 +152,452 @@ E1 cross-check (only if E1 stops before 2023)
 RECEIVED
 -------------------------------------------------------------------------------
 
-(none yet)
+Retrieved 26 September 2026 SGT by Jacob's machine (the sandbox could not reach
+these hosts). No data value was opened, printed or previewed: the only thing
+that read any CSV is erp/00_coverage.py, whose output is pasted below verbatim,
+one block per file. PDFs were not read either; only their size and md5 are here.
+
+Summary
+  CSVs      5 of 5 retrieved (E1, E2, E3, E4b, E8)
+  PDFs      48 retrieved: E3b, E8b, E6 x3, E7 x10, E5 x33 (LTA newsroom 25,
+            Wayback 5 + the archived search page, NLB, ITF/OECD)
+  E1b       NOT taken, by the rule above: E1 runs to 2025, not "before 2023"
+  E3b       taken, by the rule above: E3 stops at 2024, "before 2025"
+
+LTA newsroom, route 1
+  EARLIEST YEAR its own filter offers: 2020 (Year dropdown: 2020 to 2026).
+  Its keyword search "ERP rates" returns 32 releases, 2020-01 to 2026-08. All
+  32 are in raw/: 25 as e5_lta_*, 6 under the e7_ names above (2020-05,
+  2020-07, 2020-08, 2020-10, 2021-02, 2022-02) and 1 as e6_lta_erp_rates_7sep2026.
+  The search does NOT return the three March/April 2020 suspension releases;
+  those came from the explicit E7 URLs. It DOES return two 2020 releases that
+  the E7 list above lacks: 2020-08 "ERP Rate Review" (the gap-fill, saved as
+  e7_lta_2020-08_rate_review.pdf) and 2020-06 "First ERP Rate Review
+  Post-Circuit Breaker" (saved as e5_lta_2020-06_first_review.pdf).
+
+Wayback Machine, route 2
+  Reachable from this machine. Only one status-200 capture exists of the old
+  site's "ERP rates" search (2019-07-18); it lists 7 releases, Jun 2018 to Jun
+  2019, no earlier. 5 retrieved. So route 2 extends the dated history back to
+  June 2018, not further. Pre-2018 releases need another archived index.
+  The YYYY-MM in these 5 filenames is the month the TITLE names (the archived
+  URLs carry no date); read the release date from inside each PDF.
+
+NOT RETRIEVED
+  Reduction in ERP Rates for June 2019 School Holiday Period
+    https://web.archive.org/web/20190718191205/https://www.lta.gov.sg/apps/news/page.aspx?c=2&id=17a00e4a-db8b-4a53-a3f0-0b5957ef7848
+    error: no status-200 capture of this page exists (CDX query empty);
+    playback times out
+  Revised ERP Rates on ERP-Priced Roads and Expressways from 18 February 2019
+    https://web.archive.org/web/20190826101506id_/https://www.lta.gov.sg/apps/news/page.aspx?c=2&id=fccec20f-5c28-4e39-be3d-49755b772e11
+    error: CDX lists a 200 capture, but playback and the raw id_ capture both
+    return HTTP 404. The 404 page that was printed has been deleted, not kept.
+
+md5 caveat for printed pages
+  Every "printed to PDF" file embeds its print time, so reprinting the same
+  page gives a different md5. The md5s below identify THESE files; they are
+  not a reproducibility check the way the CSV and direct-download md5s are.
+
+e1_peak_speed.csv
+  bytes   347
+  md5     2973c3047ec5ff82391db63e62e8a40a
+  rows    22
+  columns year | ave_speed_expressway | ave_speed_arterial_roads
+  period  year: 2004 to 2025, 22 distinct
+  source  https://data.gov.sg/datasets/d_26f6afadf2f86b2004f9a1e28f5564cc/view
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  last updated 2026-07-10 09:45 SGT (data.gov.sg)
+  page coverage 2004 to 2025
+  method   data.gov.sg API poll-download, saved byte-for-byte as served
+
+e2_km_per_vehicle.csv
+  bytes   2211
+  md5     493b6bc955d8e928bbc985061e1f03f0
+  rows    84
+  columns year | vehicle_type | average_annual_mileage
+  period  year: 2005 to 2018, 14 distinct
+  source  https://data.gov.sg/datasets/d_bdc4c6434e47b055de4b5f2fde10c1af/view
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  last updated 2024-06-06 14:57 SGT (data.gov.sg)
+  page coverage 2005 to 2018
+  method   data.gov.sg API poll-download, saved byte-for-byte as served
+  note     collection 311 holds this one dataset only; no second file
+
+e3_vehicle_population.csv
+  bytes   20160
+  md5     fbe04b9e06997e384432612eb5cc0abe
+  rows    412
+  columns year | category | type | number
+  period  year: 2005 to 2024, 20 distinct
+  source  https://data.gov.sg/datasets/d_2873f3b1b2a836103f51f696350b98fa/view
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  last updated 2025-07-08 15:02 SGT (data.gov.sg)
+  page coverage 2005 to 2024 -- stops before 2025, so E3b was taken
+  method   data.gov.sg API poll-download, saved byte-for-byte as served
+
+e3b_lta_mvp_by_type_2025.pdf
+  bytes   174020
+  md5     1a952ea533bd6fffb3d4dba21f2e10ea
+  source  https://www.lta.gov.sg/content/dam/ltagov/who_we_are/statistics_and_publications/statistics/pdf/MVP01-1_MVP_by_type.pdf
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   direct download of LTA's own PDF
+
+e4b_quota_premium_monthly.csv
+  bytes   74930
+  md5     8b9f1f55f0c73ad145b78cdbe7006864
+  rows    50
+  columns DataSeries | 2026Aug | 2026Jul | 2026Jun | 2026May | 2026Apr | 2026Mar | 2026Feb | 2026Jan | 2025Dec | 2025Nov | 2025Oct | 2025Sep | 2025Aug | 2025Jul | 2025Jun | 2025May | 2025Apr | 2025Mar | 2025Feb | 2025Jan | 2024Dec | 2024Nov | 2024Oct | 2024Sep | 2024Aug | 2024Jul | 2024Jun | 2024May | 2024Apr | 2024Mar | 2024Feb | 2024Jan | 2023Dec | 2023Nov | 2023Oct | 2023Sep | 2023Aug | 2023Jul | 2023Jun | 2023May | 2023Apr | 2023Mar | 2023Feb | 2023Jan | 2022Dec | 2022Nov | 2022Oct | 2022Sep | 2022Aug | 2022Jul | 2022Jun | 2022May | 2022Apr | 2022Mar | 2022Feb | 2022Jan | 2021Dec | 2021Nov | 2021Oct | 2021Sep | 2021Aug | 2021Jul | 2021Jun | 2021May | 2021Apr | 2021Mar | 2021Feb | 2021Jan | 2020Dec | 2020Nov | 2020Oct | 2020Sep | 2020Aug | 2020Jul | 2020Jun | 2020May | 2020Apr | 2020Mar | 2020Feb | 2020Jan | 2019Dec | 2019Nov | 2019Oct | 2019Sep | 2019Aug | 2019Jul | 2019Jun | 2019May | 2019Apr | 2019Mar | 2019Feb | 2019Jan | 2018Dec | 2018Nov | 2018Oct | 2018Sep | 2018Aug | 2018Jul | 2018Jun | 2018May | 2018Apr | 2018Mar | 2018Feb | 2018Jan | 2017Dec | 2017Nov | 2017Oct | 2017Sep | 2017Aug | 2017Jul | 2017Jun | 2017May | 2017Apr | 2017Mar | 2017Feb | 2017Jan | 2016Dec | 2016Nov | 2016Oct | 2016Sep | 2016Aug | 2016Jul | 2016Jun | 2016May | 2016Apr | 2016Mar | 2016Feb | 2016Jan | 2015Dec | 2015Nov | 2015Oct | 2015Sep | 2015Aug | 2015Jul | 2015Jun | 2015May | 2015Apr | 2015Mar | 2015Feb | 2015Jan | 2014Dec | 2014Nov | 2014Oct | 2014Sep | 2014Aug | 2014Jul | 2014Jun | 2014May | 2014Apr | 2014Mar | 2014Feb | 2014Jan | 2013Dec | 2013Nov | 2013Oct | 2013Sep | 2013Aug | 2013Jul | 2013Jun | 2013May | 2013Apr | 2013Mar | 2013Feb | 2013Jan | 2012Dec | 2012Nov | 2012Oct | 2012Sep | 2012Aug | 2012Jul | 2012Jun | 2012May | 2012Apr | 2012Mar | 2012Feb | 2012Jan | 2011Dec | 2011Nov | 2011Oct | 2011Sep | 2011Aug | 2011Jul | 2011Jun | 2011May | 2011Apr | 2011Mar | 2011Feb | 2011Jan | 2010Dec | 2010Nov | 2010Oct | 2010Sep | 2010Aug | 2010Jul | 2010Jun | 2010May | 2010Apr | 2010Mar | 2010Feb | 2010Jan | 2009Dec | 2009Nov | 2009Oct | 2009Sep | 2009Aug | 2009Jul | 2009Jun | 2009May | 2009Apr | 2009Mar | 2009Feb | 2009Jan | 2008Dec | 2008Nov | 2008Oct | 2008Sep | 2008Aug | 2008Jul | 2008Jun | 2008May | 2008Apr | 2008Mar | 2008Feb | 2008Jan | 2007Dec | 2007Nov | 2007Oct | 2007Sep | 2007Aug | 2007Jul | 2007Jun | 2007May | 2007Apr | 2007Mar | 2007Feb | 2007Jan | 2006Dec | 2006Nov | 2006Oct | 2006Sep | 2006Aug | 2006Jul | 2006Jun | 2006May | 2006Apr | 2006Mar | 2006Feb | 2006Jan | 2005Dec | 2005Nov | 2005Oct | 2005Sep | 2005Aug | 2005Jul | 2005Jun | 2005May | 2005Apr | 2005Mar | 2005Feb | 2005Jan | 2004Dec | 2004Nov | 2004Oct | 2004Sep | 2004Aug | 2004Jul | 2004Jun | 2004May | 2004Apr | 2004Mar | 2004Feb | 2004Jan | 2003Dec | 2003Nov | 2003Oct | 2003Sep | 2003Aug | 2003Jul | 2003Jun | 2003May | 2003Apr | 2003Mar | 2003Feb | 2003Jan | 2002Dec | 2002Nov | 2002Oct | 2002Sep | 2002Aug | 2002Jul | 2002Jun | 2002May | 2002Apr | 2002Mar | 2002Feb
+  period  no column named like year/month/quarter/period/date
+  source  https://data.gov.sg/datasets/d_22094bf608253d36c0c63b52d852dd6e/view
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  last updated 2026-09-11 19:01 SGT (data.gov.sg)
+  page coverage 2002-02 to 2026-08
+  method   data.gov.sg API poll-download, saved byte-for-byte as served
+  note     wide format (one column per month), so 00_coverage.py finds no
+           period column; the month span is in the column names
+
+e5_itf_theseira_2020.pdf
+  bytes   2644829
+  md5     65719031a0d07871bfb0e19039e38709
+  source  https://www.oecd.org/content/dam/oecd/en/publications/reports/2020/10/congestion-control-in-singapore_c3005a82/7d266609-en.pdf
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   direct download of the publisher's PDF
+
+e5_lta_2018-06_reduction_june_holiday.pdf
+  bytes   91502
+  md5     55cb5566ba7c70bff7452bd7f0eb3174
+  source  https://web.archive.org/web/20190718191205/https://www.lta.gov.sg/apps/news/page.aspx?c=2&id=e1d09fac-ad57-4d15-bf48-c5295ce34909
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   archived page printed to PDF
+
+e5_lta_2018-08_revised_rates.pdf
+  bytes   80705
+  md5     1dd1753f7dae6ae61ff633eb28e8ba92
+  source  https://web.archive.org/web/20190718191205/https://www.lta.gov.sg/apps/news/page.aspx?c=2&id=75eaca29-6490-446a-8fc9-85e8bf8e7637
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   archived page printed to PDF
+
+e5_lta_2018-11_revised_rates.pdf
+  bytes   71848
+  md5     c86fc1a42e3aaa0c7a5fa5fe925ee530
+  source  https://web.archive.org/web/20190718191205/https://www.lta.gov.sg/apps/news/page.aspx?c=2&id=d8735b22-f5f2-4230-a0cd-d9b5cae46018
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   archived page printed to PDF
+
+e5_lta_2018-12_dec_school_holiday.pdf
+  bytes   107157
+  md5     02a736e23c85cafb32b4a27943f0d81a
+  source  https://web.archive.org/web/20190718191205/https://www.lta.gov.sg/apps/news/page.aspx?c=2&id=e15acd96-c80c-4aae-8aed-3d21f35f8afe
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   archived page printed to PDF
+
+e5_lta_2019-05_revised_rates.pdf
+  bytes   95930
+  md5     cc0929457348a2524c464432975d109c
+  source  https://web.archive.org/web/20190826085706/https://www.lta.gov.sg/apps/news/page.aspx?c=2&id=e6a15a56-26f6-4c6c-9545-349e57a1fed3
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   archived page printed to PDF
+
+e5_lta_2020-01_no_changes.pdf
+  bytes   99439
+  md5     bc6094c724cc6d805a0346042c464a54
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2020/1/news-releases/no-changes-to-existing-electronic-road-pricing--erp--rates.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2020-06_first_review.pdf
+  bytes   99110
+  md5     b66750009c4d242c4fef2c280d4def9c
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2020/6/news-releases/first-erp-rate-review-post-circuit-breaker.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+  note     also belongs to the E7 chain: 2020-07 is the 'second'
+           review, this is the first. Not in the E7 list above.
+
+e5_lta_2020-11_dec_school_holiday.pdf
+  bytes   108390
+  md5     0c7cce9c9b51e0d48c2a65db17b27488
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2020/11/news-releases/erp-rates-for-december-2020-school-holiday-period.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2021-04_revised_rates.pdf
+  bytes   112906
+  md5     6a91ca75770eb418448b876ddb7a90f2
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2021/4/news-releases/Revised_ERP_rates_from_12Apr21.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2021-05_reduced_by_1.pdf
+  bytes   155070
+  md5     9a82a5806461ce521cab060aa2526461
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2021/5/news-releases/ERP_rates_reduced_by_Sgd1_across_all_ERP-chargeable_gantries.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2021-11_dec_school_holiday.pdf
+  bytes   151389
+  md5     f0da5dbda76ba6c70cb8abffa4f87200
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2021/11/news-releases/erp-rates-for-december-2021-school-holiday-period.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2022-03_no_changes.pdf
+  bytes   98259
+  md5     2d47b013e114d5db5c5654af81b1479a
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2022/3/news-releases/no_changes_to_existing_ERP_rates.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2022-05_revision_june.pdf
+  bytes   119865
+  md5     120b59e727fcf94aa28cdc46910230f6
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2022/5/news-releases/revision_of_erp_rates.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2022-07_revised_rates_aug.pdf
+  bytes   111663
+  md5     c8043394bb435065a5e2449ddd695c32
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2022/7/news-releases/revised-erp-rates-from-1-august-2022.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2022-09_revised_rates.pdf
+  bytes   111546
+  md5     8b297b6821f5c52ab6d5231ee60a3209
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2022/9/news-releases/revised-erp-rates-from-19-september-2022.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2022-11_revised_rates.pdf
+  bytes   118177
+  md5     990a18180be94b2fc8ef5451f0c8a21a
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2022/11/news-releases/revised_erp_rates_from_19Nov22.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2023-02_revised_rates.pdf
+  bytes   111791
+  md5     5899ecdd772b40cd398e49ec2ca26f48
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2023/2/news-releases/revised_erp_rates_from_13Feb23.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2023-03_revised_rates_apr.pdf
+  bytes   112266
+  md5     0d8c869e81e40d883845046f1c6dbdfd
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2023/3/news-releases/revised_erp_rates_from_3apr23.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2023-05_june_school_holiday.pdf
+  bytes   111537
+  md5     5677cb3618398052e4283d84ac781fb3
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2023/5/news-releases/erp_rates_for_june_2023.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2023-08_revised_rates.pdf
+  bytes   109590
+  md5     432173afb9243e561887f84cf7247b0d
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2023/8/news-releases/revised_erp_rates_from_28aug23.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2023-11_dec_school_holiday.pdf
+  bytes   113357
+  md5     e79bdb5c414d7ad1247c9034b3d989be
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2023/11/news-releases/erp-rates-for-the-december-2023-school-holiday-period.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2024-02_no_changes.pdf
+  bytes   97802
+  md5     1c9d9777aea1cf8d53bada8bc1ead9ee
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2024/2/news-releases/No_changes_to_erp_rates.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2024-05_june_school_holiday.pdf
+  bytes   111426
+  md5     ef33e04d6fb80207f0980c93dca68d74
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2024/5/news-releases/revised_erp_rates_for_june24.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2024-09_revised_rates.pdf
+  bytes   110488
+  md5     e840ffc64a9b10c321cdd6c1eac02248
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2024/9/news-releases/revised_erp_rates_from_9_Sep.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2024-11_dec_school_holiday.pdf
+  bytes   110699
+  md5     6d84f868806358c272e581703cd8e40a
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2024/11/news-releases/erp_rates_for_dec24.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2025-05_june_school_holiday.pdf
+  bytes   109939
+  md5     2a06d2b229edf4cb02128c6f42bcb486
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2025/5/news-releases/revised_erp_rates_jun25.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2025-08_revised_rates_sep.pdf
+  bytes   113153
+  md5     406031acb009d41e2c95fdddb65c8129
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2025/8/news-releases/revised-erp-rates-from-1-september-2025.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2025-11_revised_rates.pdf
+  bytes   117806
+  md5     8ac593481f1f2d4fae238538ec64c9db
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2025/11/news-releases/revised_erp_rates_24nov25.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2026-03_revised_rates.pdf
+  bytes   113367
+  md5     a17a1966ea35db717d03b2e6dec04c25
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2026/3/news-releases/revised-erp-rates-23mar26.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_lta_2026-05_revised_rates_jun.pdf
+  bytes   117988
+  md5     6429904db9dfd7fc19af75ff893f63d3
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2026/5/news-releases/revised-erp-rates-2-jun-26.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_nlb_erp_developments.pdf
+  bytes   460099
+  md5     1d70f50948e9e59bad6f9dceff099a5a
+  source  https://www.nlb.gov.sg/main/article-detail?cmsuuid=7d61ae5c-869e-41ac-9e76-28392219c249
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e5_wayback_2019-07_search_snapshot.pdf
+  bytes   96858
+  md5     c7586bfff3d7bdea1918e4b9ab128251
+  source  https://web.archive.org/web/20190718191205/https://www.lta.gov.sg/apps/news/default.aspx?scr=yes&keyword=ERP%20rates
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   archived page printed to PDF; the only status-200 capture of
+           the old site's 'ERP rates' search; lists releases back to Jun 2018
+
+e6_lta_erp_rates_7sep2026.pdf
+  bytes   112365
+  md5     747bd24b2a31928a8e8acb9887e30352
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2026/8/news-releases/revised-erp-rates-from-7-september-2026.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+  note     also the newest E5 release; not saved twice
+
+e6_mot_erp_speed_booster.pdf
+  bytes   1848479
+  md5     cfdfa2a7524424679ceb3c4632670563
+  source  https://www.mot.gov.sg/news-resources/resources/how-erp-works-as-a-speed-booster/
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e6_mot_pq_higher_erp_rates.pdf
+  bytes   255869
+  md5     cd6f37eee6ed51ebe966cb8fc7b7a37e
+  source  https://mot.gov.sg/news/details/written-reply-to-parliamentary-question-on-rationale-for-and-impact-of-higher-erp-rates-on-traffic-volumes
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e7_lta_2020-03_erp_review.pdf
+  bytes   103595
+  md5     852af5c537e4fedc4084649a45424c5c
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2020/3/news-releases/electronic-road-pricing--erp--review.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e7_lta_2020-04_cessation.pdf
+  bytes   101473
+  md5     25db72ca2f255f7d439968a7556a32be
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2020/4/news-releases/cessation-of-electronic-road-pricing--erp--charging-with-the-imp.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e7_lta_2020-04_continue_suspended.pdf
+  bytes   118266
+  md5     2b970d0bce365201c70f868eb12cc49d
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2020/4/news-releases/erp-charging-and-coe-bidding-continue-to-be-suspended-during-ext.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e7_lta_2020-05_resume_reviews.pdf
+  bytes   100394
+  md5     5d8368939d3258967fdde12b78be79f0
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2020/5/news-releases/lta-to-resume-erp-rate-reviews.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e7_lta_2020-07_second_review.pdf
+  bytes   110541
+  md5     1fbfdbd19bf2f3ff7994f105b7df3583
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2020/7/news-releases/second-erp-rate-review-post-circuit-breaker.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e7_lta_2020-08_rate_review.pdf
+  bytes   109463
+  md5     72c540a501b92ecd9e4bf1551915c189
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2020/8/news-releases/erp-rate-review.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+  note     the 2020-07 to 2020-10 gap-fill asked for above
+
+e7_lta_2020-10_rate_review.pdf
+  bytes   109464
+  md5     548d7016802480842548cdc220feec05
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2020/10/news-releases/erp-rate-review.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e7_lta_2021-02_revised_rates.pdf
+  bytes   112845
+  md5     a7f19983a3b228b57f4f3cc8ee32d880
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2021/2/news-releases/revised-erp-rates-on-erp-priced-roads-and-expressways-from-22-fe.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e7_lta_2022-02_revised_rates.pdf
+  bytes   145129
+  md5     2399666dd50f9a26de4ca9b2be2fa1e0
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2022/2/news-releases/Revised_ERP_rates.html
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e7_mot_2022_fuel_costs_deferral.pdf
+  bytes   260029
+  md5     aab0f89dedd165d3a18c65e29df2660b
+  source  https://www.mot.gov.sg/news-resources/newsroom/reviewing-implementation-of-increase-in-erp-rates-amid-rising-petrol-and-fuel-costs/
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   page printed to PDF (headless Chromium)
+
+e8_lane_km.csv
+  bytes   1207
+  md5     9272293fbce3776250e99c659e6c4d7b
+  rows    52
+  columns year | road_type | road_length
+  period  year: 2005 to 2017, 13 distinct
+  source  https://data.gov.sg/datasets/d_8415afe86e594bdc18f0f04a71d5f210/view
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  last updated 2024-06-06 14:45 SGT (data.gov.sg)
+  page coverage 2005 to 2017
+  method   data.gov.sg API poll-download, saved byte-for-byte as served
+
+e8b_lta_road_length_lane_km.pdf
+  bytes   50828
+  md5     84969777e8adeb9598e770397043846b
+  source  https://www.lta.gov.sg/content/dam/ltagov/who_we_are/statistics_and_publications/statistics/pdf/Road-Length-lane-km.pdf
+  retrieved 2026-09-26 SGT (2026-09-25 UTC)
+  method   direct download of LTA's own PDF

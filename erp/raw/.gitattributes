@@ -1,0 +1,4 @@
+# Raw sources: never touch the bytes. The root .gitattributes already has
+# *.csv -text; *.pdf is added here so every file in erp/raw/ is binary-safe.
+*.csv   -text
+*.pdf   -text
