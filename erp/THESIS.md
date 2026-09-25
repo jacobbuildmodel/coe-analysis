@@ -199,6 +199,13 @@ swings in car population and COE prices.
 - **What this cannot show:** see the thermostat problem, section 3. E1 is also a
   network average and the band applies per gantry per half hour (SOURCES_REPORT
   E1).
+- **Confidence at seal: 60% (PROPOSED; Jacob sets the final number).** The
+  expressway half is likely to hold, since the band is 20 km/h wide and LTA
+  steers toward it, but the arterial band is narrow (10 km/h) and has to hold in
+  every one of up to about 19 scored years, and the one arterial year already
+  seen (2011, SOURCES_REPORT section 1) sat in the upper part of the band, so a
+  single year above 30 km/h is a live risk; that disclosed value informs this
+  number and is named here for that reason.
 
 ### T2. Insensitivity to car density (magnitude)
 
@@ -237,6 +244,12 @@ ERP, speed does not respond, because the charge moves instead.
   specification after exclusions, it is still estimated and reported, T2 is
   scored on it, and the article says the slope rests on that many points.
 - **Also reported, not scored:** R-squared of each fit.
+- **Confidence at seal: 60% (PROPOSED; Jacob sets the final number).** The
+  thermostat, rail and the lane-km control all pull the slope toward zero,
+  which favours the prediction, but it has to land inside a band 1.0 wide on
+  both road classes from about 13 points, and a shared time trend in speed and
+  density (in either direction) can push a small-sample slope past +/-0.5 on
+  its own.
 
 ### T3. Door fee and usage (the COE mechanism)
 
@@ -265,6 +278,13 @@ mileage does not fall when premiums spike.
   error is not known; if the E2 page states one larger than 3 per cent, T3 is
   reported as below the data's resolution rather than scored.
 - **Low power, stated now:** about 14 annual points, one split.
+- **Confidence at seal: 50% (PROPOSED; Jacob sets the final number).** The
+  3 per cent window is narrow for a survey-based mileage estimate, and any slow
+  fall in per-car km over the period (ageing fleet, rail expansion; the
+  researcher's background knowledge leans that way, unverified) would line up
+  with a premium run that sits in the middle and later years, pushing toward
+  FAIL, while selection of heavy users into high-premium years pushes the other
+  way; no basis to favour either.
 
 ### T4. The premium adds little once car numbers are known (magnitude)
 
@@ -286,6 +306,11 @@ further information about peak speed once the car population is in the model.
   premium are related through the quota. A pass here is weak evidence; T4
   carries no weight in the verdict (section 8) and is reported as supporting
   only.
+- **Confidence at seal: 60% (PROPOSED; Jacob sets the final number).** If the
+  premium carries nothing, each road class would pass about 85-90 per cent of the
+  time by construction of a 90 per cent interval, but both classes must pass,
+  annual series that trend together produce spurious significance more often
+  than the nominal rate, and HC1 intervals run narrow at 19 points.
 
 ### T5. What would make COE the winner (the mirror, stated in advance)
 
@@ -294,6 +319,14 @@ sets, with ERP changes adding little.
 
 - **Leg (a), testable:** T2's main-specification elasticity at or below -1.0 on
   either road class, **with** R-squared of 0.5 or more for that fit.
+- **Prediction for leg (a), scored:** leg (a) is **not** met. Holds if neither
+  road class shows both an elasticity at or below -1.0 and an R-squared of 0.5
+  or more; fails if either does.
+- **Confidence at seal: 90% (PROPOSED; Jacob sets the final number).** It needs
+  a steep slope and a tight fit at once, against every bias named in T2 and
+  section 8, on about 13 points; it is the strong-evidence outcome the design
+  is built to make hard, and it is closely tied to T2, so the two are not
+  independent.
 - **Leg (b), NOT testable, confirmed after a second search.** "ERP changes adding
   little" needs a year-by-year measure of ERP intensity. Two crude dated
   measures were searched for on 24 September 2026: annual ERP revenue and the
@@ -354,6 +387,20 @@ expects even under a weak thermostat, and a COE-like result has to overcome both
 Whatever the verdict, the article also carries the thermostat problem (section
 3) next to it, and says that the design shows a signature, not a cause.
 
+**Confidences and the scorecard.** Five predictions are scored for calibration:
+T1, T2, T3, T4 and T5 leg (a). A prediction "holds" when its survive-if
+condition is met (for T5 leg (a), when leg (a) is not met); "inconclusive",
+"mixed" and "uninformative" count as not holding, except that a test reported as
+not scored at all (T3 below the data's resolution) drops out of both the count
+and the Brier score, and the article says so. The confidences are PROPOSED by
+the researcher and are Jacob's to set before the seal.
+
+Expected number of predictions holding, if these confidences are well
+calibrated: 3.2 of 5 (0.60 + 0.60 + 0.50 + 0.60 + 0.90, PROPOSED). The
+predictions are correlated (T2 and T5 leg (a) share a regression; T1 and T2
+share a series), so the actual count is more spread out than five independent
+calls would be, but the expected count is the same.
+
 ## 9. What would prove the framing wrong, and what it leaves out
 
 - **E1 method changes.** If "key arterial roads" or the expressway set changed
@@ -397,3 +444,9 @@ September 2026, are written in below as **ACCEPTED unless Jacob says otherwise**
 7. Seal: committed on its own, after coverage is known and before any value is
    opened, as in the HDB financing piece. **ACCEPTED, unless Jacob says
    otherwise.** Not sealed by this revision.
+8. `JACOB` Confidence at seal for T1, T2, T3, T4 and T5 leg (a): PROPOSED 60,
+   60, 50, 60 and 90 per cent, reasons beside each test. Jacob sets the final
+   numbers; the expected-count line in section 8 is recomputed from them.
+9. `PENDING` The open-question page (`office/OPEN_QUESTION_DRAFT.md`) takes the
+   seal date, the seal commit hash, the answer-due month and the final
+   confidences on the day of the seal, and goes live before any data is opened.
