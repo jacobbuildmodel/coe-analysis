@@ -1,7 +1,20 @@
 # THESIS: COE or ERP -- which one actually keeps Singapore's roads moving?
 
-**UNSEALED DRAFT, final pre-seal text, 26 September 2026 (SGT). The seal is
-the next commit, on its own, message "erp: SEAL THESIS.md".**
+**SEALED 26 September 2026 (SGT; 25 September UTC), by the commit that carries
+this header, on its own, message "erp: SEAL THESIS.md". A commit cannot name
+its own hash; the seal hash is recorded in `office/SEAL.txt` and on the
+open-question page.**
+
+**Sealed before any data value was read,** apart from the disclosed exposures
+listed below. Everything from section 1 to section 10 -- the design, the tests,
+every survive-if and fail-if, every threshold, the excluded years and the
+confidences -- was fixed before a single result was computed.
+
+**How this file changes from now on.** It does not get edited. Corrections,
+additions and anything learned from the data go in appended, dated AMENDMENT
+blocks at the end, each stating whether it was written BEFORE or AFTER results
+were seen. An amendment never rewrites a prediction, a threshold, a confidence
+or a fail condition in place.
 
 Author: `erp` (Claude Code session). Repository: coe-analysis, subdirectory
 `erp/`, branch `erp-wip`.
