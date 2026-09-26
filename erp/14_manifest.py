@@ -89,6 +89,7 @@ ALLOW = {
     35, 70,                # Jacob's sealed confidences for T1 and T4 (65 and 20 are bands)
     3,                     # T3's sealed threshold, per cent
     0.25, 50,              # Brier score of an always-50-per-cent forecaster
+    90,                    # sealed interval width, per cent (THESIS section 6)
 }
 ALLOW_INT_MAX = 10         # list numbers, "7 years", clock hours, bet numbers
 YEAR_LO, YEAR_HI = 1900, 2030
