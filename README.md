@@ -102,6 +102,7 @@ in the subdirectory in numerical order.
 | Directory | Scripts | Question | Article |
 |---|---|---|---|
 | `win-rate/` | `11_winrate.py`, `12_figures.py` | What share of COE bids actually succeed, and does the win rate or the price do the rationing? | Two in three COE bidders win. It is not a lottery. |
+| `erp/` | `10_load.py` to `15_reproduce.py`, run by `erp/run_all.sh` | COE or ERP: which one actually keeps Singapore's roads moving? Reads its own files in `erp/raw/`, not `analysis.csv`; tests sealed in `erp/THESIS.md` before the data was opened. | In draft |
 
 One raw file and one cleaning step feed every analysis. A second repository would mean a
 second copy of `raw.csv` to keep identical, and the two would drift the first time the
