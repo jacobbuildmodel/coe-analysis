@@ -601,3 +601,95 @@ e8b_lta_road_length_lane_km.pdf
   source  https://www.lta.gov.sg/content/dam/ltagov/who_we_are/statistics_and_publications/statistics/pdf/Road-Length-lane-km.pdf
   retrieved 2026-09-26 SGT (2026-09-25 UTC)
   method   direct download of LTA's own PDF
+
+-------------------------------------------------------------------------------
+METHOD-NOTE LOOKUP, 26 September 2026 SGT
+-------------------------------------------------------------------------------
+Question: do the E1 / E2 dataset pages, or any LTA document behind them, say the
+survey method or rounding changed (E2 around 2010, E1 around 2020), and does
+"arterial roads" mean a fixed set of roads? Pages and PDFs read only; the
+quoted passages are copied verbatim (ligatures in the PDF text written as
+plain "fi").
+
+datagov_e1_peak_speed_page.pdf
+  bytes   436680
+  md5     e7fe6f0ac56ff7462af0c09d50bec474
+  source  https://data.gov.sg/datasets/d_26f6afadf2f86b2004f9a1e28f5564cc/view
+  retrieved 2026-09-26 SGT
+  method  page printed to PDF (headless Chromium)
+  quoted  description: "Average speed & congestion-free roads are for peak hour
+          periods, i.e. 8 to 9am and 6 to 7pm on weekdays."
+          Collection 379 description (same text via
+          https://api-open.data.gov.sg/v2/public/api/collections/379/metadata):
+          "Daily traffic volume is recorded between 7.30am-7.00pm on weekdays;
+          Avg speed and congestion-free roads are for peak hour periods, i.e.
+          8-9am & 6-7pm on weekdays."
+          Column legend: units and descriptions blank for both speed columns.
+          "See history" lists ingestion dates only (10 Jul 2026, 14 Feb 2025,
+          6 Jun 2024) and states "Metadata changes, such as the title or the
+          description, are not reflected."
+          NOTHING about a method or rounding change in 2020, or about which
+          roads count as arterial.
+
+datagov_e2_km_per_vehicle_page.pdf
+  bytes   441984
+  md5     f7abd9f7239df1feb8ae23c81fb4d0c7
+  source  https://data.gov.sg/datasets/d_bdc4c6434e47b055de4b5f2fde10c1af/view
+  retrieved 2026-09-26 SGT
+  method  page printed to PDF (headless Chromium)
+  quoted  description: "The average kilometre travelled per vehicle are
+          estimated based on mileage survey of in-use vehicles conducted at
+          mandatory periodic vehicle inspections."
+          Collection 311: "Mileage survey of in-use vehicles conducted at
+          mandatory periodic vehicle inspection."
+          "See history": one ingestion, 6 Jun 2024.
+          NOTHING about a method or rounding change.
+
+lta_traffic_flow_2005-2014.pdf
+  bytes   41602
+  md5     e3a387ec4fd42df6904a9f8ad5b6a90f
+  source  https://web.archive.org/web/20221212175050id_/https://www.lta.gov.sg/content/dam/ltagov/who_we_are/statistics_and_publications/statistics/pdf/Traffic_Flow.pdf
+          (no longer on lta.gov.sg: the live URL returns 404)
+  retrieved 2026-09-26 SGT
+  method  archived raw capture (id_), byte-for-byte
+  quoted  table title "Average Speed During Peak Hours [1] (km/hour)", columns
+          "Expressways" and "CBD / Arterial Roads", years 2005 to 2014.
+          "Note: [1] Average of AM Peak (8am - 9am) and PM Peak (6pm - 7pm)"
+
+lta_stats_in_brief_2008.pdf
+  bytes   214608
+  md5     2a859f59894c9fee17839b967e812a7d
+  source  https://web.archive.org/web/2020id_/http://www.lta.gov.sg/content/dam/ltaweb/corp/PublicationsResearch/files/FactsandFigures/Stats_In_Brief_(2008).pdf
+  retrieved 2026-09-26 SGT
+  method  archived raw capture (id_), byte-for-byte
+  quoted  "[9] Traffic volume & speed are averaged over the period of financial
+          year (April-March). Daily traffic volume is recorded between
+          7:30am-7:00pm on weekdays only. Peak hours refer to 8:00am-9:00am and
+          6:00pm-7:00pm on weekdays."
+          "[5] The average kilometres travelled per vehicle are estimated based
+          on mileage survey of in-use vehicles conducted at mandatory periodic
+          vehicle inspections."
+          Tables print 2006 and 2007: Expressways 61.6 / 62.4, Arterial Roads
+          27.1 / 26.9 km/h; Cars 21,100 / 20,800 km.
+
+lta_stats_in_brief_2015.pdf
+  bytes   1920770
+  md5     b43391380d67edd5ccd0d8c78bded50d
+  source  https://web.archive.org/web/20181202131229id_/https://www.lta.gov.sg/content/dam/ltaweb/corp/PublicationsResearch/files/FactsandFigures/Statistics%20in%20Brief%202015%20FINAL.pdf
+  retrieved 2026-09-26 SGT
+  method  archived raw capture (id_), byte-for-byte; image-only PDF, read visually
+  quoted  "[10] Traffic volume & speed are averaged over the period of
+          January-December. Daily traffic volume is recorded between 7:30am -
+          7:00pm on weekdays only. Peak hours refer to 8:00am - 9:00am and
+          6:00pm - 7:00pm on weekdays."
+          "[6] The average kilometres travelled per vehicle are estimated based
+          on mileage survey of in-use vehicles conducted at mandatory periodic
+          vehicle inspections."
+          Tables print 2013 and 2014: Expressways 61.6 / 64.1, Arterial Roads
+          28.9 / 28.9 km/h; Cars 17,800 / 17,500 km; Road Length, Arterial
+          Roads 662 / 698 km.
+
+Not found: no LTA "Statistics in Brief" edition after 2015 or before 2008 could
+be retrieved (Wayback holds no PDF-typed capture of the 2009 to 2014 files at
+the paths the index lists), and no LTA or data.gov.sg document found that
+mentions a method or rounding change in either series.
