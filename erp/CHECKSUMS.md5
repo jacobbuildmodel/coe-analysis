@@ -6,15 +6,16 @@
 # INPUTS
 b77449a633385ea081c1ccbe23c686cc  00_coverage.py
 08544638777280af1e21c05cdc33cd98  10_load.py
-29a74098d6ae064da3c1ff82024f04e4  11_tests.py
-7452a82c201fa26e78dd6828bd833ec6  12_figures.py
-c4ff845612bb39a62fbaf9dc8e6d6b5c  13_results.py
-2ac7f19c745e5fcf9d8ff478a120d2fc  14_manifest.py
-58b6095e95b841072321549afc79631d  15_reproduce.py
+bb664d94d795e30b2eb2ae7643be3684  11_tests.py
+28401658093827f282f02993d27c9089  12_figures.py
+872e962ef1de76ecfdd3dc5a4dd16150  13_results.py
+e2cb8591e24424923009c37c5fdad6fb  14_manifest.py
+fe9d9ec7bf5a0972ecf8e8895c8cc892  15_reproduce.py
 5754c3806b42171c92e6dc9dbaedaec6  run_all.sh
 5ce21b94813910bbcd7e0e11d7856047  requirements.txt
 2f99e6513de2f5ebe7f578e6a5650f50  THESIS.md
 9dc2b28e830995833fdb659c33774892  THESIS_ADDENDUM.md
+12201271ccbf5721384069c09cbacf0b  2026-10-17.md
 ef0f828df27872b2a1d540af75de7103  raw/RETRIEVED.txt
 2973c3047ec5ff82391db63e62e8a40a  raw/e1_peak_speed.csv
 493b6bc955d8e928bbc985061e1f03f0  raw/e2_km_per_vehicle.csv
@@ -26,8 +27,8 @@ fbe04b9e06997e384432612eb5cc0abe  raw/e3_vehicle_population.csv
 7b68a001709821c71ece5b8ed209d4d3  ../raw.csv
 
 # OUTPUTS
-520250ad87667a6b99c8944ec80647ff  figs/chart1_speed_vs_band.svg
-b16f9abc738ad43f9332e112a22669d7  figs/chart2_door_fee.svg
+a9578695e689de2c2fd32d633c241ecb  figs/chart1_speed_vs_band.svg
+a0d8d14b04028a21e02bf01a23d095b3  figs/chart2_door_fee.svg
 2098bd2f09cc86f9efc1f43275aef1ff  out/annual.csv
 9c5c2e8cc2540a7af0a98a255637afb9  out/crosscheck_e3_e8.csv
 e2bfd739151bb7d3125cc6aa709ab768  out/crosscheck_premium.csv
@@ -36,6 +37,6 @@ e2bfd739151bb7d3125cc6aa709ab768  out/crosscheck_premium.csv
 4f6233af838f6be4a618fdf3bb7d926f  out/t2_fits.csv
 1bf4aee5594462b16dae76e472b00f86  out/t3_split.csv
 6c6c656b3c05c060cfddfe7f4eb1305a  out/t4_fits.csv
-3684c65aab612f782c6358692473e3d4  out/tests.csv
-f099e5f5813ff4c6e175106cca736d9c  RESULTS.md
-01e8b5d71bd1121a921c23bb31e26aee  number_manifest.csv
+c48ac72cedf75ab46949d8a0f40c777d  out/tests.csv
+6174e0843adfc50adc2157a36d63d496  RESULTS.md
+59a9ed744cb5e093ccf2b730c247643a  number_manifest.csv

@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 390" role="img" aria-label="Bar chart. Average kilometres driven per car each year, 2005 to 2018. The seven years with the highest COE premium average 17,600 km, the seven with the lowest 19,772 km, 11 per cent more. All seven high-premium years fall between 2011 and 2017.">
 <style>:root{--fig-ink:#0b0b0b;--fig-ink-2:#52514e;--fig-ink-3:#717171;--fig-rule:#e2e1dd;--fig-surface:#fcfcfa;--fig-subject:#2873ce;--fig-context:#707379;}@media (prefers-color-scheme: dark){:root{--fig-ink:#ffffff;--fig-ink-2:#c3c2b7;--fig-ink-3:#9a9a9a;--fig-rule:#38393a;--fig-surface:#1a1a19;--fig-subject:#3987e5;--fig-context:#93969c;}}:root[data-theme="dark"]{--fig-ink:#ffffff;--fig-ink-2:#c3c2b7;--fig-ink-3:#9a9a9a;--fig-rule:#38393a;--fig-surface:#1a1a19;--fig-subject:#3987e5;--fig-context:#93969c;}text{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}</style>
 <rect x="0" y="0" width="480" height="390" fill="var(--fig-surface,#fcfcfa)"/>
-<text x="12.0" y="24.0" font-size="17" fill="var(--fig-ink,#0b0b0b)" font-weight="600">In the dear-COE years, cars were</text>
-<text x="12.0" y="45.0" font-size="17" fill="var(--fig-ink,#0b0b0b)" font-weight="600">driven 11% less</text>
+<text x="12.0" y="24.0" font-size="17" fill="var(--fig-ink,#0b0b0b)" font-weight="600">Cars were driven 11% less in dear-COE</text>
+<text x="12.0" y="45.0" font-size="17" fill="var(--fig-ink,#0b0b0b)" font-weight="600">years; mileage was already falling</text>
 <text x="12.0" y="68.0" font-size="14" fill="var(--fig-ink-3,#717171)">Average km per car per year, 2005-2018</text>
 <rect x="12" y="80" width="12" height="12" rx="2" fill="var(--fig-subject,#2873ce)"/>
 <text x="30.0" y="91.0" font-size="14" fill="var(--fig-ink-3,#717171)">7 dearest-COE years</text>

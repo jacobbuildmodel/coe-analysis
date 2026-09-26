@@ -112,7 +112,7 @@ def chart1(t, tests):
         v = t.speed_arterial.loc[y]
         s.append(f'<circle cx="{X(y):.1f}" cy="{YA(v):.1f}" r="4.5" fill="{SUBJ}"/>')
     text(s, L + 6, YA(41), f"arterial above the band in {art_out[0]}", 14, INK2)
-    text(s, L + 6, YA(41) + 17, f"and {art_out[1]} (dots): bet 1 lost", 14, INK2)
+    text(s, L + 6, YA(41) + 17, f"and {art_out[1]} (dots): bet 1 missed", 14, INK2)
 
     for y in (2004, 2010, 2015, 2020, 2025):
         text(s, X(y), aB + 20, str(y), anchor="middle")
@@ -162,8 +162,8 @@ def chart2(t, tests, split):
     s = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" '
          f'aria-label="{alt}">', STYLE,
          f'<rect x="0" y="0" width="{W}" height="{H}" fill="{SURF}"/>']
-    text(s, 12, 24, f"In the dear-COE years, cars were", 17, INK, weight="600")
-    text(s, 12, 45, f"driven {pct:.0f}% less", 17, INK, weight="600")
+    text(s, 12, 24, f"Cars were driven {pct:.0f}% less in dear-COE", 17, INK, weight="600")
+    text(s, 12, 45, "years; mileage was already falling", 17, INK, weight="600")
     text(s, 12, 68, "Average km per car per year, 2005-2018")
     s.append(f'<rect x="12" y="80" width="12" height="12" rx="2" fill="{SUBJ}"/>')
     text(s, 30, 91, "7 dearest-COE years")

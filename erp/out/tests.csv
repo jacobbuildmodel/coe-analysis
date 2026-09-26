@@ -22,6 +22,8 @@ T2_arterial_lo,0.15840199106596992
 T2_arterial_hi,0.350320232767612
 T2_arterial_r2,0.26066377641084826
 T2_arterial_status,survive
+T2_expressway_density_rise_pct,21.547292543811846
+T2_arterial_density_rise_pct,25.033465363941822
 T2_outcome,PASS
 T3_high_years,2011 2012 2013 2014 2015 2016 2017
 T3_low_years,2005 2006 2007 2008 2009 2010 2018

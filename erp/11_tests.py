@@ -127,6 +127,9 @@ def main():
                  "status": "survive" if -0.5 <= s <= 0.5 else "fail" if s <= -1.0 else "inconclusive"}
         for k in ("slope", "lo", "hi", "r2", "status"):
             tests.append({"key": f"T2_{c}_{k}", "value": t2[c][k]})
+    for c in CLASSES:
+        d = t.cars / t[LANEKM[c]]
+        tests.append({"key": f"T2_{c}_density_rise_pct", "value": 100 * (d.loc[2017] / d.loc[2005] - 1)})
     st = [t2[c]["status"] for c in CLASSES]
     t2_outcome = "PASS" if all(s == "survive" for s in st) else "FAIL" if "fail" in st else "INCONCLUSIVE"
     tests.append({"key": "T2_outcome", "value": t2_outcome})

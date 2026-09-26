@@ -8,7 +8,11 @@
                                       CHECKSUMS.md5 matches; the manifest,
                                       rebuilt from out/, equals the committed
                                       file; every manifest value appears in
-                                      RESULTS.md as printed.
+                                      RESULTS.md as printed; every number the
+                                      article prints is in the manifest or on
+                                      the short allowlist of sealed design
+                                      constants; the article's method-strip
+                                      front matter matches the scorecard.
 
 CHECKSUMS.md5 has two labelled sections, paths relative to erp/. INPUTS are the
 scripts, the sealed thesis, its addendum and every raw file read; OUTPUTS are
@@ -20,13 +24,14 @@ import glob
 import hashlib
 import io
 import os
+import re
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 INPUTS = ["00_coverage.py", "10_load.py", "11_tests.py", "12_figures.py", "13_results.py",
           "14_manifest.py", "15_reproduce.py", "run_all.sh", "requirements.txt",
-          "THESIS.md", "THESIS_ADDENDUM.md",
+          "THESIS.md", "THESIS_ADDENDUM.md", "2026-10-17.md",
           "raw/RETRIEVED.txt", "raw/e1_peak_speed.csv", "raw/e2_km_per_vehicle.csv",
           "raw/e3_vehicle_population.csv", "raw/e3b_lta_mvp_by_type_2025.pdf",
           "raw/e4b_quota_premium_monthly.csv", "raw/e8_lane_km.csv",
@@ -62,6 +67,11 @@ NUMBERS = [
     ("T4_art_coef", "T4_arterial_premium_coef", "{:.3f}", "T4 premium coefficient, arterial"),
     ("T4_art_lo", "T4_arterial_premium_ci_lo", "{:.3f}", "T4 premium 90% interval low, arterial"),
     ("T4_art_hi", "T4_arterial_premium_ci_hi", "{:.3f}", "T4 premium 90% interval high, arterial"),
+    ("T1_exp_n", "T1_expressway_scored_years", "{:d}", "scored expressway years"),
+    ("T1_art_n", "T1_arterial_scored_years", "{:d}", "scored arterial years"),
+    ("T2_exp_rise", "T2_expressway_density_rise_pct", "{:.0f}", "per cent rise in cars per expressway lane-km, 2005-2017"),
+    ("T2_art_rise", "T2_arterial_density_rise_pct", "{:.0f}", "per cent rise in cars per arterial lane-km, 2005-2017"),
+    ("T3_pct_int", "T3_pct_lower", "{:.0f}", "per cent by which high-premium years were lower, whole number"),
     ("n_held", "n_held", "{:d}", "predictions held"),
     ("expected", "expected_held", "{:.1f}", "expected predictions held, sum of confidences"),
     ("brier", "brier", "{:.3f}", "Brier score, mean over the four scored tests"),
@@ -69,6 +79,19 @@ NUMBERS = [
     ("S1_max", "S1_car_km_billion_max", "{:.2f}", "total car-km peak, billion"),
     ("S1_2018", "S1_car_km_billion_last", "{:.2f}", "total car-km 2018, billion"),
 ]
+
+
+ARTICLE = "2026-10-17.md"
+# Design constants fixed by the sealed thesis or by the shape of the argument.
+# Everything else the article prints must come from the manifest.
+ALLOW = {
+    45, 65, 20, 30,        # LTA's target bands, km/h (THESIS section 4, E6)
+    35, 70,                # Jacob's sealed confidences for T1 and T4 (65 and 20 are bands)
+    3,                     # T3's sealed threshold, per cent
+    0.25, 50,              # Brier score of an always-50-per-cent forecaster
+}
+ALLOW_INT_MAX = 10         # list numbers, "7 years", clock hours, bet numbers
+YEAR_LO, YEAR_HI = 1900, 2030
 
 
 def md5(path):
@@ -96,7 +119,59 @@ def build_manifest():
         v = float(T[key])
         val = fmt.format(int(v) if fmt == "{:d}" else v)
         w.writerow([nid, val, meaning, "11_tests.py", "erp/out/tests.csv", key])
+    for nid, val, meaning, src in speeds_rows():
+        w.writerow([nid, val, meaning, "11_tests.py", f"erp/{src}", "speed"])
     return buf.getvalue()
+
+
+def speeds_rows():
+    """The two scored arterial years above the band, from out/t1_years.csv."""
+    rows = []
+    with open(os.path.join(HERE, "out", "t1_years.csv"), newline="", encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            if r["road"] == "arterial" and r["position"] == "above" and r["scored"] == "True":
+                rows.append((f"T1_art_{r['year']}", "{:g}".format(float(r["speed"])),
+                             f"arterial peak speed {r['year']}, km/h", "out/t1_years.csv"))
+    return rows
+
+
+def article_numbers():
+    text = open(os.path.join(HERE, ARTICLE), encoding="utf-8").read()
+    front, body = text.split("---", 2)[1:]
+    body = re.sub(r"\]\([^)]*\)", "]", body)                  # link targets
+    body = re.sub(r"\bd_[0-9a-f]{32}\b", "", body)            # dataset ids
+    body = re.sub(r"\b\d{1,2} (?:January|February|March|April|May|June|July|August|"
+                  r"September|October|November|December) \d{4}\b", "", body)  # dates
+    body = re.sub(r"[A-Za-z_]+\d[\w-]*", "", body)            # tokens like MVP01-1
+    return front, re.findall(r"(?<![\w.,])(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?", body)
+
+
+def check_article(manifest_values):
+    bad = 0
+    front, nums = article_numbers()
+    for tok in nums:
+        if tok in manifest_values:
+            continue
+        v = float(tok.replace(",", ""))
+        if v in ALLOW or (v == int(v) and (v <= ALLOW_INT_MAX or YEAR_LO <= v <= YEAR_HI)):
+            continue
+        print(f"  ARTICLE number not in manifest or allowlist: {tok}")
+        bad += 1
+    with open(os.path.join(HERE, "out", "tests.csv"), newline="", encoding="utf-8") as f:
+        T = {r["key"]: r["value"] for r in csv.DictReader(f)}
+    outs = [T[f"T{i}_outcome"] for i in (1, 2, 3, 4)]
+    want = {"testsPassed": outs.count("PASS"), "testsFailed": outs.count("FAIL"),
+            "testsOther": 4 - outs.count("PASS") - outs.count("FAIL"), "testsTotal": 4}
+    for k, v in want.items():
+        m = re.search(rf"^{k}: (\d+)$", front, re.M)
+        if not m or int(m.group(1)) != v:
+            print(f"  FRONT MATTER {k} expected {v}")
+            bad += 1
+    if 'thesisSealed: "26 September 2026"' not in front:
+        print("  FRONT MATTER thesisSealed is not the seal date")
+        bad += 1
+    print(f"  article: {len(nums)} numbers checked, front matter checked")
+    return bad
 
 
 def build_checksums():
@@ -119,10 +194,13 @@ def check():
         print("  MISMATCH number_manifest.csv: rebuilt from out/ differs from the committed file")
         bad += 1
     results = open(os.path.join(HERE, "RESULTS.md"), encoding="utf-8").read()
+    values = set()
     for row in csv.DictReader(io.StringIO(committed)):
+        values.add(row["value"])
         if row["value"] not in results:
             print(f"  NOT IN RESULTS.md: {row['number_id']} = {row['value']}")
             bad += 1
+    bad += check_article(values)
     listed = set()
     for line in open(os.path.join(HERE, "CHECKSUMS.md5"), encoding="utf-8"):
         line = line.rstrip("\n")

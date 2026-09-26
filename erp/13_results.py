@@ -135,7 +135,9 @@ def main():
             ad("")
             ad("Main specification: log(peak speed) on log(cars per lane-km of the same road class), "
                "2005-2017, 13 points, OLS with HC1 errors. Both elasticities sit inside [-0.5, +0.5]. "
-               "On arterial roads the slope is positive: speeds rose while crowding rose.")
+               "On arterial roads the slope is positive: speeds rose while crowding rose. Over the "
+               f"same years cars per lane-km rose {fl('T2_expressway_density_rise_pct'):.0f} per cent on "
+               f"expressways and {fl('T2_arterial_density_rise_pct'):.0f} per cent on arterial roads.")
             ad("")
             ad("Sensitivities, reported, not scored:")
             ad("")

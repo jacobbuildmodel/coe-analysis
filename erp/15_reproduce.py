@@ -103,6 +103,8 @@ def main():
                                [[np.log(cars[y] / lane[c][y]) for y in ys]])
         got[f"T2_{c}_slope"], got[f"T2_{c}_lo"], got[f"T2_{c}_hi"], got[f"T2_{c}_r2"] = b[1], lo[1], hi[1], r2
         st2.append("survive" if -0.5 <= b[1] <= 0.5 else "fail" if b[1] <= -1 else "inconclusive")
+    for c in ("expressway", "arterial"):
+        got[f"T2_{c}_density_rise_pct"] = 100 * ((cars[2017] / lane[c][2017]) / (cars[2005] / lane[c][2005]) - 1)
     got["T2_outcome"] = ("PASS" if all(s == "survive" for s in st2) else
                          "FAIL" if "fail" in st2 else "INCONCLUSIVE")
 
@@ -157,7 +159,7 @@ def main():
         pub = {r["key"]: r["value"] for r in csv.DictReader(f)}
     places = {"slope": 3, "_lo": 3, "_hi": 3, "_r2": 2, "gain": 3, "coef": 3, "ci_lo": 3, "ci_hi": 3,
               "mean_km": 0, "ratio": 3, "pct_lower": 1, "share_pct": 1, "brier": 3,
-              "expected_held": 1, "billion": 2}
+              "expected_held": 1, "billion": 2, "rise_pct": 1}
     n = 0
     for k, v in got.items():
         if isinstance(v, str):

@@ -27,9 +27,16 @@ T4_art_gain,0.070,"T4 adjusted R-squared gain, arterial",11_tests.py,erp/out/tes
 T4_art_coef,0.028,"T4 premium coefficient, arterial",11_tests.py,erp/out/tests.csv,T4_arterial_premium_coef
 T4_art_lo,0.009,"T4 premium 90% interval low, arterial",11_tests.py,erp/out/tests.csv,T4_arterial_premium_ci_lo
 T4_art_hi,0.046,"T4 premium 90% interval high, arterial",11_tests.py,erp/out/tests.csv,T4_arterial_premium_ci_hi
+T1_exp_n,16,scored expressway years,11_tests.py,erp/out/tests.csv,T1_expressway_scored_years
+T1_art_n,19,scored arterial years,11_tests.py,erp/out/tests.csv,T1_arterial_scored_years
+T2_exp_rise,22,"per cent rise in cars per expressway lane-km, 2005-2017",11_tests.py,erp/out/tests.csv,T2_expressway_density_rise_pct
+T2_art_rise,25,"per cent rise in cars per arterial lane-km, 2005-2017",11_tests.py,erp/out/tests.csv,T2_arterial_density_rise_pct
+T3_pct_int,11,"per cent by which high-premium years were lower, whole number",11_tests.py,erp/out/tests.csv,T3_pct_lower
 n_held,1,predictions held,11_tests.py,erp/out/tests.csv,n_held
 expected,1.9,"expected predictions held, sum of confidences",11_tests.py,erp/out/tests.csv,expected_held
 brier,0.194,"Brier score, mean over the four scored tests",11_tests.py,erp/out/tests.csv,brier
 S1_2005,9.03,"total car-km 2005, billion",11_tests.py,erp/out/tests.csv,S1_car_km_billion_first
 S1_max,11.47,"total car-km peak, billion",11_tests.py,erp/out/tests.csv,S1_car_km_billion_max
 S1_2018,10.77,"total car-km 2018, billion",11_tests.py,erp/out/tests.csv,S1_car_km_billion_last
+T1_art_2016,30.4,"arterial peak speed 2016, km/h",11_tests.py,erp/out/t1_years.csv,speed
+T1_art_2023,31,"arterial peak speed 2023, km/h",11_tests.py,erp/out/t1_years.csv,speed

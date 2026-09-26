@@ -166,7 +166,7 @@ Result:
 | expressway | -0.016 | -0.107 to 0.076 | 0.00 | survive |
 | arterial | 0.254 | 0.158 to 0.350 | 0.26 | survive |
 
-Main specification: log(peak speed) on log(cars per lane-km of the same road class), 2005-2017, 13 points, OLS with HC1 errors. Both elasticities sit inside [-0.5, +0.5]. On arterial roads the slope is positive: speeds rose while crowding rose.
+Main specification: log(peak speed) on log(cars per lane-km of the same road class), 2005-2017, 13 points, OLS with HC1 errors. Both elasticities sit inside [-0.5, +0.5]. On arterial roads the slope is positive: speeds rose while crowding rose. Over the same years cars per lane-km rose 22 per cent on expressways and 25 per cent on arterial roads.
 
 Sensitivities, reported, not scored:
 

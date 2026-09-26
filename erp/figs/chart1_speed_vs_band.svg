@@ -24,7 +24,7 @@
 <circle cx="218.6" cy="232.2" r="4.5" fill="var(--fig-subject,#2873ce)"/>
 <circle cx="319.2" cy="230.2" r="4.5" fill="var(--fig-subject,#2873ce)"/>
 <text x="52.0" y="197.9" font-size="14" fill="var(--fig-ink-2,#52514e)">arterial above the band in 2016</text>
-<text x="52.0" y="214.9" font-size="14" fill="var(--fig-ink-2,#52514e)">and 2023 (dots): bet 1 lost</text>
+<text x="52.0" y="214.9" font-size="14" fill="var(--fig-ink-2,#52514e)">and 2023 (dots): bet 1 missed</text>
 <text x="46.0" y="302.0" text-anchor="middle" font-size="14" fill="var(--fig-ink-3,#717171)">2004</text>
 <text x="132.3" y="302.0" text-anchor="middle" font-size="14" fill="var(--fig-ink-3,#717171)">2010</text>
 <text x="204.2" y="302.0" text-anchor="middle" font-size="14" fill="var(--fig-ink-3,#717171)">2015</text>
