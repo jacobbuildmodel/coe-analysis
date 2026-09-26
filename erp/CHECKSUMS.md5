@@ -6,7 +6,7 @@
 # INPUTS
 b77449a633385ea081c1ccbe23c686cc  00_coverage.py
 08544638777280af1e21c05cdc33cd98  10_load.py
-bb664d94d795e30b2eb2ae7643be3684  11_tests.py
+e92e6f0086489fb962c7ddc440c0d75b  11_tests.py
 28401658093827f282f02993d27c9089  12_figures.py
 872e962ef1de76ecfdd3dc5a4dd16150  13_results.py
 ca88b30bca4fc64c9deecf45f022c119  14_manifest.py
@@ -14,8 +14,8 @@ fe9d9ec7bf5a0972ecf8e8895c8cc892  15_reproduce.py
 5754c3806b42171c92e6dc9dbaedaec6  run_all.sh
 5ce21b94813910bbcd7e0e11d7856047  requirements.txt
 2f99e6513de2f5ebe7f578e6a5650f50  THESIS.md
-9dc2b28e830995833fdb659c33774892  THESIS_ADDENDUM.md
-7d9cff4f8c98a4b6ceb1942452ecca89  2026-10-17.md
+816e39bd02a57dc60eec9994916ee49b  THESIS_ADDENDUM.md
+7c3891fb67f87afed3cb62d5ffa27604  2026-10-17.md
 aee12bb0ff5242a782cd702576c1ca64  raw/RETRIEVED.txt
 2973c3047ec5ff82391db63e62e8a40a  raw/e1_peak_speed.csv
 493b6bc955d8e928bbc985061e1f03f0  raw/e2_km_per_vehicle.csv
@@ -32,11 +32,11 @@ a0d8d14b04028a21e02bf01a23d095b3  figs/chart2_door_fee.svg
 2098bd2f09cc86f9efc1f43275aef1ff  out/annual.csv
 9c5c2e8cc2540a7af0a98a255637afb9  out/crosscheck_e3_e8.csv
 e2bfd739151bb7d3125cc6aa709ab768  out/crosscheck_premium.csv
-6fc8e06a0db689318335d31f4de238f1  out/s1.csv
+c1b5b61bf03235a402417d655b40621e  out/s1.csv
 4421d5b5c8c28b92ce80234e51985516  out/t1_years.csv
-4f6233af838f6be4a618fdf3bb7d926f  out/t2_fits.csv
-1bf4aee5594462b16dae76e472b00f86  out/t3_split.csv
-6c6c656b3c05c060cfddfe7f4eb1305a  out/t4_fits.csv
-c48ac72cedf75ab46949d8a0f40c777d  out/tests.csv
+c800da63f271c7889b6d4b1fe91a067f  out/t2_fits.csv
+3d245eff9907900eb894c89e5b067e16  out/t3_split.csv
+b59a8ee74e9731f8b2c0101a13bd5268  out/t4_fits.csv
+bb21b55f5b87ad22f1f448bfe438035c  out/tests.csv
 6174e0843adfc50adc2157a36d63d496  RESULTS.md
 59a9ed744cb5e093ccf2b730c247643a  number_manifest.csv

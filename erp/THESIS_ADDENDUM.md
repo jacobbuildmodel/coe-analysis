@@ -82,3 +82,21 @@ sealed. The T2 sensitivity with E8b's value moves the arterial elasticity from
 - T3 (20%, FAIL): outcome as expected, mechanism not (item 1).
 - T4 (70%, MIXED): the reason ("little left to explain") held for expressways
   and not for arterial roads, where the premium's interval excludes zero.
+
+### 7. E1's averaging period, and one figure LTA printed differently
+
+From the method-note lookup recorded in `raw/RETRIEVED.txt` (commit `e6d1a25`),
+still written AFTER results were seen:
+
+- LTA's *Statistics in Brief 2008* says traffic speed is "averaged over the
+  period of financial year (April-March)"; the 2015 edition says "averaged over
+  the period of January-December". The E1 series therefore switched from
+  financial-year to calendar-year averages at some point between those editions,
+  and LTA does not publish when. Neither the data.gov.sg page nor any LTA
+  document found mentions it, or any rounding change in E1 or E2. The switch
+  moves the window each annual figure covers by three months; it does not
+  change what any test compares, and no score changes.
+- *Statistics in Brief 2015* prints the 2013 expressway peak speed as 61.6 km/h;
+  the data.gov.sg file (E1) has 61.4. Both are inside the 45-65 km/h band, and
+  2013 is a scored expressway year for T1, so T1's expressway result is the same
+  under either figure. E1 was used, as sealed. No score changes.

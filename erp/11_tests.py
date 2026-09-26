@@ -20,7 +20,17 @@ import statsmodels.api as sm
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
-FLOAT = "%.10g"
+# Regression outputs are written at 8 significant figures so the bytes (and
+# so the checksums) are the same on every platform: Windows and Linux builds
+# of the same libraries disagree in the last binary digit of some fits.
+FLOAT = "%.8g"
+
+
+def sig8(v):
+    """Round a float to 8 significant figures; leave everything else alone."""
+    if isinstance(v, (bool, np.bool_)) or not isinstance(v, (float, np.floating)):
+        return v
+    return float(f"{v:.8g}")
 
 BANDS = {"expressway": (45.0, 65.0), "arterial": (20.0, 30.0)}
 LANEKM = {"expressway": "lanekm_expressway", "arterial": "lanekm_arterial"}
@@ -230,6 +240,8 @@ def main():
         verdict = "The record cannot tell the two apart"
     tests.append({"key": "verdict", "value": verdict})
 
+    for row in tests:
+        row["value"] = sig8(row["value"])
     pd.DataFrame(tests).to_csv(os.path.join(OUT, "tests.csv"), index=False,
                                float_format=FLOAT, lineterminator="\n")
     for k, v in outcomes.items():
