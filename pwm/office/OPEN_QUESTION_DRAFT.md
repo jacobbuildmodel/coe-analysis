@@ -82,9 +82,9 @@ floor and the other did not.
    worker's.
    Confidence: [JACOB].
    Why: [JACOB].
-4. **The jobs survived.** Employment in security and landscape firms did not
-   fall more than about 5 per cent relative to shops and food outlets.
-   Cleaning is shown, not scored: too few years of job counts before it.
+4. **The jobs survived.** Employment in cleaning, security and landscape did
+   not fall more than about 5 per cent relative to shops and food outlets. Each
+   needs four years of figures before its ladder.
    Confidence: [JACOB].
    Why: [JACOB].
 5. **The first rung shows.** In the official wage survey, the bottom quarter of
@@ -100,8 +100,9 @@ comparison was left.
 
 ## The catch I already know about
 
-Guarding and grounds upkeep are jobs a building cannot do without, and the job
-counts include foreign workers, whom the ladders do not cover. Both keep
+Cleaning, guarding and grounds upkeep are jobs a building cannot do without,
+and if the job counts cover all workers they include foreign workers, whom
+the ladders do not cover. Both keep
 employment looking steady even if the floor cost Singaporeans their jobs. So:
 **a monopsony-like result is weak evidence and a competitive result is strong
 evidence, because the design leans toward the monopsony reading.**
@@ -123,7 +124,7 @@ in it.
   the record cannot say what the ladders did.
 - Pay at the bottom of covered jobs rising no faster than elsewhere: the suit
   did not fit.
-- Jobs in security or landscape falling clearly faster than in shops
+- Jobs in cleaning, security or landscape falling clearly faster than in shops
   and food outlets once the ladder bound: the textbook market showing through.
 - The jobs without a ladder falling clearly behind the middle: the tailor's
   cost.

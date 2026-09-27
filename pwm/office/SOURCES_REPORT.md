@@ -320,6 +320,14 @@ full-time employed residents is on data.gov.sg as an annual series
   - The level of occupation detail is UNVERIFIED. If it is the nine major
     groups only, it cannot isolate cleaners, guards or gardeners, and is
     context.
+  - **Role in T4, fixed before any new file (checker's decision on
+    `d292fe9`; THESIS section 4):** LFS employed residents by detailed
+    occupation is T4's sensitivity if a count of workers by industry
+    qualifies, and its main series if only the LFS qualifies. It counts
+    residents only, who are the people the ladders covered, but adds survey
+    noise at detailed occupation. The saved W2b files qualify only if their
+    labels show the SSOC unit group or finer; that is judged from labels and
+    coverage, not values.
 - **W2c. Employment by industry AND residential status: does not exist.**
   The dataset ID located by search is invalid on data.gov.sg. The nearest,
   "Changes In Employment By Sector", has no residential split
