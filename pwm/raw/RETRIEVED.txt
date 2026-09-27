@@ -2686,3 +2686,267 @@ W3 leads WITH a primary copy in raw/: STC report of 23 Nov 2017
 (w3_landscape_tcl_report.pdf) for the 2015 news repost; NParks CUGE LCR page
 (w3_landscape_lcr_requirements.pdf, current version only); PWCS
 (w3c_iras_pwcs.pdf).
+
+===============================================================================
+RECEIVED, second batch (27 September 2026, for the STILL TO DOWNLOAD list above)
+===============================================================================
+Retrieved 27 September 2026 by Jacob's machine. Policy and classification
+documents only. No wage or employment data was opened. The only reading was a
+title check: the first lines of each PDF's first page, plus the dates on
+page 1 of the 2019 cleaning order. The XLS/XLSX lines below come verbatim
+from pwm/00_coverage.py (sheet names and shapes, no cells).
+
+What each file is
+  W1d  SSOC page: https://www.singstat.gov.sg/standard-classifications/national-classifications/singapore-standard-occupational-classification-ssoc
+    w1d_ssoc2010_correspondence.xls   SSOC 2010 <-> SSOC 2005, both directions
+                                      (the 2005-2010 table)
+    w1d_ssoc2010_report.pdf           SSOC 2010 report, 440 pp. It has the
+                                      Classification of Occupations and the
+                                      Description of Unit Groups (the detailed
+                                      definitions, 5-digit to 4-digit), plus an
+                                      appendix comparing SSOC 2010 with 2005
+    w1d_ssoc2015_correspondence.xls   SSOC 2015 <-> SSOC 2010
+    w1d_ssoc2015_report.pdf           SSOC 2015 report
+    w1d_ssoc2015v2018_correspondence.xls  SSOC 2015 (Version 2018) <-> SSOC
+                                      2015. Needed because SingStat maps SSOC
+                                      2020 to 2015 (v2018), not to 2015, so the
+                                      2015-2020 link runs through this table
+    w1d_ssoc2020_correspondence.xlsx  SSOC 2020 <-> SSOC 2015 (v2018)
+    w1d_ssoc2020_report.pdf           SSOC 2020 report, with its detailed
+                                      definitions
+    Naming: correspondence tables follow w1d_ssoc{YYYY}_correspondence. The
+    reports are separate files on SingStat's page, so they were saved as
+    w1d_ssoc{YYYY}_report.pdf. SingStat does not host a separate SSOC 2005
+    file; the 2005 side is in the 2010 table. Not taken: SSOC 2024 <-> 2020
+    (outside the list).
+  W3
+    w3_cleaning_tcc_2016.pdf          "Recommendations of the Tripartite
+                                      Cluster for Cleaners on Progressive
+                                      Wages", December 2016, for 2017 onwards
+    w3_cleaning_mom_pr_2016.pdf       MOM release, 12 Dec 2016, "Government
+                                      Accepts Recommendations to Enhance the
+                                      Progressive Wage Model for Cleaning
+                                      Sector" (archived capture; live URL 404)
+    w3_cleaning_col_order_2019.pdf    Commissioner for Labour order under
+                                      s.80H(2) Environmental Public Health Act,
+                                      the annex to MOM's release of 3 Jul 2019.
+                                      CHECK: the dates on its page 1 are 1 July
+                                      2020, 1 July 2021 and 30 June 2022, so it
+                                      appears to cover July 2020 to June 2022,
+                                      not the "1 July 2019 to 30 June 2021" in
+                                      the list. No other cleaning order dated
+                                      2019 is in MOM's media folders on Wayback.
+    w3_cleaning_mom_pr_2019.pdf       MOM release, 3 Jul 2019, "CoL adopts
+                                      updated PWM recommendations by the
+                                      Tripartite Cluster for Cleaners" (live)
+    w3_security_mom_pr_2014.pdf       MOM release, 29 Oct 2014, "Progressive
+                                      Wage Model for the Security Sector to be
+                                      Incorporated into Licensing Regime"
+                                      (archived Oct 2015 capture; live URL 404).
+                                      The STC's 2014 recommendations are
+                                      reported in this release. No separate STC
+                                      2014 report is in any Wayback index.
+                                      Whether Diagram 1 shows in the capture
+                                      was not checked (title check only).
+    w3_security_mom_pr_2021.pdf       MOM release, 12 Nov 2021, "Government
+                                      Accepts Recommendations of the Security
+                                      Tripartite Cluster" (live; MOM's copy of
+                                      the joint release, no PDF annex on the
+                                      page)
+    w3_landscape_tcl_2018.pdf         "Recommendations of the Tripartite
+                                      Cluster for Landscape Industry on the
+                                      Progressive Wage Model", 30 November 2018,
+                                      the annex to the MOM/NParks release of the
+                                      same day
+    w3_landscape_lcr_{2019,2020,2021}.pdf      NParks CUGE "Landscape Company
+    w3_landscape_lcr_faq_{2019,2020,2021}.pdf  Register" page and "FAQs on
+                                      Landscape Company Register", one archived
+                                      capture of each per year. The "last
+                                      updated" dates below are the ones shown
+                                      on the pages.
+    2016-2018: NONE. Neither page, nor any other NParks or CUGE LCR page, was
+    captured before 23 July 2019 (see FAILED).
+
+Files (md5 and shape from 00_coverage.py; source, retrieval time, and the
+"last updated" date shown on the page)
+
+w1d_ssoc2010_correspondence.xls
+  bytes   3897856
+  md5     313774cccc1d0bb7a5dcc2cf91b88191
+  sheet   ssoc2005-ssoc2010: 1172 rows x 5 columns
+  sheet   ssoc2010-ssoc2005: 1170 rows x 5 columns
+  source  https://www.singstat.gov.sg/files/26e5c1f5-ae94-45d4-81a2-41d423cd56a1.xls
+  retrieved 2026-09-27 10:40 UTC
+  method  direct download, byte-for-byte
+
+w1d_ssoc2010_report.pdf
+  bytes   2946828
+  md5     7582e63cc72c9cbf545bb57525c0b642
+  source  https://www.singstat.gov.sg/files/07f9b42f-b8ad-4e07-b3d0-cf5dd1bea5cb.pdf
+  retrieved 2026-09-27 10:40 UTC
+  method  direct download, byte-for-byte
+
+w1d_ssoc2015_correspondence.xls
+  bytes   475648
+  md5     2b8550fc3970536d3659864647bf980b
+  sheet   ssoc2015-ssoc2010: 1170 rows x 5 columns
+  sheet   FAME Persistence2: 0 rows x 0 columns
+  sheet   ssoc2010-ssoc2015: 1170 rows x 5 columns
+  source  https://www.singstat.gov.sg/files/5069bba9-839b-48b0-a713-895d6ce06ca6.xls
+  retrieved 2026-09-27 10:40 UTC
+  method  direct download, byte-for-byte
+
+w1d_ssoc2015_report.pdf
+  bytes   4501126
+  md5     b71b9e9bbd63ef0f70637eb3cac8b967
+  source  https://www.singstat.gov.sg/files/65b751bd-e08e-46f1-b3f2-0a2eacd2f9d7.pdf
+  retrieved 2026-09-27 10:40 UTC
+  method  direct download, byte-for-byte
+
+w1d_ssoc2015v2018_correspondence.xls
+  bytes   393216
+  md5     92ff251d46022febb3facd672118d537
+  sheet   ssoc2015(v2018)-ssoc2015: 1217 rows x 5 columns
+  sheet   ssoc2015-ssoc2015(v2018): 1217 rows x 5 columns
+  sheet   FAME Persistence2: 0 rows x 0 columns
+  source  https://www.singstat.gov.sg/files/b775e3a8-2f9d-4571-80e1-16e171b21aef.xls
+  retrieved 2026-09-27 10:40 UTC
+  method  direct download, byte-for-byte
+
+w1d_ssoc2020_correspondence.xlsx
+  bytes   115109
+  md5     ce8dc8364be68d9e1a4c60632b27f3a5
+  sheet   SSOC2020-SSOC2015(v2018): 1370 rows x 5 columns
+  sheet   SSOC2015(v2018)-SSOC2020: 1370 rows x 5 columns
+  source  https://www.singstat.gov.sg/files/e729736b-ffb5-46c4-b9d1-f039d87e818a.xlsx
+  retrieved 2026-09-27 10:40 UTC
+  method  direct download, byte-for-byte
+
+w1d_ssoc2020_report.pdf
+  bytes   655673
+  md5     5fd899dd031ad850f6c1cb37b70ff79e
+  source  https://www.singstat.gov.sg/files/99d56b49-a0c3-4599-9aa8-e169650aa84d.pdf
+  retrieved 2026-09-27 10:41 UTC
+  method  direct download, byte-for-byte
+
+w3_cleaning_col_order_2019.pdf
+  bytes   832806
+  md5     6df56708e4944add92812f29d38d5436
+  source  https://www.mom.gov.sg/-/media/mom/documents/press-releases/2019/0703-order-by-commissioner-for-labour.pdf
+  retrieved 2026-09-27 10:47 UTC
+  method  direct download, byte-for-byte
+
+w3_cleaning_mom_pr_2016.pdf
+  bytes   96181
+  md5     e2bbeddc7d4bbe1a0ab9e4af40dfc120
+  source  https://web.archive.org/web/20170827130316/http://www.mom.gov.sg:80/newsroom/press-releases/2016/1212-govt-accepts-recommendations-to-enhance-the-pwm-for-cleaning-sector
+  retrieved 2026-09-27 10:54 UTC
+  last updated 12 December 2016
+  method  page printed to PDF (headless Chromium), from the archived capture
+
+w3_cleaning_mom_pr_2019.pdf
+  bytes   164679
+  md5     9317f23cb086b4317466e989c8f94b8f
+  source  https://www.mom.gov.sg/newsroom/press-releases/2019/0703-col-adopts-updated-pwm-recommendations-by-the-tripartite-cluster-for-cleaners
+  retrieved 2026-09-27 10:52 UTC
+  last updated 14 March 2024
+  method  page printed to PDF (headless Chromium)
+
+w3_cleaning_tcc_2016.pdf
+  bytes   831620
+  md5     8727d9f17f0bdfa4e1e18174a2b92efd
+  source  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/tripartite-cluster-for-cleaners-report-dec-2016.pdf
+  retrieved 2026-09-27 10:47 UTC
+  method  direct download, byte-for-byte
+
+w3_landscape_lcr_2019.pdf
+  bytes   403437
+  md5     9c4a8cb76e4f026b75f254161aad37dc
+  source  https://web.archive.org/web/20190723072553/https://www.nparks.gov.sg/Cuge/E-Services/Landscape%20Company%20Register
+  retrieved 2026-09-27 10:53 UTC
+  last updated 21 March 2019
+  method  page printed to PDF (headless Chromium), from the archived capture
+
+w3_landscape_lcr_2020.pdf
+  bytes   426300
+  md5     e73bccb8394f164bb0dbd6d2b8090fef
+  source  https://web.archive.org/web/20201019034655/https://www.nparks.gov.sg/cuge/e-services/landscape-company-register
+  retrieved 2026-09-27 10:53 UTC
+  last updated 17 September 2020
+  method  page printed to PDF (headless Chromium), from the archived capture
+
+w3_landscape_lcr_2021.pdf
+  bytes   430113
+  md5     884a27a179cd1950ad564c5cd83ff419
+  source  https://web.archive.org/web/20210917165938/https://www.nparks.gov.sg/cuge/e-services/landscape-company-register
+  retrieved 2026-09-27 10:53 UTC
+  last updated 01 December 2020
+  method  page printed to PDF (headless Chromium), from the archived capture
+
+w3_landscape_lcr_faq_2019.pdf
+  bytes   429393
+  md5     d3674e78e6ba46b33a95fe42cc41441c
+  source  https://web.archive.org/web/20190824132634/https://www.nparks.gov.sg/Cuge/FAQ/FAQs%20on%20Landscape%20Company%20Register
+  retrieved 2026-09-27 10:53 UTC
+  last updated 10 December 2018
+  method  page printed to PDF (headless Chromium), from the archived capture
+
+w3_landscape_lcr_faq_2020.pdf
+  bytes   431833
+  md5     43678d4388d7ab442503c55d01197cb0
+  source  https://web.archive.org/web/20200924155153/https://www.nparks.gov.sg/cuge/faq/faqs-on-landscape-company-register
+  retrieved 2026-09-27 10:53 UTC
+  last updated 20 April 2020
+  method  page printed to PDF (headless Chromium), from the archived capture
+
+w3_landscape_lcr_faq_2021.pdf
+  bytes   435293
+  md5     5056f6b3ac41cd19264f4798e6263fa5
+  source  https://web.archive.org/web/20210727092839/https://www.nparks.gov.sg/cuge/faq/faqs-on-landscape-company-register
+  retrieved 2026-09-27 10:53 UTC
+  last updated 31 March 2021
+  method  page printed to PDF (headless Chromium), from the archived capture
+
+w3_landscape_tcl_2018.pdf
+  bytes   272668
+  md5     acafe7bae506b7cbe14fd4fddc714aaa
+  source  https://www.mom.gov.sg/-/media/mom/documents/press-releases/2018/1130-tripartite-cluster-for-landscape-industry-report.pdf
+  retrieved 2026-09-27 10:47 UTC
+  method  direct download, byte-for-byte
+
+w3_security_mom_pr_2014.pdf
+  bytes   101260
+  md5     efa3afe0236aa73b1dc4efe1497df9b6
+  source  https://web.archive.org/web/20151027031441/http://www.mom.gov.sg/newsroom/press-releases/2014/progressive-wage-model-for-the-security-sector-to-be-incorporated-into-licensing-regime
+  retrieved 2026-09-27 10:54 UTC
+  last updated 13 May 2015
+  method  page printed to PDF (headless Chromium), from the archived capture
+
+w3_security_mom_pr_2021.pdf
+  bytes   166706
+  md5     63965572c7ce00da2a563f9f0a2abe43
+  source  https://www.mom.gov.sg/newsroom/press-releases/2021/1112-government-accepts-recommendations-of-the-security-tripartite-cluster
+  retrieved 2026-09-27 10:52 UTC
+  last updated 14 November 2024
+  method  page printed to PDF (headless Chromium)
+
+FAILED (URL and error)
+  https://www.mom.gov.sg/-/media/mom/documents/press-releases/2014/government-response-to-stc-recommendations---annex-a.pdf
+    HTTP 200, but the WRONG DOCUMENT: page 1 is "Annex A, Factsheet on the
+    Singapore Workforce Skills Qualifications for Security", not the STC
+    recommendations. Deleted, not committed. No other 2014 STC annex is in the
+    Wayback index (-/media and ~/media press-releases/2014 prefixes).
+  https://www.mom.gov.sg/newsroom/press-releases/2014/progressive-wage-model-for-the-security-sector-to-be-incorporated-into-licensing-regime
+    live HTTP 404 "404 Page not found - Ministry of Manpower"; saved from the
+    27 Oct 2015 capture instead.
+  https://www.mom.gov.sg/newsroom/press-releases/2016/1212-govt-accepts-recommendations-to-enhance-the-pwm-for-cleaning-sector
+    live HTTP 404 "404 Page not found - Ministry of Manpower"; saved from the
+    27 Aug 2017 capture instead.
+  cuge.nparks.gov.sg/landscape-company-register/ (the URL in the list): no
+    Wayback capture at all. The same register is at
+    nparks.gov.sg/cuge/e-services/landscape-company-register. For 2016, 2017
+    and 2018 there is no capture before 23 July 2019 of that page, the LCR FAQ,
+    or any nparks.gov.sg URL containing "register". Also checked: cuge.com.sg
+    for 2015-2019, which has only "Axis-Registration" and "eregistration" pages.
+  Cleaning order for 1 July 2019 to 30 June 2021: not found as such (see
+    CHECK above).
