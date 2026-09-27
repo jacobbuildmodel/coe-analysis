@@ -161,6 +161,22 @@ class EndToEnd(unittest.TestCase):
                 continue
             self.assertEqual(r["value"], L.FLOAT % v if r["value"] not in ("True", "False") else r["value"])
 
+    def test_no_t4_series_as_in_the_real_data(self):
+        """The real case: no workers count, no qualifying LFS lines."""
+        root = copy_fixtures(os.path.join(self.tmp, "no_t4"))
+        os.remove(os.path.join(root, "raw", "w2x_workers_by_industry_assumed.csv"))
+        os.remove(os.path.join(root, "T4_LFS_LINES.csv"))
+        for s in ("10_load.py", "11_tests.py", "12_figures.py", "13_results.py", "15_reproduce.py"):
+            self.assertEqual(step(s, root).returncode, 0, s)
+        T = self.T(root)
+        self.assertEqual((T["T4_outcome"], T["T4_series"]), ("NOT SCORED", "none"))
+        self.assertEqual(T["verdict"], "The record cannot tell the two models apart; the rest of the bottom kept pace.")
+        self.assertEqual((T["scored_tests"], T["n_scored"], T["conf_T4"]), ("T1 T2 T3 T5", "4", "not scored"))
+        self.assertAlmostEqual(float(T["expected_held"]), 1.95)
+        md = rt(os.path.join(root, "RESULTS.md"))
+        self.assertIn(L.GAP, md)
+        self.assertNotIn("monopsony-like", md)
+
     def test_results_failures_first_and_synthetic_stamp(self):
         md = rt(os.path.join(self.root, "RESULTS.md"))
         self.assertTrue(md.startswith("# SYNTHETIC FIXTURE RUN"))

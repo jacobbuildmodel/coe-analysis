@@ -48,6 +48,11 @@ T4_LINES = {"security": ["SSIC 80 - Security And Investigation Activities"],
             "comparison": ["SSIC 47 - Total Retail Trade",
                            "SSIC 55-56 - Total Accommodation & Food Services"]}
 
+# THESIS section 8: carried beside the verdict when T4 is not scored.
+GAP = ("Singapore publishes no yearly count of cleaners, security officers or "
+       "landscape workers, so whether the ladders cost jobs cannot be tested from "
+       "public data.")
+
 # THESIS thresholds.
 T1_LINE = 0.010
 T2_SURVIVE, T2_FAIL = 0.10, 0.05

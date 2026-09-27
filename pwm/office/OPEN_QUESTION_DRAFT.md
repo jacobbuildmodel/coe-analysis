@@ -13,8 +13,8 @@ up in skill, written into the licence a firm needs to operate. In 2022 and
 Opposition parties and many economists have long argued for one national
 floor instead.
 
-The yardstick is real pay at the bottom of the covered jobs, and whether those
-jobs held up.
+The yardstick is real pay at the bottom of the covered jobs. Whether those
+jobs held up cannot be measured (below).
 
 ## The argument
 
@@ -39,7 +39,8 @@ raised its minimum wage.
 Germany's first national floor in 2015 and the UK's higher floor from 2016
 raised pay at the bottom with little or no job loss.
 
-Singapore's ladders are a chance to see which world its covered jobs live in.
+Singapore's ladders were a chance to see which world its covered jobs live
+in. Only the pay half can be tested.
 
 ## Push it to the extreme
 
@@ -59,10 +60,10 @@ floor and the other did not.
 
 **Which jobs count.** Fixed before any pay figure was opened:
 
-- **Cleaners:** office and industrial cleaners until 2014; then those on the
-  ladder's lowest step: office cleaners, cleaners in malls, schools and
-  hospitals, and cleaners in food outlets. Housing-estate cleaners, partly on
-  a higher step, are left out, which tilts the pay bet against the ladder.
+- **Cleaners:** office and industrial cleaners until 2014, then those on the
+  ladder's lowest step: office, mall, school, hospital and food-outlet
+  cleaners. Housing-estate cleaners, partly on a higher step, are left out,
+  which tilts the pay bet against the ladder.
 - **Guards:** security guards; from 2020, entry-rank officers only.
 - **Landscape:** park and garden maintenance workers.
 - **No ladder:** shop assistants, cashiers, waiters, kitchen assistants, food
@@ -82,37 +83,40 @@ floor and the other did not.
    worker's.
    Confidence: [JACOB].
    Why: [JACOB].
-4. **The jobs survived.** Employment in cleaning, security and landscape did
-   not fall more than about 5 per cent relative to shops and food outlets. Each
-   needs four years of figures before its ladder.
-   Confidence: [JACOB].
-   Why: [JACOB].
-5. **The first rung shows.** In the official wage survey, the bottom quarter of
+4. **The first rung shows.** In the official wage survey, the bottom quarter of
    covered workers earned at least the ladder's entry wage every year.
    Confidence: [JACOB].
    Why: [JACOB].
 
-If my confidences are right, about [JACOB] of these 5 would hold.
+If my confidences are right, about [JACOB] of these 4 would hold.
 
 Not scored: 2020 and 2021, when the pandemic moved pay and jobs, and
 everything after mid-2022, when nearly every low-wage job had a ladder and no
 comparison was left.
 
+## What this does not explain
+
+**Singapore publishes no yearly count of cleaners, security officers or
+landscape workers, so whether the ladders cost jobs cannot be tested from
+public data.** The official business survey counts firms, sales and costs by
+industry, not workers. The labour force tables stop at broad groups that put
+cleaners with domestic cleaners, and security officers with police. So this
+cannot say whether covered jobs look more like the textbook market or like
+monopsony. That bet is not scored.
+
 ## The catch I already know about
 
-Cleaning, guarding and grounds upkeep are jobs a building cannot do without,
-and if the job counts cover all workers they include foreign workers, whom
-the ladders do not cover. Both keep
-employment looking steady even if the floor cost Singaporeans their jobs. So:
-**a monopsony-like result is weak evidence and a competitive result is strong
-evidence, because the design leans toward the monopsony reading.**
+In-house cleaners, guards and gardeners were not covered until 2022, and they
+are in the survey too. They dilute the pay bet, so a gain found is strong
+evidence and none found is weak.
 
 The jobs without a ladder were not without a floor. A firm that wanted to hire
 foreign workers had to pay each local at least a set salary, S$1,000 a month
 by 2016 and S$1,400 by 2020, or that local did not count in full toward its
-quota. That looser floor lifted the comparison jobs too. It shrinks the
-ladder's measured effect and helps the rest of the bottom keep pace. So on that bet as well, "kept pace" is the weaker finding and "fell
-behind" the stronger one.
+quota. That looser floor lifted the comparison jobs too, shrinking the
+ladder's measured effect and helping the rest of the bottom keep pace. So on
+the third bet, "kept pace" is the weaker finding and "fell behind" the
+stronger one.
 
 And the record can only speak for the jobs the tailor measured. What a
 national floor would have done in a hawker stall or a five-person firm is not
@@ -124,14 +128,12 @@ in it.
   the record cannot say what the ladders did.
 - Pay at the bottom of covered jobs rising no faster than elsewhere: the suit
   did not fit.
-- Jobs in cleaning, security or landscape falling clearly faster than in shops
-  and food outlets once the ladder bound: the textbook market showing through.
 - The jobs without a ladder falling clearly behind the middle: the tailor's
   cost.
 
-The answer will say two things: which world the covered jobs look like, and
-whether the rest of the bottom kept pace. Either part could come back as "the
-record cannot tell", and that would be published too.
+The answer will say two things: whether the ladders lifted pay where they
+applied, and whether the rest of the bottom kept pace. Either part could come
+back as "the record cannot tell", and that would be published too.
 
 ## Proof
 

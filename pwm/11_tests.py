@@ -323,6 +323,8 @@ def run(lines, lfs, t4s, t4c, conf):
         if k in t3res:
             T[f"T3_{k}"] = t3res[k]
     T["T4_series"] = t4res.get("series", "none")
+    if T["T4_series"] == "none":
+        T["T4_reason"] = "no series qualifies (THESIS section 4): " + L.GAP
     for g in L.COVERED:
         r = t4res.get(g)
         if not r:
@@ -343,7 +345,8 @@ def run(lines, lfs, t4s, t4c, conf):
     T["verdict_A"], T["verdict_B"] = a, b
     T["verdict"] = a[0].upper() + a[1:] + "; " + b + "."
     for t in o:
-        T[f"conf_{t}"] = conf.get(t) if conf.get(t) is not None else "[JACOB]"
+        T[f"conf_{t}"] = ("not scored" if o[t] == NOTSC else
+                          conf.get(t) if conf.get(t) is not None else "[JACOB]")
     T.update(scorecard(o, conf))
 
     # ---- sensitivities, reported, not scored

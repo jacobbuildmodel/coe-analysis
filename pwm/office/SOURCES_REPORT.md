@@ -225,6 +225,17 @@ The seal is only worth something if it is clear what had been seen.
     `DataSeries` column of both W2a files was listed by `01b_w2a_labels.py`
     (industry and indicator labels, text only, `office/w2a_labels.txt`). No
     year column was read and no value was seen.
+13. **Checker disclosure (27-28 September 2026): a second context note to
+    Jacob, sent before he set his confidences.** It contained:
+    - the final test rules;
+    - the final rung and LQS tables;
+    - the title-change arithmetic: the drift a one-off jump J adds to T1's
+      slope, 0.30J or 0.40J over 4 Junes and 0.14J or 0.23J over 6 Junes;
+    - the site's scorecard record;
+    - compound-probability arithmetic.
+
+    No confidence number was proposed to him.
+
 
 ## 2. Item by item
 
@@ -334,6 +345,28 @@ full-time employed residents is on data.gov.sg as an annual series
   (`raw/RETRIEVED.txt`). No public series splits industry employment by
   residence, so the resident-for-foreign swap in T4 cannot be checked.
 - **W2d.** Employment by sector at year-end, context only.
+- **W2e. MOM Labour Force Survey, employed residents by occupation**
+  (design chat `817d62a`; 15 files in `raw/`, checker verified all 270
+  md5s). Searched for T4 and judged under the rules fixed before it arrived,
+  from its labels and coverage only, no value opened:
+  - the finest level is 2-digit SSOC (Protective Services Workers; Cleaners
+    and Related Workers; Agricultural, Fishery and Related Labourers),
+    2008-2022;
+  - 2008, 2011 and 2014 are in PDF reports only; 2009 is in SSOC 2005, with
+    no protective services row;
+  - the 2-digit groups also hold police and civil defence officers, and
+    domestic cleaners, whom no ladder covered.
+
+  Coarser than the 4-digit unit group THESIS requires, so it does not
+  qualify. It is used in no test, chart or statement of the result.
+- **Series (i), a count of workers by services industry: does not exist.**
+  SingStat M601481 carries establishments, operating revenue, operating
+  expenditure, gross operating surplus and value added only; M601501 carries
+  remuneration only, and only for SSIC 68-82 combined.
+- **Result: T4 is not scored** (THESIS section 4, rule 3). Singapore
+  publishes no yearly count of cleaners, security officers or landscape
+  workers, so whether the ladders cost jobs cannot be tested from public
+  data. THESIS names this as a finding (section 9).
 
 **Not found.** A public series of resident head counts by detailed occupation
 (cleaners, security guards, gardeners) per year. The OWS tables for June

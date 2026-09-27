@@ -57,6 +57,8 @@ def body(t, T):
         else:
             lines.append("- not computable: fewer than two start-window Junes, or no end-window value.")
     elif t == "T4":
+        if T.get("T4_reason"):
+            lines.append(f"- {T['T4_reason']}")
         lines.append(f"- series: {T.get('T4_series')} (priority rule, THESIS section 4).")
         for g in L.COVERED:
             if T.get(f"T4_{g}_status"):
@@ -94,7 +96,10 @@ def main():
     md.append("")
     md.append(f"**{T['verdict']}**")
     md.append("")
-    md.append(f"{WEAK}")
+    if T["T4_outcome"] == "NOT SCORED":
+        md.append(L.GAP)
+    else:
+        md.append(WEAK)
     md.append("")
     md.append("- The pay test leans the other way (T2): in-house workers dilute the covered side and "
               "the LQS lifted the comparison side, so a pay gain found is strong evidence and none "
@@ -103,7 +108,8 @@ def main():
               "too, so \"kept pace\" is weak evidence and \"fell behind\" is strong evidence.")
     md.append("- The record cannot say what a national floor would have done in jobs no ladder "
               "reached.")
-    md.append(f"- T4 read the {T.get('T4_series')} series.")
+    md.append(f"- T4 read the {T.get('T4_series')} series." if T.get("T4_series") != "none" else
+              "- T4 was not scored: no public series qualifies (THESIS section 4).")
     tests = sorted(("T1", "T2", "T3", "T4", "T5"), key=lambda t: (ORDER[T[f"{t}_outcome"]], t))
     md.append("")
     md.append("## Tests that did not survive")
@@ -147,7 +153,7 @@ def main():
     md.append(f"- Scored: {T['scored_tests'] or 'none'} ({p(T, 'n_scored')}); held: {p(T, 'n_held')}.")
     for t in ("T1", "T2", "T3", "T4", "T5"):
         c = T.get(f"conf_{t}")
-        cs = c if c == "[JACOB]" else "{:.0f}%".format(100 * float(c))
+        cs = c if c in ("[JACOB]", "not scored") else "{:.0f}%".format(100 * float(c))
         md.append(f"- {t}: {T[f'{t}_outcome']}; confidence at seal {cs}.")
     md.append(f"- Expected number holding: {p(T, 'expected_held')}. Brier score: {p(T, 'brier')}.")
     md.append("")

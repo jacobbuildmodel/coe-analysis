@@ -77,11 +77,19 @@ Revision history before the seal:
   tested on invented data only: the computation details they settle, listed
   at the end of section 6; T3's middle settled as W1c excluding employer
   CPF (the OWS tables carry no all-occupations line).
+- This revision, after the T4 search ended (design chat `817d62a`; checker
+  verified all 270 md5s), applying the rules already fixed, no value opened:
+  - series (i) does not exist and series (ii) does not qualify, so **T4 is
+    not scored** (rule 3 of section 4). It stays below as the design that
+    could not be run, with the reason;
+  - Part A of the verdict can no longer separate the two models (section 8);
+  - four predictions are scored, and Jacob sets four confidences;
+  - the gap is named as a finding (section 9).
 
 Markers: no `PENDING` marker remains. Every link, rung, date and industry
 line is settled from documents in `raw/`, never from a wage or employment
-value, or is covered by a rule fixed now. One item is open and blocks the
-seal: which T4 series qualifies, under rules already fixed (section 10). `[JACOB]` = the confidence Jacob
+value, or is covered by a rule fixed now. Nothing is open but Jacob's four
+confidences (section 10). `[JACOB]` = the confidence Jacob
 sets at the seal. "Researcher's proposal" = the researcher's confidence, kept
 for the record.
 
@@ -102,7 +110,8 @@ Opposition parties and many economists argue for one national floor instead.
 
 **The yardstick is real pay at the bottom of covered jobs** (the 25th
 percentile of monthly gross wage, OWS, deflated by CPI), **and whether
-employment in those jobs held up.**
+employment in those jobs held up.** The second half cannot be tested from
+public data (section 9, T4).
 
 **What this must not become.** Not a case for or against a minimum wage, and
 not a ranking of two policies for anyone to act on. It is a reading of what
@@ -146,9 +155,11 @@ jobs look like.
 | Employment where the floor binds | competitive: falls; monopsony: holds or rises | the same, but only in the covered jobs |
 
 Singapore ran the tailor, not the uniform, so the first column is never
-observed directly. The record can show three things. Did the tailor's suits
-fit (did pay rise where the ladder was hung)? Did the jobs survive the
-fitting (competitive or monopsony)? Did the rest keep pace?
+observed directly. The record was meant to show three things. Did the
+tailor's suits fit (did pay rise where the ladder was hung)? Did the jobs
+survive the fitting (competitive or monopsony)? Did the rest keep pace? The
+second cannot be tested from public data (section 9, T4); the record shows
+the first and the third.
 
 ## 3. Why this is answerable, and how far
 
@@ -257,6 +268,7 @@ Reasons, stated rather than assumed:
 | W2a | Key indicators by detailed services industry: establishments, operating revenue, operating expenditure, gross operating surplus, value added. **No count of workers** (label listing) | SingStat M601481 via data.gov.sg; group-level companion table | detailed 2010-2024; group 2000-2024 | in `raw/`, labels listed, values unopened |
 | W2b | Employed residents by occupation | LFS, data.gov.sg | `raw/RETRIEVED.txt` | in `raw/`, values unopened |
 | W2c | Employment by industry AND residential status | -- | **does not exist**: no public series splits industry employment by residence | -- |
+| W2e | Employed residents by occupation, MOM Labour Force Survey tables | MOM | 2008-2022; 2008, 2011 and 2014 in PDF only; finest level 2-digit SSOC | in `raw/`; **does not qualify for T4** (section 4); not used in any test, chart or statement of the result |
 | W3 | PWM start dates and entry-rung schedules | MOM, NEA, SPF, NParks, BCA; S 240/2014 | 2012-2029 | in `raw/`; rungs tabulated at T5 |
 | W3b | Local Qualifying Salary (earlier the FTE salary threshold) | MOM pages and archived MOM FAQs, 2016-2021 | S$1,000 (by Nov 2016) to S$1,400 (1 Jul 2020) | in `raw/`; table at T5 |
 | W4a/b | CPI all items (M213801); CPI lowest 20% of households (M213911); 2024 = 100, annual | SingStat API, JSON | 1961-2025; 1993-2025 | in `raw/`, values unopened |
@@ -419,8 +431,7 @@ Reasons, stated rather than assumed:
     same five indicators over these lines: Establishments, Operating
     Revenue, Operating Expenditure, Gross Operating Surplus and Value Added.
     Neither counts workers. W2d (employment by 13 broad sectors) cannot
-    isolate the three industries. So no file in `raw/` yet holds the series
-    T4 needs. The design chat is searching (section 10).
+    isolate the three industries.
 - **T4's employment series, by priority, fixed now** (checker's decision on
   `d292fe9`), before any candidate file arrives:
   1. **Main: a count of workers by industry** for the lines named above
@@ -435,6 +446,22 @@ Reasons, stated rather than assumed:
   3. **Neither qualifies: T4 is not scored.** It drops out of the count and
      the Brier score, and Part A can no longer separate the two models: with
      T2 surviving it reads "the record cannot tell the two models apart".
+
+  **Outcome of the search (design chat `817d62a`; rules applied, no value
+  opened): neither series qualifies, so T4 is not scored (rule 3).**
+  - **Series 1 does not exist.** SingStat publishes no count of workers at
+    any services-industry level: M601481 carries the five indicators only
+    (section above), and M601501 carries remuneration only, and only for
+    SSIC 68-82 combined.
+  - **Series 2 does not qualify.** MOM's finest table of employed residents
+    by occupation is 2-digit SSOC (Protective Services Workers; Cleaners and
+    Related Workers; Agricultural, Fishery and Related Labourers), 2008-2022,
+    with 2008, 2011 and 2014 in PDF only and 2009 in SSOC 2005 without a
+    protective services row. That is coarser than the 4-digit unit group the
+    rule requires. The 2-digit groups also hold police and civil defence
+    officers, and domestic cleaners, whom no ladder covered.
+  - The 2-digit series (W2e) is used in no test, chart or statement of the
+    result.
 
   **"Qualifies"** means: it covers the needed lines at the needed detail,
   every post-period year of at least one covered industry, and at least 4
@@ -527,8 +554,10 @@ One point is particular to Singapore. A floor that covers only resident
 workers, in jobs that also employ foreign workers under quota, invites
 employers to swap one for the other where the quota leaves room. A national
 floor with the same resident-only scope would share that gap. So the question
-the record can answer is narrow: in the jobs where a floor was set, did
-employers behave as if they had wage-setting power?
+the record was meant to answer is narrow: in the jobs where a floor was set,
+did employers behave as if they had wage-setting power? The jobs half of that
+cannot be tested from public data (section 9), so the record answers only
+whether pay rose there.
 
 Sources: J. Robinson (1933), *The Economics of Imperfect Competition*;
 G. Stigler (1946), "The Economics of Minimum Wage Legislation", *American
@@ -756,8 +785,14 @@ The tailor's extreme says jobs without a ladder are left behind.
   occupation-level percentiles for retail and food service jobs can lag
   through part-time mix and churn.
 
-### T4. Did the jobs survive the fitting? (competitive or monopsony)
+### T4. Did the jobs survive the fitting? (competitive or monopsony) -- NOT SCORED
 
+- **Not scored: no series qualifies (section 4, rule 3).** Singapore
+  publishes no yearly count of workers by services industry, and MOM's
+  finest resident occupation table is 2-digit SSOC, coarser than the 4-digit
+  unit group required. T4 leaves the count, the Brier score and the
+  confidences. The design below is kept as written, as the test that could
+  not be run; `11_tests.py` reports it as NOT SCORED with this reason.
 - **Series, fixed now (section 4):** a count of workers by industry if one
   qualifies; otherwise LFS employed residents by detailed occupation;
   otherwise T4 is not scored. When both qualify, the LFS series is a
@@ -801,12 +836,8 @@ The tailor's extreme says jobs without a ladder are left behind.
 - **One lean the other way:** security. Its industry transformation plan
   pushed technology in place of guards in the late 2010s, which could shrink
   guard numbers for reasons unrelated to pay. Named, not separated.
-- **Confidence at seal: `[JACOB]`.** Researcher's proposal:
-  60%. Hard-to-cut demand and foreign workers in
-  the count both favour holding, but security's technology push could
-  produce a relative fall of 5 log points in one scored industry. Proposed
-  before the series was known; a resident-only series would weaken the
-  second reason.
+- **Confidence: none. T4 is not scored**, so Jacob sets no number for it.
+  The researcher's proposal (60%) is withdrawn and kept only for the record.
 
 ### T5. The first rung shows up in the survey
 
@@ -1031,10 +1062,12 @@ The headline question asks "minimum wage or PWM", but the record can test
 only the ladder directly. So the verdict has two parts in one sentence
 (checker review of `cb9fe70`, item 4):
 
-- **Part A, the ladder:** which model the covered jobs look like, from T2 and
-  T4, gated by T1. T4's "every scored industry" means the industries its
-  4-year minimum admits (section 5); any industry it does not admit is
-  described beside the verdict and does not enter it.
+- **Part A, the ladder:** what the ladder did to pay at the bottom of the
+  jobs it covered, from T2, gated by T1. It was designed to say which model
+  the covered jobs look like, from T2 and T4. **T4 is not scored** (no public
+  series qualifies, section 4), so the two branches that needed it,
+  "covered jobs look more like monopsony" and "covered jobs look more like a
+  competitive market", cannot occur.
 - **Part B, the rest of the bottom:** whether uncovered low-wage jobs kept
   pace with the middle, from T3. This is the evidence on the minimum-wage
   side of the argument: a floor for everyone is the answer to a bottom that
@@ -1045,15 +1078,12 @@ only the ladder directly. So the verdict has two parts in one sentence
 - **"the record cannot say what the ladder did"**: T1 fails for every group
   or cannot be run. Stated plainly: covered and comparison jobs were already
   drifting apart, or there are too few years before the ladders to tell.
-- **"covered jobs look more like monopsony"**: T2 survives **and** every
-  scored industry in T4 shows a relative employment change of zero or more.
-  Pay rose where the floor bound, and jobs did not fall.
-- **"covered jobs look more like a competitive market"**: T2 survives
-  **and** T4 fails. Pay rose and jobs fell.
 - **"the ladder did not measurably lift pay at the bottom of the jobs it
   covered"**: T2 fails.
-- **anything else: "the record cannot tell the two models apart"**,
-  published as plainly as the others.
+- **anything else, including T2 surviving: "the record cannot tell the two
+  models apart"**, published as plainly as the others. When T2 survives,
+  the article says beside it that pay rose where the ladder was hung, and
+  that whether jobs were lost cannot be tested (section 9).
 
 **Part B. Exactly one of these:**
 
@@ -1066,23 +1096,16 @@ T3 does not read the covered groups, so T1 does not gate it. T5 is scored
 for calibration and reported beside the verdict; it does not enter it.
 
 **The verdict sentence is Part A, a semicolon, then Part B**, for example:
-"Covered jobs look more like monopsony; the rest of the bottom fell behind."
+"The record cannot tell the two models apart; the rest of the bottom fell
+behind."
 Both parts are printed whatever they say. Neither is dropped because the
 other is more striking.
 
-**Weak-evidence sentence, carried next to the verdict in the article,
-verbatim:** "A monopsony-like result is weak evidence and a competitive result
-is strong evidence, because the design leans toward the monopsony reading."
-The reasons, stated now:
-
-- demand for cleaning, guarding and grounds upkeep is hard to cut;
-- if T4 reads a count of workers by industry, the job counts include
-  foreign workers whom the ladders did not cover.
-
-Both keep jobs looking steady whether or not the floor cost resident jobs.
-If T4 reads LFS employed residents instead, only the first reason holds;
-the sentence is carried unchanged, and the article says which series T4
-read.
+**Weak-evidence sentence.** The sentence drafted for T4 ("A monopsony-like
+result is weak evidence and a competitive result is strong evidence, because
+the design leans toward the monopsony reading.") is not carried: with T4 not
+scored, neither result can occur. **In its place the article carries,
+verbatim, beside the verdict:** "Singapore publishes no yearly count of cleaners, security officers or landscape workers, so whether the ladders cost jobs cannot be tested from public data."
 
 **Two further leans, stated beside the verdict in the article:**
 
@@ -1100,23 +1123,31 @@ reached.
 
 **Confidences and the scorecard.**
 
-- Five predictions are scored for calibration: T1, T2, T3, T4, T5.
+- Four predictions are scored for calibration: T1, T2, T3, T5. T4 is not
+  scored (section 4) and sits outside the count, the Brier score and the
+  confidences.
 - A prediction "holds" when its survive-if condition is met.
 - "Inconclusive" counts as not holding.
-- A test reported as not scored (T2 and T5 when T1 removes every group; T4
-  when no series qualifies, or every admitted industry fails its pre-trend
-  condition) drops out of both the
-  count and the Brier score, and the article says so. T4 is scored on the
-  industries its 4-year minimum admits, or not at all if no series
-  qualifies (section 4).
+- A test reported as not scored (T2 and T5 when T1 removes every group; T3
+  when it cannot be computed) drops out of both the count and the Brier
+  score, and the article says so.
 
-Expected number holding: from Jacob's confidences, written in at the seal.
-Under the researcher's proposals it would be 2.55 of 5 (0.40 + 0.50 + 0.60 +
-0.60 + 0.45). The predictions are correlated (T1 gates T2 and
-T5; T2 and T5 read the same wages), so the actual count spreads wider than
-five independent calls would.
+Expected number holding: from Jacob's four confidences, written in at the
+seal. Under the researcher's proposals it would be 1.95 of 4 (0.40 + 0.50 +
+0.60 + 0.45). The predictions are correlated (T1 gates T2 and T5; T2 and T5
+read the same wages), so the actual count spreads wider than four
+independent calls would.
 
 ## 9. What would prove the framing wrong, and what it leaves out
+
+- **What this does not explain: whether the ladders cost jobs.** A finding
+  of the search, before any value was opened: Singapore publishes no yearly count of cleaners, security officers or landscape workers, so whether the ladders cost jobs cannot be tested from public data. SingStat's
+  services survey counts establishments, revenue, costs and value added by
+  industry, but not workers. MOM's resident employment tables stop at
+  2-digit occupation groups, which mix cleaners with domestic cleaners and
+  security officers with police and civil defence officers. So the half of
+  the question about jobs (T4, and the monopsony-or-competitive reading of
+  Part A) is left open, and the article says so in those words.
 
 - **OWS coverage.** Settled: spreadsheets for every June 2009-2025, so every
   group has its pre-period (section 5).
@@ -1227,19 +1258,15 @@ Covered by a rule fixed now, not by a further search:
    with the 4-year minimum per industry, and "not scored" if no series
    qualifies (section 4, section 5, T4).
 
-**Open before the seal: which T4 series qualifies.** The label listing
-(checker review of `fdb1bf5`) showed that both W2a files carry
-establishments, operating revenue, operating expenditure, gross operating
-surplus and value added by industry, and no count of workers; W2d has only 13
-broad sectors. Decision (checker, with Jacob): the design chat searches for a
-count of workers by industry and for LFS employed residents by detailed
-occupation. The rules for whatever arrives are fixed now (section 4, section
-5, T4). When the search ends, each candidate's labels and coverage are
-listed, with no value opened, and the rules name the series, or mark T4 not
-scored. No rule changes after a file arrives.
+**Settled: T4 is not scored.** The search ended (design chat `817d62a`,
+checker verified all 270 md5s). Series 1 does not exist; series 2 is 2-digit
+SSOC, coarser than the rule requires (section 4). Rule 3 applies: T4 leaves
+the count, the Brier score and the confidences, Part A cannot separate the
+two models (section 8), and the gap is a finding (section 9). No rule
+changed.
 
-Also open at the seal: the five confidences (`[JACOB]`), which Jacob sets,
-through the checker. They are written as "Confidence at seal: NN%", the form
+**Open at the seal: four confidences** (T1, T2, T3, T5; `[JACOB]`), which
+Jacob sets, through the checker. They are written as "Confidence at seal: NN%", the form
 `11_tests.py` reads.
 
 **The seal commit records** the md5 of THESIS.md, the occupation map and
