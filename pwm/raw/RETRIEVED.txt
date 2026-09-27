@@ -1,0 +1,318 @@
+RETRIEVED.txt -- pwm piece, raw/ inventory
+
+STATE ON 27 September 2026 (SGT): NOTHING RETRIEVED. raw/ holds no data file.
+
+Every download attempt from the researcher session failed at the network
+layer, not at the source. The sandbox egress proxy refused CONNECT (HTTP 403,
+"policy denial") to each host tried, on 27 September 2026, with curl through
+the session proxy; the session's web-fetch tool was refused for
+www.mom.gov.sg with the same policy block:
+
+  data.gov.sg                     api-open.data.gov.sg
+  api-production.data.gov.sg      stats.mom.gov.sg
+  www.mom.gov.sg                  tablebuilder.singstat.gov.sg
+  www.singstat.gov.sg             sso.agc.gov.sg
+  www.nea.gov.sg                  www.police.gov.sg
+  www.bca.gov.sg                  www.gebiz.gov.sg
+  www.parliament.gov.sg           sprs.parl.gov.sg
+  www.ntuc.org.sg                 web.archive.org
+  www.gov.uk                      www.lowpay.gov.uk
+  www.mwc.org.hk                  www.destatis.de
+  www.nber.org                    www.aeaweb.org
+  ideas.repec.org                 doi.org
+  www.researchgate.net
+
+No md5 can be recorded for a file that was never received, so none is
+recorded here. Every source below was located through a web search index
+(27 September 2026). Titles and URLs come from the index; anything the index
+said about coverage is marked UNVERIFIED and is re-checked from the file.
+
+The files below are for the design chat to download from Jacob's machine and
+upload to pwm/raw/ on branch pwm-wip. Suggested filenames are given so that
+00_coverage.py and later scripts find them. After upload, run
+
+    python3 pwm/00_coverage.py
+
+and paste its output (bytes, md5, and for CSVs: rows, columns, first and last
+period; for XLSX: sheet names and row/column counts only) into the RECEIVED
+section at the end of this file, with the download date and the "last
+updated" date shown on each page. Nobody opens a sheet in a spreadsheet
+program before THESIS.md is sealed: a sheet opened is a sheet read.
+
+===============================================================================
+W1  MOM OCCUPATIONAL WAGES, BY OCCUPATION AND INDUSTRY, ANNUAL (JUNE)
+===============================================================================
+
+Source: Occupational Wage Survey (OWS), Manpower Research & Statistics
+Department (MRSD), MOM, "supplemented with data from Administrative Records".
+Reference month June. Full-time RESIDENT employees in private-sector
+establishments with at least 25 employees. Basic and gross monthly wage,
+excluding bonuses; 25th percentile, median, 75th percentile (from the search
+index; column set UNVERIFIED until the files are in).
+
+W1a  Per-year tables, stats.mom.gov.sg (the long run; the key file set)
+     Page per year. Pages found by search:
+       https://stats.mom.gov.sg/Pages/Occupational-Wages-Tables2025.aspx
+       https://stats.mom.gov.sg/Pages/Occupational-Wages-Tables2024.aspx
+       https://stats.mom.gov.sg/Pages/Occupational-Wages-Tables2016.aspx
+       https://stats.mom.gov.sg/Pages/Occupational-Wages-Tables-2012.aspx
+         (2012 tables, released 28 June 2013, XLSX, by sex, establishment
+         size, age and industry, per the index)
+       https://stats.mom.gov.sg/Pages/Report-on-Wages-in-Singapore-2011-Part-III-Occupational-Wages-from-Occupational-Wage-Survey.aspx
+         (2011, released 29 June 2012, as Part III of Report on Wages)
+     Other years: the two page-name patterns above
+       .../Pages/Occupational-Wages-Tables{YYYY}.aspx
+       .../Pages/Occupational-Wages-Tables-{YYYY}.aspx
+     and, before 2011, the "Report on Wages in Singapore {YYYY}" publication,
+     Part III. Library index:
+       https://stats.mom.gov.sg/Publications/Pages/Publications.aspx?Types=Charts%2CTables
+     WANTED: every year available, earliest to June 2025. Earliest year
+     confirmed by search: 2011. Earlier years UNVERIFIED. The pre-trends test
+     needs at least four June surveys before October 2012 for cleaning, so
+     2008 or earlier is the target (THESIS section 5).
+     For each year take:
+       (i)  the main table: wages by occupation, all industries
+            -> raw/w1_ows_{YYYY}_occupation.xlsx
+       (ii) the table by industry (occupation within industry), if offered
+            -> raw/w1_ows_{YYYY}_industry.xlsx
+       (iii) the year's "Coverage and Methodology" PDF
+            -> raw/w1_ows_{YYYY}_method.pdf
+     Method note, 2024 edition, found:
+       https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2024/Coverage-and-Methodology-of-OWS-2024.pdf
+     Source and coverage page:
+       https://stats.mom.gov.sg/SL/Pages/Occupational-Wages-Source-and-Coverage.aspx
+
+W1b  data.gov.sg copies (check first whether any is multi-year)
+     d_ec5d0e4ebdd2baee2a5aa1322a3156a5  Occupational Wages by Industry
+       https://data.gov.sg/datasets/d_ec5d0e4ebdd2baee2a5aa1322a3156a5/view
+       years UNVERIFIED; if it runs across years it may replace W1a(ii)
+       -> raw/w1b_ows_by_industry.csv
+     d_9917e751f7498502f70052a940a3f312  Resident Occupational Wages, June 2024
+       https://data.gov.sg/datasets/d_9917e751f7498502f70052a940a3f312/view
+       -> raw/w1b_ows_2024.csv   (cross-check of W1a for 2024 only)
+     d_670c3c6cecbcd24e48034a3428bd306e  Resident Occupational Wages within
+       each Major Occupational Group by Industry, June 2024
+       https://data.gov.sg/datasets/d_670c3c6cecbcd24e48034a3428bd306e/view
+       -> raw/w1b_ows_2024_by_industry.csv
+     old-portal slug, possibly the multi-year predecessor of the above:
+       https://data.gov.sg/dataset/monthly-basic-and-gross-wages-of-selected-occupations-within-major-occupational-groups-by-industry
+       -> raw/w1b_ows_selected_by_industry.csv
+     Not needed: by sex (d_d1e7ac04e9e121c9bbced9cb4a7e91d5), by establishment
+     size (d_7d528712f1fd454ac6ca32fe06fe8f12), by age and size
+     (d_6750b687badf6e0c7a93a7a2e2712b2a).
+
+W1c  The middle, for T3 (Comprehensive Labour Force Survey, June)
+     d_9cd9c40f22a4e45cac8f8b9d895fd5ce  Median Gross Monthly Income From
+       Employment of Full-Time Employed Residents (Total)
+       https://data.gov.sg/datasets/d_9cd9c40f22a4e45cac8f8b9d895fd5ce/view
+       -> raw/w1c_lfs_median_income.csv
+       Whether it includes employer CPF: UNVERIFIED; take the excluding-CPF
+       version if the page offers both.
+
+===============================================================================
+W2  EMPLOYMENT BY OCCUPATION OR INDUSTRY
+===============================================================================
+
+W2a  Workers by detailed industry, all services industries, annual (SingStat)
+     d_38d62de582eb7ee2c58d1bba4cd4132d  Key Indicators By Detailed Industry
+       In All Services Industries, Annual
+       https://data.gov.sg/datasets/d_38d62de582eb7ee2c58d1bba4cd4132d/view
+       https://tablebuilder.singstat.gov.sg/table/TS/M601481
+       -> raw/w2a_services_detailed_industry.csv
+       Classified by SSIC, recently moved from SSIC 2020 to SSIC 2025 (index).
+       Excludes own-account workers (hawkers, stall holders, freelancers,
+       taxi and private-hire drivers). Includes foreign workers. Years and the
+       detail level for cleaning, security and landscape activities UNVERIFIED.
+       Group level, for cross-check:
+     d_a99730f2ed37e5dd4dba9d6a779fdc9f  Key Indicators By Industry Group In
+       All Services Industries, Annual
+       https://data.gov.sg/datasets/d_a99730f2ed37e5dd4dba9d6a779fdc9f/view
+       -> raw/w2a_services_industry_group.csv
+
+W2b  Resident employment by occupation (Labour Force Survey, June)
+     d_3ba99a6cc9f643bacb63bdab296d7bff  Employed Residents Aged 15 Years &
+       Over by Occupation, Employment Status And Sex
+       https://data.gov.sg/datasets/d_3ba99a6cc9f643bacb63bdab296d7bff/view
+       -> raw/w2b_lfs_occupation_status.csv
+     d_9392faa714d5e5809b07b10fbff2993e  ... by Occupation, Age And Sex
+       https://data.gov.sg/datasets/d_9392faa714d5e5809b07b10fbff2993e/view
+       -> raw/w2b_lfs_occupation_age.csv
+       Classified by SSOC 2024, earlier years mapped to it (index). Occupation
+       detail level UNVERIFIED; if it is only the nine major groups, it cannot
+       isolate cleaners or guards and is kept as context only.
+
+W2c  Resident versus foreign employment change by industry (substitution check)
+     d_dda4a6de2712669acbbf161653e96a73  Employment Change By Industry And
+       Residential Status, Annual (December to December)
+       https://data.gov.sg/datasets/d_dda4a6de2712669acbbf161653e96a73/view
+       -> raw/w2c_employment_change_residential.csv
+
+W2d  Context only
+     d_d2518fed6cc2014f0cd061b4570a9592  Employment (Persons) By Sector
+       (As At Year-End), Annual  (SSIC 2020 from 2008 onward, per index)
+       https://data.gov.sg/datasets/d_d2518fed6cc2014f0cd061b4570a9592/view
+       -> raw/w2d_employment_by_sector.csv
+     MOM employment summary table:
+       https://stats.mom.gov.sg/Pages/employment-Summary-Table.aspx
+
+===============================================================================
+W3  PWM MANDATORY START DATES AND WAGE LEVELS, BY SECTOR (PRIMARY ONLY)
+===============================================================================
+
+Save each as raw/w3_{sector}_{short-name}.pdf (or .html saved as PDF).
+Dates below are as the search index quoted the primary page; every date is
+re-read from the saved document before the seal.
+
+Overview
+  https://www.mom.gov.sg/employment-practices/progressive-wage-model
+  https://www.mom.gov.sg/employment-practices/progressive-wage-model/expansion-of-progressive-wage-approach-and-coverage
+  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/lww/tripartite-workgroup-on-lower-wage-workers-report.pdf
+  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/twg-lww-progress-through-solidarity-dynamism.pdf
+  https://www.mom.gov.sg/newsroom/press-releases/2021/0830-government-accepts-twg-lww-recommendations
+    (extension to IN-HOUSE cleaners, guards and landscape workers from
+    1 September 2022)
+
+Cleaning  (licensing: NEA, Environmental Public Health Act)
+  https://www.mom.gov.sg/employment-practices/progressive-wage-model/cleaning-sector
+  https://www.mom.gov.sg/-/media/mom/documents/press-releases/2012/tripartiteclusterforcleaners_report-(191012).pdf
+    (Tripartite Cluster for Cleaners report, 19 October 2012: the first
+    proposal; PWM voluntary from 2012)
+  https://sso.agc.gov.sg/SL/EPHA1987-S240-2014
+    (S 240/2014, Environmental Public Health (Cleaning Business)
+    Regulations 2014: the gazetted licensing instrument)
+  https://www.nea.gov.sg/our-services/public-cleanliness/cleaning-industry/cleaning-business-licence
+  https://www.nea.gov.sg/our-services/public-cleanliness/cleaning-industry/cleaning-business-licence/cleaning-business-licence-faq
+  https://www.mse.gov.sg/latest-news/opening-speech-for-second-reading-of-epha-bill/
+  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/2021-col-order-cleaning-pwm.pdf
+    (Commissioner for Labour order under EPHA s.80H(2): the wage schedule)
+  https://www.mom.gov.sg/newsroom/press-releases/2017/0630-commissioner-for-labour-adopts-updated-progressive-wage-model-recommendations-by-the-tripartite-cluster-for-cleaners
+  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/tcc-report-7-june-2021.pdf
+  https://www.mom.gov.sg/newsroom/press-releases/2023/0630-col-order-for-cleaning-pwm
+  Dates per index: licensing regime in force 1 April 2014; PWM wages for
+  resident cleaners under new contracts from 1 April / 1 September 2014 (the
+  secondary account is not consistent); ALL resident cleaners of licensed
+  businesses by 1 September 2015. PWM bonus from 1 January 2020.
+  Secondary, not a source for any date: e2i/NTUC release "More than 1,000
+  cleaning businesses licensed" (https://www.e2i.com.sg/news/more-than-1000-cleaning-businesses-licensed/).
+
+Security  (licensing: Police Licensing and Regulatory Department)
+  https://www.mom.gov.sg/employment-practices/progressive-wage-model/security-sector
+  https://www.police.gov.sg/E-Services/Apply-for-Security-Officer-Licence/Security-Progressive-Wage-Model-Requirements
+  https://www.police.gov.sg/~/media/spf/files/e-services/wda_se_dl_brochure.pdf
+    ("By 1 September 2016, companies seeking to renew their annual ...
+    licence ... must meet the ... PWM")
+  https://www.police.gov.sg/~/media/spf/files/e-services/progressive%20wage%20model/5_a_presentation_to_security_service_buyers_on_pwm.pdf
+  https://www.police.gov.sg/-/media/Spf/Files/E-services/PI/Security-Officer/SO-Licensing-Conditions-1-Jan-2018.pdf
+  https://www.mom.gov.sg/maintenance/-/media/mom/documents/employment-practices/pwm/stc-recommendations-on-pwm-and-ote-(2017).pdf
+  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/stc-recommendations-16-nov-2018.pdf
+  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/progressive-wage-portal/stc-report-and-recommendations-on-wages-dec-2024.pdf
+  Dates per index: Security Tripartite Cluster report October 2014
+  (first proposal; the October 2014 report itself not yet located);
+  mandatory licensing condition from 1 September 2016.
+
+Landscape  (NParks Landscape Company Register: registration and procurement,
+            not a statute)
+  https://www.mom.gov.sg/employment-practices/progressive-wage-model/landscape-sector
+  https://www.nparks.gov.sg/news/2015/4/implementation-of-progressive-wage-model-for-landscape-sector-to
+  https://www.nparks.gov.sg/cuge/new-and-events/news-listing/implementation-of-progressive-wage-model
+  https://cuge.nparks.gov.sg/landscape-company-register/lcr-requirements-and-faqs/
+  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/recommendations-of-the-tripartite-cluster-for-landscape-industry-on-the-progressive-wage-model-repor.pdf
+  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/recommendations-tcl-2021.pdf
+  Dates per index: announced April 2015 (NParks news); PWM wage
+  requirement for resident landscape maintenance workers of LCR-registered
+  companies from June 2016 (exact day PENDING).
+
+Lift and escalator  (BCA registration workheads RW02B, RW03B)
+  https://www.mom.gov.sg/employment-practices/progressive-wage-model/lift-and-escalator-sector
+  https://www1.bca.gov.sg/safety-and-standards/lifts-escalators-and-mechanised-car-parking-systems/progressive-wage-model-pwm/
+  https://www1.bca.gov.sg/resources/newsroom/bca-mom-joint-media-release-government-accepts-recommendations-to-uplift-lift-escalator-technicians-with-sustained-wage-increases-and-annual-bonus/
+  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/lift_tcl-report-and-recommendations-le.pdf
+  https://www1.bca.gov.sg/docs/default-source/docs-corp-news-and-publications/circulars/commencement-of-part-5b-of-the-building-control-act-1989-(the-act-)-and-the-building-control-(regulating-fixed-installation-contractors)-regulations-2022.pdf?sfvrsn=6e90fcce_4
+  Dates per index: voluntary from 2018; government tenders only to PWM
+  firms from May 2019; mandatory BCA registration requirement from 2022
+  (exact day PENDING); escalator technicians added 2022.
+
+Retail  (enforced through work pass eligibility)
+  https://www.mom.gov.sg/employment-practices/progressive-wage-model/retail-sector
+  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/retail_tcr-report-and-recommendations.pdf
+  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/retail_sectoral-pwm-retail-flyer.pdf
+  Date per index: 1 September 2022.
+
+Food services  (work pass eligibility)
+  https://www.mom.gov.sg/employment-practices/progressive-wage-model/food-services-sector
+  https://www.mom.gov.sg/-/media/mom/documents/press-releases/2023/food-services-pwm-infographic_fa.pdf
+  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/tcf-recommendations_2023.pdf
+  Date per index: 1 March 2023.
+
+Waste management  (NEA licensing and work pass eligibility)
+  https://www.mom.gov.sg/employment-practices/progressive-wage-model/waste-management-sector
+  https://www.mom.gov.sg/-/media/mom/documents/press-releases/2022/waste-management-pwm.pdf
+  https://www.mom.gov.sg/newsroom/press-releases/2021/0126-new-progressive-wage-model-for-waste-management-sector
+  Date per index: 1 July 2023 (one index summary said only "2023").
+
+Occupational Progressive Wages, administrators and drivers  (work pass)
+  https://www.mom.gov.sg/employment-practices/progressive-wage-model/expansion-of-progressive-wage-approach-and-coverage
+  Date per index: 1 March 2023.
+
+Local Qualifying Salary (not a PWM, but a wage floor for all local staff of
+firms that hold work passes; it overlaps the comparison jobs from 2022)
+  https://www.mom.gov.sg/employment-practices/progressive-wage-model/local-qualifying-salary
+  https://www.mom.gov.sg/-/media/mom/documents/budget2022/updates-to-ep-framework.pdf
+  https://www.mom.gov.sg/-/media/mom/documents/budget2023/foreign-workforce-updates-factsheet.pdf
+
+Government co-funding of wage increases (affects covered and comparison
+jobs alike; dated for the record)
+  Progressive Wage Credit Scheme, 2022-2028:
+  https://www.iras.gov.sg/schemes/disbursement-schemes/progressive-wage-credit-scheme
+  Wage Credit Scheme (from 2013):
+  https://www.iras.gov.sg/docs/default-source/media-releases/annex_wcs-factsheet.pdf?Status=Master&sfvrsn=232c54a_8
+
+===============================================================================
+W4  CPI, FOR REAL PAY (SINGSTAT)
+===============================================================================
+
+W4a  d_dcb352661fb449c4a4c0ab23aa8d6399  Consumer Price Index (CPI), 2019
+       As Base Year, Annual
+       https://data.gov.sg/datasets/d_dcb352661fb449c4a4c0ab23aa8d6399/view
+       https://tablebuilder.singstat.gov.sg/table/TS/M212882
+         (index labels this table "CPI, 2019 As Base Year"; whether it is the
+         monthly or the annual table is UNVERIFIED)
+       -> raw/w4a_cpi_annual.csv
+W4b  CPI by household income group, lowest 20%, 2019 as base year, annual
+       https://data.gov.sg/dataset/consumer-price-index-cpi-by-household-income-group-lowest-20-annual
+       https://tablebuilder.singstat.gov.sg/table/TS/M213921
+       -> raw/w4b_cpi_lowest20.csv   (sensitivity for real levels)
+
+===============================================================================
+W5  MINIMUM WAGES ELSEWHERE (CONTEXT ONLY; NO FIGURE ENTERS A TEST)
+===============================================================================
+
+Hong Kong, statutory minimum wage from 1 May 2011
+  https://www.mwc.org.hk/en/downloadable_materials/2012MWCReport-Eng.pdf
+    (Minimum Wage Commission, 2012 report)
+  https://www.legco.gov.hk/yr11-12/english/panels/mp/papers/mp0529cb2-1960-2-e.pdf
+  https://www.cambridge.org/core/journals/social-policy-and-society/article/abs/policy-effects-of-the-statutory-minimum-wage-in-hong-kong-evidence-from-the-general-household-survey-from-2011-to-2019/0EA5C795D33ADE8F63E99CF294F1D2BC
+  -> raw/w5_hk_mwc_2012.pdf
+United Kingdom, National Living Wage from April 2016
+  https://assets.publishing.service.gov.uk/media/5dc0312940f0b637a03ffa96/impacts_of_minimum_wages_review_of_the_international_evidence_Arindrajit_Dube_web.pdf
+    (A. Dube, 2019, review for HM Treasury)
+  https://assets.publishing.service.gov.uk/media/61b0c5a2e90e070448c520fb/IFS_WP202148-The-distributional-and-employment-impacts-of-nationwide-Minimum-Wage-changes.pdf
+    (Giupponi, Joyce, Lindner, Waters, Wernham, Xu; IFS working paper 21/48;
+    published in Journal of Labor Economics 42(S1), 2024)
+  -> raw/w5_uk_dube_2019.pdf, raw/w5_uk_giupponi_2021wp.pdf
+Germany, national minimum wage from January 2015
+  https://www.christiandustmann.com/content/4-research/114-https-doi-org-10-1093-qje-qjab028/reallocation-and-minimum-wages.pdf
+    (Dustmann, Lindner, Schoenberg, Umkehrer, vom Berge, "Reallocation
+    Effects of the Minimum Wage", QJE 137(1), 2022, doi 10.1093/qje/qjab028)
+  -> raw/w5_de_dustmann_2022.pdf
+The model (cited for the argument, not for a figure)
+  D. Card and A. B. Krueger (1994), "Minimum Wages and Employment: A Case
+  Study of the Fast-Food Industry in New Jersey and Pennsylvania", American
+  Economic Review 84(4), 772-793. Citation from background knowledge; no
+  file needed.
+
+===============================================================================
+RECEIVED
+===============================================================================
+
+(empty: nothing received as of 27 September 2026)
