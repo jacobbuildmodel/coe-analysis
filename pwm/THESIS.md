@@ -58,10 +58,18 @@ Revision history before the seal:
   - the LCR captures of 2019-2021, and both readings for the other Junes;
   - rules fixed now for what the LQS captures do not settle;
   - no `PENDING` left (section 10).
+- This revision, after the checker review of `fdb1bf5`:
+  - T4 takes T1's minimum of 4 pre-period years: cleaning's employment is
+    described, not scored; T4 is scored on security and landscape;
+  - the W2a lines named now from the label listing (`01b_w2a_labels.py`,
+    `office/w2a_labels.txt`), not after the seal;
+  - the listing shows that neither W2a file counts workers: T4 has no
+    series in `raw/`, the one item open before the seal (section 10).
 
-Markers: no `PENDING` item remains. Every link, rung and date is settled
-from documents in `raw/`, never from a wage or employment value, or is
-covered by a rule fixed now (section 10). `[JACOB]` = the confidence Jacob
+Markers: no `PENDING` marker remains. Every link, rung, date and industry
+line is settled from documents in `raw/`, never from a wage or employment
+value, or is covered by a rule fixed now. One item is open and blocks the
+seal: T4's workers series (section 10). `[JACOB]` = the confidence Jacob
 sets at the seal. "Researcher's proposal" = the researcher's confidence, kept
 for the record.
 
@@ -234,7 +242,7 @@ Reasons, stated rather than assumed:
 | W1a | OWS occupational wages, June: 25th percentile, median, 75th percentile, basic and gross, full-time residents, firms of 25+ | stats.mom.gov.sg, per-year tables (2010-2011 and 2016-2024 via Wayback captures of MOM's pages) | **spreadsheets June 2009-2025**; June 2007 and 2008 in PDF only | in `raw/`, values unopened |
 | W1b | OWS on data.gov.sg | data.gov.sg | June 2024 only | in `raw/`, cross-check only |
 | W1c | LFS median gross monthly income from work, full-time employed residents, incl. and excl. employer CPF | data.gov.sg `d_9cd9c40f22a4e45cac8f8b9d895fd5ce` | `raw/RETRIEVED.txt` | in `raw/`, values unopened |
-| W2a | Workers by detailed services industry (includes foreign workers) | SingStat M601481 | `raw/RETRIEVED.txt` | in `raw/`, values unopened |
+| W2a | Key indicators by detailed services industry: establishments, operating revenue, operating expenditure, gross operating surplus, value added. **No count of workers** (label listing) | SingStat M601481 via data.gov.sg; group-level companion table | detailed 2010-2024; group 2000-2024 | in `raw/`, labels listed, values unopened |
 | W2b | Employed residents by occupation | LFS, data.gov.sg | `raw/RETRIEVED.txt` | in `raw/`, values unopened |
 | W2c | Employment by industry AND residential status | -- | **does not exist**: no public series splits industry employment by residence | -- |
 | W3 | PWM start dates and entry-rung schedules | MOM, NEA, SPF, NParks, BCA; S 240/2014 | 2012-2029 | in `raw/`; rungs tabulated at T5 |
@@ -375,19 +383,35 @@ Reasons, stated rather than assumed:
     cancels in every one of them.
   - CPI is used only for the charts and for descriptive statements of real
     pay.
-- **Employment:** workers by detailed industry (W2a).
-  - Covered: cleaning activities, private security activities, landscape care
-    and maintenance.
-  - Comparison: retail trade plus food and beverage service activities.
-  - **Rule, fixed now:** the analysis script picks these lines by their
-    `DataSeries` label, and prints the labels it used beside the result.
-    The labels are not read before the seal (`00_coverage.py` prints only
-    the column names).
-  - Where a covered activity is not a separate line, the smallest industry
-    that contains it is used, and that is stated.
-  - W2a runs 2010-2024 (coverage, `raw/RETRIEVED.txt`), so T4's pre-period
-    years are 2010-2012 for cleaning and 2010-2014 for security and
-    landscape.
+- **Employment: the industry lines, fixed now** from the W2a label listing
+  (`01b_w2a_labels.py`, `office/w2a_labels.txt`: the `DataSeries` text of
+  both W2a files, no value). Where an activity has no line of its own, the
+  smallest line that contains it is used, and that is stated. Labels exactly
+  as published:
+  - **Security:** "SSIC 80 - Security And Investigation Activities". There
+    is no line for private security activities alone; this one also holds
+    investigation and security-systems firms.
+  - **Landscape:** "SSIC 813 - Landscape Planting, Care And Maintenance
+    Service Activities". It holds planting as well as upkeep.
+  - **Cleaning (described, not scored; T4):** "SSIC 812 - Cleaning
+    Activities".
+  - **Comparison, combined:** "SSIC 47 - Total Retail Trade" plus "SSIC
+    55-56 - Total Accommodation & Food Services". Food and beverage services
+    have no line of their own: the file splits them into six lines
+    (restaurants; cafes and kiosks; fast food; food courts, hawker centres,
+    coffee shops and canteens; pubs; caterers) under the 55-56 total. The
+    smallest single line holding all of them is 55-56, which also holds
+    hotels and other accommodation, uncovered until September 2022 like the
+    rest of the comparison.
+  - **The listing shows no count of workers.** Both W2a files carry the
+    same five indicators over these lines: Establishments, Operating
+    Revenue, Operating Expenditure, Gross Operating Surplus and Value Added.
+    Neither counts workers. W2d (employment by 13 broad sectors) cannot
+    isolate the three industries. So no file in `raw/` holds the series T4
+    needs. Open before the seal (section 10).
+  - **T4's years are fixed now at 2010 onward**, W2a's first year, whatever
+    series closes the gap: pre-period 2010-2014 for security and landscape,
+    2010-2012 for cleaning.
 
 ## 5. Windows and years excluded, fixed now
 
@@ -430,10 +454,13 @@ Reasons, stated rather than assumed:
   almost no uncovered low-wage job was left to compare against: about 94 per
   cent of full-time lower-wage workers, by MOM's count. 2023-2025 are shown,
   not scored.
-- **Employment windows** (T4) use calendar years with the same cut points.
-  Pre-period: every year to 2012 (cleaning) or 2014 (security, landscape).
-  Post-period: 2016 (cleaning) or 2017 (security, landscape) to 2019, plus
-  2022.
+- **Employment windows** (T4) use calendar years with the same cut points,
+  from 2010 (section 4).
+  - Security and landscape: pre-period 2010-2014 (5 years), post-period
+    2017-2019 and 2022. Scored.
+  - Cleaning: pre-period 2010-2012, 3 years, under T1's minimum of 4. Its
+    employment change (post-period 2016-2019 and 2022) is described, not
+    scored.
 
 ## 5A. What economic theory says (context only)
 
@@ -684,28 +711,35 @@ The tailor's extreme says jobs without a ladder are left behind.
 
 ### T4. Did the jobs survive the fitting? (competitive or monopsony)
 
-- **Estimate.** For each covered industry (section 4): mean log workers over
-  its post-period years minus mean over its pre-period years, minus the same
-  difference for the comparison industries combined. Reported with a 90 per
-  cent interval.
+- **Minimum years, fixed now (T1's minimum).** An industry needs at least 4
+  pre-period years to be scored. Years start in 2010 (section 4), so:
+  - **security and landscape are scored**: pre-period 2010-2014, post-period
+    2017-2019 and 2022;
+  - **cleaning is described, not scored**: 3 pre-period years (2010-2012).
+    Its change is computed the same way and printed beside T4, labelled as
+    outside the score and outside the verdict.
+- **Estimate.** For each scored industry (section 4 lines): mean log workers
+  over its post-period years minus mean over its pre-period years, minus the
+  same difference for the comparison industries combined. Reported with a 90
+  per cent interval.
 - **Employment pre-trend condition, fixed now.** The same drift check as T1,
   on the log-workers gap over pre-period years, with a line of 2.0 log points
   a year. Head counts move more than percentiles, hence the wider line
   (judgement). An industry that fails it is dropped from T4 and reported. If
-  all three fail, T4 is not scored.
-- **Prediction.** Employment in covered industries held up: relative change
-  **greater than -5 log points** in every scored industry.
+  both fail, T4 is not scored.
+- **Prediction.** Employment in security and landscape held up: relative
+  change **greater than -5 log points** in every scored industry.
 - **Survive if:** every scored industry > -0.05.
 - **Fail if:** any scored industry <= -0.10: jobs fell where the floor bound,
   the competitive signature.
 - **Between:** inconclusive.
 - **Leans toward SURVIVE, stated now.**
-  - Buildings must be cleaned and guarded, by law and in practice; much of the
-    demand comes from the government and large landlords. Demand that is hard
-    to cut keeps jobs even under a competitive market.
-  - W2a counts foreign workers, whom the ladders did not cover. A firm that
-    replaced residents with foreign workers under its quota shows no fall
-    here.
+  - Buildings must be guarded and grounds kept, by law and in practice; much
+    of the demand comes from the government and large landlords. Demand that
+    is hard to cut keeps jobs even under a competitive market.
+  - An industry head count includes foreign workers, whom the ladders did
+    not cover. A firm that replaced residents with foreign workers under its
+    quota shows no fall here.
   - Both lean toward "jobs held". **The substitution cannot be checked:** no
     public series splits employment by industry and residence (W2c does not
     exist). The article says so beside the result.
@@ -714,9 +748,9 @@ The tailor's extreme says jobs without a ladder are left behind.
   guard numbers for reasons unrelated to pay. Named, not separated.
 - **Confidence at seal: `[JACOB]`.** Researcher's proposal:
   60%. Hard-to-cut demand and foreign workers in
-  the count both favour holding, but security's technology push and the
-  cleaning industry's own productivity drive could produce a relative fall of
-  5 log points in one of three industries.
+  the count both favour holding, but security's technology push could
+  produce a relative fall of 5 log points in one of the two scored
+  industries.
 
 ### T5. The first rung shows up in the survey
 
@@ -905,7 +939,9 @@ only the ladder directly. So the verdict has two parts in one sentence
 (checker review of `cb9fe70`, item 4):
 
 - **Part A, the ladder:** which model the covered jobs look like, from T2 and
-  T4, gated by T1.
+  T4, gated by T1. T4's "every scored industry" means security and
+  landscape; cleaning's employment is described beside the verdict and does
+  not enter it.
 - **Part B, the rest of the bottom:** whether uncovered low-wage jobs kept
   pace with the middle, from T3. This is the evidence on the minimum-wage
   side of the argument: a floor for everyone is the answer to a bottom that
@@ -917,7 +953,8 @@ only the ladder directly. So the verdict has two parts in one sentence
   or cannot be run. Stated plainly: covered and comparison jobs were already
   drifting apart, or there are too few years before the ladders to tell.
 - **"covered jobs look more like monopsony"**: T2 survives **and** every
-  scored industry in T4 shows a relative employment change of zero or more.
+  scored industry in T4 (security, landscape) shows a relative employment
+  change of zero or more.
   Pay rose where the floor bound, and jobs did not fall.
 - **"covered jobs look more like a competitive market"**: T2 survives
   **and** T4 fails. Pay rose and jobs fell.
@@ -946,7 +983,7 @@ verbatim:** "A monopsony-like result is weak evidence and a competitive result
 is strong evidence, because the design leans toward the monopsony reading."
 The reasons, stated now:
 
-- demand for cleaning and guarding is hard to cut;
+- demand for guarding and grounds upkeep is hard to cut;
 - the job counts include foreign workers whom the ladders did not cover.
 
 Both keep jobs looking steady whether or not the floor cost resident jobs.
@@ -971,8 +1008,9 @@ reached.
 - A prediction "holds" when its survive-if condition is met.
 - "Inconclusive" counts as not holding.
 - A test reported as not scored (T2 and T5 when T1 removes every group; T4
-  when every industry fails its pre-trend condition) drops out of both the
-  count and the Brier score, and the article says so.
+  when both scored industries fail its pre-trend condition) drops out of both the
+  count and the Brier score, and the article says so. T4 is scored on
+  security and landscape only.
 
 Expected number holding: from Jacob's confidences, written in at the seal.
 Under the researcher's proposals it would be 2.55 of 5 (0.40 + 0.50 + 0.60 +
@@ -1084,8 +1122,24 @@ Covered by a rule fixed now, not by a further search:
    is used, section 5); the lift ladder's day in 2022 (T6, not scored).
 5. **Anything the SSOC tables cannot settle** is excluded from the main
    series and listed (section 4). Nothing fell under it.
-6. **The W2a industry lines** are picked by label by the analysis script,
-   under the rule in section 4, and not read before the seal.
+6. **The W2a industry lines** are named now, from the label listing, under
+   the smallest-line rule (section 4). T4's years start in 2010 whatever
+   series is used.
 
-Open at the seal: the five confidences (`[JACOB]`), which Jacob sets,
-through the checker. Nothing else.
+**Open, and blocking the seal: T4 has no workers series in `raw/`.** The
+label listing (checker review of `fdb1bf5`) shows that both W2a files carry
+establishments, operating revenue, operating expenditure, gross operating
+surplus and value added by industry, and no count of workers. W2d has only
+13 broad sectors. The decision is the checker's and Jacob's, before the seal:
+
+- (a) the design chat saves a count of workers for the five lines in
+  section 4, 2010-2022 (SingStat's services survey is the first place to
+  look; whether its full table carries workers is not verified). Its labels
+  are then listed with `01b_w2a_labels.py` and matched to section 4, with
+  no value opened; or
+- (b) T4 is marked not scored now. It then drops out of the count and the
+  Brier score, and Part A can no longer separate the two models: with T2
+  surviving it reads "the record cannot tell the two models apart".
+
+Also open at the seal: the five confidences (`[JACOB]`), which Jacob sets,
+through the checker.

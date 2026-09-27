@@ -221,6 +221,10 @@ The seal is only worth something if it is clear what had been seen.
       (they say only "monthly salary").
     - The same sentence filter as item 10 was used. It let through no
       outcome figure beyond those already disclosed in items 9 and 10.
+12. **Researcher exposure in the checker review of `fdb1bf5`.** The
+    `DataSeries` column of both W2a files was listed by `01b_w2a_labels.py`
+    (industry and indicator labels, text only, `office/w2a_labels.txt`). No
+    year column was read and no value was seen.
 
 ## 2. Item by item
 
@@ -293,12 +297,20 @@ full-time employed residents is on data.gov.sg as an annual series
 
 - **W2a. SingStat, "Key Indicators by Detailed Industry in All Services
   Industries"** (table M601481; data.gov.sg `d_38d62de582eb7ee2c58d1bba4cd4132d`).
-  - Annual. Carries the number of workers by detailed SSIC industry.
+  - Annual. Expected, when located, to carry the number of workers by
+    detailed SSIC industry. **Corrected after the downloads (checker review
+    of `fdb1bf5`):** the label listing (`office/w2a_labels.txt`) shows that
+    the saved table, and its group-level companion, carry establishments,
+    operating revenue, operating expenditure, gross operating surplus and
+    value added, and no count of workers. T4 has no series in `raw/`
+    (THESIS section 10).
   - Recently moved from SSIC 2020 to SSIC 2025, per the index.
   - Excludes own-account workers.
   - Expected to break out cleaning activities, private security activities and
-    landscape care and maintenance at the 4- or 5-digit level. UNVERIFIED:
-    detail level and first year.
+    landscape care and maintenance at the 4- or 5-digit level. Settled by
+    the listing: SSIC 812 cleaning activities, SSIC 813 landscape planting,
+    care and maintenance, and SSIC 80 security and investigation activities
+    (no private-security line of its own); detailed table 2010-2024.
   - **Includes foreign workers.** The ladders did not cover them, so a firm
     that replaced a resident cleaner with a foreign one leaves this count
     unchanged.
