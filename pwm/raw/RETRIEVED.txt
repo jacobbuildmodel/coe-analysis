@@ -2950,3 +2950,714 @@ FAILED (URL and error)
     for 2015-2019, which has only "Axis-Registration" and "eregistration" pages.
   Cleaning order for 1 July 2019 to 30 June 2021: not found as such (see
     CHECK above).
+
+===============================================================================
+W2e  COUNT OF WORKERS (28 September 2026 SGT, retrieved 27 Sep 16:50-16:57 UTC)
+===============================================================================
+Asked for: a count of workers, 2010 or earlier to 2022. First choice, SingStat
+by detailed services industry (SSIC 80/801, 812, 813, 47, 55-56). Second
+choice, MOM Labour Force in Singapore, employed residents by detailed
+occupation (3- or 4-digit SSOC), covering security guards, cleaners and
+gardeners/park workers. No value was opened. Two scripts read files:
+pwm/00_coverage.py (its lines below, verbatim) and a label listing. The label
+listing prints only string cells that contain a letter, de-duplicated, and
+never prints a numeric cell. For the PDFs, only the contents-page entry for
+the table was searched for.
+
+1. SingStat: NO COUNT OF WORKERS AT ANY SERVICES-INDUSTRY LEVEL. Nothing saved.
+  M601481, full Table Builder (api/table/metadata/M601481, 1,063 series, 2010
+    to 2024). The indicators are the same five as on data.gov.sg:
+    Establishments; Operating Revenue; Operating Expenditure; Gross Operating
+    Surplus; Value Added. No workers, no remuneration. It does have rows for
+    SSIC 80 Security And Investigation Activities, 812 Cleaning Activities,
+    813 Landscape Planting, Care And Maintenance Service Activities, 47 and
+    55-56 (already in raw/ as W2a).
+  Every other table under the Table Builder topic "Annual Services
+    Statistics - All Services Industries" was listed, labels only:
+    M601471 (industry group: the same indicators), M601501 (Details Of
+    Operating Expenditure: "Remuneration" exists, but by industry group only;
+    the finest group holding 80/812/813 is "Real Estate, Professional And
+    Administrative & Support Services SSIC 68-82"), M602081 (by size of
+    operating revenue), M602101 (cost-structure shares), M601631, M602031,
+    M602111. None has a worker, employment or persons-engaged indicator (the
+    only such word is the industry name "SSIC 78 - Employment Services").
+    SSIC rows: M601471 has "SSIC 80 - Security & Investigation" but not 812
+    or 813; the others have none of the three.
+  Technical notes, "Annual Services Statistics - All Services Industries"
+    (https://www.singstat.gov.sg/files/51a0c082-8d71-4f2b-9294-09d6eeda3346.pdf):
+    the indicator definitions cover remuneration as a cost item, not a
+    headcount. The only "workers" hits are in industry names.
+  Annual Survey of Services / Census of Services: no Table Builder table by
+    either name. The SingStat ebook page
+    https://www.singstat.gov.sg/publications/reference/ebook/industry/services
+    returns HTTP 404.
+  No SingStat export or terms page was reached; nothing was accepted.
+
+2. MOM Labour Force in Singapore: SAVED, but at 2-DIGIT SSOC (sub-major
+   group), NOT 3- or 4-digit. MOM's "Employed Residents Aged Fifteen Years and
+   Over by Detailed Occupation and Sex" table is the finest occupation table
+   MOM publishes. Its "detailed" means sub-major groups. It has no row for
+   security guards, cleaners or gardeners as such. The rows that contain them
+   (by label, not checked against SSOC definitions):
+     SSOC 2010, 2015 and 2020 editions (June 2010 to June 2022):
+       Protective Services Workers; Cleaners & Related Workers;
+       Agricultural, Fishery & Related Labourers
+     SSOC 2005 edition (June 2009): no Protective Services row. Its
+       service rows are "Service Workers" and "Shop & Market Sales Workers";
+       the elementary rows are "Cleaners & Related Workers", "Porters,
+       Attendants & Related Workers" and "Labourers & Related Workers".
+   Residents only (citizens and PRs), in thousands, June of each year.
+   Coverage by June:
+     2008  report PDF only (table 51, "Detailed Occupation and Gender")
+     2009  spreadsheet (SSOC 2005)
+     2010  spreadsheet (SSOC 2010)
+     2011  report PDF only (table 55, "Detailed Occupation and Sex")
+     2012, 2013  spreadsheets (SSOC 2010)
+     2014  report PDF only (table 38)
+     2015-2019  spreadsheets (SSOC 2015)
+     2020, 2021  spreadsheets (SSOC 2020)
+     2022  sheet T43 of the 2022 Tables 36-57 workbook (SSOC 2020)
+   The 2008, 2011 and 2014 report PDFs print the same table inside; the
+   separate spreadsheets for those years are gone (see FAILED).
+
+Files (md5 and shape from 00_coverage.py; source; retrieval time; labels)
+
+w2e_lfs_2008_report.pdf
+  bytes   1719482
+  md5     cb1b72b394d9e3253961e139470ade7c
+  source  https://web.archive.org/web/2011id_/http://mom.gov.sg/Documents/statistics-publications/manpower-supply/report-labour-2008/mrsd_2008LabourForce.pdf
+  original http://mom.gov.sg/Documents/statistics-publications/manpower-supply/report-labour-2008/mrsd_2008LabourForce.pdf
+  retrieved 2026-09-27 16:57 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+  labels  "Report on Labour Force in Singapore, 2008", 209 pp. Contents (PDF
+          p.8) lists table "51 Detailed Occupation and Gender".
+
+w2e_lfs_2009_detailed_occupation.xls
+  bytes   40448
+  md5     33202fd982a2e0a53ec55d7c08691c22
+  sheet   T54: 34 rows x 19 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/manpower-supply/report-labour-2009/2009LabourForce_T54.xls
+  original http://www.mom.gov.sg/Documents/statistics-publications/manpower-supply/report-labour-2009/2009LabourForce_T54.xls
+  retrieved 2026-09-27 16:50 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+  labels  [sheet T54] ; T78 ; TABLE 54 ; EMPLOYED RESIDENTS AGED FIFTEEN
+          YEARS AND OVER BY DETAILED OCCUPATION AND GENDER, JUNE 2009 ; In
+          Thousands ; Occupation ( SSOC 2005 ) ; Total ; Males ; Females ;
+          Professionals, Managers, ; Production & Transport Operators, ;
+          Executives & Technicians ; Cleaners & Labourers ; Managers &
+          Administrators ; Agricultural & Fishery Workers ; Working
+          Proprietors ; Building Trades Workers ; Physical, Mathematical & ;
+          Metal, Machinery & Related ; REPORT ON LABOUR FORCE IN SINGAPORE,
+          2009 ; Engineering Science Professionals ; Trades Workers ; Life
+          Science & Health Professionals ; Precision, Handicraft, Printing &
+          ; Teaching Professionals ; Related Trades Workers ; Business
+          Professionals ; Food Processing, Woodworking, Textile, ; Legal
+          Professionals ; Leather & Related Trades Workers ; Professionals
+          Not Elsewhere Classified ; Production Craftsmen & Related Workers ;
+          Physical & Engineering Science ; Not Elsewhere Classified ;
+          Associate Professionals ; Stationary Plant & Related Operators ;
+          Life Science & Health ; Machine Operators & Assemblers ; Drivers &
+          Mobile Machinery Operators ; Teaching Associate Professionals ;
+          Cleaners & Related Workers ; Finance, Sales & Related ; Porters,
+          Attendants & Related Workers ; Business Associate Professionals ;
+          Labourers & Related Workers ; X1 - X5 ; Workers Not Classifiable by
+          Occupation ; Clerical, Sales & Service Workers ; Office Clerks ;
+          Customer Service Clerks ; Clerical Workers Not Elsewhere Classified
+          ; Service Workers ; Shop & Market Sales Workers
+
+w2e_lfs_2010_detailed_occupation.xlsx
+  bytes   132277
+  md5     7880d56f9a8a760d70169f46b9b5888f
+  sheet   T53: 35 rows x 11 columns
+  sheet   T53A: 35 rows x 11 columns
+  sheet   T53B: 35 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/manpower-supply/report-labour-2010/2010LabourForce_T53.xlsx
+  original http://www.mom.gov.sg/Documents/statistics-publications/manpower-supply/report-labour-2010/2010LabourForce_T53.xlsx
+  retrieved 2026-09-27 16:50 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+  labels  [sheet T53] ; T80 ; TABLE 53 ; EMPLOYED RESIDENTS AGED FIFTEEN
+          YEARS AND OVER BY DETAILED OCCUPATION AND SEX, JUNE 2010 ; (TOTAL)
+          ; In Thousands ; Occupation ( SSOC 2010 ) ; Total ; Professionals,
+          Managers, Executives & Technicians ; Sales Workers ; Managers &
+          Administrators1 ; Personal Care Workers ; Working Proprietors ;
+          Protective Services Workers ; Science & Engineering Professionals ;
+          Service Workers Not Elsewhere Classified ; Health Professionals ;
+          Production & Transport Operators, ; Teaching Professionals ;
+          Cleaners & Labourers ; REPORT ON LABOUR FORCE IN SINGAPORE, 2010 ;
+          Business & Administration Professionals ; Agricultural & Fishery
+          Workers ; Information & Communications Technology Professionals ;
+          Building & Related Trades Workers, ; Legal, Social & Cultural
+          Professionals ; Excluding Electricians ; Other Professionals Not
+          Elsewhere Classified ; Metal, Machinery & Related Trades Workers ;
+          Physical & Engineering Science Associate Professionals ; Precision,
+          Handicraft, Printing & ; Health Associate Professionals ; Related
+          Trades Workers ; Business & Administration Associate Professionals
+          ; Electrical & Electronic Trades Workers ; Legal, Social, Cultural
+          & Related Associate Professionals ; Food Processing, Woodworking,
+          Garment, ; Information & Communications Technicians ; Leather &
+          Other Craft & Related Trades Workers ; Teaching Associate
+          Professionals ; Stationary Plant & Machine Operators ; Other
+          Associate Professionals Not Elsewhere Classified ; Assemblers &
+          Quality Checkers ; Clerical, Sales & Service Workers ; Drivers &
+          Mobile Machinery Operators ; Clerical Supervisors ; Cleaners &
+          Related Workers ; General & Keyboard Clerks ; Agricultural, Fishery
+          & Related Labourers ; Customer Services Clerks ; Labourers &
+          Related Workers ; Numerical & Material-Recording Clerks ; Food
+          Preparation & Kitchen Assistants ; Other Clerical Support Workers ;
+          Refuse Workers & Other Elementary Workers ; Personal Service
+          Workers ; X1 - X5 ; Workers Not Classifiable by Occupation ; Note :
+          ; 1) Excludes Working Proprietors which are shown in the following
+          row. ; [sheet T53A] ; TABLE 53 (continued) ; (MALES) ; T81 ; [sheet
+          T53B] ; T82 ; (FEMALES)
+
+w2e_lfs_2011_report.pdf
+  bytes   2571467
+  md5     c699dc9769c36d52a93d82a5b144b5e4
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/manpower-supply/report-labour-2011/mrsd_2011LabourForce.pdf
+  original http://www.mom.gov.sg/Documents/statistics-publications/manpower-supply/report-labour-2011/mrsd_2011LabourForce.pdf
+  retrieved 2026-09-27 16:57 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+  labels  "Report on Labour Force in Singapore, 2011", 236 pp. Contents (PDF
+          p.8) lists table "55 Detailed Occupation and Sex, June".
+
+w2e_lfs_2012_detailed_occupation.xlsx
+  bytes   240356
+  md5     d817e821a6c04c7f3df7a4fda2e478c1
+  sheet   T35: 35 rows x 11 columns
+  sheet   T35A: 35 rows x 11 columns
+  sheet   T35B: 35 rows x 11 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/LabourForce/LabourForce_2012/mrsd_2012LabourForce_T35.xlsx
+  retrieved 2026-09-27 16:51 UTC
+  method  direct download, byte-for-byte
+  labels  [sheet T35] ; LABOUR FORCE IN SINGAPORE, 2012 ; TABLE 35 ; EMPLOYED
+          RESIDENTS AGED FIFTEEN YEARS AND OVER BY DETAILED OCCUPATION AND
+          SEX, JUNE 2012 ; (TOTAL) ; In Thousands ; Occupation ( SSOC 2010 )
+          ; Total ; Professionals, Managers, Executives & Technicians ; Sales
+          Workers ; Managers & Administrators1 ; Personal Care Workers ;
+          Working Proprietors ; Protective Services Workers ; Science &
+          Engineering Professionals ; Service Workers Not Elsewhere
+          Classified ; Health Professionals ; Production & Transport
+          Operators, ; Teaching Professionals ; Cleaners & Labourers ;
+          Business & Administration Professionals ; Agricultural & Fishery
+          Workers ; Information & Communications Technology Professionals ;
+          Building & Related Trades Workers, ; Legal, Social & Cultural
+          Professionals ; Excluding Electricians ; Other Professionals Not
+          Elsewhere Classified ; Metal, Machinery & Related Trades Workers ;
+          Physical & Engineering Science Associate Professionals ; Precision,
+          Handicraft, Printing & ; Health Associate Professionals ; Related
+          Trades Workers ; Business & Administration Associate Professionals
+          ; Electrical & Electronic Trades Workers ; Legal, Social, Cultural
+          & Related Associate Professionals ; Food Processing, Woodworking,
+          Garment, ; Information & Communications Technicians ; Leather &
+          Other Craft & Related Trades Workers ; Teaching Associate
+          Professionals ; Stationary Plant & Machine Operators ; Other
+          Associate Professionals Not Elsewhere Classified ; Assemblers &
+          Quality Checkers ; Clerical, Sales & Service Workers ; Drivers &
+          Mobile Machinery Operators ; Clerical Supervisors ; Cleaners &
+          Related Workers ; General & Keyboard Clerks ; Agricultural, Fishery
+          & Related Labourers ; Customer Services Clerks ; Labourers &
+          Related Workers ; Numerical & Material-Recording Clerks ; Food
+          Preparation & Kitchen Assistants ; Other Clerical Support Workers ;
+          Refuse Workers & Other Elementary Workers ; T65 ; Personal Service
+          Workers ; X1 - X5 ; Workers Not Classifiable by Occupation ; Note :
+          ; 1) Excludes Working Proprietors which are shown in the following
+          row. ; [sheet T35A] ; T66 ; TABLE 35 (continued) ; (MALES) ; [sheet
+          T35B] ; (FEMALES) ; T67
+
+w2e_lfs_2013_detailed_occupation.xlsx
+  bytes   238127
+  md5     0818e1eb4c7a2ef8228934661775c2c9
+  sheet   T35_T: 35 rows x 11 columns
+  sheet   T35_M: 35 rows x 11 columns
+  sheet   T35_F: 35 rows x 11 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/LabourForce/LabourForce_2013/mrsd_2013LabourForce_T35.xlsx
+  retrieved 2026-09-27 16:51 UTC
+  method  direct download, byte-for-byte
+  labels  title: EMPLOYED RESIDENTS AGED FIFTEEN YEARS AND OVER BY DETAILED
+          OCCUPATION AND SEX, JUNE 2013. Row and column labels identical to
+          w2e_lfs_2012_detailed_occupation.xlsx (year and table number
+          aside).
+
+w2e_lfs_2014_report.pdf
+  bytes   3643961
+  md5     c55106237426dcdb539d8d673932189b
+  source  https://stats.mom.gov.sg/iMAS_PdfLibrary/mrsd_2014LabourForce.pdf
+  retrieved 2026-09-27 16:57 UTC
+  method  direct download, byte-for-byte
+  labels  "Labour Force in Singapore, 2014", 243 pp. Contents (PDF p.8) lists
+          table "38 Employed Residents Aged Fifteen Years and Over by
+          Detailed Occupation and Sex, June"; the table heading recurs on PDF
+          pp.147-149.
+
+w2e_lfs_2015_detailed_occupation.xlsx
+  bytes   242230
+  md5     676b6f2368a8d690203212ab49f09289
+  sheet   T38_T: 36 rows x 11 columns
+  sheet   T38_M: 36 rows x 11 columns
+  sheet   T38_F: 36 rows x 11 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/LabourForce/LabourForce_2015/mrsd_2015LabourForce_T38.xlsx
+  retrieved 2026-09-27 16:51 UTC
+  method  direct download, byte-for-byte
+  labels  [sheet T38_T] ; T68 ; TABLE 38 ; EMPLOYED RESIDENTS AGED FIFTEEN
+          YEARS AND OVER BY DETAILED OCCUPATION AND SEX, JUNE 2015 ; (TOTAL)
+          ; Thousands ; Occupation ( SSOC 2015 ) ; Total ; Professionals,
+          Managers, Executives & Technicians ; Personal Care Workers ;
+          Managers & Administrators1 ; Protective Services Workers ; Working
+          Proprietors ; Service Workers Not Elsewhere Classified ; Science &
+          Engineering Professionals ; Health Professionals ; Production &
+          Transport Operators, ; Teaching & Training Professionals ; Cleaners
+          & Labourers ; Business & Administration Professionals ;
+          Agricultural & Fishery Workers ; Information & Communications
+          Technology Professionals ; Building & Related Trades Workers, ;
+          Legal, Social & Cultural Professionals ; Excluding Electricians ;
+          LABOUR FORCE IN SINGAPORE 2015 ; Other Professionals Not Elsewhere
+          Classified ; Metal, Machinery & Related Trades Workers ; Physical &
+          Engineering Science Associate Professionals ; Precision,
+          Handicraft, Printing & ; Health Associate Professionals ; Related
+          Trades Workers ; Business & Administration Associate Professionals
+          ; Electrical & Electronic Trades Workers ; Legal, Social, Cultural
+          & Related Associate Professionals ; Food Processing, Woodworking,
+          Garment, ; Information & Communications Technicians ; Leather &
+          Other Craft & Related Trades Workers ; Teaching Associate
+          Professionals ; Stationary Plant & Machine Operators ; Other
+          Associate Professionals Not Elsewhere Classified ; Assemblers &
+          Quality Checkers ; Clerical, Sales & Service Workers ; Drivers &
+          Mobile Machinery Operators ; Clerical Supervisors ; Cleaners &
+          Related Workers ; General & Keyboard Clerks ; Agricultural, Fishery
+          & Related Labourers ; Customer Services Officers & Clerks ;
+          Labourers & Related Workers ; Numerical & Material-Recording Clerks
+          ; Food Preparation & Kitchen Assistants ; Other Clerical Support
+          Workers ; Waste & Recyclables Collection Workers & ; Personal
+          Service Workers ; Other Elementary Workers ; Sales Workers ; X1 -
+          X5 ; Workers Not Elsewhere Classified ; Note : ; 1) Excludes
+          Working Proprietors which are shown in the following row. ; [sheet
+          T38_M] ; TABLE 38 (continued) ; (MALES) ; T69 ; [sheet T38_F] ; T70
+          ; (FEMALES)
+
+w2e_lfs_2016_detailed_occupation.xlsx
+  bytes   35636
+  md5     6c555450884e81526ce885d87a0b649e
+  sheet   T39: 25 rows x 10 columns
+  sheet   T39 cont: 33 rows x 10 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/LabourForce/LabourForce_2016/mrsd_2016LabourForce_T39.xlsx
+  retrieved 2026-09-27 16:51 UTC
+  method  direct download, byte-for-byte
+  labels  [sheet T39] ; TABLE 39 ; EMPLOYED RESIDENTS AGED FIFTEEN YEARS AND
+          OVER BY DETAILED OCCUPATION AND SEX, JUNE 2016 ; Thousands ;
+          Occupation ( SSOC 2015 ) ; Total ; Males ; Females ; Professionals,
+          Managers, Executives & Technicians ; Managers & Administrators1 ;
+          Working Proprietors ; Science & Engineering Professionals ; Health
+          Professionals ; Teaching & Training Professionals ; Business &
+          Administration Professionals ; Information & Communications
+          Technology Professionals ; Legal, Social & Cultural Professionals ;
+          Labour Force in Singapore 2016 | T71 | ; Other Professionals Not
+          Elsewhere Classified ; Physical & Engineering Science Associate
+          Professionals ; Health Associate Professionals ; Business &
+          Administration Associate Professionals ; Legal, Social, Cultural &
+          Related Associate Professionals ; Information & Communications
+          Technicians ; Teaching Associate Professionals ; Other Associate
+          Professionals Not Elsewhere Classified ; Source: Comprehensive
+          Labour Force Survey, Manpower Research & Statistics Department, MOM
+          ; Note : ; 1) Excludes Working Proprietors which are shown in the
+          following row. ; [sheet T39 cont] ; | T72 | Labour Force in
+          Singapore 2016 ; TABLE 39 (continued) ; Clerical, Sales & Service
+          Workers ; Clerical Supervisors ; General & Keyboard Clerks ;
+          Customer Services Officers & Clerks ; Numerical & Material-
+          Recording Clerks ; Other Clerical Support Workers ; Personal
+          Service Workers ; Sales Workers ; Personal Care Workers ;
+          Protective Services Workers ; Service Workers Not Elsewhere
+          Classified ; Production & Transport Operators, Cleaners & Labourers
+          ; Agricultural & Fishery Workers ; Building & Related Trades
+          Workers, Excluding Electricians ; Metal, Machinery & Related Trades
+          Workers ; Precision, Handicraft, Printing & Related Trades Workers
+          ; Electrical & Electronic Trades Workers ; Food Processing,
+          Woodworking, Garment, Leather & Other Craft & Related Trades
+          Workers ; Stationary Plant & Machine Operators ; Assemblers &
+          Quality Checkers ; Drivers & Mobile Machinery Operators ; Cleaners
+          & Related Workers ; Agricultural, Fishery & Related Labourers ;
+          Labourers & Related Workers ; Food Preparation & Kitchen Assistants
+          ; Waste & Recyclables Collection Workers & Other Elementary Workers
+          ; X1 - X5 ; Workers Not Elsewhere Classified
+
+w2e_lfs_2017_detailed_occupation.xlsx
+  bytes   33275
+  md5     936d9986e48d14e9595a3f11dcc4dd04
+  sheet   T38: 24 rows x 10 columns
+  sheet   T38 cont: 31 rows x 10 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/LabourForce/LabourForce_2017/mrsd_2017LabourForce_T38.xlsx
+  retrieved 2026-09-27 16:51 UTC
+  method  direct download, byte-for-byte
+  labels  [sheet T38] ; | T68 | Labour Force in Singapore 2017 ; TABLE 38 ;
+          EMPLOYED RESIDENTS AGED FIFTEEN YEARS AND OVER BY DETAILED
+          OCCUPATION AND SEX, JUNE 2017 ; Thousands ; Occupation ( SSOC 2015
+          ) ; Total ; Males ; Females ; Managers & Administrators1 ; Working
+          Proprietors ; Science & Engineering Professionals ; Health
+          Professionals ; Teaching & Training Professionals ; Business &
+          Administration Professionals ; Information & Communications
+          Technology Professionals ; Legal, Social & Cultural Professionals ;
+          Other Professionals Not Elsewhere Classified ; Physical &
+          Engineering Science Associate Professionals ; Health Associate
+          Professionals ; Business & Administration Associate Professionals ;
+          Legal, Social, Cultural & Related Associate Professionals ;
+          Information & Communications Technicians ; Teaching Associate
+          Professionals ; Other Associate Professionals Not Elsewhere
+          Classified ; Source: Comprehensive Labour Force Survey, Manpower
+          Research & Statistics Department, MOM ; Note : ; 1) Excludes
+          Working Proprietors which are shown in the following row. ; [sheet
+          T38 cont] ; TABLE 38 (continued) ; Clerical Supervisors ; General &
+          Keyboard Clerks ; Customer Services Officers & Clerks ; Numerical &
+          Material-Recording Clerks ; Other Clerical Support Workers ;
+          Personal Service Workers ; Sales Workers ; Personal Care Workers ;
+          Protective Services Workers ; Service Workers Not Elsewhere
+          Classified ; Agricultural & Fishery Workers ; Building & Related
+          Trades Workers, Excluding Electricians ; Metal, Machinery & Related
+          Trades Workers ; Precision, Handicraft, Printing & Related Trades
+          Workers ; Electrical & Electronic Trades Workers ; Labour Force in
+          Singapore 2017 | T69 | ; Food Processing, Woodworking, Garment,
+          Leather & Other Craft & Related Trades Workers ; Stationary Plant &
+          Machine Operators ; Assemblers & Quality Checkers ; Drivers &
+          Mobile Machinery Operators ; Cleaners & Related Workers ;
+          Agricultural, Fishery & Related Labourers ; Labourers & Related
+          Workers ; Food Preparation & Kitchen Assistants ; Waste &
+          Recyclables Collection Workers & Other Elementary Workers ; X1 - X5
+          ; Workers Not Elsewhere Classified
+
+w2e_lfs_2018_detailed_occupation.xlsx
+  bytes   30566
+  md5     e6681321fee74628bf10b46b71fc5ffb
+  sheet   T39: 24 rows x 10 columns
+  sheet   T39 cont: 31 rows x 10 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/LabourForce/LabourForce_2018/mrsd_2018LabourForce_T39.xlsx
+  retrieved 2026-09-27 16:52 UTC
+  method  direct download, byte-for-byte
+  labels  [sheet T39] ; TABLE 39 ; EMPLOYED RESIDENTS AGED FIFTEEN YEARS AND
+          OVER BY DETAILED OCCUPATION AND SEX, JUNE 2018 ; Thousands ;
+          Occupation ( SSOC 2015 ) ; Total ; Males ; Females ; Managers &
+          Administrators 1 ; Working Proprietors ; Science & Engineering
+          Professionals ; Health Professionals ; Teaching & Training
+          Professionals ; Business & Administration Professionals ;
+          Information & Communications Technology Professionals ; Legal,
+          Social & Cultural Professionals ; Other Professionals Not Elsewhere
+          Classified ; Labour Force in Singapore 2018 | T71 | ; Physical &
+          Engineering Science Associate Professionals ; Health Associate
+          Professionals ; Business & Administration Associate Professionals ;
+          Legal, Social, Cultural & Related Associate Professionals ;
+          Information & Communications Technicians ; Teaching Associate
+          Professionals ; Other Associate Professionals Not Elsewhere
+          Classified ; Source: Comprehensive Labour Force Survey, Manpower
+          Research & Statistics Department, MOM ; Note : ; 1) Excludes
+          Working Proprietors which are shown in the following row. ; [sheet
+          T39 cont] ; | T72 | Labour Force in Singapore 2018 ; TABLE 39
+          (continued) ; Clerical Supervisors ; General & Keyboard Clerks ;
+          Customer Services Officers & Clerks ; Numerical & Material-
+          Recording Clerks ; Other Clerical Support Workers ; Personal
+          Service Workers ; Sales Workers ; Personal Care Workers ;
+          Protective Services Workers ; Service Workers Not Elsewhere
+          Classified ; Agricultural & Fishery Workers ; Building & Related
+          Trades Workers, Excluding Electricians ; Metal, Machinery & Related
+          Trades Workers ; Precision, Handicraft, Printing & Related Trades
+          Workers ; Electrical & Electronic Trades Workers ; Food Processing,
+          Woodworking, Garment, Leather & Other Craft & Related Trades
+          Workers ; Stationary Plant & Machine Operators ; Assemblers &
+          Quality Checkers ; Drivers & Mobile Machinery Operators ; Cleaners
+          & Related Workers ; Agricultural, Fishery & Related Labourers ;
+          Labourers & Related Workers ; Food Preparation & Kitchen Assistants
+          ; Waste & Recyclables Collection Workers & Other Elementary Workers
+          ; X1 - X5 ; Workers Not Elsewhere Classified
+
+w2e_lfs_2019_detailed_occupation.xlsx
+  bytes   31154
+  md5     0fc1182c980ee1d9161758951bf087ca
+  sheet   T40: 24 rows x 10 columns
+  sheet   T40 cont: 31 rows x 10 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/LabourForce/LabourForce_2019/mrsd_2019LabourForce_T40.xlsx
+  retrieved 2026-09-27 16:52 UTC
+  method  direct download, byte-for-byte
+  labels  [sheet T40] ; | T72 | Labour Force in Singapore 2019 ; TABLE 40 ;
+          EMPLOYED RESIDENTS AGED FIFTEEN YEARS AND OVER BY DETAILED
+          OCCUPATION AND SEX, JUNE 2019 ; Thousands ; Occupation ( SSOC 2015
+          ) ; Total ; Males ; Females ; Managers & Administrators 1 ; Working
+          Proprietors ; Science & Engineering Professionals ; Health
+          Professionals ; Teaching & Training Professionals ; Business &
+          Administration Professionals ; Information & Communications
+          Technology Professionals ; Legal, Social & Cultural Professionals ;
+          Other Professionals Not Elsewhere Classified ; Physical &
+          Engineering Science Associate Professionals ; Health Associate
+          Professionals ; Business & Administration Associate Professionals ;
+          Legal, Social, Cultural & Related Associate Professionals ;
+          Information & Communications Technicians ; Teaching Associate
+          Professionals ; Other Associate Professionals Not Elsewhere
+          Classified ; Source: Comprehensive Labour Force Survey, Manpower
+          Research & Statistics Department, MOM ; Note : ; 1) Excludes
+          Working Proprietors which are shown in the following row. ; [sheet
+          T40 cont] ; TABLE 40 (continued) ; Clerical Supervisors ; General &
+          Keyboard Clerks ; Customer Services Officers & Clerks ; Numerical &
+          Material-Recording Clerks ; Other Clerical Support Workers ;
+          Personal Service Workers ; Sales Workers ; Personal Care Workers ;
+          Protective Services Workers ; Service Workers Not Elsewhere
+          Classified ; Agricultural & Fishery Workers ; Building & Related
+          Trades Workers, Excluding Electricians ; Metal, Machinery & Related
+          Trades Workers ; Precision, Handicraft, Printing & Related Trades
+          Workers ; Electrical & Electronic Trades Workers ; Labour Force in
+          Singapore 2019 | T73 | ; Food Processing, Woodworking, Garment,
+          Leather & Other Craft & Related Trades Workers ; Stationary Plant &
+          Machine Operators ; Assemblers & Quality Checkers ; Drivers &
+          Mobile Machinery Operators ; Cleaners & Related Workers ;
+          Agricultural, Fishery & Related Labourers ; Labourers & Related
+          Workers ; Food Preparation & Kitchen Assistants ; Waste &
+          Recyclables Collection Workers & Other Elementary Workers ; X1 - X5
+          ; Workers Not Elsewhere Classified
+
+w2e_lfs_2020_detailed_occupation.xlsx
+  bytes   32005
+  md5     f7b2d8ec57d3c270bef8b63ea337c266
+  sheet   T42: 23 rows x 10 columns
+  sheet   T42 cont: 31 rows x 10 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/LabourForce/LabourForce_2020/mrsd_2020LabourForce_T42.xlsx
+  retrieved 2026-09-27 16:52 UTC
+  method  direct download, byte-for-byte
+  labels  [sheet T42] ; | T76 | Labour Force in Singapore 2020 ; TABLE 42 ;
+          EMPLOYED RESIDENTS AGED FIFTEEN YEARS AND OVER BY DETAILED
+          OCCUPATION AND SEX, JUNE 2020 ; Thousands ; Occupation ( SSOC 2020
+          ) ; Total ; Males ; Females ; Legislators, Senior Officials & Chief
+          Executives ; Administrative & Commercial Managers ; Production &
+          Specialised Services Managers ; Hospitality, Retail & Related
+          Services Managers ; Science & Engineering Professionals ; Health
+          Professionals ; Teaching & Training Professionals ; Business &
+          Administration Professionals ; Information & Communications
+          Technology Professionals ; Legal, Social, Religious & Cultural
+          Professionals ; Physical & Engineering Science Associate
+          Professionals ; Health Associate Professionals ; Business &
+          Administration Associate Professionals ; Legal, Social, Cultural &
+          Related Associate Professionals ; Information & Communications
+          Technicians ; Teaching Associate Professionals ; Other Associate
+          Professionals Not Elsewhere Classified ; Source: Comprehensive
+          Labour Force Survey, Manpower Research & Statistics Department, MOM
+          ; [sheet T42 cont] ; TABLE 42 (continued) ; Clerical Supervisors ;
+          General & Keyboard Clerks ; Customer Services Officers & Clerks ;
+          Numerical & Material-Recording Clerks ; Other Clerical Support
+          Workers ; Personal Service Workers ; Sales Workers ; Personal Care
+          Workers ; Protective Services Workers ; Service Workers Not
+          Elsewhere Classified ; Agricultural & Fishery Workers ; Building &
+          Related Trades Workers, Excluding Electricians ; Metal, Machinery &
+          Related Trades Workers ; Precision, Handicraft, Printing & Related
+          Trades Workers ; Electrical & Electronic Trades Workers ; Labour
+          Force in Singapore 2020 | T77 | ; Food Processing, Woodworking,
+          Garment, Leather & Other Craft & Related Trades Workers ;
+          Stationary Plant & Machine Operators ; Assemblers & Quality
+          Checkers ; Drivers & Mobile Machinery Operators ; Cleaners &
+          Related Workers ; Agricultural, Fishery & Related Labourers ;
+          Labourers & Related Workers ; Food Preparation & Kitchen Assistants
+          ; Waste Collection, Recycling & Material Recovery Workers & Other
+          Elementary Workers ; X1 - X5 ; Workers Not Elsewhere Classified
+
+w2e_lfs_2021_detailed_occupation.xlsx
+  bytes   29847
+  md5     9ad7ca49d24b9ccbdc93e81c75c6f49a
+  sheet   T43: 23 rows x 10 columns
+  sheet   T43 cont: 31 rows x 10 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/LabourForce/LabourForce_2021/mrsd_2021LabourForce_T43.xlsx
+  retrieved 2026-09-27 16:52 UTC
+  method  direct download, byte-for-byte
+  labels  [sheet T43] ; TABLE 43 ; EMPLOYED RESIDENTS AGED FIFTEEN YEARS AND
+          OVER BY DETAILED OCCUPATION AND SEX, JUNE 2021 ; Thousands ;
+          Occupation ( SSOC 2020 ) ; Total ; Males ; Females ; Legislators,
+          Senior Officials & Chief Executives ; Administrative & Commercial
+          Managers ; Production & Specialised Services Managers ;
+          Hospitality, Retail & Related Services Managers ; Science &
+          Engineering Professionals ; Health Professionals ; Teaching &
+          Training Professionals ; Labour Force in Singapore 2021 | T77 | ;
+          Business & Administration Professionals ; Information &
+          Communications Technology Professionals ; Legal, Social, Religious
+          & Cultural Professionals ; Physical & Engineering Science Associate
+          Professionals ; Health Associate Professionals ; Business &
+          Administration Associate Professionals ; Legal, Social, Cultural &
+          Related Associate Professionals ; Information & Communications
+          Technicians ; Teaching Associate Professionals ; Other Associate
+          Professionals Not Elsewhere Classified ; Source: Comprehensive
+          Labour Force Survey, Manpower Research & Statistics Department, MOM
+          ; [sheet T43 cont] ; | T78 | Labour Force in Singapore 2021 ; TABLE
+          43 (continued) ; Clerical Supervisors ; General & Keyboard Clerks ;
+          Customer Services Officers & Clerks ; Numerical & Material-
+          Recording Clerks ; Other Clerical Support Workers ; Personal
+          Service Workers ; Sales Workers ; Personal Care Workers ;
+          Protective Services Workers ; Service Workers Not Elsewhere
+          Classified ; Agricultural & Fishery Workers ; Building & Related
+          Trades Workers, Excluding Electricians ; Metal, Machinery & Related
+          Trades Workers ; Precision, Handicraft, Printing & Related Trades
+          Workers ; Electrical & Electronic Trades Workers ; Food Processing,
+          Woodworking, Garment, Leather & Other Craft & Related Trades
+          Workers ; Stationary Plant & Machine Operators ; Assemblers &
+          Quality Checkers ; Drivers & Mobile Machinery Operators ; Cleaners
+          & Related Workers ; Agricultural, Fishery & Related Labourers ;
+          Labourers & Related Workers ; Food Preparation & Kitchen Assistants
+          ; Waste Collection, Recycling & Material Recovery Workers & Other
+          Elementary Workers ; X1 - X5 ; Workers Not Elsewhere Classified
+
+w2e_lfs_2022_tables36_57.xlsx
+  bytes   102469
+  md5     52734b1467ff3abd8d1761c97c552ca4
+  sheet   Contents: 26 rows x 3 columns
+  sheet   T36: 43 rows x 13 columns
+  sheet   T37: 64 rows x 12 columns
+  sheet   T38: 27 rows x 12 columns
+  sheet   T39: 21 rows x 12 columns
+  sheet   T40: 51 rows x 12 columns
+  sheet   T41: 30 rows x 12 columns
+  sheet   T42: 24 rows x 12 columns
+  sheet   T43: 52 rows x 4 columns
+  sheet   T44: 38 rows x 10 columns
+  sheet   T45: 29 rows x 14 columns
+  sheet   T46: 29 rows x 14 columns
+  sheet   T47: 30 rows x 14 columns
+  sheet   T48: 63 rows x 7 columns
+  sheet   T49: 30 rows x 10 columns
+  sheet   T50: 63 rows x 15 columns
+  sheet   T51: 63 rows x 8 columns
+  sheet   T52: 63 rows x 6 columns
+  sheet   T53: 24 rows x 13 columns
+  sheet   T54: 15 rows x 10 columns
+  sheet   T55: 23 rows x 16 columns
+  sheet   T56: 16 rows x 16 columns
+  sheet   T57: 14 rows x 16 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Time-Series-Table/LFR2022_T36_57.xlsx
+  retrieved 2026-09-27 16:52 UTC
+  method  direct download, byte-for-byte
+  labels  [sheet Contents] ; Contents ; Employment Table(s) - Labour Force In
+          Singapore 2022 ; T36 ; EMPLOYED RESIDENTS AGED FIFTEEN YEARS AND
+          OVER BY OCCUPATION AND SEX, 2012 - 2022 (JUNE) ; T37 ; EMPLOYED
+          RESIDENTS AGED FIFTEEN YEARS AND OVER BY OCCUPATION, INDUSTRY AND
+          SEX, JUNE 2022 ; T38 ; EMPLOYED RESIDENTS AGED FIFTEEN YEARS AND
+          OVER BY OCCUPATION, EMPLOYMENT STATUS AND SEX, JUNE 2022 ; T39 ;
+          EMPLOYED RESIDENTS AGED FIFTEEN YEARS AND OVER BY OCCUPATION,
+          NATURE OF EMPLOYMENT AND SEX, JUNE 2022 ; T40 ; EMPLOYED RESIDENTS
+          AGED FIFTEEN YEARS AND OVER BY OCCUPATION, AGE AND SEX, JUNE 2022 ;
+          T41 ; EMPLOYED RESIDENTS AGED FIFTEEN YEARS AND OVER BY OCCUPATION,
+          HIGHEST QUALIFICATION ATTAINED AND SEX, JUNE 2022 ; T42 ; EMPLOYED
+          RESIDENTS AGED FIFTEEN YEARS AND OVER BY OCCUPATION, MARITAL STATUS
+          AND SEX, JUNE 2022 ; T43 ; EMPLOYED RESIDENTS AGED FIFTEEN YEARS
+          AND OVER BY DETAILED OCCUPATION AND SEX, JUNE 2022 ; T44 ; EMPLOYED
+          RESIDENTS AGED FIFTEEN YEARS AND OVER IN BROAD OCCUPATIONAL GROUPS
+          BY SELECTED CHARACTERISTICS AND SEX, JUNE 2022 ; T45 ; EMPLOYED
+          RESIDENTS AGED FIFTEEN YEARS AND OVER IN PROFESSIONAL, MANAGERIAL,
+          EXECUTIVE AND TECHNICAL OCCUPATIONS BY INDUSTRY AND AGE, JUNE 2022
+          ; T46 ; EMPLOYED RESIDENTS AGED FIFTEEN YEARS AND OVER IN CLERICAL,
+          SALES & SERVICE OCCUPATIONS BY INDUSTRY AND AGE, JUNE 2022 ; T47 ;
+          EMPLOYED RESIDENTS AGED FIFTEEN YEARS AND OVER IN PRODUCTION &
+          TRANSPORT OPERATORS, CLEANERS & LABOURERS AND RELATED OCCUPATIONS
+          BY INDUSTRY AND AGE, JUNE 2022 ; T48 ; EMPLOYED RESIDENTS AGED
+          FIFTEEN YEARS AND OVER BY INDUSTRY, EMPLOYMENT STATUS AND SEX, JUNE
+          2022 ; T49 ; EMPLOYED RESIDENTS AGED FIFTEEN YEARS AND OVER BY
+          INDUSTRY, NATURE OF EMPLOYMENT AND SEX, JUNE 2022 ; T50 ; EMPLOYED
+          RESIDENTS AGED FIFTEEN YEARS AND OVER BY INDUSTRY, AGE AND SEX,
+          JUNE 2022 ; T51 ; EMPLOYED RESIDENTS AGED FIFTEEN YEARS AND OVER BY
+          INDUSTRY, HIGHEST QUALIFICATION ATTAINED AND SEX, JUNE 2022 ; T52 ;
+          EMPLOYED RESIDENTS AGED FIFTEEN YEARS AND OVER BY INDUSTRY, MARITAL
+          STATUS AND SEX, JUNE 2022 ; T53 ; EMPLOYED RESIDENTS AGED FIFTEEN
+          YEARS AND OVER BY EMPLOYMENT STATUS AND SEX, 2012 - 2022 (JUNE) ;
+          T54 ; EMPLOYED RESIDENTS AGED FIFTEEN YEARS AND OVER BY EMPLOYMENT
+          STATUS, NATURE OF EMPLOYMENT AND SEX, JUNE 2022 ; T55 ; EMPLOYED
+          RESIDENTS AGED FIFTEEN YEARS AND OVER BY EMPLOYMENT STATUS, AGE AND
+          SEX, JUNE 2022 ; T56 ; EMPLOYED RESIDENTS AGED FIFTEEN YEARS AND
+          OVER BY EMPLOYMENT STATUS, HIGHEST QUALIFICATION ATTAINED AND SEX,
+          JUNE 2022 ; T57 ; EMPLOYED RESIDENTS AGED FIFTEEN YEARS AND OVER BY
+          EMPLOYMENT STATUS, MARITAL STATUS AND SEX, JUNE 2022 ; [sheet T36]
+          ; TABLE 36 ; Thousands ; Total ; Managers & Administrators
+          (Including Working Proprietors) ; Professionals ; Associate
+          Professionals & Technicians ; Clerical Support Workers ; Service &
+          Sales Workers ; Craftsmen & Related Trades Workers ; Plant &
+          Machine Operators & Assemblers ; Cleaners, Labourers & Related
+          Workers ; Others ; Male ; Female ; Source: Comprehensive Labour
+          Force Survey, Manpower Research & Statistics Department, MOM ;
+          Notes: ; 1) 'Others' includes Agricultural & Fishery Workers and
+          Workers Not Elsewhere Classified. ; 2) Data are classified based on
+          Singapore Standard Occupational Classification (SSOC) 2020. Data
+          before year 2020 which were coded based on earlier versions of the
+          SSOC were mapped to SSOC 2020 as far as possible to facilitate data
+          comparability. ; [sheet T37] ; TABLE 37 ; C Manufacturing ; F
+          Construction ; G-U Services ; G Wholesale & Retail Trade ; H
+          Transportation & Storage ; I Accommodation & Food Services ; J
+          Information & Communications ; K Financial & Insurance Services ; L
+          Real Estate Services ; M Professional Services ; N Administrative &
+          Support Services ; O, P Public Administration & Education ; Q
+          Health & Social Services ; R Arts, Entertainment & Recreation ; S-U
+          Other Community, Social & Personal Services ; A, B, D, E Others ;
+          1) 'Others' industry includes Agriculture, Fishing, Quarrying,
+          Utilities and Sewerage & Waste Management. ; 2) 'Others' occupation
+          includes Agricultural & Fishery Workers and Workers Not Elsewhere
+          Classified. ; [sheet T38] ; TABLE 38 ; Employers ; Employees ; Own
+          Account Workers ; Contributing Family Workers ; Note: ; [sheet T39]
+          ; TABLE 39 ; Full-Time ; Part-Time ; [sheet T40] ; TABLE 40 ; 70 &
+          Over ; [sheet T41] ; TABLE 41 ; Below Secondary ; Secondary ; Post-
+          Secondary (Non-Tertiary) ; Diploma & Professional Qualification ;
+          Degree ; [sheet T42] ; TABLE 42 ; Single ; Married ; Widowed /
+          Divorced ; [sheet T43] ; TABLE 43 ; 11 Legislators, Senior
+          Officials & Chief Executives ; 12 Administrative & Commercial
+          Managers ; 13 Production and Specialised Services Managers ; 14
+          Hospitality, Retail & Related Services Managers ; 21 Science &
+          Engineering Professionals ; 22 Health Professionals ; 23 Teaching &
+          Training Professionals ; 24 Business & Administration Professionals
+          ; 25 Information & Communications Technology Professionals ; 26
+          Legal, Social, Religious & Cultural Professionals ; 31 Physical &
+          Engineering Science Associate Professionals ; 32 Health Associate
+          Professionals ; 33 Business & Administration Associate
+          Professionals ; 34 Legal, Social, Cultural & Related Associate
+          Professionals ; 35 Information & Communications Technicians ; 36
+          Teaching Associate Professionals ; 39 Other Associate Professionals
+          Not Elsewhere Classified ; 40 Clerical Supervisors ; 41 General &
+          Keyboard Clerks ; 42 Customer Services Officers & Clerks ; 43
+          Numerical & Material-Recording Clerks ; 44 Other Clerical Support
+          Workers ; 51 Personal Service Workers ; 52 Sales Workers ; 53
+          Personal Care Workers ; 54 Protective Services Workers ; 59 Service
+          Workers Not Elsewhere Classified ; 61-62 Agricultural & Fishery
+          Workers ; 71 Building & Related Trades Workers, Excluding
+          Electricians ; 72 Metal, Machinery & Related Trades Workers ; 73
+          Precision, Handicraft, Printing & Related Trades Workers ; 74
+          Electrical And Electronic Trades Workers ; 75 Food Processing,
+          Woodworking, Garment, Leather & Other Craft & Related Trades
+          Workers ; 81 Stationary Plant & Machine Operators ; 82 Assemblers &
+          Quality Checkers ; 83 Drivers & Mobile Machinery Operators ; 91
+          Cleaners & Related Workers ; 92 Agricultural, Fishery & Related
+          Labourers ; 93 Labourers & Related Workers ; 94 Food Preparation &
+          Kitchen Assistants ; 96 Waste Collection, Recycling & Material
+          Recovery Workers & Other Elementary Workers ; X1-X5 Workers Not
+          Elsewhere Classified ; [sheet T44] ; TABLE 44 ; Professionals,
+          Managers, Executives & Technicians ; Clerical, Sales & Service
+          Workers ; Production & Transport Operators, Cleaners & Labourers ;
+          Age (Years) ; 60 & Over ; Highest Qualification Attained ;
+          Employment Status ; Nature of Employment ; 1) 'Production &
+          Transport Operators, Cleaners & Labourers' includes Agricultural &
+          Fishery Workers and Workers Not Elsewhere Classified. ; [sheet T45]
+          ; TABLE 45 ; 1) 'Others' includes Agriculture, Fishing, Quarrying,
+          Utilities and Sewerage & Waste Management. ; [sheet T46] ; TABLE 46
+          ; [sheet T47] ; TABLE 47 ; 1) 'Production & Transport Operators,
+          Cleaners & Labourers and Related Occupations' includes Agricultural
+          & Fishery Workers and Workers Not Elsewhere Classified. ; 2)
+          'Others' includes Agriculture, Fishing, Quarrying, Utilities and
+          Sewerage & Waste Management. ; [sheet T48] ; TABLE 48 ; [sheet T49]
+          ; TABLE 49 ; [sheet T50] ; TABLE 50 ; [sheet T51] ; TABLE 51 ;
+          [sheet T52] ; TABLE 52 ; [sheet T53] ; TABLE 53 ; [sheet T54] ;
+          TABLE 54 ; [sheet T55] ; TABLE 55 ; [sheet T56] ; TABLE 56 ; [sheet
+          T57] ; TABLE 57
+
+FAILED (URL and error)
+  http://www.mom.gov.sg/Documents/statistics-publications/manpower-supply/report-labour-2008/2008LabourForce_T51.xls
+    live: 301 to https, then HTTP 404; Wayback: HTTP 404 (never archived).
+    The same table is in w2e_lfs_2008_report.pdf.
+  https://stats.mom.gov.sg/iMAS_Tables/LabourForce/LabourForce_2011/mrsd_2011LabourForce_T55.xlsx
+    (linked from the live Employment-Tables2011 page) live HTTP 404; Wayback
+    HTTP 404. Also HTTP 404 under iMAS_Tables1/ and as .xls, and at the old
+    mom.gov.sg report-labour-2011/ path. The same table is in
+    w2e_lfs_2011_report.pdf.
+  https://stats.mom.gov.sg/iMAS_Tables/LabourForce/LabourForce_2014/mrsd_2014LabourForce_T38.xlsx
+    (linked from the live Labour-Force-in-Singapore-2014-Employment page)
+    live HTTP 404; Wayback HTTP 404; iMAS_Tables1/ HTTP 404. The same table is
+    in w2e_lfs_2014_report.pdf.
+  https://stats.mom.gov.sg/iMAS_PdfLibrary/mrsd_2008LabourForce.pdf and
+  https://stats.mom.gov.sg/iMAS_PdfLibrary/mrsd_2011LabourForce.pdf
+    live HTTP 404, Wayback HTTP 404; taken from MOM's old path instead (above).
+  https://stats.mom.gov.sg/Pages/Employment-Tables{2007..2010}.aspx
+    HTTP 404; 2009 and 2010 tables located through Wayback captures of MOM's
+    old statistical-tables-{2009,2010}.aspx pages.
+  https://www.singstat.gov.sg/publications/reference/ebook/industry/services
+    HTTP 404.
