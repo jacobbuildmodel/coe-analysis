@@ -401,7 +401,7 @@ class Branches(unittest.TestCase):
 
     def test_confidences_read_from_thesis(self):
         self.assertEqual(TESTS.confidences(os.path.join(PWM, "THESIS.md")),
-                         {t: None for t in ("T1", "T2", "T3", "T4", "T5")})
+                         {"T1": .28, "T2": .40, "T3": .58, "T4": None, "T5": .50})
         self.assertEqual(self.conf, {"T1": .4, "T2": .5, "T3": .6, "T4": .6, "T5": .45})
 
 

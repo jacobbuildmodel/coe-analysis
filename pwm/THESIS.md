@@ -1,8 +1,9 @@
 # THESIS: Minimum wage or the Progressive Wage Model -- which actually lifts Singapore's lowest pay?
 
-**UNSEALED DRAFT, 27 September 2026. Not for publication. Nothing below is
-final until Jacob sets the confidences and the file is sealed in a commit of
-its own. After the seal it is never edited; changes go in
+**SEALED, 28 September 2026, in the commit "pwm: SEAL", which adds only
+`SEAL_MANIFEST.md` (the md5 of this file, the occupation map, RETRIEVED.txt
+and every script). Written and sealed before any wage or employment value
+was opened. After the seal it is never edited; changes go in
 `THESIS_ADDENDUM.md`, dated, and are reported, not applied to the scoring.**
 
 Author: `pwm` (Claude Code session). Repository: coe-analysis, subdirectory
@@ -85,13 +86,15 @@ Revision history before the seal:
   - Part A of the verdict can no longer separate the two models (section 8);
   - four predictions are scored, and Jacob sets four confidences;
   - the gap is named as a finding (section 9).
+- The fill before the seal (28 September 2026): Jacob's four confidences,
+  sent through the checker, written in beside the researcher's proposals:
+  T1 28%, T2 40%, T3 58%, T5 50%; expected number holding 1.76 of 4.
 
 Markers: no `PENDING` marker remains. Every link, rung, date and industry
 line is settled from documents in `raw/`, never from a wage or employment
-value, or is covered by a rule fixed now. Nothing is open but Jacob's four
-confidences (section 10). `[JACOB]` = the confidence Jacob
-sets at the seal. "Researcher's proposal" = the researcher's confidence, kept
-for the record.
+value, or is covered by a rule fixed now. Nothing is open: Jacob's four
+confidences are set (section 8). "Researcher's proposal" = the researcher's
+confidence, kept for the record beside Jacob's.
 
 ---
 
@@ -640,7 +643,8 @@ before the ladders were announced.
     its size.
   - The sensitivity on the Junes after the last break (section 5) checks it,
     reported, not scored.
-- **Confidence at seal: `[JACOB]`.** Researcher's proposal:
+- **Confidence at seal: 28%** (Jacob, through the checker). Researcher's
+  proposal, for the record:
   40%. Selection on lagging pay makes a drift
   likely, and with three groups and short noisy series one of them will
   probably cross a 1.0-a-year line even if the underlying trends were
@@ -731,7 +735,8 @@ before the ladders were announced.
     T2 measures, whichever reading holds.
   - All of these push toward FAIL. So a pass is strong evidence that the ladder
     lifted pay where it applied, and a fail is weak evidence that it did not.
-- **Confidence at seal: `[JACOB]`.** Researcher's proposal:
+- **Confidence at seal: 40%** (Jacob, through the checker). Researcher's
+  proposal, for the record:
   50%. The ladders were set to bite, and MOM's
   public claims (background knowledge, disclosed) point to faster wage growth
   in PWM jobs. But dilution, the 25-employee floor of the survey and a
@@ -777,7 +782,8 @@ The tailor's extreme says jobs without a ladder are left behind.
     evidence that jobs without a ladder did not need one. "Fell behind" is
     strong evidence that they did, since it happened despite that floor.
   - Each dated LQS step is marked on the chart.
-- **Confidence at seal: `[JACOB]`.** Researcher's proposal:
+- **Confidence at seal: 58%** (Jacob, through the checker). Researcher's
+  proposal, for the record:
   60%. A tight labour market, higher foreign worker
   levies and dollar-amount wage guidelines lifted low pay broadly in these
   years, and background knowledge (disclosed) recalls MOM reporting the 20th
@@ -990,7 +996,8 @@ paid at least the ladder's first rung.
   relative: covered against comparison jobs. T5 is a level: covered jobs
   against their own rung. Either can hold without the other, so T5 stays
   scored.
-- **Confidence at seal: `[JACOB]`.** Researcher's proposal:
+- **Confidence at seal: 50%** (Jacob, through the checker). Researcher's
+  proposal, for the record:
   45%. The in-house mix in all three groups (and non-LCR firms in landscape)
   and any year where a scheduled step landed just before the June survey
   make "every group, every year" fragile.
@@ -1132,9 +1139,9 @@ reached.
   when it cannot be computed) drops out of both the count and the Brier
   score, and the article says so.
 
-Expected number holding: from Jacob's four confidences, written in at the
-seal. Under the researcher's proposals it would be 1.95 of 4 (0.40 + 0.50 +
-0.60 + 0.45). The predictions are correlated (T1 gates T2 and T5; T2 and T5
+Expected number holding: **1.76 of 4** (0.28 + 0.40 + 0.58 + 0.50), from
+Jacob's confidences. Under the researcher's proposals it would have been
+1.95 of 4 (0.40 + 0.50 + 0.60 + 0.45). The predictions are correlated (T1 gates T2 and T5; T2 and T5
 read the same wages), so the actual count spreads wider than four
 independent calls would.
 
@@ -1265,11 +1272,13 @@ the count, the Brier score and the confidences, Part A cannot separate the
 two models (section 8), and the gap is a finding (section 9). No rule
 changed.
 
-**Open at the seal: four confidences** (T1, T2, T3, T5; `[JACOB]`), which
-Jacob sets, through the checker. They are written as "Confidence at seal: NN%", the form
-`11_tests.py` reads.
+**Set at the seal: four confidences**, Jacob's, through the checker: T1
+28%, T2 40%, T3 58%, T5 50%. They are written as "Confidence at seal: NN%",
+the form `11_tests.py` reads.
 
-**The seal commit records** the md5 of THESIS.md, the occupation map and
-every analysis script (`python3 pwm/14_manifest.py --seal` writes
-`SEAL.md5`), and adds the file `pwm/SEALED`, which lets the scripts read
-`raw/`.
+**The seal commit** ("pwm: SEAL") adds only `SEAL_MANIFEST.md`: the md5 of
+THESIS.md, the occupation map, `raw/RETRIEVED.txt`, every script,
+`requirements.txt`, `run_all.sh` and every file under `tests/`
+(`python3 pwm/14_manifest.py --seal`). The file `pwm/SEALED`, which lets the
+scripts read `raw/`, is created later, at Checkpoint 1, after the open
+question page is live.

@@ -11,10 +11,13 @@
                                                    the file; every manifest
                                                    value appears in RESULTS.md
                                                    as printed.
-  python3 pwm/14_manifest.py --seal                write pwm/SEAL.md5: the md5
-                                                   of THESIS.md, the occupation
-                                                   map and every script, for
-                                                   the seal commit.
+  python3 pwm/14_manifest.py --seal                write pwm/SEAL_MANIFEST.md:
+                                                   the md5 of THESIS.md, the
+                                                   occupation map,
+                                                   RETRIEVED.txt, every script,
+                                                   requirements.txt, run_all.sh
+                                                   and tests/, for the seal
+                                                   commit.
 
 CHECKSUMS.md5 has two sections, paths relative to ROOT. INPUTS: the scripts,
 THESIS.md, the occupation map, T4_LFS_LINES.csv if present, and every raw
@@ -134,13 +137,30 @@ def check(P):
     return bad
 
 
+def seal_files():
+    """What the seal records: THESIS.md, the occupation map, RETRIEVED.txt,
+    every pwm/*.py, requirements.txt, run_all.sh and every file under tests/."""
+    rels = ["THESIS.md", "office/OCCUPATION_MAP.csv", "raw/RETRIEVED.txt"]
+    rels += sorted(os.path.basename(p) for p in glob.glob(os.path.join(L.PWM, "*.py")))
+    rels += ["requirements.txt", "run_all.sh"]
+    for d, dirs, files in sorted(os.walk(os.path.join(L.PWM, "tests"))):
+        dirs[:] = sorted(x for x in dirs if x != "__pycache__")
+        rels += sorted(os.path.relpath(os.path.join(d, f), L.PWM).replace(os.sep, "/")
+                       for f in files if not f.endswith(".pyc"))
+    return rels
+
+
 def seal():
-    paths = [os.path.join(L.PWM, "THESIS.md"), L.MAP] + [os.path.join(L.PWM, s) for s in SCRIPTS]
-    text = ("# MD5 of THESIS.md, the occupation map and every analysis script, as sealed.\n"
-            "# Paths relative to pwm/.\n")
-    text += "".join(f"{md5(p)}  {os.path.relpath(p, L.PWM)}\n" for p in paths)
-    L.write_text(os.path.join(L.PWM, "SEAL.md5"), text)
-    print(f"  pwm/SEAL.md5: {len(paths)} files")
+    rels = seal_files()
+    lines = ["# SEAL MANIFEST: PWM piece", "",
+             "The md5 of every file the seal fixes, taken in the commit \"pwm: SEAL\",",
+             "which adds this file and nothing else. Paths are relative to `pwm/`.",
+             "Regenerate with `python3 pwm/14_manifest.py --seal` and compare.", "",
+             "```"]
+    lines += [f"{md5(os.path.join(L.PWM, r))}  {r}" for r in rels]
+    lines += ["```", ""]
+    L.write_text(os.path.join(L.PWM, "SEAL_MANIFEST.md"), "\n".join(lines))
+    print(f"  pwm/SEAL_MANIFEST.md: {len(rels)} files")
 
 
 def main():
