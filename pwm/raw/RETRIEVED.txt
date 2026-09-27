@@ -69,7 +69,7 @@ W1a  Per-year tables, stats.mom.gov.sg (the long run; the key file set)
      WANTED: every year available, earliest to June 2025. Earliest year
      confirmed by search: 2011. Earlier years UNVERIFIED. The pre-trends test
      needs at least four June surveys before October 2012 for cleaning, so
-     2008 or earlier is the target (THESIS section 5).
+     2009 or earlier is the target (THESIS section 5).
      For each year take:
        (i)  the main table: wages by occupation, all industries
             -> raw/w1_ows_{YYYY}_occupation.xlsx
