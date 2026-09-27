@@ -171,6 +171,41 @@ The seal is only worth something if it is clear what had been seen.
    All of these are leads for the W3 wage-schedule table (THESIS section 10,
    item 3). Every amount and date is confirmed from primary documents in the
    design chat's downloads before it enters T5.
+10. **Researcher exposure while building the title listing, the occupation
+    map and the W3 rung table (27 September 2026, after the downloads).** No
+    wage or head-count value from W1 or W2 was opened. What was read:
+    - **OWS spreadsheets.** Titles, SSOC codes, column headers and table
+      titles only, through `01_titles.py`. That script never reads a wage or
+      "Number Covered" column. To learn the layout, header cells were first
+      printed with every digit masked.
+    - **OWS method notes, 2008-2025.** Coverage sentences only. These carry
+      survey metadata, not outcomes: the number of establishments and
+      employees in each year's sample (for example, 3,225 establishments and
+      some 221,400 CPF contributors in June 2009).
+    - **W3 policy documents.** Sentences carrying dollar amounts were
+      extracted with a filter that dropped any sentence naming a median,
+      growth, earnings or a survey. Schedule tables printed as images were
+      viewed (cleaning order 2021, landscape 2015 and 2021). The filter let
+      through these outcome-type statements, disclosed here:
+      - STC 2017: "The wages of resident security officers have increased
+        since the introduction of the PWM in October 2014" (no figure).
+      - TCL 2021, footnote: "The monthly gross wages of resident landscape
+        maintenance employees are marginally higher than their PWM Baseline
+        Wages, as they typically work few overtime hours" (no figure). This
+        bears on T5 and on the gross-versus-basic choice; it is stated here
+        so its influence can be judged.
+      - TCL 2015: "In 2014, there were only about 3,000 local landscape
+        maintenance workers, out of a total workforce of 6,900", and 270 LCR
+        companies (about 90 per cent) at end 2014. TCL 2021: 358 LCR
+        companies employing more than 3,000 resident landscape maintenance
+        employees on 1 January 2021. NParks, April 2015: an estimated 3,000
+        resident workers would benefit. These are single-date head counts,
+        not series.
+      - TCL 2021 and TWG-LWW material state a policy aim that wage growth in
+        PWM sectors "outpace median wage growth". That is an aim, not a
+        result.
+      - MSE speech: the waste collection crew's baseline wage schedule
+        (S$2,210 in 2023 to S$3,260 in 2028), a policy setting.
 
 ## 2. Item by item
 
@@ -256,17 +291,18 @@ full-time employed residents is on data.gov.sg as an annual series
   - The level of occupation detail is UNVERIFIED. If it is the nine major
     groups only, it cannot isolate cleaners, guards or gardeners, and is
     context.
-- **W2c. MOM, "Employment Change by Industry and Residential Status"**.
-  - Resident versus foreign change, December to December.
-  - Probably at broad industry level (administrative and support services as
-    one line). That is enough for a descriptive substitution check, not a
-    test.
+- **W2c. Employment by industry AND residential status: does not exist.**
+  The dataset ID located by search is invalid on data.gov.sg. The nearest,
+  "Changes In Employment By Sector", has no residential split
+  (`raw/RETRIEVED.txt`). No public series splits industry employment by
+  residence, so the resident-for-foreign swap in T4 cannot be checked.
 - **W2d.** Employment by sector at year-end, context only.
 
 **Not found.** A public series of resident head counts by detailed occupation
-(cleaners, security guards, gardeners) per year. The OWS tables may carry the
-number of employees behind each wage line. The index did not say, and it is
-the first thing to check when the files arrive.
+(cleaners, security guards, gardeners) per year. The OWS tables for June
+2009-2023 carry a "Number Covered" column: the employees in the sample
+behind each wage line. That is a sample count, not employment, and is not
+used. `01_titles.py` never reads it. The 2024 and 2025 tables drop it.
 
 ### W3 -- PWM mandatory dates and wage levels, by sector
 
@@ -353,16 +389,17 @@ used for any date.
 
 ### W4 -- CPI
 
-- **W4a.** CPI, 2019 as base year, annual (data.gov.sg
-  `d_dcb352661fb449c4a4c0ab23aa8d6399`; SingStat M212882, labelled as the
-  2019-base table; whether M212882 is the monthly or the annual version is
-  UNVERIFIED).
-- **W4b.** CPI by household income group, lowest 20 per cent, annual
-  (data.gov.sg; SingStat M213921). This is the more honest deflator for
+- **W4a.** CPI, 2024 as base year, annual: SingStat **M213801**, 1961-2025.
+  SingStat rebased to 2024; the 2019-base M212882 now returns 404, and the
+  data.gov.sg ID located by search is invalid.
+- **W4b.** CPI by household income group, lowest 20 per cent, 2024 base,
+  annual: SingStat **M213911**, 1993-2025. M213921, located by search, is
+  the middle-60-per-cent table. This is the more honest deflator for
   low-wage pay, and it is used as a sensitivity.
 
-CPI matters only for the level of real pay. Every scored comparison is a
-difference between jobs deflated by the same index, so CPI cancels.
+Both were saved as the SingStat API's JSON. T1, T2 and T3 are gaps between
+groups sharing one index, so the deflator cancels in every one of them. CPI
+is used only for the charts and for descriptive statements of real pay.
 
 ### W5 -- minimum wages elsewhere (context only)
 
@@ -383,9 +420,10 @@ resident-only floor does not touch.
 
 ## 3. Which occupations map cleanly to PWM sectors
 
-Titles below are generic. The exact OWS titles are matched from each year's
-file before the seal (THESIS section 4), and no title is added or dropped
-after a wage value has been seen.
+Titles below are generic. The exact titles and codes for every June
+2009-2025, every classification break and where it falls are in
+`office/OCCUPATION_MAP.csv` (27 September 2026), built from the title
+listing before any wage value was opened.
 
 | PWM ladder | OWS occupation titles (generic) | Fit | Reason |
 |---|---|---|---|
@@ -394,8 +432,8 @@ after a wage value has been seen.
 | Landscape (LCR firms, 2016) | gardening and landscape labourers, gardeners | **Weak** | Bound only LCR-registered firms. Registration was needed for public tenders but not to trade. The title may mix nursery and horticulture workers. Scored, with the weakness stated. |
 | Lift and escalator (2022; voluntary 2018) | lift/escalator mechanic or technician | **Poor** | Mid-wage, small cell, probably merged with other mechanics in some editions, and no clean start date. Described, not scored. |
 | Retail (2022) | shop sales assistant, cashier | Good **as comparison** | Uncovered until 1 Sep 2022. |
-| Food services (2023) | waiter, kitchen/food preparation assistant, food and drink stall assistant, dishwasher | Good **as comparison** | Uncovered until 1 Mar 2023. Cooks left out: mostly above the low-wage band. |
-| Administrators and drivers (2023) | general office clerk; car and van drivers, lorry drivers | Good **as comparison** | Uncovered until 1 Mar 2023. Conservancy truck drivers are excluded: the cleaning ladder covers them. |
+| Food services (2023) | waiter, kitchen assistant, food/drink stall assistant | Good **as comparison** | Uncovered until 1 Mar 2023. Cooks left out: mostly above the low-wage band. Dishwashers left out (27 Sep 2026): the cleaning ladder names them in its F&B group (`w3_cleaning_col_order_2021.pdf`). Food service counter attendant: absent from June 2009. |
+| Administrators and drivers (2023) | general office clerk; van drivers, lorry drivers | Good **as comparison** | Uncovered until 1 Mar 2023. No car-driver title is published in OWS. Conservancy and waste truck drivers are excluded: the cleaning and waste ladders cover them. |
 | Waste management (2023) | refuse collectors | **Poor** | Small, and overlaps the cleaning ladder's conservancy roles. Left out. |
 
 **Industries for W2a.**

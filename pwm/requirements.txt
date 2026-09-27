@@ -1,5 +1,7 @@
 # Pinned. Sources stage: only 00_coverage.py runs, and it needs pandas and,
-# for MOM's .xlsx tables, openpyxl. Later scripts add their pins here.
+# for MOM's .xlsx tables, openpyxl; for the 2009 .xls tables, xlrd. Later
+# scripts add their pins here.
 # Python 3.11.15
 pandas==3.0.2
 openpyxl==3.1.5
+xlrd==2.0.2

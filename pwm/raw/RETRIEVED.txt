@@ -2575,7 +2575,10 @@ w4a_cpi_annual_2024base.json
   method  SingStat TableBuilder public API, JSON byte-for-byte as served
   title    Consumer Price Index (CPI), 2024 As Base Year, Annual
   table    https://tablebuilder.singstat.gov.sg/table/TS/M213801
-  coverage not run: 00_coverage.py reads CSV, XLSX, XLS and PDF only
+  series  207
+  period  key: 1961 to 2025, 65 distinct
+  coverage 00_coverage.py (JSON reader added 27 Sep 2026; series count and
+           period keys only)
 
 w4b_cpi_lowest20_annual_2024base.json
   bytes   48859
@@ -2586,7 +2589,10 @@ w4b_cpi_lowest20_annual_2024base.json
   method  SingStat TableBuilder public API, JSON byte-for-byte as served
   title    Consumer Price Index (CPI) By Household Income Group, Lowest 20%, 2024 As Base Year, Annual
   table    https://tablebuilder.singstat.gov.sg/table/TS/M213911
-  coverage not run: 00_coverage.py reads CSV, XLSX, XLS and PDF only
+  series  76
+  period  key: 1993 to 2025, 33 distinct
+  coverage 00_coverage.py (JSON reader added 27 Sep 2026; series count and
+           period keys only)
 
 w5_de_dustmann_2022.pdf
   bytes   1592829
@@ -2630,3 +2636,53 @@ w5_uk_giupponi_2021wp.pdf
   source  https://assets.publishing.service.gov.uk/media/61b0c5a2e90e070448c520fb/IFS_WP202148-The-distributional-and-employment-impacts-of-nationwide-Minimum-Wage-changes.pdf
   retrieved 2026-09-27 09:03 UTC
   method  direct download, byte-for-byte
+
+===============================================================================
+STILL TO DOWNLOAD (researcher, 27 September 2026, after the checker review
+of 4a4cdae). Policy and classification documents only; no data values.
+===============================================================================
+
+W1d  SSOC correspondence tables, to link the titles that split or merge
+     (office/OCCUPATION_MAP.csv, links marked PENDING). SingStat's SSOC page
+     lists the current edition; earlier editions from its archive or from
+     Wayback captures of the same page:
+       https://www.singstat.gov.sg/standard-classifications/national-classifications/singapore-standard-occupational-classification-ssoc
+       wanted:
+         SSOC 2010 report, with its correspondence to SSOC 2005
+           (links at June 2010: security guard, gardener, office clerk,
+           food/drink stall assistant, cashier)
+         SSOC 2010 detailed definitions (the 5-digit to 4-digit hierarchy:
+           links at June 2011 for cleaners 9113, garden workers 9214,
+           cashier 52302)
+         SSOC 2015 report, with its correspondence to SSOC 2010 (June 2015:
+           cleaners 9113 into 91130, 91140, 91151, 91160, 91170)
+         SSOC 2020 report, with its correspondence to SSOC 2015 (June 2020:
+           security 5414 into 54143 and 54144; cleaners; 9214 retitled)
+       save as raw/w1d_ssoc{YYYY}_correspondence.{pdf|xlsx}
+
+W3 leads with NO primary copy in raw/ (the rung table in THESIS T5 marks the
+cells they would settle as PENDING):
+  cleaning   Tripartite Cluster for Cleaners report of 2016 (or the
+             Commissioner for Labour order in force from 1 July 2017), with
+             the wage schedule for July 2017 to June 2020. The checker's lead
+             was NTUC, 12 Dec 2016 (secondary). raw/ has only the MOM release
+             of June 2017, which gives the dates but not the amounts.
+  cleaning   Commissioner for Labour order for 1 July 2019 to 30 June 2021
+             (rungs for the excluded Junes 2020 and 2021; shown only)
+  security   MHA/MOM release of 12 Nov 2021 accepting the security schedule
+             for 2023-2028 (confirms or revises the 2022 officer rung of
+             S$1,442)
+  security   Security Tripartite Cluster recommendations of 29 Oct 2014
+             (Diagram 1: the S$1,100 officer rung at source; SPF points to it)
+  landscape  MOM/NParks release of 30 Nov 2018, TCL schedule for 2020-2025
+             (rungs on 1 June 2021 and 1 June 2022)
+  landscape  NParks LCR eligibility criteria as in force 2016-2021 (Wayback
+             captures of cuge.nparks.gov.sg/landscape-company-register/):
+             settles whether LCR listing gated hiring foreign workers or only
+             public contracts
+W3 leads WITH a primary copy in raw/: STC report of 23 Nov 2017
+(w3_security_stc_2017.pdf); NParks notice of 24 Apr 2015
+(w3_landscape_nparks_cuge_news.pdf) and TCL 2015 report
+(w3_landscape_tcl_report.pdf) for the 2015 news repost; NParks CUGE LCR page
+(w3_landscape_lcr_requirements.pdf, current version only); PWCS
+(w3c_iras_pwcs.pdf).
