@@ -136,4 +136,5 @@ record cannot tell", and that would be published too.
 
 ## Proof
 
-The sealed predictions are THESIS.md in commit [HASH], 28 September 2026.
+The [sealed predictions](https://github.com/jacobbuildmodel/coe-analysis/blob/e5f877b70f60f38a99248e6bd90a3e4063c45a65/pwm/THESIS.md)
+are THESIS.md in commit e5f877b, 28 September 2026.
