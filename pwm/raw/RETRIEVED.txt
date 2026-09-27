@@ -1,6 +1,7 @@
 RETRIEVED.txt -- pwm piece, raw/ inventory
 
-STATE ON 27 September 2026 (SGT): NOTHING RETRIEVED. raw/ holds no data file.
+STATE ON 27 September 2026 (SGT), later the same day: RETRIEVED. 235 files in
+raw/, see RECEIVED at the end. The paragraph below describes the sandbox attempt.
 
 Every download attempt from the researcher session failed at the network
 layer, not at the source. The sandbox egress proxy refused CONNECT (HTTP 403,
@@ -366,4 +367,2266 @@ The model (cited for the argument, not for a figure)
 RECEIVED
 ===============================================================================
 
-(empty: nothing received as of 27 September 2026)
+Retrieved 27 September 2026 by Jacob's machine (every host reachable; the
+sandbox list above no longer applies). No data value was opened, printed or
+previewed. The only script that read a CSV, XLSX or XLS is pwm/00_coverage.py;
+its output is below verbatim, one block per file, with source, retrieval time
+(UTC) and the page's "last updated" date where one is shown. PDFs were not
+read, with one exception, see LQS below. The title-listing script was not
+needed and not run.
+
+Summary
+  files     235 data files plus this one and .gitattributes
+  W1 (OWS) EARLIEST JUNE WITH TABLES AS SPREADSHEETS: 2009. Complete, every
+            June 2009 to June 2025. June 2007 and June 2008 exist only as
+            the full Report on Wages PDF (tables printed inside); June 2008
+            also has its OWS method PDF and occupation list. 2004 to 2006:
+            only the 2004 occupation list (no wages) could be retrieved.
+  Pre-trend target (THESIS s.5: four Junes before October 2012): met with
+            spreadsheets for 2009, 2010, 2011 and 2012; 2007 and 2008 add two
+            more in PDF form.
+
+W1 file naming and layout (from MOM's own table titles, not from the files)
+  2012-2025  w1_ows_{Y}_occupation.xlsx = MOM table4, "Median, 25th and 75th
+             Percentiles of Monthly Basic and Gross Wages of Common
+             Occupations" (2016 on: "... by Industry"). w1_ows_{Y}_industry.xlsx
+             = table5, "Median Monthly Basic and Gross Wages of Selected
+             Occupations within Each Major Occupational Group by Industry"
+             (2012 and 2014: "Major Occupational Groups by Industry", group
+             level only). Also table1 (by sex, all industries) and the
+             published occupation/industry list.
+  2009-2011  basic and gross are separate: w1_ows_{Y}_occupation_basic/gross
+             (all industries, mean, median and quartiles), industry_basic_NN /
+             industry_gross_NN (one file per industry, 01 Manufacturing ...
+             10 Arts, entertainment, recreation and others, as MOM numbered
+             them), majorgroup_basic/gross, and table2 (2009-2010) / table1
+             (2011), the all-industries overall table.
+  Sources    2012-2025 files are live on stats.mom.gov.sg, including 2016 to
+             2024 whose year pages now return 404 (read from Wayback captures
+             of those pages). 2010 and 2011 files linked from MOM's live pages
+             return 404; taken from Wayback captures of MOM's old path
+             mom.gov.sg/Documents/statistics-publications/wages{Y}/. 2007-2009
+             from the same old path, archived.
+  Not taken  tables by establishment size and by age (MOM tables 2 and 3,
+             2012 on), commencing wages, graduate starting salaries, CPF and
+             earnings tables: outside the W1 list.
+
+Dataset corrections (the IDs in W1b, W2c and W4 above)
+  d_ec5d0e4ebdd2baee2a5aa1322a3156a5, d_dda4a6de2712669acbbf161653e96a73 and
+  d_dcb352661fb449c4a4c0ab23aa8d6399: data.gov.sg API returns "The dataset id
+  is invalid." for all three.
+  W1b "Occupational Wages by Industry" is today d_523d376ff1d501a338add925f3313fd1,
+    "Resident Occupational Wages by Industry, June 2024": one June only, so it
+    does not replace the MOM series. Saved as w1b_ows_by_industry.csv.
+  W1b old-portal slug: redirects to collection 653, a single June 2021 table
+    with no downloadable dataset. Nothing saved; MOM's 2021 files cover it.
+  W1c: the file carries BOTH median_income_incl_emp_cpf and
+    median_income_excl_emp_cpf (settles the UNVERIFIED note above).
+  W2c: NOT FOUND. No data.gov.sg dataset of employment change by industry AND
+    residential status. Nearest, "Changes In Employment By Sector"
+    (d_a326c13e94827819f8f1057c15f00221), has no residential split; not saved.
+  W4a: SingStat M212882 (CPI, 2019 base) returns 404 "Resource Not Found":
+    SingStat has rebased to 2024. Saved the current M213801, "CPI, 2024 As Base
+    Year, Annual".
+  W4b: M213921 is now "CPI By Household Income Group, MIDDLE 60%". The lowest
+    20% table is M213911, saved. Neither CPI table is on data.gov.sg; both are
+    the SingStat API's JSON as served (00_coverage.py does not read JSON).
+    SingStat's CSV export sits behind a terms notice that needs a person to
+    accept it; not clicked on Jacob's behalf.
+
+LQS (W3b): read, as the brief asked for primary amounts and dates
+  Only the LQS threshold sentences of the FAQ captures were extracted; they
+  are policy parameters, not survey data.
+    S$1,000  in force by 15 Nov 2016 (w3b_lqs_faq_2016, page updated that day);
+             still S$1,000 on 9 Mar 2017. START DATE STILL NOT FOUND: no
+             capture of either FAQ URL before December 2016.
+    S$1,100  w3b_lqs_faq_2018, page updated 17 July 2017.
+    S$1,200  NOT CONFIRMED: no capture between January 2018 and July 2019.
+    S$1,300  w3b_lqs_faq_2019a/b, page updated 30 June 2019. First capture
+             with the half-count rule (half the LQS counts 0.5).
+    S$1,400  w3b_lqs_faq_2020, page updated 1 July 2020; unchanged in the
+             2021 capture.
+    S$1,800  today (w3b_lqs_mom_page, updated 1 July 2026).
+
+Not saved, by design: the secondary sources marked "not used" above (e2i,
+Fragomen, dollarsandsense) and Card and Krueger (no file needed).
+
+FAILED (URL and error)
+  OWS June 2007, 25 spreadsheets: table2, table3, table4, table3_1 to 3_10,
+    table4_1 to 4_10, table6, table7 at
+    http://www.mom.gov.sg/Documents/statistics-publications/wages-earnings/report2007/2007Wages_tableN.xls
+    live HTTP 404; Wayback HTTP 404 (never archived).
+  OWS June 2008, the same 25 at .../wages-earnings/report2008/2008Wages_tableN.xls
+    live HTTP 404; Wayback HTTP 404 (never archived).
+  Report on Wages 2005: mrsd_2005ROW.pdf, 2005Wages_OWS_Coverageandmethodology.pdf,
+    2005Wages_OccList.xls under http://www.mom.gov.sg/NR/rdonlyres/.../
+    live HTTP 404; no Wayback capture.
+  Report on Wages 2004: 2004ROW.pdf, 2004ROW1.pdf, 2004W_OWSmetho.pdf under
+    http://www.mom.gov.sg/NR/rdonlyres/.../  live HTTP 404; no Wayback capture.
+  Report on Wages 2006: no page or file found in the Wayback index.
+  https://www.nparks.gov.sg/news/2015/4/implementation-of-progressive-wage-model-for-landscape-sector-to
+    live HTTP 404 "Page not found"; no Wayback capture. The NParks CUGE notice
+    of the same implementation was saved from its August 2022 capture.
+  https://www.mom.gov.sg/newsroom/press-releases/2017/0630-commissioner-for-labour-adopts-updated-progressive-wage-model-recommendations-by-the-tripartite-cluster-for-cleaners
+    live HTTP 404; saved from the December 2025 capture instead.
+
+w1_ows_2004_occ_list.xls
+  bytes   61952
+  md5     88d8e3194cc5ed1b6a185a0a5507a53f
+  sheet   ROW04-OCC: 306 rows x 6 columns
+  source  https://web.archive.org/web/2006id_/http://www.mom.gov.sg/NR/rdonlyres/08FFC24D-58C3-4F26-BF3B-1F8FDBAA237A/0/2004W_OccList.xls
+  retrieved 2026-09-27 09:35 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2007_report.pdf
+  bytes   1836483
+  md5     842148f5143330fae21928ef7005cbd1
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages-earnings/report2007/mrsd_2007ROW.pdf
+  retrieved 2026-09-27 08:55 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2008_method.pdf
+  bytes   471566
+  md5     f620332e0593a0ea45f271e71750f32b
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages-earnings/report2008/2008Wages_OWS_Metho.pdf
+  retrieved 2026-09-27 08:55 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2008_occ_list.xls
+  bytes   73216
+  md5     366516a15ff12311aedb078e8437f775
+  sheet   ROW08 OCC list: 340 rows x 6 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages-earnings/report2008/2008Wages_OccList.xls
+  retrieved 2026-09-27 08:55 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2008_report.pdf
+  bytes   1878462
+  md5     52ce7f618737d1fc150636092d6a1ac9
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages-earnings/report2008/mrsd_2008ROW.pdf
+  retrieved 2026-09-27 09:06 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_industry_basic_01.xls
+  bytes   117248
+  md5     ecc08c88b3b2d94d393e517a5ec5a87f
+  sheet   ROW09 TABLE3_1: 334 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table3_1.xls
+  retrieved 2026-09-27 08:51 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_industry_basic_02.xls
+  bytes   71168
+  md5     2d3f8e2dfcb0d6dd315ef3878f33efd2
+  sheet   ROW09 TABLE3_2: 191 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table3_2.xls
+  retrieved 2026-09-27 08:51 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_industry_basic_03.xls
+  bytes   100352
+  md5     c0f255eee7d297a3680c3877c5517bd5
+  sheet   ROW09 TABLE3_3: 282 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table3_3.xls
+  retrieved 2026-09-27 09:04 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_industry_basic_04.xls
+  bytes   88576
+  md5     e2062363700b0bbd555c68216d900f93
+  sheet   ROW09 TABLE3_4: 192 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table3_4.xls
+  retrieved 2026-09-27 09:04 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_industry_basic_05.xls
+  bytes   83968
+  md5     4a5ec5871fc44065e8efbd0912c66ac4
+  sheet   ROW09 TABLE3_5: 279 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table3_5.xls
+  retrieved 2026-09-27 08:52 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_industry_basic_06.xls
+  bytes   67072
+  md5     97d150dc9afcd180e423178024c0497b
+  sheet   ROW09 TABLE3_6: 144 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table3_6.xls
+  retrieved 2026-09-27 08:52 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_industry_basic_07.xls
+  bytes   113664
+  md5     f8a4a50ac31d80697533e776a27a286f
+  sheet   ROW09 TABLE3_7: 146 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table3_7.xls
+  retrieved 2026-09-27 08:52 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_industry_basic_08.xls
+  bytes   102400
+  md5     fc276296f0d674d9e9db8734e5557bcf
+  sheet   ROW09 TABLE3_8: 279 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table3_8.xls
+  retrieved 2026-09-27 08:52 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_industry_basic_09.xls
+  bytes   84992
+  md5     0a9b395f3cea167370e1106753f25406
+  sheet   ROW09 TABLE3_9: 189 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table3_9.xls
+  retrieved 2026-09-27 08:53 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_industry_basic_10.xls
+  bytes   83968
+  md5     af7c90b658f24f9548ae521dfd4ba400
+  sheet   ROW09 TABLE3_10: 192 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table3_10.xls
+  retrieved 2026-09-27 08:53 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_industry_gross_01.xls
+  bytes   110080
+  md5     7913a11c58b234f0b9fbd411049778ce
+  sheet   ROW09 TABLE4_1: 330 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table4_1.xls
+  retrieved 2026-09-27 08:51 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_industry_gross_02.xls
+  bytes   74240
+  md5     10fa7479807a8cb81d186fa34288cf38
+  sheet   ROW09 TABLE4_2: 191 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table4_2.xls
+  retrieved 2026-09-27 08:51 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_industry_gross_03.xls
+  bytes   105984
+  md5     40a4247ccdc9a163814e9a12017a7f7a
+  sheet   ROW09 TABLE4_3: 282 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table4_3.xls
+  retrieved 2026-09-27 08:51 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_industry_gross_04.xls
+  bytes   89600
+  md5     49b66b782c9dc0804c0b76e8579a93b1
+  sheet   ROW09 TABLE4_4: 190 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table4_4.xls
+  retrieved 2026-09-27 08:52 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_industry_gross_05.xls
+  bytes   89088
+  md5     7909ffe6afbeca758ba105c625829bc9
+  sheet   ROW09 TABLE4_5: 187 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table4_5.xls
+  retrieved 2026-09-27 08:52 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_industry_gross_06.xls
+  bytes   63488
+  md5     d9ffad83e3b248cd737a23925149ab3d
+  sheet   ROW09 TABLE4_6: 144 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table4_6.xls
+  retrieved 2026-09-27 08:52 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_industry_gross_07.xls
+  bytes   82432
+  md5     f70c2c3cf812fc05e9ccb13be533c4b5
+  sheet   ROW09 TABLE4_7: 144 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table4_7.xls
+  retrieved 2026-09-27 08:52 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_industry_gross_08.xls
+  bytes   107520
+  md5     a0f2fc5840f2e16929e95aaf803ed5a5
+  sheet   ROW09 TABLE4_8: 279 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table4_8.xls
+  retrieved 2026-09-27 09:04 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_industry_gross_09.xls
+  bytes   91136
+  md5     0a44e756931b56366a389ad16880c0b8
+  sheet   ROW09 TABLE4_9: 188 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table4_9.xls
+  retrieved 2026-09-27 09:04 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_industry_gross_10.xls
+  bytes   91648
+  md5     b512ffaa43d0582da40d17f041c83504
+  sheet   ROW09 TABLE4_10: 191 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table4_10.xls
+  retrieved 2026-09-27 08:53 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_majorgroup_basic.xls
+  bytes   102400
+  md5     43382db25945e9c72d88387eb5e07c21
+  sheet   ROW09 TABLE6: 138 rows x 30 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table6.xls
+  retrieved 2026-09-27 08:53 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_majorgroup_gross.xls
+  bytes   107520
+  md5     0f10c41a96ff09c5779403fa5ce36bb3
+  sheet   ROW09 TABLE7: 138 rows x 30 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table7.xls
+  retrieved 2026-09-27 08:53 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_method.pdf
+  bytes   29449
+  md5     86a50ede7570c215744b66dbd4d0fa22
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_OWS_Metho.pdf
+  retrieved 2026-09-27 08:55 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_occ_list.xls
+  bytes   78848
+  md5     3c3a26abcd700a9266129850e66f78bb
+  sheet   ROW09 OCC LIST: 294 rows x 6 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_OccList.xls
+  retrieved 2026-09-27 08:55 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_occupation_basic.xls
+  bytes   163328
+  md5     7db75259d3141c26fd70c6bb5d43b620
+  sheet   ROW09 TABLE3: 575 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table3.xls
+  retrieved 2026-09-27 08:51 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_occupation_gross.xls
+  bytes   161792
+  md5     f3bba1d5dba088250e3a4c596cd7407c
+  sheet   ROW09 TABLE4: 574 rows x 15 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table4.xls
+  retrieved 2026-09-27 08:51 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2009_table2.xls
+  bytes   166400
+  md5     482c5d276d61c08f773b6d1f200f7a22
+  sheet   ROW09 TABLE2: 573 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2009/2009Wages_table2.xls
+  retrieved 2026-09-27 08:51 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_industry_basic_01.xlsx
+  bytes   51682
+  md5     9f4edb61ca9dfce84713ffc28fc63d3a
+  sheet   ROW10 TABLE3_1 : 293 rows x 14 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table3_1.xlsx
+  retrieved 2026-09-27 09:04 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_industry_basic_02.xlsx
+  bytes   36465
+  md5     6e469ee886252b6611cfe41af5bcd9c1
+  sheet   ROW10 TABLE3_2: 195 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table3_2.xlsx
+  retrieved 2026-09-27 09:26 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_industry_basic_03.xlsx
+  bytes   43942
+  md5     1caf227621a7a4f352400e09555e19aa
+  sheet   ROW10 TABLE3_3: 246 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table3_3.xlsx
+  retrieved 2026-09-27 09:05 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_industry_basic_04.xlsx
+  bytes   44642
+  md5     fb0d504815c8a24e5e2a1a2c7a66e7dd
+  sheet   ROW10 TABLE3_4: 193 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table3_4.xlsx
+  retrieved 2026-09-27 09:05 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_industry_basic_05.xlsx
+  bytes   40422
+  md5     8929cde256feaf1aaca997495e468e13
+  sheet   ROW10 TABLE3_5 : 233 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table3_5.xlsx
+  retrieved 2026-09-27 09:26 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_industry_basic_06.xlsx
+  bytes   34433
+  md5     22a329ae6ba4310637a20f2668c60859
+  sheet   ROW10 TABLE3_6 : 148 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table3_6.xlsx
+  retrieved 2026-09-27 09:05 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_industry_basic_07.xlsx
+  bytes   63748
+  md5     239099d0027af30473351b8d17dba445
+  sheet   ROW10 TABLE3_7: 149 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table3_7.xlsx
+  retrieved 2026-09-27 09:05 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_industry_basic_08.xlsx
+  bytes   49584
+  md5     c27860fff7857e34c8e7d1c666c7e8a8
+  sheet   ROW10 TABLE3_8: 287 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table3_8.xlsx
+  retrieved 2026-09-27 09:06 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_industry_basic_09.xlsx
+  bytes   40378
+  md5     c5db4b3f92a912fef334e5bfc0de837d
+  sheet   ROW10 TABLE3_9: 193 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table3_9.xlsx
+  retrieved 2026-09-27 09:06 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_industry_basic_10.xlsx
+  bytes   39450
+  md5     02771500495e7d1d8f5521378b06f71f
+  sheet   ROW10 TABLE3_10: 192 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table3_10.xlsx
+  retrieved 2026-09-27 09:06 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_industry_gross_01.xlsx
+  bytes   50097
+  md5     3f222a23a7437e87401139de416f80a9
+  sheet   ROW10 TABLE4_1: 290 rows x 14 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table4_1.xlsx
+  retrieved 2026-09-27 09:04 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_industry_gross_02.xlsx
+  bytes   37429
+  md5     c6a7cd25fb7b731703362ec89255fe40
+  sheet   ROW10 TABLE4_2: 194 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table4_2.xlsx
+  retrieved 2026-09-27 09:26 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_industry_gross_03.xlsx
+  bytes   44405
+  md5     cd9ebc713d02a1dd03eeb8451b468148
+  sheet   ROW10 TABLE4_3: 243 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table4_3.xlsx
+  retrieved 2026-09-27 09:05 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_industry_gross_04.xlsx
+  bytes   40407
+  md5     b9f51a133aa8d6fdc6f7c29aadc7a4ae
+  sheet   ROW10 TABLE4_4: 193 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table4_4.xlsx
+  retrieved 2026-09-27 09:05 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_industry_gross_05.xlsx
+  bytes   39003
+  md5     f9cdeff1fadc41baea6b68c54c895e68
+  sheet   ROW10 TABLE4_5: 144 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table4_5.xlsx
+  retrieved 2026-09-27 09:05 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_industry_gross_06.xlsx
+  bytes   33979
+  md5     628805620693c062765f771fdcc2fbd0
+  sheet   ROW10 TABLE4_6 : 147 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table4_6.xlsx
+  retrieved 2026-09-27 09:05 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_industry_gross_07.xlsx
+  bytes   37006
+  md5     3cc4bfe777cf55a019ed523e2085ae68
+  sheet   ROW10 TABLE4_7: 149 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table4_7.xlsx
+  retrieved 2026-09-27 09:26 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_industry_gross_08.xlsx
+  bytes   47973
+  md5     6ca4f997dd40d0fc530f9d045442c13a
+  sheet   ROW10 TABLE4_8: 287 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table4_8.xlsx
+  retrieved 2026-09-27 09:27 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_industry_gross_09.xlsx
+  bytes   39928
+  md5     1de8f12a74457525c6957cd53b8981f4
+  sheet   ROW10 TABLE4_9: 192 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table4_9.xlsx
+  retrieved 2026-09-27 09:06 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_industry_gross_10.xlsx
+  bytes   39841
+  md5     242884269a02f7bb6a37f230f4b1f05f
+  sheet   ROW10 TABLE4_10: 193 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table4_10.xlsx
+  retrieved 2026-09-27 09:06 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_majorgroup_basic.xlsx
+  bytes   47959
+  md5     cd308c728d30b3dd1b572f5defea1ad0
+  sheet   ROW10 TABLE6: 138 rows x 30 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table6.xlsx
+  retrieved 2026-09-27 09:06 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_majorgroup_gross.xlsx
+  bytes   48919
+  md5     58099b6c74585eceb664e79c35a57745
+  sheet   ROW10 TABLE7: 138 rows x 30 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table7.xlsx
+  retrieved 2026-09-27 09:06 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_method.pdf
+  bytes   153989
+  md5     121c3dede27d0884b301b72d796c0c35
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_OWS_Metho.pdf
+  retrieved 2026-09-27 08:55 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_occ_list.xlsx
+  bytes   34428
+  md5     397963eebea826cef13808412d5bb79d
+  sheet   ROW10_OCC list: 294 rows x 6 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_OccList.xlsx
+  retrieved 2026-09-27 08:56 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_occupation_basic.xlsx
+  bytes   75284
+  md5     81f6f839ad2a811bfc84514aa2a99db5
+  sheet   ROW10 TABLE3: 530 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table3.xlsx
+  retrieved 2026-09-27 09:26 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_occupation_gross.xlsx
+  bytes   73617
+  md5     dcd31e529aedea1f4736598dc56f3b0a
+  sheet   ROW10 TABLE4: 535 rows x 13 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table4.xlsx
+  retrieved 2026-09-27 09:04 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2010_table2.xlsx
+  bytes   83172
+  md5     c8aa45c9a8ecd962b4c8e524dbbe63c0
+  sheet   ROW10 TABLE2: 535 rows x 14 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2010/mrsd_2010Wages_table2.xlsx
+  retrieved 2026-09-27 09:25 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_industry_basic_01.xlsx
+  bytes   43100
+  md5     d244f7bd08f52207b107495c5c338dc3
+  sheet   ROW11 TABLE2_1 : 241 rows x 12 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table2_1.xlsx
+  retrieved 2026-09-27 09:27 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_industry_basic_02.xlsx
+  bytes   31192
+  md5     01fb4c99285345685092a27bac7893d4
+  sheet   ROW11 TABLE2_2 : 145 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table2_2.xlsx
+  retrieved 2026-09-27 09:07 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_industry_basic_03.xlsx
+  bytes   37156
+  md5     6581e8c22665e07991cd2ed47fbe4d66
+  sheet   ROW11 TABLE2_3 : 194 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table2_3.xlsx
+  retrieved 2026-09-27 09:07 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_industry_basic_04.xlsx
+  bytes   42574
+  md5     3b691b7cbb804b44ff445b68340d5c63
+  sheet   ROW11 TABLE2_4: 194 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table2_4.xlsx
+  retrieved 2026-09-27 09:07 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_industry_basic_05.xlsx
+  bytes   33859
+  md5     3d5e4d86c737d43df3ecd829def99301
+  sheet   ROW11 TABLE2_5: 143 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table2_5.xlsx
+  retrieved 2026-09-27 09:07 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_industry_basic_06.xlsx
+  bytes   28226
+  md5     f1a4912f2a5101b5f221c3c97f4a3714
+  sheet   ROW11 TABLE2_6 : 101 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table2_6.xlsx
+  retrieved 2026-09-27 09:08 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_industry_basic_07.xlsx
+  bytes   54850
+  md5     76c3c6f7f5435bb9fb3fa4bee0997ca0
+  sheet   ROW11 TABLE2_7: 147 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table2_7.xlsx
+  retrieved 2026-09-27 09:08 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_industry_basic_08.xlsx
+  bytes   43329
+  md5     aacfc0bf4d152fb939e8e8efb58525cd
+  sheet   ROW11 TABLE2_8: 193 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table2_8.xlsx
+  retrieved 2026-09-27 09:08 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_industry_basic_09.xlsx
+  bytes   33846
+  md5     af12b937a2b8bed5102347a603d390fa
+  sheet   ROW11 TABLE2_9: 146 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table2_9.xlsx
+  retrieved 2026-09-27 09:08 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_industry_basic_10.xlsx
+  bytes   34914
+  md5     be92bf32cbd13e5eeba76d0d8c2e1a51
+  sheet   ROW11 TABLE2_10: 146 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table2_10.xlsx
+  retrieved 2026-09-27 09:08 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_industry_gross_01.xlsx
+  bytes   125206
+  md5     ec641f8405514628fda07cccf12f2177
+  sheet   ROW11 T3_1: 242 rows x 12 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table3_1.xlsx
+  retrieved 2026-09-27 09:07 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_industry_gross_02.xlsx
+  bytes   33784
+  md5     33c613e98cbbd8f835a4d40659cb0efc
+  sheet   ROW11 TABLE3_2: 146 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table3_2.xlsx
+  retrieved 2026-09-27 09:07 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_industry_gross_03.xlsx
+  bytes   40591
+  md5     cd6c5d8b1413084ab52f0b7354a74701
+  sheet   ROW11 T3_3: 194 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table3_3.xlsx
+  retrieved 2026-09-27 09:07 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_industry_gross_04.xlsx
+  bytes   40607
+  md5     ec40622639cdaf4df98ce8d22bb72a67
+  sheet   ROW11 T3_4 : 194 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table3_4.xlsx
+  retrieved 2026-09-27 09:07 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_industry_gross_05.xlsx
+  bytes   31840
+  md5     2432e0a6eb7dbe2f4d53d07939733bed
+  sheet   ROW11 T3_5: 99 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table3_5.xlsx
+  retrieved 2026-09-27 09:08 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_industry_gross_06.xlsx
+  bytes   31112
+  md5     ff19ce3e2b88316fb239864f1db4380c
+  sheet   ROW11 T3_6 : 100 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table3_6.xlsx
+  retrieved 2026-09-27 09:27 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_industry_gross_07.xlsx
+  bytes   36393
+  md5     bfebcef35ef4f13c74a5f7e0abfcdb27
+  sheet   ROW11 T3_7 : 146 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table3_7.xlsx
+  retrieved 2026-09-27 09:08 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_industry_gross_08.xlsx
+  bytes   39795
+  md5     fab40c7492151e61ab8ea9741759cd7f
+  sheet   ROW11 T3_8 : 195 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table3_8.xlsx
+  retrieved 2026-09-27 09:08 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_industry_gross_09.xlsx
+  bytes   35781
+  md5     653a247358fc26f8bdb1b1c38174e538
+  sheet   ROW11 T3_9: 147 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table3_9.xlsx
+  retrieved 2026-09-27 09:08 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_industry_gross_10.xlsx
+  bytes   36802
+  md5     1adf93f2fc341bc397c8f5ec517f1c41
+  sheet   ROW11 T3_10: 147 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table3_10.xlsx
+  retrieved 2026-09-27 09:09 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_majorgroup_basic.xlsx
+  bytes   73660
+  md5     ff79717c6d50296385853cc4ade0eb7c
+  sheet   ROW11 TABLE4: 141 rows x 38 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table4.xlsx
+  retrieved 2026-09-27 09:09 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_majorgroup_gross.xlsx
+  bytes   74762
+  md5     be7b721fdd3c2a0d9f1728b1fd9e4636
+  sheet   ROW11 TABLE5: 141 rows x 39 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table5.xlsx
+  retrieved 2026-09-27 09:09 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_method.pdf
+  bytes   93630
+  md5     7be15b0df6f22b7f77528b1886622dbb
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_OWS_Metho.pdf
+  retrieved 2026-09-27 09:27 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_occ_list_a.xlsx
+  bytes   37243
+  md5     a771ffce197c8663ee7376ddd5c026d5
+  sheet   ROW11_OCC LIST A: 247 rows x 6 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_OccListA.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_occ_list_b.xlsx
+  bytes   41243
+  md5     a6fed93210798df7c0d8ff7efdef09f5
+  sheet   ROW11 OCC LIST B: 354 rows x 6 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_OccListB.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_occupation_basic.xlsx
+  bytes   66807
+  md5     b30a24af65644a239305ab97b67258b7
+  sheet   ROW11 TABLE2: 481 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table2.xlsx
+  retrieved 2026-09-27 09:07 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_occupation_gross.xlsx
+  bytes   67871
+  md5     92ac1788175bdbaec5a34e7755d0f432
+  sheet   ROW11 T3: 487 rows x 11 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table3.xlsx
+  retrieved 2026-09-27 09:07 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2011_table1.xlsx
+  bytes   65684
+  md5     bf89a546533325fa00bb3532e237a837
+  sheet   ROW11 TABLE1: 484 rows x 9 columns
+  source  https://web.archive.org/web/2011id_/http://www.mom.gov.sg/Documents/statistics-publications/wages2011/mrsd_2011Wages_table1.xlsx
+  retrieved 2026-09-27 09:06 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w1_ows_2012_industry.xlsx
+  bytes   63880
+  md5     b0bbda3ac21e4c6ecad643a0c83af663
+  sheet   Contents: 17 rows x 6 columns
+  sheet   T5.1: 42 rows x 20 columns
+  sheet   T5.2: 42 rows x 20 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2012/mrsd_2012Wages_table5.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2012_method.pdf
+  bytes   51949
+  md5     1328af6c105dd9c327a15b185b5346b0
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2012/mrsd_2012Wages_OWS_Method.pdf
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2012_occ_ind_list.xlsx
+  bytes   79176
+  md5     a7fdb58dd9b7124e7567b89074393e24
+  sheet   Contents: 15 rows x 4 columns
+  sheet   Publication Criteria: 1 rows x 14 columns
+  sheet   List A: 368 rows x 7 columns
+  sheet   List B: 415 rows x 5 columns
+  sheet   List C: 41 rows x 5 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2012/mrsd_2012Wages_Occ_Ind_List.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2012_occupation.xlsx
+  bytes   187145
+  md5     13e4b618ef245219a53b8d2ebe5159cc
+  sheet   Contents: 27 rows x 6 columns
+  sheet   T4: 341 rows x 14 columns
+  sheet   T4.1: 145 rows x 14 columns
+  sheet   T4.2: 78 rows x 14 columns
+  sheet   T4.3: 114 rows x 14 columns
+  sheet   T4.4: 96 rows x 14 columns
+  sheet   T4.5: 58 rows x 14 columns
+  sheet   T4.6: 65 rows x 14 columns
+  sheet   T4.7: 68 rows x 14 columns
+  sheet   T4.8: 138 rows x 14 columns
+  sheet   T4.9: 94 rows x 14 columns
+  sheet   T4.10: 69 rows x 14 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2012/mrsd_2012Wages_table4.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2012_table1.xlsx
+  bytes   104743
+  md5     40ee604207cfc2f680ce680e85b9600a
+  sheet   Contents: 18 rows x 6 columns
+  sheet   T1: 341 rows x 10 columns
+  sheet   T1.1: 285 rows x 10 columns
+  sheet   T1.2: 233 rows x 10 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2012/mrsd_2012Wages_table1.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2013_industry.xlsx
+  bytes   51189
+  md5     9b3d37d30a5144d5b7b62bf798ba84df
+  sheet   Contents: 16 rows x 5 columns
+  sheet   T5: 107 rows x 19 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2013/mrsd_2013Wages_table5.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2013_method.pdf
+  bytes   176135
+  md5     b6ae66d9b1bf10610350c3aac278019d
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2013/mrsd_2013Wages_OWS_Method.pdf
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2013_occ_ind_list.xlsx
+  bytes   67706
+  md5     acfcc57f5a9a2b15f2c9e138431e1554
+  sheet   Contents: 15 rows x 4 columns
+  sheet   Publication Criteria: 1 rows x 14 columns
+  sheet   List A: 317 rows x 7 columns
+  sheet   List B: 438 rows x 5 columns
+  sheet   List C: 41 rows x 5 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2013/mrsd_2013Wages_Occ_Ind_List.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2013_occupation.xlsx
+  bytes   158586
+  md5     beaa9f2b176219d82f6e337e146ac09b
+  sheet   Contents: 27 rows x 6 columns
+  sheet   T4: 320 rows x 14 columns
+  sheet   T4.1: 143 rows x 14 columns
+  sheet   T4.2: 77 rows x 14 columns
+  sheet   T4.3: 108 rows x 14 columns
+  sheet   T4.4: 89 rows x 14 columns
+  sheet   T4.5: 62 rows x 14 columns
+  sheet   T4.6: 63 rows x 13 columns
+  sheet   T4.7: 74 rows x 14 columns
+  sheet   T4.8: 137 rows x 14 columns
+  sheet   T4.9: 85 rows x 14 columns
+  sheet   T4.10: 67 rows x 14 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2013/mrsd_2013Wages_table4.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2013_table1.xlsx
+  bytes   82719
+  md5     f2cd94929e7ad0a508d7c11564604625
+  sheet   Contents: 18 rows x 6 columns
+  sheet   T1: 320 rows x 10 columns
+  sheet   T1.1: 279 rows x 10 columns
+  sheet   T1.2: 227 rows x 10 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2013/mrsd_2013Wages_table1.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2014_industry.xlsx
+  bytes   51372
+  md5     b7ef47c5a4261ee713e08b3fcfa9ecb8
+  sheet   Contents: 16 rows x 5 columns
+  sheet   T5: 107 rows x 19 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2014/mrsd_2014Wages_table5.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2014_method.pdf
+  bytes   62883
+  md5     4209517aee8686d9f43be22e33b39803
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2014/mrsd_2014Wages_OWS_Method.pdf
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2014_occ_ind_list.xlsx
+  bytes   74111
+  md5     b817c6aa5774753b94673fde9af0f50b
+  sheet   Contents: 15 rows x 4 columns
+  sheet   Publication Criteria: 1 rows x 14 columns
+  sheet   List A: 319 rows x 7 columns
+  sheet   List B: 472 rows x 5 columns
+  sheet   List C: 41 rows x 5 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2014/mrsd_2014Wages_Occ_Ind_List.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2014_occupation.xlsx
+  bytes   154729
+  md5     3b49c95ae0ad6c0d49c5efc4ba59272f
+  sheet   Contents: 27 rows x 6 columns
+  sheet   T4: 319 rows x 14 columns
+  sheet   T4.1: 138 rows x 14 columns
+  sheet   T4.2: 74 rows x 14 columns
+  sheet   T4.3: 110 rows x 14 columns
+  sheet   T4.4: 97 rows x 14 columns
+  sheet   T4.5: 53 rows x 14 columns
+  sheet   T4.6: 67 rows x 13 columns
+  sheet   T4.7: 69 rows x 14 columns
+  sheet   T4.8: 134 rows x 14 columns
+  sheet   T4.9: 96 rows x 14 columns
+  sheet   T4.10: 61 rows x 14 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2014/mrsd_2014Wages_table4.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2014_table1.xlsx
+  bytes   86957
+  md5     78e14e4b9049b3ef806e0ee21a45b476
+  sheet   Contents: 18 rows x 6 columns
+  sheet   T1: 319 rows x 10 columns
+  sheet   T1.1: 271 rows x 10 columns
+  sheet   T1.2: 226 rows x 10 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2014/mrsd_2014Wages_table1.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2015_industry.xlsx
+  bytes   52178
+  md5     dd71f6e162007f5601ffec23de71202e
+  sheet   Contents: 16 rows x 5 columns
+  sheet   T5: 107 rows x 19 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2015/mrsd_2015Wages_table5.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2015_method.pdf
+  bytes   58375
+  md5     d23de86db3852f6b6992203155aa37bd
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2015/mrsd_2015Wages_OWS_Method.pdf
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2015_occ_ind_list.xlsx
+  bytes   73424
+  md5     a151a4b4bf744c6f251abd89da04158e
+  sheet   Contents: 15 rows x 4 columns
+  sheet   Publication Criteria: 1 rows x 14 columns
+  sheet   List A: 330 rows x 7 columns
+  sheet   List B: 455 rows x 5 columns
+  sheet   List C: 41 rows x 5 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2015/mrsd_2015Wages_Occ_Ind_List.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2015_occupation.xlsx
+  bytes   160225
+  md5     ce5be248afeeac2f6cde3d1deef60a3c
+  sheet   Contents: 27 rows x 6 columns
+  sheet   T4: 331 rows x 14 columns
+  sheet   T4.1: 131 rows x 14 columns
+  sheet   T4.2: 75 rows x 14 columns
+  sheet   T4.3: 114 rows x 14 columns
+  sheet   T4.4: 93 rows x 14 columns
+  sheet   T4.5: 56 rows x 14 columns
+  sheet   T4.6: 64 rows x 13 columns
+  sheet   T4.7: 77 rows x 13 columns
+  sheet   T4.8: 151 rows x 14 columns
+  sheet   T4.9: 94 rows x 14 columns
+  sheet   T4.10: 64 rows x 14 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2015/mrsd_2015Wages_table4.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2015_table1.xlsx
+  bytes   91005
+  md5     64c6d3edfc7f77f68e53f0a9abe4b450
+  sheet   Contents: 18 rows x 6 columns
+  sheet   T1: 331 rows x 10 columns
+  sheet   T1.1: 273 rows x 10 columns
+  sheet   T1.2: 237 rows x 10 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2015/mrsd_2015Wages_table1.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2016_industry.xlsx
+  bytes   50447
+  md5     61a4fff26f480032835be27236497b69
+  sheet   Contents: 16 rows x 5 columns
+  sheet   T5: 107 rows x 19 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2016/mrsd_2016Wages_table5.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2016_method.pdf
+  bytes   64125
+  md5     f213d3aed1415e99a99feaaae96aa0fc
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2016/mrsd_2016Wages_OWS_Method.pdf
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2016_occ_ind_list.xlsx
+  bytes   67563
+  md5     e012a1d26ea2aaa2e93872cebc02ade4
+  sheet   Contents: 15 rows x 4 columns
+  sheet   Publication Criteria: 1 rows x 14 columns
+  sheet   List A: 325 rows x 7 columns
+  sheet   List B: 417 rows x 5 columns
+  sheet   List C: 41 rows x 5 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2016/mrsd_2016Wages_Occ_Ind_List.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2016_occupation.xlsx
+  bytes   152333
+  md5     23fcd56f38f16599291ddfea83ae6081
+  sheet   Contents: 27 rows x 6 columns
+  sheet   T4: 326 rows x 14 columns
+  sheet   T4.1: 122 rows x 14 columns
+  sheet   T4.2: 74 rows x 14 columns
+  sheet   T4.3: 111 rows x 14 columns
+  sheet   T4.4: 89 rows x 14 columns
+  sheet   T4.5: 64 rows x 14 columns
+  sheet   T4.6: 71 rows x 13 columns
+  sheet   T4.7: 67 rows x 13 columns
+  sheet   T4.8: 148 rows x 14 columns
+  sheet   T4.9: 88 rows x 14 columns
+  sheet   T4.10: 76 rows x 14 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2016/mrsd_2016Wages_table4.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2016_table1.xlsx
+  bytes   84028
+  md5     4321ada3adf846d0c038e594492792fe
+  sheet   Contents: 18 rows x 6 columns
+  sheet   T1: 326 rows x 10 columns
+  sheet   T1.1: 276 rows x 10 columns
+  sheet   T1.2: 238 rows x 10 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2016/mrsd_2016Wages_table1.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2017_industry.xlsx
+  bytes   50486
+  md5     2e991bafa6ecb3e1b5d132cdb6938a8b
+  sheet   Contents: 16 rows x 5 columns
+  sheet   T5: 107 rows x 19 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2017/mrsd_2017Wages_table5.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2017_method.pdf
+  bytes   66044
+  md5     a7b4d8e9245290b321c35b5b88b17fc7
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2017/Coverage_and_Methodology_of_OWS_2017.pdf
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2017_occ_ind_list.xlsx
+  bytes   66650
+  md5     0c1ce1a9fb7f2ede05a827233d706e59
+  sheet   Contents: 15 rows x 4 columns
+  sheet   Publication Criteria: 1 rows x 14 columns
+  sheet   List A: 335 rows x 7 columns
+  sheet   List B: 407 rows x 5 columns
+  sheet   List C: 41 rows x 5 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2017/mrsd_2017Wages_Occ_Ind_List.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2017_occupation.xlsx
+  bytes   152970
+  md5     fe04cba6a69efd0fd64311e2b58ca097
+  sheet   Contents: 27 rows x 6 columns
+  sheet   T4: 337 rows x 14 columns
+  sheet   T4.1: 124 rows x 14 columns
+  sheet   T4.2: 64 rows x 14 columns
+  sheet   T4.3: 111 rows x 14 columns
+  sheet   T4.4: 89 rows x 14 columns
+  sheet   T4.5: 63 rows x 14 columns
+  sheet   T4.6: 65 rows x 13 columns
+  sheet   T4.7: 59 rows x 13 columns
+  sheet   T4.8: 137 rows x 14 columns
+  sheet   T4.9: 103 rows x 14 columns
+  sheet   T4.10: 73 rows x 14 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2017/mrsd_2017Wages_table4.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2017_table1.xlsx
+  bytes   85168
+  md5     27bbd9316f4f7c56449d9411fbbf6f30
+  sheet   Contents: 18 rows x 6 columns
+  sheet   T1: 337 rows x 10 columns
+  sheet   T1.1: 282 rows x 10 columns
+  sheet   T1.2: 245 rows x 10 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables/Wages/Wages_2017/mrsd_2017Wages_table1.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2018_industry.xlsx
+  bytes   46955
+  md5     4ceeb796fdf6cdd21928e93af10729e1
+  sheet   Contents: 16 rows x 5 columns
+  sheet   T5: 107 rows x 19 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2018/mrsd_2018Wages_table5.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2018_method.pdf
+  bytes   502066
+  md5     bdfd92259f8ee5b36fd7068591867896
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2018/Coverage_and_Methodology_of_OWS_2018.pdf
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2018_occ_ind_list.xlsx
+  bytes   74290
+  md5     30dc665a95ee6e878afba701263e96a5
+  sheet   Contents: 15 rows x 4 columns
+  sheet   Publication Criteria: 1 rows x 14 columns
+  sheet   List A: 338 rows x 7 columns
+  sheet   List B: 407 rows x 5 columns
+  sheet   List C: 41 rows x 5 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2018/mrsd_2018Wages_Occ_Ind_List.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2018_occupation.xlsx
+  bytes   152093
+  md5     0c753b01b5dd92faeea9e1a5d0d430fa
+  sheet   Contents: 27 rows x 6 columns
+  sheet   T4: 337 rows x 14 columns
+  sheet   T4.1: 125 rows x 14 columns
+  sheet   T4.2: 64 rows x 14 columns
+  sheet   T4.3: 98 rows x 14 columns
+  sheet   T4.4: 86 rows x 14 columns
+  sheet   T4.5: 59 rows x 14 columns
+  sheet   T4.6: 63 rows x 13 columns
+  sheet   T4.7: 81 rows x 13 columns
+  sheet   T4.8: 121 rows x 14 columns
+  sheet   T4.9: 108 rows x 14 columns
+  sheet   T4.10: 61 rows x 14 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2018/mrsd_2018Wages_table4.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2018_table1.xlsx
+  bytes   86986
+  md5     a56f1aebc2a3a38192a6eb39c11f9085
+  sheet   Contents: 18 rows x 6 columns
+  sheet   T1: 337 rows x 10 columns
+  sheet   T1.1: 278 rows x 10 columns
+  sheet   T1.2: 244 rows x 10 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2018/mrsd_2018Wages_table1.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2019_industry.xlsx
+  bytes   50240
+  md5     b02f830b9e68019e1991405677101512
+  sheet   Contents: 16 rows x 5 columns
+  sheet   T5: 107 rows x 19 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2019/mrsd_2019Wages_table5.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2019_method.pdf
+  bytes   537165
+  md5     9aff35226e984ddce85cca89c43c680d
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2019/Coverage_and_Methodology_of_OWS_2019.pdf
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2019_occ_ind_list.xlsx
+  bytes   74310
+  md5     858907c20668a12cb5781ef11b62ffd1
+  sheet   Contents: 15 rows x 4 columns
+  sheet   Publication Criteria: 1 rows x 14 columns
+  sheet   List A: 323 rows x 7 columns
+  sheet   List B: 392 rows x 5 columns
+  sheet   List C: 41 rows x 5 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2019/mrsd_2019Wages_Occ_Ind_List.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2019_occupation.xlsx
+  bytes   138664
+  md5     bf0892bad6fa005ecaae57a442f04987
+  sheet   Contents: 27 rows x 6 columns
+  sheet   T4: 323 rows x 14 columns
+  sheet   T4.1: 113 rows x 14 columns
+  sheet   T4.2: 53 rows x 14 columns
+  sheet   T4.3: 93 rows x 14 columns
+  sheet   T4.4: 93 rows x 14 columns
+  sheet   T4.5: 57 rows x 14 columns
+  sheet   T4.6: 54 rows x 13 columns
+  sheet   T4.7: 67 rows x 13 columns
+  sheet   T4.8: 128 rows x 14 columns
+  sheet   T4.9: 91 rows x 14 columns
+  sheet   T4.10: 60 rows x 14 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2019/mrsd_2019Wages_table4.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2019_table1.xlsx
+  bytes   81777
+  md5     7e84ed2a8837364135c26f3cb50c7590
+  sheet   Contents: 18 rows x 6 columns
+  sheet   T1: 323 rows x 10 columns
+  sheet   T1.1: 260 rows x 10 columns
+  sheet   T1.2: 235 rows x 10 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2019/mrsd_2019Wages_table1.xlsx
+  retrieved 2026-09-27 08:58 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2020_industry.xlsx
+  bytes   47905
+  md5     f73eac6241a682dedd049ee26f6ff133
+  sheet   Contents: 15 rows x 5 columns
+  sheet   T5: 107 rows x 19 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2020/mrsd_2020Wages_table5.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2020_method.pdf
+  bytes   540976
+  md5     1e992a6a01351f0d0bcca41d1ce57189
+  source  https://stats.mom.gov.sg/iMAS_PdfLibrary/Coverage%20and%20Methodology%20of%20OWS%202020.pdf
+  retrieved 2026-09-27 09:27 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2020_occ_ind_list.xlsx
+  bytes   64824
+  md5     43976886056588d6ecee3d73702824fa
+  sheet   Contents: 15 rows x 4 columns
+  sheet   Publication Criteria: 1 rows x 14 columns
+  sheet   List A: 365 rows x 7 columns
+  sheet   List B: 358 rows x 5 columns
+  sheet   List C: 41 rows x 5 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2020/mrsd_2020Wages_Occ_Ind_List.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2020_occupation.xlsx
+  bytes   146298
+  md5     489d5019b93100c673d29918faf5e955
+  sheet   Contents: 26 rows x 6 columns
+  sheet   T4: 370 rows x 14 columns
+  sheet   T4.1: 134 rows x 14 columns
+  sheet   T4.2: 57 rows x 14 columns
+  sheet   T4.3: 118 rows x 14 columns
+  sheet   T4.4: 100 rows x 14 columns
+  sheet   T4.5: 63 rows x 14 columns
+  sheet   T4.6: 72 rows x 13 columns
+  sheet   T4.7: 73 rows x 13 columns
+  sheet   T4.8: 139 rows x 14 columns
+  sheet   T4.9: 88 rows x 14 columns
+  sheet   T4.10: 65 rows x 14 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2020/mrsd_2020Wages_table4.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2020_table1.xlsx
+  bytes   84909
+  md5     80cc6e1f4c7b0b553d76b280715f4b3d
+  sheet   Contents: 17 rows x 6 columns
+  sheet   T1: 370 rows x 10 columns
+  sheet   T1.1: 300 rows x 10 columns
+  sheet   T1.2: 255 rows x 10 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2020/mrsd_2020Wages_table1.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2021_industry.xlsx
+  bytes   47595
+  md5     84c8b12d7f6b22bb7a975b110eb0ee31
+  sheet   Contents: 15 rows x 5 columns
+  sheet   T5: 107 rows x 19 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2021/mrsd_2021Wages_table5.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2021_method.pdf
+  bytes   535861
+  md5     42c79814491f17d98770f3d77bc11634
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2021/Coverage-and-methodology-of-OWS-2021.pdf
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2021_occ_ind_list.xlsx
+  bytes   64052
+  md5     90f95df74f439c898420c4afae1f8309
+  sheet   Contents: 15 rows x 4 columns
+  sheet   Publication Criteria: 1 rows x 14 columns
+  sheet   List A: 365 rows x 7 columns
+  sheet   List B: 386 rows x 5 columns
+  sheet   List C: 41 rows x 5 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2021/mrsd_2021Wages_Occ_Ind_List.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2021_occupation.xlsx
+  bytes   153833
+  md5     a6f0654d934189a5909461c38ae11fe8
+  sheet   Contents: 28 rows x 6 columns
+  sheet   T4: 361 rows x 14 columns
+  sheet   T4.1: 141 rows x 14 columns
+  sheet   T4.2: 65 rows x 14 columns
+  sheet   T4.3: 116 rows x 14 columns
+  sheet   T4.4: 111 rows x 14 columns
+  sheet   T4.5: 62 rows x 14 columns
+  sheet   T4.6: 68 rows x 13 columns
+  sheet   T4.7: 87 rows x 13 columns
+  sheet   T4.8: 44 rows x 14 columns
+  sheet   T4.9: 91 rows x 13 columns
+  sheet   T4.10: 72 rows x 14 columns
+  sheet   T4.11: 98 rows x 14 columns
+  sheet   T4.12: 49 rows x 13 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2021/mrsd_2021Wages_table4.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2021_table1.xlsx
+  bytes   90041
+  md5     ff8dab69ac997f9673399e3a118f93ee
+  sheet   Contents: 17 rows x 6 columns
+  sheet   T1: 361 rows x 10 columns
+  sheet   T1.1: 299 rows x 10 columns
+  sheet   T1.2: 273 rows x 10 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2021/mrsd_2021Wages_table1.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2022_industry.xlsx
+  bytes   46330
+  md5     859349456a41e583ee4e1b9fbc8ba067
+  sheet   Contents: 15 rows x 5 columns
+  sheet   T5: 107 rows x 19 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2022/mrsd_2022Wages_table5.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2022_method.pdf
+  bytes   127791
+  md5     d8e02207a9a301f17119f9bc83dce8c4
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2022/Coverage-and-Methodology-of-OWS-2022.pdf
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2022_occ_ind_list.xlsx
+  bytes   61499
+  md5     f86b979dc87645c68436ec4924681422
+  sheet   Contents: 15 rows x 4 columns
+  sheet   Publication Criteria: 1 rows x 14 columns
+  sheet   List A: 357 rows x 5 columns
+  sheet   List B: 337 rows x 5 columns
+  sheet   List C: 41 rows x 5 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2022/mrsd_2022Wages_Occ_Ind_List.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2022_occupation.xlsx
+  bytes   151526
+  md5     806ee52935a651affd2858ff8098e5ed
+  sheet   Contents: 28 rows x 6 columns
+  sheet   T4: 352 rows x 14 columns
+  sheet   T4.1: 135 rows x 14 columns
+  sheet   T4.2: 67 rows x 14 columns
+  sheet   T4.3: 121 rows x 14 columns
+  sheet   T4.4: 104 rows x 14 columns
+  sheet   T4.5: 70 rows x 14 columns
+  sheet   T4.6: 72 rows x 13 columns
+  sheet   T4.7: 77 rows x 13 columns
+  sheet   T4.8: 49 rows x 14 columns
+  sheet   T4.9: 110 rows x 14 columns
+  sheet   T4.10: 71 rows x 14 columns
+  sheet   T4.11: 92 rows x 14 columns
+  sheet   T4.12: 60 rows x 14 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2022/mrsd_2022Wages_table4.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2022_table1.xlsx
+  bytes   85883
+  md5     32370bcb9acd4326dbd84d329ea97c30
+  sheet   Contents: 17 rows x 6 columns
+  sheet   T1: 352 rows x 10 columns
+  sheet   T1.1: 299 rows x 10 columns
+  sheet   T1.2: 275 rows x 10 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2022/mrsd_2022Wages_table1.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2023_industry.xlsx
+  bytes   45666
+  md5     07d611ed9bebaaf8a1dee1b20b7aea9e
+  sheet   Contents: 15 rows x 5 columns
+  sheet   T5: 109 rows x 19 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2023/mrsd_2023Wages_table5.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2023_method.pdf
+  bytes   133467
+  md5     0f027aa7ff346db88e5c0560e2f1c9f6
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2023/Coverage-and-Methodology-of-OWS-2023.pdf
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2023_occ_ind_list.xlsx
+  bytes   57495
+  md5     bd89a13fa4c1a3ebcc8b5b9bf80ff199
+  sheet   Contents: 15 rows x 4 columns
+  sheet   Publication Criteria: 1 rows x 14 columns
+  sheet   List A: 508 rows x 5 columns
+  sheet   List B: 133 rows x 5 columns
+  sheet   List C: 42 rows x 5 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2023/mrsd_2023Wages_Occ_Ind_List.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2023_occupation.xlsx
+  bytes   200980
+  md5     362e9047e56357a408ebbf3c07f774fc
+  sheet   Contents: 30 rows x 6 columns
+  sheet   T4: 505 rows x 14 columns
+  sheet   T4.1: 204 rows x 14 columns
+  sheet   T4.2: 94 rows x 14 columns
+  sheet   T4.3: 171 rows x 14 columns
+  sheet   T4.4: 137 rows x 14 columns
+  sheet   T4.5: 83 rows x 14 columns
+  sheet   T4.6: 97 rows x 13 columns
+  sheet   T4.7: 111 rows x 13 columns
+  sheet   T4.8: 57 rows x 14 columns
+  sheet   T4.9: 166 rows x 14 columns
+  sheet   T4.10: 82 rows x 14 columns
+  sheet   T4.11: 79 rows x 13 columns
+  sheet   T4.12: 107 rows x 14 columns
+  sheet   T4.13: 63 rows x 14 columns
+  sheet   T4.14: 48 rows x 14 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2023/mrsd_2023Wages_table4.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2023_table1.xlsx
+  bytes   106052
+  md5     04496ba1faed8bacac181af3f35decbf
+  sheet   Contents: 17 rows x 6 columns
+  sheet   T1: 505 rows x 10 columns
+  sheet   T1.1: 436 rows x 10 columns
+  sheet   T1.2: 379 rows x 10 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2023/mrsd_2023Wages_table1.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2024_industry.xlsx
+  bytes   44048
+  md5     fdeaf6eb87d1ab863c3d342412f2029e
+  sheet   Contents: 17 rows x 5 columns
+  sheet   T5: 108 rows x 15 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2024/mrsd_2024Wages_table5.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2024_method.pdf
+  bytes   122984
+  md5     cd1ff95ba745c7e4dc4146a463768a80
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2024/Coverage-and-Methodology-of-OWS-2024.pdf
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2024_occ_ind_list.xlsx
+  bytes   52935
+  md5     cfcc769dcef7c21ffc36c262214af002
+  sheet   Contents: 13 rows x 4 columns
+  sheet   Publication Criteria: 1 rows x 14 columns
+  sheet   List A: 574 rows x 5 columns
+  sheet   List B: 42 rows x 5 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2024/mrsd_2024Wages_Occ_Ind_List.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2024_occupation.xlsx
+  bytes   244625
+  md5     534de4b0c8edc02e65deaaf2e4d8c617
+  sheet   Contents: 32 rows x 6 columns
+  sheet   T4: 579 rows x 13 columns
+  sheet   T4.1: 272 rows x 13 columns
+  sheet   T4.2: 127 rows x 13 columns
+  sheet   T4.3: 206 rows x 13 columns
+  sheet   T4.4: 180 rows x 13 columns
+  sheet   T4.5: 120 rows x 13 columns
+  sheet   T4.6: 151 rows x 12 columns
+  sheet   T4.7: 182 rows x 13 columns
+  sheet   T4.8: 85 rows x 13 columns
+  sheet   T4.9: 212 rows x 13 columns
+  sheet   T4.10: 135 rows x 13 columns
+  sheet   T4.11: 88 rows x 13 columns
+  sheet   T4.12: 136 rows x 13 columns
+  sheet   T4.13: 64 rows x 12 columns
+  sheet   T4.14: 78 rows x 13 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2024/mrsd_2024Wages_table4.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2024_table1.xlsx
+  bytes   112912
+  md5     285ea763cc190590b188e21edc5f6075
+  sheet   Contents: 19 rows x 6 columns
+  sheet   T1: 584 rows x 9 columns
+  sheet   T1.1: 523 rows x 9 columns
+  sheet   T1.2: 457 rows x 9 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2024/mrsd_2024Wages_table1.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2025_industry.xlsx
+  bytes   44819
+  md5     3ae36c7f5927182407537969638434ab
+  sheet   Contents: 15 rows x 5 columns
+  sheet   T5: 108 rows x 15 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2025/mrsd_2025Wages_table5.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2025_method.pdf
+  bytes   230985
+  md5     6a103ffd1632827e6f7ca23961169f7f
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2025/Coverage-and-Methodology-of-OWS-2025.pdf
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2025_occ_ind_list.xlsx
+  bytes   50793
+  md5     a5f76f7a2b36b1f12b5aaa219c88010a
+  sheet   Contents: 13 rows x 4 columns
+  sheet   Publication Criteria: 1 rows x 14 columns
+  sheet   List A: 530 rows x 5 columns
+  sheet   List B: 42 rows x 5 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2025/mrsd_2025Wages_Occ_Ind_List.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2025_occupation.xlsx
+  bytes   522155
+  md5     df4ea2fb55ceb1e732cde2dd34652515
+  sheet   Contents: 30 rows x 6 columns
+  sheet   T4: 540 rows x 13 columns
+  sheet   T4.1: 217 rows x 13 columns
+  sheet   T4.2: 127 rows x 13 columns
+  sheet   T4.3: 168 rows x 13 columns
+  sheet   T4.4: 161 rows x 13 columns
+  sheet   T4.5: 102 rows x 13 columns
+  sheet   T4.6: 122 rows x 13 columns
+  sheet   T4.7: 150 rows x 13 columns
+  sheet   T4.8: 82 rows x 13 columns
+  sheet   T4.9: 197 rows x 13 columns
+  sheet   T4.10: 130 rows x 13 columns
+  sheet   T4.11: 70 rows x 13 columns
+  sheet   T4.12: 126 rows x 13 columns
+  sheet   T4.13: 64 rows x 12 columns
+  sheet   T4.14: 83 rows x 13 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2025/mrsd_2025Wages_table4.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_2025_table1.xlsx
+  bytes   167138
+  md5     323258398c72e5276af93d614c3e575f
+  sheet   Contents: 17 rows x 6 columns
+  sheet   T1: 540 rows x 9 columns
+  sheet   T1.1: 471 rows x 9 columns
+  sheet   T1.2: 432 rows x 9 columns
+  source  https://stats.mom.gov.sg/iMAS_Tables1/Wages/Wages_2025/mrsd_2025Wages_table1.xlsx
+  retrieved 2026-09-27 08:59 UTC
+  method  direct download, byte-for-byte
+
+w1_ows_source_and_coverage.pdf
+  bytes   177950
+  md5     3696a3d1ea69703dee420260531f83b2
+  source  https://stats.mom.gov.sg/SL/Pages/Occupational-Wages-Source-and-Coverage.aspx
+  retrieved 2026-09-27 09:11 UTC
+  last updated Last updated 28 Jul 2025
+  method  page printed to PDF (headless Chromium)
+
+w1b_ows_2024.csv
+  bytes   37138
+  md5     6db63e65d945c822f4d89bc01dad5941
+  rows    562
+  columns year | occ_desc | mthly_gross_wage_75_pctile | mthly_gross_wage_50_pctile | mthly_gross_wage_25_pctile | mthly_basic_wage_75_pctile | mthly_basic_wage_50_pctile | mthly_basic_wage_25_pctile
+  period  year: 2024 to 2024, 1 distinct
+  source  https://data.gov.sg/datasets/d_9917e751f7498502f70052a940a3f312/view
+  retrieved 2026-09-27 09:00 UTC
+  last updated 2026-04-01 09:41 SGT (data.gov.sg)
+  method  data.gov.sg API poll-download, byte-for-byte as served
+  title    Resident Occupational Wages, June 2024
+  page coverage  to 
+
+w1b_ows_2024_by_industry.csv
+  bytes   47935
+  md5     bfaca49b233c1a845e8ad8dc87b62cb7
+  rows    396
+  columns year | major_occ | ind1 | occ_desc | mthly_gross_wage_50_pctile | mthly_basic_wage_50_pctile
+  period  year: 2024 to 2024, 1 distinct
+  source  https://data.gov.sg/datasets/d_670c3c6cecbcd24e48034a3428bd306e/view
+  retrieved 2026-09-27 09:01 UTC
+  last updated 2026-04-01 09:52 SGT (data.gov.sg)
+  method  data.gov.sg API poll-download, byte-for-byte as served
+  title    Resident Occupational Wages within each Major Occupational Group by Industry, June 2024
+  page coverage  to 
+
+w1b_ows_by_industry.csv
+  bytes   165163
+  md5     62f07204ccbe6f5205bfe89c97cb5c75
+  rows    1816
+  columns year | occ_desc | ind | mthly_gross_wage_75_pctile | mthly_gross_wage_50_pctile | mthly_gross_wage_25_pctile | mthly_basic_wage_75_pctile | mthly_basic_wage_50_pctile | mthly_basic_wage_25_pctile
+  period  year: 2024 to 2024, 1 distinct
+  source  https://data.gov.sg/datasets/d_523d376ff1d501a338add925f3313fd1/view
+  retrieved 2026-09-27 09:00 UTC
+  last updated 2026-04-01 09:49 SGT (data.gov.sg)
+  method  data.gov.sg API poll-download, byte-for-byte as served
+  title    Resident Occupational Wages by Industry, June 2024
+  page coverage  to 
+
+w1c_lfs_median_income.csv
+  bytes   419
+  md5     57ae2626ae7e11a1c0c95f8cd34d1d79
+  rows    24
+  columns year | median_income_incl_emp_cpf | median_income_excl_emp_cpf
+  period  year: 2001 to 2025, 24 distinct
+  source  https://data.gov.sg/datasets/d_9cd9c40f22a4e45cac8f8b9d895fd5ce/view
+  retrieved 2026-09-27 09:01 UTC
+  last updated 2026-03-27 16:46 SGT (data.gov.sg)
+  method  data.gov.sg API poll-download, byte-for-byte as served
+  title    Median Gross Monthly Income From Employment of Full-Time Employed Residents (Total)
+  page coverage 2001-01-01 to 2025-01-01
+
+w2a_services_detailed_industry.csv
+  bytes   166255
+  md5     88243d2f0ac6a121a2c00e8c280426a6
+  rows    1063
+  columns DataSeries | 2024 | 2023 | 2022 | 2021 | 2020 | 2019 | 2018 | 2017 | 2016 | 2015 | 2014 | 2013 | 2012 | 2011 | 2010
+  period  no column named like year/month/quarter/period/date
+  source  https://data.gov.sg/datasets/d_38d62de582eb7ee2c58d1bba4cd4132d/view
+  retrieved 2026-09-27 09:01 UTC
+  last updated 2026-09-09 21:01 SGT (data.gov.sg)
+  method  data.gov.sg API poll-download, byte-for-byte as served
+  title    Key Indicators By Detailed Industry In All Services Industries, Annual
+  page coverage 2010-01-01 to 2024-12-31
+
+w2a_services_industry_group.csv
+  bytes   63135
+  md5     102637f91d1e54422e87f69f1c0b60c7
+  rows    289
+  columns DataSeries | 2024 | 2023 | 2022 | 2021 | 2020 | 2019 | 2018 | 2017 | 2016 | 2015 | 2014 | 2013 | 2012 | 2011 | 2010 | 2009 | 2008 | 2007 | 2006 | 2005 | 2004 | 2003 | 2002 | 2001 | 2000
+  period  no column named like year/month/quarter/period/date
+  source  https://data.gov.sg/datasets/d_a99730f2ed37e5dd4dba9d6a779fdc9f/view
+  retrieved 2026-09-27 09:01 UTC
+  last updated 2026-09-01 21:01 SGT (data.gov.sg)
+  method  data.gov.sg API poll-download, byte-for-byte as served
+  title    Key Indicators By Industry Group In All Services Industries, Annual
+  page coverage 2000-01-01 to 2024-12-31
+
+w2b_lfs_occupation_age.csv
+  bytes   190343
+  md5     7464c2a6ba9c944edf79d0c18ba78377
+  rows    3456
+  columns year | sex | occupation | age | employed
+  period  year: 2010 to 2025, 16 distinct
+  source  https://data.gov.sg/datasets/d_9392faa714d5e5809b07b10fbff2993e/view
+  retrieved 2026-09-27 09:01 UTC
+  last updated 2026-03-27 18:10 SGT (data.gov.sg)
+  method  data.gov.sg API poll-download, byte-for-byte as served
+  title    Employed Residents Aged 15 Years & Over by Occupation, Age And Sex
+  page coverage 2010-01-01 to 2025-01-01
+
+w2b_lfs_occupation_status.csv
+  bytes   75266
+  md5     ea51c6a947e0506f8f25302819fb3bed
+  rows    1152
+  columns year | sex | occupation | employment_status | employed
+  period  year: 2010 to 2025, 16 distinct
+  source  https://data.gov.sg/datasets/d_3ba99a6cc9f643bacb63bdab296d7bff/view
+  retrieved 2026-09-27 09:01 UTC
+  last updated 2026-03-27 18:06 SGT (data.gov.sg)
+  method  data.gov.sg API poll-download, byte-for-byte as served
+  title    Employed Residents Aged 15 Years & Over by Occupation, Employment Status And Sex
+  page coverage 2010-01-01 to 2025-01-01
+
+w2d_employment_by_sector.csv
+  bytes   2304
+  md5     d3e45756f2766ecddd5388ffb35b2ef0
+  rows    13
+  columns DataSeries | 2025 | 2024 | 2023 | 2022 | 2021 | 2020 | 2019 | 2018 | 2017 | 2016 | 2015 | 2014 | 2013 | 2012 | 2011 | 2010 | 2009 | 2008 | 2007 | 2006 | 2005 | 2004 | 2003 | 2002 | 2001
+  period  no column named like year/month/quarter/period/date
+  source  https://data.gov.sg/datasets/d_d2518fed6cc2014f0cd061b4570a9592/view
+  retrieved 2026-09-27 09:02 UTC
+  last updated 2026-09-12 19:00 SGT (data.gov.sg)
+  method  data.gov.sg API poll-download, byte-for-byte as served
+  title    Employment (Persons) By Sector, (As At Year-End), Annual
+  page coverage 2001-01-01 to 2025-12-31
+
+w2d_mom_employment_summary.pdf
+  bytes   326325
+  md5     b4c2ba5111bd60c8c2785aa2344ae58b
+  source  https://stats.mom.gov.sg/Pages/employment-Summary-Table.aspx
+  retrieved 2026-09-27 09:11 UTC
+  last updated Last updated: 24 Sep 2026
+  method  page printed to PDF (headless Chromium)
+
+w3_cleaning_col_order_2021.pdf
+  bytes   792759
+  md5     d735c708283510dab104e2ab71918804
+  source  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/2021-col-order-cleaning-pwm.pdf
+  retrieved 2026-09-27 09:02 UTC
+  method  direct download, byte-for-byte
+
+w3_cleaning_mom_page.pdf
+  bytes   251001
+  md5     595d6eec124605b39aa3b6c29fc7ab3f
+  source  https://www.mom.gov.sg/employment-practices/progressive-wage-model/cleaning-sector
+  retrieved 2026-09-27 09:06 UTC
+  last updated Last Updated: 1 September 2026
+  method  page printed to PDF (headless Chromium)
+
+w3_cleaning_mom_pr_2017.pdf
+  bytes   140723
+  md5     dac711837bb97b7f11fc59c0772011f6
+  source  https://web.archive.org/web/20251217093344/https://www.mom.gov.sg/newsroom/press-releases/2017/0630-commissioner-for-labour-adopts-updated-progressive-wage-model-recommendations-by-the-tripartite-cluster-for-cleaners
+  retrieved 2026-09-27 09:26 UTC
+  last updated Last Updated: 14 March 2024
+  method  page printed to PDF (headless Chromium), from the archived capture
+
+w3_cleaning_mom_pr_2023.pdf
+  bytes   170720
+  md5     5cc020005c888869fb3aa669c0c49cc9
+  source  https://www.mom.gov.sg/newsroom/press-releases/2023/0630-col-order-for-cleaning-pwm
+  retrieved 2026-09-27 09:07 UTC
+  last updated Last Updated: 14 March 2024
+  method  page printed to PDF (headless Chromium)
+
+w3_cleaning_mse_epha_speech.pdf
+  bytes   290311
+  md5     5a3a289893cff68a2c220e3289dda472
+  source  https://www.mse.gov.sg/latest-news/opening-speech-for-second-reading-of-epha-bill/
+  retrieved 2026-09-27 09:07 UTC
+  last updated last updated on 25 September 2026
+  method  page printed to PDF (headless Chromium)
+
+w3_cleaning_nea_licence.pdf
+  bytes   584239
+  md5     aed30a59d01375bbd12274ec64db6ec0
+  source  https://www.nea.gov.sg/our-services/public-cleanliness/cleaning-industry/cleaning-business-licence
+  retrieved 2026-09-27 09:07 UTC
+  last updated Last updated 19 August 2026
+  method  page printed to PDF (headless Chromium)
+
+w3_cleaning_nea_licence_faq.pdf
+  bytes   187849
+  md5     5bc4b2dde0a570a828003b227a69235b
+  source  https://www.nea.gov.sg/our-services/public-cleanliness/cleaning-industry/cleaning-business-licence/cleaning-business-licence-faq
+  retrieved 2026-09-27 09:07 UTC
+  last updated Last updated 14 January 2026
+  method  page printed to PDF (headless Chromium)
+
+w3_cleaning_sso_s240_2014.pdf
+  bytes   213340
+  md5     ed91769200ca830850a5e3caa2c82ac4
+  source  https://sso.agc.gov.sg/SL/EPHA1987-S240-2014
+  retrieved 2026-09-27 09:07 UTC
+  last updated Last updated 27 Sep 2026
+  method  page printed to PDF (headless Chromium)
+
+w3_cleaning_tcc_report_2012.pdf
+  bytes   282461
+  md5     9adae7e70d55e811ac462d4226e32ab9
+  source  https://www.mom.gov.sg/-/media/mom/documents/press-releases/2012/tripartiteclusterforcleaners_report-(191012).pdf
+  retrieved 2026-09-27 09:02 UTC
+  method  direct download, byte-for-byte
+
+w3_cleaning_tcc_report_2021.pdf
+  bytes   654656
+  md5     339c742b3a21250cde3a1fb0cfc9ca13
+  source  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/tcc-report-7-june-2021.pdf
+  retrieved 2026-09-27 09:02 UTC
+  method  direct download, byte-for-byte
+
+w3_food_infographic.pdf
+  bytes   104841
+  md5     07495874df0d4ac3226506be6a871e42
+  source  https://www.mom.gov.sg/-/media/mom/documents/press-releases/2023/food-services-pwm-infographic_fa.pdf
+  retrieved 2026-09-27 09:03 UTC
+  method  direct download, byte-for-byte
+
+w3_food_mom_page.pdf
+  bytes   263210
+  md5     2e4dda21af78ee74631df5d98bb04786
+  source  https://www.mom.gov.sg/employment-practices/progressive-wage-model/food-services-sector
+  retrieved 2026-09-27 09:08 UTC
+  last updated Last Updated: 1 September 2026
+  method  page printed to PDF (headless Chromium)
+
+w3_food_tcf_2023.pdf
+  bytes   649552
+  md5     e1d02c5c4c0a2ed70d84723ab58b4df5
+  source  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/tcf-recommendations_2023.pdf
+  retrieved 2026-09-27 09:03 UTC
+  method  direct download, byte-for-byte
+
+w3_landscape_lcr_requirements.pdf
+  bytes   248547
+  md5     0debc4aa298dce3f87d7460d04b72208
+  source  https://cuge.nparks.gov.sg/landscape-company-register/lcr-requirements-and-faqs/
+  retrieved 2026-09-27 09:08 UTC
+  last updated Last updated 19 November 2025
+  method  page printed to PDF (headless Chromium)
+
+w3_landscape_mom_page.pdf
+  bytes   210610
+  md5     26a141279708be05c21f15509115892d
+  source  https://www.mom.gov.sg/employment-practices/progressive-wage-model/landscape-sector
+  retrieved 2026-09-27 09:08 UTC
+  last updated Last Updated: 1 September 2026
+  method  page printed to PDF (headless Chromium)
+
+w3_landscape_nparks_cuge_news.pdf
+  bytes   480295
+  md5     eb70c560db3e325981a6168570b4e61a
+  source  https://web.archive.org/web/20220819055239/https://www.nparks.gov.sg/cuge/new-and-events/news-listing/implementation-of-progressive-wage-model
+  retrieved 2026-09-27 09:26 UTC
+  last updated Last updated on 25 March 2022
+  method  page printed to PDF (headless Chromium), from the archived capture
+
+w3_landscape_tcl_2021.pdf
+  bytes   506235
+  md5     97b87a91317e4f082e78561c9a08adc5
+  source  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/recommendations-tcl-2021.pdf
+  retrieved 2026-09-27 09:03 UTC
+  method  direct download, byte-for-byte
+
+w3_landscape_tcl_report.pdf
+  bytes   516187
+  md5     e257d15c1858847a8f3e00c8811e7b0e
+  source  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/recommendations-of-the-tripartite-cluster-for-landscape-industry-on-the-progressive-wage-model-repor.pdf
+  retrieved 2026-09-27 09:02 UTC
+  method  direct download, byte-for-byte
+
+w3_lift_bca_circular_2022.pdf
+  bytes   247579
+  md5     5a4261db65f7325468522a4f56d7133f
+  source  https://web.archive.org/web/2011id_/https://www1.bca.gov.sg/docs/default-source/docs-corp-news-and-publications/circulars/commencement-of-part-5b-of-the-building-control-act-1989-(the-act-)-and-the-building-control-(regulating-fixed-installation-contractors)-regulations-2022.pdf?sfvrsn=6e90fcce_4
+  retrieved 2026-09-27 09:03 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w3_lift_bca_mom_release.pdf
+  bytes   313350
+  md5     69e67318ac72a19bb3e0e246942b79fc
+  source  https://www1.bca.gov.sg/resources/newsroom/bca-mom-joint-media-release-government-accepts-recommendations-to-uplift-lift-escalator-technicians-with-sustained-wage-increases-and-annual-bonus/
+  retrieved 2026-09-27 09:08 UTC
+  last updated last updated on 25 September 2026
+  method  page printed to PDF (headless Chromium)
+
+w3_lift_bca_pwm_page.pdf
+  bytes   435765
+  md5     b24d8bd444e79ff30fdaae697b486469
+  source  https://www1.bca.gov.sg/safety-and-standards/lifts-escalators-and-mechanised-car-parking-systems/progressive-wage-model-pwm/
+  retrieved 2026-09-27 09:08 UTC
+  last updated Last updated on 15 September 2026
+  method  page printed to PDF (headless Chromium)
+
+w3_lift_mom_page.pdf
+  bytes   186616
+  md5     3d49266cbe5d50c64d80042b80ea90c4
+  source  https://www.mom.gov.sg/employment-practices/progressive-wage-model/lift-and-escalator-sector
+  retrieved 2026-09-27 09:08 UTC
+  last updated Last Updated: 1 September 2026
+  method  page printed to PDF (headless Chromium)
+
+w3_lift_tcl_report.pdf
+  bytes   1950879
+  md5     5c5c76fe88026dfe07d2b7c3cdb1c13f
+  source  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/lift_tcl-report-and-recommendations-le.pdf
+  retrieved 2026-09-27 09:03 UTC
+  method  direct download, byte-for-byte
+
+w3_overview_mom_expansion.pdf
+  bytes   187864
+  md5     0508c86d7e9f707822943ba465148f65
+  source  https://www.mom.gov.sg/employment-practices/progressive-wage-model/expansion-of-progressive-wage-approach-and-coverage
+  retrieved 2026-09-27 09:06 UTC
+  last updated Last Updated: 17 July 2026
+  method  page printed to PDF (headless Chromium)
+
+w3_overview_mom_pr_2021_twg_accepted.pdf
+  bytes   193620
+  md5     8a15b671d70cee163948965a1e65bc9e
+  source  https://www.mom.gov.sg/newsroom/press-releases/2021/0830-government-accepts-twg-lww-recommendations
+  retrieved 2026-09-27 09:06 UTC
+  last updated Last Updated: 14 March 2024
+  method  page printed to PDF (headless Chromium)
+
+w3_overview_mom_pwm.pdf
+  bytes   175392
+  md5     f4a4e599f9fd3fc1d89b7574e81e4ad8
+  source  https://www.mom.gov.sg/employment-practices/progressive-wage-model
+  retrieved 2026-09-27 09:06 UTC
+  last updated Last Updated: 1 September 2026
+  method  page printed to PDF (headless Chromium)
+
+w3_overview_twg_lww_2021.pdf
+  bytes   3101034
+  md5     6f9c550580cca31b8a0943590a8e1dda
+  source  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/twg-lww-progress-through-solidarity-dynamism.pdf
+  retrieved 2026-09-27 09:02 UTC
+  method  direct download, byte-for-byte
+
+w3_overview_twg_lww_report.pdf
+  bytes   3066918
+  md5     daa9ca6c532939ddc3bf39061810efb4
+  source  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/lww/tripartite-workgroup-on-lower-wage-workers-report.pdf
+  retrieved 2026-09-27 09:02 UTC
+  method  direct download, byte-for-byte
+
+w3_retail_flyer.pdf
+  bytes   1613041
+  md5     fb182cdb3b6007c6345bb86344dec34d
+  source  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/retail_sectoral-pwm-retail-flyer.pdf
+  retrieved 2026-09-27 09:03 UTC
+  method  direct download, byte-for-byte
+
+w3_retail_mom_page.pdf
+  bytes   233494
+  md5     346f18483c500bfe6633e269e2eea817
+  source  https://www.mom.gov.sg/employment-practices/progressive-wage-model/retail-sector
+  retrieved 2026-09-27 09:08 UTC
+  last updated Last Updated: 1 September 2026
+  method  page printed to PDF (headless Chromium)
+
+w3_retail_tcr_report.pdf
+  bytes   1221125
+  md5     aad635a8b1bac5359cb91d1ec400c3bf
+  source  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/retail_tcr-report-and-recommendations.pdf
+  retrieved 2026-09-27 09:03 UTC
+  method  direct download, byte-for-byte
+
+w3_security_mom_page.pdf
+  bytes   211701
+  md5     62b56e8731f4d7cc271c5714fabe71d0
+  source  https://www.mom.gov.sg/employment-practices/progressive-wage-model/security-sector
+  retrieved 2026-09-27 09:07 UTC
+  last updated Last Updated: 1 September 2026
+  method  page printed to PDF (headless Chromium)
+
+w3_security_spf_brochure.pdf
+  bytes   336717
+  md5     85e9f36ec4c918565500969cc9cd8943
+  source  https://www.police.gov.sg/~/media/spf/files/e-services/wda_se_dl_brochure.pdf
+  retrieved 2026-09-27 09:02 UTC
+  method  direct download, byte-for-byte
+
+w3_security_spf_buyers_presentation.pdf
+  bytes   1732156
+  md5     71256ed07fc9aa414b94540189de6962
+  source  https://www.police.gov.sg/~/media/spf/files/e-services/progressive%20wage%20model/5_a_presentation_to_security_service_buyers_on_pwm.pdf
+  retrieved 2026-09-27 09:02 UTC
+  method  direct download, byte-for-byte
+
+w3_security_spf_licensing_conditions_2018.pdf
+  bytes   379461
+  md5     e4297b9aedc21d273c5bfc9365998351
+  source  https://www.police.gov.sg/-/media/Spf/Files/E-services/PI/Security-Officer/SO-Licensing-Conditions-1-Jan-2018.pdf
+  retrieved 2026-09-27 09:02 UTC
+  method  direct download, byte-for-byte
+
+w3_security_spf_requirements.pdf
+  bytes   397004
+  md5     f7ddc6bd9cae6667d01759f7c4aef18f
+  source  https://www.police.gov.sg/E-Services/Apply-for-Security-Officer-Licence/Security-Progressive-Wage-Model-Requirements
+  retrieved 2026-09-27 09:07 UTC
+  last updated Last updated on 13 June 2025
+  method  page printed to PDF (headless Chromium)
+
+w3_security_stc_2017.pdf
+  bytes   475995
+  md5     ab0ad90064e146ca10e752ecb051903b
+  source  https://www.mom.gov.sg/maintenance/-/media/mom/documents/employment-practices/pwm/stc-recommendations-on-pwm-and-ote-(2017).pdf
+  retrieved 2026-09-27 09:02 UTC
+  method  direct download, byte-for-byte
+
+w3_security_stc_2018.pdf
+  bytes   470891
+  md5     76c24cddd2d1b792156f6f86f2b9a93b
+  source  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/stc-recommendations-16-nov-2018.pdf
+  retrieved 2026-09-27 09:02 UTC
+  method  direct download, byte-for-byte
+
+w3_security_stc_2024.pdf
+  bytes   181084
+  md5     4f4636da3833e30ad6eef442022bef51
+  source  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/progressive-wage-portal/stc-report-and-recommendations-on-wages-dec-2024.pdf
+  retrieved 2026-09-27 09:02 UTC
+  method  direct download, byte-for-byte
+
+w3_waste_mom_page.pdf
+  bytes   215737
+  md5     ee551cadf68e8bf848ab267c7e21e08d
+  source  https://www.mom.gov.sg/employment-practices/progressive-wage-model/waste-management-sector
+  retrieved 2026-09-27 09:09 UTC
+  last updated Last Updated: 1 September 2026
+  method  page printed to PDF (headless Chromium)
+
+w3_waste_mom_pr_2021.pdf
+  bytes   196871
+  md5     8399e30e23353421794b286f78ab2590
+  source  https://www.mom.gov.sg/newsroom/press-releases/2021/0126-new-progressive-wage-model-for-waste-management-sector
+  retrieved 2026-09-27 09:09 UTC
+  last updated Last Updated: 26 January 2021
+  method  page printed to PDF (headless Chromium)
+
+w3_waste_pwm_2022.pdf
+  bytes   1821757
+  md5     0686940cfaecc991a0b75020df0f1ee5
+  source  https://www.mom.gov.sg/-/media/mom/documents/press-releases/2022/waste-management-pwm.pdf
+  retrieved 2026-09-27 09:03 UTC
+  method  direct download, byte-for-byte
+
+w3b_lqs_budget2020.pdf
+  bytes   211839
+  md5     57446bef8986afd87d9bbf80d0c1a3ce
+  source  https://www.mom.gov.sg/about-us/budget-highlights-2020
+  retrieved 2026-09-27 09:09 UTC
+  last updated Last Updated: 2 January 2026
+  method  page printed to PDF (headless Chromium)
+
+w3b_lqs_budget2022_ep_framework.pdf
+  bytes   301556
+  md5     1142cf84b7d113322a2029186163dec0
+  source  https://www.mom.gov.sg/-/media/mom/documents/budget2022/updates-to-ep-framework.pdf
+  retrieved 2026-09-27 09:03 UTC
+  method  direct download, byte-for-byte
+
+w3b_lqs_budget2023_factsheet.pdf
+  bytes   204380
+  md5     0fb2ba907fcdefc41b114bf0ed210b7f
+  source  https://www.mom.gov.sg/-/media/mom/documents/budget2023/foreign-workforce-updates-factsheet.pdf
+  retrieved 2026-09-27 09:03 UTC
+  method  direct download, byte-for-byte
+
+w3b_lqs_budget2024_factsheet.pdf
+  bytes   187418
+  md5     1934b07669b8cfc89e5a3e0791302a4f
+  source  https://www.mom.gov.sg/-/media/mom/documents/budget2024/factsheet-on-foreign-workforce-policies.pdf
+  retrieved 2026-09-27 09:03 UTC
+  method  direct download, byte-for-byte
+
+w3b_lqs_faq_2016.pdf
+  bytes   124251
+  md5     afb7dffb8e52c28a4657e6a232374be6
+  source  https://web.archive.org/web/20161207072046/http://www.mom.gov.sg:80/faq/work-pass-general/how-to-calculate-the-number-of-local-full-time-employees-when-calculating-foreign-worker-quota
+  retrieved 2026-09-27 09:09 UTC
+  last updated Last Updated: 15 November 2016
+  method  page printed to PDF (headless Chromium), from the archived capture
+
+w3b_lqs_faq_2017.pdf
+  bytes   131987
+  md5     213bb0be936f8ae78fc47c1bd4d366a0
+  source  https://web.archive.org/web/20170516215432/http://www.mom.gov.sg:80/faq/work-pass-general/how-to-calculate-the-number-of-local-full-time-employees-when-calculating-foreign-worker-quota
+  retrieved 2026-09-27 09:10 UTC
+  last updated Last Updated: 9 March 2017
+  method  page printed to PDF (headless Chromium), from the archived capture
+
+w3b_lqs_faq_2018.pdf
+  bytes   139330
+  md5     a8be2f8c3e8339caa2496a3cd26e8fb7
+  source  https://web.archive.org/web/20180123182958/http://www.mom.gov.sg:80/faq/work-pass-general/how-to-calculate-the-number-of-local-full-time-employees-when-calculating-foreign-worker-quota
+  retrieved 2026-09-27 09:10 UTC
+  last updated Last Updated: 17 July 2017
+  method  page printed to PDF (headless Chromium), from the archived capture
+
+w3b_lqs_faq_2019a.pdf
+  bytes   157646
+  md5     36c27b783169b4ab1dea0ecba3fc5e5a
+  source  https://web.archive.org/web/20190718135151/https://www.mom.gov.sg/faq/work-pass-general/how-to-calculate-the-number-of-local-full-time-employees-when-calculating-foreign-worker-quota
+  retrieved 2026-09-27 09:10 UTC
+  last updated Last Updated: 30 June 2019
+  method  page printed to PDF (headless Chromium), from the archived capture
+
+w3b_lqs_faq_2019b.pdf
+  bytes   158557
+  md5     aef96895281327af0442acb6d0d069d9
+  source  https://web.archive.org/web/20190819132147/https://www.mom.gov.sg/faq/work-pass-general/how-should-i-count-my-local-employees-to-calculate-my-work-permit-and-s-pass-quota
+  retrieved 2026-09-27 09:10 UTC
+  last updated Last Updated: 30 June 2019
+  method  page printed to PDF (headless Chromium), from the archived capture
+
+w3b_lqs_faq_2020.pdf
+  bytes   119252
+  md5     6bfd28ddb420389b54f12a2b7f1ff260
+  source  https://web.archive.org/web/20200814025208/https://www.mom.gov.sg/faq/work-pass-general/how-should-i-count-my-local-employees-to-calculate-my-work-permit-and-s-pass-quota
+  retrieved 2026-09-27 09:10 UTC
+  last updated Last Updated: 1 July 2020
+  method  page printed to PDF (headless Chromium), from the archived capture
+
+w3b_lqs_faq_2021.pdf
+  bytes   119430
+  md5     5aa5ac327653509c9ade3398a8461d5f
+  source  https://web.archive.org/web/20210204081924/https://www.mom.gov.sg/faq/work-pass-general/how-should-i-count-my-local-employees-to-calculate-my-work-permit-and-s-pass-quota
+  retrieved 2026-09-27 09:11 UTC
+  last updated Last Updated: 18 November 2020
+  method  page printed to PDF (headless Chromium), from the archived capture
+
+w3b_lqs_faq_current.pdf
+  bytes   162200
+  md5     3f302c33872fbcea449a91365c49b97f
+  source  https://www.mom.gov.sg/faq/work-pass-general/how-should-i-count-my-local-employees-to-calculate-my-work-permit-and-s-pass-quota
+  retrieved 2026-09-27 09:09 UTC
+  last updated Last Updated: 1 July 2026
+  method  page printed to PDF (headless Chromium)
+
+w3b_lqs_mom_page.pdf
+  bytes   176919
+  md5     c84d923598a932d54ebc2c47b1242e61
+  source  https://www.mom.gov.sg/employment-practices/progressive-wage-model/local-qualifying-salary
+  retrieved 2026-09-27 09:09 UTC
+  last updated Last Updated: 1 July 2026
+  method  page printed to PDF (headless Chromium)
+
+w3b_lqs_quota_guide.pdf
+  bytes   1827757
+  md5     1fd16297002143a1d152d4ffb93bbe64
+  source  https://www.mom.gov.sg/-/media/mom/documents/services-forms/passes/guide_on_comp_of_company_quota_balance.pdf
+  retrieved 2026-09-27 09:03 UTC
+  method  direct download, byte-for-byte
+
+w3b_lqs_wage_schedule.pdf
+  bytes   49585
+  md5     d68d90b9abd791b266b8feadb6bbf2f3
+  source  https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/lqs-wage-schedule.pdf
+  retrieved 2026-09-27 09:03 UTC
+  method  direct download, byte-for-byte
+
+w3c_iras_pwcs.pdf
+  bytes   414282
+  md5     32a10606320610e94482f48dce99324b
+  source  https://www.iras.gov.sg/schemes/disbursement-schemes/progressive-wage-credit-scheme
+  retrieved 2026-09-27 09:11 UTC
+  last updated Last updated 17 August 2026
+  method  page printed to PDF (headless Chromium)
+
+w3c_iras_wcs_factsheet.pdf
+  bytes   55508
+  md5     bef15d38c5dae0e5d79c6b815b58ebd4
+  source  https://www.iras.gov.sg/docs/default-source/media-releases/annex_wcs-factsheet.pdf?Status=Master&sfvrsn=232c54a_8
+  retrieved 2026-09-27 09:03 UTC
+  method  direct download, byte-for-byte
+
+w4a_cpi_annual_2024base.json
+  bytes   125814
+  md5     8030369e27857994089f14768c016fdc
+  source  https://tablebuilder.singstat.gov.sg/api/table/tabledata/M213801?limit=5000
+  retrieved 2026-09-27 08:58 UTC
+  last updated 23/01/2026 (SingStat dataLastUpdated)
+  method  SingStat TableBuilder public API, JSON byte-for-byte as served
+  title    Consumer Price Index (CPI), 2024 As Base Year, Annual
+  table    https://tablebuilder.singstat.gov.sg/table/TS/M213801
+  coverage not run: 00_coverage.py reads CSV, XLSX, XLS and PDF only
+
+w4b_cpi_lowest20_annual_2024base.json
+  bytes   48859
+  md5     02f79c2f5d785a236c53c76b62cd298e
+  source  https://tablebuilder.singstat.gov.sg/api/table/tabledata/M213911?limit=5000
+  retrieved 2026-09-27 08:58 UTC
+  last updated 23/01/2026 (SingStat dataLastUpdated)
+  method  SingStat TableBuilder public API, JSON byte-for-byte as served
+  title    Consumer Price Index (CPI) By Household Income Group, Lowest 20%, 2024 As Base Year, Annual
+  table    https://tablebuilder.singstat.gov.sg/table/TS/M213911
+  coverage not run: 00_coverage.py reads CSV, XLSX, XLS and PDF only
+
+w5_de_dustmann_2022.pdf
+  bytes   1592829
+  md5     a8a77854e3e1a7d94afb1b0444503a05
+  source  https://www.christiandustmann.com/content/4-research/114-https-doi-org-10-1093-qje-qjab028/reallocation-and-minimum-wages.pdf
+  retrieved 2026-09-27 09:03 UTC
+  method  direct download, byte-for-byte
+
+w5_hk_cambridge_abstract.pdf
+  bytes   369410
+  md5     c7abb2a587ea33e8f6ded97a0d73db2c
+  source  https://www.cambridge.org/core/journals/social-policy-and-society/article/abs/policy-effects-of-the-statutory-minimum-wage-in-hong-kong-evidence-from-the-general-household-survey-from-2011-to-2019/0EA5C795D33ADE8F63E99CF294F1D2BC
+  retrieved 2026-09-27 09:11 UTC
+  last updated not shown on the page
+  method  page printed to PDF (headless Chromium)
+
+w5_hk_legco_2012.pdf
+  bytes   2374276
+  md5     f4a973e82bb31229d60fffdf9821267d
+  source  https://web.archive.org/web/2011id_/https://www.legco.gov.hk/yr11-12/english/panels/mp/papers/mp0529cb2-1960-2-e.pdf
+  retrieved 2026-09-27 09:03 UTC
+  method  archived raw capture (Wayback id_), byte-for-byte
+
+w5_hk_mwc_2012.pdf
+  bytes   2440065
+  md5     c0c80733070a2649f7febd6e19e977ce
+  source  https://www.mwc.org.hk/en/downloadable_materials/2012MWCReport-Eng.pdf
+  retrieved 2026-09-27 09:03 UTC
+  method  direct download, byte-for-byte
+
+w5_uk_dube_2019.pdf
+  bytes   1814197
+  md5     39ea853c744eeec7419874fe3421ac55
+  source  https://assets.publishing.service.gov.uk/media/5dc0312940f0b637a03ffa96/impacts_of_minimum_wages_review_of_the_international_evidence_Arindrajit_Dube_web.pdf
+  retrieved 2026-09-27 09:03 UTC
+  method  direct download, byte-for-byte
+
+w5_uk_giupponi_2021wp.pdf
+  bytes   976102
+  md5     c2c307f21a759358b7677b7e75861b80
+  source  https://assets.publishing.service.gov.uk/media/61b0c5a2e90e070448c520fb/IFS_WP202148-The-distributional-and-employment-impacts-of-nationwide-Minimum-Wage-changes.pdf
+  retrieved 2026-09-27 09:03 UTC
+  method  direct download, byte-for-byte

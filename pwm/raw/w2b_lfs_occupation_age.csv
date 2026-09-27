@@ -1,0 +1,3457 @@
+year,sex,occupation,age,employed
+2010,male,managers & administrators (including working proprietors),15-19,0
+2010,male,managers & administrators (including working proprietors),20-24,1200
+2010,male,managers & administrators (including working proprietors),25-29,12200
+2010,male,managers & administrators (including working proprietors),30-34,23300
+2010,male,managers & administrators (including working proprietors),35-39,41000
+2010,male,managers & administrators (including working proprietors),40-44,41700
+2010,male,managers & administrators (including working proprietors),45-49,39100
+2010,male,managers & administrators (including working proprietors),50-54,32500
+2010,male,managers & administrators (including working proprietors),55-59,22500
+2010,male,managers & administrators (including working proprietors),60-64,12900
+2010,male,managers & administrators (including working proprietors),65-69,3900
+2010,male,managers & administrators (including working proprietors),70_and_over,2400
+2010,male,professionals,15-19,200
+2010,male,professionals,20-24,5200
+2010,male,professionals,25-29,35700
+2010,male,professionals,30-34,44500
+2010,male,professionals,35-39,40000
+2010,male,professionals,40-44,26800
+2010,male,professionals,45-49,21800
+2010,male,professionals,50-54,14000
+2010,male,professionals,55-59,10000
+2010,male,professionals,60-64,5800
+2010,male,professionals,65-69,2100
+2010,male,professionals,70_and_over,1200
+2010,male,associate professionals and technicians,15-19,400
+2010,male,associate professionals and technicians,20-24,8100
+2010,male,associate professionals and technicians,25-29,24400
+2010,male,associate professionals and technicians,30-34,27000
+2010,male,associate professionals and technicians,35-39,26600
+2010,male,associate professionals and technicians,40-44,21100
+2010,male,associate professionals and technicians,45-49,20700
+2010,male,associate professionals and technicians,50-54,18000
+2010,male,associate professionals and technicians,55-59,13300
+2010,male,associate professionals and technicians,60-64,5200
+2010,male,associate professionals and technicians,65-69,1400
+2010,male,associate professionals and technicians,70_and_over,900
+2010,male,clerical support workers,15-19,700
+2010,male,clerical support workers,20-24,7600
+2010,male,clerical support workers,25-29,7600
+2010,male,clerical support workers,30-34,5400
+2010,male,clerical support workers,35-39,5500
+2010,male,clerical support workers,40-44,5300
+2010,male,clerical support workers,45-49,5900
+2010,male,clerical support workers,50-54,5400
+2010,male,clerical support workers,55-59,4300
+2010,male,clerical support workers,60-64,2800
+2010,male,clerical support workers,65-69,1200
+2010,male,clerical support workers,70_and_over,1200
+2010,male,service and sales workers,15-19,3900
+2010,male,service and sales workers,20-24,10600
+2010,male,service and sales workers,25-29,12300
+2010,male,service and sales workers,30-34,10600
+2010,male,service and sales workers,35-39,10900
+2010,male,service and sales workers,40-44,9800
+2010,male,service and sales workers,45-49,13300
+2010,male,service and sales workers,50-54,11900
+2010,male,service and sales workers,55-59,11100
+2010,male,service and sales workers,60-64,7500
+2010,male,service and sales workers,65-69,3700
+2010,male,service and sales workers,70_and_over,3200
+2010,male,craftsmen and related trades workers,15-19,0
+2010,male,craftsmen and related trades workers,20-24,1700
+2010,male,craftsmen and related trades workers,25-29,3700
+2010,male,craftsmen and related trades workers,30-34,5400
+2010,male,craftsmen and related trades workers,35-39,7800
+2010,male,craftsmen and related trades workers,40-44,10400
+2010,male,craftsmen and related trades workers,45-49,15100
+2010,male,craftsmen and related trades workers,50-54,13600
+2010,male,craftsmen and related trades workers,55-59,11900
+2010,male,craftsmen and related trades workers,60-64,5700
+2010,male,craftsmen and related trades workers,65-69,1700
+2010,male,craftsmen and related trades workers,70_and_over,1000
+2010,male,plant and machine operators and assemblers,15-19,600
+2010,male,plant and machine operators and assemblers,20-24,2400
+2010,male,plant and machine operators and assemblers,25-29,4100
+2010,male,plant and machine operators and assemblers,30-34,4900
+2010,male,plant and machine operators and assemblers,35-39,8700
+2010,male,plant and machine operators and assemblers,40-44,15100
+2010,male,plant and machine operators and assemblers,45-49,21900
+2010,male,plant and machine operators and assemblers,50-54,25900
+2010,male,plant and machine operators and assemblers,55-59,23200
+2010,male,plant and machine operators and assemblers,60-64,13900
+2010,male,plant and machine operators and assemblers,65-69,4300
+2010,male,plant and machine operators and assemblers,70_and_over,1400
+2010,male,"cleaners, labourers and related workers",15-19,1200
+2010,male,"cleaners, labourers and related workers",20-24,2000
+2010,male,"cleaners, labourers and related workers",25-29,2400
+2010,male,"cleaners, labourers and related workers",30-34,2800
+2010,male,"cleaners, labourers and related workers",35-39,3500
+2010,male,"cleaners, labourers and related workers",40-44,6100
+2010,male,"cleaners, labourers and related workers",45-49,10300
+2010,male,"cleaners, labourers and related workers",50-54,10300
+2010,male,"cleaners, labourers and related workers",55-59,10300
+2010,male,"cleaners, labourers and related workers",60-64,7300
+2010,male,"cleaners, labourers and related workers",65-69,5100
+2010,male,"cleaners, labourers and related workers",70_and_over,5400
+2010,male,others,15-19,16000
+2010,male,others,20-24,37000
+2010,male,others,25-29,4400
+2010,male,others,30-34,3400
+2010,male,others,35-39,1700
+2010,male,others,40-44,1400
+2010,male,others,45-49,1400
+2010,male,others,50-54,400
+2010,male,others,55-59,500
+2010,male,others,60-64,200
+2010,male,others,65-69,100
+2010,male,others,70_and_over,100
+2010,female,managers & administrators (including working proprietors),15-19,100
+2010,female,managers & administrators (including working proprietors),20-24,1400
+2010,female,managers & administrators (including working proprietors),25-29,10600
+2010,female,managers & administrators (including working proprietors),30-34,20100
+2010,female,managers & administrators (including working proprietors),35-39,24800
+2010,female,managers & administrators (including working proprietors),40-44,20500
+2010,female,managers & administrators (including working proprietors),45-49,17100
+2010,female,managers & administrators (including working proprietors),50-54,12500
+2010,female,managers & administrators (including working proprietors),55-59,7800
+2010,female,managers & administrators (including working proprietors),60-64,3000
+2010,female,managers & administrators (including working proprietors),65-69,1100
+2010,female,managers & administrators (including working proprietors),70_and_over,600
+2010,female,professionals,15-19,600
+2010,female,professionals,20-24,14700
+2010,female,professionals,25-29,37600
+2010,female,professionals,30-34,36100
+2010,female,professionals,35-39,29100
+2010,female,professionals,40-44,18000
+2010,female,professionals,45-49,13400
+2010,female,professionals,50-54,9400
+2010,female,professionals,55-59,5800
+2010,female,professionals,60-64,2600
+2010,female,professionals,65-69,800
+2010,female,professionals,70_and_over,200
+2010,female,associate professionals and technicians,15-19,2000
+2010,female,associate professionals and technicians,20-24,15000
+2010,female,associate professionals and technicians,25-29,21900
+2010,female,associate professionals and technicians,30-34,22600
+2010,female,associate professionals and technicians,35-39,20000
+2010,female,associate professionals and technicians,40-44,17900
+2010,female,associate professionals and technicians,45-49,15800
+2010,female,associate professionals and technicians,50-54,11600
+2010,female,associate professionals and technicians,55-59,5800
+2010,female,associate professionals and technicians,60-64,2800
+2010,female,associate professionals and technicians,65-69,700
+2010,female,associate professionals and technicians,70_and_over,300
+2010,female,clerical support workers,15-19,4600
+2010,female,clerical support workers,20-24,20600
+2010,female,clerical support workers,25-29,20000
+2010,female,clerical support workers,30-34,24600
+2010,female,clerical support workers,35-39,26500
+2010,female,clerical support workers,40-44,24800
+2010,female,clerical support workers,45-49,27100
+2010,female,clerical support workers,50-54,21200
+2010,female,clerical support workers,55-59,13800
+2010,female,clerical support workers,60-64,6300
+2010,female,clerical support workers,65-69,600
+2010,female,clerical support workers,70_and_over,500
+2010,female,service and sales workers,15-19,6000
+2010,female,service and sales workers,20-24,12200
+2010,female,service and sales workers,25-29,10700
+2010,female,service and sales workers,30-34,11200
+2010,female,service and sales workers,35-39,13400
+2010,female,service and sales workers,40-44,14600
+2010,female,service and sales workers,45-49,16900
+2010,female,service and sales workers,50-54,17700
+2010,female,service and sales workers,55-59,12800
+2010,female,service and sales workers,60-64,6500
+2010,female,service and sales workers,65-69,2100
+2010,female,service and sales workers,70_and_over,1500
+2010,female,craftsmen and related trades workers,15-19,100
+2010,female,craftsmen and related trades workers,20-24,400
+2010,female,craftsmen and related trades workers,25-29,200
+2010,female,craftsmen and related trades workers,30-34,400
+2010,female,craftsmen and related trades workers,35-39,800
+2010,female,craftsmen and related trades workers,40-44,1100
+2010,female,craftsmen and related trades workers,45-49,1500
+2010,female,craftsmen and related trades workers,50-54,1600
+2010,female,craftsmen and related trades workers,55-59,1000
+2010,female,craftsmen and related trades workers,60-64,600
+2010,female,craftsmen and related trades workers,65-69,400
+2010,female,craftsmen and related trades workers,70_and_over,400
+2010,female,plant and machine operators and assemblers,15-19,0
+2010,female,plant and machine operators and assemblers,20-24,500
+2010,female,plant and machine operators and assemblers,25-29,900
+2010,female,plant and machine operators and assemblers,30-34,1500
+2010,female,plant and machine operators and assemblers,35-39,3200
+2010,female,plant and machine operators and assemblers,40-44,4200
+2010,female,plant and machine operators and assemblers,45-49,4800
+2010,female,plant and machine operators and assemblers,50-54,6200
+2010,female,plant and machine operators and assemblers,55-59,3200
+2010,female,plant and machine operators and assemblers,60-64,1300
+2010,female,plant and machine operators and assemblers,65-69,300
+2010,female,plant and machine operators and assemblers,70_and_over,200
+2010,female,"cleaners, labourers and related workers",15-19,600
+2010,female,"cleaners, labourers and related workers",20-24,1100
+2010,female,"cleaners, labourers and related workers",25-29,1200
+2010,female,"cleaners, labourers and related workers",30-34,1700
+2010,female,"cleaners, labourers and related workers",35-39,3700
+2010,female,"cleaners, labourers and related workers",40-44,7000
+2010,female,"cleaners, labourers and related workers",45-49,12500
+2010,female,"cleaners, labourers and related workers",50-54,15200
+2010,female,"cleaners, labourers and related workers",55-59,15500
+2010,female,"cleaners, labourers and related workers",60-64,10900
+2010,female,"cleaners, labourers and related workers",65-69,5200
+2010,female,"cleaners, labourers and related workers",70_and_over,4300
+2010,female,others,15-19,0
+2010,female,others,20-24,300
+2010,female,others,25-29,500
+2010,female,others,30-34,200
+2010,female,others,35-39,200
+2010,female,others,40-44,200
+2010,female,others,45-49,200
+2010,female,others,50-54,100
+2010,female,others,55-59,100
+2010,female,others,60-64,200
+2010,female,others,65-69,0
+2010,female,others,70_and_over,0
+2011,male,managers & administrators (including working proprietors),15-19,0
+2011,male,managers & administrators (including working proprietors),20-24,600
+2011,male,managers & administrators (including working proprietors),25-29,8900
+2011,male,managers & administrators (including working proprietors),30-34,23300
+2011,male,managers & administrators (including working proprietors),35-39,41400
+2011,male,managers & administrators (including working proprietors),40-44,44300
+2011,male,managers & administrators (including working proprietors),45-49,43500
+2011,male,managers & administrators (including working proprietors),50-54,34200
+2011,male,managers & administrators (including working proprietors),55-59,23700
+2011,male,managers & administrators (including working proprietors),60-64,14400
+2011,male,managers & administrators (including working proprietors),65-69,5200
+2011,male,managers & administrators (including working proprietors),70_and_over,4100
+2011,male,professionals,15-19,100
+2011,male,professionals,20-24,3400
+2011,male,professionals,25-29,27700
+2011,male,professionals,30-34,40500
+2011,male,professionals,35-39,37200
+2011,male,professionals,40-44,27200
+2011,male,professionals,45-49,19500
+2011,male,professionals,50-54,12900
+2011,male,professionals,55-59,7300
+2011,male,professionals,60-64,4700
+2011,male,professionals,65-69,1500
+2011,male,professionals,70_and_over,1300
+2011,male,associate professionals and technicians,15-19,200
+2011,male,associate professionals and technicians,20-24,8200
+2011,male,associate professionals and technicians,25-29,30100
+2011,male,associate professionals and technicians,30-34,29400
+2011,male,associate professionals and technicians,35-39,28200
+2011,male,associate professionals and technicians,40-44,22300
+2011,male,associate professionals and technicians,45-49,20200
+2011,male,associate professionals and technicians,50-54,19200
+2011,male,associate professionals and technicians,55-59,14800
+2011,male,associate professionals and technicians,60-64,6800
+2011,male,associate professionals and technicians,65-69,2100
+2011,male,associate professionals and technicians,70_and_over,1000
+2011,male,clerical support workers,15-19,1400
+2011,male,clerical support workers,20-24,7600
+2011,male,clerical support workers,25-29,7800
+2011,male,clerical support workers,30-34,5300
+2011,male,clerical support workers,35-39,5700
+2011,male,clerical support workers,40-44,4900
+2011,male,clerical support workers,45-49,6200
+2011,male,clerical support workers,50-54,6900
+2011,male,clerical support workers,55-59,5400
+2011,male,clerical support workers,60-64,3300
+2011,male,clerical support workers,65-69,1500
+2011,male,clerical support workers,70_and_over,1200
+2011,male,service and sales workers,15-19,3400
+2011,male,service and sales workers,20-24,9600
+2011,male,service and sales workers,25-29,12800
+2011,male,service and sales workers,30-34,10700
+2011,male,service and sales workers,35-39,8900
+2011,male,service and sales workers,40-44,10700
+2011,male,service and sales workers,45-49,11700
+2011,male,service and sales workers,50-54,12800
+2011,male,service and sales workers,55-59,10800
+2011,male,service and sales workers,60-64,8900
+2011,male,service and sales workers,65-69,4100
+2011,male,service and sales workers,70_and_over,3000
+2011,male,craftsmen and related trades workers,15-19,100
+2011,male,craftsmen and related trades workers,20-24,1600
+2011,male,craftsmen and related trades workers,25-29,4600
+2011,male,craftsmen and related trades workers,30-34,4600
+2011,male,craftsmen and related trades workers,35-39,6600
+2011,male,craftsmen and related trades workers,40-44,9200
+2011,male,craftsmen and related trades workers,45-49,15900
+2011,male,craftsmen and related trades workers,50-54,14700
+2011,male,craftsmen and related trades workers,55-59,12500
+2011,male,craftsmen and related trades workers,60-64,8200
+2011,male,craftsmen and related trades workers,65-69,2400
+2011,male,craftsmen and related trades workers,70_and_over,1500
+2011,male,plant and machine operators and assemblers,15-19,200
+2011,male,plant and machine operators and assemblers,20-24,2500
+2011,male,plant and machine operators and assemblers,25-29,4400
+2011,male,plant and machine operators and assemblers,30-34,5300
+2011,male,plant and machine operators and assemblers,35-39,7800
+2011,male,plant and machine operators and assemblers,40-44,11400
+2011,male,plant and machine operators and assemblers,45-49,22700
+2011,male,plant and machine operators and assemblers,50-54,27900
+2011,male,plant and machine operators and assemblers,55-59,24800
+2011,male,plant and machine operators and assemblers,60-64,16100
+2011,male,plant and machine operators and assemblers,65-69,6100
+2011,male,plant and machine operators and assemblers,70_and_over,2400
+2011,male,"cleaners, labourers and related workers",15-19,1400
+2011,male,"cleaners, labourers and related workers",20-24,2100
+2011,male,"cleaners, labourers and related workers",25-29,1800
+2011,male,"cleaners, labourers and related workers",30-34,1800
+2011,male,"cleaners, labourers and related workers",35-39,2800
+2011,male,"cleaners, labourers and related workers",40-44,4800
+2011,male,"cleaners, labourers and related workers",45-49,8300
+2011,male,"cleaners, labourers and related workers",50-54,9200
+2011,male,"cleaners, labourers and related workers",55-59,9700
+2011,male,"cleaners, labourers and related workers",60-64,8900
+2011,male,"cleaners, labourers and related workers",65-69,5700
+2011,male,"cleaners, labourers and related workers",70_and_over,6300
+2011,male,others,15-19,13600
+2011,male,others,20-24,41000
+2011,male,others,25-29,4500
+2011,male,others,30-34,3000
+2011,male,others,35-39,1800
+2011,male,others,40-44,1200
+2011,male,others,45-49,1700
+2011,male,others,50-54,900
+2011,male,others,55-59,400
+2011,male,others,60-64,100
+2011,male,others,65-69,0
+2011,male,others,70_and_over,0
+2011,female,managers & administrators (including working proprietors),15-19,0
+2011,female,managers & administrators (including working proprietors),20-24,1400
+2011,female,managers & administrators (including working proprietors),25-29,9900
+2011,female,managers & administrators (including working proprietors),30-34,19500
+2011,female,managers & administrators (including working proprietors),35-39,25000
+2011,female,managers & administrators (including working proprietors),40-44,21900
+2011,female,managers & administrators (including working proprietors),45-49,19400
+2011,female,managers & administrators (including working proprietors),50-54,13500
+2011,female,managers & administrators (including working proprietors),55-59,7800
+2011,female,managers & administrators (including working proprietors),60-64,3000
+2011,female,managers & administrators (including working proprietors),65-69,1600
+2011,female,managers & administrators (including working proprietors),70_and_over,500
+2011,female,professionals,15-19,200
+2011,female,professionals,20-24,14600
+2011,female,professionals,25-29,34600
+2011,female,professionals,30-34,36700
+2011,female,professionals,35-39,28700
+2011,female,professionals,40-44,19600
+2011,female,professionals,45-49,13600
+2011,female,professionals,50-54,8600
+2011,female,professionals,55-59,5100
+2011,female,professionals,60-64,2300
+2011,female,professionals,65-69,900
+2011,female,professionals,70_and_over,500
+2011,female,associate professionals and technicians,15-19,1100
+2011,female,associate professionals and technicians,20-24,16000
+2011,female,associate professionals and technicians,25-29,25900
+2011,female,associate professionals and technicians,30-34,24600
+2011,female,associate professionals and technicians,35-39,24200
+2011,female,associate professionals and technicians,40-44,21300
+2011,female,associate professionals and technicians,45-49,16300
+2011,female,associate professionals and technicians,50-54,12700
+2011,female,associate professionals and technicians,55-59,8000
+2011,female,associate professionals and technicians,60-64,3000
+2011,female,associate professionals and technicians,65-69,1100
+2011,female,associate professionals and technicians,70_and_over,300
+2011,female,clerical support workers,15-19,3500
+2011,female,clerical support workers,20-24,22800
+2011,female,clerical support workers,25-29,19400
+2011,female,clerical support workers,30-34,22100
+2011,female,clerical support workers,35-39,23900
+2011,female,clerical support workers,40-44,25900
+2011,female,clerical support workers,45-49,25200
+2011,female,clerical support workers,50-54,23900
+2011,female,clerical support workers,55-59,16600
+2011,female,clerical support workers,60-64,7300
+2011,female,clerical support workers,65-69,1200
+2011,female,clerical support workers,70_and_over,400
+2011,female,service and sales workers,15-19,5100
+2011,female,service and sales workers,20-24,13400
+2011,female,service and sales workers,25-29,10000
+2011,female,service and sales workers,30-34,11000
+2011,female,service and sales workers,35-39,11600
+2011,female,service and sales workers,40-44,13700
+2011,female,service and sales workers,45-49,18200
+2011,female,service and sales workers,50-54,18300
+2011,female,service and sales workers,55-59,13800
+2011,female,service and sales workers,60-64,8300
+2011,female,service and sales workers,65-69,2800
+2011,female,service and sales workers,70_and_over,1300
+2011,female,craftsmen and related trades workers,15-19,0
+2011,female,craftsmen and related trades workers,20-24,200
+2011,female,craftsmen and related trades workers,25-29,200
+2011,female,craftsmen and related trades workers,30-34,300
+2011,female,craftsmen and related trades workers,35-39,600
+2011,female,craftsmen and related trades workers,40-44,700
+2011,female,craftsmen and related trades workers,45-49,1100
+2011,female,craftsmen and related trades workers,50-54,1600
+2011,female,craftsmen and related trades workers,55-59,1300
+2011,female,craftsmen and related trades workers,60-64,900
+2011,female,craftsmen and related trades workers,65-69,300
+2011,female,craftsmen and related trades workers,70_and_over,200
+2011,female,plant and machine operators and assemblers,15-19,0
+2011,female,plant and machine operators and assemblers,20-24,400
+2011,female,plant and machine operators and assemblers,25-29,700
+2011,female,plant and machine operators and assemblers,30-34,1100
+2011,female,plant and machine operators and assemblers,35-39,2500
+2011,female,plant and machine operators and assemblers,40-44,4100
+2011,female,plant and machine operators and assemblers,45-49,5800
+2011,female,plant and machine operators and assemblers,50-54,4900
+2011,female,plant and machine operators and assemblers,55-59,3900
+2011,female,plant and machine operators and assemblers,60-64,1700
+2011,female,plant and machine operators and assemblers,65-69,400
+2011,female,plant and machine operators and assemblers,70_and_over,100
+2011,female,"cleaners, labourers and related workers",15-19,700
+2011,female,"cleaners, labourers and related workers",20-24,1600
+2011,female,"cleaners, labourers and related workers",25-29,1000
+2011,female,"cleaners, labourers and related workers",30-34,1900
+2011,female,"cleaners, labourers and related workers",35-39,3400
+2011,female,"cleaners, labourers and related workers",40-44,5900
+2011,female,"cleaners, labourers and related workers",45-49,11300
+2011,female,"cleaners, labourers and related workers",50-54,16000
+2011,female,"cleaners, labourers and related workers",55-59,15700
+2011,female,"cleaners, labourers and related workers",60-64,12400
+2011,female,"cleaners, labourers and related workers",65-69,7000
+2011,female,"cleaners, labourers and related workers",70_and_over,5800
+2011,female,others,15-19,0
+2011,female,others,20-24,100
+2011,female,others,25-29,200
+2011,female,others,30-34,200
+2011,female,others,35-39,100
+2011,female,others,40-44,200
+2011,female,others,45-49,300
+2011,female,others,50-54,200
+2011,female,others,55-59,0
+2011,female,others,60-64,0
+2011,female,others,65-69,0
+2011,female,others,70_and_over,0
+2012,male,managers & administrators (including working proprietors),15-19,0
+2012,male,managers & administrators (including working proprietors),20-24,600
+2012,male,managers & administrators (including working proprietors),25-29,7700
+2012,male,managers & administrators (including working proprietors),30-34,23300
+2012,male,managers & administrators (including working proprietors),35-39,37200
+2012,male,managers & administrators (including working proprietors),40-44,43400
+2012,male,managers & administrators (including working proprietors),45-49,41300
+2012,male,managers & administrators (including working proprietors),50-54,36100
+2012,male,managers & administrators (including working proprietors),55-59,24000
+2012,male,managers & administrators (including working proprietors),60-64,15000
+2012,male,managers & administrators (including working proprietors),65-69,6400
+2012,male,managers & administrators (including working proprietors),70_and_over,3800
+2012,male,professionals,15-19,100
+2012,male,professionals,20-24,3600
+2012,male,professionals,25-29,30400
+2012,male,professionals,30-34,39200
+2012,male,professionals,35-39,38800
+2012,male,professionals,40-44,30400
+2012,male,professionals,45-49,23800
+2012,male,professionals,50-54,14100
+2012,male,professionals,55-59,9300
+2012,male,professionals,60-64,6100
+2012,male,professionals,65-69,1900
+2012,male,professionals,70_and_over,1200
+2012,male,associate professionals and technicians,15-19,700
+2012,male,associate professionals and technicians,20-24,9300
+2012,male,associate professionals and technicians,25-29,27000
+2012,male,associate professionals and technicians,30-34,28300
+2012,male,associate professionals and technicians,35-39,27900
+2012,male,associate professionals and technicians,40-44,24200
+2012,male,associate professionals and technicians,45-49,21500
+2012,male,associate professionals and technicians,50-54,17400
+2012,male,associate professionals and technicians,55-59,15800
+2012,male,associate professionals and technicians,60-64,9200
+2012,male,associate professionals and technicians,65-69,2300
+2012,male,associate professionals and technicians,70_and_over,900
+2012,male,clerical support workers,15-19,1000
+2012,male,clerical support workers,20-24,9100
+2012,male,clerical support workers,25-29,8100
+2012,male,clerical support workers,30-34,5700
+2012,male,clerical support workers,35-39,5900
+2012,male,clerical support workers,40-44,4900
+2012,male,clerical support workers,45-49,6300
+2012,male,clerical support workers,50-54,7200
+2012,male,clerical support workers,55-59,6200
+2012,male,clerical support workers,60-64,4700
+2012,male,clerical support workers,65-69,1000
+2012,male,clerical support workers,70_and_over,1200
+2012,male,service and sales workers,15-19,3100
+2012,male,service and sales workers,20-24,10900
+2012,male,service and sales workers,25-29,12300
+2012,male,service and sales workers,30-34,10500
+2012,male,service and sales workers,35-39,9800
+2012,male,service and sales workers,40-44,11400
+2012,male,service and sales workers,45-49,14200
+2012,male,service and sales workers,50-54,13000
+2012,male,service and sales workers,55-59,12000
+2012,male,service and sales workers,60-64,10100
+2012,male,service and sales workers,65-69,4600
+2012,male,service and sales workers,70_and_over,3800
+2012,male,craftsmen and related trades workers,15-19,300
+2012,male,craftsmen and related trades workers,20-24,2000
+2012,male,craftsmen and related trades workers,25-29,3400
+2012,male,craftsmen and related trades workers,30-34,4300
+2012,male,craftsmen and related trades workers,35-39,6900
+2012,male,craftsmen and related trades workers,40-44,9400
+2012,male,craftsmen and related trades workers,45-49,13500
+2012,male,craftsmen and related trades workers,50-54,16100
+2012,male,craftsmen and related trades workers,55-59,13900
+2012,male,craftsmen and related trades workers,60-64,7700
+2012,male,craftsmen and related trades workers,65-69,2400
+2012,male,craftsmen and related trades workers,70_and_over,2000
+2012,male,plant and machine operators and assemblers,15-19,200
+2012,male,plant and machine operators and assemblers,20-24,2400
+2012,male,plant and machine operators and assemblers,25-29,3900
+2012,male,plant and machine operators and assemblers,30-34,4500
+2012,male,plant and machine operators and assemblers,35-39,7000
+2012,male,plant and machine operators and assemblers,40-44,11300
+2012,male,plant and machine operators and assemblers,45-49,18400
+2012,male,plant and machine operators and assemblers,50-54,25500
+2012,male,plant and machine operators and assemblers,55-59,25300
+2012,male,plant and machine operators and assemblers,60-64,17300
+2012,male,plant and machine operators and assemblers,65-69,6600
+2012,male,plant and machine operators and assemblers,70_and_over,2500
+2012,male,"cleaners, labourers and related workers",15-19,1100
+2012,male,"cleaners, labourers and related workers",20-24,2700
+2012,male,"cleaners, labourers and related workers",25-29,2500
+2012,male,"cleaners, labourers and related workers",30-34,2400
+2012,male,"cleaners, labourers and related workers",35-39,2800
+2012,male,"cleaners, labourers and related workers",40-44,3900
+2012,male,"cleaners, labourers and related workers",45-49,6400
+2012,male,"cleaners, labourers and related workers",50-54,10200
+2012,male,"cleaners, labourers and related workers",55-59,10400
+2012,male,"cleaners, labourers and related workers",60-64,9000
+2012,male,"cleaners, labourers and related workers",65-69,6800
+2012,male,"cleaners, labourers and related workers",70_and_over,6600
+2012,male,others,15-19,11900
+2012,male,others,20-24,44100
+2012,male,others,25-29,3200
+2012,male,others,30-34,2500
+2012,male,others,35-39,1400
+2012,male,others,40-44,1400
+2012,male,others,45-49,1400
+2012,male,others,50-54,1100
+2012,male,others,55-59,500
+2012,male,others,60-64,200
+2012,male,others,65-69,100
+2012,male,others,70_and_over,0
+2012,female,managers & administrators (including working proprietors),15-19,0
+2012,female,managers & administrators (including working proprietors),20-24,1500
+2012,female,managers & administrators (including working proprietors),25-29,7600
+2012,female,managers & administrators (including working proprietors),30-34,18500
+2012,female,managers & administrators (including working proprietors),35-39,23000
+2012,female,managers & administrators (including working proprietors),40-44,22800
+2012,female,managers & administrators (including working proprietors),45-49,18500
+2012,female,managers & administrators (including working proprietors),50-54,14500
+2012,female,managers & administrators (including working proprietors),55-59,7600
+2012,female,managers & administrators (including working proprietors),60-64,4100
+2012,female,managers & administrators (including working proprietors),65-69,1700
+2012,female,managers & administrators (including working proprietors),70_and_over,400
+2012,female,professionals,15-19,300
+2012,female,professionals,20-24,14000
+2012,female,professionals,25-29,34200
+2012,female,professionals,30-34,37400
+2012,female,professionals,35-39,29500
+2012,female,professionals,40-44,21400
+2012,female,professionals,45-49,13900
+2012,female,professionals,50-54,9600
+2012,female,professionals,55-59,6300
+2012,female,professionals,60-64,2900
+2012,female,professionals,65-69,1100
+2012,female,professionals,70_and_over,400
+2012,female,associate professionals and technicians,15-19,1600
+2012,female,associate professionals and technicians,20-24,16400
+2012,female,associate professionals and technicians,25-29,24400
+2012,female,associate professionals and technicians,30-34,24900
+2012,female,associate professionals and technicians,35-39,23400
+2012,female,associate professionals and technicians,40-44,21800
+2012,female,associate professionals and technicians,45-49,17100
+2012,female,associate professionals and technicians,50-54,12700
+2012,female,associate professionals and technicians,55-59,8500
+2012,female,associate professionals and technicians,60-64,3300
+2012,female,associate professionals and technicians,65-69,1400
+2012,female,associate professionals and technicians,70_and_over,200
+2012,female,clerical support workers,15-19,4500
+2012,female,clerical support workers,20-24,23300
+2012,female,clerical support workers,25-29,21100
+2012,female,clerical support workers,30-34,22100
+2012,female,clerical support workers,35-39,24800
+2012,female,clerical support workers,40-44,26900
+2012,female,clerical support workers,45-49,28400
+2012,female,clerical support workers,50-54,24900
+2012,female,clerical support workers,55-59,17400
+2012,female,clerical support workers,60-64,7400
+2012,female,clerical support workers,65-69,2700
+2012,female,clerical support workers,70_and_over,800
+2012,female,service and sales workers,15-19,5400
+2012,female,service and sales workers,20-24,14000
+2012,female,service and sales workers,25-29,9800
+2012,female,service and sales workers,30-34,11100
+2012,female,service and sales workers,35-39,13800
+2012,female,service and sales workers,40-44,14600
+2012,female,service and sales workers,45-49,20400
+2012,female,service and sales workers,50-54,18700
+2012,female,service and sales workers,55-59,13600
+2012,female,service and sales workers,60-64,9400
+2012,female,service and sales workers,65-69,3300
+2012,female,service and sales workers,70_and_over,2800
+2012,female,craftsmen and related trades workers,15-19,0
+2012,female,craftsmen and related trades workers,20-24,200
+2012,female,craftsmen and related trades workers,25-29,600
+2012,female,craftsmen and related trades workers,30-34,200
+2012,female,craftsmen and related trades workers,35-39,1000
+2012,female,craftsmen and related trades workers,40-44,1000
+2012,female,craftsmen and related trades workers,45-49,1000
+2012,female,craftsmen and related trades workers,50-54,1400
+2012,female,craftsmen and related trades workers,55-59,1200
+2012,female,craftsmen and related trades workers,60-64,1000
+2012,female,craftsmen and related trades workers,65-69,600
+2012,female,craftsmen and related trades workers,70_and_over,500
+2012,female,plant and machine operators and assemblers,15-19,0
+2012,female,plant and machine operators and assemblers,20-24,500
+2012,female,plant and machine operators and assemblers,25-29,500
+2012,female,plant and machine operators and assemblers,30-34,1100
+2012,female,plant and machine operators and assemblers,35-39,2500
+2012,female,plant and machine operators and assemblers,40-44,3500
+2012,female,plant and machine operators and assemblers,45-49,4700
+2012,female,plant and machine operators and assemblers,50-54,4900
+2012,female,plant and machine operators and assemblers,55-59,3700
+2012,female,plant and machine operators and assemblers,60-64,1600
+2012,female,plant and machine operators and assemblers,65-69,400
+2012,female,plant and machine operators and assemblers,70_and_over,300
+2012,female,"cleaners, labourers and related workers",15-19,700
+2012,female,"cleaners, labourers and related workers",20-24,1500
+2012,female,"cleaners, labourers and related workers",25-29,900
+2012,female,"cleaners, labourers and related workers",30-34,1900
+2012,female,"cleaners, labourers and related workers",35-39,3100
+2012,female,"cleaners, labourers and related workers",40-44,5900
+2012,female,"cleaners, labourers and related workers",45-49,10600
+2012,female,"cleaners, labourers and related workers",50-54,13700
+2012,female,"cleaners, labourers and related workers",55-59,15700
+2012,female,"cleaners, labourers and related workers",60-64,14500
+2012,female,"cleaners, labourers and related workers",65-69,7300
+2012,female,"cleaners, labourers and related workers",70_and_over,4900
+2012,female,others,15-19,0
+2012,female,others,20-24,100
+2012,female,others,25-29,100
+2012,female,others,30-34,300
+2012,female,others,35-39,0
+2012,female,others,40-44,100
+2012,female,others,45-49,100
+2012,female,others,50-54,0
+2012,female,others,55-59,0
+2012,female,others,60-64,0
+2012,female,others,65-69,0
+2012,female,others,70_and_over,0
+2013,male,managers & administrators (including working proprietors),15-19,0
+2013,male,managers & administrators (including working proprietors),20-24,600
+2013,male,managers & administrators (including working proprietors),25-29,6700
+2013,male,managers & administrators (including working proprietors),30-34,21600
+2013,male,managers & administrators (including working proprietors),35-39,35700
+2013,male,managers & administrators (including working proprietors),40-44,44100
+2013,male,managers & administrators (including working proprietors),45-49,43300
+2013,male,managers & administrators (including working proprietors),50-54,36500
+2013,male,managers & administrators (including working proprietors),55-59,25000
+2013,male,managers & administrators (including working proprietors),60-64,16100
+2013,male,managers & administrators (including working proprietors),65-69,5800
+2013,male,managers & administrators (including working proprietors),70_and_over,4500
+2013,male,professionals,15-19,100
+2013,male,professionals,20-24,2300
+2013,male,professionals,25-29,26700
+2013,male,professionals,30-34,39000
+2013,male,professionals,35-39,38300
+2013,male,professionals,40-44,29500
+2013,male,professionals,45-49,22600
+2013,male,professionals,50-54,14400
+2013,male,professionals,55-59,11900
+2013,male,professionals,60-64,7200
+2013,male,professionals,65-69,1900
+2013,male,professionals,70_and_over,1600
+2013,male,associate professionals and technicians,15-19,200
+2013,male,associate professionals and technicians,20-24,8200
+2013,male,associate professionals and technicians,25-29,29400
+2013,male,associate professionals and technicians,30-34,30600
+2013,male,associate professionals and technicians,35-39,28100
+2013,male,associate professionals and technicians,40-44,26500
+2013,male,associate professionals and technicians,45-49,22000
+2013,male,associate professionals and technicians,50-54,20500
+2013,male,associate professionals and technicians,55-59,15800
+2013,male,associate professionals and technicians,60-64,10100
+2013,male,associate professionals and technicians,65-69,2500
+2013,male,associate professionals and technicians,70_and_over,1200
+2013,male,clerical support workers,15-19,1300
+2013,male,clerical support workers,20-24,8900
+2013,male,clerical support workers,25-29,9200
+2013,male,clerical support workers,30-34,6200
+2013,male,clerical support workers,35-39,5000
+2013,male,clerical support workers,40-44,6200
+2013,male,clerical support workers,45-49,6100
+2013,male,clerical support workers,50-54,7500
+2013,male,clerical support workers,55-59,6100
+2013,male,clerical support workers,60-64,5000
+2013,male,clerical support workers,65-69,2300
+2013,male,clerical support workers,70_and_over,1300
+2013,male,service and sales workers,15-19,3200
+2013,male,service and sales workers,20-24,9400
+2013,male,service and sales workers,25-29,12100
+2013,male,service and sales workers,30-34,11100
+2013,male,service and sales workers,35-39,9600
+2013,male,service and sales workers,40-44,10400
+2013,male,service and sales workers,45-49,12600
+2013,male,service and sales workers,50-54,12200
+2013,male,service and sales workers,55-59,11300
+2013,male,service and sales workers,60-64,9700
+2013,male,service and sales workers,65-69,6200
+2013,male,service and sales workers,70_and_over,4300
+2013,male,craftsmen and related trades workers,15-19,200
+2013,male,craftsmen and related trades workers,20-24,2000
+2013,male,craftsmen and related trades workers,25-29,3100
+2013,male,craftsmen and related trades workers,30-34,4000
+2013,male,craftsmen and related trades workers,35-39,5700
+2013,male,craftsmen and related trades workers,40-44,8600
+2013,male,craftsmen and related trades workers,45-49,11800
+2013,male,craftsmen and related trades workers,50-54,14500
+2013,male,craftsmen and related trades workers,55-59,12400
+2013,male,craftsmen and related trades workers,60-64,7900
+2013,male,craftsmen and related trades workers,65-69,3100
+2013,male,craftsmen and related trades workers,70_and_over,1400
+2013,male,plant and machine operators and assemblers,15-19,200
+2013,male,plant and machine operators and assemblers,20-24,2100
+2013,male,plant and machine operators and assemblers,25-29,3500
+2013,male,plant and machine operators and assemblers,30-34,4700
+2013,male,plant and machine operators and assemblers,35-39,7100
+2013,male,plant and machine operators and assemblers,40-44,8600
+2013,male,plant and machine operators and assemblers,45-49,18900
+2013,male,plant and machine operators and assemblers,50-54,27800
+2013,male,plant and machine operators and assemblers,55-59,24200
+2013,male,plant and machine operators and assemblers,60-64,16400
+2013,male,plant and machine operators and assemblers,65-69,8500
+2013,male,plant and machine operators and assemblers,70_and_over,3000
+2013,male,"cleaners, labourers and related workers",15-19,1000
+2013,male,"cleaners, labourers and related workers",20-24,2600
+2013,male,"cleaners, labourers and related workers",25-29,1800
+2013,male,"cleaners, labourers and related workers",30-34,2500
+2013,male,"cleaners, labourers and related workers",35-39,2500
+2013,male,"cleaners, labourers and related workers",40-44,4200
+2013,male,"cleaners, labourers and related workers",45-49,7100
+2013,male,"cleaners, labourers and related workers",50-54,8900
+2013,male,"cleaners, labourers and related workers",55-59,11300
+2013,male,"cleaners, labourers and related workers",60-64,10300
+2013,male,"cleaners, labourers and related workers",65-69,7300
+2013,male,"cleaners, labourers and related workers",70_and_over,7900
+2013,male,others,15-19,11300
+2013,male,others,20-24,42800
+2013,male,others,25-29,3600
+2013,male,others,30-34,3000
+2013,male,others,35-39,2700
+2013,male,others,40-44,1500
+2013,male,others,45-49,1400
+2013,male,others,50-54,700
+2013,male,others,55-59,300
+2013,male,others,60-64,300
+2013,male,others,65-69,0
+2013,male,others,70_and_over,0
+2013,female,managers & administrators (including working proprietors),15-19,0
+2013,female,managers & administrators (including working proprietors),20-24,1100
+2013,female,managers & administrators (including working proprietors),25-29,6700
+2013,female,managers & administrators (including working proprietors),30-34,17600
+2013,female,managers & administrators (including working proprietors),35-39,23100
+2013,female,managers & administrators (including working proprietors),40-44,23900
+2013,female,managers & administrators (including working proprietors),45-49,18300
+2013,female,managers & administrators (including working proprietors),50-54,14900
+2013,female,managers & administrators (including working proprietors),55-59,8300
+2013,female,managers & administrators (including working proprietors),60-64,4500
+2013,female,managers & administrators (including working proprietors),65-69,1900
+2013,female,managers & administrators (including working proprietors),70_and_over,600
+2013,female,professionals,15-19,300
+2013,female,professionals,20-24,10800
+2013,female,professionals,25-29,33600
+2013,female,professionals,30-34,37700
+2013,female,professionals,35-39,30500
+2013,female,professionals,40-44,22900
+2013,female,professionals,45-49,15500
+2013,female,professionals,50-54,12400
+2013,female,professionals,55-59,7900
+2013,female,professionals,60-64,2800
+2013,female,professionals,65-69,1500
+2013,female,professionals,70_and_over,400
+2013,female,associate professionals and technicians,15-19,1400
+2013,female,associate professionals and technicians,20-24,15000
+2013,female,associate professionals and technicians,25-29,26500
+2013,female,associate professionals and technicians,30-34,25000
+2013,female,associate professionals and technicians,35-39,25900
+2013,female,associate professionals and technicians,40-44,21200
+2013,female,associate professionals and technicians,45-49,18700
+2013,female,associate professionals and technicians,50-54,15000
+2013,female,associate professionals and technicians,55-59,10600
+2013,female,associate professionals and technicians,60-64,3600
+2013,female,associate professionals and technicians,65-69,1100
+2013,female,associate professionals and technicians,70_and_over,400
+2013,female,clerical support workers,15-19,3400
+2013,female,clerical support workers,20-24,22000
+2013,female,clerical support workers,25-29,22000
+2013,female,clerical support workers,30-34,23000
+2013,female,clerical support workers,35-39,22300
+2013,female,clerical support workers,40-44,27800
+2013,female,clerical support workers,45-49,27300
+2013,female,clerical support workers,50-54,25200
+2013,female,clerical support workers,55-59,19900
+2013,female,clerical support workers,60-64,10400
+2013,female,clerical support workers,65-69,2400
+2013,female,clerical support workers,70_and_over,1100
+2013,female,service and sales workers,15-19,5400
+2013,female,service and sales workers,20-24,12600
+2013,female,service and sales workers,25-29,10900
+2013,female,service and sales workers,30-34,12000
+2013,female,service and sales workers,35-39,12500
+2013,female,service and sales workers,40-44,13200
+2013,female,service and sales workers,45-49,18400
+2013,female,service and sales workers,50-54,17300
+2013,female,service and sales workers,55-59,13600
+2013,female,service and sales workers,60-64,9800
+2013,female,service and sales workers,65-69,4700
+2013,female,service and sales workers,70_and_over,2300
+2013,female,craftsmen and related trades workers,15-19,100
+2013,female,craftsmen and related trades workers,20-24,400
+2013,female,craftsmen and related trades workers,25-29,200
+2013,female,craftsmen and related trades workers,30-34,300
+2013,female,craftsmen and related trades workers,35-39,200
+2013,female,craftsmen and related trades workers,40-44,1000
+2013,female,craftsmen and related trades workers,45-49,1200
+2013,female,craftsmen and related trades workers,50-54,1300
+2013,female,craftsmen and related trades workers,55-59,1400
+2013,female,craftsmen and related trades workers,60-64,700
+2013,female,craftsmen and related trades workers,65-69,400
+2013,female,craftsmen and related trades workers,70_and_over,300
+2013,female,plant and machine operators and assemblers,15-19,100
+2013,female,plant and machine operators and assemblers,20-24,300
+2013,female,plant and machine operators and assemblers,25-29,700
+2013,female,plant and machine operators and assemblers,30-34,600
+2013,female,plant and machine operators and assemblers,35-39,1900
+2013,female,plant and machine operators and assemblers,40-44,3100
+2013,female,plant and machine operators and assemblers,45-49,4200
+2013,female,plant and machine operators and assemblers,50-54,4600
+2013,female,plant and machine operators and assemblers,55-59,3400
+2013,female,plant and machine operators and assemblers,60-64,2100
+2013,female,plant and machine operators and assemblers,65-69,500
+2013,female,plant and machine operators and assemblers,70_and_over,300
+2013,female,"cleaners, labourers and related workers",15-19,600
+2013,female,"cleaners, labourers and related workers",20-24,700
+2013,female,"cleaners, labourers and related workers",25-29,1600
+2013,female,"cleaners, labourers and related workers",30-34,2000
+2013,female,"cleaners, labourers and related workers",35-39,2500
+2013,female,"cleaners, labourers and related workers",40-44,5800
+2013,female,"cleaners, labourers and related workers",45-49,8900
+2013,female,"cleaners, labourers and related workers",50-54,14400
+2013,female,"cleaners, labourers and related workers",55-59,15600
+2013,female,"cleaners, labourers and related workers",60-64,15300
+2013,female,"cleaners, labourers and related workers",65-69,8700
+2013,female,"cleaners, labourers and related workers",70_and_over,6700
+2013,female,others,15-19,0
+2013,female,others,20-24,100
+2013,female,others,25-29,200
+2013,female,others,30-34,100
+2013,female,others,35-39,100
+2013,female,others,40-44,0
+2013,female,others,45-49,100
+2013,female,others,50-54,100
+2013,female,others,55-59,100
+2013,female,others,60-64,0
+2013,female,others,65-69,0
+2013,female,others,70_and_over,0
+2014,male,managers & administrators (including working proprietors),15-19,0
+2014,male,managers & administrators (including working proprietors),20-24,600
+2014,male,managers & administrators (including working proprietors),25-29,5400
+2014,male,managers & administrators (including working proprietors),30-34,20200
+2014,male,managers & administrators (including working proprietors),35-39,33700
+2014,male,managers & administrators (including working proprietors),40-44,41400
+2014,male,managers & administrators (including working proprietors),45-49,42300
+2014,male,managers & administrators (including working proprietors),50-54,35000
+2014,male,managers & administrators (including working proprietors),55-59,26300
+2014,male,managers & administrators (including working proprietors),60-64,16600
+2014,male,managers & administrators (including working proprietors),65-69,7200
+2014,male,managers & administrators (including working proprietors),70_and_over,4600
+2014,male,professionals,15-19,0
+2014,male,professionals,20-24,2100
+2014,male,professionals,25-29,28800
+2014,male,professionals,30-34,41200
+2014,male,professionals,35-39,38700
+2014,male,professionals,40-44,32600
+2014,male,professionals,45-49,23700
+2014,male,professionals,50-54,16000
+2014,male,professionals,55-59,10500
+2014,male,professionals,60-64,6500
+2014,male,professionals,65-69,3000
+2014,male,professionals,70_and_over,2200
+2014,male,associate professionals and technicians,15-19,400
+2014,male,associate professionals and technicians,20-24,8000
+2014,male,associate professionals and technicians,25-29,31100
+2014,male,associate professionals and technicians,30-34,30300
+2014,male,associate professionals and technicians,35-39,29700
+2014,male,associate professionals and technicians,40-44,26400
+2014,male,associate professionals and technicians,45-49,21800
+2014,male,associate professionals and technicians,50-54,22100
+2014,male,associate professionals and technicians,55-59,16200
+2014,male,associate professionals and technicians,60-64,11600
+2014,male,associate professionals and technicians,65-69,3500
+2014,male,associate professionals and technicians,70_and_over,1400
+2014,male,clerical support workers,15-19,900
+2014,male,clerical support workers,20-24,9600
+2014,male,clerical support workers,25-29,10700
+2014,male,clerical support workers,30-34,6100
+2014,male,clerical support workers,35-39,4900
+2014,male,clerical support workers,40-44,4100
+2014,male,clerical support workers,45-49,5900
+2014,male,clerical support workers,50-54,7100
+2014,male,clerical support workers,55-59,7100
+2014,male,clerical support workers,60-64,5300
+2014,male,clerical support workers,65-69,3100
+2014,male,clerical support workers,70_and_over,1800
+2014,male,service and sales workers,15-19,3500
+2014,male,service and sales workers,20-24,10300
+2014,male,service and sales workers,25-29,11400
+2014,male,service and sales workers,30-34,10900
+2014,male,service and sales workers,35-39,9000
+2014,male,service and sales workers,40-44,9400
+2014,male,service and sales workers,45-49,10800
+2014,male,service and sales workers,50-54,13000
+2014,male,service and sales workers,55-59,11600
+2014,male,service and sales workers,60-64,9800
+2014,male,service and sales workers,65-69,7100
+2014,male,service and sales workers,70_and_over,3900
+2014,male,craftsmen and related trades workers,15-19,100
+2014,male,craftsmen and related trades workers,20-24,1900
+2014,male,craftsmen and related trades workers,25-29,4800
+2014,male,craftsmen and related trades workers,30-34,4500
+2014,male,craftsmen and related trades workers,35-39,5000
+2014,male,craftsmen and related trades workers,40-44,7300
+2014,male,craftsmen and related trades workers,45-49,9500
+2014,male,craftsmen and related trades workers,50-54,12900
+2014,male,craftsmen and related trades workers,55-59,13600
+2014,male,craftsmen and related trades workers,60-64,9800
+2014,male,craftsmen and related trades workers,65-69,4100
+2014,male,craftsmen and related trades workers,70_and_over,1800
+2014,male,plant and machine operators and assemblers,15-19,200
+2014,male,plant and machine operators and assemblers,20-24,1900
+2014,male,plant and machine operators and assemblers,25-29,3700
+2014,male,plant and machine operators and assemblers,30-34,4100
+2014,male,plant and machine operators and assemblers,35-39,5800
+2014,male,plant and machine operators and assemblers,40-44,11000
+2014,male,plant and machine operators and assemblers,45-49,14200
+2014,male,plant and machine operators and assemblers,50-54,25700
+2014,male,plant and machine operators and assemblers,55-59,26100
+2014,male,plant and machine operators and assemblers,60-64,21400
+2014,male,plant and machine operators and assemblers,65-69,9100
+2014,male,plant and machine operators and assemblers,70_and_over,3100
+2014,male,"cleaners, labourers and related workers",15-19,1100
+2014,male,"cleaners, labourers and related workers",20-24,2900
+2014,male,"cleaners, labourers and related workers",25-29,1700
+2014,male,"cleaners, labourers and related workers",30-34,2700
+2014,male,"cleaners, labourers and related workers",35-39,2900
+2014,male,"cleaners, labourers and related workers",40-44,3800
+2014,male,"cleaners, labourers and related workers",45-49,6100
+2014,male,"cleaners, labourers and related workers",50-54,10200
+2014,male,"cleaners, labourers and related workers",55-59,12100
+2014,male,"cleaners, labourers and related workers",60-64,11000
+2014,male,"cleaners, labourers and related workers",65-69,7600
+2014,male,"cleaners, labourers and related workers",70_and_over,10100
+2014,male,others,15-19,12200
+2014,male,others,20-24,42200
+2014,male,others,25-29,4100
+2014,male,others,30-34,3100
+2014,male,others,35-39,2300
+2014,male,others,40-44,1500
+2014,male,others,45-49,1600
+2014,male,others,50-54,1100
+2014,male,others,55-59,800
+2014,male,others,60-64,0
+2014,male,others,65-69,0
+2014,male,others,70_and_over,100
+2014,female,managers & administrators (including working proprietors),15-19,0
+2014,female,managers & administrators (including working proprietors),20-24,400
+2014,female,managers & administrators (including working proprietors),25-29,6400
+2014,female,managers & administrators (including working proprietors),30-34,15500
+2014,female,managers & administrators (including working proprietors),35-39,21700
+2014,female,managers & administrators (including working proprietors),40-44,24100
+2014,female,managers & administrators (including working proprietors),45-49,17400
+2014,female,managers & administrators (including working proprietors),50-54,16000
+2014,female,managers & administrators (including working proprietors),55-59,9300
+2014,female,managers & administrators (including working proprietors),60-64,4300
+2014,female,managers & administrators (including working proprietors),65-69,2000
+2014,female,managers & administrators (including working proprietors),70_and_over,900
+2014,female,professionals,15-19,200
+2014,female,professionals,20-24,11900
+2014,female,professionals,25-29,35500
+2014,female,professionals,30-34,38700
+2014,female,professionals,35-39,28000
+2014,female,professionals,40-44,22900
+2014,female,professionals,45-49,16900
+2014,female,professionals,50-54,12000
+2014,female,professionals,55-59,6400
+2014,female,professionals,60-64,3500
+2014,female,professionals,65-69,1700
+2014,female,professionals,70_and_over,300
+2014,female,associate professionals and technicians,15-19,900
+2014,female,associate professionals and technicians,20-24,16800
+2014,female,associate professionals and technicians,25-29,32000
+2014,female,associate professionals and technicians,30-34,31100
+2014,female,associate professionals and technicians,35-39,29500
+2014,female,associate professionals and technicians,40-44,25000
+2014,female,associate professionals and technicians,45-49,20200
+2014,female,associate professionals and technicians,50-54,14900
+2014,female,associate professionals and technicians,55-59,10900
+2014,female,associate professionals and technicians,60-64,5200
+2014,female,associate professionals and technicians,65-69,1800
+2014,female,associate professionals and technicians,70_and_over,500
+2014,female,clerical support workers,15-19,3200
+2014,female,clerical support workers,20-24,22100
+2014,female,clerical support workers,25-29,18100
+2014,female,clerical support workers,30-34,19800
+2014,female,clerical support workers,35-39,20700
+2014,female,clerical support workers,40-44,24900
+2014,female,clerical support workers,45-49,25100
+2014,female,clerical support workers,50-54,26700
+2014,female,clerical support workers,55-59,23600
+2014,female,clerical support workers,60-64,12000
+2014,female,clerical support workers,65-69,4500
+2014,female,clerical support workers,70_and_over,1200
+2014,female,service and sales workers,15-19,4700
+2014,female,service and sales workers,20-24,13400
+2014,female,service and sales workers,25-29,9300
+2014,female,service and sales workers,30-34,10800
+2014,female,service and sales workers,35-39,11500
+2014,female,service and sales workers,40-44,13800
+2014,female,service and sales workers,45-49,16100
+2014,female,service and sales workers,50-54,18600
+2014,female,service and sales workers,55-59,16200
+2014,female,service and sales workers,60-64,11300
+2014,female,service and sales workers,65-69,5700
+2014,female,service and sales workers,70_and_over,2200
+2014,female,craftsmen and related trades workers,15-19,100
+2014,female,craftsmen and related trades workers,20-24,400
+2014,female,craftsmen and related trades workers,25-29,400
+2014,female,craftsmen and related trades workers,30-34,300
+2014,female,craftsmen and related trades workers,35-39,400
+2014,female,craftsmen and related trades workers,40-44,700
+2014,female,craftsmen and related trades workers,45-49,500
+2014,female,craftsmen and related trades workers,50-54,1300
+2014,female,craftsmen and related trades workers,55-59,1500
+2014,female,craftsmen and related trades workers,60-64,700
+2014,female,craftsmen and related trades workers,65-69,400
+2014,female,craftsmen and related trades workers,70_and_over,300
+2014,female,plant and machine operators and assemblers,15-19,100
+2014,female,plant and machine operators and assemblers,20-24,600
+2014,female,plant and machine operators and assemblers,25-29,300
+2014,female,plant and machine operators and assemblers,30-34,800
+2014,female,plant and machine operators and assemblers,35-39,1200
+2014,female,plant and machine operators and assemblers,40-44,2400
+2014,female,plant and machine operators and assemblers,45-49,3600
+2014,female,plant and machine operators and assemblers,50-54,4800
+2014,female,plant and machine operators and assemblers,55-59,2900
+2014,female,plant and machine operators and assemblers,60-64,1900
+2014,female,plant and machine operators and assemblers,65-69,500
+2014,female,plant and machine operators and assemblers,70_and_over,300
+2014,female,"cleaners, labourers and related workers",15-19,900
+2014,female,"cleaners, labourers and related workers",20-24,1700
+2014,female,"cleaners, labourers and related workers",25-29,800
+2014,female,"cleaners, labourers and related workers",30-34,1700
+2014,female,"cleaners, labourers and related workers",35-39,3400
+2014,female,"cleaners, labourers and related workers",40-44,5500
+2014,female,"cleaners, labourers and related workers",45-49,10100
+2014,female,"cleaners, labourers and related workers",50-54,17200
+2014,female,"cleaners, labourers and related workers",55-59,18600
+2014,female,"cleaners, labourers and related workers",60-64,15200
+2014,female,"cleaners, labourers and related workers",65-69,10500
+2014,female,"cleaners, labourers and related workers",70_and_over,8400
+2014,female,others,15-19,0
+2014,female,others,20-24,200
+2014,female,others,25-29,200
+2014,female,others,30-34,300
+2014,female,others,35-39,300
+2014,female,others,40-44,200
+2014,female,others,45-49,0
+2014,female,others,50-54,200
+2014,female,others,55-59,200
+2014,female,others,60-64,0
+2014,female,others,65-69,0
+2014,female,others,70_and_over,0
+2015,male,managers & administrators (including working proprietors),15-19,0
+2015,male,managers & administrators (including working proprietors),20-24,700
+2015,male,managers & administrators (including working proprietors),25-29,6500
+2015,male,managers & administrators (including working proprietors),30-34,20400
+2015,male,managers & administrators (including working proprietors),35-39,34300
+2015,male,managers & administrators (including working proprietors),40-44,42600
+2015,male,managers & administrators (including working proprietors),45-49,41400
+2015,male,managers & administrators (including working proprietors),50-54,35900
+2015,male,managers & administrators (including working proprietors),55-59,28400
+2015,male,managers & administrators (including working proprietors),60-64,14700
+2015,male,managers & administrators (including working proprietors),65-69,6600
+2015,male,managers & administrators (including working proprietors),70_and_over,3600
+2015,male,professionals,15-19,100
+2015,male,professionals,20-24,2600
+2015,male,professionals,25-29,29500
+2015,male,professionals,30-34,41300
+2015,male,professionals,35-39,39700
+2015,male,professionals,40-44,35000
+2015,male,professionals,45-49,22900
+2015,male,professionals,50-54,18200
+2015,male,professionals,55-59,9500
+2015,male,professionals,60-64,6500
+2015,male,professionals,65-69,2500
+2015,male,professionals,70_and_over,1500
+2015,male,associate professionals and technicians,15-19,800
+2015,male,associate professionals and technicians,20-24,8900
+2015,male,associate professionals and technicians,25-29,34000
+2015,male,associate professionals and technicians,30-34,31300
+2015,male,associate professionals and technicians,35-39,30400
+2015,male,associate professionals and technicians,40-44,28200
+2015,male,associate professionals and technicians,45-49,23000
+2015,male,associate professionals and technicians,50-54,21800
+2015,male,associate professionals and technicians,55-59,18100
+2015,male,associate professionals and technicians,60-64,12500
+2015,male,associate professionals and technicians,65-69,4100
+2015,male,associate professionals and technicians,70_and_over,1500
+2015,male,clerical support workers,15-19,1700
+2015,male,clerical support workers,20-24,9300
+2015,male,clerical support workers,25-29,6800
+2015,male,clerical support workers,30-34,5400
+2015,male,clerical support workers,35-39,4900
+2015,male,clerical support workers,40-44,5300
+2015,male,clerical support workers,45-49,6200
+2015,male,clerical support workers,50-54,7000
+2015,male,clerical support workers,55-59,7000
+2015,male,clerical support workers,60-64,5200
+2015,male,clerical support workers,65-69,2700
+2015,male,clerical support workers,70_and_over,1700
+2015,male,service and sales workers,15-19,3100
+2015,male,service and sales workers,20-24,10900
+2015,male,service and sales workers,25-29,11500
+2015,male,service and sales workers,30-34,9000
+2015,male,service and sales workers,35-39,9200
+2015,male,service and sales workers,40-44,9700
+2015,male,service and sales workers,45-49,10600
+2015,male,service and sales workers,50-54,14800
+2015,male,service and sales workers,55-59,12800
+2015,male,service and sales workers,60-64,10500
+2015,male,service and sales workers,65-69,6700
+2015,male,service and sales workers,70_and_over,4200
+2015,male,craftsmen and related trades workers,15-19,200
+2015,male,craftsmen and related trades workers,20-24,2600
+2015,male,craftsmen and related trades workers,25-29,3800
+2015,male,craftsmen and related trades workers,30-34,3400
+2015,male,craftsmen and related trades workers,35-39,5600
+2015,male,craftsmen and related trades workers,40-44,7600
+2015,male,craftsmen and related trades workers,45-49,10300
+2015,male,craftsmen and related trades workers,50-54,13400
+2015,male,craftsmen and related trades workers,55-59,12400
+2015,male,craftsmen and related trades workers,60-64,9200
+2015,male,craftsmen and related trades workers,65-69,3800
+2015,male,craftsmen and related trades workers,70_and_over,1700
+2015,male,plant and machine operators and assemblers,15-19,200
+2015,male,plant and machine operators and assemblers,20-24,2200
+2015,male,plant and machine operators and assemblers,25-29,4000
+2015,male,plant and machine operators and assemblers,30-34,4400
+2015,male,plant and machine operators and assemblers,35-39,5300
+2015,male,plant and machine operators and assemblers,40-44,9900
+2015,male,plant and machine operators and assemblers,45-49,15700
+2015,male,plant and machine operators and assemblers,50-54,24600
+2015,male,plant and machine operators and assemblers,55-59,26600
+2015,male,plant and machine operators and assemblers,60-64,22000
+2015,male,plant and machine operators and assemblers,65-69,10800
+2015,male,plant and machine operators and assemblers,70_and_over,3000
+2015,male,"cleaners, labourers and related workers",15-19,1200
+2015,male,"cleaners, labourers and related workers",20-24,2400
+2015,male,"cleaners, labourers and related workers",25-29,1800
+2015,male,"cleaners, labourers and related workers",30-34,2200
+2015,male,"cleaners, labourers and related workers",35-39,1900
+2015,male,"cleaners, labourers and related workers",40-44,3700
+2015,male,"cleaners, labourers and related workers",45-49,5800
+2015,male,"cleaners, labourers and related workers",50-54,8700
+2015,male,"cleaners, labourers and related workers",55-59,11100
+2015,male,"cleaners, labourers and related workers",60-64,10100
+2015,male,"cleaners, labourers and related workers",65-69,8200
+2015,male,"cleaners, labourers and related workers",70_and_over,8600
+2015,male,others,15-19,15600
+2015,male,others,20-24,37800
+2015,male,others,25-29,3800
+2015,male,others,30-34,2500
+2015,male,others,35-39,2600
+2015,male,others,40-44,1500
+2015,male,others,45-49,1300
+2015,male,others,50-54,1400
+2015,male,others,55-59,500
+2015,male,others,60-64,400
+2015,male,others,65-69,300
+2015,male,others,70_and_over,100
+2015,female,managers & administrators (including working proprietors),15-19,0
+2015,female,managers & administrators (including working proprietors),20-24,900
+2015,female,managers & administrators (including working proprietors),25-29,5600
+2015,female,managers & administrators (including working proprietors),30-34,16000
+2015,female,managers & administrators (including working proprietors),35-39,21600
+2015,female,managers & administrators (including working proprietors),40-44,24900
+2015,female,managers & administrators (including working proprietors),45-49,19700
+2015,female,managers & administrators (including working proprietors),50-54,14800
+2015,female,managers & administrators (including working proprietors),55-59,10100
+2015,female,managers & administrators (including working proprietors),60-64,4700
+2015,female,managers & administrators (including working proprietors),65-69,1300
+2015,female,managers & administrators (including working proprietors),70_and_over,1000
+2015,female,professionals,15-19,100
+2015,female,professionals,20-24,12400
+2015,female,professionals,25-29,36900
+2015,female,professionals,30-34,39500
+2015,female,professionals,35-39,35700
+2015,female,professionals,40-44,26400
+2015,female,professionals,45-49,17100
+2015,female,professionals,50-54,11400
+2015,female,professionals,55-59,9100
+2015,female,professionals,60-64,3700
+2015,female,professionals,65-69,1800
+2015,female,professionals,70_and_over,700
+2015,female,associate professionals and technicians,15-19,1300
+2015,female,associate professionals and technicians,20-24,23000
+2015,female,associate professionals and technicians,25-29,33700
+2015,female,associate professionals and technicians,30-34,27100
+2015,female,associate professionals and technicians,35-39,29300
+2015,female,associate professionals and technicians,40-44,24600
+2015,female,associate professionals and technicians,45-49,20300
+2015,female,associate professionals and technicians,50-54,16500
+2015,female,associate professionals and technicians,55-59,10300
+2015,female,associate professionals and technicians,60-64,5300
+2015,female,associate professionals and technicians,65-69,1800
+2015,female,associate professionals and technicians,70_and_over,700
+2015,female,clerical support workers,15-19,4500
+2015,female,clerical support workers,20-24,21300
+2015,female,clerical support workers,25-29,17700
+2015,female,clerical support workers,30-34,20300
+2015,female,clerical support workers,35-39,21900
+2015,female,clerical support workers,40-44,25500
+2015,female,clerical support workers,45-49,25700
+2015,female,clerical support workers,50-54,27600
+2015,female,clerical support workers,55-59,21600
+2015,female,clerical support workers,60-64,13200
+2015,female,clerical support workers,65-69,4000
+2015,female,clerical support workers,70_and_over,1000
+2015,female,service and sales workers,15-19,6700
+2015,female,service and sales workers,20-24,13300
+2015,female,service and sales workers,25-29,10200
+2015,female,service and sales workers,30-34,10100
+2015,female,service and sales workers,35-39,12300
+2015,female,service and sales workers,40-44,14500
+2015,female,service and sales workers,45-49,17400
+2015,female,service and sales workers,50-54,19100
+2015,female,service and sales workers,55-59,15600
+2015,female,service and sales workers,60-64,11400
+2015,female,service and sales workers,65-69,5500
+2015,female,service and sales workers,70_and_over,2400
+2015,female,craftsmen and related trades workers,15-19,100
+2015,female,craftsmen and related trades workers,20-24,600
+2015,female,craftsmen and related trades workers,25-29,400
+2015,female,craftsmen and related trades workers,30-34,700
+2015,female,craftsmen and related trades workers,35-39,600
+2015,female,craftsmen and related trades workers,40-44,1000
+2015,female,craftsmen and related trades workers,45-49,1300
+2015,female,craftsmen and related trades workers,50-54,1600
+2015,female,craftsmen and related trades workers,55-59,1900
+2015,female,craftsmen and related trades workers,60-64,800
+2015,female,craftsmen and related trades workers,65-69,600
+2015,female,craftsmen and related trades workers,70_and_over,300
+2015,female,plant and machine operators and assemblers,15-19,100
+2015,female,plant and machine operators and assemblers,20-24,0
+2015,female,plant and machine operators and assemblers,25-29,200
+2015,female,plant and machine operators and assemblers,30-34,800
+2015,female,plant and machine operators and assemblers,35-39,1400
+2015,female,plant and machine operators and assemblers,40-44,2300
+2015,female,plant and machine operators and assemblers,45-49,2700
+2015,female,plant and machine operators and assemblers,50-54,4000
+2015,female,plant and machine operators and assemblers,55-59,3000
+2015,female,plant and machine operators and assemblers,60-64,1900
+2015,female,plant and machine operators and assemblers,65-69,700
+2015,female,plant and machine operators and assemblers,70_and_over,200
+2015,female,"cleaners, labourers and related workers",15-19,1100
+2015,female,"cleaners, labourers and related workers",20-24,1100
+2015,female,"cleaners, labourers and related workers",25-29,1200
+2015,female,"cleaners, labourers and related workers",30-34,1600
+2015,female,"cleaners, labourers and related workers",35-39,3800
+2015,female,"cleaners, labourers and related workers",40-44,5600
+2015,female,"cleaners, labourers and related workers",45-49,9300
+2015,female,"cleaners, labourers and related workers",50-54,14300
+2015,female,"cleaners, labourers and related workers",55-59,18200
+2015,female,"cleaners, labourers and related workers",60-64,16800
+2015,female,"cleaners, labourers and related workers",65-69,13500
+2015,female,"cleaners, labourers and related workers",70_and_over,8300
+2015,female,others,15-19,0
+2015,female,others,20-24,100
+2015,female,others,25-29,400
+2015,female,others,30-34,300
+2015,female,others,35-39,400
+2015,female,others,40-44,0
+2015,female,others,45-49,200
+2015,female,others,50-54,300
+2015,female,others,55-59,100
+2015,female,others,60-64,0
+2015,female,others,65-69,0
+2015,female,others,70_and_over,0
+2016,male,managers & administrators (including working proprietors),15-19,0
+2016,male,managers & administrators (including working proprietors),20-24,400
+2016,male,managers & administrators (including working proprietors),25-29,5200
+2016,male,managers & administrators (including working proprietors),30-34,19100
+2016,male,managers & administrators (including working proprietors),35-39,30300
+2016,male,managers & administrators (including working proprietors),40-44,41300
+2016,male,managers & administrators (including working proprietors),45-49,40700
+2016,male,managers & administrators (including working proprietors),50-54,31300
+2016,male,managers & administrators (including working proprietors),55-59,25000
+2016,male,managers & administrators (including working proprietors),60-64,15800
+2016,male,managers & administrators (including working proprietors),65-69,7400
+2016,male,managers & administrators (including working proprietors),70_and_over,3700
+2016,male,professionals,15-19,200
+2016,male,professionals,20-24,1900
+2016,male,professionals,25-29,31100
+2016,male,professionals,30-34,39400
+2016,male,professionals,35-39,41700
+2016,male,professionals,40-44,32800
+2016,male,professionals,45-49,25700
+2016,male,professionals,50-54,18400
+2016,male,professionals,55-59,11700
+2016,male,professionals,60-64,6600
+2016,male,professionals,65-69,3500
+2016,male,professionals,70_and_over,2000
+2016,male,associate professionals and technicians,15-19,800
+2016,male,associate professionals and technicians,20-24,10200
+2016,male,associate professionals and technicians,25-29,37400
+2016,male,associate professionals and technicians,30-34,34200
+2016,male,associate professionals and technicians,35-39,29600
+2016,male,associate professionals and technicians,40-44,29200
+2016,male,associate professionals and technicians,45-49,24500
+2016,male,associate professionals and technicians,50-54,23700
+2016,male,associate professionals and technicians,55-59,20400
+2016,male,associate professionals and technicians,60-64,13600
+2016,male,associate professionals and technicians,65-69,4900
+2016,male,associate professionals and technicians,70_and_over,1400
+2016,male,clerical support workers,15-19,1000
+2016,male,clerical support workers,20-24,9000
+2016,male,clerical support workers,25-29,8500
+2016,male,clerical support workers,30-34,4400
+2016,male,clerical support workers,35-39,3700
+2016,male,clerical support workers,40-44,4300
+2016,male,clerical support workers,45-49,5500
+2016,male,clerical support workers,50-54,7000
+2016,male,clerical support workers,55-59,6800
+2016,male,clerical support workers,60-64,5100
+2016,male,clerical support workers,65-69,2800
+2016,male,clerical support workers,70_and_over,1800
+2016,male,service and sales workers,15-19,3000
+2016,male,service and sales workers,20-24,10600
+2016,male,service and sales workers,25-29,13000
+2016,male,service and sales workers,30-34,9300
+2016,male,service and sales workers,35-39,9200
+2016,male,service and sales workers,40-44,9300
+2016,male,service and sales workers,45-49,10400
+2016,male,service and sales workers,50-54,13000
+2016,male,service and sales workers,55-59,13700
+2016,male,service and sales workers,60-64,11400
+2016,male,service and sales workers,65-69,7800
+2016,male,service and sales workers,70_and_over,4900
+2016,male,craftsmen and related trades workers,15-19,200
+2016,male,craftsmen and related trades workers,20-24,2600
+2016,male,craftsmen and related trades workers,25-29,3800
+2016,male,craftsmen and related trades workers,30-34,3800
+2016,male,craftsmen and related trades workers,35-39,5300
+2016,male,craftsmen and related trades workers,40-44,5200
+2016,male,craftsmen and related trades workers,45-49,8100
+2016,male,craftsmen and related trades workers,50-54,14000
+2016,male,craftsmen and related trades workers,55-59,11100
+2016,male,craftsmen and related trades workers,60-64,9400
+2016,male,craftsmen and related trades workers,65-69,4600
+2016,male,craftsmen and related trades workers,70_and_over,1700
+2016,male,plant and machine operators and assemblers,15-19,100
+2016,male,plant and machine operators and assemblers,20-24,2600
+2016,male,plant and machine operators and assemblers,25-29,3400
+2016,male,plant and machine operators and assemblers,30-34,5000
+2016,male,plant and machine operators and assemblers,35-39,7100
+2016,male,plant and machine operators and assemblers,40-44,10100
+2016,male,plant and machine operators and assemblers,45-49,14200
+2016,male,plant and machine operators and assemblers,50-54,26300
+2016,male,plant and machine operators and assemblers,55-59,25900
+2016,male,plant and machine operators and assemblers,60-64,22500
+2016,male,plant and machine operators and assemblers,65-69,12600
+2016,male,plant and machine operators and assemblers,70_and_over,2800
+2016,male,"cleaners, labourers and related workers",15-19,900
+2016,male,"cleaners, labourers and related workers",20-24,2100
+2016,male,"cleaners, labourers and related workers",25-29,2400
+2016,male,"cleaners, labourers and related workers",30-34,2200
+2016,male,"cleaners, labourers and related workers",35-39,2200
+2016,male,"cleaners, labourers and related workers",40-44,2600
+2016,male,"cleaners, labourers and related workers",45-49,5100
+2016,male,"cleaners, labourers and related workers",50-54,8200
+2016,male,"cleaners, labourers and related workers",55-59,11500
+2016,male,"cleaners, labourers and related workers",60-64,11900
+2016,male,"cleaners, labourers and related workers",65-69,8400
+2016,male,"cleaners, labourers and related workers",70_and_over,8100
+2016,male,others,15-19,15900
+2016,male,others,20-24,39200
+2016,male,others,25-29,5300
+2016,male,others,30-34,1700
+2016,male,others,35-39,2500
+2016,male,others,40-44,1000
+2016,male,others,45-49,1000
+2016,male,others,50-54,1200
+2016,male,others,55-59,600
+2016,male,others,60-64,700
+2016,male,others,65-69,400
+2016,male,others,70_and_over,200
+2016,female,managers & administrators (including working proprietors),15-19,0
+2016,female,managers & administrators (including working proprietors),20-24,400
+2016,female,managers & administrators (including working proprietors),25-29,4200
+2016,female,managers & administrators (including working proprietors),30-34,15800
+2016,female,managers & administrators (including working proprietors),35-39,21500
+2016,female,managers & administrators (including working proprietors),40-44,23700
+2016,female,managers & administrators (including working proprietors),45-49,19400
+2016,female,managers & administrators (including working proprietors),50-54,15200
+2016,female,managers & administrators (including working proprietors),55-59,9200
+2016,female,managers & administrators (including working proprietors),60-64,4600
+2016,female,managers & administrators (including working proprietors),65-69,2300
+2016,female,managers & administrators (including working proprietors),70_and_over,800
+2016,female,professionals,15-19,0
+2016,female,professionals,20-24,11300
+2016,female,professionals,25-29,41700
+2016,female,professionals,30-34,41600
+2016,female,professionals,35-39,34100
+2016,female,professionals,40-44,27800
+2016,female,professionals,45-49,19400
+2016,female,professionals,50-54,13300
+2016,female,professionals,55-59,8500
+2016,female,professionals,60-64,4200
+2016,female,professionals,65-69,1800
+2016,female,professionals,70_and_over,1000
+2016,female,associate professionals and technicians,15-19,1300
+2016,female,associate professionals and technicians,20-24,20700
+2016,female,associate professionals and technicians,25-29,39900
+2016,female,associate professionals and technicians,30-34,31000
+2016,female,associate professionals and technicians,35-39,27700
+2016,female,associate professionals and technicians,40-44,25700
+2016,female,associate professionals and technicians,45-49,22100
+2016,female,associate professionals and technicians,50-54,17800
+2016,female,associate professionals and technicians,55-59,12600
+2016,female,associate professionals and technicians,60-64,6600
+2016,female,associate professionals and technicians,65-69,2300
+2016,female,associate professionals and technicians,70_and_over,700
+2016,female,clerical support workers,15-19,3100
+2016,female,clerical support workers,20-24,19200
+2016,female,clerical support workers,25-29,17400
+2016,female,clerical support workers,30-34,16700
+2016,female,clerical support workers,35-39,18600
+2016,female,clerical support workers,40-44,22700
+2016,female,clerical support workers,45-49,24300
+2016,female,clerical support workers,50-54,25400
+2016,female,clerical support workers,55-59,19700
+2016,female,clerical support workers,60-64,11800
+2016,female,clerical support workers,65-69,4600
+2016,female,clerical support workers,70_and_over,1200
+2016,female,service and sales workers,15-19,7000
+2016,female,service and sales workers,20-24,14300
+2016,female,service and sales workers,25-29,10300
+2016,female,service and sales workers,30-34,9900
+2016,female,service and sales workers,35-39,11600
+2016,female,service and sales workers,40-44,14600
+2016,female,service and sales workers,45-49,18700
+2016,female,service and sales workers,50-54,19500
+2016,female,service and sales workers,55-59,18400
+2016,female,service and sales workers,60-64,13500
+2016,female,service and sales workers,65-69,6700
+2016,female,service and sales workers,70_and_over,2400
+2016,female,craftsmen and related trades workers,15-19,100
+2016,female,craftsmen and related trades workers,20-24,500
+2016,female,craftsmen and related trades workers,25-29,500
+2016,female,craftsmen and related trades workers,30-34,300
+2016,female,craftsmen and related trades workers,35-39,600
+2016,female,craftsmen and related trades workers,40-44,900
+2016,female,craftsmen and related trades workers,45-49,800
+2016,female,craftsmen and related trades workers,50-54,1500
+2016,female,craftsmen and related trades workers,55-59,2000
+2016,female,craftsmen and related trades workers,60-64,1300
+2016,female,craftsmen and related trades workers,65-69,500
+2016,female,craftsmen and related trades workers,70_and_over,300
+2016,female,plant and machine operators and assemblers,15-19,100
+2016,female,plant and machine operators and assemblers,20-24,100
+2016,female,plant and machine operators and assemblers,25-29,200
+2016,female,plant and machine operators and assemblers,30-34,400
+2016,female,plant and machine operators and assemblers,35-39,1400
+2016,female,plant and machine operators and assemblers,40-44,2500
+2016,female,plant and machine operators and assemblers,45-49,2900
+2016,female,plant and machine operators and assemblers,50-54,3800
+2016,female,plant and machine operators and assemblers,55-59,3400
+2016,female,plant and machine operators and assemblers,60-64,2300
+2016,female,plant and machine operators and assemblers,65-69,1100
+2016,female,plant and machine operators and assemblers,70_and_over,400
+2016,female,"cleaners, labourers and related workers",15-19,1000
+2016,female,"cleaners, labourers and related workers",20-24,1500
+2016,female,"cleaners, labourers and related workers",25-29,2000
+2016,female,"cleaners, labourers and related workers",30-34,1900
+2016,female,"cleaners, labourers and related workers",35-39,3200
+2016,female,"cleaners, labourers and related workers",40-44,6300
+2016,female,"cleaners, labourers and related workers",45-49,8300
+2016,female,"cleaners, labourers and related workers",50-54,14100
+2016,female,"cleaners, labourers and related workers",55-59,17900
+2016,female,"cleaners, labourers and related workers",60-64,17500
+2016,female,"cleaners, labourers and related workers",65-69,12500
+2016,female,"cleaners, labourers and related workers",70_and_over,9000
+2016,female,others,15-19,100
+2016,female,others,20-24,300
+2016,female,others,25-29,200
+2016,female,others,30-34,100
+2016,female,others,35-39,200
+2016,female,others,40-44,300
+2016,female,others,45-49,0
+2016,female,others,50-54,300
+2016,female,others,55-59,200
+2016,female,others,60-64,0
+2016,female,others,65-69,0
+2016,female,others,70_and_over,0
+2017,male,managers & administrators (including working proprietors),15-19,0
+2017,male,managers & administrators (including working proprietors),20-24,300
+2017,male,managers & administrators (including working proprietors),25-29,4200
+2017,male,managers & administrators (including working proprietors),30-34,18000
+2017,male,managers & administrators (including working proprietors),35-39,30800
+2017,male,managers & administrators (including working proprietors),40-44,43500
+2017,male,managers & administrators (including working proprietors),45-49,43300
+2017,male,managers & administrators (including working proprietors),50-54,33900
+2017,male,managers & administrators (including working proprietors),55-59,27300
+2017,male,managers & administrators (including working proprietors),60-64,16700
+2017,male,managers & administrators (including working proprietors),65-69,7300
+2017,male,managers & administrators (including working proprietors),70_and_over,5600
+2017,male,professionals,15-19,100
+2017,male,professionals,20-24,2500
+2017,male,professionals,25-29,32800
+2017,male,professionals,30-34,40300
+2017,male,professionals,35-39,42700
+2017,male,professionals,40-44,39800
+2017,male,professionals,45-49,27700
+2017,male,professionals,50-54,19600
+2017,male,professionals,55-59,11200
+2017,male,professionals,60-64,6900
+2017,male,professionals,65-69,3700
+2017,male,professionals,70_and_over,1700
+2017,male,associate professionals and technicians,15-19,500
+2017,male,associate professionals and technicians,20-24,8100
+2017,male,associate professionals and technicians,25-29,37600
+2017,male,associate professionals and technicians,30-34,31500
+2017,male,associate professionals and technicians,35-39,33500
+2017,male,associate professionals and technicians,40-44,28100
+2017,male,associate professionals and technicians,45-49,27400
+2017,male,associate professionals and technicians,50-54,22500
+2017,male,associate professionals and technicians,55-59,17400
+2017,male,associate professionals and technicians,60-64,12200
+2017,male,associate professionals and technicians,65-69,4100
+2017,male,associate professionals and technicians,70_and_over,1900
+2017,male,clerical support workers,15-19,1600
+2017,male,clerical support workers,20-24,7900
+2017,male,clerical support workers,25-29,6900
+2017,male,clerical support workers,30-34,5100
+2017,male,clerical support workers,35-39,4400
+2017,male,clerical support workers,40-44,4100
+2017,male,clerical support workers,45-49,5300
+2017,male,clerical support workers,50-54,6200
+2017,male,clerical support workers,55-59,5900
+2017,male,clerical support workers,60-64,5500
+2017,male,clerical support workers,65-69,3300
+2017,male,clerical support workers,70_and_over,2100
+2017,male,service and sales workers,15-19,3100
+2017,male,service and sales workers,20-24,9300
+2017,male,service and sales workers,25-29,10800
+2017,male,service and sales workers,30-34,9700
+2017,male,service and sales workers,35-39,9200
+2017,male,service and sales workers,40-44,8700
+2017,male,service and sales workers,45-49,9400
+2017,male,service and sales workers,50-54,11700
+2017,male,service and sales workers,55-59,10700
+2017,male,service and sales workers,60-64,11700
+2017,male,service and sales workers,65-69,7600
+2017,male,service and sales workers,70_and_over,6400
+2017,male,craftsmen and related trades workers,15-19,200
+2017,male,craftsmen and related trades workers,20-24,2000
+2017,male,craftsmen and related trades workers,25-29,3300
+2017,male,craftsmen and related trades workers,30-34,3200
+2017,male,craftsmen and related trades workers,35-39,4400
+2017,male,craftsmen and related trades workers,40-44,6700
+2017,male,craftsmen and related trades workers,45-49,7800
+2017,male,craftsmen and related trades workers,50-54,12500
+2017,male,craftsmen and related trades workers,55-59,11400
+2017,male,craftsmen and related trades workers,60-64,9400
+2017,male,craftsmen and related trades workers,65-69,4400
+2017,male,craftsmen and related trades workers,70_and_over,1700
+2017,male,plant and machine operators and assemblers,15-19,100
+2017,male,plant and machine operators and assemblers,20-24,3500
+2017,male,plant and machine operators and assemblers,25-29,5000
+2017,male,plant and machine operators and assemblers,30-34,5100
+2017,male,plant and machine operators and assemblers,35-39,6900
+2017,male,plant and machine operators and assemblers,40-44,10100
+2017,male,plant and machine operators and assemblers,45-49,15400
+2017,male,plant and machine operators and assemblers,50-54,23700
+2017,male,plant and machine operators and assemblers,55-59,25700
+2017,male,plant and machine operators and assemblers,60-64,24000
+2017,male,plant and machine operators and assemblers,65-69,12400
+2017,male,plant and machine operators and assemblers,70_and_over,4100
+2017,male,"cleaners, labourers and related workers",15-19,1200
+2017,male,"cleaners, labourers and related workers",20-24,2700
+2017,male,"cleaners, labourers and related workers",25-29,2900
+2017,male,"cleaners, labourers and related workers",30-34,2100
+2017,male,"cleaners, labourers and related workers",35-39,2200
+2017,male,"cleaners, labourers and related workers",40-44,3500
+2017,male,"cleaners, labourers and related workers",45-49,4900
+2017,male,"cleaners, labourers and related workers",50-54,8300
+2017,male,"cleaners, labourers and related workers",55-59,10100
+2017,male,"cleaners, labourers and related workers",60-64,9400
+2017,male,"cleaners, labourers and related workers",65-69,9700
+2017,male,"cleaners, labourers and related workers",70_and_over,11400
+2017,male,others,15-19,15600
+2017,male,others,20-24,37300
+2017,male,others,25-29,4000
+2017,male,others,30-34,2000
+2017,male,others,35-39,2400
+2017,male,others,40-44,1900
+2017,male,others,45-49,800
+2017,male,others,50-54,700
+2017,male,others,55-59,800
+2017,male,others,60-64,600
+2017,male,others,65-69,400
+2017,male,others,70_and_over,400
+2017,female,managers & administrators (including working proprietors),15-19,0
+2017,female,managers & administrators (including working proprietors),20-24,700
+2017,female,managers & administrators (including working proprietors),25-29,4400
+2017,female,managers & administrators (including working proprietors),30-34,12800
+2017,female,managers & administrators (including working proprietors),35-39,21400
+2017,female,managers & administrators (including working proprietors),40-44,25300
+2017,female,managers & administrators (including working proprietors),45-49,21400
+2017,female,managers & administrators (including working proprietors),50-54,14700
+2017,female,managers & administrators (including working proprietors),55-59,8800
+2017,female,managers & administrators (including working proprietors),60-64,5500
+2017,female,managers & administrators (including working proprietors),65-69,2400
+2017,female,managers & administrators (including working proprietors),70_and_over,800
+2017,female,professionals,15-19,100
+2017,female,professionals,20-24,10100
+2017,female,professionals,25-29,39500
+2017,female,professionals,30-34,43900
+2017,female,professionals,35-39,37500
+2017,female,professionals,40-44,28000
+2017,female,professionals,45-49,22300
+2017,female,professionals,50-54,12900
+2017,female,professionals,55-59,8300
+2017,female,professionals,60-64,4000
+2017,female,professionals,65-69,1700
+2017,female,professionals,70_and_over,500
+2017,female,associate professionals and technicians,15-19,800
+2017,female,associate professionals and technicians,20-24,19800
+2017,female,associate professionals and technicians,25-29,38500
+2017,female,associate professionals and technicians,30-34,32100
+2017,female,associate professionals and technicians,35-39,30700
+2017,female,associate professionals and technicians,40-44,25500
+2017,female,associate professionals and technicians,45-49,24800
+2017,female,associate professionals and technicians,50-54,17400
+2017,female,associate professionals and technicians,55-59,12400
+2017,female,associate professionals and technicians,60-64,6000
+2017,female,associate professionals and technicians,65-69,2400
+2017,female,associate professionals and technicians,70_and_over,1000
+2017,female,clerical support workers,15-19,3100
+2017,female,clerical support workers,20-24,16900
+2017,female,clerical support workers,25-29,15800
+2017,female,clerical support workers,30-34,18000
+2017,female,clerical support workers,35-39,20200
+2017,female,clerical support workers,40-44,24500
+2017,female,clerical support workers,45-49,24800
+2017,female,clerical support workers,50-54,24400
+2017,female,clerical support workers,55-59,20600
+2017,female,clerical support workers,60-64,13700
+2017,female,clerical support workers,65-69,5700
+2017,female,clerical support workers,70_and_over,1600
+2017,female,service and sales workers,15-19,5400
+2017,female,service and sales workers,20-24,12300
+2017,female,service and sales workers,25-29,9300
+2017,female,service and sales workers,30-34,9200
+2017,female,service and sales workers,35-39,13500
+2017,female,service and sales workers,40-44,14200
+2017,female,service and sales workers,45-49,17500
+2017,female,service and sales workers,50-54,18300
+2017,female,service and sales workers,55-59,16000
+2017,female,service and sales workers,60-64,13700
+2017,female,service and sales workers,65-69,7100
+2017,female,service and sales workers,70_and_over,3300
+2017,female,craftsmen and related trades workers,15-19,100
+2017,female,craftsmen and related trades workers,20-24,500
+2017,female,craftsmen and related trades workers,25-29,500
+2017,female,craftsmen and related trades workers,30-34,200
+2017,female,craftsmen and related trades workers,35-39,500
+2017,female,craftsmen and related trades workers,40-44,1000
+2017,female,craftsmen and related trades workers,45-49,1300
+2017,female,craftsmen and related trades workers,50-54,1100
+2017,female,craftsmen and related trades workers,55-59,1400
+2017,female,craftsmen and related trades workers,60-64,1400
+2017,female,craftsmen and related trades workers,65-69,700
+2017,female,craftsmen and related trades workers,70_and_over,200
+2017,female,plant and machine operators and assemblers,15-19,100
+2017,female,plant and machine operators and assemblers,20-24,300
+2017,female,plant and machine operators and assemblers,25-29,500
+2017,female,plant and machine operators and assemblers,30-34,600
+2017,female,plant and machine operators and assemblers,35-39,1200
+2017,female,plant and machine operators and assemblers,40-44,2000
+2017,female,plant and machine operators and assemblers,45-49,2700
+2017,female,plant and machine operators and assemblers,50-54,2600
+2017,female,plant and machine operators and assemblers,55-59,2800
+2017,female,plant and machine operators and assemblers,60-64,1400
+2017,female,plant and machine operators and assemblers,65-69,1100
+2017,female,plant and machine operators and assemblers,70_and_over,200
+2017,female,"cleaners, labourers and related workers",15-19,600
+2017,female,"cleaners, labourers and related workers",20-24,1100
+2017,female,"cleaners, labourers and related workers",25-29,1200
+2017,female,"cleaners, labourers and related workers",30-34,2300
+2017,female,"cleaners, labourers and related workers",35-39,4100
+2017,female,"cleaners, labourers and related workers",40-44,4400
+2017,female,"cleaners, labourers and related workers",45-49,7200
+2017,female,"cleaners, labourers and related workers",50-54,13400
+2017,female,"cleaners, labourers and related workers",55-59,14400
+2017,female,"cleaners, labourers and related workers",60-64,19000
+2017,female,"cleaners, labourers and related workers",65-69,14300
+2017,female,"cleaners, labourers and related workers",70_and_over,10100
+2017,female,others,15-19,100
+2017,female,others,20-24,100
+2017,female,others,25-29,200
+2017,female,others,30-34,100
+2017,female,others,35-39,200
+2017,female,others,40-44,300
+2017,female,others,45-49,300
+2017,female,others,50-54,200
+2017,female,others,55-59,300
+2017,female,others,60-64,100
+2017,female,others,65-69,0
+2017,female,others,70_and_over,100
+2018,male,managers & administrators (including working proprietors),15-19,0
+2018,male,managers & administrators (including working proprietors),20-24,200
+2018,male,managers & administrators (including working proprietors),25-29,4200
+2018,male,managers & administrators (including working proprietors),30-34,16700
+2018,male,managers & administrators (including working proprietors),35-39,30500
+2018,male,managers & administrators (including working proprietors),40-44,40400
+2018,male,managers & administrators (including working proprietors),45-49,40300
+2018,male,managers & administrators (including working proprietors),50-54,33500
+2018,male,managers & administrators (including working proprietors),55-59,25300
+2018,male,managers & administrators (including working proprietors),60-64,16100
+2018,male,managers & administrators (including working proprietors),65-69,7300
+2018,male,managers & administrators (including working proprietors),70_and_over,4700
+2018,male,professionals,15-19,0
+2018,male,professionals,20-24,2400
+2018,male,professionals,25-29,31100
+2018,male,professionals,30-34,40700
+2018,male,professionals,35-39,40900
+2018,male,professionals,40-44,37900
+2018,male,professionals,45-49,30300
+2018,male,professionals,50-54,21700
+2018,male,professionals,55-59,15700
+2018,male,professionals,60-64,8600
+2018,male,professionals,65-69,4500
+2018,male,professionals,70_and_over,2300
+2018,male,associate professionals and technicians,15-19,700
+2018,male,associate professionals and technicians,20-24,9000
+2018,male,associate professionals and technicians,25-29,38300
+2018,male,associate professionals and technicians,30-34,35300
+2018,male,associate professionals and technicians,35-39,32800
+2018,male,associate professionals and technicians,40-44,32700
+2018,male,associate professionals and technicians,45-49,28100
+2018,male,associate professionals and technicians,50-54,24900
+2018,male,associate professionals and technicians,55-59,19400
+2018,male,associate professionals and technicians,60-64,13800
+2018,male,associate professionals and technicians,65-69,5800
+2018,male,associate professionals and technicians,70_and_over,1600
+2018,male,clerical support workers,15-19,2200
+2018,male,clerical support workers,20-24,8900
+2018,male,clerical support workers,25-29,8200
+2018,male,clerical support workers,30-34,5200
+2018,male,clerical support workers,35-39,4000
+2018,male,clerical support workers,40-44,4700
+2018,male,clerical support workers,45-49,4700
+2018,male,clerical support workers,50-54,5800
+2018,male,clerical support workers,55-59,6400
+2018,male,clerical support workers,60-64,3800
+2018,male,clerical support workers,65-69,3500
+2018,male,clerical support workers,70_and_over,2500
+2018,male,service and sales workers,15-19,3600
+2018,male,service and sales workers,20-24,8300
+2018,male,service and sales workers,25-29,12600
+2018,male,service and sales workers,30-34,8400
+2018,male,service and sales workers,35-39,10500
+2018,male,service and sales workers,40-44,9300
+2018,male,service and sales workers,45-49,10000
+2018,male,service and sales workers,50-54,14300
+2018,male,service and sales workers,55-59,13500
+2018,male,service and sales workers,60-64,10900
+2018,male,service and sales workers,65-69,8100
+2018,male,service and sales workers,70_and_over,6000
+2018,male,craftsmen and related trades workers,15-19,300
+2018,male,craftsmen and related trades workers,20-24,1400
+2018,male,craftsmen and related trades workers,25-29,3700
+2018,male,craftsmen and related trades workers,30-34,3300
+2018,male,craftsmen and related trades workers,35-39,3800
+2018,male,craftsmen and related trades workers,40-44,5000
+2018,male,craftsmen and related trades workers,45-49,6800
+2018,male,craftsmen and related trades workers,50-54,10300
+2018,male,craftsmen and related trades workers,55-59,10800
+2018,male,craftsmen and related trades workers,60-64,8600
+2018,male,craftsmen and related trades workers,65-69,5100
+2018,male,craftsmen and related trades workers,70_and_over,1900
+2018,male,plant and machine operators and assemblers,15-19,300
+2018,male,plant and machine operators and assemblers,20-24,2300
+2018,male,plant and machine operators and assemblers,25-29,5400
+2018,male,plant and machine operators and assemblers,30-34,5600
+2018,male,plant and machine operators and assemblers,35-39,7100
+2018,male,plant and machine operators and assemblers,40-44,9600
+2018,male,plant and machine operators and assemblers,45-49,13500
+2018,male,plant and machine operators and assemblers,50-54,20300
+2018,male,plant and machine operators and assemblers,55-59,25300
+2018,male,plant and machine operators and assemblers,60-64,24100
+2018,male,plant and machine operators and assemblers,65-69,12100
+2018,male,plant and machine operators and assemblers,70_and_over,4800
+2018,male,"cleaners, labourers and related workers",15-19,900
+2018,male,"cleaners, labourers and related workers",20-24,2700
+2018,male,"cleaners, labourers and related workers",25-29,2300
+2018,male,"cleaners, labourers and related workers",30-34,1600
+2018,male,"cleaners, labourers and related workers",35-39,2400
+2018,male,"cleaners, labourers and related workers",40-44,3000
+2018,male,"cleaners, labourers and related workers",45-49,4500
+2018,male,"cleaners, labourers and related workers",50-54,8300
+2018,male,"cleaners, labourers and related workers",55-59,10800
+2018,male,"cleaners, labourers and related workers",60-64,11400
+2018,male,"cleaners, labourers and related workers",65-69,9200
+2018,male,"cleaners, labourers and related workers",70_and_over,9000
+2018,male,others,15-19,15200
+2018,male,others,20-24,35700
+2018,male,others,25-29,4600
+2018,male,others,30-34,2500
+2018,male,others,35-39,2600
+2018,male,others,40-44,1200
+2018,male,others,45-49,1400
+2018,male,others,50-54,1400
+2018,male,others,55-59,900
+2018,male,others,60-64,300
+2018,male,others,65-69,600
+2018,male,others,70_and_over,300
+2018,female,managers & administrators (including working proprietors),15-19,0
+2018,female,managers & administrators (including working proprietors),20-24,600
+2018,female,managers & administrators (including working proprietors),25-29,5000
+2018,female,managers & administrators (including working proprietors),30-34,12900
+2018,female,managers & administrators (including working proprietors),35-39,21900
+2018,female,managers & administrators (including working proprietors),40-44,26300
+2018,female,managers & administrators (including working proprietors),45-49,23100
+2018,female,managers & administrators (including working proprietors),50-54,15800
+2018,female,managers & administrators (including working proprietors),55-59,9000
+2018,female,managers & administrators (including working proprietors),60-64,5000
+2018,female,managers & administrators (including working proprietors),65-69,1700
+2018,female,managers & administrators (including working proprietors),70_and_over,1100
+2018,female,professionals,15-19,300
+2018,female,professionals,20-24,11600
+2018,female,professionals,25-29,38100
+2018,female,professionals,30-34,39400
+2018,female,professionals,35-39,37300
+2018,female,professionals,40-44,31600
+2018,female,professionals,45-49,22200
+2018,female,professionals,50-54,13800
+2018,female,professionals,55-59,10300
+2018,female,professionals,60-64,5700
+2018,female,professionals,65-69,2300
+2018,female,professionals,70_and_over,700
+2018,female,associate professionals and technicians,15-19,1300
+2018,female,associate professionals and technicians,20-24,19600
+2018,female,associate professionals and technicians,25-29,38000
+2018,female,associate professionals and technicians,30-34,33900
+2018,female,associate professionals and technicians,35-39,32200
+2018,female,associate professionals and technicians,40-44,26900
+2018,female,associate professionals and technicians,45-49,24600
+2018,female,associate professionals and technicians,50-54,18500
+2018,female,associate professionals and technicians,55-59,14900
+2018,female,associate professionals and technicians,60-64,8500
+2018,female,associate professionals and technicians,65-69,3100
+2018,female,associate professionals and technicians,70_and_over,900
+2018,female,clerical support workers,15-19,3700
+2018,female,clerical support workers,20-24,17700
+2018,female,clerical support workers,25-29,17500
+2018,female,clerical support workers,30-34,14600
+2018,female,clerical support workers,35-39,19600
+2018,female,clerical support workers,40-44,20800
+2018,female,clerical support workers,45-49,22100
+2018,female,clerical support workers,50-54,25200
+2018,female,clerical support workers,55-59,18900
+2018,female,clerical support workers,60-64,13800
+2018,female,clerical support workers,65-69,4900
+2018,female,clerical support workers,70_and_over,2300
+2018,female,service and sales workers,15-19,5800
+2018,female,service and sales workers,20-24,12700
+2018,female,service and sales workers,25-29,11100
+2018,female,service and sales workers,30-34,11200
+2018,female,service and sales workers,35-39,11500
+2018,female,service and sales workers,40-44,13700
+2018,female,service and sales workers,45-49,18300
+2018,female,service and sales workers,50-54,20400
+2018,female,service and sales workers,55-59,16400
+2018,female,service and sales workers,60-64,14300
+2018,female,service and sales workers,65-69,7600
+2018,female,service and sales workers,70_and_over,4100
+2018,female,craftsmen and related trades workers,15-19,100
+2018,female,craftsmen and related trades workers,20-24,400
+2018,female,craftsmen and related trades workers,25-29,300
+2018,female,craftsmen and related trades workers,30-34,400
+2018,female,craftsmen and related trades workers,35-39,1000
+2018,female,craftsmen and related trades workers,40-44,500
+2018,female,craftsmen and related trades workers,45-49,1000
+2018,female,craftsmen and related trades workers,50-54,1600
+2018,female,craftsmen and related trades workers,55-59,1100
+2018,female,craftsmen and related trades workers,60-64,1400
+2018,female,craftsmen and related trades workers,65-69,700
+2018,female,craftsmen and related trades workers,70_and_over,400
+2018,female,plant and machine operators and assemblers,15-19,100
+2018,female,plant and machine operators and assemblers,20-24,500
+2018,female,plant and machine operators and assemblers,25-29,400
+2018,female,plant and machine operators and assemblers,30-34,200
+2018,female,plant and machine operators and assemblers,35-39,1200
+2018,female,plant and machine operators and assemblers,40-44,2000
+2018,female,plant and machine operators and assemblers,45-49,3000
+2018,female,plant and machine operators and assemblers,50-54,3500
+2018,female,plant and machine operators and assemblers,55-59,2700
+2018,female,plant and machine operators and assemblers,60-64,2400
+2018,female,plant and machine operators and assemblers,65-69,1100
+2018,female,plant and machine operators and assemblers,70_and_over,300
+2018,female,"cleaners, labourers and related workers",15-19,600
+2018,female,"cleaners, labourers and related workers",20-24,1500
+2018,female,"cleaners, labourers and related workers",25-29,1800
+2018,female,"cleaners, labourers and related workers",30-34,1800
+2018,female,"cleaners, labourers and related workers",35-39,3300
+2018,female,"cleaners, labourers and related workers",40-44,5100
+2018,female,"cleaners, labourers and related workers",45-49,7800
+2018,female,"cleaners, labourers and related workers",50-54,11700
+2018,female,"cleaners, labourers and related workers",55-59,15500
+2018,female,"cleaners, labourers and related workers",60-64,16900
+2018,female,"cleaners, labourers and related workers",65-69,12800
+2018,female,"cleaners, labourers and related workers",70_and_over,11400
+2018,female,others,15-19,100
+2018,female,others,20-24,400
+2018,female,others,25-29,700
+2018,female,others,30-34,300
+2018,female,others,35-39,600
+2018,female,others,40-44,300
+2018,female,others,45-49,200
+2018,female,others,50-54,200
+2018,female,others,55-59,200
+2018,female,others,60-64,200
+2018,female,others,65-69,100
+2018,female,others,70_and_over,100
+2019,male,managers & administrators (including working proprietors),15-19,0
+2019,male,managers & administrators (including working proprietors),20-24,300
+2019,male,managers & administrators (including working proprietors),25-29,4700
+2019,male,managers & administrators (including working proprietors),30-34,16500
+2019,male,managers & administrators (including working proprietors),35-39,32600
+2019,male,managers & administrators (including working proprietors),40-44,40900
+2019,male,managers & administrators (including working proprietors),45-49,44000
+2019,male,managers & administrators (including working proprietors),50-54,35800
+2019,male,managers & administrators (including working proprietors),55-59,25700
+2019,male,managers & administrators (including working proprietors),60-64,17300
+2019,male,managers & administrators (including working proprietors),65-69,7500
+2019,male,managers & administrators (including working proprietors),70_and_over,5700
+2019,male,professionals,15-19,100
+2019,male,professionals,20-24,2800
+2019,male,professionals,25-29,34300
+2019,male,professionals,30-34,39400
+2019,male,professionals,35-39,38800
+2019,male,professionals,40-44,36800
+2019,male,professionals,45-49,30500
+2019,male,professionals,50-54,24100
+2019,male,professionals,55-59,15300
+2019,male,professionals,60-64,8300
+2019,male,professionals,65-69,4700
+2019,male,professionals,70_and_over,2800
+2019,male,associate professionals and technicians,15-19,400
+2019,male,associate professionals and technicians,20-24,8600
+2019,male,associate professionals and technicians,25-29,39100
+2019,male,associate professionals and technicians,30-34,37900
+2019,male,associate professionals and technicians,35-39,32100
+2019,male,associate professionals and technicians,40-44,28200
+2019,male,associate professionals and technicians,45-49,28800
+2019,male,associate professionals and technicians,50-54,23400
+2019,male,associate professionals and technicians,55-59,20500
+2019,male,associate professionals and technicians,60-64,13500
+2019,male,associate professionals and technicians,65-69,7600
+2019,male,associate professionals and technicians,70_and_over,3100
+2019,male,clerical support workers,15-19,2000
+2019,male,clerical support workers,20-24,7600
+2019,male,clerical support workers,25-29,6900
+2019,male,clerical support workers,30-34,4900
+2019,male,clerical support workers,35-39,4400
+2019,male,clerical support workers,40-44,3200
+2019,male,clerical support workers,45-49,5000
+2019,male,clerical support workers,50-54,5000
+2019,male,clerical support workers,55-59,5600
+2019,male,clerical support workers,60-64,5500
+2019,male,clerical support workers,65-69,3700
+2019,male,clerical support workers,70_and_over,2500
+2019,male,service and sales workers,15-19,2900
+2019,male,service and sales workers,20-24,9500
+2019,male,service and sales workers,25-29,11200
+2019,male,service and sales workers,30-34,10100
+2019,male,service and sales workers,35-39,8400
+2019,male,service and sales workers,40-44,8700
+2019,male,service and sales workers,45-49,10900
+2019,male,service and sales workers,50-54,11200
+2019,male,service and sales workers,55-59,12900
+2019,male,service and sales workers,60-64,12500
+2019,male,service and sales workers,65-69,7200
+2019,male,service and sales workers,70_and_over,6000
+2019,male,craftsmen and related trades workers,15-19,100
+2019,male,craftsmen and related trades workers,20-24,1400
+2019,male,craftsmen and related trades workers,25-29,3500
+2019,male,craftsmen and related trades workers,30-34,3300
+2019,male,craftsmen and related trades workers,35-39,3400
+2019,male,craftsmen and related trades workers,40-44,3800
+2019,male,craftsmen and related trades workers,45-49,6100
+2019,male,craftsmen and related trades workers,50-54,10200
+2019,male,craftsmen and related trades workers,55-59,11200
+2019,male,craftsmen and related trades workers,60-64,8800
+2019,male,craftsmen and related trades workers,65-69,4800
+2019,male,craftsmen and related trades workers,70_and_over,2300
+2019,male,plant and machine operators and assemblers,15-19,600
+2019,male,plant and machine operators and assemblers,20-24,3000
+2019,male,plant and machine operators and assemblers,25-29,6400
+2019,male,plant and machine operators and assemblers,30-34,6100
+2019,male,plant and machine operators and assemblers,35-39,6900
+2019,male,plant and machine operators and assemblers,40-44,9100
+2019,male,plant and machine operators and assemblers,45-49,15200
+2019,male,plant and machine operators and assemblers,50-54,20300
+2019,male,plant and machine operators and assemblers,55-59,25600
+2019,male,plant and machine operators and assemblers,60-64,23500
+2019,male,plant and machine operators and assemblers,65-69,14900
+2019,male,plant and machine operators and assemblers,70_and_over,5200
+2019,male,"cleaners, labourers and related workers",15-19,700
+2019,male,"cleaners, labourers and related workers",20-24,2000
+2019,male,"cleaners, labourers and related workers",25-29,2900
+2019,male,"cleaners, labourers and related workers",30-34,2200
+2019,male,"cleaners, labourers and related workers",35-39,2700
+2019,male,"cleaners, labourers and related workers",40-44,2000
+2019,male,"cleaners, labourers and related workers",45-49,3600
+2019,male,"cleaners, labourers and related workers",50-54,6700
+2019,male,"cleaners, labourers and related workers",55-59,11000
+2019,male,"cleaners, labourers and related workers",60-64,11400
+2019,male,"cleaners, labourers and related workers",65-69,9900
+2019,male,"cleaners, labourers and related workers",70_and_over,9200
+2019,male,others,15-19,13900
+2019,male,others,20-24,33800
+2019,male,others,25-29,4600
+2019,male,others,30-34,2400
+2019,male,others,35-39,2100
+2019,male,others,40-44,1700
+2019,male,others,45-49,1100
+2019,male,others,50-54,700
+2019,male,others,55-59,1100
+2019,male,others,60-64,300
+2019,male,others,65-69,500
+2019,male,others,70_and_over,200
+2019,female,managers & administrators (including working proprietors),15-19,0
+2019,female,managers & administrators (including working proprietors),20-24,600
+2019,female,managers & administrators (including working proprietors),25-29,4000
+2019,female,managers & administrators (including working proprietors),30-34,15500
+2019,female,managers & administrators (including working proprietors),35-39,24400
+2019,female,managers & administrators (including working proprietors),40-44,24600
+2019,female,managers & administrators (including working proprietors),45-49,25600
+2019,female,managers & administrators (including working proprietors),50-54,15700
+2019,female,managers & administrators (including working proprietors),55-59,12300
+2019,female,managers & administrators (including working proprietors),60-64,6700
+2019,female,managers & administrators (including working proprietors),65-69,3100
+2019,female,managers & administrators (including working proprietors),70_and_over,1300
+2019,female,professionals,15-19,200
+2019,female,professionals,20-24,12800
+2019,female,professionals,25-29,43100
+2019,female,professionals,30-34,42500
+2019,female,professionals,35-39,39800
+2019,female,professionals,40-44,31700
+2019,female,professionals,45-49,24900
+2019,female,professionals,50-54,16200
+2019,female,professionals,55-59,11400
+2019,female,professionals,60-64,5200
+2019,female,professionals,65-69,2300
+2019,female,professionals,70_and_over,1400
+2019,female,associate professionals and technicians,15-19,1100
+2019,female,associate professionals and technicians,20-24,19900
+2019,female,associate professionals and technicians,25-29,37000
+2019,female,associate professionals and technicians,30-34,35000
+2019,female,associate professionals and technicians,35-39,30500
+2019,female,associate professionals and technicians,40-44,29200
+2019,female,associate professionals and technicians,45-49,27000
+2019,female,associate professionals and technicians,50-54,19400
+2019,female,associate professionals and technicians,55-59,13900
+2019,female,associate professionals and technicians,60-64,6900
+2019,female,associate professionals and technicians,65-69,3300
+2019,female,associate professionals and technicians,70_and_over,1500
+2019,female,clerical support workers,15-19,3300
+2019,female,clerical support workers,20-24,14300
+2019,female,clerical support workers,25-29,14500
+2019,female,clerical support workers,30-34,16700
+2019,female,clerical support workers,35-39,17000
+2019,female,clerical support workers,40-44,20500
+2019,female,clerical support workers,45-49,23100
+2019,female,clerical support workers,50-54,24600
+2019,female,clerical support workers,55-59,22000
+2019,female,clerical support workers,60-64,15100
+2019,female,clerical support workers,65-69,7200
+2019,female,clerical support workers,70_and_over,2400
+2019,female,service and sales workers,15-19,5800
+2019,female,service and sales workers,20-24,11700
+2019,female,service and sales workers,25-29,9400
+2019,female,service and sales workers,30-34,10600
+2019,female,service and sales workers,35-39,12500
+2019,female,service and sales workers,40-44,15400
+2019,female,service and sales workers,45-49,16500
+2019,female,service and sales workers,50-54,20500
+2019,female,service and sales workers,55-59,18000
+2019,female,service and sales workers,60-64,13500
+2019,female,service and sales workers,65-69,8500
+2019,female,service and sales workers,70_and_over,3700
+2019,female,craftsmen and related trades workers,15-19,100
+2019,female,craftsmen and related trades workers,20-24,700
+2019,female,craftsmen and related trades workers,25-29,600
+2019,female,craftsmen and related trades workers,30-34,500
+2019,female,craftsmen and related trades workers,35-39,600
+2019,female,craftsmen and related trades workers,40-44,600
+2019,female,craftsmen and related trades workers,45-49,1200
+2019,female,craftsmen and related trades workers,50-54,700
+2019,female,craftsmen and related trades workers,55-59,1700
+2019,female,craftsmen and related trades workers,60-64,800
+2019,female,craftsmen and related trades workers,65-69,1200
+2019,female,craftsmen and related trades workers,70_and_over,300
+2019,female,plant and machine operators and assemblers,15-19,100
+2019,female,plant and machine operators and assemblers,20-24,100
+2019,female,plant and machine operators and assemblers,25-29,500
+2019,female,plant and machine operators and assemblers,30-34,500
+2019,female,plant and machine operators and assemblers,35-39,1100
+2019,female,plant and machine operators and assemblers,40-44,1300
+2019,female,plant and machine operators and assemblers,45-49,2900
+2019,female,plant and machine operators and assemblers,50-54,2100
+2019,female,plant and machine operators and assemblers,55-59,3000
+2019,female,plant and machine operators and assemblers,60-64,1700
+2019,female,plant and machine operators and assemblers,65-69,1100
+2019,female,plant and machine operators and assemblers,70_and_over,200
+2019,female,"cleaners, labourers and related workers",15-19,1300
+2019,female,"cleaners, labourers and related workers",20-24,1900
+2019,female,"cleaners, labourers and related workers",25-29,1400
+2019,female,"cleaners, labourers and related workers",30-34,1600
+2019,female,"cleaners, labourers and related workers",35-39,2500
+2019,female,"cleaners, labourers and related workers",40-44,4000
+2019,female,"cleaners, labourers and related workers",45-49,7100
+2019,female,"cleaners, labourers and related workers",50-54,10200
+2019,female,"cleaners, labourers and related workers",55-59,16400
+2019,female,"cleaners, labourers and related workers",60-64,14900
+2019,female,"cleaners, labourers and related workers",65-69,12700
+2019,female,"cleaners, labourers and related workers",70_and_over,11200
+2019,female,others,15-19,100
+2019,female,others,20-24,400
+2019,female,others,25-29,500
+2019,female,others,30-34,200
+2019,female,others,35-39,100
+2019,female,others,40-44,100
+2019,female,others,45-49,300
+2019,female,others,50-54,200
+2019,female,others,55-59,200
+2019,female,others,60-64,100
+2019,female,others,65-69,200
+2019,female,others,70_and_over,0
+2020,male,managers & administrators (including working proprietors),15-19,0
+2020,male,managers & administrators (including working proprietors),20-24,100
+2020,male,managers & administrators (including working proprietors),25-29,5100
+2020,male,managers & administrators (including working proprietors),30-34,18400
+2020,male,managers & administrators (including working proprietors),35-39,33100
+2020,male,managers & administrators (including working proprietors),40-44,39600
+2020,male,managers & administrators (including working proprietors),45-49,45000
+2020,male,managers & administrators (including working proprietors),50-54,33500
+2020,male,managers & administrators (including working proprietors),55-59,26300
+2020,male,managers & administrators (including working proprietors),60-64,14900
+2020,male,managers & administrators (including working proprietors),65-69,7900
+2020,male,managers & administrators (including working proprietors),70_and_over,7600
+2020,male,professionals,15-19,0
+2020,male,professionals,20-24,2000
+2020,male,professionals,25-29,33200
+2020,male,professionals,30-34,47300
+2020,male,professionals,35-39,42000
+2020,male,professionals,40-44,40700
+2020,male,professionals,45-49,35300
+2020,male,professionals,50-54,25300
+2020,male,professionals,55-59,17800
+2020,male,professionals,60-64,9700
+2020,male,professionals,65-69,4900
+2020,male,professionals,70_and_over,2400
+2020,male,associate professionals and technicians,15-19,600
+2020,male,associate professionals and technicians,20-24,7100
+2020,male,associate professionals and technicians,25-29,38500
+2020,male,associate professionals and technicians,30-34,34000
+2020,male,associate professionals and technicians,35-39,29700
+2020,male,associate professionals and technicians,40-44,28200
+2020,male,associate professionals and technicians,45-49,26700
+2020,male,associate professionals and technicians,50-54,23000
+2020,male,associate professionals and technicians,55-59,19800
+2020,male,associate professionals and technicians,60-64,14500
+2020,male,associate professionals and technicians,65-69,6700
+2020,male,associate professionals and technicians,70_and_over,2800
+2020,male,clerical support workers,15-19,1200
+2020,male,clerical support workers,20-24,5500
+2020,male,clerical support workers,25-29,6900
+2020,male,clerical support workers,30-34,4500
+2020,male,clerical support workers,35-39,3200
+2020,male,clerical support workers,40-44,3600
+2020,male,clerical support workers,45-49,3800
+2020,male,clerical support workers,50-54,5000
+2020,male,clerical support workers,55-59,6500
+2020,male,clerical support workers,60-64,5800
+2020,male,clerical support workers,65-69,3100
+2020,male,clerical support workers,70_and_over,2700
+2020,male,service and sales workers,15-19,2400
+2020,male,service and sales workers,20-24,6600
+2020,male,service and sales workers,25-29,10900
+2020,male,service and sales workers,30-34,9700
+2020,male,service and sales workers,35-39,9500
+2020,male,service and sales workers,40-44,7700
+2020,male,service and sales workers,45-49,9200
+2020,male,service and sales workers,50-54,9800
+2020,male,service and sales workers,55-59,12500
+2020,male,service and sales workers,60-64,12100
+2020,male,service and sales workers,65-69,8900
+2020,male,service and sales workers,70_and_over,8300
+2020,male,craftsmen and related trades workers,15-19,100
+2020,male,craftsmen and related trades workers,20-24,1800
+2020,male,craftsmen and related trades workers,25-29,3300
+2020,male,craftsmen and related trades workers,30-34,1800
+2020,male,craftsmen and related trades workers,35-39,3100
+2020,male,craftsmen and related trades workers,40-44,4000
+2020,male,craftsmen and related trades workers,45-49,5800
+2020,male,craftsmen and related trades workers,50-54,7400
+2020,male,craftsmen and related trades workers,55-59,10000
+2020,male,craftsmen and related trades workers,60-64,8400
+2020,male,craftsmen and related trades workers,65-69,5000
+2020,male,craftsmen and related trades workers,70_and_over,3000
+2020,male,plant and machine operators and assemblers,15-19,700
+2020,male,plant and machine operators and assemblers,20-24,3300
+2020,male,plant and machine operators and assemblers,25-29,6200
+2020,male,plant and machine operators and assemblers,30-34,6300
+2020,male,plant and machine operators and assemblers,35-39,8000
+2020,male,plant and machine operators and assemblers,40-44,9300
+2020,male,plant and machine operators and assemblers,45-49,14800
+2020,male,plant and machine operators and assemblers,50-54,20000
+2020,male,plant and machine operators and assemblers,55-59,24000
+2020,male,plant and machine operators and assemblers,60-64,24200
+2020,male,plant and machine operators and assemblers,65-69,14700
+2020,male,plant and machine operators and assemblers,70_and_over,5800
+2020,male,"cleaners, labourers and related workers",15-19,1000
+2020,male,"cleaners, labourers and related workers",20-24,2300
+2020,male,"cleaners, labourers and related workers",25-29,2000
+2020,male,"cleaners, labourers and related workers",30-34,2300
+2020,male,"cleaners, labourers and related workers",35-39,1700
+2020,male,"cleaners, labourers and related workers",40-44,2500
+2020,male,"cleaners, labourers and related workers",45-49,4000
+2020,male,"cleaners, labourers and related workers",50-54,6600
+2020,male,"cleaners, labourers and related workers",55-59,10300
+2020,male,"cleaners, labourers and related workers",60-64,11100
+2020,male,"cleaners, labourers and related workers",65-69,9700
+2020,male,"cleaners, labourers and related workers",70_and_over,11800
+2020,male,others,15-19,12000
+2020,male,others,20-24,31600
+2020,male,others,25-29,4900
+2020,male,others,30-34,2200
+2020,male,others,35-39,2200
+2020,male,others,40-44,1200
+2020,male,others,45-49,1200
+2020,male,others,50-54,900
+2020,male,others,55-59,1100
+2020,male,others,60-64,600
+2020,male,others,65-69,700
+2020,male,others,70_and_over,400
+2020,female,managers & administrators (including working proprietors),15-19,0
+2020,female,managers & administrators (including working proprietors),20-24,400
+2020,female,managers & administrators (including working proprietors),25-29,4400
+2020,female,managers & administrators (including working proprietors),30-34,14500
+2020,female,managers & administrators (including working proprietors),35-39,25900
+2020,female,managers & administrators (including working proprietors),40-44,27000
+2020,female,managers & administrators (including working proprietors),45-49,24900
+2020,female,managers & administrators (including working proprietors),50-54,17800
+2020,female,managers & administrators (including working proprietors),55-59,12000
+2020,female,managers & administrators (including working proprietors),60-64,6600
+2020,female,managers & administrators (including working proprietors),65-69,1900
+2020,female,managers & administrators (including working proprietors),70_and_over,1400
+2020,female,professionals,15-19,100
+2020,female,professionals,20-24,9100
+2020,female,professionals,25-29,43200
+2020,female,professionals,30-34,49800
+2020,female,professionals,35-39,40600
+2020,female,professionals,40-44,35100
+2020,female,professionals,45-49,28100
+2020,female,professionals,50-54,16900
+2020,female,professionals,55-59,11000
+2020,female,professionals,60-64,6000
+2020,female,professionals,65-69,2500
+2020,female,professionals,70_and_over,1200
+2020,female,associate professionals and technicians,15-19,1000
+2020,female,associate professionals and technicians,20-24,18900
+2020,female,associate professionals and technicians,25-29,43100
+2020,female,associate professionals and technicians,30-34,34500
+2020,female,associate professionals and technicians,35-39,30500
+2020,female,associate professionals and technicians,40-44,25400
+2020,female,associate professionals and technicians,45-49,24100
+2020,female,associate professionals and technicians,50-54,20700
+2020,female,associate professionals and technicians,55-59,14500
+2020,female,associate professionals and technicians,60-64,9400
+2020,female,associate professionals and technicians,65-69,4700
+2020,female,associate professionals and technicians,70_and_over,1700
+2020,female,clerical support workers,15-19,2300
+2020,female,clerical support workers,20-24,13800
+2020,female,clerical support workers,25-29,15100
+2020,female,clerical support workers,30-34,13800
+2020,female,clerical support workers,35-39,14700
+2020,female,clerical support workers,40-44,17400
+2020,female,clerical support workers,45-49,18800
+2020,female,clerical support workers,50-54,19700
+2020,female,clerical support workers,55-59,20700
+2020,female,clerical support workers,60-64,16800
+2020,female,clerical support workers,65-69,7600
+2020,female,clerical support workers,70_and_over,3200
+2020,female,service and sales workers,15-19,3700
+2020,female,service and sales workers,20-24,10400
+2020,female,service and sales workers,25-29,11200
+2020,female,service and sales workers,30-34,10200
+2020,female,service and sales workers,35-39,13100
+2020,female,service and sales workers,40-44,11900
+2020,female,service and sales workers,45-49,15100
+2020,female,service and sales workers,50-54,17600
+2020,female,service and sales workers,55-59,18600
+2020,female,service and sales workers,60-64,16400
+2020,female,service and sales workers,65-69,8600
+2020,female,service and sales workers,70_and_over,5700
+2020,female,craftsmen and related trades workers,15-19,300
+2020,female,craftsmen and related trades workers,20-24,500
+2020,female,craftsmen and related trades workers,25-29,600
+2020,female,craftsmen and related trades workers,30-34,300
+2020,female,craftsmen and related trades workers,35-39,300
+2020,female,craftsmen and related trades workers,40-44,600
+2020,female,craftsmen and related trades workers,45-49,900
+2020,female,craftsmen and related trades workers,50-54,1100
+2020,female,craftsmen and related trades workers,55-59,1400
+2020,female,craftsmen and related trades workers,60-64,1100
+2020,female,craftsmen and related trades workers,65-69,1000
+2020,female,craftsmen and related trades workers,70_and_over,600
+2020,female,plant and machine operators and assemblers,15-19,100
+2020,female,plant and machine operators and assemblers,20-24,400
+2020,female,plant and machine operators and assemblers,25-29,500
+2020,female,plant and machine operators and assemblers,30-34,700
+2020,female,plant and machine operators and assemblers,35-39,1200
+2020,female,plant and machine operators and assemblers,40-44,1100
+2020,female,plant and machine operators and assemblers,45-49,2600
+2020,female,plant and machine operators and assemblers,50-54,2100
+2020,female,plant and machine operators and assemblers,55-59,2800
+2020,female,plant and machine operators and assemblers,60-64,1600
+2020,female,plant and machine operators and assemblers,65-69,1100
+2020,female,plant and machine operators and assemblers,70_and_over,400
+2020,female,"cleaners, labourers and related workers",15-19,700
+2020,female,"cleaners, labourers and related workers",20-24,1800
+2020,female,"cleaners, labourers and related workers",25-29,1400
+2020,female,"cleaners, labourers and related workers",30-34,1700
+2020,female,"cleaners, labourers and related workers",35-39,2500
+2020,female,"cleaners, labourers and related workers",40-44,3700
+2020,female,"cleaners, labourers and related workers",45-49,6000
+2020,female,"cleaners, labourers and related workers",50-54,9800
+2020,female,"cleaners, labourers and related workers",55-59,15000
+2020,female,"cleaners, labourers and related workers",60-64,14400
+2020,female,"cleaners, labourers and related workers",65-69,13600
+2020,female,"cleaners, labourers and related workers",70_and_over,13400
+2020,female,others,15-19,0
+2020,female,others,20-24,200
+2020,female,others,25-29,300
+2020,female,others,30-34,200
+2020,female,others,35-39,300
+2020,female,others,40-44,100
+2020,female,others,45-49,100
+2020,female,others,50-54,100
+2020,female,others,55-59,100
+2020,female,others,60-64,200
+2020,female,others,65-69,100
+2020,female,others,70_and_over,0
+2021,male,managers & administrators (including working proprietors),15-19,0
+2021,male,managers & administrators (including working proprietors),20-24,400
+2021,male,managers & administrators (including working proprietors),25-29,6300
+2021,male,managers & administrators (including working proprietors),30-34,20800
+2021,male,managers & administrators (including working proprietors),35-39,31300
+2021,male,managers & administrators (including working proprietors),40-44,38500
+2021,male,managers & administrators (including working proprietors),45-49,40300
+2021,male,managers & administrators (including working proprietors),50-54,31300
+2021,male,managers & administrators (including working proprietors),55-59,25600
+2021,male,managers & administrators (including working proprietors),60-64,19700
+2021,male,managers & administrators (including working proprietors),65-69,11100
+2021,male,managers & administrators (including working proprietors),70_and_over,8300
+2021,male,professionals,15-19,100
+2021,male,professionals,20-24,3800
+2021,male,professionals,25-29,42500
+2021,male,professionals,30-34,55800
+2021,male,professionals,35-39,50700
+2021,male,professionals,40-44,47800
+2021,male,professionals,45-49,36700
+2021,male,professionals,50-54,24500
+2021,male,professionals,55-59,17500
+2021,male,professionals,60-64,11700
+2021,male,professionals,65-69,5700
+2021,male,professionals,70_and_over,3600
+2021,male,associate professionals and technicians,15-19,800
+2021,male,associate professionals and technicians,20-24,7300
+2021,male,associate professionals and technicians,25-29,34100
+2021,male,associate professionals and technicians,30-34,38200
+2021,male,associate professionals and technicians,35-39,30700
+2021,male,associate professionals and technicians,40-44,27400
+2021,male,associate professionals and technicians,45-49,25100
+2021,male,associate professionals and technicians,50-54,20300
+2021,male,associate professionals and technicians,55-59,20700
+2021,male,associate professionals and technicians,60-64,16800
+2021,male,associate professionals and technicians,65-69,9500
+2021,male,associate professionals and technicians,70_and_over,4300
+2021,male,clerical support workers,15-19,1600
+2021,male,clerical support workers,20-24,7100
+2021,male,clerical support workers,25-29,6600
+2021,male,clerical support workers,30-34,4200
+2021,male,clerical support workers,35-39,5100
+2021,male,clerical support workers,40-44,2500
+2021,male,clerical support workers,45-49,4200
+2021,male,clerical support workers,50-54,3700
+2021,male,clerical support workers,55-59,5100
+2021,male,clerical support workers,60-64,5400
+2021,male,clerical support workers,65-69,3600
+2021,male,clerical support workers,70_and_over,3000
+2021,male,service and sales workers,15-19,2500
+2021,male,service and sales workers,20-24,6600
+2021,male,service and sales workers,25-29,10000
+2021,male,service and sales workers,30-34,12000
+2021,male,service and sales workers,35-39,9300
+2021,male,service and sales workers,40-44,7700
+2021,male,service and sales workers,45-49,7500
+2021,male,service and sales workers,50-54,9100
+2021,male,service and sales workers,55-59,11800
+2021,male,service and sales workers,60-64,11800
+2021,male,service and sales workers,65-69,10800
+2021,male,service and sales workers,70_and_over,7600
+2021,male,craftsmen and related trades workers,15-19,100
+2021,male,craftsmen and related trades workers,20-24,1200
+2021,male,craftsmen and related trades workers,25-29,2600
+2021,male,craftsmen and related trades workers,30-34,3200
+2021,male,craftsmen and related trades workers,35-39,3200
+2021,male,craftsmen and related trades workers,40-44,2700
+2021,male,craftsmen and related trades workers,45-49,4600
+2021,male,craftsmen and related trades workers,50-54,5400
+2021,male,craftsmen and related trades workers,55-59,8300
+2021,male,craftsmen and related trades workers,60-64,8300
+2021,male,craftsmen and related trades workers,65-69,5500
+2021,male,craftsmen and related trades workers,70_and_over,3000
+2021,male,plant and machine operators and assemblers,15-19,400
+2021,male,plant and machine operators and assemblers,20-24,3600
+2021,male,plant and machine operators and assemblers,25-29,4900
+2021,male,plant and machine operators and assemblers,30-34,6300
+2021,male,plant and machine operators and assemblers,35-39,7000
+2021,male,plant and machine operators and assemblers,40-44,7700
+2021,male,plant and machine operators and assemblers,45-49,11800
+2021,male,plant and machine operators and assemblers,50-54,13300
+2021,male,plant and machine operators and assemblers,55-59,22200
+2021,male,plant and machine operators and assemblers,60-64,24200
+2021,male,plant and machine operators and assemblers,65-69,14900
+2021,male,plant and machine operators and assemblers,70_and_over,6300
+2021,male,"cleaners, labourers and related workers",15-19,1600
+2021,male,"cleaners, labourers and related workers",20-24,3000
+2021,male,"cleaners, labourers and related workers",25-29,2900
+2021,male,"cleaners, labourers and related workers",30-34,2500
+2021,male,"cleaners, labourers and related workers",35-39,2400
+2021,male,"cleaners, labourers and related workers",40-44,2400
+2021,male,"cleaners, labourers and related workers",45-49,4100
+2021,male,"cleaners, labourers and related workers",50-54,6100
+2021,male,"cleaners, labourers and related workers",55-59,8300
+2021,male,"cleaners, labourers and related workers",60-64,11700
+2021,male,"cleaners, labourers and related workers",65-69,10600
+2021,male,"cleaners, labourers and related workers",70_and_over,11700
+2021,male,others,15-19,8900
+2021,male,others,20-24,30300
+2021,male,others,25-29,4600
+2021,male,others,30-34,2600
+2021,male,others,35-39,2000
+2021,male,others,40-44,2300
+2021,male,others,45-49,800
+2021,male,others,50-54,200
+2021,male,others,55-59,800
+2021,male,others,60-64,900
+2021,male,others,65-69,600
+2021,male,others,70_and_over,600
+2021,female,managers & administrators (including working proprietors),15-19,0
+2021,female,managers & administrators (including working proprietors),20-24,700
+2021,female,managers & administrators (including working proprietors),25-29,6000
+2021,female,managers & administrators (including working proprietors),30-34,18200
+2021,female,managers & administrators (including working proprietors),35-39,23800
+2021,female,managers & administrators (including working proprietors),40-44,27500
+2021,female,managers & administrators (including working proprietors),45-49,24400
+2021,female,managers & administrators (including working proprietors),50-54,18000
+2021,female,managers & administrators (including working proprietors),55-59,11000
+2021,female,managers & administrators (including working proprietors),60-64,9000
+2021,female,managers & administrators (including working proprietors),65-69,3600
+2021,female,managers & administrators (including working proprietors),70_and_over,1800
+2021,female,professionals,15-19,100
+2021,female,professionals,20-24,15200
+2021,female,professionals,25-29,46300
+2021,female,professionals,30-34,60900
+2021,female,professionals,35-39,46200
+2021,female,professionals,40-44,39400
+2021,female,professionals,45-49,27600
+2021,female,professionals,50-54,17700
+2021,female,professionals,55-59,12100
+2021,female,professionals,60-64,7200
+2021,female,professionals,65-69,3500
+2021,female,professionals,70_and_over,900
+2021,female,associate professionals and technicians,15-19,1400
+2021,female,associate professionals and technicians,20-24,17400
+2021,female,associate professionals and technicians,25-29,38000
+2021,female,associate professionals and technicians,30-34,37700
+2021,female,associate professionals and technicians,35-39,31500
+2021,female,associate professionals and technicians,40-44,29300
+2021,female,associate professionals and technicians,45-49,23400
+2021,female,associate professionals and technicians,50-54,19500
+2021,female,associate professionals and technicians,55-59,15000
+2021,female,associate professionals and technicians,60-64,11900
+2021,female,associate professionals and technicians,65-69,5200
+2021,female,associate professionals and technicians,70_and_over,1900
+2021,female,clerical support workers,15-19,4000
+2021,female,clerical support workers,20-24,14200
+2021,female,clerical support workers,25-29,12100
+2021,female,clerical support workers,30-34,18100
+2021,female,clerical support workers,35-39,16000
+2021,female,clerical support workers,40-44,16300
+2021,female,clerical support workers,45-49,20300
+2021,female,clerical support workers,50-54,17700
+2021,female,clerical support workers,55-59,21400
+2021,female,clerical support workers,60-64,18300
+2021,female,clerical support workers,65-69,9400
+2021,female,clerical support workers,70_and_over,3600
+2021,female,service and sales workers,15-19,4200
+2021,female,service and sales workers,20-24,9800
+2021,female,service and sales workers,25-29,9700
+2021,female,service and sales workers,30-34,9800
+2021,female,service and sales workers,35-39,11200
+2021,female,service and sales workers,40-44,11500
+2021,female,service and sales workers,45-49,12500
+2021,female,service and sales workers,50-54,14400
+2021,female,service and sales workers,55-59,16700
+2021,female,service and sales workers,60-64,15700
+2021,female,service and sales workers,65-69,10000
+2021,female,service and sales workers,70_and_over,5500
+2021,female,craftsmen and related trades workers,15-19,0
+2021,female,craftsmen and related trades workers,20-24,600
+2021,female,craftsmen and related trades workers,25-29,500
+2021,female,craftsmen and related trades workers,30-34,600
+2021,female,craftsmen and related trades workers,35-39,600
+2021,female,craftsmen and related trades workers,40-44,700
+2021,female,craftsmen and related trades workers,45-49,1400
+2021,female,craftsmen and related trades workers,50-54,1100
+2021,female,craftsmen and related trades workers,55-59,1200
+2021,female,craftsmen and related trades workers,60-64,1500
+2021,female,craftsmen and related trades workers,65-69,900
+2021,female,craftsmen and related trades workers,70_and_over,700
+2021,female,plant and machine operators and assemblers,15-19,100
+2021,female,plant and machine operators and assemblers,20-24,500
+2021,female,plant and machine operators and assemblers,25-29,200
+2021,female,plant and machine operators and assemblers,30-34,1200
+2021,female,plant and machine operators and assemblers,35-39,800
+2021,female,plant and machine operators and assemblers,40-44,1300
+2021,female,plant and machine operators and assemblers,45-49,1900
+2021,female,plant and machine operators and assemblers,50-54,2800
+2021,female,plant and machine operators and assemblers,55-59,3000
+2021,female,plant and machine operators and assemblers,60-64,1300
+2021,female,plant and machine operators and assemblers,65-69,900
+2021,female,plant and machine operators and assemblers,70_and_over,600
+2021,female,"cleaners, labourers and related workers",15-19,1300
+2021,female,"cleaners, labourers and related workers",20-24,2200
+2021,female,"cleaners, labourers and related workers",25-29,1300
+2021,female,"cleaners, labourers and related workers",30-34,1700
+2021,female,"cleaners, labourers and related workers",35-39,2400
+2021,female,"cleaners, labourers and related workers",40-44,3500
+2021,female,"cleaners, labourers and related workers",45-49,5600
+2021,female,"cleaners, labourers and related workers",50-54,7800
+2021,female,"cleaners, labourers and related workers",55-59,13200
+2021,female,"cleaners, labourers and related workers",60-64,16400
+2021,female,"cleaners, labourers and related workers",65-69,15100
+2021,female,"cleaners, labourers and related workers",70_and_over,14100
+2021,female,others,15-19,0
+2021,female,others,20-24,100
+2021,female,others,25-29,300
+2021,female,others,30-34,200
+2021,female,others,35-39,100
+2021,female,others,40-44,300
+2021,female,others,45-49,100
+2021,female,others,50-54,200
+2021,female,others,55-59,100
+2021,female,others,60-64,200
+2021,female,others,65-69,100
+2021,female,others,70_and_over,200
+2022,male,managers & administrators (including working proprietors),15-19,0
+2022,male,managers & administrators (including working proprietors),20-24,400
+2022,male,managers & administrators (including working proprietors),25-29,5600
+2022,male,managers & administrators (including working proprietors),30-34,21400
+2022,male,managers & administrators (including working proprietors),35-39,30400
+2022,male,managers & administrators (including working proprietors),40-44,38700
+2022,male,managers & administrators (including working proprietors),45-49,45300
+2022,male,managers & administrators (including working proprietors),50-54,38100
+2022,male,managers & administrators (including working proprietors),55-59,29300
+2022,male,managers & administrators (including working proprietors),60-64,17300
+2022,male,managers & administrators (including working proprietors),65-69,8900
+2022,male,managers & administrators (including working proprietors),70_and_over,8000
+2022,male,professionals,15-19,100
+2022,male,professionals,20-24,3400
+2022,male,professionals,25-29,34900
+2022,male,professionals,30-34,58300
+2022,male,professionals,35-39,51100
+2022,male,professionals,40-44,48200
+2022,male,professionals,45-49,44200
+2022,male,professionals,50-54,31700
+2022,male,professionals,55-59,21500
+2022,male,professionals,60-64,14700
+2022,male,professionals,65-69,5200
+2022,male,professionals,70_and_over,4000
+2022,male,associate professionals and technicians,15-19,1000
+2022,male,associate professionals and technicians,20-24,8000
+2022,male,associate professionals and technicians,25-29,30000
+2022,male,associate professionals and technicians,30-34,35900
+2022,male,associate professionals and technicians,35-39,31600
+2022,male,associate professionals and technicians,40-44,29900
+2022,male,associate professionals and technicians,45-49,28200
+2022,male,associate professionals and technicians,50-54,24800
+2022,male,associate professionals and technicians,55-59,24700
+2022,male,associate professionals and technicians,60-64,16300
+2022,male,associate professionals and technicians,65-69,9300
+2022,male,associate professionals and technicians,70_and_over,5000
+2022,male,clerical support workers,15-19,1200
+2022,male,clerical support workers,20-24,4900
+2022,male,clerical support workers,25-29,5200
+2022,male,clerical support workers,30-34,5200
+2022,male,clerical support workers,35-39,4100
+2022,male,clerical support workers,40-44,4000
+2022,male,clerical support workers,45-49,4300
+2022,male,clerical support workers,50-54,3400
+2022,male,clerical support workers,55-59,5200
+2022,male,clerical support workers,60-64,5500
+2022,male,clerical support workers,65-69,4000
+2022,male,clerical support workers,70_and_over,2700
+2022,male,service and sales workers,15-19,2200
+2022,male,service and sales workers,20-24,5700
+2022,male,service and sales workers,25-29,7900
+2022,male,service and sales workers,30-34,9300
+2022,male,service and sales workers,35-39,8600
+2022,male,service and sales workers,40-44,9600
+2022,male,service and sales workers,45-49,8900
+2022,male,service and sales workers,50-54,10200
+2022,male,service and sales workers,55-59,13800
+2022,male,service and sales workers,60-64,12300
+2022,male,service and sales workers,65-69,10500
+2022,male,service and sales workers,70_and_over,8700
+2022,male,craftsmen and related trades workers,15-19,400
+2022,male,craftsmen and related trades workers,20-24,1300
+2022,male,craftsmen and related trades workers,25-29,1600
+2022,male,craftsmen and related trades workers,30-34,1400
+2022,male,craftsmen and related trades workers,35-39,2300
+2022,male,craftsmen and related trades workers,40-44,3700
+2022,male,craftsmen and related trades workers,45-49,4700
+2022,male,craftsmen and related trades workers,50-54,4700
+2022,male,craftsmen and related trades workers,55-59,7600
+2022,male,craftsmen and related trades workers,60-64,8900
+2022,male,craftsmen and related trades workers,65-69,4400
+2022,male,craftsmen and related trades workers,70_and_over,3300
+2022,male,plant and machine operators and assemblers,15-19,800
+2022,male,plant and machine operators and assemblers,20-24,2700
+2022,male,plant and machine operators and assemblers,25-29,4000
+2022,male,plant and machine operators and assemblers,30-34,4100
+2022,male,plant and machine operators and assemblers,35-39,6300
+2022,male,plant and machine operators and assemblers,40-44,7600
+2022,male,plant and machine operators and assemblers,45-49,11600
+2022,male,plant and machine operators and assemblers,50-54,14700
+2022,male,plant and machine operators and assemblers,55-59,21300
+2022,male,plant and machine operators and assemblers,60-64,23800
+2022,male,plant and machine operators and assemblers,65-69,16700
+2022,male,plant and machine operators and assemblers,70_and_over,8700
+2022,male,"cleaners, labourers and related workers",15-19,1100
+2022,male,"cleaners, labourers and related workers",20-24,3500
+2022,male,"cleaners, labourers and related workers",25-29,2000
+2022,male,"cleaners, labourers and related workers",30-34,3900
+2022,male,"cleaners, labourers and related workers",35-39,3400
+2022,male,"cleaners, labourers and related workers",40-44,2600
+2022,male,"cleaners, labourers and related workers",45-49,4100
+2022,male,"cleaners, labourers and related workers",50-54,5300
+2022,male,"cleaners, labourers and related workers",55-59,11200
+2022,male,"cleaners, labourers and related workers",60-64,12300
+2022,male,"cleaners, labourers and related workers",65-69,11300
+2022,male,"cleaners, labourers and related workers",70_and_over,12500
+2022,male,others,15-19,10200
+2022,male,others,20-24,27600
+2022,male,others,25-29,4200
+2022,male,others,30-34,3200
+2022,male,others,35-39,2000
+2022,male,others,40-44,2000
+2022,male,others,45-49,1300
+2022,male,others,50-54,1000
+2022,male,others,55-59,600
+2022,male,others,60-64,700
+2022,male,others,65-69,100
+2022,male,others,70_and_over,700
+2022,female,managers & administrators (including working proprietors),15-19,0
+2022,female,managers & administrators (including working proprietors),20-24,700
+2022,female,managers & administrators (including working proprietors),25-29,6300
+2022,female,managers & administrators (including working proprietors),30-34,19600
+2022,female,managers & administrators (including working proprietors),35-39,26500
+2022,female,managers & administrators (including working proprietors),40-44,34200
+2022,female,managers & administrators (including working proprietors),45-49,27700
+2022,female,managers & administrators (including working proprietors),50-54,20600
+2022,female,managers & administrators (including working proprietors),55-59,15100
+2022,female,managers & administrators (including working proprietors),60-64,7700
+2022,female,managers & administrators (including working proprietors),65-69,3500
+2022,female,managers & administrators (including working proprietors),70_and_over,2300
+2022,female,professionals,15-19,100
+2022,female,professionals,20-24,11300
+2022,female,professionals,25-29,41600
+2022,female,professionals,30-34,54800
+2022,female,professionals,35-39,47900
+2022,female,professionals,40-44,42500
+2022,female,professionals,45-49,36400
+2022,female,professionals,50-54,23100
+2022,female,professionals,55-59,13700
+2022,female,professionals,60-64,7200
+2022,female,professionals,65-69,3600
+2022,female,professionals,70_and_over,1300
+2022,female,associate professionals and technicians,15-19,1900
+2022,female,associate professionals and technicians,20-24,17500
+2022,female,associate professionals and technicians,25-29,28900
+2022,female,associate professionals and technicians,30-34,36000
+2022,female,associate professionals and technicians,35-39,30500
+2022,female,associate professionals and technicians,40-44,34000
+2022,female,associate professionals and technicians,45-49,31400
+2022,female,associate professionals and technicians,50-54,24400
+2022,female,associate professionals and technicians,55-59,18100
+2022,female,associate professionals and technicians,60-64,12000
+2022,female,associate professionals and technicians,65-69,5100
+2022,female,associate professionals and technicians,70_and_over,2600
+2022,female,clerical support workers,15-19,2200
+2022,female,clerical support workers,20-24,8300
+2022,female,clerical support workers,25-29,10300
+2022,female,clerical support workers,30-34,13700
+2022,female,clerical support workers,35-39,15200
+2022,female,clerical support workers,40-44,16700
+2022,female,clerical support workers,45-49,22000
+2022,female,clerical support workers,50-54,19600
+2022,female,clerical support workers,55-59,21300
+2022,female,clerical support workers,60-64,18300
+2022,female,clerical support workers,65-69,10100
+2022,female,clerical support workers,70_and_over,4500
+2022,female,service and sales workers,15-19,4500
+2022,female,service and sales workers,20-24,7300
+2022,female,service and sales workers,25-29,8300
+2022,female,service and sales workers,30-34,9800
+2022,female,service and sales workers,35-39,11600
+2022,female,service and sales workers,40-44,13900
+2022,female,service and sales workers,45-49,16700
+2022,female,service and sales workers,50-54,13600
+2022,female,service and sales workers,55-59,15800
+2022,female,service and sales workers,60-64,14100
+2022,female,service and sales workers,65-69,9600
+2022,female,service and sales workers,70_and_over,6800
+2022,female,craftsmen and related trades workers,15-19,100
+2022,female,craftsmen and related trades workers,20-24,600
+2022,female,craftsmen and related trades workers,25-29,400
+2022,female,craftsmen and related trades workers,30-34,200
+2022,female,craftsmen and related trades workers,35-39,500
+2022,female,craftsmen and related trades workers,40-44,800
+2022,female,craftsmen and related trades workers,45-49,600
+2022,female,craftsmen and related trades workers,50-54,1200
+2022,female,craftsmen and related trades workers,55-59,1200
+2022,female,craftsmen and related trades workers,60-64,1600
+2022,female,craftsmen and related trades workers,65-69,1100
+2022,female,craftsmen and related trades workers,70_and_over,700
+2022,female,plant and machine operators and assemblers,15-19,300
+2022,female,plant and machine operators and assemblers,20-24,100
+2022,female,plant and machine operators and assemblers,25-29,400
+2022,female,plant and machine operators and assemblers,30-34,800
+2022,female,plant and machine operators and assemblers,35-39,400
+2022,female,plant and machine operators and assemblers,40-44,700
+2022,female,plant and machine operators and assemblers,45-49,1900
+2022,female,plant and machine operators and assemblers,50-54,2200
+2022,female,plant and machine operators and assemblers,55-59,1900
+2022,female,plant and machine operators and assemblers,60-64,2600
+2022,female,plant and machine operators and assemblers,65-69,1600
+2022,female,plant and machine operators and assemblers,70_and_over,400
+2022,female,"cleaners, labourers and related workers",15-19,600
+2022,female,"cleaners, labourers and related workers",20-24,1500
+2022,female,"cleaners, labourers and related workers",25-29,900
+2022,female,"cleaners, labourers and related workers",30-34,800
+2022,female,"cleaners, labourers and related workers",35-39,2800
+2022,female,"cleaners, labourers and related workers",40-44,3300
+2022,female,"cleaners, labourers and related workers",45-49,5900
+2022,female,"cleaners, labourers and related workers",50-54,9300
+2022,female,"cleaners, labourers and related workers",55-59,12300
+2022,female,"cleaners, labourers and related workers",60-64,17900
+2022,female,"cleaners, labourers and related workers",65-69,14100
+2022,female,"cleaners, labourers and related workers",70_and_over,15900
+2022,female,others,15-19,0
+2022,female,others,20-24,400
+2022,female,others,25-29,400
+2022,female,others,30-34,200
+2022,female,others,35-39,200
+2022,female,others,40-44,200
+2022,female,others,45-49,400
+2022,female,others,50-54,100
+2022,female,others,55-59,200
+2022,female,others,60-64,100
+2022,female,others,65-69,0
+2022,female,others,70_and_over,300
+2023,male,managers & administrators (including working proprietors),15-19,0
+2023,male,managers & administrators (including working proprietors),20-24,200
+2023,male,managers & administrators (including working proprietors),25-29,5500
+2023,male,managers & administrators (including working proprietors),30-34,17100
+2023,male,managers & administrators (including working proprietors),35-39,30400
+2023,male,managers & administrators (including working proprietors),40-44,37000
+2023,male,managers & administrators (including working proprietors),45-49,38400
+2023,male,managers & administrators (including working proprietors),50-54,35900
+2023,male,managers & administrators (including working proprietors),55-59,26300
+2023,male,managers & administrators (including working proprietors),60-64,16700
+2023,male,managers & administrators (including working proprietors),65-69,9400
+2023,male,managers & administrators (including working proprietors),70_and_over,6400
+2023,male,professionals,15-19,100
+2023,male,professionals,20-24,4800
+2023,male,professionals,25-29,37700
+2023,male,professionals,30-34,54300
+2023,male,professionals,35-39,50100
+2023,male,professionals,40-44,46900
+2023,male,professionals,45-49,40300
+2023,male,professionals,50-54,32900
+2023,male,professionals,55-59,22600
+2023,male,professionals,60-64,14600
+2023,male,professionals,65-69,6300
+2023,male,professionals,70_and_over,4000
+2023,male,associate professionals and technicians,15-19,900
+2023,male,associate professionals and technicians,20-24,7000
+2023,male,associate professionals and technicians,25-29,32600
+2023,male,associate professionals and technicians,30-34,38900
+2023,male,associate professionals and technicians,35-39,28900
+2023,male,associate professionals and technicians,40-44,29400
+2023,male,associate professionals and technicians,45-49,27200
+2023,male,associate professionals and technicians,50-54,26000
+2023,male,associate professionals and technicians,55-59,23200
+2023,male,associate professionals and technicians,60-64,17100
+2023,male,associate professionals and technicians,65-69,10500
+2023,male,associate professionals and technicians,70_and_over,4700
+2023,male,clerical support workers,15-19,1200
+2023,male,clerical support workers,20-24,4800
+2023,male,clerical support workers,25-29,6600
+2023,male,clerical support workers,30-34,5100
+2023,male,clerical support workers,35-39,3900
+2023,male,clerical support workers,40-44,3900
+2023,male,clerical support workers,45-49,3400
+2023,male,clerical support workers,50-54,4500
+2023,male,clerical support workers,55-59,4000
+2023,male,clerical support workers,60-64,4900
+2023,male,clerical support workers,65-69,3600
+2023,male,clerical support workers,70_and_over,3500
+2023,male,service and sales workers,15-19,3000
+2023,male,service and sales workers,20-24,6700
+2023,male,service and sales workers,25-29,10300
+2023,male,service and sales workers,30-34,11100
+2023,male,service and sales workers,35-39,8300
+2023,male,service and sales workers,40-44,8500
+2023,male,service and sales workers,45-49,8400
+2023,male,service and sales workers,50-54,11000
+2023,male,service and sales workers,55-59,12100
+2023,male,service and sales workers,60-64,12100
+2023,male,service and sales workers,65-69,10300
+2023,male,service and sales workers,70_and_over,10700
+2023,male,craftsmen and related trades workers,15-19,100
+2023,male,craftsmen and related trades workers,20-24,1300
+2023,male,craftsmen and related trades workers,25-29,2600
+2023,male,craftsmen and related trades workers,30-34,2600
+2023,male,craftsmen and related trades workers,35-39,2500
+2023,male,craftsmen and related trades workers,40-44,2900
+2023,male,craftsmen and related trades workers,45-49,4600
+2023,male,craftsmen and related trades workers,50-54,5900
+2023,male,craftsmen and related trades workers,55-59,8000
+2023,male,craftsmen and related trades workers,60-64,8700
+2023,male,craftsmen and related trades workers,65-69,5900
+2023,male,craftsmen and related trades workers,70_and_over,2900
+2023,male,plant and machine operators and assemblers,15-19,100
+2023,male,plant and machine operators and assemblers,20-24,2300
+2023,male,plant and machine operators and assemblers,25-29,4300
+2023,male,plant and machine operators and assemblers,30-34,6000
+2023,male,plant and machine operators and assemblers,35-39,6100
+2023,male,plant and machine operators and assemblers,40-44,8300
+2023,male,plant and machine operators and assemblers,45-49,10200
+2023,male,plant and machine operators and assemblers,50-54,15200
+2023,male,plant and machine operators and assemblers,55-59,21300
+2023,male,plant and machine operators and assemblers,60-64,21600
+2023,male,plant and machine operators and assemblers,65-69,16300
+2023,male,plant and machine operators and assemblers,70_and_over,7900
+2023,male,"cleaners, labourers and related workers",15-19,1100
+2023,male,"cleaners, labourers and related workers",20-24,3400
+2023,male,"cleaners, labourers and related workers",25-29,3200
+2023,male,"cleaners, labourers and related workers",30-34,2700
+2023,male,"cleaners, labourers and related workers",35-39,2400
+2023,male,"cleaners, labourers and related workers",40-44,2600
+2023,male,"cleaners, labourers and related workers",45-49,2400
+2023,male,"cleaners, labourers and related workers",50-54,5000
+2023,male,"cleaners, labourers and related workers",55-59,11200
+2023,male,"cleaners, labourers and related workers",60-64,11800
+2023,male,"cleaners, labourers and related workers",65-69,12600
+2023,male,"cleaners, labourers and related workers",70_and_over,13700
+2023,male,others,15-19,10400
+2023,male,others,20-24,30500
+2023,male,others,25-29,4900
+2023,male,others,30-34,2900
+2023,male,others,35-39,1300
+2023,male,others,40-44,1700
+2023,male,others,45-49,1600
+2023,male,others,50-54,1000
+2023,male,others,55-59,900
+2023,male,others,60-64,700
+2023,male,others,65-69,600
+2023,male,others,70_and_over,1100
+2023,female,managers & administrators (including working proprietors),15-19,0
+2023,female,managers & administrators (including working proprietors),20-24,400
+2023,female,managers & administrators (including working proprietors),25-29,6400
+2023,female,managers & administrators (including working proprietors),30-34,18200
+2023,female,managers & administrators (including working proprietors),35-39,24000
+2023,female,managers & administrators (including working proprietors),40-44,25800
+2023,female,managers & administrators (including working proprietors),45-49,26200
+2023,female,managers & administrators (including working proprietors),50-54,22200
+2023,female,managers & administrators (including working proprietors),55-59,11700
+2023,female,managers & administrators (including working proprietors),60-64,7000
+2023,female,managers & administrators (including working proprietors),65-69,2400
+2023,female,managers & administrators (including working proprietors),70_and_over,2100
+2023,female,professionals,15-19,400
+2023,female,professionals,20-24,13400
+2023,female,professionals,25-29,43700
+2023,female,professionals,30-34,59400
+2023,female,professionals,35-39,48300
+2023,female,professionals,40-44,48100
+2023,female,professionals,45-49,35200
+2023,female,professionals,50-54,26200
+2023,female,professionals,55-59,17000
+2023,female,professionals,60-64,8500
+2023,female,professionals,65-69,3900
+2023,female,professionals,70_and_over,1600
+2023,female,associate professionals and technicians,15-19,2200
+2023,female,associate professionals and technicians,20-24,15500
+2023,female,associate professionals and technicians,25-29,34400
+2023,female,associate professionals and technicians,30-34,34800
+2023,female,associate professionals and technicians,35-39,30700
+2023,female,associate professionals and technicians,40-44,30800
+2023,female,associate professionals and technicians,45-49,26200
+2023,female,associate professionals and technicians,50-54,24700
+2023,female,associate professionals and technicians,55-59,18000
+2023,female,associate professionals and technicians,60-64,13400
+2023,female,associate professionals and technicians,65-69,5200
+2023,female,associate professionals and technicians,70_and_over,2000
+2023,female,clerical support workers,15-19,2200
+2023,female,clerical support workers,20-24,9200
+2023,female,clerical support workers,25-29,12300
+2023,female,clerical support workers,30-34,14200
+2023,female,clerical support workers,35-39,17000
+2023,female,clerical support workers,40-44,14400
+2023,female,clerical support workers,45-49,19800
+2023,female,clerical support workers,50-54,19700
+2023,female,clerical support workers,55-59,19800
+2023,female,clerical support workers,60-64,15300
+2023,female,clerical support workers,65-69,9700
+2023,female,clerical support workers,70_and_over,4800
+2023,female,service and sales workers,15-19,7300
+2023,female,service and sales workers,20-24,10400
+2023,female,service and sales workers,25-29,8200
+2023,female,service and sales workers,30-34,10900
+2023,female,service and sales workers,35-39,11000
+2023,female,service and sales workers,40-44,11700
+2023,female,service and sales workers,45-49,13100
+2023,female,service and sales workers,50-54,17200
+2023,female,service and sales workers,55-59,19300
+2023,female,service and sales workers,60-64,17100
+2023,female,service and sales workers,65-69,9300
+2023,female,service and sales workers,70_and_over,8200
+2023,female,craftsmen and related trades workers,15-19,100
+2023,female,craftsmen and related trades workers,20-24,400
+2023,female,craftsmen and related trades workers,25-29,200
+2023,female,craftsmen and related trades workers,30-34,400
+2023,female,craftsmen and related trades workers,35-39,900
+2023,female,craftsmen and related trades workers,40-44,1200
+2023,female,craftsmen and related trades workers,45-49,1400
+2023,female,craftsmen and related trades workers,50-54,1100
+2023,female,craftsmen and related trades workers,55-59,1800
+2023,female,craftsmen and related trades workers,60-64,1600
+2023,female,craftsmen and related trades workers,65-69,800
+2023,female,craftsmen and related trades workers,70_and_over,700
+2023,female,plant and machine operators and assemblers,15-19,100
+2023,female,plant and machine operators and assemblers,20-24,300
+2023,female,plant and machine operators and assemblers,25-29,400
+2023,female,plant and machine operators and assemblers,30-34,600
+2023,female,plant and machine operators and assemblers,35-39,300
+2023,female,plant and machine operators and assemblers,40-44,900
+2023,female,plant and machine operators and assemblers,45-49,1700
+2023,female,plant and machine operators and assemblers,50-54,1600
+2023,female,plant and machine operators and assemblers,55-59,2500
+2023,female,plant and machine operators and assemblers,60-64,2100
+2023,female,plant and machine operators and assemblers,65-69,1100
+2023,female,plant and machine operators and assemblers,70_and_over,700
+2023,female,"cleaners, labourers and related workers",15-19,1100
+2023,female,"cleaners, labourers and related workers",20-24,2100
+2023,female,"cleaners, labourers and related workers",25-29,1400
+2023,female,"cleaners, labourers and related workers",30-34,1400
+2023,female,"cleaners, labourers and related workers",35-39,2500
+2023,female,"cleaners, labourers and related workers",40-44,3700
+2023,female,"cleaners, labourers and related workers",45-49,4600
+2023,female,"cleaners, labourers and related workers",50-54,10100
+2023,female,"cleaners, labourers and related workers",55-59,13800
+2023,female,"cleaners, labourers and related workers",60-64,16000
+2023,female,"cleaners, labourers and related workers",65-69,17400
+2023,female,"cleaners, labourers and related workers",70_and_over,16100
+2023,female,others,15-19,0
+2023,female,others,20-24,100
+2023,female,others,25-29,900
+2023,female,others,30-34,300
+2023,female,others,35-39,300
+2023,female,others,40-44,200
+2023,female,others,45-49,200
+2023,female,others,50-54,100
+2023,female,others,55-59,100
+2023,female,others,60-64,300
+2023,female,others,65-69,100
+2023,female,others,70_and_over,200
+2024,male,managers & administrators (including working proprietors),15-19,0
+2024,male,managers & administrators (including working proprietors),20-24,300
+2024,male,managers & administrators (including working proprietors),25-29,3900
+2024,male,managers & administrators (including working proprietors),30-34,18000
+2024,male,managers & administrators (including working proprietors),35-39,34600
+2024,male,managers & administrators (including working proprietors),40-44,40100
+2024,male,managers & administrators (including working proprietors),45-49,42100
+2024,male,managers & administrators (including working proprietors),50-54,39100
+2024,male,managers & administrators (including working proprietors),55-59,28200
+2024,male,managers & administrators (including working proprietors),60-64,18300
+2024,male,managers & administrators (including working proprietors),65-69,10000
+2024,male,managers & administrators (including working proprietors),70_and_over,8100
+2024,male,professionals,15-19,400
+2024,male,professionals,20-24,4100
+2024,male,professionals,25-29,37500
+2024,male,professionals,30-34,50000
+2024,male,professionals,35-39,50400
+2024,male,professionals,40-44,47200
+2024,male,professionals,45-49,42000
+2024,male,professionals,50-54,33700
+2024,male,professionals,55-59,21900
+2024,male,professionals,60-64,14300
+2024,male,professionals,65-69,6000
+2024,male,professionals,70_and_over,4100
+2024,male,associate professionals and technicians,15-19,1300
+2024,male,associate professionals and technicians,20-24,7900
+2024,male,associate professionals and technicians,25-29,30400
+2024,male,associate professionals and technicians,30-34,36900
+2024,male,associate professionals and technicians,35-39,31100
+2024,male,associate professionals and technicians,40-44,30200
+2024,male,associate professionals and technicians,45-49,24800
+2024,male,associate professionals and technicians,50-54,25100
+2024,male,associate professionals and technicians,55-59,21500
+2024,male,associate professionals and technicians,60-64,17500
+2024,male,associate professionals and technicians,65-69,9300
+2024,male,associate professionals and technicians,70_and_over,5500
+2024,male,clerical support workers,15-19,1200
+2024,male,clerical support workers,20-24,4000
+2024,male,clerical support workers,25-29,4800
+2024,male,clerical support workers,30-34,5900
+2024,male,clerical support workers,35-39,3900
+2024,male,clerical support workers,40-44,3600
+2024,male,clerical support workers,45-49,3400
+2024,male,clerical support workers,50-54,4100
+2024,male,clerical support workers,55-59,4600
+2024,male,clerical support workers,60-64,4900
+2024,male,clerical support workers,65-69,3900
+2024,male,clerical support workers,70_and_over,3800
+2024,male,service and sales workers,15-19,2300
+2024,male,service and sales workers,20-24,7000
+2024,male,service and sales workers,25-29,9900
+2024,male,service and sales workers,30-34,9300
+2024,male,service and sales workers,35-39,7800
+2024,male,service and sales workers,40-44,7500
+2024,male,service and sales workers,45-49,6500
+2024,male,service and sales workers,50-54,8100
+2024,male,service and sales workers,55-59,10000
+2024,male,service and sales workers,60-64,12800
+2024,male,service and sales workers,65-69,10500
+2024,male,service and sales workers,70_and_over,10400
+2024,male,craftsmen and related trades workers,15-19,500
+2024,male,craftsmen and related trades workers,20-24,1500
+2024,male,craftsmen and related trades workers,25-29,2700
+2024,male,craftsmen and related trades workers,30-34,2500
+2024,male,craftsmen and related trades workers,35-39,2700
+2024,male,craftsmen and related trades workers,40-44,2900
+2024,male,craftsmen and related trades workers,45-49,3700
+2024,male,craftsmen and related trades workers,50-54,5500
+2024,male,craftsmen and related trades workers,55-59,5600
+2024,male,craftsmen and related trades workers,60-64,8600
+2024,male,craftsmen and related trades workers,65-69,6200
+2024,male,craftsmen and related trades workers,70_and_over,4100
+2024,male,plant and machine operators and assemblers,15-19,400
+2024,male,plant and machine operators and assemblers,20-24,1700
+2024,male,plant and machine operators and assemblers,25-29,3500
+2024,male,plant and machine operators and assemblers,30-34,4300
+2024,male,plant and machine operators and assemblers,35-39,5700
+2024,male,plant and machine operators and assemblers,40-44,7300
+2024,male,plant and machine operators and assemblers,45-49,8500
+2024,male,plant and machine operators and assemblers,50-54,13800
+2024,male,plant and machine operators and assemblers,55-59,19400
+2024,male,plant and machine operators and assemblers,60-64,24900
+2024,male,plant and machine operators and assemblers,65-69,17100
+2024,male,plant and machine operators and assemblers,70_and_over,10100
+2024,male,"cleaners, labourers and related workers",15-19,700
+2024,male,"cleaners, labourers and related workers",20-24,1800
+2024,male,"cleaners, labourers and related workers",25-29,2200
+2024,male,"cleaners, labourers and related workers",30-34,2500
+2024,male,"cleaners, labourers and related workers",35-39,2000
+2024,male,"cleaners, labourers and related workers",40-44,2100
+2024,male,"cleaners, labourers and related workers",45-49,2200
+2024,male,"cleaners, labourers and related workers",50-54,5400
+2024,male,"cleaners, labourers and related workers",55-59,8800
+2024,male,"cleaners, labourers and related workers",60-64,12800
+2024,male,"cleaners, labourers and related workers",65-69,13700
+2024,male,"cleaners, labourers and related workers",70_and_over,18900
+2024,male,others,15-19,9700
+2024,male,others,20-24,30800
+2024,male,others,25-29,4500
+2024,male,others,30-34,2800
+2024,male,others,35-39,1700
+2024,male,others,40-44,2200
+2024,male,others,45-49,1400
+2024,male,others,50-54,600
+2024,male,others,55-59,400
+2024,male,others,60-64,600
+2024,male,others,65-69,500
+2024,male,others,70_and_over,800
+2024,female,managers & administrators (including working proprietors),15-19,0
+2024,female,managers & administrators (including working proprietors),20-24,400
+2024,female,managers & administrators (including working proprietors),25-29,4500
+2024,female,managers & administrators (including working proprietors),30-34,16500
+2024,female,managers & administrators (including working proprietors),35-39,28800
+2024,female,managers & administrators (including working proprietors),40-44,31200
+2024,female,managers & administrators (including working proprietors),45-49,29300
+2024,female,managers & administrators (including working proprietors),50-54,23700
+2024,female,managers & administrators (including working proprietors),55-59,12900
+2024,female,managers & administrators (including working proprietors),60-64,8300
+2024,female,managers & administrators (including working proprietors),65-69,3700
+2024,female,managers & administrators (including working proprietors),70_and_over,3100
+2024,female,professionals,15-19,300
+2024,female,professionals,20-24,11800
+2024,female,professionals,25-29,47100
+2024,female,professionals,30-34,58700
+2024,female,professionals,35-39,54400
+2024,female,professionals,40-44,44700
+2024,female,professionals,45-49,34300
+2024,female,professionals,50-54,26600
+2024,female,professionals,55-59,15700
+2024,female,professionals,60-64,8900
+2024,female,professionals,65-69,3500
+2024,female,professionals,70_and_over,2400
+2024,female,associate professionals and technicians,15-19,1000
+2024,female,associate professionals and technicians,20-24,15300
+2024,female,associate professionals and technicians,25-29,33200
+2024,female,associate professionals and technicians,30-34,37000
+2024,female,associate professionals and technicians,35-39,31100
+2024,female,associate professionals and technicians,40-44,31700
+2024,female,associate professionals and technicians,45-49,26000
+2024,female,associate professionals and technicians,50-54,24900
+2024,female,associate professionals and technicians,55-59,19200
+2024,female,associate professionals and technicians,60-64,13700
+2024,female,associate professionals and technicians,65-69,7000
+2024,female,associate professionals and technicians,70_and_over,3300
+2024,female,clerical support workers,15-19,2000
+2024,female,clerical support workers,20-24,8000
+2024,female,clerical support workers,25-29,11300
+2024,female,clerical support workers,30-34,13500
+2024,female,clerical support workers,35-39,14500
+2024,female,clerical support workers,40-44,18200
+2024,female,clerical support workers,45-49,16900
+2024,female,clerical support workers,50-54,22300
+2024,female,clerical support workers,55-59,20900
+2024,female,clerical support workers,60-64,17700
+2024,female,clerical support workers,65-69,10200
+2024,female,clerical support workers,70_and_over,6200
+2024,female,service and sales workers,15-19,4200
+2024,female,service and sales workers,20-24,9900
+2024,female,service and sales workers,25-29,6900
+2024,female,service and sales workers,30-34,9300
+2024,female,service and sales workers,35-39,10100
+2024,female,service and sales workers,40-44,12300
+2024,female,service and sales workers,45-49,14400
+2024,female,service and sales workers,50-54,16300
+2024,female,service and sales workers,55-59,15600
+2024,female,service and sales workers,60-64,17400
+2024,female,service and sales workers,65-69,11700
+2024,female,service and sales workers,70_and_over,10100
+2024,female,craftsmen and related trades workers,15-19,100
+2024,female,craftsmen and related trades workers,20-24,200
+2024,female,craftsmen and related trades workers,25-29,200
+2024,female,craftsmen and related trades workers,30-34,400
+2024,female,craftsmen and related trades workers,35-39,100
+2024,female,craftsmen and related trades workers,40-44,300
+2024,female,craftsmen and related trades workers,45-49,900
+2024,female,craftsmen and related trades workers,50-54,1000
+2024,female,craftsmen and related trades workers,55-59,1400
+2024,female,craftsmen and related trades workers,60-64,1800
+2024,female,craftsmen and related trades workers,65-69,1200
+2024,female,craftsmen and related trades workers,70_and_over,700
+2024,female,plant and machine operators and assemblers,15-19,100
+2024,female,plant and machine operators and assemblers,20-24,300
+2024,female,plant and machine operators and assemblers,25-29,100
+2024,female,plant and machine operators and assemblers,30-34,400
+2024,female,plant and machine operators and assemblers,35-39,700
+2024,female,plant and machine operators and assemblers,40-44,700
+2024,female,plant and machine operators and assemblers,45-49,1600
+2024,female,plant and machine operators and assemblers,50-54,2400
+2024,female,plant and machine operators and assemblers,55-59,1800
+2024,female,plant and machine operators and assemblers,60-64,1700
+2024,female,plant and machine operators and assemblers,65-69,1100
+2024,female,plant and machine operators and assemblers,70_and_over,600
+2024,female,"cleaners, labourers and related workers",15-19,1100
+2024,female,"cleaners, labourers and related workers",20-24,1400
+2024,female,"cleaners, labourers and related workers",25-29,900
+2024,female,"cleaners, labourers and related workers",30-34,1200
+2024,female,"cleaners, labourers and related workers",35-39,2600
+2024,female,"cleaners, labourers and related workers",40-44,2800
+2024,female,"cleaners, labourers and related workers",45-49,4600
+2024,female,"cleaners, labourers and related workers",50-54,7800
+2024,female,"cleaners, labourers and related workers",55-59,12100
+2024,female,"cleaners, labourers and related workers",60-64,18700
+2024,female,"cleaners, labourers and related workers",65-69,18000
+2024,female,"cleaners, labourers and related workers",70_and_over,21400
+2024,female,others,15-19,0
+2024,female,others,20-24,100
+2024,female,others,25-29,400
+2024,female,others,30-34,400
+2024,female,others,35-39,100
+2024,female,others,40-44,100
+2024,female,others,45-49,100
+2024,female,others,50-54,200
+2024,female,others,55-59,0
+2024,female,others,60-64,0
+2024,female,others,65-69,200
+2024,female,others,70_and_over,100
+2025,male,managers & administrators (including working proprietors),15-19,0
+2025,male,managers & administrators (including working proprietors),20-24,300
+2025,male,managers & administrators (including working proprietors),25-29,4100
+2025,male,managers & administrators (including working proprietors),30-34,17400
+2025,male,managers & administrators (including working proprietors),35-39,32700
+2025,male,managers & administrators (including working proprietors),40-44,40300
+2025,male,managers & administrators (including working proprietors),45-49,41800
+2025,male,managers & administrators (including working proprietors),50-54,39000
+2025,male,managers & administrators (including working proprietors),55-59,29100
+2025,male,managers & administrators (including working proprietors),60-64,20800
+2025,male,managers & administrators (including working proprietors),65-69,11100
+2025,male,managers & administrators (including working proprietors),70_and_over,8300
+2025,male,professionals,15-19,100
+2025,male,professionals,20-24,2300
+2025,male,professionals,25-29,32200
+2025,male,professionals,30-34,53700
+2025,male,professionals,35-39,54500
+2025,male,professionals,40-44,45300
+2025,male,professionals,45-49,40900
+2025,male,professionals,50-54,34800
+2025,male,professionals,55-59,22500
+2025,male,professionals,60-64,14900
+2025,male,professionals,65-69,7900
+2025,male,professionals,70_and_over,4100
+2025,male,associate professionals and technicians,15-19,1000
+2025,male,associate professionals and technicians,20-24,7000
+2025,male,associate professionals and technicians,25-29,27100
+2025,male,associate professionals and technicians,30-34,39500
+2025,male,associate professionals and technicians,35-39,32800
+2025,male,associate professionals and technicians,40-44,26400
+2025,male,associate professionals and technicians,45-49,25200
+2025,male,associate professionals and technicians,50-54,22600
+2025,male,associate professionals and technicians,55-59,22600
+2025,male,associate professionals and technicians,60-64,17700
+2025,male,associate professionals and technicians,65-69,9900
+2025,male,associate professionals and technicians,70_and_over,5900
+2025,male,clerical support workers,15-19,1200
+2025,male,clerical support workers,20-24,4300
+2025,male,clerical support workers,25-29,5300
+2025,male,clerical support workers,30-34,4600
+2025,male,clerical support workers,35-39,4100
+2025,male,clerical support workers,40-44,3500
+2025,male,clerical support workers,45-49,3300
+2025,male,clerical support workers,50-54,4200
+2025,male,clerical support workers,55-59,4500
+2025,male,clerical support workers,60-64,5900
+2025,male,clerical support workers,65-69,4700
+2025,male,clerical support workers,70_and_over,5800
+2025,male,service and sales workers,15-19,3100
+2025,male,service and sales workers,20-24,7400
+2025,male,service and sales workers,25-29,9000
+2025,male,service and sales workers,30-34,8900
+2025,male,service and sales workers,35-39,10000
+2025,male,service and sales workers,40-44,8300
+2025,male,service and sales workers,45-49,9000
+2025,male,service and sales workers,50-54,9000
+2025,male,service and sales workers,55-59,12400
+2025,male,service and sales workers,60-64,11300
+2025,male,service and sales workers,65-69,11400
+2025,male,service and sales workers,70_and_over,10000
+2025,male,craftsmen and related trades workers,15-19,300
+2025,male,craftsmen and related trades workers,20-24,800
+2025,male,craftsmen and related trades workers,25-29,2100
+2025,male,craftsmen and related trades workers,30-34,2200
+2025,male,craftsmen and related trades workers,35-39,2000
+2025,male,craftsmen and related trades workers,40-44,3200
+2025,male,craftsmen and related trades workers,45-49,3700
+2025,male,craftsmen and related trades workers,50-54,4400
+2025,male,craftsmen and related trades workers,55-59,5700
+2025,male,craftsmen and related trades workers,60-64,8600
+2025,male,craftsmen and related trades workers,65-69,5400
+2025,male,craftsmen and related trades workers,70_and_over,4900
+2025,male,plant and machine operators and assemblers,15-19,200
+2025,male,plant and machine operators and assemblers,20-24,1400
+2025,male,plant and machine operators and assemblers,25-29,3100
+2025,male,plant and machine operators and assemblers,30-34,5700
+2025,male,plant and machine operators and assemblers,35-39,6400
+2025,male,plant and machine operators and assemblers,40-44,8800
+2025,male,plant and machine operators and assemblers,45-49,9800
+2025,male,plant and machine operators and assemblers,50-54,15900
+2025,male,plant and machine operators and assemblers,55-59,16700
+2025,male,plant and machine operators and assemblers,60-64,22700
+2025,male,plant and machine operators and assemblers,65-69,15700
+2025,male,plant and machine operators and assemblers,70_and_over,10600
+2025,male,"cleaners, labourers and related workers",15-19,700
+2025,male,"cleaners, labourers and related workers",20-24,2400
+2025,male,"cleaners, labourers and related workers",25-29,2700
+2025,male,"cleaners, labourers and related workers",30-34,2400
+2025,male,"cleaners, labourers and related workers",35-39,2300
+2025,male,"cleaners, labourers and related workers",40-44,2800
+2025,male,"cleaners, labourers and related workers",45-49,3000
+2025,male,"cleaners, labourers and related workers",50-54,5300
+2025,male,"cleaners, labourers and related workers",55-59,7000
+2025,male,"cleaners, labourers and related workers",60-64,11900
+2025,male,"cleaners, labourers and related workers",65-69,14100
+2025,male,"cleaners, labourers and related workers",70_and_over,19300
+2025,male,others,15-19,10200
+2025,male,others,20-24,27200
+2025,male,others,25-29,4200
+2025,male,others,30-34,3100
+2025,male,others,35-39,1500
+2025,male,others,40-44,2000
+2025,male,others,45-49,1100
+2025,male,others,50-54,1000
+2025,male,others,55-59,500
+2025,male,others,60-64,200
+2025,male,others,65-69,400
+2025,male,others,70_and_over,900
+2025,female,managers & administrators (including working proprietors),15-19,0
+2025,female,managers & administrators (including working proprietors),20-24,400
+2025,female,managers & administrators (including working proprietors),25-29,5000
+2025,female,managers & administrators (including working proprietors),30-34,16600
+2025,female,managers & administrators (including working proprietors),35-39,25100
+2025,female,managers & administrators (including working proprietors),40-44,29300
+2025,female,managers & administrators (including working proprietors),45-49,30400
+2025,female,managers & administrators (including working proprietors),50-54,25100
+2025,female,managers & administrators (including working proprietors),55-59,15600
+2025,female,managers & administrators (including working proprietors),60-64,7000
+2025,female,managers & administrators (including working proprietors),65-69,4400
+2025,female,managers & administrators (including working proprietors),70_and_over,2200
+2025,female,professionals,15-19,0
+2025,female,professionals,20-24,9700
+2025,female,professionals,25-29,44000
+2025,female,professionals,30-34,57200
+2025,female,professionals,35-39,55400
+2025,female,professionals,40-44,46400
+2025,female,professionals,45-49,36100
+2025,female,professionals,50-54,28700
+2025,female,professionals,55-59,18000
+2025,female,professionals,60-64,9500
+2025,female,professionals,65-69,4600
+2025,female,professionals,70_and_over,1900
+2025,female,associate professionals and technicians,15-19,1500
+2025,female,associate professionals and technicians,20-24,16300
+2025,female,associate professionals and technicians,25-29,30700
+2025,female,associate professionals and technicians,30-34,37200
+2025,female,associate professionals and technicians,35-39,36400
+2025,female,associate professionals and technicians,40-44,33100
+2025,female,associate professionals and technicians,45-49,27300
+2025,female,associate professionals and technicians,50-54,28900
+2025,female,associate professionals and technicians,55-59,22200
+2025,female,associate professionals and technicians,60-64,14400
+2025,female,associate professionals and technicians,65-69,6900
+2025,female,associate professionals and technicians,70_and_over,3100
+2025,female,clerical support workers,15-19,2400
+2025,female,clerical support workers,20-24,8500
+2025,female,clerical support workers,25-29,9600
+2025,female,clerical support workers,30-34,11600
+2025,female,clerical support workers,35-39,14900
+2025,female,clerical support workers,40-44,14100
+2025,female,clerical support workers,45-49,14800
+2025,female,clerical support workers,50-54,16500
+2025,female,clerical support workers,55-59,20400
+2025,female,clerical support workers,60-64,18700
+2025,female,clerical support workers,65-69,11200
+2025,female,clerical support workers,70_and_over,6800
+2025,female,service and sales workers,15-19,4300
+2025,female,service and sales workers,20-24,11400
+2025,female,service and sales workers,25-29,7100
+2025,female,service and sales workers,30-34,8400
+2025,female,service and sales workers,35-39,9000
+2025,female,service and sales workers,40-44,11600
+2025,female,service and sales workers,45-49,12800
+2025,female,service and sales workers,50-54,17500
+2025,female,service and sales workers,55-59,16500
+2025,female,service and sales workers,60-64,16000
+2025,female,service and sales workers,65-69,12600
+2025,female,service and sales workers,70_and_over,10100
+2025,female,craftsmen and related trades workers,15-19,100
+2025,female,craftsmen and related trades workers,20-24,300
+2025,female,craftsmen and related trades workers,25-29,200
+2025,female,craftsmen and related trades workers,30-34,500
+2025,female,craftsmen and related trades workers,35-39,300
+2025,female,craftsmen and related trades workers,40-44,500
+2025,female,craftsmen and related trades workers,45-49,800
+2025,female,craftsmen and related trades workers,50-54,600
+2025,female,craftsmen and related trades workers,55-59,1100
+2025,female,craftsmen and related trades workers,60-64,1900
+2025,female,craftsmen and related trades workers,65-69,1000
+2025,female,craftsmen and related trades workers,70_and_over,1200
+2025,female,plant and machine operators and assemblers,15-19,0
+2025,female,plant and machine operators and assemblers,20-24,100
+2025,female,plant and machine operators and assemblers,25-29,300
+2025,female,plant and machine operators and assemblers,30-34,500
+2025,female,plant and machine operators and assemblers,35-39,600
+2025,female,plant and machine operators and assemblers,40-44,1000
+2025,female,plant and machine operators and assemblers,45-49,1600
+2025,female,plant and machine operators and assemblers,50-54,1700
+2025,female,plant and machine operators and assemblers,55-59,2300
+2025,female,plant and machine operators and assemblers,60-64,2300
+2025,female,plant and machine operators and assemblers,65-69,1000
+2025,female,plant and machine operators and assemblers,70_and_over,600
+2025,female,"cleaners, labourers and related workers",15-19,500
+2025,female,"cleaners, labourers and related workers",20-24,1500
+2025,female,"cleaners, labourers and related workers",25-29,1000
+2025,female,"cleaners, labourers and related workers",30-34,1800
+2025,female,"cleaners, labourers and related workers",35-39,2200
+2025,female,"cleaners, labourers and related workers",40-44,3400
+2025,female,"cleaners, labourers and related workers",45-49,5400
+2025,female,"cleaners, labourers and related workers",50-54,7500
+2025,female,"cleaners, labourers and related workers",55-59,11400
+2025,female,"cleaners, labourers and related workers",60-64,17000
+2025,female,"cleaners, labourers and related workers",65-69,17600
+2025,female,"cleaners, labourers and related workers",70_and_over,24600
+2025,female,others,15-19,100
+2025,female,others,20-24,100
+2025,female,others,25-29,300
+2025,female,others,30-34,300
+2025,female,others,35-39,300
+2025,female,others,40-44,300
+2025,female,others,45-49,200
+2025,female,others,50-54,500
+2025,female,others,55-59,100
+2025,female,others,60-64,100
+2025,female,others,65-69,100
+2025,female,others,70_and_over,100
