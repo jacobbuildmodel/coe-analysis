@@ -1,0 +1,577 @@
+year,sex,occupation,employment_status,employed
+2010,Total,Security guards (synthetic),Total,20008
+2010,Total,Security guards (synthetic),Employees,10004
+2010,Total,Security guards (synthetic),Own Account Workers,10004
+2010,Male,Security guards (synthetic),Total,10004
+2010,Male,Security guards (synthetic),Employees,5002
+2010,Male,Security guards (synthetic),Own Account Workers,5002
+2010,Female,Security guards (synthetic),Total,10004
+2010,Female,Security guards (synthetic),Employees,5002
+2010,Female,Security guards (synthetic),Own Account Workers,5002
+2010,Total,Park and garden workers (synthetic),Total,2991
+2010,Total,Park and garden workers (synthetic),Employees,1495
+2010,Total,Park and garden workers (synthetic),Own Account Workers,1495
+2010,Male,Park and garden workers (synthetic),Total,1495
+2010,Male,Park and garden workers (synthetic),Employees,748
+2010,Male,Park and garden workers (synthetic),Own Account Workers,748
+2010,Female,Park and garden workers (synthetic),Total,1495
+2010,Female,Park and garden workers (synthetic),Employees,748
+2010,Female,Park and garden workers (synthetic),Own Account Workers,748
+2010,Total,Office cleaners (synthetic),Total,29937
+2010,Total,Office cleaners (synthetic),Employees,14969
+2010,Total,Office cleaners (synthetic),Own Account Workers,14969
+2010,Male,Office cleaners (synthetic),Total,14969
+2010,Male,Office cleaners (synthetic),Employees,7484
+2010,Male,Office cleaners (synthetic),Own Account Workers,7484
+2010,Female,Office cleaners (synthetic),Total,14969
+2010,Female,Office cleaners (synthetic),Employees,7484
+2010,Female,Office cleaners (synthetic),Own Account Workers,7484
+2010,Total,Shop sales and food service (synthetic),Total,89773
+2010,Total,Shop sales and food service (synthetic),Employees,44886
+2010,Total,Shop sales and food service (synthetic),Own Account Workers,44886
+2010,Male,Shop sales and food service (synthetic),Total,44886
+2010,Male,Shop sales and food service (synthetic),Employees,22443
+2010,Male,Shop sales and food service (synthetic),Own Account Workers,22443
+2010,Female,Shop sales and food service (synthetic),Total,44886
+2010,Female,Shop sales and food service (synthetic),Employees,22443
+2010,Female,Shop sales and food service (synthetic),Own Account Workers,22443
+2011,Total,Security guards (synthetic),Total,20161
+2011,Total,Security guards (synthetic),Employees,10081
+2011,Total,Security guards (synthetic),Own Account Workers,10081
+2011,Male,Security guards (synthetic),Total,10081
+2011,Male,Security guards (synthetic),Employees,5040
+2011,Male,Security guards (synthetic),Own Account Workers,5040
+2011,Female,Security guards (synthetic),Total,10081
+2011,Female,Security guards (synthetic),Employees,5040
+2011,Female,Security guards (synthetic),Own Account Workers,5040
+2011,Total,Park and garden workers (synthetic),Total,3006
+2011,Total,Park and garden workers (synthetic),Employees,1503
+2011,Total,Park and garden workers (synthetic),Own Account Workers,1503
+2011,Male,Park and garden workers (synthetic),Total,1503
+2011,Male,Park and garden workers (synthetic),Employees,752
+2011,Male,Park and garden workers (synthetic),Own Account Workers,752
+2011,Female,Park and garden workers (synthetic),Total,1503
+2011,Female,Park and garden workers (synthetic),Employees,752
+2011,Female,Park and garden workers (synthetic),Own Account Workers,752
+2011,Total,Office cleaners (synthetic),Total,30070
+2011,Total,Office cleaners (synthetic),Employees,15035
+2011,Total,Office cleaners (synthetic),Own Account Workers,15035
+2011,Male,Office cleaners (synthetic),Total,15035
+2011,Male,Office cleaners (synthetic),Employees,7517
+2011,Male,Office cleaners (synthetic),Own Account Workers,7517
+2011,Female,Office cleaners (synthetic),Total,15035
+2011,Female,Office cleaners (synthetic),Employees,7517
+2011,Female,Office cleaners (synthetic),Own Account Workers,7517
+2011,Total,Shop sales and food service (synthetic),Total,90724
+2011,Total,Shop sales and food service (synthetic),Employees,45362
+2011,Total,Shop sales and food service (synthetic),Own Account Workers,45362
+2011,Male,Shop sales and food service (synthetic),Total,45362
+2011,Male,Shop sales and food service (synthetic),Employees,22681
+2011,Male,Shop sales and food service (synthetic),Own Account Workers,22681
+2011,Female,Shop sales and food service (synthetic),Total,45362
+2011,Female,Shop sales and food service (synthetic),Employees,22681
+2011,Female,Shop sales and food service (synthetic),Own Account Workers,22681
+2012,Total,Security guards (synthetic),Total,20273
+2012,Total,Security guards (synthetic),Employees,10136
+2012,Total,Security guards (synthetic),Own Account Workers,10136
+2012,Male,Security guards (synthetic),Total,10136
+2012,Male,Security guards (synthetic),Employees,5068
+2012,Male,Security guards (synthetic),Own Account Workers,5068
+2012,Female,Security guards (synthetic),Total,10136
+2012,Female,Security guards (synthetic),Employees,5068
+2012,Female,Security guards (synthetic),Own Account Workers,5068
+2012,Total,Park and garden workers (synthetic),Total,3028
+2012,Total,Park and garden workers (synthetic),Employees,1514
+2012,Total,Park and garden workers (synthetic),Own Account Workers,1514
+2012,Male,Park and garden workers (synthetic),Total,1514
+2012,Male,Park and garden workers (synthetic),Employees,757
+2012,Male,Park and garden workers (synthetic),Own Account Workers,757
+2012,Female,Park and garden workers (synthetic),Total,1514
+2012,Female,Park and garden workers (synthetic),Employees,757
+2012,Female,Park and garden workers (synthetic),Own Account Workers,757
+2012,Total,Office cleaners (synthetic),Total,30291
+2012,Total,Office cleaners (synthetic),Employees,15145
+2012,Total,Office cleaners (synthetic),Own Account Workers,15145
+2012,Male,Office cleaners (synthetic),Total,15145
+2012,Male,Office cleaners (synthetic),Employees,7573
+2012,Male,Office cleaners (synthetic),Own Account Workers,7573
+2012,Female,Office cleaners (synthetic),Total,15145
+2012,Female,Office cleaners (synthetic),Employees,7573
+2012,Female,Office cleaners (synthetic),Own Account Workers,7573
+2012,Total,Shop sales and food service (synthetic),Total,90795
+2012,Total,Shop sales and food service (synthetic),Employees,45397
+2012,Total,Shop sales and food service (synthetic),Own Account Workers,45397
+2012,Male,Shop sales and food service (synthetic),Total,45397
+2012,Male,Shop sales and food service (synthetic),Employees,22699
+2012,Male,Shop sales and food service (synthetic),Own Account Workers,22699
+2012,Female,Shop sales and food service (synthetic),Total,45397
+2012,Female,Shop sales and food service (synthetic),Employees,22699
+2012,Female,Shop sales and food service (synthetic),Own Account Workers,22699
+2013,Total,Security guards (synthetic),Total,20301
+2013,Total,Security guards (synthetic),Employees,10151
+2013,Total,Security guards (synthetic),Own Account Workers,10151
+2013,Male,Security guards (synthetic),Total,10151
+2013,Male,Security guards (synthetic),Employees,5075
+2013,Male,Security guards (synthetic),Own Account Workers,5075
+2013,Female,Security guards (synthetic),Total,10151
+2013,Female,Security guards (synthetic),Employees,5075
+2013,Female,Security guards (synthetic),Own Account Workers,5075
+2013,Total,Park and garden workers (synthetic),Total,3049
+2013,Total,Park and garden workers (synthetic),Employees,1524
+2013,Total,Park and garden workers (synthetic),Own Account Workers,1524
+2013,Male,Park and garden workers (synthetic),Total,1524
+2013,Male,Park and garden workers (synthetic),Employees,762
+2013,Male,Park and garden workers (synthetic),Own Account Workers,762
+2013,Female,Park and garden workers (synthetic),Total,1524
+2013,Female,Park and garden workers (synthetic),Employees,762
+2013,Female,Park and garden workers (synthetic),Own Account Workers,762
+2013,Total,Office cleaners (synthetic),Total,30341
+2013,Total,Office cleaners (synthetic),Employees,15171
+2013,Total,Office cleaners (synthetic),Own Account Workers,15171
+2013,Male,Office cleaners (synthetic),Total,15171
+2013,Male,Office cleaners (synthetic),Employees,7585
+2013,Male,Office cleaners (synthetic),Own Account Workers,7585
+2013,Female,Office cleaners (synthetic),Total,15171
+2013,Female,Office cleaners (synthetic),Employees,7585
+2013,Female,Office cleaners (synthetic),Own Account Workers,7585
+2013,Total,Shop sales and food service (synthetic),Total,91367
+2013,Total,Shop sales and food service (synthetic),Employees,45684
+2013,Total,Shop sales and food service (synthetic),Own Account Workers,45684
+2013,Male,Shop sales and food service (synthetic),Total,45684
+2013,Male,Shop sales and food service (synthetic),Employees,22842
+2013,Male,Shop sales and food service (synthetic),Own Account Workers,22842
+2013,Female,Shop sales and food service (synthetic),Total,45684
+2013,Female,Shop sales and food service (synthetic),Employees,22842
+2013,Female,Shop sales and food service (synthetic),Own Account Workers,22842
+2014,Total,Security guards (synthetic),Total,20429
+2014,Total,Security guards (synthetic),Employees,10214
+2014,Total,Security guards (synthetic),Own Account Workers,10214
+2014,Male,Security guards (synthetic),Total,10214
+2014,Male,Security guards (synthetic),Employees,5107
+2014,Male,Security guards (synthetic),Own Account Workers,5107
+2014,Female,Security guards (synthetic),Total,10214
+2014,Female,Security guards (synthetic),Employees,5107
+2014,Female,Security guards (synthetic),Own Account Workers,5107
+2014,Total,Park and garden workers (synthetic),Total,3051
+2014,Total,Park and garden workers (synthetic),Employees,1526
+2014,Total,Park and garden workers (synthetic),Own Account Workers,1526
+2014,Male,Park and garden workers (synthetic),Total,1526
+2014,Male,Park and garden workers (synthetic),Employees,763
+2014,Male,Park and garden workers (synthetic),Own Account Workers,763
+2014,Female,Park and garden workers (synthetic),Total,1526
+2014,Female,Park and garden workers (synthetic),Employees,763
+2014,Female,Park and garden workers (synthetic),Own Account Workers,763
+2014,Total,Office cleaners (synthetic),Total,30727
+2014,Total,Office cleaners (synthetic),Employees,15364
+2014,Total,Office cleaners (synthetic),Own Account Workers,15364
+2014,Male,Office cleaners (synthetic),Total,15364
+2014,Male,Office cleaners (synthetic),Employees,7682
+2014,Male,Office cleaners (synthetic),Own Account Workers,7682
+2014,Female,Office cleaners (synthetic),Total,15364
+2014,Female,Office cleaners (synthetic),Employees,7682
+2014,Female,Office cleaners (synthetic),Own Account Workers,7682
+2014,Total,Shop sales and food service (synthetic),Total,91720
+2014,Total,Shop sales and food service (synthetic),Employees,45860
+2014,Total,Shop sales and food service (synthetic),Own Account Workers,45860
+2014,Male,Shop sales and food service (synthetic),Total,45860
+2014,Male,Shop sales and food service (synthetic),Employees,22930
+2014,Male,Shop sales and food service (synthetic),Own Account Workers,22930
+2014,Female,Shop sales and food service (synthetic),Total,45860
+2014,Female,Shop sales and food service (synthetic),Employees,22930
+2014,Female,Shop sales and food service (synthetic),Own Account Workers,22930
+2015,Total,Security guards (synthetic),Total,20428
+2015,Total,Security guards (synthetic),Employees,10214
+2015,Total,Security guards (synthetic),Own Account Workers,10214
+2015,Male,Security guards (synthetic),Total,10214
+2015,Male,Security guards (synthetic),Employees,5107
+2015,Male,Security guards (synthetic),Own Account Workers,5107
+2015,Female,Security guards (synthetic),Total,10214
+2015,Female,Security guards (synthetic),Employees,5107
+2015,Female,Security guards (synthetic),Own Account Workers,5107
+2015,Total,Park and garden workers (synthetic),Total,3081
+2015,Total,Park and garden workers (synthetic),Employees,1541
+2015,Total,Park and garden workers (synthetic),Own Account Workers,1541
+2015,Male,Park and garden workers (synthetic),Total,1541
+2015,Male,Park and garden workers (synthetic),Employees,770
+2015,Male,Park and garden workers (synthetic),Own Account Workers,770
+2015,Female,Park and garden workers (synthetic),Total,1541
+2015,Female,Park and garden workers (synthetic),Employees,770
+2015,Female,Park and garden workers (synthetic),Own Account Workers,770
+2015,Total,Office cleaners (synthetic),Total,30832
+2015,Total,Office cleaners (synthetic),Employees,15416
+2015,Total,Office cleaners (synthetic),Own Account Workers,15416
+2015,Male,Office cleaners (synthetic),Total,15416
+2015,Male,Office cleaners (synthetic),Employees,7708
+2015,Male,Office cleaners (synthetic),Own Account Workers,7708
+2015,Female,Office cleaners (synthetic),Total,15416
+2015,Female,Office cleaners (synthetic),Employees,7708
+2015,Female,Office cleaners (synthetic),Own Account Workers,7708
+2015,Total,Shop sales and food service (synthetic),Total,91914
+2015,Total,Shop sales and food service (synthetic),Employees,45957
+2015,Total,Shop sales and food service (synthetic),Own Account Workers,45957
+2015,Male,Shop sales and food service (synthetic),Total,45957
+2015,Male,Shop sales and food service (synthetic),Employees,22979
+2015,Male,Shop sales and food service (synthetic),Own Account Workers,22979
+2015,Female,Shop sales and food service (synthetic),Total,45957
+2015,Female,Shop sales and food service (synthetic),Employees,22979
+2015,Female,Shop sales and food service (synthetic),Own Account Workers,22979
+2016,Total,Security guards (synthetic),Total,20678
+2016,Total,Security guards (synthetic),Employees,10339
+2016,Total,Security guards (synthetic),Own Account Workers,10339
+2016,Male,Security guards (synthetic),Total,10339
+2016,Male,Security guards (synthetic),Employees,5169
+2016,Male,Security guards (synthetic),Own Account Workers,5169
+2016,Female,Security guards (synthetic),Total,10339
+2016,Female,Security guards (synthetic),Employees,5169
+2016,Female,Security guards (synthetic),Own Account Workers,5169
+2016,Total,Park and garden workers (synthetic),Total,3104
+2016,Total,Park and garden workers (synthetic),Employees,1552
+2016,Total,Park and garden workers (synthetic),Own Account Workers,1552
+2016,Male,Park and garden workers (synthetic),Total,1552
+2016,Male,Park and garden workers (synthetic),Employees,776
+2016,Male,Park and garden workers (synthetic),Own Account Workers,776
+2016,Female,Park and garden workers (synthetic),Total,1552
+2016,Female,Park and garden workers (synthetic),Employees,776
+2016,Female,Park and garden workers (synthetic),Own Account Workers,776
+2016,Total,Office cleaners (synthetic),Total,30941
+2016,Total,Office cleaners (synthetic),Employees,15471
+2016,Total,Office cleaners (synthetic),Own Account Workers,15471
+2016,Male,Office cleaners (synthetic),Total,15471
+2016,Male,Office cleaners (synthetic),Employees,7735
+2016,Male,Office cleaners (synthetic),Own Account Workers,7735
+2016,Female,Office cleaners (synthetic),Total,15471
+2016,Female,Office cleaners (synthetic),Employees,7735
+2016,Female,Office cleaners (synthetic),Own Account Workers,7735
+2016,Total,Shop sales and food service (synthetic),Total,93010
+2016,Total,Shop sales and food service (synthetic),Employees,46505
+2016,Total,Shop sales and food service (synthetic),Own Account Workers,46505
+2016,Male,Shop sales and food service (synthetic),Total,46505
+2016,Male,Shop sales and food service (synthetic),Employees,23252
+2016,Male,Shop sales and food service (synthetic),Own Account Workers,23252
+2016,Female,Shop sales and food service (synthetic),Total,46505
+2016,Female,Shop sales and food service (synthetic),Employees,23252
+2016,Female,Shop sales and food service (synthetic),Own Account Workers,23252
+2017,Total,Security guards (synthetic),Total,20748
+2017,Total,Security guards (synthetic),Employees,10374
+2017,Total,Security guards (synthetic),Own Account Workers,10374
+2017,Male,Security guards (synthetic),Total,10374
+2017,Male,Security guards (synthetic),Employees,5187
+2017,Male,Security guards (synthetic),Own Account Workers,5187
+2017,Female,Security guards (synthetic),Total,10374
+2017,Female,Security guards (synthetic),Employees,5187
+2017,Female,Security guards (synthetic),Own Account Workers,5187
+2017,Total,Park and garden workers (synthetic),Total,3105
+2017,Total,Park and garden workers (synthetic),Employees,1553
+2017,Total,Park and garden workers (synthetic),Own Account Workers,1553
+2017,Male,Park and garden workers (synthetic),Total,1553
+2017,Male,Park and garden workers (synthetic),Employees,776
+2017,Male,Park and garden workers (synthetic),Own Account Workers,776
+2017,Female,Park and garden workers (synthetic),Total,1553
+2017,Female,Park and garden workers (synthetic),Employees,776
+2017,Female,Park and garden workers (synthetic),Own Account Workers,776
+2017,Total,Office cleaners (synthetic),Total,31141
+2017,Total,Office cleaners (synthetic),Employees,15571
+2017,Total,Office cleaners (synthetic),Own Account Workers,15571
+2017,Male,Office cleaners (synthetic),Total,15571
+2017,Male,Office cleaners (synthetic),Employees,7785
+2017,Male,Office cleaners (synthetic),Own Account Workers,7785
+2017,Female,Office cleaners (synthetic),Total,15571
+2017,Female,Office cleaners (synthetic),Employees,7785
+2017,Female,Office cleaners (synthetic),Own Account Workers,7785
+2017,Total,Shop sales and food service (synthetic),Total,93483
+2017,Total,Shop sales and food service (synthetic),Employees,46741
+2017,Total,Shop sales and food service (synthetic),Own Account Workers,46741
+2017,Male,Shop sales and food service (synthetic),Total,46741
+2017,Male,Shop sales and food service (synthetic),Employees,23371
+2017,Male,Shop sales and food service (synthetic),Own Account Workers,23371
+2017,Female,Shop sales and food service (synthetic),Total,46741
+2017,Female,Shop sales and food service (synthetic),Employees,23371
+2017,Female,Shop sales and food service (synthetic),Own Account Workers,23371
+2018,Total,Security guards (synthetic),Total,20805
+2018,Total,Security guards (synthetic),Employees,10402
+2018,Total,Security guards (synthetic),Own Account Workers,10402
+2018,Male,Security guards (synthetic),Total,10402
+2018,Male,Security guards (synthetic),Employees,5201
+2018,Male,Security guards (synthetic),Own Account Workers,5201
+2018,Female,Security guards (synthetic),Total,10402
+2018,Female,Security guards (synthetic),Employees,5201
+2018,Female,Security guards (synthetic),Own Account Workers,5201
+2018,Total,Park and garden workers (synthetic),Total,3119
+2018,Total,Park and garden workers (synthetic),Employees,1560
+2018,Total,Park and garden workers (synthetic),Own Account Workers,1560
+2018,Male,Park and garden workers (synthetic),Total,1560
+2018,Male,Park and garden workers (synthetic),Employees,780
+2018,Male,Park and garden workers (synthetic),Own Account Workers,780
+2018,Female,Park and garden workers (synthetic),Total,1560
+2018,Female,Park and garden workers (synthetic),Employees,780
+2018,Female,Park and garden workers (synthetic),Own Account Workers,780
+2018,Total,Office cleaners (synthetic),Total,31239
+2018,Total,Office cleaners (synthetic),Employees,15620
+2018,Total,Office cleaners (synthetic),Own Account Workers,15620
+2018,Male,Office cleaners (synthetic),Total,15620
+2018,Male,Office cleaners (synthetic),Employees,7810
+2018,Male,Office cleaners (synthetic),Own Account Workers,7810
+2018,Female,Office cleaners (synthetic),Total,15620
+2018,Female,Office cleaners (synthetic),Employees,7810
+2018,Female,Office cleaners (synthetic),Own Account Workers,7810
+2018,Total,Shop sales and food service (synthetic),Total,93522
+2018,Total,Shop sales and food service (synthetic),Employees,46761
+2018,Total,Shop sales and food service (synthetic),Own Account Workers,46761
+2018,Male,Shop sales and food service (synthetic),Total,46761
+2018,Male,Shop sales and food service (synthetic),Employees,23380
+2018,Male,Shop sales and food service (synthetic),Own Account Workers,23380
+2018,Female,Shop sales and food service (synthetic),Total,46761
+2018,Female,Shop sales and food service (synthetic),Employees,23380
+2018,Female,Shop sales and food service (synthetic),Own Account Workers,23380
+2019,Total,Security guards (synthetic),Total,20838
+2019,Total,Security guards (synthetic),Employees,10419
+2019,Total,Security guards (synthetic),Own Account Workers,10419
+2019,Male,Security guards (synthetic),Total,10419
+2019,Male,Security guards (synthetic),Employees,5209
+2019,Male,Security guards (synthetic),Own Account Workers,5209
+2019,Female,Security guards (synthetic),Total,10419
+2019,Female,Security guards (synthetic),Employees,5209
+2019,Female,Security guards (synthetic),Own Account Workers,5209
+2019,Total,Park and garden workers (synthetic),Total,3150
+2019,Total,Park and garden workers (synthetic),Employees,1575
+2019,Total,Park and garden workers (synthetic),Own Account Workers,1575
+2019,Male,Park and garden workers (synthetic),Total,1575
+2019,Male,Park and garden workers (synthetic),Employees,787
+2019,Male,Park and garden workers (synthetic),Own Account Workers,787
+2019,Female,Park and garden workers (synthetic),Total,1575
+2019,Female,Park and garden workers (synthetic),Employees,787
+2019,Female,Park and garden workers (synthetic),Own Account Workers,787
+2019,Total,Office cleaners (synthetic),Total,31428
+2019,Total,Office cleaners (synthetic),Employees,15714
+2019,Total,Office cleaners (synthetic),Own Account Workers,15714
+2019,Male,Office cleaners (synthetic),Total,15714
+2019,Male,Office cleaners (synthetic),Employees,7857
+2019,Male,Office cleaners (synthetic),Own Account Workers,7857
+2019,Female,Office cleaners (synthetic),Total,15714
+2019,Female,Office cleaners (synthetic),Employees,7857
+2019,Female,Office cleaners (synthetic),Own Account Workers,7857
+2019,Total,Shop sales and food service (synthetic),Total,94288
+2019,Total,Shop sales and food service (synthetic),Employees,47144
+2019,Total,Shop sales and food service (synthetic),Own Account Workers,47144
+2019,Male,Shop sales and food service (synthetic),Total,47144
+2019,Male,Shop sales and food service (synthetic),Employees,23572
+2019,Male,Shop sales and food service (synthetic),Own Account Workers,23572
+2019,Female,Shop sales and food service (synthetic),Total,47144
+2019,Female,Shop sales and food service (synthetic),Employees,23572
+2019,Female,Shop sales and food service (synthetic),Own Account Workers,23572
+2020,Total,Security guards (synthetic),Total,21091
+2020,Total,Security guards (synthetic),Employees,10546
+2020,Total,Security guards (synthetic),Own Account Workers,10546
+2020,Male,Security guards (synthetic),Total,10546
+2020,Male,Security guards (synthetic),Employees,5273
+2020,Male,Security guards (synthetic),Own Account Workers,5273
+2020,Female,Security guards (synthetic),Total,10546
+2020,Female,Security guards (synthetic),Employees,5273
+2020,Female,Security guards (synthetic),Own Account Workers,5273
+2020,Total,Park and garden workers (synthetic),Total,3153
+2020,Total,Park and garden workers (synthetic),Employees,1577
+2020,Total,Park and garden workers (synthetic),Own Account Workers,1577
+2020,Male,Park and garden workers (synthetic),Total,1577
+2020,Male,Park and garden workers (synthetic),Employees,788
+2020,Male,Park and garden workers (synthetic),Own Account Workers,788
+2020,Female,Park and garden workers (synthetic),Total,1577
+2020,Female,Park and garden workers (synthetic),Employees,788
+2020,Female,Park and garden workers (synthetic),Own Account Workers,788
+2020,Total,Office cleaners (synthetic),Total,31623
+2020,Total,Office cleaners (synthetic),Employees,15812
+2020,Total,Office cleaners (synthetic),Own Account Workers,15812
+2020,Male,Office cleaners (synthetic),Total,15812
+2020,Male,Office cleaners (synthetic),Employees,7906
+2020,Male,Office cleaners (synthetic),Own Account Workers,7906
+2020,Female,Office cleaners (synthetic),Total,15812
+2020,Female,Office cleaners (synthetic),Employees,7906
+2020,Female,Office cleaners (synthetic),Own Account Workers,7906
+2020,Total,Shop sales and food service (synthetic),Total,94810
+2020,Total,Shop sales and food service (synthetic),Employees,47405
+2020,Total,Shop sales and food service (synthetic),Own Account Workers,47405
+2020,Male,Shop sales and food service (synthetic),Total,47405
+2020,Male,Shop sales and food service (synthetic),Employees,23703
+2020,Male,Shop sales and food service (synthetic),Own Account Workers,23703
+2020,Female,Shop sales and food service (synthetic),Total,47405
+2020,Female,Shop sales and food service (synthetic),Employees,23703
+2020,Female,Shop sales and food service (synthetic),Own Account Workers,23703
+2021,Total,Security guards (synthetic),Total,21212
+2021,Total,Security guards (synthetic),Employees,10606
+2021,Total,Security guards (synthetic),Own Account Workers,10606
+2021,Male,Security guards (synthetic),Total,10606
+2021,Male,Security guards (synthetic),Employees,5303
+2021,Male,Security guards (synthetic),Own Account Workers,5303
+2021,Female,Security guards (synthetic),Total,10606
+2021,Female,Security guards (synthetic),Employees,5303
+2021,Female,Security guards (synthetic),Own Account Workers,5303
+2021,Total,Park and garden workers (synthetic),Total,3171
+2021,Total,Park and garden workers (synthetic),Employees,1585
+2021,Total,Park and garden workers (synthetic),Own Account Workers,1585
+2021,Male,Park and garden workers (synthetic),Total,1585
+2021,Male,Park and garden workers (synthetic),Employees,793
+2021,Male,Park and garden workers (synthetic),Own Account Workers,793
+2021,Female,Park and garden workers (synthetic),Total,1585
+2021,Female,Park and garden workers (synthetic),Employees,793
+2021,Female,Park and garden workers (synthetic),Own Account Workers,793
+2021,Total,Office cleaners (synthetic),Total,31747
+2021,Total,Office cleaners (synthetic),Employees,15873
+2021,Total,Office cleaners (synthetic),Own Account Workers,15873
+2021,Male,Office cleaners (synthetic),Total,15873
+2021,Male,Office cleaners (synthetic),Employees,7937
+2021,Male,Office cleaners (synthetic),Own Account Workers,7937
+2021,Female,Office cleaners (synthetic),Total,15873
+2021,Female,Office cleaners (synthetic),Employees,7937
+2021,Female,Office cleaners (synthetic),Own Account Workers,7937
+2021,Total,Shop sales and food service (synthetic),Total,95211
+2021,Total,Shop sales and food service (synthetic),Employees,47606
+2021,Total,Shop sales and food service (synthetic),Own Account Workers,47606
+2021,Male,Shop sales and food service (synthetic),Total,47606
+2021,Male,Shop sales and food service (synthetic),Employees,23803
+2021,Male,Shop sales and food service (synthetic),Own Account Workers,23803
+2021,Female,Shop sales and food service (synthetic),Total,47606
+2021,Female,Shop sales and food service (synthetic),Employees,23803
+2021,Female,Shop sales and food service (synthetic),Own Account Workers,23803
+2022,Total,Security guards (synthetic),Total,21308
+2022,Total,Security guards (synthetic),Employees,10654
+2022,Total,Security guards (synthetic),Own Account Workers,10654
+2022,Male,Security guards (synthetic),Total,10654
+2022,Male,Security guards (synthetic),Employees,5327
+2022,Male,Security guards (synthetic),Own Account Workers,5327
+2022,Female,Security guards (synthetic),Total,10654
+2022,Female,Security guards (synthetic),Employees,5327
+2022,Female,Security guards (synthetic),Own Account Workers,5327
+2022,Total,Park and garden workers (synthetic),Total,3180
+2022,Total,Park and garden workers (synthetic),Employees,1590
+2022,Total,Park and garden workers (synthetic),Own Account Workers,1590
+2022,Male,Park and garden workers (synthetic),Total,1590
+2022,Male,Park and garden workers (synthetic),Employees,795
+2022,Male,Park and garden workers (synthetic),Own Account Workers,795
+2022,Female,Park and garden workers (synthetic),Total,1590
+2022,Female,Park and garden workers (synthetic),Employees,795
+2022,Female,Park and garden workers (synthetic),Own Account Workers,795
+2022,Total,Office cleaners (synthetic),Total,31879
+2022,Total,Office cleaners (synthetic),Employees,15939
+2022,Total,Office cleaners (synthetic),Own Account Workers,15939
+2022,Male,Office cleaners (synthetic),Total,15939
+2022,Male,Office cleaners (synthetic),Employees,7970
+2022,Male,Office cleaners (synthetic),Own Account Workers,7970
+2022,Female,Office cleaners (synthetic),Total,15939
+2022,Female,Office cleaners (synthetic),Employees,7970
+2022,Female,Office cleaners (synthetic),Own Account Workers,7970
+2022,Total,Shop sales and food service (synthetic),Total,95673
+2022,Total,Shop sales and food service (synthetic),Employees,47837
+2022,Total,Shop sales and food service (synthetic),Own Account Workers,47837
+2022,Male,Shop sales and food service (synthetic),Total,47837
+2022,Male,Shop sales and food service (synthetic),Employees,23918
+2022,Male,Shop sales and food service (synthetic),Own Account Workers,23918
+2022,Female,Shop sales and food service (synthetic),Total,47837
+2022,Female,Shop sales and food service (synthetic),Employees,23918
+2022,Female,Shop sales and food service (synthetic),Own Account Workers,23918
+2023,Total,Security guards (synthetic),Total,21321
+2023,Total,Security guards (synthetic),Employees,10660
+2023,Total,Security guards (synthetic),Own Account Workers,10660
+2023,Male,Security guards (synthetic),Total,10660
+2023,Male,Security guards (synthetic),Employees,5330
+2023,Male,Security guards (synthetic),Own Account Workers,5330
+2023,Female,Security guards (synthetic),Total,10660
+2023,Female,Security guards (synthetic),Employees,5330
+2023,Female,Security guards (synthetic),Own Account Workers,5330
+2023,Total,Park and garden workers (synthetic),Total,3208
+2023,Total,Park and garden workers (synthetic),Employees,1604
+2023,Total,Park and garden workers (synthetic),Own Account Workers,1604
+2023,Male,Park and garden workers (synthetic),Total,1604
+2023,Male,Park and garden workers (synthetic),Employees,802
+2023,Male,Park and garden workers (synthetic),Own Account Workers,802
+2023,Female,Park and garden workers (synthetic),Total,1604
+2023,Female,Park and garden workers (synthetic),Employees,802
+2023,Female,Park and garden workers (synthetic),Own Account Workers,802
+2023,Total,Office cleaners (synthetic),Total,32110
+2023,Total,Office cleaners (synthetic),Employees,16055
+2023,Total,Office cleaners (synthetic),Own Account Workers,16055
+2023,Male,Office cleaners (synthetic),Total,16055
+2023,Male,Office cleaners (synthetic),Employees,8027
+2023,Male,Office cleaners (synthetic),Own Account Workers,8027
+2023,Female,Office cleaners (synthetic),Total,16055
+2023,Female,Office cleaners (synthetic),Employees,8027
+2023,Female,Office cleaners (synthetic),Own Account Workers,8027
+2023,Total,Shop sales and food service (synthetic),Total,96412
+2023,Total,Shop sales and food service (synthetic),Employees,48206
+2023,Total,Shop sales and food service (synthetic),Own Account Workers,48206
+2023,Male,Shop sales and food service (synthetic),Total,48206
+2023,Male,Shop sales and food service (synthetic),Employees,24103
+2023,Male,Shop sales and food service (synthetic),Own Account Workers,24103
+2023,Female,Shop sales and food service (synthetic),Total,48206
+2023,Female,Shop sales and food service (synthetic),Employees,24103
+2023,Female,Shop sales and food service (synthetic),Own Account Workers,24103
+2024,Total,Security guards (synthetic),Total,21491
+2024,Total,Security guards (synthetic),Employees,10745
+2024,Total,Security guards (synthetic),Own Account Workers,10745
+2024,Male,Security guards (synthetic),Total,10745
+2024,Male,Security guards (synthetic),Employees,5373
+2024,Male,Security guards (synthetic),Own Account Workers,5373
+2024,Female,Security guards (synthetic),Total,10745
+2024,Female,Security guards (synthetic),Employees,5373
+2024,Female,Security guards (synthetic),Own Account Workers,5373
+2024,Total,Park and garden workers (synthetic),Total,3228
+2024,Total,Park and garden workers (synthetic),Employees,1614
+2024,Total,Park and garden workers (synthetic),Own Account Workers,1614
+2024,Male,Park and garden workers (synthetic),Total,1614
+2024,Male,Park and garden workers (synthetic),Employees,807
+2024,Male,Park and garden workers (synthetic),Own Account Workers,807
+2024,Female,Park and garden workers (synthetic),Total,1614
+2024,Female,Park and garden workers (synthetic),Employees,807
+2024,Female,Park and garden workers (synthetic),Own Account Workers,807
+2024,Total,Office cleaners (synthetic),Total,32086
+2024,Total,Office cleaners (synthetic),Employees,16043
+2024,Total,Office cleaners (synthetic),Own Account Workers,16043
+2024,Male,Office cleaners (synthetic),Total,16043
+2024,Male,Office cleaners (synthetic),Employees,8021
+2024,Male,Office cleaners (synthetic),Own Account Workers,8021
+2024,Female,Office cleaners (synthetic),Total,16043
+2024,Female,Office cleaners (synthetic),Employees,8021
+2024,Female,Office cleaners (synthetic),Own Account Workers,8021
+2024,Total,Shop sales and food service (synthetic),Total,96824
+2024,Total,Shop sales and food service (synthetic),Employees,48412
+2024,Total,Shop sales and food service (synthetic),Own Account Workers,48412
+2024,Male,Shop sales and food service (synthetic),Total,48412
+2024,Male,Shop sales and food service (synthetic),Employees,24206
+2024,Male,Shop sales and food service (synthetic),Own Account Workers,24206
+2024,Female,Shop sales and food service (synthetic),Total,48412
+2024,Female,Shop sales and food service (synthetic),Employees,24206
+2024,Female,Shop sales and food service (synthetic),Own Account Workers,24206
+2025,Total,Security guards (synthetic),Total,21598
+2025,Total,Security guards (synthetic),Employees,10799
+2025,Total,Security guards (synthetic),Own Account Workers,10799
+2025,Male,Security guards (synthetic),Total,10799
+2025,Male,Security guards (synthetic),Employees,5399
+2025,Male,Security guards (synthetic),Own Account Workers,5399
+2025,Female,Security guards (synthetic),Total,10799
+2025,Female,Security guards (synthetic),Employees,5399
+2025,Female,Security guards (synthetic),Own Account Workers,5399
+2025,Total,Park and garden workers (synthetic),Total,3222
+2025,Total,Park and garden workers (synthetic),Employees,1611
+2025,Total,Park and garden workers (synthetic),Own Account Workers,1611
+2025,Male,Park and garden workers (synthetic),Total,1611
+2025,Male,Park and garden workers (synthetic),Employees,805
+2025,Male,Park and garden workers (synthetic),Own Account Workers,805
+2025,Female,Park and garden workers (synthetic),Total,1611
+2025,Female,Park and garden workers (synthetic),Employees,805
+2025,Female,Park and garden workers (synthetic),Own Account Workers,805
+2025,Total,Office cleaners (synthetic),Total,32376
+2025,Total,Office cleaners (synthetic),Employees,16188
+2025,Total,Office cleaners (synthetic),Own Account Workers,16188
+2025,Male,Office cleaners (synthetic),Total,16188
+2025,Male,Office cleaners (synthetic),Employees,8094
+2025,Male,Office cleaners (synthetic),Own Account Workers,8094
+2025,Female,Office cleaners (synthetic),Total,16188
+2025,Female,Office cleaners (synthetic),Employees,8094
+2025,Female,Office cleaners (synthetic),Own Account Workers,8094
+2025,Total,Shop sales and food service (synthetic),Total,96653
+2025,Total,Shop sales and food service (synthetic),Employees,48327
+2025,Total,Shop sales and food service (synthetic),Own Account Workers,48327
+2025,Male,Shop sales and food service (synthetic),Total,48327
+2025,Male,Shop sales and food service (synthetic),Employees,24163
+2025,Male,Shop sales and food service (synthetic),Own Account Workers,24163
+2025,Female,Shop sales and food service (synthetic),Total,48327
+2025,Female,Shop sales and food service (synthetic),Employees,24163
+2025,Female,Shop sales and food service (synthetic),Own Account Workers,24163

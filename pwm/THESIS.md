@@ -73,6 +73,10 @@ Revision history before the seal:
   - T4's pre-period starts at the first year the chosen series covers, with
     the 4-year minimum per industry; cleaning is scored if that admits it;
   - the resident-versus-total difference between the two series, stated.
+- This revision, with the analysis scripts written before the seal and
+  tested on invented data only: the computation details they settle, listed
+  at the end of section 6; T3's middle settled as W1c excluding employer
+  CPF (the OWS tables carry no all-occupations line).
 
 Markers: no `PENDING` marker remains. Every link, rung, date and industry
 line is settled from documents in `raw/`, never from a wage or employment
@@ -715,7 +719,10 @@ The tailor's extreme says jobs without a ladder are left behind.
   - **End:** the mean of June 2017-2019.
   - **The middle:** the OWS all-occupations median gross wage if the tables
     carry one, otherwise the LFS median gross monthly income from work of
-    full-time employed residents (W1c).
+    full-time employed residents (W1c). **Settled:** the OWS tables carry no
+    all-occupations line (title listing; sheet titles, "common occupations"
+    only), so the middle is W1c, its column excluding employer CPF, since
+    OWS gross wage excludes employer CPF too.
   - This window is the years when only the three early ladders existed, and
     ends before 2020.
 - **Prediction.** The uncovered bottom kept pace: its growth fell short of
@@ -969,6 +976,43 @@ Shown on the chart with their dates. Not scored:
 
 The article says in words what the second wave can and cannot show.
 
+### Computation, fixed with the analysis scripts (before the seal)
+
+The scripts (`10_load.py` to `15_reproduce.py`, run by `run_all.sh`) are
+written and tested on invented data (`tests/`) before the seal, and their
+md5s are recorded in the seal commit. `10_load.py` and `15_reproduce.py`
+refuse to read `raw/` until `pwm/SEALED` exists. Where the tests above leave
+a detail open, the scripts settle it as follows, fixed now:
+
+1. **Intervals.** Every regression is OLS with HC1 standard errors and a 90
+   per cent normal interval. T2's per-group interval is the post-period
+   coefficient of gap on a post-period indicator. The pooled interval comes
+   from one stacked regression with a separate intercept and post-period
+   coefficient per scored group; the pooled estimate is their equal-weight
+   mean. T4's interval is the post-period coefficient of the log-workers gap
+   on a post-period indicator.
+2. **T4's comparison set** is the sum of its lines' counts (SSIC 47 plus
+   SSIC 55-56; or the LFS comparison titles), logged after summing.
+3. **T4's LFS lines** are named in `T4_LFS_LINES.csv` (file, unit,
+   occupation label, filters), filled from the candidate's labels before the
+   seal. While it is empty, the LFS series does not qualify. If more than
+   one file in `raw/` holds a workers block with every section 4 line, the
+   loader stops.
+4. **T3** is not computable, and so NOT SCORED (out of the count and the
+   Brier score, Part B "cannot say"), if fewer than two start-window Junes or
+   no end-window June or no W1c year in either window has a value.
+5. **T5** reads T2's titles. A title with no basic wage in any post-period
+   June of its group is also dropped (the missing-year rule on the basic
+   wage). A group left with no value in a post-period June has not shown the
+   rung: T5 fails.
+6. **Number Covered weights:** a title with no Number Covered in a June is
+   left out of that June's weighted mean.
+7. **Sensitivities that cannot run are reported as not run:** T1 without
+   June 2009 for cleaning (3 Junes); T1 and T2 with 2007-2008 until those
+   PDF tables are extracted after the seal.
+8. **Suppressed cells** (a dash or letter where MOM withheld a value) are
+   missing values, and the missing-year rule applies to them.
+
 ## 7. The side section: what the ladder does not cover (bounded)
 
 One descriptive fact, not a test: the share of full-time lower-wage workers
@@ -1195,4 +1239,10 @@ listed, with no value opened, and the rules name the series, or mark T4 not
 scored. No rule changes after a file arrives.
 
 Also open at the seal: the five confidences (`[JACOB]`), which Jacob sets,
-through the checker.
+through the checker. They are written as "Confidence at seal: NN%", the form
+`11_tests.py` reads.
+
+**The seal commit records** the md5 of THESIS.md, the occupation map and
+every analysis script (`python3 pwm/14_manifest.py --seal` writes
+`SEAL.md5`), and adds the file `pwm/SEALED`, which lets the scripts read
+`raw/`.
