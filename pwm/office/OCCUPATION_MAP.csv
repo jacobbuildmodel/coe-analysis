@@ -1,234 +1,234 @@
-group,june,june_role,classification,ssoc_code,title_as_published,in_all_industries_table,link_and_break_note
-C cashier,2009,pre (all),SSOC 2005 (codes; header unlabelled),42111,Cashier,yes,
-C cashier,2010,pre (all),SSOC 2010 (codes; header unlabelled),5230,Cashiers and ticket clerk,yes,"June 2010: merge with ticket clerks; link via SSOC 2005-2010 correspondence, PENDING"
-C cashier,2011,pre (all),SSOC 2010,52302,Cashier,yes,June 2011: split back out of 5230; PENDING
-C cashier,2012,pre (all),SSOC 2010,52302,Cashier,yes,June 2011: split back out of 5230; PENDING
-C cashier,2013,cleaning transition; security/landscape pre,SSOC 2010,52302,Cashier,yes,June 2011: split back out of 5230; PENDING
-C cashier,2014,cleaning transition; security/landscape pre,SSOC 2010,52302,Cashier,yes,June 2011: split back out of 5230; PENDING
-C cashier,2015,transition (all),SSOC 2015,52302,Cashier,yes,June 2011: split back out of 5230; PENDING
-C cashier,2016,cleaning post; security/landscape transition,SSOC 2015,52302,Cashier,yes,June 2011: split back out of 5230; PENDING
-C cashier,2017,post (all),SSOC 2015,52302,Cashier,yes,June 2011: split back out of 5230; PENDING
-C cashier,2018,post (all),SSOC 2015,52302,Cashier,yes,June 2011: split back out of 5230; PENDING
-C cashier,2019,post (all),SSOC 2015,52302,Cashier,yes,June 2011: split back out of 5230; PENDING
-C cashier,2020,excluded (2020-2021),SSOC 2020,52302,Cashier,yes,June 2011: split back out of 5230; PENDING
-C cashier,2021,excluded (2020-2021),SSOC 2020,52302,Cashier,yes,June 2011: split back out of 5230; PENDING
-C cashier,2022,post (all),SSOC 2020,52302,Cashier,yes,June 2011: split back out of 5230; PENDING
-C cashier,2023,"after window (shown, not scored)",SSOC 2020,52302,Cashier (general),yes,after window
-C cashier,2024,"after window (shown, not scored)",SSOC 2020,52302,Cashier (general),yes,after window
-C cashier,2025,"after window (shown, not scored)",SSOC 2024,52302,Cashier (general),yes,after window
-C food/drink stall assistant,2009,pre (all),SSOC 2005 (codes; header unlabelled),91223,Food and drink stall assistant,yes,
-C food/drink stall assistant,2010,pre (all),SSOC 2010 (codes; header unlabelled),94102,Food/Drink stall assistant,yes,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
-C food/drink stall assistant,2011,pre (all),SSOC 2010,94102,Food/Drink stall assistant,yes,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
-C food/drink stall assistant,2012,pre (all),SSOC 2010,94102,Food/Drink stall assistant,yes,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
-C food/drink stall assistant,2013,cleaning transition; security/landscape pre,SSOC 2010,94102,Food/Drink stall assistant,yes,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
-C food/drink stall assistant,2014,cleaning transition; security/landscape pre,SSOC 2010,94102,Food/Drink stall assistant,yes,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
-C food/drink stall assistant,2015,transition (all),SSOC 2015,94102,Food/Drink stall assistant,yes,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
-C food/drink stall assistant,2016,cleaning post; security/landscape transition,SSOC 2015,94102,Food/Drink stall assistant,yes,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
-C food/drink stall assistant,2017,post (all),SSOC 2015,94102,Food/Drink stall assistant,yes,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
-C food/drink stall assistant,2018,post (all),SSOC 2015,94102,Food/Drink stall assistant,yes,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
-C food/drink stall assistant,2019,post (all),SSOC 2015,94102,Food/Drink stall assistant,yes,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
-C food/drink stall assistant,2020,excluded (2020-2021),SSOC 2020,94102,Food/Drink stall assistant,yes,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
-C food/drink stall assistant,2021,excluded (2020-2021),SSOC 2020,94102,Food/Drink stall assistant,yes,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
-C food/drink stall assistant,2022,post (all),SSOC 2020,94102,Food/Drink stall assistant,yes,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
-C food/drink stall assistant,2023,"after window (shown, not scored)",SSOC 2020,94102,Food/Drink stall assistant,yes,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
-C food/drink stall assistant,2024,"after window (shown, not scored)",SSOC 2020,94102,Food/Drink stall assistant,yes,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
-C food/drink stall assistant,2025,"after window (shown, not scored)",SSOC 2024,94102,Food/Drink stall assistant,yes,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
-C general office clerk,2009,pre (all),SSOC 2005 (codes; header unlabelled),41201,Office clerk,yes,
-C general office clerk,2010,pre (all),SSOC 2010 (codes; header unlabelled),4110,General office clerk,yes,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
-C general office clerk,2011,pre (all),SSOC 2010,4110,General office clerk,yes,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
-C general office clerk,2012,pre (all),SSOC 2010,4110,General office clerk,yes,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
-C general office clerk,2013,cleaning transition; security/landscape pre,SSOC 2010,4110,General office clerk,yes,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
-C general office clerk,2014,cleaning transition; security/landscape pre,SSOC 2010,4110,General office clerk,yes,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
-C general office clerk,2015,transition (all),SSOC 2015,4110,General office clerk,yes,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
-C general office clerk,2016,cleaning post; security/landscape transition,SSOC 2015,4110,General office clerk,yes,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
-C general office clerk,2017,post (all),SSOC 2015,4110,General office clerk,yes,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
-C general office clerk,2018,post (all),SSOC 2015,4110,General office clerk,yes,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
-C general office clerk,2019,post (all),SSOC 2015,4110,General office clerk,yes,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
-C general office clerk,2020,excluded (2020-2021),SSOC 2020,4110,General office clerk,yes,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
-C general office clerk,2021,excluded (2020-2021),SSOC 2020,4110,General office clerk,yes,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
-C general office clerk,2022,post (all),SSOC 2020,4110,General office clerk,yes,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
-C general office clerk,2023,"after window (shown, not scored)",SSOC 2020,41101,Office clerk (including filing and copying),yes,after window
-C general office clerk,2024,"after window (shown, not scored)",SSOC 2020,41101,Office clerk (including filing and copying),yes,after window
-C general office clerk,2025,"after window (shown, not scored)",SSOC 2024,41101,Office clerk,yes,after window
-C kitchen assistant,2009,pre (all),SSOC 2005 (codes; header unlabelled),91222,Kitchen assistant,yes,
-C kitchen assistant,2010,pre (all),SSOC 2010 (codes; header unlabelled),94101,Kitchen assistant,yes,same text: linked
-C kitchen assistant,2011,pre (all),SSOC 2010,94101,Kitchen assistant,yes,same text: linked
-C kitchen assistant,2012,pre (all),SSOC 2010,94101,Kitchen assistant,yes,same text: linked
-C kitchen assistant,2013,cleaning transition; security/landscape pre,SSOC 2010,94101,Kitchen assistant,yes,same text: linked
-C kitchen assistant,2014,cleaning transition; security/landscape pre,SSOC 2010,94101,Kitchen assistant,yes,same text: linked
-C kitchen assistant,2015,transition (all),SSOC 2015,94101,Kitchen assistant,yes,same text: linked
-C kitchen assistant,2016,cleaning post; security/landscape transition,SSOC 2015,94101,Kitchen assistant,yes,same text: linked
-C kitchen assistant,2017,post (all),SSOC 2015,94101,Kitchen assistant,yes,same text: linked
-C kitchen assistant,2018,post (all),SSOC 2015,94101,Kitchen assistant,yes,same text: linked
-C kitchen assistant,2019,post (all),SSOC 2015,94101,Kitchen assistant,yes,same text: linked
-C kitchen assistant,2020,excluded (2020-2021),SSOC 2020,94101,Kitchen assistant,yes,same text: linked
-C kitchen assistant,2021,excluded (2020-2021),SSOC 2020,94101,Kitchen assistant,yes,same text: linked
-C kitchen assistant,2022,post (all),SSOC 2020,94101,Kitchen assistant,yes,same text: linked
-C kitchen assistant,2023,"after window (shown, not scored)",SSOC 2020,94101,Kitchen assistant,yes,same text: linked
-C kitchen assistant,2024,"after window (shown, not scored)",SSOC 2020,94101,Kitchen assistant,yes,same text: linked
-C kitchen assistant,2025,"after window (shown, not scored)",SSOC 2024,94101,Kitchen assistant,yes,same text: linked
-C lorry driver,2009,pre (all),SSOC 2005 (codes; header unlabelled),83260,Lorry driver,yes,
-C lorry driver,2010,pre (all),SSOC 2010 (codes; header unlabelled),83321,Lorry driver,yes,same text: linked
-C lorry driver,2011,pre (all),SSOC 2010,83321,Lorry driver,yes,same text: linked
-C lorry driver,2012,pre (all),SSOC 2010,83321,Lorry driver,yes,same text: linked
-C lorry driver,2013,cleaning transition; security/landscape pre,SSOC 2010,83321,Lorry driver,yes,same text: linked
-C lorry driver,2014,cleaning transition; security/landscape pre,SSOC 2010,83321,Lorry driver,yes,same text: linked
-C lorry driver,2015,transition (all),SSOC 2015,83321,Lorry driver,yes,same text: linked
-C lorry driver,2016,cleaning post; security/landscape transition,SSOC 2015,83321,Lorry driver,yes,same text: linked
-C lorry driver,2017,post (all),SSOC 2015,83321,Lorry driver,yes,same text: linked
-C lorry driver,2018,post (all),SSOC 2015,83321,Lorry driver,yes,same text: linked
-C lorry driver,2019,post (all),SSOC 2015,83321,Lorry driver,yes,same text: linked
-C lorry driver,2020,excluded (2020-2021),SSOC 2020,83321,Lorry driver,yes,same text: linked
-C lorry driver,2021,excluded (2020-2021),SSOC 2020,83321,Lorry driver,yes,same text: linked
-C lorry driver,2022,post (all),SSOC 2020,83321,Lorry driver,yes,same text: linked
-C lorry driver,2023,"after window (shown, not scored)",SSOC 2020,83321,Lorry driver,yes,same text: linked
-C lorry driver,2024,"after window (shown, not scored)",SSOC 2020,83321,Lorry driver,yes,same text: linked
-C lorry driver,2025,"after window (shown, not scored)",SSOC 2024,83321,Lorry driver,yes,same text: linked
-C shop sales assistant,2009,pre (all),SSOC 2005 (codes; header unlabelled),52102,Shop sales assistant,yes,
-C shop sales assistant,2010,pre (all),SSOC 2010 (codes; header unlabelled),52202,Shop sales assistant,yes,same text: linked
-C shop sales assistant,2011,pre (all),SSOC 2010,52202,Shop sales assistant,yes,same text: linked
-C shop sales assistant,2012,pre (all),SSOC 2010,52202,Shop sales assistant,yes,same text: linked
-C shop sales assistant,2013,cleaning transition; security/landscape pre,SSOC 2010,52202,Shop sales assistant,yes,same text: linked
-C shop sales assistant,2014,cleaning transition; security/landscape pre,SSOC 2010,52202,Shop sales assistant,yes,same text: linked
-C shop sales assistant,2015,transition (all),SSOC 2015,52202,Shop sales assistant,yes,same text: linked
-C shop sales assistant,2016,cleaning post; security/landscape transition,SSOC 2015,52202,Shop sales assistant,yes,same text: linked
-C shop sales assistant,2017,post (all),SSOC 2015,52202,Shop sales assistant,yes,same text: linked
-C shop sales assistant,2018,post (all),SSOC 2015,52202,Shop sales assistant,yes,same text: linked
-C shop sales assistant,2019,post (all),SSOC 2015,52202,Shop sales assistant,yes,same text: linked
-C shop sales assistant,2020,excluded (2020-2021),SSOC 2020,52202,Shop sales assistant,yes,same text: linked
-C shop sales assistant,2021,excluded (2020-2021),SSOC 2020,52202,Shop sales assistant,yes,same text: linked
-C shop sales assistant,2022,post (all),SSOC 2020,52202,Shop sales assistant,yes,same text: linked
-C shop sales assistant,2023,"after window (shown, not scored)",SSOC 2020,52202,Shop sales assistant,yes,same text: linked
-C shop sales assistant,2024,"after window (shown, not scored)",SSOC 2020,52202,Shop sales assistant,yes,same text: linked
-C shop sales assistant,2025,"after window (shown, not scored)",SSOC 2024,52202,Shop sales assistant,yes,same text: linked
-C van driver,2009,pre (all),SSOC 2005 (codes; header unlabelled),83242,Van driver,yes,
-C van driver,2010,pre (all),SSOC 2010 (codes; header unlabelled),83223,Van driver,yes,same text: linked
-C van driver,2011,pre (all),SSOC 2010,83223,Van driver,yes,same text: linked
-C van driver,2012,pre (all),SSOC 2010,83223,Van driver,yes,same text: linked
-C van driver,2013,cleaning transition; security/landscape pre,SSOC 2010,83223,Van driver,yes,same text: linked
-C van driver,2014,cleaning transition; security/landscape pre,SSOC 2010,83223,Van driver,yes,same text: linked
-C van driver,2015,transition (all),SSOC 2015,83223,Van driver,yes,same text: linked
-C van driver,2016,cleaning post; security/landscape transition,SSOC 2015,83223,Van driver,yes,same text: linked
-C van driver,2017,post (all),SSOC 2015,83223,Van driver,yes,same text: linked
-C van driver,2018,post (all),SSOC 2015,83223,Van driver,yes,same text: linked
-C van driver,2019,post (all),SSOC 2015,83223,Van driver,yes,same text: linked
-C van driver,2020,excluded (2020-2021),SSOC 2020,83223,Van driver,yes,same text: linked
-C van driver,2021,excluded (2020-2021),SSOC 2020,83223,Van driver,yes,same text: linked
-C van driver,2022,post (all),SSOC 2020,83223,Van driver,yes,same text: linked
-C van driver,2023,"after window (shown, not scored)",SSOC 2020,83223,Van driver,yes,same text: linked
-C van driver,2024,"after window (shown, not scored)",SSOC 2020,83223,Van driver,yes,same text: linked
-C van driver,2025,"after window (shown, not scored)",SSOC 2024,83223,Van driver,yes,same text: linked
-C waiter,2009,pre (all),SSOC 2005 (codes; header unlabelled),51230,Waiter,yes,
-C waiter,2010,pre (all),SSOC 2010 (codes; header unlabelled),51312,Waiter,yes,same text: linked
-C waiter,2011,pre (all),SSOC 2010,51312,Waiter,yes,same text: linked
-C waiter,2012,pre (all),SSOC 2010,51312,Waiter,yes,same text: linked
-C waiter,2013,cleaning transition; security/landscape pre,SSOC 2010,51312,Waiter,yes,same text: linked
-C waiter,2014,cleaning transition; security/landscape pre,SSOC 2010,51312,Waiter,yes,same text: linked
-C waiter,2015,transition (all),SSOC 2015,51312,Waiter,yes,same text: linked
-C waiter,2016,cleaning post; security/landscape transition,SSOC 2015,51312,Waiter,yes,same text: linked
-C waiter,2017,post (all),SSOC 2015,51312,Waiter,yes,same text: linked
-C waiter,2018,post (all),SSOC 2015,51312,Waiter,yes,same text: linked
-C waiter,2019,post (all),SSOC 2015,51312,Waiter,yes,same text: linked
-C waiter,2020,excluded (2020-2021),SSOC 2020,51312,Waiter,yes,same text: linked
-C waiter,2021,excluded (2020-2021),SSOC 2020,51312,Waiter,yes,same text: linked
-C waiter,2022,post (all),SSOC 2020,51312,Waiter,yes,same text: linked
-C waiter,2023,"after window (shown, not scored)",SSOC 2020,51312,Waiter,yes,same text: linked
-C waiter,2024,"after window (shown, not scored)",SSOC 2020,51312,Waiter,yes,same text: linked
-C waiter,2025,"after window (shown, not scored)",SSOC 2024,51312,Waiter,yes,same text: linked
-cleaning,2009,pre,SSOC 2005 (codes; header unlabelled),91291,Office cleaner,yes,
-cleaning,2009,pre,SSOC 2005 (codes; header unlabelled),91292,Cleaner (Industrial establishment),yes,
-cleaning,2010,pre,SSOC 2010 (codes; header unlabelled),91131,Office cleaner,yes,same text as 2009: linked
-cleaning,2010,pre,SSOC 2010 (codes; header unlabelled),91132,Cleaner (industrial establishment),yes,same text as 2009 (case only): linked
-cleaning,2011,pre,SSOC 2010,9113,Cleaner in offices and other establishments,yes,"June 2011: 4-digit aggregate replaces 91131 + 91132 (merge); link via the SSOC 2010 hierarchy, PENDING"
-cleaning,2012,pre,SSOC 2010,9113,Cleaner in offices and other establishments,yes,"June 2011: 4-digit aggregate replaces 91131 + 91132 (merge); link via the SSOC 2010 hierarchy, PENDING"
-cleaning,2013,transition,SSOC 2010,9113,Cleaner in offices and other establishments,yes,"June 2011: 4-digit aggregate replaces 91131 + 91132 (merge); link via the SSOC 2010 hierarchy, PENDING"
-cleaning,2014,transition,SSOC 2010,9113,Cleaner in offices and other establishments,yes,"June 2011: 4-digit aggregate replaces 91131 + 91132 (merge); link via the SSOC 2010 hierarchy, PENDING"
-cleaning,2015,transition,SSOC 2015,91130,Office cleaner,yes,"June 2015: split of 9113 (candidate successor); SSOC 2010-2015 correspondence, PENDING"
-cleaning,2015,transition,SSOC 2015,91140,Industrial establishment cleaner,yes,candidate successor of 9113; ABSENT from the June 2018 table
-cleaning,2015,transition,SSOC 2015,91151,"Food and beverage establishment cleaner (eg restaurants, food courts, hawker centres)",yes,"candidate successor of 9113, PENDING correspondence"
-cleaning,2015,transition,SSOC 2015,91160,"Residential area cleaner (eg HDB estates, condominiums, private apartments, common areas within residential estates)",yes,"candidate successor of 9113, PENDING correspondence"
-cleaning,2015,transition,SSOC 2015,91170,"Cleaner in open areas (eg bus stops, drains, waterways, overhead bridges, roads, expressways, parks, beaches)",yes,candidate successor of 9113; ABSENT from the June 2019 table
-cleaning,2016,post,SSOC 2015,91130,Office cleaner,yes,"June 2015: split of 9113 (candidate successor); SSOC 2010-2015 correspondence, PENDING"
-cleaning,2016,post,SSOC 2015,91140,Industrial establishment cleaner,yes,candidate successor of 9113; ABSENT from the June 2018 table
-cleaning,2016,post,SSOC 2015,91151,"Food and beverage establishment cleaner (eg restaurants, food courts, hawker centres)",yes,"candidate successor of 9113, PENDING correspondence"
-cleaning,2016,post,SSOC 2015,91160,"Residential area cleaner (eg HDB estates, condominiums, private apartments, common areas within residential estates)",yes,"candidate successor of 9113, PENDING correspondence"
-cleaning,2016,post,SSOC 2015,91170,"Cleaner in open areas (eg bus stops, drains, waterways, overhead bridges, roads, expressways, parks, beaches)",yes,candidate successor of 9113; ABSENT from the June 2019 table
-cleaning,2017,post,SSOC 2015,91130,Office cleaner,yes,"June 2015: split of 9113 (candidate successor); SSOC 2010-2015 correspondence, PENDING"
-cleaning,2017,post,SSOC 2015,91140,Industrial establishment cleaner,yes,candidate successor of 9113; ABSENT from the June 2018 table
-cleaning,2017,post,SSOC 2015,91151,"Food and beverage establishment cleaner (eg restaurants, food courts, hawker centres)",yes,"candidate successor of 9113, PENDING correspondence"
-cleaning,2017,post,SSOC 2015,91160,"Residential area cleaner (eg HDB estates, condominiums, private apartments, common areas within residential estates)",yes,"candidate successor of 9113, PENDING correspondence"
-cleaning,2017,post,SSOC 2015,91170,"Cleaner in open areas (eg bus stops, drains, waterways, overhead bridges, roads, expressways, parks, beaches)",yes,candidate successor of 9113; ABSENT from the June 2019 table
-cleaning,2018,post,SSOC 2015,91130,Office cleaner,yes,"June 2015: split of 9113 (candidate successor); SSOC 2010-2015 correspondence, PENDING"
-cleaning,2018,post,SSOC 2015,91140,Industrial establishment cleaner,NO,candidate successor of 9113; ABSENT from the June 2018 table
-cleaning,2018,post,SSOC 2015,91151,"Food and beverage establishment cleaner (eg restaurants, food courts, hawker centres)",yes,"candidate successor of 9113, PENDING correspondence"
-cleaning,2018,post,SSOC 2015,91160,"Residential area cleaner (eg HDB estates, condominiums, private apartments, common areas within residential estates)",yes,"candidate successor of 9113, PENDING correspondence"
-cleaning,2018,post,SSOC 2015,91170,"Cleaner in open areas (eg bus stops, drains, waterways, overhead bridges, roads, expressways, parks, beaches)",yes,candidate successor of 9113; ABSENT from the June 2019 table
-cleaning,2019,post,SSOC 2015,91130,Office cleaner,yes,"June 2015: split of 9113 (candidate successor); SSOC 2010-2015 correspondence, PENDING"
-cleaning,2019,post,SSOC 2015,91140,Industrial establishment cleaner,yes,candidate successor of 9113; ABSENT from the June 2018 table
-cleaning,2019,post,SSOC 2015,91151,"Food and beverage establishment cleaner (eg restaurants, food courts, hawker centres)",yes,"candidate successor of 9113, PENDING correspondence"
-cleaning,2019,post,SSOC 2015,91160,"Residential area cleaner (eg HDB estates, condominiums, private apartments, common areas within residential estates)",yes,"candidate successor of 9113, PENDING correspondence"
-cleaning,2019,post,SSOC 2015,91170,"Cleaner in open areas (eg bus stops, drains, waterways, overhead bridges, roads, expressways, parks, beaches)",NO,candidate successor of 9113; ABSENT from the June 2019 table
-cleaning,2020,excluded (2020-2021),SSOC 2020,91131,"Office, commercial and industrial establishments indoor cleaner",yes,"June 2020: SSOC 2015-2020 split/merge, PENDING correspondence"
-cleaning,2020,excluded (2020-2021),SSOC 2020,91132,"Office, commercial and industrial establishments outdoor cleaner",yes,June 2020: PENDING correspondence
-cleaning,2020,excluded (2020-2021),SSOC 2020,91133,"Office, commercial and industrial establishments multi-skilled cleaner cum machine operator",yes,June 2020: new title; PENDING correspondence
-cleaning,2020,excluded (2020-2021),SSOC 2020,91151,Food and beverage establishments general cleaner,yes,June 2020: text changed; PENDING correspondence
-cleaning,2020,excluded (2020-2021),SSOC 2020,91161,Residential and open areas general cleaner,yes,June 2020: merge of 91160 + 91170; PENDING correspondence
-cleaning,2021,excluded (2020-2021),SSOC 2020,91131,"Office, commercial and industrial establishments indoor cleaner",yes,"June 2020: SSOC 2015-2020 split/merge, PENDING correspondence"
-cleaning,2021,excluded (2020-2021),SSOC 2020,91132,"Office, commercial and industrial establishments outdoor cleaner",yes,June 2020: PENDING correspondence
-cleaning,2021,excluded (2020-2021),SSOC 2020,91133,"Office, commercial and industrial establishments multi-skilled cleaner cum machine operator",yes,June 2020: new title; PENDING correspondence
-cleaning,2021,excluded (2020-2021),SSOC 2020,91151,Food and beverage establishments general cleaner,yes,June 2020: text changed; PENDING correspondence
-cleaning,2021,excluded (2020-2021),SSOC 2020,91161,Residential and open areas general cleaner,yes,June 2020: merge of 91160 + 91170; PENDING correspondence
-cleaning,2022,post,SSOC 2020,91131,"Office, commercial and industrial establishments indoor cleaner",yes,"June 2020: SSOC 2015-2020 split/merge, PENDING correspondence"
-cleaning,2022,post,SSOC 2020,91132,"Office, commercial and industrial establishments outdoor cleaner",yes,June 2020: PENDING correspondence
-cleaning,2022,post,SSOC 2020,91133,"Office, commercial and industrial establishments multi-skilled cleaner cum machine operator",yes,June 2020: new title; PENDING correspondence
-cleaning,2022,post,SSOC 2020,91151,Food and beverage establishments general cleaner,yes,June 2020: text changed; PENDING correspondence
-cleaning,2022,post,SSOC 2020,91161,Residential and open areas general cleaner,yes,June 2020: merge of 91160 + 91170; PENDING correspondence
-landscape,2009,pre,SSOC 2005 (codes; header unlabelled),93111,Gardener,yes,
-landscape,2010,pre,SSOC 2010 (codes; header unlabelled),92141,Garden labourer,yes,"text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING"
-landscape,2011,pre,SSOC 2010,9214,Park and garden maintenance worker,yes,"2011: 4-digit aggregate replaces 5-digit 92141 (different text); link via the SSOC 2010 hierarchy, PENDING. 2012-2019: same text."
-landscape,2012,pre,SSOC 2010,9214,Park and garden maintenance worker,yes,"2011: 4-digit aggregate replaces 5-digit 92141 (different text); link via the SSOC 2010 hierarchy, PENDING. 2012-2019: same text."
-landscape,2013,pre,SSOC 2010,9214,Park and garden maintenance worker,yes,"2011: 4-digit aggregate replaces 5-digit 92141 (different text); link via the SSOC 2010 hierarchy, PENDING. 2012-2019: same text."
-landscape,2014,pre,SSOC 2010,9214,Park and garden maintenance worker,yes,"2011: 4-digit aggregate replaces 5-digit 92141 (different text); link via the SSOC 2010 hierarchy, PENDING. 2012-2019: same text."
-landscape,2015,transition,SSOC 2015,9214,Park and garden maintenance worker,yes,"2011: 4-digit aggregate replaces 5-digit 92141 (different text); link via the SSOC 2010 hierarchy, PENDING. 2012-2019: same text."
-landscape,2016,transition,SSOC 2015,9214,Park and garden maintenance worker,yes,"2011: 4-digit aggregate replaces 5-digit 92141 (different text); link via the SSOC 2010 hierarchy, PENDING. 2012-2019: same text."
-landscape,2017,post,SSOC 2015,9214,Park and garden maintenance worker,yes,"2011: 4-digit aggregate replaces 5-digit 92141 (different text); link via the SSOC 2010 hierarchy, PENDING. 2012-2019: same text."
-landscape,2018,post,SSOC 2015,9214,Park and garden maintenance worker,yes,"2011: 4-digit aggregate replaces 5-digit 92141 (different text); link via the SSOC 2010 hierarchy, PENDING. 2012-2019: same text."
-landscape,2019,post,SSOC 2015,9214,Park and garden maintenance worker,yes,"2011: 4-digit aggregate replaces 5-digit 92141 (different text); link via the SSOC 2010 hierarchy, PENDING. 2012-2019: same text."
-landscape,2020,excluded (2020-2021),SSOC 2020,9214,"Park, garden and landscape maintenance worker",yes,"same code, text changed at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
-landscape,2021,excluded (2020-2021),SSOC 2020,9214,"Park, garden and landscape maintenance worker",yes,"same code, text changed at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
-landscape,2022,post,SSOC 2020,9214,"Park, garden and landscape maintenance worker",yes,"same code, text changed at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
-landscape,2023,"after window (shown, not scored)",SSOC 2020,92142,Landscape worker,yes,after window
-landscape,2024,"after window (shown, not scored)",SSOC 2020,92142,Landscape worker,yes,after window
-landscape,2025,"after window (shown, not scored)",SSOC 2024,92142,Landscape worker,yes,after window
-security,2009,pre,SSOC 2005 (codes; header unlabelled),51440,Private security guard,yes,
-security,2010,pre,SSOC 2010 (codes; header unlabelled),5414,Security guard,yes,"2010: text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING. 2011-2019: same text."
-security,2011,pre,SSOC 2010,5414,Security guard,yes,"2010: text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING. 2011-2019: same text."
-security,2012,pre,SSOC 2010,5414,Security guard,yes,"2010: text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING. 2011-2019: same text."
-security,2013,pre,SSOC 2010,5414,Security guard,yes,"2010: text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING. 2011-2019: same text."
-security,2014,pre,SSOC 2010,5414,Security guard,yes,"2010: text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING. 2011-2019: same text."
-security,2015,transition,SSOC 2015,5414,Security guard,yes,"2010: text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING. 2011-2019: same text."
-security,2016,transition,SSOC 2015,5414,Security guard,yes,"2010: text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING. 2011-2019: same text."
-security,2017,post,SSOC 2015,5414,Security guard,yes,"2010: text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING. 2011-2019: same text."
-security,2018,post,SSOC 2015,5414,Security guard,yes,"2010: text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING. 2011-2019: same text."
-security,2019,post,SSOC 2015,5414,Security guard,yes,"2010: text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING. 2011-2019: same text."
-security,2020,excluded (2020-2021),SSOC 2020,54143,Senior private security officer,yes,"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
-security,2020,excluded (2020-2021),SSOC 2020,54144,Private security officer,yes,"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
-security,2021,excluded (2020-2021),SSOC 2020,54143,Senior private security officer,yes,"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
-security,2021,excluded (2020-2021),SSOC 2020,54144,Private security officer,yes,"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
-security,2022,post,SSOC 2020,54143,Senior private security officer,yes,"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
-security,2022,post,SSOC 2020,54144,Private security officer,yes,"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
-security,2023,"after window (shown, not scored)",SSOC 2020,54143,Senior private security officer,yes,"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
-security,2023,"after window (shown, not scored)",SSOC 2020,54144,Private security officer,yes,"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
-security,2024,"after window (shown, not scored)",SSOC 2020,54143,Senior private security officer,yes,"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
-security,2024,"after window (shown, not scored)",SSOC 2020,54144,Private security officer,yes,"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
-security,2025,"after window (shown, not scored)",SSOC 2024,54143,Senior private security officer,yes,"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
-security,2025,"after window (shown, not scored)",SSOC 2024,54144,Private security officer,yes,"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
-hotel cleaners,,excluded,,9112,"9112 Cleaner and helper in hotels and related establishments (2011-2022); 91293/91122 Hotel cleaner (2009-2010, 2023-)",,"hotel housekeeping is mostly in-house, unbound until Sep 2022; title also mixes helpers"
-dishwashers and table-top cleaners,,excluded,,91224,91224 Dish washer (2009); 94104 Dish washer/Plate collector (2010-2014); 91152 Dish washer/Plate collector/Table-top cleaner (2015-2019); 91153 Dishwasher and 91152 Table-top cleaner (2020-),,ladder ambiguous: named in the cleaning ladder F&B group (w3_cleaning_col_order_2021.pdf) and in food services from 2023; title moves between cleaner and food groups; excluded from both sides
-gardener/horticultural/nursery worker,,excluded,,6113,6113 (2015-2019); 61133 (2020-),,"first published June 2015, absent from the pre-period; nursery and farm work outside LCR maintenance"
-building structure cleaner,,excluded,,71332,"71332 (2010, 2012-2013)",,"construction trade (facade cleaning), not the cleaning ladder"
-food service counter attendant,,excluded,,52492,52492 (2010-),,absent from June 2009: dropped by the missing-year rule
-tea server/steward,,excluded,,94104,94104 (2015-),,first published June 2015
-car drivers,,excluded,,none,none published,,no car-driver title in any OWS table; the comparison drivers are van and lorry drivers
-"waste truck, trailer-truck drivers; lorry attendant",,excluded,,83326/83324;,83326/83324; 83322; 93335,,waste management ladder (2023) and cleaning conservancy roles; trailer-truck and attendants not named in THESIS
-"aircraft, ship, motor-vehicle, window cleaners; laundry workers",,excluded,,various,various,,not general cleaning covered by the cleaning ladder
+group,june,june_role,classification,ssoc_code,title_as_published,in_all_industries_table,series,link_and_break_note
+C cashier,2009,pre (all),SSOC 2005 (codes; header unlabelled),42111,Cashier,yes,main,
+C cashier,2010,pre (all),SSOC 2010 (codes; header unlabelled),5230,Cashiers and ticket clerk,yes,main,"June 2010: merge with ticket clerks; link via SSOC 2005-2010 correspondence, PENDING"
+C cashier,2011,pre (all),SSOC 2010,52302,Cashier,yes,main,June 2011: split back out of 5230; PENDING
+C cashier,2012,pre (all),SSOC 2010,52302,Cashier,yes,main,June 2011: split back out of 5230; PENDING
+C cashier,2013,cleaning transition; security/landscape pre,SSOC 2010,52302,Cashier,yes,main,June 2011: split back out of 5230; PENDING
+C cashier,2014,cleaning transition; security/landscape pre,SSOC 2010,52302,Cashier,yes,main,June 2011: split back out of 5230; PENDING
+C cashier,2015,transition (all),SSOC 2015,52302,Cashier,yes,main,June 2011: split back out of 5230; PENDING
+C cashier,2016,cleaning post; security/landscape transition,SSOC 2015,52302,Cashier,yes,main,June 2011: split back out of 5230; PENDING
+C cashier,2017,post (all),SSOC 2015,52302,Cashier,yes,main,June 2011: split back out of 5230; PENDING
+C cashier,2018,post (all),SSOC 2015,52302,Cashier,yes,main,June 2011: split back out of 5230; PENDING
+C cashier,2019,post (all),SSOC 2015,52302,Cashier,yes,main,June 2011: split back out of 5230; PENDING
+C cashier,2020,excluded (2020-2021),SSOC 2020,52302,Cashier,yes,main,June 2011: split back out of 5230; PENDING
+C cashier,2021,excluded (2020-2021),SSOC 2020,52302,Cashier,yes,main,June 2011: split back out of 5230; PENDING
+C cashier,2022,post (all),SSOC 2020,52302,Cashier,yes,main,June 2011: split back out of 5230; PENDING
+C cashier,2023,"after window (shown, not scored)",SSOC 2020,52302,Cashier (general),yes,main,after window
+C cashier,2024,"after window (shown, not scored)",SSOC 2020,52302,Cashier (general),yes,main,after window
+C cashier,2025,"after window (shown, not scored)",SSOC 2024,52302,Cashier (general),yes,main,after window
+C food/drink stall assistant,2009,pre (all),SSOC 2005 (codes; header unlabelled),91223,Food and drink stall assistant,yes,main,
+C food/drink stall assistant,2010,pre (all),SSOC 2010 (codes; header unlabelled),94102,Food/Drink stall assistant,yes,main,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
+C food/drink stall assistant,2011,pre (all),SSOC 2010,94102,Food/Drink stall assistant,yes,main,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
+C food/drink stall assistant,2012,pre (all),SSOC 2010,94102,Food/Drink stall assistant,yes,main,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
+C food/drink stall assistant,2013,cleaning transition; security/landscape pre,SSOC 2010,94102,Food/Drink stall assistant,yes,main,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
+C food/drink stall assistant,2014,cleaning transition; security/landscape pre,SSOC 2010,94102,Food/Drink stall assistant,yes,main,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
+C food/drink stall assistant,2015,transition (all),SSOC 2015,94102,Food/Drink stall assistant,yes,main,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
+C food/drink stall assistant,2016,cleaning post; security/landscape transition,SSOC 2015,94102,Food/Drink stall assistant,yes,main,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
+C food/drink stall assistant,2017,post (all),SSOC 2015,94102,Food/Drink stall assistant,yes,main,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
+C food/drink stall assistant,2018,post (all),SSOC 2015,94102,Food/Drink stall assistant,yes,main,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
+C food/drink stall assistant,2019,post (all),SSOC 2015,94102,Food/Drink stall assistant,yes,main,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
+C food/drink stall assistant,2020,excluded (2020-2021),SSOC 2020,94102,Food/Drink stall assistant,yes,main,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
+C food/drink stall assistant,2021,excluded (2020-2021),SSOC 2020,94102,Food/Drink stall assistant,yes,main,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
+C food/drink stall assistant,2022,post (all),SSOC 2020,94102,Food/Drink stall assistant,yes,main,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
+C food/drink stall assistant,2023,"after window (shown, not scored)",SSOC 2020,94102,Food/Drink stall assistant,yes,main,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
+C food/drink stall assistant,2024,"after window (shown, not scored)",SSOC 2020,94102,Food/Drink stall assistant,yes,main,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
+C food/drink stall assistant,2025,"after window (shown, not scored)",SSOC 2024,94102,Food/Drink stall assistant,yes,main,"June 2010: text differs (""and"" vs ""/""); link via SSOC 2005-2010 correspondence, PENDING"
+C general office clerk,2009,pre (all),SSOC 2005 (codes; header unlabelled),41201,Office clerk,yes,main,
+C general office clerk,2010,pre (all),SSOC 2010 (codes; header unlabelled),4110,General office clerk,yes,main,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
+C general office clerk,2011,pre (all),SSOC 2010,4110,General office clerk,yes,main,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
+C general office clerk,2012,pre (all),SSOC 2010,4110,General office clerk,yes,main,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
+C general office clerk,2013,cleaning transition; security/landscape pre,SSOC 2010,4110,General office clerk,yes,main,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
+C general office clerk,2014,cleaning transition; security/landscape pre,SSOC 2010,4110,General office clerk,yes,main,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
+C general office clerk,2015,transition (all),SSOC 2015,4110,General office clerk,yes,main,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
+C general office clerk,2016,cleaning post; security/landscape transition,SSOC 2015,4110,General office clerk,yes,main,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
+C general office clerk,2017,post (all),SSOC 2015,4110,General office clerk,yes,main,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
+C general office clerk,2018,post (all),SSOC 2015,4110,General office clerk,yes,main,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
+C general office clerk,2019,post (all),SSOC 2015,4110,General office clerk,yes,main,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
+C general office clerk,2020,excluded (2020-2021),SSOC 2020,4110,General office clerk,yes,main,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
+C general office clerk,2021,excluded (2020-2021),SSOC 2020,4110,General office clerk,yes,main,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
+C general office clerk,2022,post (all),SSOC 2020,4110,General office clerk,yes,main,"June 2010: text differs; link via SSOC 2005-2010 correspondence, PENDING"
+C general office clerk,2023,"after window (shown, not scored)",SSOC 2020,41101,Office clerk (including filing and copying),yes,main,after window
+C general office clerk,2024,"after window (shown, not scored)",SSOC 2020,41101,Office clerk (including filing and copying),yes,main,after window
+C general office clerk,2025,"after window (shown, not scored)",SSOC 2024,41101,Office clerk,yes,main,after window
+C kitchen assistant,2009,pre (all),SSOC 2005 (codes; header unlabelled),91222,Kitchen assistant,yes,main,
+C kitchen assistant,2010,pre (all),SSOC 2010 (codes; header unlabelled),94101,Kitchen assistant,yes,main,same text: linked
+C kitchen assistant,2011,pre (all),SSOC 2010,94101,Kitchen assistant,yes,main,same text: linked
+C kitchen assistant,2012,pre (all),SSOC 2010,94101,Kitchen assistant,yes,main,same text: linked
+C kitchen assistant,2013,cleaning transition; security/landscape pre,SSOC 2010,94101,Kitchen assistant,yes,main,same text: linked
+C kitchen assistant,2014,cleaning transition; security/landscape pre,SSOC 2010,94101,Kitchen assistant,yes,main,same text: linked
+C kitchen assistant,2015,transition (all),SSOC 2015,94101,Kitchen assistant,yes,main,same text: linked
+C kitchen assistant,2016,cleaning post; security/landscape transition,SSOC 2015,94101,Kitchen assistant,yes,main,same text: linked
+C kitchen assistant,2017,post (all),SSOC 2015,94101,Kitchen assistant,yes,main,same text: linked
+C kitchen assistant,2018,post (all),SSOC 2015,94101,Kitchen assistant,yes,main,same text: linked
+C kitchen assistant,2019,post (all),SSOC 2015,94101,Kitchen assistant,yes,main,same text: linked
+C kitchen assistant,2020,excluded (2020-2021),SSOC 2020,94101,Kitchen assistant,yes,main,same text: linked
+C kitchen assistant,2021,excluded (2020-2021),SSOC 2020,94101,Kitchen assistant,yes,main,same text: linked
+C kitchen assistant,2022,post (all),SSOC 2020,94101,Kitchen assistant,yes,main,same text: linked
+C kitchen assistant,2023,"after window (shown, not scored)",SSOC 2020,94101,Kitchen assistant,yes,main,same text: linked
+C kitchen assistant,2024,"after window (shown, not scored)",SSOC 2020,94101,Kitchen assistant,yes,main,same text: linked
+C kitchen assistant,2025,"after window (shown, not scored)",SSOC 2024,94101,Kitchen assistant,yes,main,same text: linked
+C lorry driver,2009,pre (all),SSOC 2005 (codes; header unlabelled),83260,Lorry driver,yes,main,
+C lorry driver,2010,pre (all),SSOC 2010 (codes; header unlabelled),83321,Lorry driver,yes,main,same text: linked
+C lorry driver,2011,pre (all),SSOC 2010,83321,Lorry driver,yes,main,same text: linked
+C lorry driver,2012,pre (all),SSOC 2010,83321,Lorry driver,yes,main,same text: linked
+C lorry driver,2013,cleaning transition; security/landscape pre,SSOC 2010,83321,Lorry driver,yes,main,same text: linked
+C lorry driver,2014,cleaning transition; security/landscape pre,SSOC 2010,83321,Lorry driver,yes,main,same text: linked
+C lorry driver,2015,transition (all),SSOC 2015,83321,Lorry driver,yes,main,same text: linked
+C lorry driver,2016,cleaning post; security/landscape transition,SSOC 2015,83321,Lorry driver,yes,main,same text: linked
+C lorry driver,2017,post (all),SSOC 2015,83321,Lorry driver,yes,main,same text: linked
+C lorry driver,2018,post (all),SSOC 2015,83321,Lorry driver,yes,main,same text: linked
+C lorry driver,2019,post (all),SSOC 2015,83321,Lorry driver,yes,main,same text: linked
+C lorry driver,2020,excluded (2020-2021),SSOC 2020,83321,Lorry driver,yes,main,same text: linked
+C lorry driver,2021,excluded (2020-2021),SSOC 2020,83321,Lorry driver,yes,main,same text: linked
+C lorry driver,2022,post (all),SSOC 2020,83321,Lorry driver,yes,main,same text: linked
+C lorry driver,2023,"after window (shown, not scored)",SSOC 2020,83321,Lorry driver,yes,main,same text: linked
+C lorry driver,2024,"after window (shown, not scored)",SSOC 2020,83321,Lorry driver,yes,main,same text: linked
+C lorry driver,2025,"after window (shown, not scored)",SSOC 2024,83321,Lorry driver,yes,main,same text: linked
+C shop sales assistant,2009,pre (all),SSOC 2005 (codes; header unlabelled),52102,Shop sales assistant,yes,main,
+C shop sales assistant,2010,pre (all),SSOC 2010 (codes; header unlabelled),52202,Shop sales assistant,yes,main,same text: linked
+C shop sales assistant,2011,pre (all),SSOC 2010,52202,Shop sales assistant,yes,main,same text: linked
+C shop sales assistant,2012,pre (all),SSOC 2010,52202,Shop sales assistant,yes,main,same text: linked
+C shop sales assistant,2013,cleaning transition; security/landscape pre,SSOC 2010,52202,Shop sales assistant,yes,main,same text: linked
+C shop sales assistant,2014,cleaning transition; security/landscape pre,SSOC 2010,52202,Shop sales assistant,yes,main,same text: linked
+C shop sales assistant,2015,transition (all),SSOC 2015,52202,Shop sales assistant,yes,main,same text: linked
+C shop sales assistant,2016,cleaning post; security/landscape transition,SSOC 2015,52202,Shop sales assistant,yes,main,same text: linked
+C shop sales assistant,2017,post (all),SSOC 2015,52202,Shop sales assistant,yes,main,same text: linked
+C shop sales assistant,2018,post (all),SSOC 2015,52202,Shop sales assistant,yes,main,same text: linked
+C shop sales assistant,2019,post (all),SSOC 2015,52202,Shop sales assistant,yes,main,same text: linked
+C shop sales assistant,2020,excluded (2020-2021),SSOC 2020,52202,Shop sales assistant,yes,main,same text: linked
+C shop sales assistant,2021,excluded (2020-2021),SSOC 2020,52202,Shop sales assistant,yes,main,same text: linked
+C shop sales assistant,2022,post (all),SSOC 2020,52202,Shop sales assistant,yes,main,same text: linked
+C shop sales assistant,2023,"after window (shown, not scored)",SSOC 2020,52202,Shop sales assistant,yes,main,same text: linked
+C shop sales assistant,2024,"after window (shown, not scored)",SSOC 2020,52202,Shop sales assistant,yes,main,same text: linked
+C shop sales assistant,2025,"after window (shown, not scored)",SSOC 2024,52202,Shop sales assistant,yes,main,same text: linked
+C van driver,2009,pre (all),SSOC 2005 (codes; header unlabelled),83242,Van driver,yes,main,
+C van driver,2010,pre (all),SSOC 2010 (codes; header unlabelled),83223,Van driver,yes,main,same text: linked
+C van driver,2011,pre (all),SSOC 2010,83223,Van driver,yes,main,same text: linked
+C van driver,2012,pre (all),SSOC 2010,83223,Van driver,yes,main,same text: linked
+C van driver,2013,cleaning transition; security/landscape pre,SSOC 2010,83223,Van driver,yes,main,same text: linked
+C van driver,2014,cleaning transition; security/landscape pre,SSOC 2010,83223,Van driver,yes,main,same text: linked
+C van driver,2015,transition (all),SSOC 2015,83223,Van driver,yes,main,same text: linked
+C van driver,2016,cleaning post; security/landscape transition,SSOC 2015,83223,Van driver,yes,main,same text: linked
+C van driver,2017,post (all),SSOC 2015,83223,Van driver,yes,main,same text: linked
+C van driver,2018,post (all),SSOC 2015,83223,Van driver,yes,main,same text: linked
+C van driver,2019,post (all),SSOC 2015,83223,Van driver,yes,main,same text: linked
+C van driver,2020,excluded (2020-2021),SSOC 2020,83223,Van driver,yes,main,same text: linked
+C van driver,2021,excluded (2020-2021),SSOC 2020,83223,Van driver,yes,main,same text: linked
+C van driver,2022,post (all),SSOC 2020,83223,Van driver,yes,main,same text: linked
+C van driver,2023,"after window (shown, not scored)",SSOC 2020,83223,Van driver,yes,main,same text: linked
+C van driver,2024,"after window (shown, not scored)",SSOC 2020,83223,Van driver,yes,main,same text: linked
+C van driver,2025,"after window (shown, not scored)",SSOC 2024,83223,Van driver,yes,main,same text: linked
+C waiter,2009,pre (all),SSOC 2005 (codes; header unlabelled),51230,Waiter,yes,main,
+C waiter,2010,pre (all),SSOC 2010 (codes; header unlabelled),51312,Waiter,yes,main,same text: linked
+C waiter,2011,pre (all),SSOC 2010,51312,Waiter,yes,main,same text: linked
+C waiter,2012,pre (all),SSOC 2010,51312,Waiter,yes,main,same text: linked
+C waiter,2013,cleaning transition; security/landscape pre,SSOC 2010,51312,Waiter,yes,main,same text: linked
+C waiter,2014,cleaning transition; security/landscape pre,SSOC 2010,51312,Waiter,yes,main,same text: linked
+C waiter,2015,transition (all),SSOC 2015,51312,Waiter,yes,main,same text: linked
+C waiter,2016,cleaning post; security/landscape transition,SSOC 2015,51312,Waiter,yes,main,same text: linked
+C waiter,2017,post (all),SSOC 2015,51312,Waiter,yes,main,same text: linked
+C waiter,2018,post (all),SSOC 2015,51312,Waiter,yes,main,same text: linked
+C waiter,2019,post (all),SSOC 2015,51312,Waiter,yes,main,same text: linked
+C waiter,2020,excluded (2020-2021),SSOC 2020,51312,Waiter,yes,main,same text: linked
+C waiter,2021,excluded (2020-2021),SSOC 2020,51312,Waiter,yes,main,same text: linked
+C waiter,2022,post (all),SSOC 2020,51312,Waiter,yes,main,same text: linked
+C waiter,2023,"after window (shown, not scored)",SSOC 2020,51312,Waiter,yes,main,same text: linked
+C waiter,2024,"after window (shown, not scored)",SSOC 2020,51312,Waiter,yes,main,same text: linked
+C waiter,2025,"after window (shown, not scored)",SSOC 2024,51312,Waiter,yes,main,same text: linked
+cleaning,2009,pre,SSOC 2005 (codes; header unlabelled),91291,Office cleaner,yes,main,
+cleaning,2009,pre,SSOC 2005 (codes; header unlabelled),91292,Cleaner (Industrial establishment),yes,main,
+cleaning,2010,pre,SSOC 2010 (codes; header unlabelled),91131,Office cleaner,yes,"main (General/Indoor Cleaners, lowest rung: w3_cleaning_col_order_2021.pdf para 1.1)",same text as 2009: linked
+cleaning,2010,pre,SSOC 2010 (codes; header unlabelled),91132,Cleaner (industrial establishment),yes,"sensitivity only (Outdoor/Healthcare/Restroom Cleaners rung, above the lowest)",same text as 2009 (case only): linked
+cleaning,2011,pre,SSOC 2010,9113,Cleaner in offices and other establishments,yes,main,"June 2011: 4-digit aggregate replaces 91131 + 91132 (merge); link via the SSOC 2010 hierarchy, PENDING"
+cleaning,2012,pre,SSOC 2010,9113,Cleaner in offices and other establishments,yes,main,"June 2011: 4-digit aggregate replaces 91131 + 91132 (merge); link via the SSOC 2010 hierarchy, PENDING"
+cleaning,2013,transition,SSOC 2010,9113,Cleaner in offices and other establishments,yes,main,"June 2011: 4-digit aggregate replaces 91131 + 91132 (merge); link via the SSOC 2010 hierarchy, PENDING"
+cleaning,2014,transition,SSOC 2010,9113,Cleaner in offices and other establishments,yes,main,"June 2011: 4-digit aggregate replaces 91131 + 91132 (merge); link via the SSOC 2010 hierarchy, PENDING"
+cleaning,2015,transition,SSOC 2015,91130,Office cleaner,yes,"main (lowest-rung group, w3_cleaning_tcc_report_2012.pdf: at least $1,000); PENDING: stays only if the SSOC 2010-2015 correspondence maps it from 9113","June 2015: split of 9113 (candidate successor); SSOC 2010-2015 correspondence, PENDING"
+cleaning,2015,transition,SSOC 2015,91140,Industrial establishment cleaner,yes,"main (lowest-rung group, w3_cleaning_tcc_report_2012.pdf: at least $1,000); PENDING: stays only if the SSOC 2010-2015 correspondence maps it from 9113",candidate successor of 9113; ABSENT from the June 2018 table
+cleaning,2015,transition,SSOC 2015,91151,"Food and beverage establishment cleaner (eg restaurants, food courts, hawker centres)",yes,"main (lowest-rung group, w3_cleaning_tcc_report_2012.pdf: at least $1,000); PENDING: stays only if the SSOC 2010-2015 correspondence maps it from 9113","candidate successor of 9113, PENDING correspondence"
+cleaning,2015,transition,SSOC 2015,91160,"Residential area cleaner (eg HDB estates, condominiums, private apartments, common areas within residential estates)",yes,"sensitivity only (spans conservancy and condominium groups, w3_cleaning_mom_page.pdf); PENDING 9113 correspondence","candidate successor of 9113, PENDING correspondence"
+cleaning,2015,transition,SSOC 2015,91170,"Cleaner in open areas (eg bus stops, drains, waterways, overhead bridges, roads, expressways, parks, beaches)",yes,"sensitivity only (conservancy group, at least $1,200 in w3_cleaning_tcc_report_2012.pdf); PENDING 9113 correspondence",candidate successor of 9113; ABSENT from the June 2019 table
+cleaning,2016,post,SSOC 2015,91130,Office cleaner,yes,"main (lowest-rung group, w3_cleaning_tcc_report_2012.pdf: at least $1,000); PENDING: stays only if the SSOC 2010-2015 correspondence maps it from 9113","June 2015: split of 9113 (candidate successor); SSOC 2010-2015 correspondence, PENDING"
+cleaning,2016,post,SSOC 2015,91140,Industrial establishment cleaner,yes,"main (lowest-rung group, w3_cleaning_tcc_report_2012.pdf: at least $1,000); PENDING: stays only if the SSOC 2010-2015 correspondence maps it from 9113",candidate successor of 9113; ABSENT from the June 2018 table
+cleaning,2016,post,SSOC 2015,91151,"Food and beverage establishment cleaner (eg restaurants, food courts, hawker centres)",yes,"main (lowest-rung group, w3_cleaning_tcc_report_2012.pdf: at least $1,000); PENDING: stays only if the SSOC 2010-2015 correspondence maps it from 9113","candidate successor of 9113, PENDING correspondence"
+cleaning,2016,post,SSOC 2015,91160,"Residential area cleaner (eg HDB estates, condominiums, private apartments, common areas within residential estates)",yes,"sensitivity only (spans conservancy and condominium groups, w3_cleaning_mom_page.pdf); PENDING 9113 correspondence","candidate successor of 9113, PENDING correspondence"
+cleaning,2016,post,SSOC 2015,91170,"Cleaner in open areas (eg bus stops, drains, waterways, overhead bridges, roads, expressways, parks, beaches)",yes,"sensitivity only (conservancy group, at least $1,200 in w3_cleaning_tcc_report_2012.pdf); PENDING 9113 correspondence",candidate successor of 9113; ABSENT from the June 2019 table
+cleaning,2017,post,SSOC 2015,91130,Office cleaner,yes,"main (lowest-rung group, w3_cleaning_tcc_report_2012.pdf: at least $1,000); PENDING: stays only if the SSOC 2010-2015 correspondence maps it from 9113","June 2015: split of 9113 (candidate successor); SSOC 2010-2015 correspondence, PENDING"
+cleaning,2017,post,SSOC 2015,91140,Industrial establishment cleaner,yes,"main (lowest-rung group, w3_cleaning_tcc_report_2012.pdf: at least $1,000); PENDING: stays only if the SSOC 2010-2015 correspondence maps it from 9113",candidate successor of 9113; ABSENT from the June 2018 table
+cleaning,2017,post,SSOC 2015,91151,"Food and beverage establishment cleaner (eg restaurants, food courts, hawker centres)",yes,"main (lowest-rung group, w3_cleaning_tcc_report_2012.pdf: at least $1,000); PENDING: stays only if the SSOC 2010-2015 correspondence maps it from 9113","candidate successor of 9113, PENDING correspondence"
+cleaning,2017,post,SSOC 2015,91160,"Residential area cleaner (eg HDB estates, condominiums, private apartments, common areas within residential estates)",yes,"sensitivity only (spans conservancy and condominium groups, w3_cleaning_mom_page.pdf); PENDING 9113 correspondence","candidate successor of 9113, PENDING correspondence"
+cleaning,2017,post,SSOC 2015,91170,"Cleaner in open areas (eg bus stops, drains, waterways, overhead bridges, roads, expressways, parks, beaches)",yes,"sensitivity only (conservancy group, at least $1,200 in w3_cleaning_tcc_report_2012.pdf); PENDING 9113 correspondence",candidate successor of 9113; ABSENT from the June 2019 table
+cleaning,2018,post,SSOC 2015,91130,Office cleaner,yes,"main (lowest-rung group, w3_cleaning_tcc_report_2012.pdf: at least $1,000); PENDING: stays only if the SSOC 2010-2015 correspondence maps it from 9113","June 2015: split of 9113 (candidate successor); SSOC 2010-2015 correspondence, PENDING"
+cleaning,2018,post,SSOC 2015,91140,Industrial establishment cleaner,NO,"main (lowest-rung group, w3_cleaning_tcc_report_2012.pdf: at least $1,000); PENDING: stays only if the SSOC 2010-2015 correspondence maps it from 9113",candidate successor of 9113; ABSENT from the June 2018 table
+cleaning,2018,post,SSOC 2015,91151,"Food and beverage establishment cleaner (eg restaurants, food courts, hawker centres)",yes,"main (lowest-rung group, w3_cleaning_tcc_report_2012.pdf: at least $1,000); PENDING: stays only if the SSOC 2010-2015 correspondence maps it from 9113","candidate successor of 9113, PENDING correspondence"
+cleaning,2018,post,SSOC 2015,91160,"Residential area cleaner (eg HDB estates, condominiums, private apartments, common areas within residential estates)",yes,"sensitivity only (spans conservancy and condominium groups, w3_cleaning_mom_page.pdf); PENDING 9113 correspondence","candidate successor of 9113, PENDING correspondence"
+cleaning,2018,post,SSOC 2015,91170,"Cleaner in open areas (eg bus stops, drains, waterways, overhead bridges, roads, expressways, parks, beaches)",yes,"sensitivity only (conservancy group, at least $1,200 in w3_cleaning_tcc_report_2012.pdf); PENDING 9113 correspondence",candidate successor of 9113; ABSENT from the June 2019 table
+cleaning,2019,post,SSOC 2015,91130,Office cleaner,yes,"main (lowest-rung group, w3_cleaning_tcc_report_2012.pdf: at least $1,000); PENDING: stays only if the SSOC 2010-2015 correspondence maps it from 9113","June 2015: split of 9113 (candidate successor); SSOC 2010-2015 correspondence, PENDING"
+cleaning,2019,post,SSOC 2015,91140,Industrial establishment cleaner,yes,"main (lowest-rung group, w3_cleaning_tcc_report_2012.pdf: at least $1,000); PENDING: stays only if the SSOC 2010-2015 correspondence maps it from 9113",candidate successor of 9113; ABSENT from the June 2018 table
+cleaning,2019,post,SSOC 2015,91151,"Food and beverage establishment cleaner (eg restaurants, food courts, hawker centres)",yes,"main (lowest-rung group, w3_cleaning_tcc_report_2012.pdf: at least $1,000); PENDING: stays only if the SSOC 2010-2015 correspondence maps it from 9113","candidate successor of 9113, PENDING correspondence"
+cleaning,2019,post,SSOC 2015,91160,"Residential area cleaner (eg HDB estates, condominiums, private apartments, common areas within residential estates)",yes,"sensitivity only (spans conservancy and condominium groups, w3_cleaning_mom_page.pdf); PENDING 9113 correspondence","candidate successor of 9113, PENDING correspondence"
+cleaning,2019,post,SSOC 2015,91170,"Cleaner in open areas (eg bus stops, drains, waterways, overhead bridges, roads, expressways, parks, beaches)",NO,"sensitivity only (conservancy group, at least $1,200 in w3_cleaning_tcc_report_2012.pdf); PENDING 9113 correspondence",candidate successor of 9113; ABSENT from the June 2019 table
+cleaning,2020,excluded (2020-2021),SSOC 2020,91131,"Office, commercial and industrial establishments indoor cleaner",yes,"main (General/Indoor Cleaners, lowest rung: w3_cleaning_col_order_2021.pdf para 1.1)","June 2020: SSOC 2015-2020 split/merge, PENDING correspondence"
+cleaning,2020,excluded (2020-2021),SSOC 2020,91132,"Office, commercial and industrial establishments outdoor cleaner",yes,"sensitivity only (Outdoor/Healthcare/Restroom Cleaners rung, above the lowest)",June 2020: PENDING correspondence
+cleaning,2020,excluded (2020-2021),SSOC 2020,91133,"Office, commercial and industrial establishments multi-skilled cleaner cum machine operator",yes,"sensitivity only (Multi-skilled Cleaner cum Machine Operator rung, above the lowest)",June 2020: new title; PENDING correspondence
+cleaning,2020,excluded (2020-2021),SSOC 2020,91151,Food and beverage establishments general cleaner,yes,"main (F&B General Cleaners, lowest rung: w3_cleaning_col_order_2021.pdf para 1.1); PENDING 9113 correspondence",June 2020: text changed; PENDING correspondence
+cleaning,2020,excluded (2020-2021),SSOC 2020,91161,Residential and open areas general cleaner,yes,"sensitivity only (conservancy General Cleaners rung, above the lowest)",June 2020: merge of 91160 + 91170; PENDING correspondence
+cleaning,2021,excluded (2020-2021),SSOC 2020,91131,"Office, commercial and industrial establishments indoor cleaner",yes,"main (General/Indoor Cleaners, lowest rung: w3_cleaning_col_order_2021.pdf para 1.1)","June 2020: SSOC 2015-2020 split/merge, PENDING correspondence"
+cleaning,2021,excluded (2020-2021),SSOC 2020,91132,"Office, commercial and industrial establishments outdoor cleaner",yes,"sensitivity only (Outdoor/Healthcare/Restroom Cleaners rung, above the lowest)",June 2020: PENDING correspondence
+cleaning,2021,excluded (2020-2021),SSOC 2020,91133,"Office, commercial and industrial establishments multi-skilled cleaner cum machine operator",yes,"sensitivity only (Multi-skilled Cleaner cum Machine Operator rung, above the lowest)",June 2020: new title; PENDING correspondence
+cleaning,2021,excluded (2020-2021),SSOC 2020,91151,Food and beverage establishments general cleaner,yes,"main (F&B General Cleaners, lowest rung: w3_cleaning_col_order_2021.pdf para 1.1); PENDING 9113 correspondence",June 2020: text changed; PENDING correspondence
+cleaning,2021,excluded (2020-2021),SSOC 2020,91161,Residential and open areas general cleaner,yes,"sensitivity only (conservancy General Cleaners rung, above the lowest)",June 2020: merge of 91160 + 91170; PENDING correspondence
+cleaning,2022,post,SSOC 2020,91131,"Office, commercial and industrial establishments indoor cleaner",yes,"main (General/Indoor Cleaners, lowest rung: w3_cleaning_col_order_2021.pdf para 1.1)","June 2020: SSOC 2015-2020 split/merge, PENDING correspondence"
+cleaning,2022,post,SSOC 2020,91132,"Office, commercial and industrial establishments outdoor cleaner",yes,"sensitivity only (Outdoor/Healthcare/Restroom Cleaners rung, above the lowest)",June 2020: PENDING correspondence
+cleaning,2022,post,SSOC 2020,91133,"Office, commercial and industrial establishments multi-skilled cleaner cum machine operator",yes,"sensitivity only (Multi-skilled Cleaner cum Machine Operator rung, above the lowest)",June 2020: new title; PENDING correspondence
+cleaning,2022,post,SSOC 2020,91151,Food and beverage establishments general cleaner,yes,"main (F&B General Cleaners, lowest rung: w3_cleaning_col_order_2021.pdf para 1.1); PENDING 9113 correspondence",June 2020: text changed; PENDING correspondence
+cleaning,2022,post,SSOC 2020,91161,Residential and open areas general cleaner,yes,"sensitivity only (conservancy General Cleaners rung, above the lowest)",June 2020: merge of 91160 + 91170; PENDING correspondence
+landscape,2009,pre,SSOC 2005 (codes; header unlabelled),93111,Gardener,yes,main,
+landscape,2010,pre,SSOC 2010 (codes; header unlabelled),92141,Garden labourer,yes,main,"text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING"
+landscape,2011,pre,SSOC 2010,9214,Park and garden maintenance worker,yes,main,"2011: 4-digit aggregate replaces 5-digit 92141 (different text); link via the SSOC 2010 hierarchy, PENDING. 2012-2019: same text."
+landscape,2012,pre,SSOC 2010,9214,Park and garden maintenance worker,yes,main,"2011: 4-digit aggregate replaces 5-digit 92141 (different text); link via the SSOC 2010 hierarchy, PENDING. 2012-2019: same text."
+landscape,2013,pre,SSOC 2010,9214,Park and garden maintenance worker,yes,main,"2011: 4-digit aggregate replaces 5-digit 92141 (different text); link via the SSOC 2010 hierarchy, PENDING. 2012-2019: same text."
+landscape,2014,pre,SSOC 2010,9214,Park and garden maintenance worker,yes,main,"2011: 4-digit aggregate replaces 5-digit 92141 (different text); link via the SSOC 2010 hierarchy, PENDING. 2012-2019: same text."
+landscape,2015,transition,SSOC 2015,9214,Park and garden maintenance worker,yes,main,"2011: 4-digit aggregate replaces 5-digit 92141 (different text); link via the SSOC 2010 hierarchy, PENDING. 2012-2019: same text."
+landscape,2016,transition,SSOC 2015,9214,Park and garden maintenance worker,yes,main,"2011: 4-digit aggregate replaces 5-digit 92141 (different text); link via the SSOC 2010 hierarchy, PENDING. 2012-2019: same text."
+landscape,2017,post,SSOC 2015,9214,Park and garden maintenance worker,yes,main,"2011: 4-digit aggregate replaces 5-digit 92141 (different text); link via the SSOC 2010 hierarchy, PENDING. 2012-2019: same text."
+landscape,2018,post,SSOC 2015,9214,Park and garden maintenance worker,yes,main,"2011: 4-digit aggregate replaces 5-digit 92141 (different text); link via the SSOC 2010 hierarchy, PENDING. 2012-2019: same text."
+landscape,2019,post,SSOC 2015,9214,Park and garden maintenance worker,yes,main,"2011: 4-digit aggregate replaces 5-digit 92141 (different text); link via the SSOC 2010 hierarchy, PENDING. 2012-2019: same text."
+landscape,2020,excluded (2020-2021),SSOC 2020,9214,"Park, garden and landscape maintenance worker",yes,main,"same code, text changed at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
+landscape,2021,excluded (2020-2021),SSOC 2020,9214,"Park, garden and landscape maintenance worker",yes,main,"same code, text changed at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
+landscape,2022,post,SSOC 2020,9214,"Park, garden and landscape maintenance worker",yes,main,"same code, text changed at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
+landscape,2023,"after window (shown, not scored)",SSOC 2020,92142,Landscape worker,yes,main,after window
+landscape,2024,"after window (shown, not scored)",SSOC 2020,92142,Landscape worker,yes,main,after window
+landscape,2025,"after window (shown, not scored)",SSOC 2024,92142,Landscape worker,yes,main,after window
+security,2009,pre,SSOC 2005 (codes; header unlabelled),51440,Private security guard,yes,main,
+security,2010,pre,SSOC 2010 (codes; header unlabelled),5414,Security guard,yes,main,"2010: text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING. 2011-2019: same text."
+security,2011,pre,SSOC 2010,5414,Security guard,yes,main,"2010: text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING. 2011-2019: same text."
+security,2012,pre,SSOC 2010,5414,Security guard,yes,main,"2010: text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING. 2011-2019: same text."
+security,2013,pre,SSOC 2010,5414,Security guard,yes,main,"2010: text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING. 2011-2019: same text."
+security,2014,pre,SSOC 2010,5414,Security guard,yes,main,"2010: text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING. 2011-2019: same text."
+security,2015,transition,SSOC 2015,5414,Security guard,yes,main,"2010: text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING. 2011-2019: same text."
+security,2016,transition,SSOC 2015,5414,Security guard,yes,main,"2010: text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING. 2011-2019: same text."
+security,2017,post,SSOC 2015,5414,Security guard,yes,main,"2010: text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING. 2011-2019: same text."
+security,2018,post,SSOC 2015,5414,Security guard,yes,main,"2010: text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING. 2011-2019: same text."
+security,2019,post,SSOC 2015,5414,Security guard,yes,main,"2010: text differs from 2009 title; link via SSOC 2005-2010 correspondence, PENDING. 2011-2019: same text."
+security,2020,excluded (2020-2021),SSOC 2020,54143,Senior private security officer,yes,sensitivity only (Senior SO rank and above: higher grade),"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
+security,2020,excluded (2020-2021),SSOC 2020,54144,Private security officer,yes,main (Security Officer rank; w3_security_stc_2017.pdf Annex C),"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
+security,2021,excluded (2020-2021),SSOC 2020,54143,Senior private security officer,yes,sensitivity only (Senior SO rank and above: higher grade),"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
+security,2021,excluded (2020-2021),SSOC 2020,54144,Private security officer,yes,main (Security Officer rank; w3_security_stc_2017.pdf Annex C),"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
+security,2022,post,SSOC 2020,54143,Senior private security officer,yes,sensitivity only (Senior SO rank and above: higher grade),"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
+security,2022,post,SSOC 2020,54144,Private security officer,yes,main (Security Officer rank; w3_security_stc_2017.pdf Annex C),"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
+security,2023,"after window (shown, not scored)",SSOC 2020,54143,Senior private security officer,yes,sensitivity only (Senior SO rank and above: higher grade),"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
+security,2023,"after window (shown, not scored)",SSOC 2020,54144,Private security officer,yes,main (Security Officer rank; w3_security_stc_2017.pdf Annex C),"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
+security,2024,"after window (shown, not scored)",SSOC 2020,54143,Senior private security officer,yes,sensitivity only (Senior SO rank and above: higher grade),"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
+security,2024,"after window (shown, not scored)",SSOC 2020,54144,Private security officer,yes,main (Security Officer rank; w3_security_stc_2017.pdf Annex C),"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
+security,2025,"after window (shown, not scored)",SSOC 2024,54143,Senior private security officer,yes,sensitivity only (Senior SO rank and above: higher grade),"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
+security,2025,"after window (shown, not scored)",SSOC 2024,54144,Private security officer,yes,main (Security Officer rank; w3_security_stc_2017.pdf Annex C),"split of 5414 at June 2020; link via SSOC 2015-2020 correspondence, PENDING"
+hotel cleaners,,excluded,,9112,"9112 Cleaner and helper in hotels and related establishments (2011-2022); 91293/91122 Hotel cleaner (2009-2010, 2023-)",,excluded,"hotel housekeeping is mostly in-house, unbound until Sep 2022; title also mixes helpers"
+dishwashers and table-top cleaners,,excluded,,91224,91224 Dish washer (2009); 94104 Dish washer/Plate collector (2010-2014); 91152 Dish washer/Plate collector/Table-top cleaner (2015-2019); 91153 Dishwasher and 91152 Table-top cleaner (2020-),,excluded,ladder ambiguous: named in the cleaning ladder F&B group (w3_cleaning_col_order_2021.pdf) and in food services from 2023; title moves between cleaner and food groups; excluded from both sides
+gardener/horticultural/nursery worker,,excluded,,6113,6113 (2015-2019); 61133 (2020-),,excluded,"first published June 2015, absent from the pre-period; nursery and farm work outside LCR maintenance"
+building structure cleaner,,excluded,,71332,"71332 (2010, 2012-2013)",,excluded,"construction trade (facade cleaning), not the cleaning ladder"
+food service counter attendant,,excluded,,52492,52492 (2010-),,excluded,absent from June 2009: dropped by the missing-year rule
+tea server/steward,,excluded,,94104,94104 (2015-),,excluded,first published June 2015
+car drivers,,excluded,,none,none published,,excluded,no car-driver title in any OWS table; the comparison drivers are van and lorry drivers
+"waste truck, trailer-truck drivers; lorry attendant",,excluded,,83326/83324;,83326/83324; 83322; 93335,,excluded,waste management ladder (2023) and cleaning conservancy roles; trailer-truck and attendants not named in THESIS
+"aircraft, ship, motor-vehicle, window cleaners; laundry workers",,excluded,,various,various,,excluded,not general cleaning covered by the cleaning ladder

@@ -6,6 +6,13 @@ opens no wage file. The lineages below were fixed from that listing before
 any wage value was seen (THESIS section 4); this script checks each listed
 code and title against the listing and marks any June where a title is
 absent from the all-industries table.
+
+Column `series` (checker review of c16f695, fixed before any value):
+- a grade split keeps only the successor(s) on the sector's lowest rung in
+  the MAIN series; all successors averaged is the SENSITIVITY;
+- at the June 2015 workplace split, a cleaning successor stays only if the
+  SSOC 2010-2015 correspondence maps it from 9113 (PENDING until the tables
+  are in raw/).
 """
 import csv
 import re
@@ -76,6 +83,29 @@ L={
 'C lorry driver':[((2009,),'83260','Lorry driver',''),(range(2010,2026),'83321','Lorry driver','same text: linked')],
 'C van driver':[((2009,),'83242','Van driver',''),(range(2010,2026),'83223','Van driver','same text: linked')],
 }
+LOWEST_RUNG = "lowest rung: w3_cleaning_col_order_2021.pdf para 1.1"
+SERIES = {
+    ("security", "54144"): "main (Security Officer rank; w3_security_stc_2017.pdf Annex C)",
+    ("security", "54143"): "sensitivity only (Senior SO rank and above: higher grade)",
+    ("cleaning", "91130"): "main (lowest-rung group, w3_cleaning_tcc_report_2012.pdf: at least $1,000); PENDING: stays only if the SSOC 2010-2015 correspondence maps it from 9113",
+    ("cleaning", "91140"): "main (lowest-rung group, w3_cleaning_tcc_report_2012.pdf: at least $1,000); PENDING: stays only if the SSOC 2010-2015 correspondence maps it from 9113",
+    ("cleaning", "91160"): "sensitivity only (spans conservancy and condominium groups, w3_cleaning_mom_page.pdf); PENDING 9113 correspondence",
+    ("cleaning", "91170"): "sensitivity only (conservancy group, at least $1,200 in w3_cleaning_tcc_report_2012.pdf); PENDING 9113 correspondence",
+    ("cleaning", "91131"): "main (General/Indoor Cleaners, " + LOWEST_RUNG + ")",
+    ("cleaning", "91132"): "sensitivity only (Outdoor/Healthcare/Restroom Cleaners rung, above the lowest)",
+    ("cleaning", "91133"): "sensitivity only (Multi-skilled Cleaner cum Machine Operator rung, above the lowest)",
+    ("cleaning", "91161"): "sensitivity only (conservancy General Cleaners rung, above the lowest)",
+}
+
+
+def series(group, year, code):
+    if group == "cleaning" and code == "91151":
+        if year <= 2019:
+            return "main (lowest-rung group, w3_cleaning_tcc_report_2012.pdf: at least $1,000); PENDING: stays only if the SSOC 2010-2015 correspondence maps it from 9113"
+        return "main (F&B General Cleaners, " + LOWEST_RUNG + "); PENDING 9113 correspondence"
+    return SERIES.get((group, code), "main")
+
+
 rows=[];missing=[]
 for g,ls in L.items():
     for yrs,code,title,note in ls:
@@ -86,10 +116,10 @@ for g,ls in L.items():
                 ok=any(k.startswith(code+' '+title[:25]) for k in allt[y])
             present='yes' if ok else 'NO'
             if not ok: missing.append((g,y,code,title))
-            rows.append([g,y,role(g if not g.startswith('C ') else 'C',y),ver(y),code,title,present,note])
+            rows.append([g,y,role(g if not g.startswith('C ') else 'C',y),ver(y),code,title,present,series(g,y,code),note])
 with open(HERE / 'office' / 'OCCUPATION_MAP.csv', 'w', newline='', encoding='utf-8') as f:
     w=csv.writer(f,lineterminator='\n')
-    w.writerow(['group','june','june_role','classification','ssoc_code','title_as_published','in_all_industries_table','link_and_break_note'])
+    w.writerow(['group','june','june_role','classification','ssoc_code','title_as_published','in_all_industries_table','series','link_and_break_note'])
     w.writerows(sorted(rows,key=lambda r:(r[0],r[1],r[4])))
     X=[
      ('excluded','hotel cleaners','9112 Cleaner and helper in hotels and related establishments (2011-2022); 91293/91122 Hotel cleaner (2009-2010, 2023-)','hotel housekeeping is mostly in-house, unbound until Sep 2022; title also mixes helpers'),
@@ -103,6 +133,6 @@ with open(HERE / 'office' / 'OCCUPATION_MAP.csv', 'w', newline='', encoding='utf
      ('excluded','aircraft, ship, motor-vehicle, window cleaners; laundry workers','various','not general cleaning covered by the cleaning ladder'),
     ]
     for a,b,c,d in X:
-        w.writerow([b,'',a,'',c.split(' ')[0],c,'',d])
+        w.writerow([b,'',a,'',c.split(' ')[0],c,'','excluded',d])
 print(f'wrote office/OCCUPATION_MAP.csv: {len(rows)} rows')
 print('absent from the all-industries table:', [(g, y, c) for g, y, c, _ in missing])

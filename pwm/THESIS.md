@@ -38,6 +38,12 @@ Revision history before the seal:
   - the rung and LQS tables on a 1 June rule;
   - W2c does not exist;
   - CPI tables rebased to 2024.
+- `c16f695` and then this revision, after the checker review of `c16f695`:
+  - grade splits: the main series keeps only lowest-rung successors, with
+    all successors as the sensitivity (section 4, T2, T5);
+  - the June 2015 workplace split rule;
+  - Number Covered weights as a sensitivity;
+  - the averaging step inside cleaning's pre-period added to T1's lean.
 
 Markers: `PENDING` = settled before the seal from documents or coverage
 checks, never from a wage or employment value. "Researcher's proposal" = the
@@ -223,10 +229,15 @@ Reasons, stated rather than assumed:
   - **Cleaning:** the office and industrial-establishment cleaner line:
     - SSOC 2005 91291 and 91292 (2009);
     - SSOC 2010 91131 and 91132 (2010), then 9113 (2011-2014);
-    - its SSOC 2015 and 2020 successors (candidates listed in the map).
+    - its SSOC 2015 and 2020 successors, under the two split rules below.
+      Main series, `PENDING` the correspondence:
+      - 91130 office cleaner, 91140 industrial establishment cleaner and
+        91151 F&B establishment cleaner (2015-2019);
+      - 91131 indoor cleaner and 91151 F&B general cleaner (2020-2022).
   - **Security:** private security guard (2009), security guard 5414
-    (2010-2019), then private security officer 54144 and senior private
-    security officer 54143 (2020-).
+    (2010-2019), then, in the main series, private security officer 54144
+    (2020-). Senior private security officer 54143 enters the sensitivity
+    only.
   - **Landscape:** gardener (2009), garden labourer (2010), park and garden
     maintenance worker 9214 (2011-2022).
   - **Comparison set C:** titles first covered on or after 1 September 2022:
@@ -249,9 +260,56 @@ Reasons, stated rather than assumed:
       that need them are `PENDING`.
     - A title (or linked line) missing in any scored June of a group's
       window is dropped from that group.
-    - **When one title splits into several,** all successors are kept and
-      averaged, as for any group. The entry-grade successor alone (security
-      54144) is a sensitivity.
+    - **Grade splits, rule fixed now.**
+      - The pre-period lines (5414 security guard; 9113 cleaner in offices
+        and other establishments) are whole occupations, whose 25th
+        percentile sits at the entry grade. Averaging in a successor that
+        the ladder places on a higher rung would lift the group
+        mechanically after the split, and push T2 and T5 toward SURVIVE.
+      - So when a line splits by grade, the **main series keeps only the
+        successor(s) that match the sector's lowest rung**, as the ladder
+        documents in `raw/` name it. **All successors averaged is the
+        sensitivity.**
+      - Applied (`office/OCCUPATION_MAP.csv`, column `series`):
+        - **Security, June 2020.** Main: 54144 private security officer, the
+          Security Officer (SO) rank. Sensitivity only: 54143 senior private
+          security officer, the Senior SO rank and above. The ranks are from
+          `w3_security_stc_2017.pdf` Annex C and
+          `w3_security_spf_licensing_conditions_2018.pdf` section 2.
+        - **Cleaning, June 2020.**
+          - Main: 91131 indoor cleaner, "General / Indoor Cleaners", and
+            91151 F&B general cleaner, "General Cleaners". Both are on the
+            lowest rung, >= S$1,274 (`w3_cleaning_col_order_2021.pdf`, para
+            1.1).
+          - Sensitivity only, each on a higher rung in the same schedule:
+            91132 outdoor cleaner ("Outdoor Cleaners / Healthcare Cleaners /
+            Restroom Cleaners", >= S$1,486); 91133 multi-skilled cleaner cum
+            machine operator (>= S$1,698); 91161 residential and open areas
+            general cleaner (conservancy group, lowest rung >= S$1,486).
+        - **Cleaning, June 2015** (workplace split; grades by the same rule).
+          - Main candidates: 91130 office cleaner and 91140 industrial
+            establishment cleaner (office and commercial group), and 91151
+            F&B establishment cleaner (F&B group). Both groups start on the
+            lowest rung, "at least $1,000"
+            (`w3_cleaning_tcc_report_2012.pdf`).
+          - Sensitivity only: 91170 cleaner in open areas (public cleansing,
+            conservancy group, "at least $1,200", same file). Also 91160
+            residential area cleaner: its title spans HDB estates
+            (conservancy) and condominiums (office and commercial group,
+            `w3_cleaning_mom_page.pdf`), so it does not match the lowest
+            rung cleanly.
+        - **Landscape:** no grade split inside the scored window (9214
+          throughout 2011-2022).
+    - **Workplace splits, rule fixed now.** At June 2015, only successors
+      that the SSOC 2010-2015 correspondence maps from 9113 stay in the
+      cleaning group. Any that it does not are excluded and listed in the
+      map before any value is opened. Until the tables arrive, each of
+      91130, 91140, 91151, 91160 and 91170 is marked `PENDING` for this
+      rule.
+    - **Weighting.** Equal weights across a group's titles stay the main
+      series. Sensitivity, computed after the seal and reported only: titles
+      weighted by the OWS "Number Covered" column of each June, read then and
+      not before.
     - No title is added or dropped after a wage value has been seen.
 - **Group value in a year:** the equal-weight mean, across the group's titles,
   of log 25th-percentile gross wage. **Gap:** a covered group's value minus
@@ -398,6 +456,13 @@ before the ladders were announced.
   - A relabelled or regrouped line can step up or down for reasons of
     classification alone. A step inside the window T1 reads shows up as
     drift, so each group's T1 carries the stated lean.
+  - **Cleaning also carries a mechanical step from averaging.** Its 2009-2010
+    value is the equal-weight mean of two titles (office cleaner, industrial
+    establishment cleaner). Its 2011-2014 value is one aggregate (9113),
+    which weights them by their actual numbers. The switch can step the
+    series up or down inside the pre-period with no change in anyone's pay.
+    The Number Covered weighting (section 4) is the sensitivity that shows
+    its size.
   - The sensitivity on the Junes after the last break (section 5) checks it,
     reported, not scored.
 - **Confidence at seal: set by Jacob (PENDING).** Researcher's proposal:
@@ -427,9 +492,18 @@ before the ladders were announced.
   year-to-year noise in an occupation percentile could produce, and counts
   as no visible lift. Ten log points is the smallest gain that would amount
   to the ladder visibly lifting the bottom.
-- **Sensitivities, reported, not scored:** basic instead of gross; median
-  instead of 25th percentile; dropping 2022; leaving out each comparison
-  title in turn; the first transition June counted as post-period.
+- **Sensitivities, reported, not scored:**
+  - basic instead of gross;
+  - median instead of 25th percentile;
+  - dropping 2022;
+  - leaving out each comparison title in turn;
+  - the first transition June counted as post-period;
+  - all successors of a grade split averaged (security 54143 and 54144;
+    cleaning 91131, 91132, 91133, 91151, 91161, and at June 2015 91160 and
+    91170 as well), instead of the lowest-rung successors of the main
+    series;
+  - titles weighted by OWS "Number Covered" instead of equal weights;
+  - 2007-2008 added (section 5).
 - **Leans toward understating, stated now.**
   - In-house workers in all three groups (cleaners, guards and landscape
     workers employed directly rather than through a contractor) were
@@ -646,6 +720,14 @@ paid at least the ladder's first rung.
 - **Rule for the rung, fixed now:** the rung is the lowest amount binding on
   every covered employer on 1 June. For cleaning in June 2018 that is the
   existing-contract level.
+- **T5 reads the same series as T2.**
+  - Main: only the successors on the sector's lowest rung, after a grade
+    split (section 4): security 54144 against the Security Officer rung;
+    cleaning 91131 and 91151 in 2022 (91130, 91140 and 91151 in 2016-2019)
+    against the lowest cleaning rung.
+  - Sensitivity, reported, not scored: all successors averaged, against the
+    same lowest rung. A higher-grade title in the average would clear the
+    entry rung by construction, which is why it is not the main series.
 - **A separate bet from T2** (checker review of `cb9fe70`, item 3). T2 is
   relative: covered against comparison jobs. T5 is a level: covered jobs
   against their own rung. Either can hold without the other, so T5 stays
