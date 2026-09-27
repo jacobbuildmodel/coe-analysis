@@ -8,11 +8,13 @@ its own. After the seal it is never edited; changes go in
 Author: `pwm` (Claude Code session). Repository: coe-analysis, subdirectory
 `pwm/`, branch `pwm-wip`.
 
-Evidentiary basis of this draft: 235 files received on 27 September 2026
+Evidentiary basis of this draft: the files received on 27 September 2026
 (`raw/RETRIEVED.txt`), checked for coverage only by `00_coverage.py`.
 - Occupation titles, SSOC codes and column headers of the OWS tables were
   listed by `01_titles.py`, which reads no wage or head-count column.
 - Policy documents (W3, W3b) were read for dates and rung amounts.
+- The SSOC correspondence tables and the SSOC 2010 hierarchy (`w1d_*`)
+  were read for the occupation links.
 - No wage value from W1 and no employment value from W2 has been opened.
 - Values that were seen (single-date counts, policy settings, survey
   metadata, CPI figures, two qualitative statements in policy reports) are
@@ -44,10 +46,24 @@ Revision history before the seal:
   - the June 2015 workplace split rule;
   - Number Covered weights as a sensitivity;
   - the averaging step inside cleaning's pre-period added to T1's lean.
+- This revision, after the checker review of `41921ee`/`77dd3f3` (last
+  pre-seal step):
+  - the map's `series` column split into `series` (main, sensitivity or
+    excluded) and `series_note`;
+  - every occupation link settled from the SSOC tables in `raw/`; the final
+    groups in section 4, with 91190 added to cleaning's main series and
+    91140 dropped under the missing-year rule;
+  - the T2 lean from 91160, a 9113 successor outside the main series;
+  - every rung settled from the primaries (T5);
+  - the LCR captures of 2019-2021, and both readings for the other Junes;
+  - rules fixed now for what the LQS captures do not settle;
+  - no `PENDING` left (section 10).
 
-Markers: `PENDING` = settled before the seal from documents or coverage
-checks, never from a wage or employment value. "Researcher's proposal" = the
-researcher's confidence, kept for the record; Jacob sets the final one.
+Markers: no `PENDING` item remains. Every link, rung and date is settled
+from documents in `raw/`, never from a wage or employment value, or is
+covered by a rule fixed now (section 10). `[JACOB]` = the confidence Jacob
+sets at the seal. "Researcher's proposal" = the researcher's confidence, kept
+for the record.
 
 ---
 
@@ -175,6 +191,17 @@ Reasons, stated rather than assumed:
     **Rule, fixed now:** the threshold in force on 1 June applies to that
     June survey, as for T5's rung.
 
+    **Rule, fixed now, for what the captures do not settle.** The LQS enters
+    no computation; it is a stated lean only. Three things are not settled,
+    and no further search is made:
+    - the Junes to 2016, when the threshold may not yet have existed;
+    - June 2018 and June 2019, when it was S$1,100 or S$1,200;
+    - whether it counted basic or gross pay (the FAQs say only "monthly
+      salary").
+
+    For each, both readings are stated, and every lean is stated in the
+    direction that holds under both (T1, T2, T3, T5).
+
     In the covered jobs the ladder's entry rung sat at or above it, so the
     LQS added little there; its push falls on the comparison side. So the
     comparison is between a ladder and a lower, looser floor, not between a
@@ -229,15 +256,16 @@ Reasons, stated rather than assumed:
   - **Cleaning:** the office and industrial-establishment cleaner line:
     - SSOC 2005 91291 and 91292 (2009);
     - SSOC 2010 91131 and 91132 (2010), then 9113 (2011-2014);
-    - its SSOC 2015 and 2020 successors, under the two split rules below.
-      Main series, `PENDING` the correspondence:
-      - 91130 office cleaner, 91140 industrial establishment cleaner and
-        91151 F&B establishment cleaner (2015-2019);
+    - its SSOC 2015 and 2020 successors, under the split rules below.
+      Main series:
+      - 91130 office cleaner, 91151 F&B establishment cleaner and 91190
+        cleaner in other establishments (shopping malls, schools, hospitals)
+        (2015-2019);
       - 91131 indoor cleaner and 91151 F&B general cleaner (2020-2022).
   - **Security:** private security guard (2009), security guard 5414
     (2010-2019), then, in the main series, private security officer 54144
-    (2020-). Senior private security officer 54143 enters the sensitivity
-    only.
+    (2020-). Senior private security officer 54143, security supervisor
+    54142 and senior security supervisor 54141 enter the sensitivity only.
   - **Landscape:** gardener (2009), garden labourer (2010), park and garden
     maintenance worker 9214 (2011-2022).
   - **Comparison set C:** titles first covered on or after 1 September 2022:
@@ -256,10 +284,22 @@ Reasons, stated rather than assumed:
     - **Linking rule, fixed now:** the same title text (ignoring case and
       spacing) is linked. A split or merge is linked only through the
       official SSOC correspondence table, or, within one SSOC version, the
-      classification's own hierarchy. These are not yet in `raw/`, so links
-      that need them are `PENDING`.
+      classification's own hierarchy. The tables are in `raw/`
+      (`w1d_ssoc2010_correspondence.xls`, `w1d_ssoc2010_report.pdf`,
+      `w1d_ssoc2015_correspondence.xls`,
+      `w1d_ssoc2015v2018_correspondence.xls`,
+      `w1d_ssoc2020_correspondence.xlsx`). Every link in the map is settled
+      from them; the composition changes they show are listed at T1.
+    - **Rule for anything the tables cannot settle, fixed now:** it is
+      excluded from the main series and listed. Nothing fell under it.
     - A title (or linked line) missing in any scored June of a group's
-      window is dropped from that group.
+      window is dropped from that group. A line that continues into new
+      codes through the correspondence is not missing. **Applied:**
+      - 91140 industrial establishment cleaner is absent from June 2018.
+        The rule as written drops a title from its group, so it leaves the
+        main series and the sensitivity alike (`series` = excluded).
+      - 91170 cleaner in open areas is absent from June 2019, and is
+        excluded by the workplace-split rule in any case.
     - **Grade splits, rule fixed now.**
       - The pre-period lines (5414 security guard; 9113 cleaner in offices
         and other establishments) are whole occupations, whose 25th
@@ -273,7 +313,10 @@ Reasons, stated rather than assumed:
       - Applied (`office/OCCUPATION_MAP.csv`, column `series`):
         - **Security, June 2020.** Main: 54144 private security officer, the
           Security Officer (SO) rank. Sensitivity only: 54143 senior private
-          security officer, the Senior SO rank and above. The ranks are from
+          security officer, the Senior SO rank; 54142 security supervisor
+          and 54141 senior security supervisor, the supervisor ranks, which
+          come from 2015's 54141 and so from the same 5414 line
+          (`w1d_ssoc2020_correspondence.xlsx`). The ranks are from
           `w3_security_stc_2017.pdf` Annex C and
           `w3_security_spf_licensing_conditions_2018.pdf` section 2.
         - **Cleaning, June 2020.**
@@ -287,25 +330,35 @@ Reasons, stated rather than assumed:
             machine operator (>= S$1,698); 91161 residential and open areas
             general cleaner (conservancy group, lowest rung >= S$1,486).
         - **Cleaning, June 2015** (workplace split; grades by the same rule).
-          - Main candidates: 91130 office cleaner and 91140 industrial
-            establishment cleaner (office and commercial group), and 91151
-            F&B establishment cleaner (F&B group). Both groups start on the
+          - Main: 91130 office cleaner and 91190 cleaner in other
+            establishments (office and commercial group), and 91151 F&B
+            establishment cleaner (F&B group). Both groups start on the
             lowest rung, "at least $1,000"
-            (`w3_cleaning_tcc_report_2012.pdf`).
-          - Sensitivity only: 91170 cleaner in open areas (public cleansing,
-            conservancy group, "at least $1,200", same file). Also 91160
-            residential area cleaner: its title spans HDB estates
-            (conservancy) and condominiums (office and commercial group,
-            `w3_cleaning_mom_page.pdf`), so it does not match the lowest
-            rung cleanly.
+            (`w3_cleaning_tcc_report_2012.pdf`). The ladder's lowest
+            office-and-commercial rung names "Offices, Schools, Hospitals and
+            Polyclinics" (`w3_cleaning_tcc_2016.pdf`, Annex C), which is
+            91190's scope.
+          - 91140 industrial establishment cleaner would be main, but is
+            dropped by the missing-year rule (above).
+          - Sensitivity only: 91160 residential area cleaner. Its title spans
+            HDB estates (conservancy group, "at least $1,200", same 2012
+            file) and condominiums (office and commercial group,
+            `w3_cleaning_mom_page.pdf`), so it does not match the lowest rung
+            cleanly.
+          - Excluded: 91170 cleaner in open areas (workplace-split rule,
+            below).
         - **Landscape:** no grade split inside the scored window (9214
           throughout 2011-2022).
     - **Workplace splits, rule fixed now.** At June 2015, only successors
       that the SSOC 2010-2015 correspondence maps from 9113 stay in the
       cleaning group. Any that it does not are excluded and listed in the
-      map before any value is opened. Until the tables arrive, each of
-      91130, 91140, 91151, 91160 and 91170 is marked `PENDING` for this
-      rule.
+      map before any value is opened. **Applied**
+      (`w1d_ssoc2015_correspondence.xls`):
+      - 9113's members map to 91130 (from 91131), 91140 (from 91132), and
+        91151, 91160 and 91190 (each from part of 91139). All five stay.
+      - 91170 comes only from 96130 sweeper and related worker, so it is
+        excluded.
+      - 91190 also takes part of 96130. It stays, as a 9113 successor.
     - **Weighting.** Equal weights across a group's titles stay the main
       series. Sensitivity, computed after the seal and reported only: titles
       weighted by the OWS "Number Covered" column of each June, read then and
@@ -326,9 +379,15 @@ Reasons, stated rather than assumed:
   - Covered: cleaning activities, private security activities, landscape care
     and maintenance.
   - Comparison: retail trade plus food and beverage service activities.
-  - SSIC codes are read from the file before the seal.
+  - **Rule, fixed now:** the analysis script picks these lines by their
+    `DataSeries` label, and prints the labels it used beside the result.
+    The labels are not read before the seal (`00_coverage.py` prints only
+    the column names).
   - Where a covered activity is not a separate line, the smallest industry
     that contains it is used, and that is stated.
+  - W2a runs 2010-2024 (coverage, `raw/RETRIEVED.txt`), so T4's pre-period
+    years are 2010-2012 for cleaning and 2010-2014 for security and
+    landscape.
 
 ## 5. Windows and years excluded, fixed now
 
@@ -453,19 +512,35 @@ before the ladders were announced.
     - landscape's garden labourer becomes 9214, "Park and garden maintenance
       worker";
     - the comparison cashier splits back out of "Cashiers and ticket clerk".
+  - **What the SSOC tables show about composition** (`w1d_*`; column
+    `link_and_break_note` of the map). Every link is settled, but some lines
+    change their members:
+    - June 2010: waiter loses captain waiters (51311) and kitchen assistant
+      loses fast food preparers (94103), so both narrow. General office
+      clerk becomes the aggregate 4110, which adds filing, personnel and
+      other administrative clerks, broader from 2010. Cashier is the
+      aggregate 5230 (with cage/count supervisors, office cashiers and
+      ticket clerks) for June 2010 only.
+    - June 2011: cleaning's 9113 adds 91139, cleaners in other
+      establishments not elsewhere classified, to the two 2010 titles.
+      Landscape's 9214 adds grass cutters, tree cutters and other park and
+      garden maintenance workers to garden labourers.
+    - Security's line keeps the same members from 2009 to 2019 (51440 to
+      54140, which is 5414, which is 54141 plus 54142 in SSOC 2015).
   - A relabelled or regrouped line can step up or down for reasons of
     classification alone. A step inside the window T1 reads shows up as
     drift, so each group's T1 carries the stated lean.
   - **Cleaning also carries a mechanical step from averaging.** Its 2009-2010
     value is the equal-weight mean of two titles (office cleaner, industrial
     establishment cleaner). Its 2011-2014 value is one aggregate (9113),
-    which weights them by their actual numbers. The switch can step the
-    series up or down inside the pre-period with no change in anyone's pay.
+    which weights them by their actual numbers and adds 91139. The switch
+    can step the series up or down inside the pre-period with no change in
+    anyone's pay.
     The Number Covered weighting (section 4) is the sensitivity that shows
     its size.
   - The sensitivity on the Junes after the last break (section 5) checks it,
     reported, not scored.
-- **Confidence at seal: set by Jacob (PENDING).** Researcher's proposal:
+- **Confidence at seal: `[JACOB]`.** Researcher's proposal:
   40%. Selection on lagging pay makes a drift
   likely, and with three groups and short noisy series one of them will
   probably cross a 1.0-a-year line even if the underlying trends were
@@ -498,10 +573,11 @@ before the ladders were announced.
   - dropping 2022;
   - leaving out each comparison title in turn;
   - the first transition June counted as post-period;
-  - all successors of a grade split averaged (security 54143 and 54144;
-    cleaning 91131, 91132, 91133, 91151, 91161, and at June 2015 91160 and
-    91170 as well), instead of the lowest-rung successors of the main
-    series;
+  - all successors of a grade split averaged, instead of the lowest-rung
+    successors of the main series: security 54141, 54142, 54143 and 54144
+    (2022); cleaning 91130, 91151, 91160 and 91190 (2016-2019), and 91131,
+    91132, 91133, 91151 and 91161 (2022). 91140 and 91170 are not in it:
+    the missing-year and workplace-split rules drop them from the group;
   - titles weighted by OWS "Number Covered" instead of equal weights;
   - 2007-2008 added (section 5).
 - **Leans toward understating, stated now.**
@@ -510,26 +586,52 @@ before the ladders were announced.
     unbound until 1 September 2022. They sit inside the occupation titles
     and dilute each group's estimate. Landscape workers in firms not on the
     Landscape Company Register were also unbound.
+  - **Who the landscape ladder bound (the LCR).**
+    - The captures of 2019-2021 (`w3_landscape_lcr_2019` to
+      `w3_landscape_lcr_2021`, `w3_landscape_lcr_faq_2019` to
+      `w3_landscape_lcr_faq_2021`) settle those years. Being paid according
+      to the PWM was a condition of LCR listing. Listing was needed for
+      government contracts (two consecutive years of LCR status, from 1
+      January 2019) and NParks grants, and private buyers were "starting to
+      state preferences". No capture ties listing to hiring foreign workers.
+      So in June 2019, and in the excluded 2020 and 2021, the ladder bound
+      listed firms only.
+    - For June 2016-2018 no page was archived, and June 2022 has no capture
+      in `raw/`. Both readings are stated: (a) as in 2019-2021, listed firms
+      only; (b) listing also gated hiring foreign workers, so nearly every
+      landscape firm holding work passes was bound.
+    - Under either reading, in-house landscape workers were unbound until 1
+      September 2022, so the dilution lean holds either way. Reading (a)
+      dilutes more.
+  - **Cleaning's workplace split.** The SSOC 2010-2015 correspondence keeps
+    91160 residential area cleaner, whose scope includes HDB estates
+    (conservancy), as a 9113 successor, and the main series excludes it
+    after 2015. Conservancy cleaners sat on a higher rung than the lowest
+    (at least $1,200 against $1,000, `w3_cleaning_tcc_report_2012.pdf`).
+    Leaving them out lowers the post-period value relative to the
+    pre-period line, whose 9113 held them: toward FAIL.
   - Comparison jobs were lifted by the same tight market, levies and wage
     guidelines.
   - The LQS put a floor under comparison jobs in firms holding foreign worker
     quota, and it rose in steps during the post-period. On the 1 June rule
     (section 3), the threshold for each post-period June was:
-    - 2016: `PENDING` (S$1,000 if the threshold already existed; first
-      capture 15 November 2016);
+    - 2016: none or S$1,000 (first capture 15 November 2016; start date not
+      found);
     - 2017: S$1,000;
-    - 2018: S$1,100 or S$1,200, `PENDING` (the S$1,200 step date is not
-      captured);
-    - 2019: S$1,100 or S$1,200, `PENDING` (S$1,300 came on 30 June 2019,
-      after 1 June);
+    - 2018: S$1,100 or S$1,200 (the S$1,200 step date is not captured);
+    - 2019: S$1,100 or S$1,200 (S$1,300 came on 30 June 2019, after 1
+      June);
     - 2022: S$1,400.
 
-    Every pre-period June (2009-2014) is `PENDING`, because no capture
-    predates December 2016. A floor lifting the comparison bottom in the
-    post-period narrows the gap T2 measures.
-  - All three push toward FAIL. So a pass is strong evidence that the ladder
+    Every pre-period June (2009-2014): none, or a threshold no capture
+    shows. Both readings are stated (rule in section 3). Under every reading
+    the threshold rose inside the post-period, from S$1,000 in June 2017 to
+    S$1,400 in June 2022, and no document in `raw/` shows it ever falling. A
+    floor lifting the comparison bottom in the post-period narrows the gap
+    T2 measures, whichever reading holds.
+  - All of these push toward FAIL. So a pass is strong evidence that the ladder
     lifted pay where it applied, and a fail is weak evidence that it did not.
-- **Confidence at seal: set by Jacob (PENDING).** Researcher's proposal:
+- **Confidence at seal: `[JACOB]`.** Researcher's proposal:
   50%. The ladders were set to bite, and MOM's
   public claims (background knowledge, disclosed) point to faster wage growth
   in PWM jobs. But dilution, the 25-employee floor of the survey and a
@@ -561,16 +663,18 @@ The tailor's extreme says jobs without a ladder are left behind.
 - **Leans toward SURVIVE, stated now.** The LQS was a floor under these
   jobs, looser than a ladder, in firms that held foreign worker quota.
   - On the 1 June rule, the end window's Junes carried S$1,000 (2017) and
-    S$1,100 or S$1,200 (2018 and 2019, `PENDING`).
-  - The start window's Junes (2010-2012) are `PENDING`: the threshold's
-    start date is not found, and it may not have existed yet.
+    S$1,100 or S$1,200 (2018 and 2019); both readings are stated (rule in
+    section 3).
+  - The start window's Junes (2010-2012): none, or a threshold no capture
+    shows. The start date is not found, and no further search is made.
+  - Under every reading the floor first appeared or rose between the two
+    windows (none shows it falling), so the lean below holds either way.
   - A floor that rose, or first appeared, between the two windows is exactly
     what helps the uncovered bottom keep pace. So "kept pace" is weak
     evidence that jobs without a ladder did not need one. "Fell behind" is
     strong evidence that they did, since it happened despite that floor.
-  - Each dated LQS step, and the threshold's start date if it is found, is
-    marked on the chart.
-- **Confidence at seal: set by Jacob (PENDING).** Researcher's proposal:
+  - Each dated LQS step is marked on the chart.
+- **Confidence at seal: `[JACOB]`.** Researcher's proposal:
   60%. A tight labour market, higher foreign worker
   levies and dollar-amount wage guidelines lifted low pay broadly in these
   years, and background knowledge (disclosed) recalls MOM reporting the 20th
@@ -608,7 +712,7 @@ The tailor's extreme says jobs without a ladder are left behind.
 - **One lean the other way:** security. Its industry transformation plan
   pushed technology in place of guards in the late 2010s, which could shrink
   guard numbers for reasons unrelated to pay. Named, not separated.
-- **Confidence at seal: set by Jacob (PENDING).** Researcher's proposal:
+- **Confidence at seal: `[JACOB]`.** Researcher's proposal:
   60%. Hard-to-cut demand and foreign workers in
   the count both favour holding, but security's technology push and the
   cleaning industry's own productivity drive could produce a relative fall of
@@ -627,8 +731,8 @@ paid at least the ladder's first rung.
   - security: the entry grade (security officer);
   - landscape: the entry grade.
 
-  The W3 schedules are tabulated before the seal (`PENDING`), since they are
-  the policy, not the outcome.
+  The W3 schedules are tabulated below from the primaries in `raw/`, since
+  they are the policy, not the outcome.
 - **Prediction.** The ratio is at least 0.97 in every post-period June for
   every scored group.
 - **Survive if:** every ratio >= 0.97.
@@ -639,31 +743,42 @@ paid at least the ladder's first rung.
   in-house guards and in-house landscape workers were not bound until 1
   September 2022. They sit inside each group's occupation titles, and can
   pull its 25th percentile below the rung. For landscape, workers in firms
-  not on the Landscape Company Register were unbound too. A fail here says
-  the floor was not the bottom of the occupation, which is itself the
-  tailor's point.
+  not on the Landscape Company Register were unbound too: in June 2019 by
+  the captures, and in June 2017, 2018 and 2022 under reading (a) at T2;
+  under reading (b), only non-listed firms without work passes. The lean
+  holds under both readings. A fail here says the floor was not the bottom
+  of the occupation, which is itself the tailor's point.
 - **Entry rungs and the LQS in force on 1 June, fixed from the primary
   documents in `raw/` before the seal (policy, not outcome).**
 
   | June | Cleaning, lowest rung (basic) | Security officer (basic) | Landscape worker (basic) | LQS (1 June rule) |
   |---|---|---|---|---|
-  | 2016 | S$1,000 [a] | not yet bound (1 Sep 2016) | S$1,300 if bound by 1 June [e]; `PENDING` day | `PENDING` |
+  | 2016 | S$1,000 [a] | transition June; not yet bound (1 Sep 2016) | transition June; S$1,300 [e] | none or S$1,000 [h] |
   | 2017 | S$1,000 [a][b] | S$1,100 [c] | S$1,300 [e] | S$1,000 [h] |
-  | 2018 | S$1,000 on existing contracts; new contracts `PENDING` [b] | S$1,100 [c] | S$1,300 [e][f] | S$1,100 or S$1,200 `PENDING` [h] |
-  | 2019 | `PENDING` [b] | S$1,175 [d] | S$1,300 [e][f] | S$1,100 or S$1,200 `PENDING` [h] |
-  | 2020 | `PENDING` (excluded June) | S$1,250 [d] | `PENDING` [f] (excluded June) | S$1,300 [h] |
-  | 2021 | `PENDING` (excluded June) | S$1,400 [d] | `PENDING` [f] | S$1,400 [h] |
-  | 2022 | S$1,274 [g] | S$1,442 [d], `PENDING` confirmation | `PENDING` [f] | S$1,400 [h] |
+  | 2018 | S$1,000 [b] | S$1,100 [c] | S$1,300 [e][f] | S$1,100 or S$1,200 [h] |
+  | 2019 | S$1,120 [b] | S$1,175 [d] | S$1,300 [e][f] | S$1,100 or S$1,200 [h] |
+  | 2020 (excluded) | S$1,200 [b] | S$1,250 [d] | S$1,300 [f] | S$1,300 [h] |
+  | 2021 (excluded) | S$1,236 [g] | S$1,400 [d] | S$1,450 [f] | S$1,400 [h] |
+  | 2022 | S$1,274 [g] | S$1,442 [d] | S$1,550 [f] | S$1,400 [h] |
 
   [a] `w3_cleaning_tcc_report_2012.pdf`: "a starting basic wage level of at
   least $1,000 for cleaning jobs such as in offices and F&B establishments"
   (conservancy: "at least $1,200"), bound through NEA licensing for all
   resident cleaners of licensed firms by 1 September 2015.
 
-  [b] `w3_cleaning_mom_pr_2017.pdf`: updated schedules enforced for new
-  contracts from 1 July 2017, and for existing contracts from 1 July 2018.
-  The amounts of that schedule (the checker's lead: +S$60 in July 2017,
-  +S$60 in July 2018, +S$80 in July 2019) have no primary copy in `raw/`.
+  [b] `w3_cleaning_tcc_2016.pdf`, Annex C (General/Indoor Cleaners and F&B
+  General Cleaners, basic monthly wage):
+  - Diagram 1: >= S$1,060, "applicable to only new contracts that take
+    effect from 1st July 2017 to 30th June 2018";
+  - Diagram 2: >= S$1,120, "applicable to all contracts from 1st July 2018
+    to 30th June 2019";
+  - Diagram 3: >= S$1,200, all contracts from 1 July 2019 to 30 June 2020.
+
+  `w3_cleaning_mom_pr_2016.pdf` (MOM, 12 December 2016): the Commissioner
+  for Labour enforces the schedules for new contracts from 1 July 2017;
+  existing contracts have until 1 July 2018. So on 1 June 2018 the level
+  binding on every licensed firm was S$1,000 (existing contracts), with new
+  contracts on S$1,060. On 1 June 2019 every contract was on S$1,120.
 
   [c] `w3_security_spf_brochure.pdf` ("Security Officer (SO) >=$1,100") and
   `w3_security_stc_2017.pdf` Annex C ("Current $1,100"); SPF licensing
@@ -672,25 +787,42 @@ paid at least the ladder's first rung.
 
   [d] `w3_security_stc_2017.pdf`, Annex C, "Progressive Wage Model for
   Security Industry with effect from 1 January 2019": SO S$1,175 (2019),
-  S$1,250 (2020), S$1,400 (2021), S$1,442 (2022). The 2022 step is "minimum
-  3% p.a. (subject to review)", month not stated; the November 2021 review
-  (checker's lead, MHA) has no primary copy in `raw/`.
+  S$1,250 (2020), S$1,400 (2021), S$1,442 (2022). Table 1 of the same report
+  dates the 2019-2021 steps January. The November 2021 release
+  (`w3_security_mom_pr_2021.pdf`) sets the schedule for 2023-2028 and does
+  not revise 2022. Its "about $2,259 in 2022" is gross pay, "Basic Wage +
+  overtime Pay only (assuming 72 overtime hours a month at 1.5x basic
+  rate)"; that is S$1,442 basic on the standard hourly rate (S$1,442 x
+  (1 + 72 x 1.5 x 12 / (52 x 44)) = S$2,259). **Rule, fixed now:** the 2022
+  step is read as in force on 1 June 2022, like the January steps before it.
+  If it came after 1 June, the rung that June was S$1,400 and security's
+  2022 ratio is understated by 3 per cent: a lean toward FAIL, stated.
 
   [e] `w3_landscape_tcl_report.pdf` (TCL, 2015): the "entry-level monthly
-  basic wage for a landscape worker is $1,300". The requirement
-  applied from June 2016 to LCR-registered firms
-  (`w3_landscape_nparks_cuge_news.pdf`, NParks, 24 April 2015).
+  basic wage for a landscape worker is $1,300". The requirement applied from
+  June 2016 to LCR-listed firms (`w3_landscape_nparks_cuge_news.pdf`,
+  NParks, 24 April 2015). The day in June 2016 is not found and needs no
+  rule: June 2016 is a transition June for landscape.
 
-  [f] `w3_landscape_tcl_2021.pdf`: the 30 November 2018 schedule set fixed
-  dollar increases "from 2020 to 2022"; the 2022 level from 1 July 2022 is
-  S$1,650. So S$1,300 held to at least June 2019. The July 2020 and July
-  2021 amounts (the checker's lead: +S$150, +S$100), and hence the rung on 1
-  June 2021 and 1 June 2022, need the November 2018 release, which is not in
-  `raw/`.
+  [f] `w3_landscape_tcl_2018.pdf` (TCL, 30 November 2018), Annex C,
+  "Progressive Wage Model for Landscape Maintenance Sub-Sector (2020 -
+  2022)": Landscape Worker "Current" >= S$1,300, July 2020 >= S$1,450, July
+  2021 >= S$1,550, July 2022 >= S$1,650; para 4.8, the adjustments "take
+  effect from 1 July". So on 1 June the rung was S$1,300 to 2020, S$1,450
+  in 2021 and S$1,550 in 2022. `w3_landscape_tcl_2021.pdf` confirms S$1,650
+  from 1 July 2022. It bound LCR-listed firms (T2, "Who the landscape ladder
+  bound").
 
   [g] `w3_cleaning_col_order_2021.pdf`, para 1.1, "PWM Schedule from 1 July
   2021 to 30 June 2022": General/Indoor Cleaners (office and commercial) and
   General Cleaners (F&B) >= S$1,274, basic monthly wage.
+  `w3_cleaning_col_order_2019.pdf` is the Commissioner for Labour's order
+  of 3 July 2019 (in operation that day). It sets the schedules for 1 July
+  2020 to 30 June 2021 (General/Indoor >= S$1,236, the rung on 1 June 2021,
+  an excluded June), 1 July 2021 to 30 June 2022 and 1 July 2022 to 30 June
+  2023, and the PWM Bonus from 1 January 2020. Its only scored June is
+  2022, where it agrees with the 2021 order (S$1,274); it changes no scored
+  rung.
 
   [h] `w3b_lqs_faq_2016` to `w3b_lqs_faq_2021` (MOM's quota-counting FAQ,
   archived):
@@ -701,29 +833,34 @@ paid at least the ladder's first rung.
   - S$1,400 on the page updated 1 July 2020, still so in the 2021 capture.
 
   `w3b_lqs_budget2024_factsheet.pdf` raises it "from $1,400 to $1,600" in
-  2024, so S$1,400 held on 1 June 2022.
+  2024, so S$1,400 held on 1 June 2022. Where two amounts are shown, or
+  "none", both readings are stated (rule in section 3).
 
-- **Where the LQS sits against the rung** (the LQS is a monthly salary
-  threshold; whether it counted basic or gross pay is `PENDING`):
-  - cleaning: LQS above the rung in June 2022 (S$1,400 against S$1,274), and
-    in June 2018 on existing contracts (S$1,100 or S$1,200 against
-    S$1,000); level with it in June 2017;
-  - security: LQS below the rung in 2017 and 2022; June 2018 level or above
-    (`PENDING`); June 2019 below or above (`PENDING`);
-  - landscape: LQS below the rung in every post-period June where both are
-    known.
+- **Where the LQS sits against the rung** (the LQS is a "monthly salary"
+  threshold; basic or gross is not settled, rule in section 3):
+  - cleaning: above the rung in June 2022 (S$1,400 against S$1,274) and in
+    June 2018 (S$1,100 or S$1,200 against S$1,000), under both readings;
+    level with it in June 2017; in June 2019 below it (S$1,100) or above it
+    (S$1,200) against S$1,120; in June 2016 level with it or absent;
+  - security: below the rung in 2017 and 2022; in June 2018 level (S$1,100)
+    or above (S$1,200); in June 2019 below (S$1,100) or above (S$1,200)
+    against S$1,175;
+  - landscape: below the rung in every post-period June, under every
+    reading.
 
   In a June where the LQS sat above a rung, firms with foreign worker quota
   had a reason to pay above the rung anyway. That lifts the 25th percentile
   and leans T5 toward SURVIVE for reasons other than the ladder: most for
-  cleaning in 2018 and 2022.
+  cleaning in 2018 and 2022. If the LQS counted gross pay, it pushed basic
+  pay less, so the lean is weaker; its direction is the same under every
+  reading, and it is never toward FAIL.
 - **Rule for the rung, fixed now:** the rung is the lowest amount binding on
   every covered employer on 1 June. For cleaning in June 2018 that is the
   existing-contract level.
 - **T5 reads the same series as T2.**
   - Main: only the successors on the sector's lowest rung, after a grade
     split (section 4): security 54144 against the Security Officer rung;
-    cleaning 91131 and 91151 in 2022 (91130, 91140 and 91151 in 2016-2019)
+    cleaning 91131 and 91151 in 2022 (91130, 91151 and 91190 in 2016-2019)
     against the lowest cleaning rung.
   - Sensitivity, reported, not scored: all successors averaged, against the
     same lowest rung. A higher-grade title in the average would clear the
@@ -732,7 +869,7 @@ paid at least the ladder's first rung.
   relative: covered against comparison jobs. T5 is a level: covered jobs
   against their own rung. Either can hold without the other, so T5 stays
   scored.
-- **Confidence at seal: set by Jacob (PENDING).** Researcher's proposal:
+- **Confidence at seal: `[JACOB]`.** Researcher's proposal:
   45%. The in-house mix in all three groups (and non-LCR firms in landscape)
   and any year where a scheduled step landed just before the June survey
   make "every group, every year" fragile.
@@ -867,9 +1004,11 @@ five independent calls would.
   - **June 2023, June 2025.** Titles change again, and SSOC 2024 arrives in
     June 2025. Both fall after the window.
 
-  Links across the 2010, 2011, 2015 and 2020 splits and merges wait on the
-  SSOC correspondence tables, listed for download in `raw/RETRIEVED.txt`.
-  They are settled from those tables alone, before the seal.
+  Links across the 2010, 2011, 2015 and 2020 splits and merges are settled
+  from the SSOC correspondence tables and the SSOC 2010 hierarchy in `raw/`
+  (section 4; T1 lists the composition changes). SSOC 2015 (v2018) changes
+  none of the lines used, apart from folding 41102 into 41101 inside the
+  clerk aggregate (`w1d_ssoc2015v2018_correspondence.xls`).
 - **OWS method change.** From June 2024 the method note adds "Survey results
   are also supplemented with data from Administrative Records". That is after
   the scored window; 2024 and 2025 are shown with the change marked. No
@@ -883,10 +1022,14 @@ five independent calls would.
   the state rather than the employer. It is not in wages and not measured
   here. The article names it, because "which lifts lowest pay" in Singapore
   has three answers, not two.
-- **The LQS start date.** If the S$1,000 threshold began inside a
+- **The LQS start date.** Not found in the archived MOM FAQs (first
+  capture 15 November 2016), and no further search is made. Both readings
+  are stated (rule in section 3). If the threshold began inside a
   pre-period (2009-2014), the comparison side had a floor change inside the
-  window T1 reads. `PENDING` from the archived MOM FAQs. It is marked on the
-  chart, and it does not move any window.
+  window T1 reads, which raises the comparison bottom and moves the gap
+  down: a lean toward FAIL at T1. If it began before 2009 or after 2014, T1
+  is untouched. So the lean is toward FAIL or nothing, never toward
+  SURVIVE. It does not move any window.
 - **Foreign workers.** Outside every ladder and outside OWS's resident
   scope. A national floor that also left them out would share the gap. The
   article says so.
@@ -912,30 +1055,37 @@ review of `4a4cdae`):
 - CPI tables: M213801 and M213911 (section 4);
 - W2c does not exist (T4).
 
-Still open:
+Settled before the seal in the checker review of `41921ee`/`77dd3f3`
+(27 September 2026, last pre-seal step):
 
-1. The SSOC correspondence tables (2005-2010, 2010-2015, 2015-2020) and the
-   SSOC 2010 hierarchy, to settle the links marked `PENDING` in
-   `office/OCCUPATION_MAP.csv`.
-2. W3 amounts with no primary copy in `raw/`:
-   - the cleaning schedule from 1 July 2017 (rungs for June 2018, new
-     contracts, and June 2019);
-   - the landscape increases of July 2020 and July 2021 (rungs for June 2021
-     and June 2022);
-   - confirmation of the security officer's 2022 rung (S$1,442, "subject to
-     review").
-3. Whether LCR listing gated hiring foreign workers before September 2022.
-   - The documents in `raw/` say LCR listing gated government contracts
-     (two consecutive years of LCR status from 1 January 2019,
-     `w3_landscape_tcl_2021.pdf`).
-   - They say that over 90 per cent of landscape companies were listed in
-     April 2015 (`w3_landscape_nparks_cuge_news.pdf`).
-   - The MOM landscape page covers in-house workers "in firms that hire
-     foreign workers" only in its current (post-2022) form.
-   - None of them says whether listing gated foreign workers before 2022.
-     `PENDING`.
-4. The LQS: its start date, the S$1,200 step date, and whether it counted
-   basic or gross pay.
-5. Dates `PENDING`: the landscape day in June 2016 (does not move any
-   window); the October 2014 security report itself.
-6. Confidences: Jacob sets the final numbers, sent through the checker.
+- every occupation link, from the SSOC tables in `raw/` (section 4); the
+  map's `series` column holds only main, sensitivity or excluded, with the
+  reason in `series_note`;
+- the final groups (section 4): 91190 in cleaning's main series; 91140
+  dropped by the missing-year rule as written; 91170 excluded by the
+  workplace-split rule; 91160 a sensitivity, with its T2 lean;
+- every rung, from the primaries (T5): cleaning June 2018 and 2019, security
+  June 2022, landscape June 2021 and 2022; the 2019 cleaning order labelled;
+- the LCR for June 2019-2021, from the captures (T2).
+
+Covered by a rule fixed now, not by a further search:
+
+1. **The LCR in June 2016-2018 and June 2022** (never archived; no capture
+   in `raw/`): both readings stated at T2 and T5; the dilution lean holds
+   under either.
+2. **The LQS**: its start date, its amount on 1 June 2018 and 2019, and
+   whether it counted basic or gross pay. It enters no computation; both
+   readings are stated and every lean holds under both (section 3, T1, T2,
+   T3, T5).
+3. **The month of security's 2022 step**: read as in force on 1 June 2022,
+   with the lean toward FAIL stated if it came later (T5, note [d]).
+4. **Days not found**: the landscape day in June 2016 (a transition June;
+   T5, note [e]); the October 2014 security report itself (only the month
+   is used, section 5); the lift ladder's day in 2022 (T6, not scored).
+5. **Anything the SSOC tables cannot settle** is excluded from the main
+   series and listed (section 4). Nothing fell under it.
+6. **The W2a industry lines** are picked by label by the analysis script,
+   under the rule in section 4, and not read before the seal.
+
+Open at the seal: the five confidences (`[JACOB]`), which Jacob sets,
+through the checker. Nothing else.

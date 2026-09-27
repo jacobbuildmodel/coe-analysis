@@ -206,6 +206,21 @@ The seal is only worth something if it is clear what had been seen.
         result.
       - MSE speech: the waste collection crew's baseline wage schedule
         (S$2,210 in 2023 to S$3,260 in 2028), a policy setting.
+11. **Researcher exposure in the last pre-seal step (27 September 2026,
+    checker review of `41921ee`/`77dd3f3`).** No wage or head-count value
+    from W1 or W2 was opened. What was read:
+    - **SSOC tables** (`w1d_*`): codes and titles of the correspondence
+      tables and the SSOC 2010 hierarchy. Classification only.
+    - **W3 primaries**, for dates and rung amounts: the cleaning cluster's
+      2016 report (the Annex C schedule images were viewed) and MOM's
+      release of 12 December 2016; the Commissioner for Labour's 2019 order
+      (schedule image viewed); the landscape cluster's 2018 report (Annex C
+      text); the security release of November 2021 (its 2022 gross figure
+      is disclosed in item 9); the LCR pages and FAQs captured in 2019-2021;
+      the LQS FAQs, for whether the threshold counted basic or gross pay
+      (they say only "monthly salary").
+    - The same sentence filter as item 10 was used. It let through no
+      outcome figure beyond those already disclosed in items 9 and 10.
 
 ## 2. Item by item
 
@@ -257,7 +272,9 @@ OWS tables, but no pre-2011 edition was seen. UNVERIFIED.
    is dropped. The matching is done from the title lists alone, before the
    seal (THESIS section 4).
 3. **"Supplemented with administrative records"** may mark a method change in
-   some year. PENDING: read the method PDF for each year.
+   some year. Settled from the method notes, 2008-2025 (coverage sentences
+   only; THESIS section 9): the phrase first appears in June 2024, after the
+   scored window. No earlier note states a change in coverage or measure.
 4. **The occupation does not say who the employer is.** A cleaner employed by
    a cleaning contractor was covered from 2014-2015. A cleaner employed
    directly by a hotel or hospital (in-house) was covered only from 1
@@ -315,8 +332,8 @@ used for any date.
 |---|---|---|---|---|
 | Cleaning (contract) | NEA cleaning business licence, EPHA; S 240/2014 | Tripartite Cluster for Cleaners report, 19 Oct 2012; voluntary PWM 2012 | Licensing from 1 Apr 2014; new contracts from 1 Apr or 1 Sep 2014 (sources disagree); **all resident cleaners of licensed firms by 1 Sep 2015** | MOM cleaning page; NEA licence page; S 240/2014 |
 | Security (agency) | SPF/PLRD security agency licence | Security Tripartite Cluster, Oct 2014 | **1 Sep 2016**, at licence renewal | SPF PWM page; SPF brochure |
-| Landscape | NParks Landscape Company Register (registration, public tenders) | NParks announcement, Apr 2015 | **June 2016** (day PENDING), LCR-registered firms only | NParks CUGE pages; MOM landscape page |
-| Lift and escalator | BCA registration, workheads RW02B/RW03B | Voluntary 2018; public tenders only to PWM firms from May 2019 | **2022** (day PENDING) | BCA PWM page; BCA-MOM release |
+| Landscape | NParks Landscape Company Register (registration, public tenders) | NParks announcement, Apr 2015 | **June 2016** (day not found; June 2016 is a transition June, so no rule is needed: THESIS T5 note [e]), LCR-registered firms only | NParks CUGE pages; MOM landscape page |
+| Lift and escalator | BCA registration, workheads RW02B/RW03B | Voluntary 2018; public tenders only to PWM firms from May 2019 | **2022** (day not found; T6 is descriptive, not scored, and shows the year) | BCA PWM page; BCA-MOM release |
 | In-house cleaning, security, landscape | Work pass eligibility | TWG-LWW report, 30 Aug 2021 | **1 Sep 2022** | MOM release 30 Aug 2021 |
 | Retail | Work pass eligibility | Tripartite Cluster for Retail report, 15 Aug 2022 | **1 Sep 2022** | MOM retail page |
 | Food services | Work pass eligibility | Tripartite Cluster for Food Services report, 15 Feb 2023 | **1 Mar 2023** | MOM food services page |
@@ -344,23 +361,25 @@ used for any date.
    - From 1 September 2022 it became a condition for work passes: every local
      employee of a firm holding work passes had to be paid at least the LQS.
 
-   Amounts and dates, as found:
+   Amounts and dates, from the archived MOM quota-counting FAQs
+   (`raw/w3b_lqs_faq_*`, the design chat's downloads) where captured; THESIS
+   T5 note [h] has the detail:
 
    | Amount | From | Source state |
    |---|---|---|
-   | S$1,000 | start date not found (before July 2017) | secondary only |
-   | S$1,100 | July 2017 | secondary (Fragomen) |
-   | S$1,200 | July 2018 | secondary (Fragomen) |
-   | S$1,300 | 2019 (month PENDING) | checker's secondary source |
-   | S$1,400 | 2020 (July, per secondary) | MOM LQS page snippet: "raised four times since 2017" |
-   | S$1,600 | 1 July 2024 | secondary |
+   | S$1,000 | in force by 15 November 2016; start date not found | primary (archived FAQ) |
+   | S$1,100 | page updated 17 July 2017 | primary (archived FAQ) |
+   | S$1,200 | not captured (between January 2018 and July 2019) | secondary only (Fragomen: July 2018) |
+   | S$1,300 | page updated 30 June 2019 | primary (archived FAQ) |
+   | S$1,400 | page updated 1 July 2020 | primary (archived FAQ) |
+   | S$1,600 | 1 July 2024 | primary (`w3b_lqs_budget2024_factsheet.pdf`) |
    | S$1,800 | 1 July 2026 | secondary |
 
-   **Not closed.** No MOM primary page for the pre-2020 steps could be opened
-   or saved (403). The start date of the S$1,000 threshold matters most: if it
-   began inside a pre-period (2009-2014), it is a change inside the window T1
-   reads. Primary candidates are listed in RETRIEVED.txt (W3b), including the
-   archived versions of MOM's quota-counting FAQ.
+   **What the captures do not settle is covered by a rule fixed now** (THESIS
+   section 3): the start date, the S$1,200 step date, and whether the
+   threshold counted basic or gross pay. The LQS enters no computation. Both
+   readings are stated, every lean holds under both, and no further search
+   is made.
 
    The LQS applied to cleaning, security and landscape firms too. There the
    ladder's entry rung sat at or above it from the start (S$1,000 basic for
@@ -373,10 +392,10 @@ used for any date.
   SPF licensing conditions and security cluster reports, the landscape
   cluster reports, and the retail and food services cluster reports, all
   listed in RETRIEVED.txt.
-- Each schedule has its own effective dates, often yearly steps. They need
-  tabulating by sector and rung, with the date each step took effect, from
-  the saved PDFs. This can be done before the seal: the ladders are the
-  policy, not the outcome.
+- Each schedule has its own effective dates, often yearly steps. They are
+  tabulated by sector and rung, on the 1 June rule, from the saved PDFs at
+  THESIS T5, before the seal: the ladders are the policy, not the outcome.
+  Every rung is settled from a primary document.
 - Only the entry rung of cleaning, security and landscape enters a test (T5).
 
 **Government co-funding, dated for the record.**
@@ -448,6 +467,9 @@ catch is that head counts include foreign workers.
 
 ## 4. What could not be closed, and what it does to the tests
 
+Written before the downloads. The state after them is in THESIS section 10:
+every item below is settled, or covered by a rule fixed there.
+
 | Gap | Effect on THESIS tests |
 |---|---|
 | Nothing downloaded (403 on every host) | Every coverage figure is provisional. The design chat downloads; `00_coverage.py` writes coverage into RETRIEVED.txt before the seal. |
@@ -457,7 +479,7 @@ catch is that head counts include foreign workers.
 | W2a detail level and first year | If cleaning, security and landscape are not separate lines, T4 is run on the smallest industry that contains them and says so. If it starts after 2012, cleaning drops out of T4. |
 | Landscape start day; lift start day | Landscape: June 2016 is the survey month itself, so THESIS counts June 2017 as the first post-period survey whatever the day. Lift: not scored. |
 | Occupation code changes (SSOC) | Titles are matched by name before the seal, and unmatched titles dropped. A break that cannot be bridged ends that title's series. |
-| OWS method change ("administrative records") | PENDING from the per-year method notes. Any break is shown on the chart and handled by amendment. |
+| OWS method change ("administrative records") | Settled: first stated in June 2024, after the scored window (THESIS section 9). |
 | Security announcement document (October 2014) not located | Only the month is used (last pre-period June is 2014). |
 | LQS history before 2020: primary sources not saved; start date of the S$1,000 threshold unknown | THESIS states the LQS as a lean at T2 and T3 either way. If the S$1,000 threshold began inside a pre-period, T1 reads a window with a floor change in it, and the chart marks the date. Every LQS step is marked on the charts. |
 

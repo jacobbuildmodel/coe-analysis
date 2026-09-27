@@ -2,10 +2,9 @@
 
 Open question. Predictions sealed on [SEAL DATE]. Answer due December 2026.
 
-<!-- DRAFT, 27 September 2026. Confidences and "Why" lines are Jacob's and
-are filled in when he sends them (checker review of cb9fe70, item 6); the
-researcher's proposals stay in THESIS.md only. Seal date and hash are filled
-in at the seal. -->
+<!-- DRAFT, 27 September 2026. Confidences and "Why" lines are Jacob's;
+the researcher's proposals stay in THESIS.md.
+Seal date and hash are filled in at the seal. -->
 
 Singapore has no minimum wage. Since 2014 it has given cleaners, then
 security officers and landscape workers, a wage ladder: a floor for each step
@@ -35,8 +34,8 @@ anyone paid less would leave for a rival. A floor above that costs jobs. In
 less than a worker is worth, because raising pay to attract one more worker
 means raising it for all. There, a floor can raise pay and jobs together;
 economists call that employer a monopsony. In 1994 David Card and Alan Krueger
-compared fast-food restaurants on either side of the New Jersey-Pennsylvania
-border after New Jersey raised its minimum wage, and found no jobs lost.
+found no jobs lost in New Jersey's fast-food restaurants after the state
+raised its minimum wage.
 Germany's first national floor in 2015 and the UK's higher floor from 2016
 raised pay at the bottom with little or no job loss.
 
@@ -56,10 +55,20 @@ bottom gets nothing.
 
 ## My bets
 
-The ladders arrived in different years. Cleaners, guards and gardeners had
-one from the mid-2010s; shop assistants, waiters, kitchen helpers, clerks and
-drivers did not get one until 2022 or 2023. For about six years one group
-had a floor and the other did not.
+The ladders arrived in different years: cleaners, guards and gardeners from
+the mid-2010s, the rest in 2022 or 2023. For about six years one group had a
+floor and the other did not.
+
+**Which jobs count.** Fixed before any pay figure was opened:
+
+- **Cleaners:** office and industrial cleaners until 2014; then those on the
+  ladder's lowest step: office cleaners, cleaners in malls, schools and
+  hospitals, and cleaners in food outlets. Housing-estate cleaners, partly on
+  a higher step, are left out, which tilts the pay bet against the ladder.
+- **Guards:** security guards; from 2020, entry-rank officers only.
+- **Landscape:** park and garden maintenance workers.
+- **No ladder:** shop assistants, cashiers, waiters, kitchen assistants, food
+  stall assistants, office clerks, and van and lorry drivers.
 
 1. **They moved together before.** Before the ladders were announced, pay at
    the bottom of the covered jobs and of the later-covered jobs rose at about
@@ -86,9 +95,9 @@ had a floor and the other did not.
 
 If my confidences are right, about [JACOB] of these 5 would hold.
 
-Not scored: 2020 and 2021, when the pandemic moved pay and jobs for other
-reasons, and everything after mid-2022, when nearly every low-wage job got a
-ladder and no comparison was left.
+Not scored: 2020 and 2021, when the pandemic moved pay and jobs, and
+everything after mid-2022, when nearly every low-wage job had a ladder and no
+comparison was left.
 
 ## The catch I already know about
 
@@ -100,10 +109,9 @@ evidence, because the design leans toward the monopsony reading.**
 
 The jobs without a ladder were not without a floor. A firm that wanted to hire
 foreign workers had to pay each local at least a set salary, S$1,000 a month
-before 2017 and more after, or that local did not count in full toward its
-quota. That looser floor lifted the comparison jobs too. It makes the ladder's
-measured effect smaller, and it makes it easier for the rest of the bottom to
-keep pace. So on that bet as well, "kept pace" is the weaker finding and "fell
+by 2016 and S$1,400 by 2020, or that local did not count in full toward its
+quota. That looser floor lifted the comparison jobs too. It shrinks the
+ladder's measured effect and helps the rest of the bottom keep pace. So on that bet as well, "kept pace" is the weaker finding and "fell
 behind" the stronger one.
 
 And the record can only speak for the jobs the tailor measured. What a
