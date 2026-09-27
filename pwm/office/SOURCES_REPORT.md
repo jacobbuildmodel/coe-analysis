@@ -17,7 +17,7 @@ through a web search index, not opened**. What exists:
   percentile of basic and gross monthly wages by occupation, for full-time
   residents in private firms with 25 or more employees. The per-year tables
   are confirmed from 2011. Earlier years are probable but unconfirmed, and
-  this matters (section 3).
+  this matters (section 4).
 - **W2, employment.** The best series is SingStat's count of workers by
   detailed services industry. It includes foreign workers, whom the wage
   ladders do not cover. Resident employment by detailed occupation is not
