@@ -22,3 +22,6 @@ python3 tools/check_figure_overflow.py figs/mechanism.svg figs/indexed.svg \
 echo; echo "== checksum"
 if command -v md5sum >/dev/null; then md5sum analysis.csv; else md5 analysis.csv; fi
 echo "   expected: 4480189cd99b4514885185843ac5f2cc"
+
+echo; echo "== ERP piece (erp/), its own steps and checksums"
+bash erp/run_all.sh

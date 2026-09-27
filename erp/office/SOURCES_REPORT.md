@@ -1,0 +1,321 @@
+# SOURCES REPORT -- erp piece
+
+Researcher: `erp` (Claude Code session), 24 September 2026, branch `erp-wip`.
+Scope of this task: sources only. No analysis, no charts, no data values opened.
+
+## 0. The one-paragraph version
+
+Nothing was downloaded. The sandbox proxy refuses data.gov.sg, lta.gov.sg,
+mot.gov.sg, oecd.org and archive.org (HTTP 403 at CONNECT), so every source
+below was **located through a web search index, not opened**. Titles, dataset
+ids and URLs are confirmed that way; coverage figures quoted from the index are
+marked UNVERIFIED and must be re-checked from the files. The exact URLs and
+target filenames for Jacob are in `erp/raw/RETRIEVED.txt`. Of the six items,
+E1, E2, E3 and E6 have a primary source identified; E7 has a primary chain of
+LTA releases for 2020 with one conflict in it; **E5 is not closed: no dated
+primary history of ERP rate changes and gantry additions was found for the years
+before 2020**, and that removes one leg of the "COE wins" test (section 3).
+
+Revised 24 September 2026 after the checker's review of `fafee65`: the checker's
+own disclosure added to section 1; E4b (pre-2010 premiums) and E8 (lane-km)
+added; E5 searched a second time for ERP revenue and gantry counts, without a
+usable series.
+
+## 1. Exposure disclosure (read first)
+
+The seal is only worth something if it is clear what had been seen. Three things:
+
+1. **One E1 value was seen, unsolicited.** A search for the LTA "Statistics in
+   Brief" series returned, inside the search tool's own summary, the 2011
+   peak-hour averages from a third-party copy of *LTA Statistics in Brief 2012*
+   (yumpu.com): expressways 62.5 km/h, arterial roads 28.5 km/h. It was not
+   sought and the page was not opened, but it was read. Both sit inside the E6
+   bands. THESIS.md flags 2011 as not blind in T1, and it is excluded from T1's
+   scoring (see THESIS section 6).
+2. **No other value from E1, E2 or E3 was seen.** No coverage span from the
+   files themselves was seen either, because no file was received.
+3. **Background knowledge.** The researcher's general knowledge includes the
+   public outline of Singapore motoring policy (the vehicle growth rate being cut
+   in steps to zero by 2018, COE premiums rising sharply after 2010, ERP starting
+   in 1998). It does not include the E1 or E2 series year by year. The THESIS
+   thresholds are written as judgements, and the reasoning for each is stated
+   so that a reader can see it does not lean on a remembered value.
+4. **The checker's disclosure (added 24 September 2026).** The checker has read
+   MOT's written parliamentary reply of 6 February 2024: "From 2019 to 2023, the
+   average speed on Singapore's expressways during peak hours was about
+   60km/h." Expressway speeds for 2019, 2022 and 2023 are therefore effectively
+   known to be inside the 45-65 km/h band (2020 and 2021 are excluded anyway).
+   THESIS.md excludes 2019, 2022 and 2023 from T1's expressway scoring, keeps
+   them in T2 and T4, and flags them. Arterial years are unaffected: the reply
+   gives no arterial figure.
+5. **Values seen in the second E5 search.** The search for ERP revenue and
+   gantry counts returned, in summaries, a few revenue figures for scattered
+   years and gantry counts for four or five years. These are E5 values, not
+   E1, E2 or E3 outcome data, and they enter no test (THESIS T5).
+6. **Coverage read of E8b, 26 September 2026 (SGT).** E8b is a PDF, so its
+   year span could not come from `00_coverage.py`. Its text was extracted and
+   only the year labels that begin each table row were printed: 2005 to 2014,
+   ten contiguous years, one page. To check the table's structure, every other
+   line was printed with each digit replaced by `#`. That masking still shows
+   how many digits each value has, and so discloses one thing: the expressway
+   lane-km column has three digits in 2005-2007 and four from 2008 (it crossed
+   1,000 lane-km between the end of 2007 and the end of 2008). No other digit
+   pattern differs between years. The column headers read Year, Expressway,
+   Arterial Road, Collector Road, Local Road, Total. This is the only E8 or
+   E8b information seen before the seal; it enters T2 only through the density
+   series, where it is one of 13 points' worth of level information and does
+   not fix the slope. Next time a PDF's span is needed, only the year labels
+   are printed.
+7. **After retrieval (26 September 2026), before the seal.** Jacob reported,
+   from the dataset page, that E2 has a single cars row that does not separate
+   private cars from private-hire cars. That is a statement about the file's
+   rows, not a value, and it is used in THESIS T3.
+
+## 2. Item by item
+
+### E1 -- average peak-hour speed, expressways and arterials, annual
+
+- **Source:** data.gov.sg `d_26f6afadf2f86b2004f9a1e28f5564cc`, "Average Speed
+  During Peak Hours", LTA. Part of the collection "Road Traffic Conditions during
+  Peak Hours" (collection 379).
+- **Status:** located, NOT downloaded (403).
+- **Definition, from the search index, UNVERIFIED:** peak hours are 8-9am and
+  6-7pm on weekdays; the arterial figure is "based on key arterial roads".
+- **Coverage: UNKNOWN.** The index did not report it. This is the largest open
+  risk in the piece. The brief assumes 2004-2025. If the dataset stops early
+  (the collection's older URL form suggests a legacy series), the fallback for
+  expressways only is an MOT written parliamentary reply giving peak-hour
+  expressway speeds for 2019 to 2023 (URL in RETRIEVED.txt). No arterial
+  fallback was found.
+- **Measurement caveat that survives any coverage outcome:** E1 is one network
+  average per road class per year. ERP rates are set per gantry per half-hour.
+  The annual figure can sit inside the band while individual priced stretches
+  sit outside it, and the reverse.
+
+### E2 -- average annual km per vehicle, by type
+
+- **Source:** data.gov.sg `d_bdc4c6434e47b055de4b5f2fde10c1af`, "Average Annual
+  Kilometres Travelled Per Vehicle", LTA; collection 311 "Annual Mileage for
+  Private Motor Vehicles".
+- **Status:** located, NOT downloaded (403).
+- **Coverage, from the search index, UNVERIFIED:** January 2005 to December
+  2018, last updated 6 June 2024. Method as described on the page: estimated
+  from a mileage survey of in-use vehicles at mandatory periodic inspections.
+- **If that coverage holds:** 14 annual points. 2010-2013 is inside, as the
+  brief expects. Nothing after 2018, so the whole post-2018 zero-growth period
+  and 2020 are outside E2. Whether private-hire cars are split out from private
+  cars is unknown until the columns are seen; the private-hire build-up starts
+  inside the E2 window and could move km per car on its own.
+
+### E3 -- annual car population
+
+- **Source found:** data.gov.sg `d_2873f3b1b2a836103f51f696350b98fa`, "Annual
+  Motor Vehicle Population by Vehicle Type", LTA.
+- **Status:** located, NOT downloaded (403).
+- **Coverage, from the search index, UNVERIFIED:** 2005 to 2024, 4 columns.
+- **Gaps:** if 2025 is missing, LTA's own *Annual Vehicle Statistics 2025*,
+  "Motor Vehicle Population by Vehicle Type" (PDF MVP01-1) is the primary backup.
+  If E1 starts in 2004 and E3 in 2005, 2004 drops out of every test that uses
+  both. A monthly dataset (`d_2ecb009f1e1ec5a816a454944dec4022`) exists as a
+  second route.
+
+### E4 -- COE premium (not in the brief's list; needed by the door-fee test)
+
+- **Source:** already in the repository, `raw.csv`, data.gov.sg
+  `d_69b3380ad7e51aff3a7dcc84eba52b8a`, md5 `7b68a001709821c71ece5b8ed209d4d3`
+  (matches README.md).
+- **Coverage, checked 24 Sep 2026 by dates and columns only:** month 2010-01 to
+  2026-08; 1,965 data rows; columns month, bidding_no, vehicle_class, quota,
+  bids_success, bids_received, premium.
+- **Gap:** no premium before 2010. Any test that uses the premium runs from 2010,
+  not 2004, unless E4b below is used. Kept as the cross-check on E4b for 2010
+  onward.
+
+### E4b -- quota premium and prevailing quota premium, monthly, from 2002
+
+- **Source (named by the checker, title confirmed by search):** data.gov.sg
+  `d_22094bf608253d36c0c63b52d852dd6e`, "Motor Vehicle Quota, Quota Premium And
+  Prevailing Quota Premium, Monthly", SingStat, table M651121
+  (https://tablebuilder.singstat.gov.sg/table/TS/M651121).
+- **Status:** located, NOT downloaded (403).
+- **Coverage:** from 2002 per the checker; the search index gave no span,
+  UNVERIFIED.
+- **Effect:** closes the pre-2010 premium gap. T4 can run from the first year E1,
+  E3 and E4b all cover (2005 if E3 starts then), adding up to five points; T3's
+  premium split can use the whole E2 window, 2005-2018. Definitions for the
+  annual mean and the cross-check against `raw.csv` are in THESIS section 4.
+
+### E8 -- road length in lane-kilometres, expressway and arterial
+
+- **Sources (named by the checker, titles confirmed by search):** data.gov.sg
+  `d_8415afe86e594bdc18f0f04a71d5f210`, "Length of Roads (Lane-Kilometres)",
+  LTA; and LTA's own PDF `Road-Length-lane-km.pdf`, "Road Length In
+  Lane-Kilometer (end-of-year)", columns Year, Expressway, Arterial Road (per
+  the search index).
+- **Status:** located, NOT downloaded (403).
+- **Coverage, checked 26 September 2026:** the data.gov.sg file runs 2005 to
+  2017 (52 rows, 4 road types). The LTA PDF (E8b) runs 2005 to 2014 (item 6 of
+  section 1), so it does not extend E8. **T2's main specification has 13
+  points, 2005-2017.**
+- **Earlier, from the search index:** the data.gov.sg file runs January 2005 to
+  December 2017, last updated 6 June 2024. **If the PDF does not extend past 2017, T2's main specification has
+  about 13 points (2005-2017), not about 20.**
+- **Scope caveat:** covers roads maintained by LTA only; roads maintained by
+  NParks, HDB, URA and others are excluded (per the index).
+- **Effect:** makes road supply a control in T2's main specification rather than
+  a stated bias.
+
+### E5 -- dated history of ERP rate changes and gantry additions
+
+**NOT CLOSED.**
+
+- **LTA newsroom releases** are the primary route and they exist from March 2020
+  onward: the search index returned LTA releases dated 2020-03, 2020-04 (two),
+  2020-05, 2020-07, 2020-10, 2021-02, 2022-02, 2022-03, 2022-05, 2022-11, 2023-03,
+  2023-08, 2024-09, 2025-05, 2025-08, 2025-11, 2026-03, 2026-05 and 2026-08.
+  **The earliest LTA-hosted release found is March 2020.** Searches targeted at
+  2005-2009 and 2014-2018 returned no LTA release. That is evidence that the
+  current newsroom does not index them, not proof that they are gone; the
+  newsroom's own year filter settles it and Jacob is asked to note the earliest
+  year it offers.
+- **Pre-2020:** the old LTA site (`lta.gov.sg/apps/news/...`) is the likely home
+  of 2004-2019 releases. The only route found is the Wayback Machine, which this
+  session could not reach.
+- **No data.gov.sg or DataMall series of historical ERP rates exists** as far as
+  the search could establish. DataMall's ERP Rates API gave current rates only
+  and was removed on 30 September 2024 (third-party report, unverified).
+  data.gov.sg holds a gantry location file (`d_753090823cc9920ac41efaa6530c5893`,
+  GeoJSON), which is a current snapshot, not a history.
+- **Gantry additions, secondary only:** NLB Infopedia ("Electronic Road Pricing:
+  Developments after phase I") and press retrospectives date individual
+  additions (for example BKE in 2007, the Singapore River line in 2008). These
+  can date events for a timeline; they cannot supply a figure under the site's
+  source rule.
+- **Academic secondary:** W. Theseira, "Congestion Control in Singapore",
+  ITF/OECD discussion paper, 2020. Useful for method and history; not a source
+  for any number in the piece.
+
+**Second search, 24 September 2026, at the checker's request,** for two crude
+but dated intensity measures:
+
+- **(a) Annual ERP revenue.** Found only for scattered years: a range for
+  2001-2005 in a secondary academic source, 2009 and 2010 and a part-year 2011
+  in a press report of a parliamentary answer (Yahoo News Singapore), and a
+  round figure for 2015. LTA annual reports exist online (2019/20 and 2022/23
+  were returned by the search); whether their financial statements break out
+  ERP revenue is not known, and they would not reach back before about 2019
+  from what was found. No parliamentary answer giving a continuous series was
+  found.
+- **(b) Gantry count by year.** Found for 1998, 2009, 2014 and 2017, and a
+  "33 to 77 over 20 years" summary, all from secondary sources (Mothership,
+  NLB Infopedia, ITF discussion papers, a 2010 conference paper). No primary
+  year-by-year count.
+
+**Verdict on E5: still not closed.** Neither measure exists for most years from
+a primary source, so THESIS T5 leg (b) stays untestable, as drafted. Revenue
+would also be a poor measure of intensity even if complete, because it rises
+when rates rise and rates rise when speeds fall.
+
+**What E5 not closing means:** there is no year-by-year measure of how hard ERP
+was pushing (rate levels, number of increases, gantry count) across 2004-2025.
+See section 3.
+
+### E6 -- speed bands that trigger ERP rate changes
+
+- **Primary sources located:** MOT, "How ERP works as a speed booster"; MOT,
+  written reply to a parliamentary question on the rationale for higher ERP
+  rates; current LTA "Revised ERP Rates" releases (for example 7 September 2026).
+- **What they state, per the search index, UNVERIFIED until the PDFs are read:**
+  45-65 km/h on expressways and 20-30 km/h on arterial roads. Rates are cut when
+  speeds are above the upper bound and raised when below the lower bound. Rates
+  are set in half-hour blocks and reviewed quarterly. A secondary ADB case study
+  adds that the arterial band also covers roads crossing the Restricted Zone
+  cordon.
+- **The quoted bands are confirmed as the ones LTA and MOT cite today.** Two
+  things are NOT confirmed: (a) that the bands were the same across 2004-2025
+  (no dated source for a change was found, and none for their absence); (b) what
+  speed measure LTA compares with the band (which percentile, which segment,
+  which half-hour). (b) matters because E1 is a different measure (section 2,
+  E1).
+
+### E7 -- periods ERP charges were suspended or cut sitewide
+
+Primary chain, all LTA releases, located but not opened:
+
+| Date (from index) | Release | What the index says it did |
+|---|---|---|
+| March 2020 | "Electronic Road Pricing (ERP) Review" | review brought forward; rates cut at 96 per cent of gantries, some to $0, effective 6 April 2020 |
+| April 2020 | "Cessation of ERP Charging ... from 7 April to 4 May 2020" | charging ceased at all gantries from 6 April 2020, 0000 hours |
+| April 2020 | "ERP Charging and COE Bidding Continue to be Suspended During Extended Circuit Breaker Measures" | suspension extended with the circuit breaker |
+| 31 May 2020 | "LTA to Resume ERP Rate Reviews" | reviews resume from 2 June 2020; review cycle shortened to four weeks |
+| July 2020 | "Second ERP Rate Review Post-Circuit Breaker" | (not summarised by the index) |
+| October 2020 | "ERP Rate Review" | (not summarised by the index) |
+| February 2021, February 2022 | "Revised ERP Rates ..." | (not summarised by the index) |
+
+- **Conflict, unresolved:** the date charging resumed. The index offers 29 June
+  2020 (first post-circuit-breaker review), "no charges until 28 June", and a
+  press report of "no charges until at least 26 July". Only the releases settle
+  it. The sitewide $0 period may also have ended gantry by gantry rather than on
+  one date.
+- **2022:** an MOT release, "Reviewing Implementation of Increase in ERP Rates
+  Amid Rising Petrol and Fuel Costs", suggests increases due under the speed rule
+  were held back. If so, that is a period when the thermostat was deliberately
+  switched off in one direction.
+- **Routine cuts:** LTA lowers rates in June and December school holidays every
+  year. Within-year and seasonal; invisible in an annual series.
+- **The circuit-breaker confound:** the 2020 suspension coincided with workplace
+  closure and full home-based learning. Traffic collapsed for reasons that had
+  nothing to do with price. 2020 speeds therefore say nothing about what removing
+  ERP does, and 2021 is likely contaminated by remote work. Annual data also
+  averages the suspension with charged months. E7 is useful as a dated label on
+  the chart, not as a natural experiment.
+
+## 3. What could not be closed, and what it does to the tests
+
+| Gap | Effect on THESIS tests |
+|---|---|
+| E1 coverage unknown | Every test's year range is provisional. If E1 is short (under about 12 years), T2 and T4 lose most of their power and are reported as descriptive. |
+| E5 not closed (searched twice) | No ERP intensity series, not even revenue or gantry count for most years. The "COE wins" condition "with ERP changes adding little" cannot be tested; only its car-density leg can. The piece can show whether speeds behave like a thermostat, not that ERP is the thermostat. |
+| E6 bands' history and measure | T1 scores E1 against today's bands. If the bands changed, T1 is scored against the band in force each year, which needs a dated source. |
+| E4 starts 2010 | CLOSED by E4b (from 2002, pending download). T4 runs from the first year E1, E3 and E4b all cover: up to about 19 points. |
+| E8 data.gov.sg file ends 2017 (if index is right) | T2's main specification limited to 2005-2017 (about 13 points) unless the LTA PDF runs later. |
+| E2 ends 2018 (if index is right) | T3 runs on 2005-2018 for the premium split (about 14 points); S1 total car-km stops at 2018. |
+| E7 resumption date | Affects only the chart label and the exclusion of 2020; 2020 and 2021 are excluded from fitted tests either way. |
+
+## 4. Asks of Jacob (one consolidated list)
+
+1. Download the five CSVs (E1, E2, E3, E4b, E8) and the PDFs listed in
+   `erp/raw/RETRIEVED.txt`, upload to `erp/raw/` on `erp-wip` through github.com.
+   Sizes are small: five CSVs well under 1 MB each; roughly 16 PDFs.
+2. Note the "last updated" date and coverage shown on each data.gov.sg page.
+3. On the LTA newsroom, note the earliest year its filter offers for ERP
+   releases (settles how far back E5 route 1 goes).
+4. Review THESIS.md (unsealed) and rule on the open items in its section 10.
+
+## Sources used to locate the above (search index, 24 September 2026)
+
+- https://data.gov.sg/datasets/d_26f6afadf2f86b2004f9a1e28f5564cc/view
+- https://data.gov.sg/collections/379/view
+- https://data.gov.sg/datasets/d_bdc4c6434e47b055de4b5f2fde10c1af/view
+- https://data.gov.sg/collections/311/view
+- https://data.gov.sg/datasets/d_2873f3b1b2a836103f51f696350b98fa/view
+- https://data.gov.sg/datasets/d_2ecb009f1e1ec5a816a454944dec4022/view
+- https://data.gov.sg/datasets/d_753090823cc9920ac41efaa6530c5893/view
+- https://data.gov.sg/datasets/d_22094bf608253d36c0c63b52d852dd6e/view (E4b)
+- https://tablebuilder.singstat.gov.sg/table/TS/M651121 (E4b)
+- https://data.gov.sg/datasets/d_8415afe86e594bdc18f0f04a71d5f210/view (E8)
+- https://www.lta.gov.sg/content/dam/ltagov/who_we_are/statistics_and_publications/statistics/pdf/Road-Length-lane-km.pdf (E8)
+- https://sg.news.yahoo.com/erp-system-collects-about--150-million-each-year.html (E5 revenue, press)
+- https://www.lta.gov.sg/content/ltagov/en/who_we_are/statistics_and_publications/reports.html (LTA annual reports)
+- https://mothership.sg/2018/04/erp-history-20-years/ (E5 gantry count, press)
+- https://www.itf-oecd.org/sites/default/files/docs/dp201001.pdf (E5, secondary)
+- https://www.lta.gov.sg/content/dam/ltagov/who_we_are/statistics_and_publications/statistics/pdf/MVP01-1_MVP_by_type.pdf
+- https://www.mot.gov.sg/news-resources/resources/how-erp-works-as-a-speed-booster/
+- https://mot.gov.sg/news/details/written-reply-to-parliamentary-question-on-rationale-for-and-impact-of-higher-erp-rates-on-traffic-volumes
+- https://www.mot.gov.sg/news/details/written-reply-to-parliamentary-questions-on-data-on-average-speed-of-vehicles-on-expressways-during-peak-hours-from-2019-to-2023
+- https://www.mot.gov.sg/news-resources/newsroom/reviewing-implementation-of-increase-in-erp-rates-amid-rising-petrol-and-fuel-costs/
+- LTA newsroom releases 2020-03 to 2026-08, full URLs in `erp/raw/RETRIEVED.txt`
+- https://www.nlb.gov.sg/main/article-detail?cmsuuid=7d61ae5c-869e-41ac-9e76-28392219c249 (secondary)
+- https://development.asia/case-study/case-electronic-road-pricing (secondary)
+- https://www.oecd.org/content/dam/oecd/en/publications/reports/2020/10/congestion-control-in-singapore_c3005a82/7d266609-en.pdf (secondary, academic)
+- https://www.yumpu.com/en/document/view/11484644/statistics-in-brief-2012-land-transport-authority (third-party copy; source of the disclosed 2011 value; not used)

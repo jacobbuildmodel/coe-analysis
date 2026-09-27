@@ -1,0 +1,16 @@
+SEAL RECORD -- erp piece
+
+THESIS.md sealed 26 September 2026 01:11 SGT (2026-09-25T17:11:10Z).
+Seal commit  6d2a345d90015b8911e3be5ccfc76730a9d57206
+Message      erp: SEAL THESIS.md
+Branch       erp-wip
+Changed      erp/THESIS.md only (header flipped from UNSEALED to SEALED)
+Parent       31cece3 (final pre-seal text, same content below the header)
+md5 of erp/THESIS.md at the seal commit: 2f99e6513de2f5ebe7f578e6a5650f50
+
+No data value from E1, E2, E3, E4b or E8 had been opened by any script or
+person on the researcher side when this commit was pushed. Exposures before the
+seal are listed in office/SOURCES_REPORT.md section 1.
+
+Confidences (set by Jacob, 25 September 2026): T1 35%, T2 65%, T3 20%, T4 70%.
+Expected number holding: 1.9 of 4. Answer due: December 2026.

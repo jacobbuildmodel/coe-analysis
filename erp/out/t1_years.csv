@@ -1,0 +1,45 @@
+road,year,speed,band_lo,band_hi,position,scored,excluded_reason
+expressway,2004,62.7,45,65,inside,True,
+expressway,2005,63,45,65,inside,True,
+expressway,2006,61.6,45,65,inside,True,
+expressway,2007,62.4,45,65,inside,True,
+expressway,2008,63.3,45,65,inside,True,
+expressway,2009,62,45,65,inside,True,
+expressway,2010,62.3,45,65,inside,True,
+expressway,2011,62.5,45,65,inside,False,seen before seal
+expressway,2012,63.1,45,65,inside,True,
+expressway,2013,61.4,45,65,inside,True,
+expressway,2014,64.1,45,65,inside,True,
+expressway,2015,61.9,45,65,inside,True,
+expressway,2016,61.5,45,65,inside,True,
+expressway,2017,60.2,45,65,inside,True,
+expressway,2018,61,45,65,inside,True,
+expressway,2019,59.8,45,65,inside,False,seen before seal
+expressway,2020,64,45,65,inside,False,2020-2021
+expressway,2021,63,45,65,inside,False,2020-2021
+expressway,2022,60,45,65,inside,False,seen before seal
+expressway,2023,59,45,65,inside,False,seen before seal
+expressway,2024,58,45,65,inside,True,
+expressway,2025,55,45,65,inside,True,
+arterial,2004,24.8,20,30,inside,True,
+arterial,2005,27.2,20,30,inside,True,
+arterial,2006,27.1,20,30,inside,True,
+arterial,2007,26.9,20,30,inside,True,
+arterial,2008,26.7,20,30,inside,True,
+arterial,2009,27.9,20,30,inside,True,
+arterial,2010,28,20,30,inside,True,
+arterial,2011,28.5,20,30,inside,False,seen before seal
+arterial,2012,28.6,20,30,inside,True,
+arterial,2013,28.9,20,30,inside,True,
+arterial,2014,28.9,20,30,inside,True,
+arterial,2015,29.4,20,30,inside,True,
+arterial,2016,30.4,20,30,above,True,
+arterial,2017,30,20,30,inside,True,
+arterial,2018,29.4,20,30,inside,True,
+arterial,2019,29.5,20,30,inside,True,
+arterial,2020,31,20,30,above,False,2020-2021
+arterial,2021,32,20,30,above,False,2020-2021
+arterial,2022,30,20,30,inside,True,
+arterial,2023,31,20,30,above,True,
+arterial,2024,30,20,30,inside,True,
+arterial,2025,29,20,30,inside,True,
