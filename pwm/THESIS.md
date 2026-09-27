@@ -16,9 +16,16 @@ single-date counts, policy settings or CPI figures, are listed in
 ("every June from the first OWS year to ...") and become numbers once
 `00_coverage.py` has run on the received files, before the seal.
 
+Revision history before the seal: `34122a7`/`cb9fe70` first draft; this
+revision, after the checker review of `cb9fe70`: checker disclosure; the
+Local Qualifying Salary stated as a floor under the comparison jobs before
+2022, with its leans at T2, T3 and T5; T5 kept as a scored bet; T3 made part
+of the verdict sentence; thresholds accepted; confidences relabelled as the
+researcher's proposal pending Jacob's numbers; answer due December 2026.
+
 Markers: `PENDING` = settled before the seal from documents or coverage
-checks, never from a wage or employment value. `PROPOSED` = the researcher's
-number; Jacob sets the final one.
+checks, never from a wage or employment value. "Researcher's proposal" = the
+researcher's confidence, kept for the record; Jacob sets the final one.
 
 ---
 
@@ -128,9 +135,27 @@ Reasons, stated rather than assumed:
   - National Wages Council guidelines from 2012 asked for dollar increases
     for low-wage workers;
   - the government's "best sourcing" push changed how it bought cleaning and
-    security.
+    security;
+  - **the Local Qualifying Salary (LQS)**, earlier the full-time-equivalent
+    salary threshold, put a floor under the comparison jobs long before they
+    got a ladder. Before September 2022 it was a counting rule: a local paid
+    below it did not count, or counted only in part, toward the firm's
+    foreign worker quota. Any firm needing that quota had a reason to pay
+    every local at least the threshold, and that includes many shops and
+    food outlets in comparison set C. As found (secondary sources; primary
+    dates `PENDING`, SOURCES_REPORT W3):
+    - S$1,000 before July 2017 (start date not found);
+    - S$1,100 from July 2017 and S$1,200 from July 2018;
+    - S$1,300 in 2019;
+    - S$1,400 from 2020.
 
-  Most of these hit both sides of the comparison. Where one hit one side
+    In the covered jobs the ladder's entry rung sat at or above it, so the
+    LQS added little there; its push falls on the comparison side. So the
+    comparison is between a ladder and a lower, looser floor, not between a
+    ladder and no floor at all.
+
+  Most of these hit both sides of the comparison; the LQS hit mainly the
+  comparison side. Where one hit one side
   harder (levies bite hardest where foreign workers are most used, which
   includes cleaning and food services), it is not separated out.
 - **Few groups, few years.** Three covered groups, one comparison set, a
@@ -160,6 +185,7 @@ Reasons, stated rather than assumed:
 | W2b | Employed residents by occupation | LFS, data.gov.sg | PENDING; detail level unknown | not received |
 | W2c | Employment change by industry and residential status | MOM, data.gov.sg | PENDING | not received |
 | W3 | PWM start dates and wage schedules | MOM, NEA, SPF, NParks, BCA; S 240/2014 | 2012-2026 | located, not read |
+| W3b | Local Qualifying Salary (earlier the FTE salary threshold): amounts and dates | MOM; archived MOM FAQs | S$1,000 (start PENDING) to S$1,400 (2020) | amounts from secondary sources; primary not saved |
 | W4a/b | CPI all items; CPI lowest 20% households; 2019 = 100, annual | SingStat | PENDING | not received |
 | W5 | Hong Kong 2011, UK 2016, Germany 2015 | papers and commission reports | -- | context only |
 
@@ -219,7 +245,7 @@ Reasons, stated rather than assumed:
   jobs for reasons unrelated to the ladders. Shown and labelled.
 - **The comparison ends at June 2022.** From 1 September 2022 in-house
   cleaners, guards and landscape workers were covered, retail was covered, and
-  the Local Qualifying Salary was raised. From March 2023 food services and
+  the Local Qualifying Salary became a condition for work passes. From March 2023 food services and
   office and driving jobs were covered. After that almost no uncovered
   low-wage job was left to compare against: about 94 per cent of full-time
   lower-wage workers, by MOM's count. 2023-2025 are shown, not scored.
@@ -293,7 +319,8 @@ before the ladders were announced.
 - **Leans toward FAIL, stated now.** The groups were picked because their pay
   lagged, and single-occupation percentiles are noisy over few years; all
   groups must pass.
-- **Confidence: 40% (PROPOSED).** Selection on lagging pay makes a drift
+- **Confidence at seal: set by Jacob (PENDING).** Researcher's proposal:
+  40%. Selection on lagging pay makes a drift
   likely, and with three groups and short noisy series one of them will
   probably cross a 1.0-a-year line even if the underlying trends were
   parallel.
@@ -327,9 +354,15 @@ before the ladders were announced.
     cleaner titles and dilute the cleaning estimate.
   - Comparison jobs were lifted by the same tight market, levies and wage
     guidelines.
-  - Both push toward FAIL. So a pass is strong evidence that the ladder
+  - The LQS put a floor under comparison jobs in firms holding foreign worker
+    quota, and it rose in steps during the post-period. The June surveys
+    fell under S$1,000 in 2016-2017, S$1,100 in 2018, S$1,200 in 2019 and
+    S$1,400 in 2022, dates `PENDING`. A floor lifting the comparison bottom
+    narrows the gap T2 measures.
+  - All three push toward FAIL. So a pass is strong evidence that the ladder
     lifted pay where it applied, and a fail is weak evidence that it did not.
-- **Confidence: 50% (PROPOSED).** The ladders were set to bite, and MOM's
+- **Confidence at seal: set by Jacob (PENDING).** Researcher's proposal:
+  50%. The ladders were set to bite, and MOM's
   public claims (background knowledge, disclosed) point to faster wage growth
   in PWM jobs. But dilution, the 25-employee floor of the survey and a
   comparison set lifted by the same forces make 10 log points on the pooled
@@ -357,7 +390,16 @@ The tailor's extreme says jobs without a ladder are left behind.
 - **Why 5 log points (judgement).** About 0.7 log points a year over seven
   years; a smaller shortfall is within the drift that a different survey
   (if W1c is used) and composition change could produce.
-- **Confidence: 60% (PROPOSED).** A tight labour market, higher foreign worker
+- **Leans toward SURVIVE, stated now.** The LQS was a floor under these
+  jobs, looser than a ladder, in firms that held foreign worker quota. It
+  rose from S$1,000 to S$1,200 between the start and end of the window
+  (dates `PENDING`). A rising floor under the uncovered bottom is exactly
+  what helps it keep pace. So "kept pace" is weak evidence that jobs without
+  a ladder did not need one, and "fell behind" is strong evidence that they
+  did, since it happened despite that floor. If the S$1,000 threshold began
+  inside the window, that is marked on the chart.
+- **Confidence at seal: set by Jacob (PENDING).** Researcher's proposal:
+  60%. A tight labour market, higher foreign worker
   levies and dollar-amount wage guidelines lifted low pay broadly in these
   years, and background knowledge (disclosed) recalls MOM reporting the 20th
   percentile growing faster than the median late in the decade. But
@@ -393,7 +435,8 @@ The tailor's extreme says jobs without a ladder are left behind.
 - **One lean the other way:** security. Its industry transformation plan
   pushed technology in place of guards in the late 2010s, which could shrink
   guard numbers for reasons unrelated to pay. Named, not separated.
-- **Confidence: 60% (PROPOSED).** Hard-to-cut demand and foreign workers in
+- **Confidence at seal: set by Jacob (PENDING).** Researcher's proposal:
+  60%. Hard-to-cut demand and foreign workers in
   the count both favour holding, but security's technology push and the
   cleaning industry's own productivity drive could produce a relative fall of
   5 log points in one of three industries.
@@ -423,7 +466,24 @@ paid at least the ladder's first rung.
   bound until 2022, sit inside the cleaner titles and can pull the 25th
   percentile below the contract rung. A fail here says the floor was not the
   bottom of the occupation, which is itself the tailor's point.
-- **Confidence: 45% (PROPOSED).** Security and landscape probably clear their
+- **The LQS sits near the entry rungs.** The cleaning ladder's entry basic
+  wage was S$1,000 to S$1,200 (checker disclosure, SOURCES_REPORT section 1
+  item 7), and the LQS was S$1,000 to S$1,400 over the post-period Junes.
+  - In a year when the LQS sat above a rung, firms with foreign worker quota
+    had a reason to pay above the rung anyway. That lifts the 25th
+    percentile and leans T5 toward SURVIVE for reasons other than the
+    ladder.
+  - The LQS is a monthly salary threshold, and whether it counted basic or
+    gross pay in each year is `PENDING`. T5 reads basic, so the lean is
+    smaller if the LQS counted gross pay.
+  - The years in which the LQS exceeded each entry rung are marked in the
+    T5 table, from the W3 and W3b schedules, before the seal.
+- **A separate bet from T2** (checker review of `cb9fe70`, item 3). T2 is
+  relative: covered against comparison jobs. T5 is a level: covered jobs
+  against their own rung. Either can hold without the other, so T5 stays
+  scored.
+- **Confidence at seal: set by Jacob (PENDING).** Researcher's proposal:
+  45%. Security and landscape probably clear their
   entry rung, but cleaning's in-house mix and any year where a scheduled step
   landed just before the June survey make "every group, every year" fragile.
 
@@ -453,20 +513,46 @@ Capped at about 150 words in the article.
 
 ## 8. The verdict rule (fixed at seal)
 
-The verdict is about which model the covered jobs look like, read from T2
-and T4 together. T1 gates it; T3 and T5 are reported beside it.
+The headline question asks "minimum wage or PWM", but the record can test
+only the ladder directly. So the verdict has two parts in one sentence
+(checker review of `cb9fe70`, item 4):
 
-- **"The record cannot say"**: T1 fails for every group or cannot be run.
-  Stated plainly: covered and comparison jobs were already drifting apart, or
-  there are too few years before the ladders to tell.
-- **"Covered jobs look more like monopsony"**: T2 survives **and** every
+- **Part A, the ladder:** which model the covered jobs look like, from T2 and
+  T4, gated by T1.
+- **Part B, the rest of the bottom:** whether uncovered low-wage jobs kept
+  pace with the middle, from T3. This is the evidence on the minimum-wage
+  side of the argument: a floor for everyone is the answer to a bottom that
+  a ladder for a few leaves behind.
+
+**Part A. Exactly one of these:**
+
+- **"the record cannot say what the ladder did"**: T1 fails for every group
+  or cannot be run. Stated plainly: covered and comparison jobs were already
+  drifting apart, or there are too few years before the ladders to tell.
+- **"covered jobs look more like monopsony"**: T2 survives **and** every
   scored industry in T4 shows a relative employment change of zero or more.
   Pay rose where the floor bound, and jobs did not fall.
-- **"Covered jobs look more like a competitive market"**: T2 survives **and**
-  T4 fails. Pay rose and jobs fell.
-- **"The ladder did not measurably lift pay at the bottom"**: T2 fails.
-- **Anything else: "the record cannot tell the two models apart"**, published
-  as plainly as the others.
+- **"covered jobs look more like a competitive market"**: T2 survives
+  **and** T4 fails. Pay rose and jobs fell.
+- **"the ladder did not measurably lift pay at the bottom of the jobs it
+  covered"**: T2 fails.
+- **anything else: "the record cannot tell the two models apart"**,
+  published as plainly as the others.
+
+**Part B. Exactly one of these:**
+
+- **"the rest of the bottom kept pace"**: T3 survives.
+- **"the rest of the bottom fell behind"**: T3 fails.
+- **"the record cannot say whether the rest of the bottom kept pace"**: T3
+  cannot be computed (fewer than two start-window Junes).
+
+T3 does not read the covered groups, so T1 does not gate it. T5 is scored
+for calibration and reported beside the verdict; it does not enter it.
+
+**The verdict sentence is Part A, a semicolon, then Part B**, for example:
+"Covered jobs look more like monopsony; the rest of the bottom fell behind."
+Both parts are printed whatever they say. Neither is dropped because the
+other is more striking.
 
 **Weak-evidence sentence, carried next to the verdict in the article,
 verbatim:** "A monopsony-like result is weak evidence and a competitive result
@@ -477,14 +563,19 @@ The reasons, stated now:
 - the job counts include foreign workers whom the ladders did not cover.
 
 Both keep jobs looking steady whether or not the floor cost resident jobs.
-The pay test leans the other way (T2), which the article also says: a pay gain
-found is strong evidence, none found is weak.
 
-Beside the verdict the article also carries:
+**Two further leans, stated beside the verdict in the article:**
 
-- T3's result ("the rest of the bottom kept pace" or "fell behind");
-- the limit in section 3, that the record cannot say what a national floor
-  would have done in jobs no ladder reached.
+- **The pay test leans the other way (T2).** In-house cleaners dilute the
+  covered side, and the LQS floor lifted the comparison side. So a pay gain
+  found is strong evidence, and none found is weak.
+- **Part B leans toward "kept pace" (T3).** The LQS was a floor under the
+  uncovered jobs too, and it rose during the window. So "kept pace" is weak
+  evidence, and "fell behind" is strong evidence.
+
+Beside the verdict the article also carries the limit in section 3: the
+record cannot say what a national floor would have done in jobs no ladder
+reached.
 
 **Confidences and the scorecard.**
 
@@ -495,8 +586,9 @@ Beside the verdict the article also carries:
   when every industry fails its pre-trend condition) drops out of both the
   count and the Brier score, and the article says so.
 
-Expected number holding under the PROPOSED confidences: 2.55 of 5 (0.40 +
-0.50 + 0.60 + 0.60 + 0.45). The predictions are correlated (T1 gates T2 and
+Expected number holding: from Jacob's confidences, written in at the seal.
+Under the researcher's proposals it would be 2.55 of 5 (0.40 + 0.50 + 0.60 +
+0.60 + 0.45). The predictions are correlated (T1 gates T2 and
 T5; T2 and T5 read the same wages), so the actual count spreads wider than
 five independent calls would.
 
@@ -518,11 +610,26 @@ five independent calls would.
   the state rather than the employer. It is not in wages and not measured
   here. The article names it, because "which lifts lowest pay" in Singapore
   has three answers, not two.
+- **The LQS start date.** If the S$1,000 threshold began inside a
+  pre-period (2009-2014), the comparison side had a floor change inside the
+  window T1 reads. `PENDING` from the archived MOM FAQs. It is marked on the
+  chart, and it does not move any window.
 - **Foreign workers.** Outside every ladder and outside OWS's resident
   scope. A national floor that also left them out would share the gap. The
   article says so.
 
 ## 10. Open before the seal
+
+Settled in the checker review of `cb9fe70` (27 September 2026):
+
+- thresholds accepted as drafted;
+- T5 stays scored;
+- T3 is part of the verdict sentence (section 8);
+- checker disclosure recorded (SOURCES_REPORT section 1, item 7);
+- the LQS is stated as a lean (section 3, T2, T3, T5);
+- **answer due December 2026**, subject to the downloads.
+
+Still open:
 
 1. Coverage: download and run `00_coverage.py`; write every year range in
    sections 5 and 6 as numbers.
@@ -530,12 +637,9 @@ five independent calls would.
    before any wage value is opened.
 3. W3 schedules: tabulate entry-rung basic wages by date for cleaning,
    security and landscape, for T5.
-4. Dates `PENDING`: landscape day in June 2016 (does not move any window);
+4. W3b: date each LQS step from MOM primary pages (archived FAQs), and
+   whether it counted basic or gross pay. Mark in the T5 table the years in
+   which the LQS exceeded each entry rung.
+5. Dates `PENDING`: landscape day in June 2016 (does not move any window);
    the October 2014 security report itself.
-5. Thresholds for Jacob: T1's 1.0 log point a year, T2's 10 and 5 log points,
-   T3's 5 log points, T4's -5 and -10 log points and its 2.0 pre-trend line,
-   T5's 0.97.
-6. Whether T5 is scored or reported only (it reads the same wages as T2).
-7. Confidences: Jacob sets the final numbers.
-8. Checker disclosure, if any (SOURCES_REPORT section 1, item 7).
-9. Answer due date: proposed December 2026, subject to the OWS download.
+6. Confidences: Jacob sets the final numbers, sent through the checker.

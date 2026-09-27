@@ -254,11 +254,43 @@ Occupational Progressive Wages, administrators and drivers  (work pass)
   https://www.mom.gov.sg/employment-practices/progressive-wage-model/expansion-of-progressive-wage-approach-and-coverage
   Date per index: 1 March 2023.
 
-Local Qualifying Salary (not a PWM, but a wage floor for all local staff of
-firms that hold work passes; it overlaps the comparison jobs from 2022)
-  https://www.mom.gov.sg/employment-practices/progressive-wage-model/local-qualifying-salary
-  https://www.mom.gov.sg/-/media/mom/documents/budget2022/updates-to-ep-framework.pdf
-  https://www.mom.gov.sg/-/media/mom/documents/budget2023/foreign-workforce-updates-factsheet.pdf
+W3b  Local Qualifying Salary (LQS), earlier the full-time-equivalent salary
+     threshold for counting a local worker toward a firm's foreign worker
+     quota. Not a PWM. A counting rule before 1 September 2022, a work pass
+     condition after. Added 27 September 2026 (checker review of cb9fe70,
+     item 2). NOT SAVED: every MOM host returns 403. Amounts and dates as
+     found, all to be confirmed from the primary pages below and saved as
+     raw/w3b_lqs_{short-name}.pdf:
+       S$1,000   start date NOT FOUND (before July 2017)      secondary only
+       S$1,100   July 2017                                   secondary (Fragomen)
+       S$1,200   July 2018                                   secondary (Fragomen)
+       S$1,300   2019, month PENDING                         checker's secondary source
+       S$1,400   2020 (July per secondary)                   MOM LQS page snippet
+       S$1,600   1 July 2024                                 secondary
+       S$1,800   1 July 2026                                 secondary
+     Primary candidates:
+       https://www.mom.gov.sg/employment-practices/progressive-wage-model/local-qualifying-salary
+         (snippet: "raised four times since 2017, with the last increase to
+         $1,400 taking place in 2020")
+       https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/lqs-wage-schedule.pdf
+         ("Updated 1 July 2024")
+       https://www.mom.gov.sg/about-us/budget-highlights-2020
+       https://www.mom.gov.sg/faq/work-pass-general/how-should-i-count-my-local-employees-to-calculate-my-work-permit-and-s-pass-quota
+         -> the ARCHIVED versions of this FAQ, and of its predecessor
+            .../faq/work-pass-general/how-to-calculate-the-number-of-local-full-time-employees-when-calculating-foreign-worker-quota
+            on web.archive.org, one capture a year from 2010 to 2020: they
+            carry the threshold in force at each date, which dates the
+            S$1,000 start and each step
+       https://www.mom.gov.sg/-/media/mom/documents/services-forms/passes/guide_on_comp_of_company_quota_balance.pdf
+         (current quota guide; archived versions as above)
+       https://www.mom.gov.sg/-/media/mom/documents/employment-practices/pwm/twg-lww-progress-through-solidarity-dynamism.pdf
+         (TWG-LWW report, 2021: expected to give the LQS history)
+       https://www.mom.gov.sg/-/media/mom/documents/budget2022/updates-to-ep-framework.pdf
+       https://www.mom.gov.sg/-/media/mom/documents/budget2023/foreign-workforce-updates-factsheet.pdf
+       https://www.mom.gov.sg/-/media/mom/documents/budget2024/factsheet-on-foreign-workforce-policies.pdf
+     Secondary, located and not used for any date in THESIS:
+       https://www.fragomen.com/insights/qualifying-salary-of-local-employees-for-quota-calculation-set-to-increase.html
+       https://dollarsandsense.sg/local-qualifying-salary-5-things-need-know-lqs/
 
 Government co-funding of wage increases (affects covered and comparison
 jobs alike; dated for the record)

@@ -1,10 +1,11 @@
 # Minimum wage or the Progressive Wage Model: which actually lifts Singapore's lowest pay?
 
-Open question. Predictions sealed on [SEAL DATE]. Answer due [DUE DATE].
+Open question. Predictions sealed on [SEAL DATE]. Answer due December 2026.
 
-<!-- DRAFT, 27 September 2026. Confidences and "Why" lines are the
-researcher's PROPOSED numbers; Jacob sets the final ones before the seal.
-Seal date, hash and due date are filled in at the seal. -->
+<!-- DRAFT, 27 September 2026. Confidences and "Why" lines are Jacob's and
+are filled in when he sends them (checker review of cb9fe70, item 6); the
+researcher's proposals stay in THESIS.md only. Seal date and hash are filled
+in at the seal. -->
 
 Singapore has no minimum wage. Since 2014 it has given cleaners, then
 security officers and landscape workers, a wage ladder: a floor for each step
@@ -62,31 +63,27 @@ had a floor and the other did not.
 1. **They moved together before.** Before the ladders were announced, pay at
    the bottom of the covered jobs and of the later-covered jobs rose at about
    the same pace. If not, the comparison is unfair, and I will say so.
-   Confidence: 40%.
-   Why: these jobs were picked because their pay lagged, so they may already
-   have been falling behind.
+   Confidence: [JACOB].
+   Why: [JACOB].
 2. **The suit fits.** After the ladders bound, pay at the bottom of the covered
    jobs rose about 10 per cent or more faster than in the jobs without one.
-   Confidence: 50%.
-   Why: the ladders were set to bite, but some covered titles include workers
-   the ladder did not reach until 2022, and the comparison jobs were rising
-   too.
+   Confidence: [JACOB].
+   Why: [JACOB].
 3. **The rest kept pace.** Through the 2010s, pay at the bottom of the jobs
-   with no ladder did not fall more than about 5 per cent behind the median worker's.
-   Confidence: 60%.
-   Why: a tight labour market and dearer foreign workers lifted low pay
-   broadly in those years.
+   with no ladder did not fall more than about 5 per cent behind the median
+   worker's.
+   Confidence: [JACOB].
+   Why: [JACOB].
 4. **The jobs survived.** Employment in cleaning, security and landscape firms
    did not fall more than about 5 per cent relative to shops and food outlets.
-   Confidence: 60%.
-   Why: buildings have to be cleaned and guarded, so demand is hard to cut.
+   Confidence: [JACOB].
+   Why: [JACOB].
 5. **The first rung shows.** In the official wage survey, the bottom quarter of
    covered workers earned at least the ladder's entry wage every year.
-   Confidence: 45%.
-   Why: cleaners hired directly by hotels and hospitals were not covered until
-   2022, and they can drag the bottom of the survey below the rung.
+   Confidence: [JACOB].
+   Why: [JACOB].
 
-If my confidences are right, about 2.6 of these 5 would hold.
+If my confidences are right, about [JACOB] of these 5 would hold.
 
 Not scored: 2020 and 2021, when the pandemic moved pay and jobs for other
 reasons, and everything after mid-2022, when nearly every low-wage job got a
@@ -99,6 +96,14 @@ counts include foreign workers, whom the ladders do not cover. Both keep
 employment looking steady even if the floor cost Singaporeans their jobs. So:
 **a monopsony-like result is weak evidence and a competitive result is strong
 evidence, because the design leans toward the monopsony reading.**
+
+The jobs without a ladder were not without a floor. A firm that wanted to
+hire foreign workers had to pay each local at least a set salary, S$1,000 a
+month before 2017 and more after, or that local did not count toward its quota.
+That looser floor lifted the comparison jobs too. It makes the ladder's
+measured effect smaller, and it makes it easier for the rest of the bottom to
+keep pace. So on that bet as well, "kept pace" is the weaker finding and
+"fell behind" the stronger one.
 
 And the record can only speak for the jobs the tailor measured. What a
 national floor would have done in a hawker stall or a five-person firm is not
@@ -115,8 +120,9 @@ in it.
 - The jobs without a ladder falling clearly behind the middle: the tailor's
   cost.
 
-The answer could also be "the record cannot tell the two apart", and that
-would be published too.
+The answer will say two things: which world the covered jobs look like, and
+whether the rest of the bottom kept pace. Either part could come back as "the
+record cannot tell", and that would be published too.
 
 ## Proof
 

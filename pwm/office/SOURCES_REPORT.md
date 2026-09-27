@@ -36,7 +36,10 @@ officers, landscape workers) can be set against low-wage jobs that were covered
 only from September 2022 (retail, food services, office and driving jobs).
 **Two gaps are not closed.** First, how far back the per-year wage tables go.
 Second, any resident head count for cleaners, guards and gardeners, as opposed
-to industry head counts that include foreign workers.
+to industry head counts that include foreign workers. A third is partly
+closed: the Local Qualifying Salary, which put a floor under the comparison
+jobs before 2022. Its amounts are known from secondary sources, but not its
+primary dates (section 2, W3).
 
 ## 1. Exposure disclosure (read first)
 
@@ -98,9 +101,29 @@ The seal is only worth something if it is clear what had been seen.
 
    Both recollections are aggregate claims, not occupation series. They
    informed two proposed confidences, and THESIS says where.
-7. **No checker disclosure yet.** If the checker has read OWS tables or MOM
-   PWM impact figures, that needs recording here before the seal. The same
-   was done for the ERP piece.
+7. **Checker disclosure (added 27 September 2026, checker review of
+   `cb9fe70`).** The checker read a Wikipedia summary stating two things:
+   - before PWM, the median wage of cleaners in the civil service was between
+     S$675 and S$950;
+   - the cleaning ladder's entry basic wage was S$1,000 to S$1,200.
+
+   No OWS table, no LFS income by occupation and no MOM statement on PWM
+   wage growth was read. The civil service figure is not OWS data: OWS
+   covers private-sector establishments only, so public-sector cleaners are
+   outside every series THESIS uses. The entry rung is a policy setting (W3),
+   the same kind of number T5 compares against, not an outcome.
+8. **LQS amounts seen while locating item 2 of the checker review
+   (27 September 2026).** Secondary pages (Fragomen, dollarsandsense.sg) and
+   the MOM search snippets gave the history of the salary a local worker
+   needs to count toward a firm's foreign worker quota:
+   - S$1,000 before July 2017, S$1,100 from July 2017, S$1,200 from July 2018;
+   - S$1,400 from 2020 ("raised four times since 2017", MOM LQS page snippet);
+   - S$1,600 from 1 July 2024, S$1,800 from 1 July 2026.
+
+   The checker's secondary source gives S$1,300 for 2019. A snippet of an
+   MOM wage-practices report showed its own "lower-wage" cut-offs of $1,200
+   (2017), $1,300 (2018) and $1,400 (2019 and 2020). These are policy and
+   report definitions, not outcomes.
 
 ## 2. Item by item
 
@@ -226,10 +249,40 @@ used for any date.
    enforced through work pass eligibility, so they bound only firms that
    employ foreign workers. A firm with no work pass holders was not legally
    bound. This matters only after 2022, which THESIS does not score.
-2. **The Local Qualifying Salary** is a floor for every local employee of a
-   firm that holds work passes. It is not a PWM, but it lifts the bottom of
-   comparison jobs too. Its changes from 2022 are one more reason to end the
-   comparison before September 2022.
+2. **The Local Qualifying Salary (LQS) put a floor under the comparison jobs
+   long before 2022** (checker review of `cb9fe70`, item 2).
+   - It was known earlier as the full-time-equivalent salary threshold.
+   - Before September 2022 it was a counting rule, not a legal floor. A local
+     employee paid less than the threshold did not count, or counted only in
+     part, toward the number of foreign workers the firm could hold.
+   - So any firm that needed its foreign worker quota had a reason to pay
+     every local at least the threshold. That includes many shops and food
+     outlets in comparison set C.
+   - From 1 September 2022 it became a condition for work passes: every local
+     employee of a firm holding work passes had to be paid at least the LQS.
+
+   Amounts and dates, as found:
+
+   | Amount | From | Source state |
+   |---|---|---|
+   | S$1,000 | start date not found (before July 2017) | secondary only |
+   | S$1,100 | July 2017 | secondary (Fragomen) |
+   | S$1,200 | July 2018 | secondary (Fragomen) |
+   | S$1,300 | 2019 (month PENDING) | checker's secondary source |
+   | S$1,400 | 2020 (July, per secondary) | MOM LQS page snippet: "raised four times since 2017" |
+   | S$1,600 | 1 July 2024 | secondary |
+   | S$1,800 | 1 July 2026 | secondary |
+
+   **Not closed.** No MOM primary page for the pre-2020 steps could be opened
+   or saved (403). The start date of the S$1,000 threshold matters most: if it
+   began inside a pre-period (2009-2014), it is a change inside the window T1
+   reads. Primary candidates are listed in RETRIEVED.txt (W3b), including the
+   archived versions of MOM's quota-counting FAQ.
+
+   The LQS applied to cleaning, security and landscape firms too. There the
+   ladder's entry rung sat at or above it from the start (S$1,000 basic for
+   cleaning, disclosed in section 1 item 7), so it added little. Its effect
+   falls on the comparison jobs. That is the lean THESIS states at T2 and T3.
 
 **Wage levels.**
 
@@ -321,6 +374,7 @@ catch is that head counts include foreign workers.
 | Occupation code changes (SSOC) | Titles are matched by name before the seal, and unmatched titles dropped. A break that cannot be bridged ends that title's series. |
 | OWS method change ("administrative records") | PENDING from the per-year method notes. Any break is shown on the chart and handled by amendment. |
 | Security announcement document (October 2014) not located | Only the month is used (last pre-period June is 2014). |
+| LQS history before 2020: primary sources not saved; start date of the S$1,000 threshold unknown | THESIS states the LQS as a lean at T2 and T3 either way. If the S$1,000 threshold began inside a pre-period, T1 reads a window with a floor change in it, and the chart marks the date. Every LQS step is marked on the charts. |
 
 ## 5. Asks of Jacob (one consolidated list)
 
@@ -335,11 +389,13 @@ catch is that head counts include foreign workers.
 3. **Save the W3 pages and PDFs** listed in RETRIEVED.txt, especially the
    Commissioner for Labour orders and cluster reports that carry the wage
    schedules, and the SPF and NParks pages that carry the start dates.
-4. **W5 PDFs**, if convenient. Not needed before the seal.
-5. **Checker disclosure.** Before the seal, state whether the checker has
-   read OWS tables, LFS income by occupation, or MOM statements on PWM wage
-   growth.
-6. **Review THESIS.md (unsealed)** and set the confidences.
+4. **Save the LQS history (W3b)** from MOM primary pages, including the
+   archived versions of MOM's quota-counting FAQ on web.archive.org, to date
+   each step: S$1,000 (start), S$1,100, S$1,200, S$1,300, S$1,400.
+5. **W5 PDFs**, if convenient. Not needed before the seal.
+6. **Checker disclosure:** received 27 September 2026, recorded in section
+   1, item 7.
+7. **Review THESIS.md (unsealed)** and set the confidences.
 
 ## Sources used to locate the above (search index, 27 September 2026)
 
