@@ -124,6 +124,53 @@ The seal is only worth something if it is clear what had been seen.
    MOM wage-practices report showed its own "lower-wage" cut-offs of $1,200
    (2017), $1,300 (2018) and $1,400 (2019 and 2020). These are policy and
    report definitions, not outcomes.
+9. **Checker disclosure (27 September 2026): policy pages read, no outcome
+   values seen.**
+   - **MHA, 12 November 2021:** security wage schedule 2023-2028. Entry gross
+     wage about S$2,259 in 2022, rising to S$3,530 in 2028.
+   - **Security Tripartite Cluster report, 23 November 2017:**
+     - the PWM became a licensing condition for security agencies from
+       1 September 2016;
+     - security officer basic wage S$1,100;
+     - increases of +S$75 in January 2019, +S$75 in January 2020 and +S$150
+       in January 2021;
+     - at least 3 per cent a year in 2022-2024.
+   - **MOM press release, 30 November 2018:** landscape entry basic wage
+     +S$150 in July 2020, +S$100 in July 2021 and +S$100 in July 2022; at
+     least 3 per cent a year in 2023-2025.
+   - **NTUC, 12 December 2016:**
+     - cleaning basic wage +S$60 in July 2017, +S$60 in July 2018 and +S$80
+       in July 2019, then 3 per cent a year in 2020-2022;
+     - new contracts from 1 July 2017, existing contracts by 1 July 2018;
+     - enforced through NEA licensing by order of the Commissioner for
+       Labour.
+
+     The page carries outcome statistics; they were filtered out and not
+     read.
+   - **NParks CUGE LCR page:** the PWM has been a condition of LCR listing
+     since 2016, and LCR listing is needed to bid for NParks and government
+     contracts.
+   - **2015 news repost:** the landscape PWM was required for listing and
+     renewal on the LCR from June 2016, with a starting basic wage of "at
+     least $1,300".
+   - **PWCS** (secondary): co-funds wage increases in 2022-2026; first payout
+     in Q1 2023.
+
+   **Context note to Jacob before he set his confidences.** The checker sent
+   Jacob a note containing:
+   - the policy settings above;
+   - the rules of each test;
+   - published minimum-wage employment studies (Cengiz et al. 2019,
+     Dustmann et al. 2022, Dube 2019, Neumark and Shirley 2022);
+   - the site's scorecard record;
+   - arithmetic only (noise-only pass rates for T1, compound probabilities).
+
+   No confidence number was proposed to him. The researcher's proposals
+   (THESIS, beside each test) were not in the note.
+
+   All of these are leads for the W3 wage-schedule table (THESIS section 10,
+   item 3). Every amount and date is confirmed from primary documents in the
+   design chat's downloads before it enters T5.
 
 ## 2. Item by item
 

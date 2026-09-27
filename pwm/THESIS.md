@@ -245,10 +245,11 @@ Reasons, stated rather than assumed:
   jobs for reasons unrelated to the ladders. Shown and labelled.
 - **The comparison ends at June 2022.** From 1 September 2022 in-house
   cleaners, guards and landscape workers were covered, retail was covered, and
-  the Local Qualifying Salary became a condition for work passes. From March 2023 food services and
-  office and driving jobs were covered. After that almost no uncovered
-  low-wage job was left to compare against: about 94 per cent of full-time
-  lower-wage workers, by MOM's count. 2023-2025 are shown, not scored.
+  the Local Qualifying Salary became a condition for work passes. From March
+  2023 food services and office and driving jobs were covered. After that
+  almost no uncovered low-wage job was left to compare against: about 94 per
+  cent of full-time lower-wage workers, by MOM's count. 2023-2025 are shown,
+  not scored.
 - **Employment windows** (T4) use calendar years with the same cut points.
   Pre-period: every year to 2012 (cleaning) or 2014 (security, landscape).
   Post-period: 2016 (cleaning) or 2017 (security, landscape) to 2019, plus
@@ -350,15 +351,18 @@ before the ladders were announced.
   instead of 25th percentile; dropping 2022; leaving out each comparison
   title in turn; the first transition June counted as post-period.
 - **Leans toward understating, stated now.**
-  - Cleaners employed in-house (covered only from 2022) sit inside the
-    cleaner titles and dilute the cleaning estimate.
+  - In-house workers in all three groups (cleaners, guards and landscape
+    workers employed directly rather than through a contractor) were
+    unbound until 1 September 2022. They sit inside the occupation titles
+    and dilute each group's estimate. Landscape workers in firms not on the
+    Landscape Company Register were also unbound.
   - Comparison jobs were lifted by the same tight market, levies and wage
     guidelines.
   - The LQS put a floor under comparison jobs in firms holding foreign worker
     quota, and it rose in steps during the post-period. The threshold in
     force at each post-period June survey was S$1,000 (2016 and 2017),
-    S$1,100 (2018), S$1,200 (2019) and S$1,400 (2022); dates `PENDING`. A floor lifting the comparison bottom
-    narrows the gap T2 measures.
+    S$1,100 (2018), S$1,200 (2019) and S$1,400 (2022); dates `PENDING`. A
+    floor lifting the comparison bottom narrows the gap T2 measures.
   - All three push toward FAIL. So a pass is strong evidence that the ladder
     lifted pay where it applied, and a fail is weak evidence that it did not.
 - **Confidence at seal: set by Jacob (PENDING).** Researcher's proposal:
@@ -462,13 +466,21 @@ paid at least the ladder's first rung.
 - **Fail if:** any ratio < 0.97.
 - **Why 0.97 (judgement).** Allows for rounding in published percentiles and
   a schedule step falling close to the survey month.
-- **Leans toward FAIL for cleaning, stated now:** in-house cleaners, not
-  bound until 2022, sit inside the cleaner titles and can pull the 25th
-  percentile below the contract rung. A fail here says the floor was not the
-  bottom of the occupation, which is itself the tailor's point.
-- **The LQS sits near the entry rungs.** The cleaning ladder's entry basic
-  wage was S$1,000 to S$1,200 (checker disclosure, SOURCES_REPORT section 1
-  item 7), and the LQS was S$1,000 to S$1,400 over the post-period Junes.
+- **Leans toward FAIL for every group, stated now:** in-house cleaners,
+  in-house guards and in-house landscape workers were not bound until 1
+  September 2022. They sit inside each group's occupation titles, and can
+  pull its 25th percentile below the rung. For landscape, workers in firms
+  not on the Landscape Company Register were unbound too. A fail here says
+  the floor was not the bottom of the occupation, which is itself the
+  tailor's point.
+- **The LQS sits near the entry rungs.** The entry basic wages, from the
+  checker's disclosures (SOURCES_REPORT section 1, items 7 and 9, to be
+  confirmed from primary documents), were:
+  - cleaning: S$1,000 to S$1,200;
+  - security officer: S$1,100 in the 2017 report;
+  - landscape: at least S$1,300 from June 2016.
+
+  The LQS was S$1,000 to S$1,400 over the post-period Junes.
   - In a year when the LQS sat above a rung, firms with foreign worker quota
     had a reason to pay above the rung anyway. That lifts the 25th
     percentile and leans T5 toward SURVIVE for reasons other than the
@@ -483,9 +495,9 @@ paid at least the ladder's first rung.
   against their own rung. Either can hold without the other, so T5 stays
   scored.
 - **Confidence at seal: set by Jacob (PENDING).** Researcher's proposal:
-  45%. Security and landscape probably clear their
-  entry rung, but cleaning's in-house mix and any year where a scheduled step
-  landed just before the June survey make "every group, every year" fragile.
+  45%. The in-house mix in all three groups (and non-LCR firms in landscape)
+  and any year where a scheduled step landed just before the June survey
+  make "every group, every year" fragile.
 
 ### T6. Lift and escalator, waste management, and the 2022-2023 wave (descriptive only, no prediction)
 
@@ -566,9 +578,10 @@ Both keep jobs looking steady whether or not the floor cost resident jobs.
 
 **Two further leans, stated beside the verdict in the article:**
 
-- **The pay test leans the other way (T2).** In-house cleaners dilute the
-  covered side, and the LQS floor lifted the comparison side. So a pay gain
-  found is strong evidence, and none found is weak.
+- **The pay test leans the other way (T2).** In-house workers, unbound until
+  2022 in all three groups, dilute the covered side, and the LQS floor lifted
+  the comparison side. So a pay gain found is strong evidence, and none found
+  is weak.
 - **Part B leans toward "kept pace" (T3).** The LQS was a floor under the
   uncovered jobs too, and it rose during the window. So "kept pace" is weak
   evidence, and "fell behind" is strong evidence.
@@ -636,7 +649,17 @@ Still open:
 2. Occupation map: title-listing script, then `office/OCCUPATION_MAP.csv`,
    before any wage value is opened.
 3. W3 schedules: tabulate entry-rung basic wages by date for cleaning,
-   security and landscape, for T5.
+   security and landscape, for T5. Confirm every amount and date from
+   primary documents in the design chat's downloads. The checker's leads
+   (SOURCES_REPORT section 1, item 9) are pointers only. Settle two policy
+   facts:
+   - (a) the landscape entry rung in force at each June, 2016-2022;
+   - (b) whether LCR listing also gated hiring foreign workers, or only
+     public contracts.
+
+   If (b) is only public contracts, landscape firms without public work were
+   unbound. That widens the landscape dilution in T2 and the lean in T5, and
+   is stated in both.
 4. W3b: date each LQS step from MOM primary pages (archived FAQs), and
    whether it counted basic or gross pay. Mark in the T5 table the years in
    which the LQS exceeded each entry rung.

@@ -254,6 +254,25 @@ Occupational Progressive Wages, administrators and drivers  (work pass)
   https://www.mom.gov.sg/employment-practices/progressive-wage-model/expansion-of-progressive-wage-approach-and-coverage
   Date per index: 1 March 2023.
 
+W3   LEADS FOR THE WAGE-SCHEDULE TABLE (checker disclosure, 27 September
+     2026; SOURCES_REPORT section 1, item 9). Documents the checker read. The
+     design chat locates and saves the primary copy of each, and the table
+     is built from those copies only:
+       MHA, 12 Nov 2021: security wage schedule 2023-2028
+       Security Tripartite Cluster report, 23 Nov 2017 (listed above:
+         stc-recommendations-on-pwm-and-ote-(2017).pdf)
+       MOM press release, 30 Nov 2018: landscape wage increases 2020-2025
+       NTUC, 12 Dec 2016: cleaning wage increases 2017-2022 and contract
+         timing (secondary; confirm against the Commissioner for Labour order
+         and the MOM release of June 2017 listed above)
+       NParks CUGE LCR page (listed above): LCR listing condition since 2016
+       2015 news repost: landscape starting basic "at least $1,300" from June
+         2016 (secondary; confirm against the NParks April 2015 release
+         listed above)
+     Two policy facts to settle from these copies: the landscape entry rung
+     in force at each June 2016-2022; whether LCR listing also gated hiring
+     foreign workers or only public contracts.
+
 W3b  Local Qualifying Salary (LQS), earlier the full-time-equivalent salary
      threshold for counting a local worker toward a firm's foreign worker
      quota. Not a PWM. A counting rule before 1 September 2022, a work pass

@@ -100,10 +100,10 @@ evidence, because the design leans toward the monopsony reading.**
 
 The jobs without a ladder were not without a floor. A firm that wanted to hire
 foreign workers had to pay each local at least a set salary, S$1,000 a month
-before 2017 and more after, or that local did not count toward its quota. That
-looser floor lifted the comparison jobs too. It makes the ladder's measured
-effect smaller, and it makes it easier for the rest of the bottom to keep
-pace. So on that bet as well, "kept pace" is the weaker finding and "fell
+before 2017 and more after, or that local did not count in full toward its
+quota. That looser floor lifted the comparison jobs too. It makes the ladder's
+measured effect smaller, and it makes it easier for the rest of the bottom to
+keep pace. So on that bet as well, "kept pace" is the weaker finding and "fell
 behind" the stronger one.
 
 And the record can only speak for the jobs the tailor measured. What a
