@@ -355,9 +355,9 @@ before the ladders were announced.
   - Comparison jobs were lifted by the same tight market, levies and wage
     guidelines.
   - The LQS put a floor under comparison jobs in firms holding foreign worker
-    quota, and it rose in steps during the post-period. The June surveys
-    fell under S$1,000 in 2016-2017, S$1,100 in 2018, S$1,200 in 2019 and
-    S$1,400 in 2022, dates `PENDING`. A floor lifting the comparison bottom
+    quota, and it rose in steps during the post-period. The threshold in
+    force at each post-period June survey was S$1,000 (2016 and 2017),
+    S$1,100 (2018), S$1,200 (2019) and S$1,400 (2022); dates `PENDING`. A floor lifting the comparison bottom
     narrows the gap T2 measures.
   - All three push toward FAIL. So a pass is strong evidence that the ladder
     lifted pay where it applied, and a fail is weak evidence that it did not.

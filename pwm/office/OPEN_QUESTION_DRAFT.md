@@ -29,15 +29,16 @@ cannot, and it ties pay to training, so wages keep rising as workers move up.
 
 ## What economic theory says
 
-In the textbook market, employers pay what a worker's output is worth,
-because anyone paid less would leave for a rival. A floor above that costs
-jobs. In 1933 Joan Robinson described the other case: an employer with few
-rivals pays less than a worker is worth, because raising pay to attract one
-more worker means raising it for all. There, a floor can raise pay and jobs
-together; economists call that employer a monopsony. In 1994 David Card and Alan Krueger compared fast-food restaurants
-on either side of the New Jersey-Pennsylvania border after New Jersey raised
-its minimum wage, and found no jobs lost. Germany's first national floor in 2015 and
-the UK's higher floor from 2016 raised pay at the bottom with little or no job loss.
+In the textbook market, employers pay what a worker's output is worth, because
+anyone paid less would leave for a rival. A floor above that costs jobs. In
+1933 Joan Robinson described the other case: an employer with few rivals pays
+less than a worker is worth, because raising pay to attract one more worker
+means raising it for all. There, a floor can raise pay and jobs together;
+economists call that employer a monopsony. In 1994 David Card and Alan Krueger
+compared fast-food restaurants on either side of the New Jersey-Pennsylvania
+border after New Jersey raised its minimum wage, and found no jobs lost.
+Germany's first national floor in 2015 and the UK's higher floor from 2016
+raised pay at the bottom with little or no job loss.
 
 Singapore's ladders are a chance to see which world its covered jobs live in.
 
@@ -97,13 +98,13 @@ employment looking steady even if the floor cost Singaporeans their jobs. So:
 **a monopsony-like result is weak evidence and a competitive result is strong
 evidence, because the design leans toward the monopsony reading.**
 
-The jobs without a ladder were not without a floor. A firm that wanted to
-hire foreign workers had to pay each local at least a set salary, S$1,000 a
-month before 2017 and more after, or that local did not count toward its quota.
-That looser floor lifted the comparison jobs too. It makes the ladder's
-measured effect smaller, and it makes it easier for the rest of the bottom to
-keep pace. So on that bet as well, "kept pace" is the weaker finding and
-"fell behind" the stronger one.
+The jobs without a ladder were not without a floor. A firm that wanted to hire
+foreign workers had to pay each local at least a set salary, S$1,000 a month
+before 2017 and more after, or that local did not count toward its quota. That
+looser floor lifted the comparison jobs too. It makes the ladder's measured
+effect smaller, and it makes it easier for the rest of the bottom to keep
+pace. So on that bet as well, "kept pace" is the weaker finding and "fell
+behind" the stronger one.
 
 And the record can only speak for the jobs the tailor measured. What a
 national floor would have done in a hawker stall or a five-person firm is not
