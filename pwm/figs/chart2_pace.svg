@@ -44,12 +44,12 @@
 <text x="186.0" y="351.0" text-anchor="middle" font-size="14" fill="var(--fig-ink-3,#717171)">2012</text>
 <text x="366.0" y="351.0" text-anchor="middle" font-size="14" fill="var(--fig-ink-3,#717171)">2017</text>
 <text x="438.0" y="351.0" text-anchor="middle" font-size="14" fill="var(--fig-ink-3,#717171)">2019</text>
-<text x="16.0" y="379.0" font-size="14" fill="var(--fig-ink-3,#717171)">Blue line: bottom pay (the lowest-paid quarter, gross)</text>
-<text x="16.0" y="398.0" font-size="14" fill="var(--fig-ink-3,#717171)">in the jobs that had no ladder until 2022. Grey dashed</text>
-<text x="16.0" y="417.0" font-size="14" fill="var(--fig-ink-3,#717171)">line: the median worker's income. Both show the change</text>
-<text x="16.0" y="436.0" font-size="14" fill="var(--fig-ink-3,#717171)">from their 2010-12 average, in per cent. Shaded: the</text>
-<text x="16.0" y="455.0" font-size="14" fill="var(--fig-ink-3,#717171)">start (2010-12) and end (2017-19) years compared. A</text>
-<text x="16.0" y="474.0" font-size="14" fill="var(--fig-ink-3,#717171)">blue line that ends below the grey one fell behind;</text>
-<text x="16.0" y="493.0" font-size="14" fill="var(--fig-ink-3,#717171)">the bet failed if the gap at the end reached about 5</text>
-<text x="16.0" y="512.0" font-size="14" fill="var(--fig-ink-3,#717171)">per cent.</text>
+<text x="16.0" y="379.0" font-size="14" fill="var(--fig-ink-3,#717171)">Blue line: pay at the one-in-four mark (the 25th</text>
+<text x="16.0" y="398.0" font-size="14" fill="var(--fig-ink-3,#717171)">percentile of gross pay) in the jobs that had no</text>
+<text x="16.0" y="417.0" font-size="14" fill="var(--fig-ink-3,#717171)">ladder until 2022. Grey dashed line: the median</text>
+<text x="16.0" y="436.0" font-size="14" fill="var(--fig-ink-3,#717171)">worker's income. Both show the change from their</text>
+<text x="16.0" y="455.0" font-size="14" fill="var(--fig-ink-3,#717171)">2010-12 average, in per cent. Shaded: the start</text>
+<text x="16.0" y="474.0" font-size="14" fill="var(--fig-ink-3,#717171)">(2010-12) and end (2017-19) years compared. A blue</text>
+<text x="16.0" y="493.0" font-size="14" fill="var(--fig-ink-3,#717171)">line that ends below the grey one fell behind; the bet</text>
+<text x="16.0" y="512.0" font-size="14" fill="var(--fig-ink-3,#717171)">failed if the gap at the end reached about 5 per cent.</text>
 </svg>

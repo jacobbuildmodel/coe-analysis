@@ -173,3 +173,17 @@ manifest and `13_results.py` prints in its own section. md5
   (sealed), new 6eae8b3350a866e6c67461d49d38c536.
 - **No rule changed.** `pwmlib.py`, `10_load.py`, `11_tests.py`,
   `15_reproduce.py` and `office/OCCUPATION_MAP.csv` keep the md5s of the seal.
+
+## 9. 12_figures.py: Checkpoint 2 review (28 September 2026, after the results)
+
+- **What changed.** Presentation only. Chart 1: the panels of the jobs that
+  failed the design test (cleaning, security) are drawn muted, without before
+  and after average lines, labelled "failed the design test: step not read";
+  the title says the pay pulled ahead "once the ladder bound" (timing, not
+  cause). Charts 1 to 3: the 25th percentile is described as the pay at the
+  one-in-four mark (a quarter of workers earned it or less), not as what the
+  whole bottom quarter earned; chart 3's title and caption follow.
+- **No number changed.** Same `out/` files; overflow check passes, bold
+  included; LF line endings.
+- **md5.** `12_figures.py`: 6c340815bdeeafc2f9e2d2545077424a (item 7), new
+  22335840676e231df755efec9a56e38a.
