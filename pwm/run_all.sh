@@ -48,7 +48,7 @@ echo; echo "== 15 independent reproduction of every scored number"
 python3 pwm/15_reproduce.py
 
 echo; echo "== figure overflow check (DejaVu Sans, needs playwright + chromium)"
-python3 tools/check_figure_overflow.py pwm/figs/chart1_gap.svg pwm/figs/chart2_rung.svg pwm/figs/chart3_pace.svg
+python3 tools/check_figure_overflow.py pwm/figs/chart1_gap.svg pwm/figs/chart2_pace.svg pwm/figs/chart3_rung.svg
 
 echo; echo "== 14 checksums and number manifest, verified"
 python3 pwm/14_manifest.py --check
