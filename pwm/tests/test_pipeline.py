@@ -73,8 +73,10 @@ def copy_fixtures(dst):
 
 
 class Guard(unittest.TestCase):
+    @unittest.skipIf(os.path.exists(L.SEALED),
+                     "pwm/SEALED exists (data opened at dafb176): the real-path refusal is "
+                     "checked before the seal only; test_guard_logic still covers the rule")
     def test_loader_refuses_real_raw_before_seal(self):
-        self.assertFalse(os.path.exists(L.SEALED), "pwm/SEALED exists: the suite runs before the seal only")
         for script in ("10_load.py", "15_reproduce.py"):
             r = subprocess.run([sys.executable, os.path.join(PWM, script)], capture_output=True, text=True)
             self.assertEqual(r.returncode, 3, script)

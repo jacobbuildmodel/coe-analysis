@@ -87,3 +87,18 @@ confidences are those sealed.
   `15_reproduce.py`, `14_manifest.py` and `office/OCCUPATION_MAP.csv` keep
   the md5s of the seal (item 1). No test, threshold, title list, window,
   rung or confidence changed.
+
+## 4. tests/test_pipeline.py: the pre-seal guard test (28 September 2026, after the data was opened)
+
+- **What changed.** `test_loader_refuses_real_raw_before_seal` asserted that
+  `pwm/SEALED` did not exist, then checked that the loaders refuse the real
+  `raw/`. Creating `pwm/SEALED` (commit dafb176) made that assertion false by
+  design. The test is now skipped once `pwm/SEALED` exists, with the reason
+  printed. `test_guard_logic` still checks the rule itself (refuse without
+  the seal file, allow with it) on temporary paths.
+- **Why.** The test described the state before the seal; after it, the
+  loaders are meant to read `raw/`.
+- **md5.** `tests/test_pipeline.py`: sealed 509ec2027efdd93ade688cc2479ae3c5,
+  new e4954330163edccd95d28151f106008f.
+- **No rule changed.** Only a test's precondition; no analysis script
+  changed. The suite: 35 tests pass, 1 skipped.
