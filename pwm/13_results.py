@@ -1,15 +1,25 @@
 """
 13_results.py -- ROOT/RESULTS.md from ROOT/out/, failures first.
 
-Order: the verdict sentence and the leans THESIS section 8 requires beside
-it; then every test that did not survive (FAIL, then INCONCLUSIVE, then NOT
-SCORED); then those that survived; then the sensitivities (reported, not
-scored), the titles the missing-year rule dropped, and the scorecard. Every
-number is printed through pwmlib.printed, which 14_manifest.py also uses.
+Order: the verdict (Part A; Part B with the gap statement verbatim beside it,
+and the T2 and T3 leans THESIS section 8 requires); then every test that did
+not survive (FAIL, then INCONCLUSIVE, then NOT SCORED); then those that
+survived; then the scorecard (held against the expected count, Brier score);
+then the sensitivities (reported, not scored) and the titles the
+missing-year rule dropped.
 
-A run on anything but pwm/ is stamped SYNTHETIC in its first line.
+Each test carries its sealed wording verbatim (the Prediction, Survive if and
+Fail if lines of pwm/THESIS.md, read at run time), its outcome label as
+sealed (SURVIVE, FAIL, INCONCLUSIVE, NOT SCORED), its numbers with their 90
+per cent intervals, and Jacob's confidence at seal. Every number is printed
+through pwmlib.printed, which 14_manifest.py also uses.
+
+Presentation only: nothing here computes or changes a tested number
+(THESIS_ADDENDUM.md, item 1). A run on anything but pwm/ is stamped
+SYNTHETIC in its first line.
 """
 import os
+import re
 
 import pwmlib as L
 
@@ -21,10 +31,38 @@ NAMES = {"T1": "T1. Parallel before (the design test)",
          "T5": "T5. The first rung shows up in the survey"}
 WEAK = ("A monopsony-like result is weak evidence and a competitive result is strong evidence, "
         "because the design leans toward the monopsony reading.")
+LEAN_T2 = ("The pay test leans the other way (T2): in-house workers, unbound until 2022 in all "
+           "three groups, dilute the covered side, and the LQS floor lifted the comparison side. "
+           "So a pay gain found is strong evidence, and none found is weak.")
+LEAN_T3 = ("Part B leans toward \"kept pace\" (T3): the LQS was a floor under the uncovered jobs "
+           "too, and it rose during the window. So \"kept pace\" is weak evidence, and \"fell "
+           "behind\" is strong evidence.")
 
 
 def p(T, key):
     return L.printed(key, T.get(key)) or T.get(key, "")
+
+
+def sealed_wording(thesis_path):
+    """{test: [(label, text)]}: the Prediction, Survive if and Fail if lines
+    of each test section, verbatim, continuation lines joined."""
+    text = open(thesis_path, encoding="utf-8").read()
+    out = {}
+    for t in ("T1", "T2", "T3", "T4", "T5"):
+        sec = re.search(rf"^### {t}\..*?(?=^### |\Z)", text, re.S | re.M)
+        items = []
+        if sec:
+            for label in ("Prediction.", "Survive if:", "Fail if:"):
+                m = re.search(rf"^- \*\*{re.escape(label)}\*\*(.*?)(?=^- |\Z)", sec.group(0), re.S | re.M)
+                if m:
+                    items.append((label, " ".join(m.group(1).split())))
+        out[t] = items
+    return out
+
+
+def conf(T, t):
+    c = T.get(f"conf_{t}")
+    return c if c in ("[JACOB]", "not scored") else "{:.0f}%".format(100 * float(c))
 
 
 def body(t, T):
@@ -32,9 +70,12 @@ def body(t, T):
     if t == "T1":
         for g in L.COVERED:
             if T.get(f"T1_{g}_slope"):
+                ok = T[f"T1_{g}_pass"] == "True"
                 lines.append(f"- {g}: drift {p(T, f'T1_{g}_slope')} a year (90% interval "
                              f"{p(T, f'T1_{g}_lo')} to {p(T, f'T1_{g}_hi')}), {p(T, f'T1_{g}_pre_junes')} "
-                             f"pre-period Junes; line 0.010; {'passes' if T[f'T1_{g}_pass'] == 'True' else 'fails'}.")
+                             f"pre-period Junes; line 0.010; " +
+                             ("passes." if ok else "fails the design: dropped from T2 and T5 "
+                              "scoring, and its after-minus-before gap is uninterpretable."))
             else:
                 lines.append(f"- {g}: {T.get(f'T1_{g}_pass')} ({p(T, f'T1_{g}_pre_junes')} Junes).")
     elif t == "T2":
@@ -53,7 +94,8 @@ def body(t, T):
                          f"over {p(T, 'T3_n_start')} Junes, end mean {p(T, 'T3_end_c')} over "
                          f"{p(T, 'T3_n_end')} Junes).")
             lines.append(f"- the middle (LFS median, excluding employer CPF), growth {p(T, 'T3_growth_mid')}.")
-            lines.append(f"- shortfall {p(T, 'T3_shortfall')}; line 0.05.")
+            lines.append(f"- shortfall {p(T, 'T3_shortfall')}; line 0.05. THESIS fixes no interval "
+                         f"for T3: it is a difference of two window means.")
         else:
             lines.append("- not computable: fewer than two start-window Junes, or no end-window value.")
     elif t == "T4":
@@ -73,8 +115,19 @@ def body(t, T):
             if rs:
                 lines.append(f"- {g}: " + ", ".join(f"{k.split('_')[2]} {p(T, k)}" for k, _ in rs) + ".")
         if T.get("T5_min_ratio"):
-            lines.append(f"- lowest ratio {p(T, 'T5_min_ratio')}; line 0.97.")
+            lines.append(f"- lowest ratio {p(T, 'T5_min_ratio')}; line 0.97. THESIS fixes no interval "
+                         f"for T5: each ratio is a published percentile over a rung.")
     return lines
+
+
+def section(t, T, words):
+    out = T[f"{t}_outcome"]
+    head = f"### {NAMES[t]}: {out}"
+    head += f" (Jacob's confidence at seal: {conf(T, t)})" if conf(T, t) != "not scored" else " (no confidence: not scored)"
+    lines = [head, "", "Sealed wording (THESIS.md, verbatim):", ""]
+    quoted = [f"> **{label}** {txt}" for label, txt in words.get(t, [])] or ["> (not found)"]
+    lines += [q for pair in zip(quoted, [">"] * len(quoted)) for q in pair][:-1]
+    return lines + [""] + body(t, T) + [""]
 
 
 def main():
@@ -84,28 +137,30 @@ def main():
     T = {r["key"]: r["value"] for r in L.read_csv(os.path.join(out, "tests.csv"))}
     sens = L.read_csv(os.path.join(out, "sensitivities.csv"))
     dropped = L.read_csv(os.path.join(out, "dropped_titles.csv"))
+    words = sealed_wording(os.path.join(L.PWM, "THESIS.md"))
     real = os.path.realpath(P["root"]) == os.path.realpath(L.PWM)
     md = []
     md.append("# RESULTS: minimum wage or the Progressive Wage Model" if real else
               "# SYNTHETIC FIXTURE RUN: every number below is invented. Not a finding.")
     md.append("")
-    md.append("Written by `13_results.py` from `out/`. Tests as sealed in `THESIS.md`; "
-              "failures first.")
+    md.append("Written by `13_results.py` from `out/`. Tests as sealed in `THESIS.md` "
+              "(commit e5f877b); failures first. Outcome labels as sealed: SURVIVE, FAIL, "
+              "INCONCLUSIVE, NOT SCORED.")
     md.append("")
     md.append("## Verdict")
     md.append("")
     md.append(f"**{T['verdict']}**")
+    md.append("")
+    md.append(f"- **Part A, the ladder:** {T['verdict_A']}.")
+    md.append(f"- **Part B, the rest of the bottom:** {T['verdict_B']}.")
     md.append("")
     if T["T4_outcome"] == "NOT SCORED":
         md.append(L.GAP)
     else:
         md.append(WEAK)
     md.append("")
-    md.append("- The pay test leans the other way (T2): in-house workers dilute the covered side and "
-              "the LQS lifted the comparison side, so a pay gain found is strong evidence and none "
-              "found is weak.")
-    md.append("- Part B leans toward \"kept pace\" (T3): the LQS was a floor under the uncovered jobs "
-              "too, so \"kept pace\" is weak evidence and \"fell behind\" is strong evidence.")
+    md.append(f"- {LEAN_T2}")
+    md.append(f"- {LEAN_T3}")
     md.append("- The record cannot say what a national floor would have done in jobs no ladder "
               "reached.")
     md.append(f"- T4 read the {T.get('T4_series')} series." if T.get("T4_series") != "none" else
@@ -119,7 +174,7 @@ def main():
         md.append("None.")
         md.append("")
     for t in bad:
-        md += [f"### {NAMES[t]}: {T[f'{t}_outcome']}", ""] + body(t, T) + [""]
+        md += section(t, T, words)
     md.append("## Tests that survived")
     md.append("")
     good = [t for t in tests if T[f"{t}_outcome"] == "SURVIVE"]
@@ -127,18 +182,29 @@ def main():
         md.append("None.")
         md.append("")
     for t in good:
-        md += [f"### {NAMES[t]}: SURVIVE", ""] + body(t, T) + [""]
+        md += section(t, T, words)
+    md.append("## Scorecard")
+    md.append("")
+    md.append(f"- Scored: {T['scored_tests'] or 'none'} ({p(T, 'n_scored')}); held: {p(T, 'n_held')}.")
+    for t in ("T1", "T2", "T3", "T4", "T5"):
+        md.append(f"- {t}: {T[f'{t}_outcome']}; confidence at seal {conf(T, t)}.")
+    md.append(f"- Held {p(T, 'n_held')} of {p(T, 'n_scored')} scored, against an expected "
+              f"{p(T, 'expected_held')} (the sum of the confidences of the scored tests).")
+    md.append(f"- Brier score: {p(T, 'brier')} (mean over the scored tests; tests not scored drop out).")
+    md.append("")
     md.append("## Sensitivities (reported, not scored)")
     md.append("")
-    md.append("| Test | Variant | Key | Value |")
-    md.append("|---|---|---|---|")
+    md.append("Every row is a sealed sensitivity. None enters the score or the verdict.")
+    md.append("")
+    md.append("| Test | Variant | Key | Value | Scored |")
+    md.append("|---|---|---|---|---|")
     for r in sens:
         v = r["value"]
         try:
             v = "{:.4f}".format(float(v))
         except ValueError:
             pass
-        md.append(f"| {r['test']} | {r['variant']} | {r['key']} | {v} |")
+        md.append(f"| {r['test']} | {r['variant']} | {r['key']} | {v} | not scored |")
     md.append("")
     md.append("## Titles dropped by the missing-year rule")
     md.append("")
@@ -147,15 +213,6 @@ def main():
     for r in dropped:
         md.append(f"- {r['group']} {r['code']} {r['title']} ({r['measure']}, {r['variant']}): "
                   f"missing in {r['missing_junes']}.")
-    md.append("")
-    md.append("## Scorecard")
-    md.append("")
-    md.append(f"- Scored: {T['scored_tests'] or 'none'} ({p(T, 'n_scored')}); held: {p(T, 'n_held')}.")
-    for t in ("T1", "T2", "T3", "T4", "T5"):
-        c = T.get(f"conf_{t}")
-        cs = c if c in ("[JACOB]", "not scored") else "{:.0f}%".format(100 * float(c))
-        md.append(f"- {t}: {T[f'{t}_outcome']}; confidence at seal {cs}.")
-    md.append(f"- Expected number holding: {p(T, 'expected_held')}. Brier score: {p(T, 'brier')}.")
     md.append("")
     L.write_text(P["results"], "\n".join(md))
     print(f"  {os.path.relpath(P['results'], P['root'])}: {len(md)} lines")
