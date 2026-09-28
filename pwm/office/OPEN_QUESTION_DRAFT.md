@@ -15,8 +15,8 @@ For six years Singapore ran that experiment without calling it one. Here
 are four bets on what it showed, made before the data is opened.
 
 Singapore has no minimum wage. From 2014 it wrote wage ladders, a floor for
-each skill step, into the licences of cleaning, security and landscape firms,
-and in 2022-2023 into shop, food, waste, office and driving jobs. Opposition
+each skill step, into cleaning, security and landscape firms' licences, and in
+2022-2023 into shop, food, waste, office and driving jobs. Opposition
 parties and many economists want one national floor instead.
 
 The yardstick is real pay at the bottom of covered jobs. Whether those jobs
@@ -32,11 +32,10 @@ set high where the job can bear it, and it ties pay to training.
 
 ## What economic theory says
 
-Textbook economics says a floor above what a job is worth costs jobs. Joan
-Robinson (1933) described the other case, monopsony: an employer with few
-rivals underpays, and a floor can raise pay and jobs together. David Card and
-Alan Krueger (1994) found no jobs lost after New Jersey raised its minimum
-wage.
+In textbook economics, a floor above a job's worth costs jobs. Joan Robinson
+(1933) described the other case, monopsony: an employer with few rivals
+underpays, and a floor can raise pay and jobs together. Card and Krueger
+(1994) found no jobs lost when New Jersey raised its minimum wage.
 
 ## Push it to the extreme
 
@@ -70,6 +69,7 @@ and bet 3 tests it.
    the bottom of the covered jobs and of the later-covered jobs rose at about
    the same pace. If not, the comparison is unfair, and I will say so.
    Confidence: 28%.
+
    Why: Cleaning's four-year window is short, so noise plus the job-title
    changes may push it past the drift limit, and one group failing fails the
    whole test. Security and landscape share the same comparison group, so
@@ -77,20 +77,23 @@ and bet 3 tests it.
 2. **The suit fits.** After the ladders bound, pay at the bottom of the covered
    jobs rose about 10 per cent or more faster than in the jobs without one.
    Confidence: 40%.
+
    Why: I expect each floor sat above what the lowest-paid workers earned
-   before, which is clearest for cleaning, so every scored group should show
-   gains. The risk is an average gain of 5 to 10 points, which counts as not
-   held.
+   before, which is clearest for cleaning, so every scored group is likely to
+   show gains. The risk is an average gain of 5 to 10 points, which counts as
+   not held.
 3. **The rest kept pace.** Through the 2010s, pay at the bottom of the jobs
    with no ladder did not fall more than about 5 per cent behind the median
    worker's.
    Confidence: 58%.
+
    Why: Levies and the wage council's dollar-raise guidance lifted pay in
    these jobs, but the quota pay floor only bound firms with foreign workers.
    The median also grew, which raises the bar.
 4. **The first rung shows.** In the official wage survey, the bottom quarter of
    covered workers earned at least the ladder's entry wage every year.
    Confidence: 50%.
+
    Why: Even if security's 2022 raise came after June, paying the previous
    step still clears 97%. Landscape is the weak group, because it is unclear
    whether firms without government contracts were bound.
@@ -121,8 +124,8 @@ that local did not count in full toward its quota. That lifted the comparison
 jobs too, so on the third bet "kept pace" is the weaker finding and "fell
 behind" the stronger one.
 
-Hawker stalls and five-person firms, where a national floor would also have
-bitten, are outside the record.
+Hawker stalls and firms with fewer than 25 staff, where a national floor
+would also have bitten, are outside the wage survey.
 
 ## What would change my mind
 
