@@ -1,0 +1,67 @@
+# MD5 checksums, PWM piece. Regenerate with:
+#   python3 pwm/14_manifest.py [--root DIR]
+# Never written by run_all.sh, which only runs --check.
+# Paths are relative to the run's root.
+
+# INPUTS
+e5f62fae032b53f0eafdca530360d923  pwmlib.py
+7c4953a001a00f30e2eb1205d57dc558  00_coverage.py
+c6a0203a717fbc2d080539d803092139  01_titles.py
+c76beb9cefda3f5fc6be21e15e8afcfa  01b_w2a_labels.py
+7b919f4559414e3e819cbc299472eb97  01c_ows_layout.py
+2ba3c9e8e95e8bb452be531402e6b95f  02_occupation_map.py
+069efc11c34920e7287188538edc7f85  10_load.py
+813372c48e337720a6ca63b725313d8a  11_tests.py
+57b3c57f37ff4494ee593003892453f4  12_figures.py
+5262d00cb9fa119795007810d9285e99  13_results.py
+a9a36c1ffde19085b6391a6bdcbf6b9e  14_manifest.py
+116fda301b8e49f9b0732266626e37a3  15_reproduce.py
+3c83f4fdad55532093f83424a870dd6b  run_all.sh
+4a0d12e4dfbab0081454ade1668bfa3a  requirements.txt
+5039a8b02e959c1d930ab637361196e8  tests/make_fixtures.py
+e4954330163edccd95d28151f106008f  tests/test_pipeline.py
+8d5beaf453f7310eb14aa0df9fd56a20  THESIS.md
+10de6f3a90b4c8db26f0c18160aa9ba9  office/OCCUPATION_MAP.csv
+f3bba1d5dba088250e3a4c596cd7407c  raw/w1_ows_2009_occupation_gross.xls
+7db75259d3141c26fd70c6bb5d43b620  raw/w1_ows_2009_occupation_basic.xls
+dcd31e529aedea1f4736598dc56f3b0a  raw/w1_ows_2010_occupation_gross.xlsx
+81f6f839ad2a811bfc84514aa2a99db5  raw/w1_ows_2010_occupation_basic.xlsx
+92ac1788175bdbaec5a34e7755d0f432  raw/w1_ows_2011_occupation_gross.xlsx
+b30a24af65644a239305ab97b67258b7  raw/w1_ows_2011_occupation_basic.xlsx
+13e4b618ef245219a53b8d2ebe5159cc  raw/w1_ows_2012_occupation.xlsx
+beaa9f2b176219d82f6e337e146ac09b  raw/w1_ows_2013_occupation.xlsx
+3b49c95ae0ad6c0d49c5efc4ba59272f  raw/w1_ows_2014_occupation.xlsx
+ce5be248afeeac2f6cde3d1deef60a3c  raw/w1_ows_2015_occupation.xlsx
+23fcd56f38f16599291ddfea83ae6081  raw/w1_ows_2016_occupation.xlsx
+fe04cba6a69efd0fd64311e2b58ca097  raw/w1_ows_2017_occupation.xlsx
+0c753b01b5dd92faeea9e1a5d0d430fa  raw/w1_ows_2018_occupation.xlsx
+bf0892bad6fa005ecaae57a442f04987  raw/w1_ows_2019_occupation.xlsx
+489d5019b93100c673d29918faf5e955  raw/w1_ows_2020_occupation.xlsx
+a6f0654d934189a5909461c38ae11fe8  raw/w1_ows_2021_occupation.xlsx
+806ee52935a651affd2858ff8098e5ed  raw/w1_ows_2022_occupation.xlsx
+362e9047e56357a408ebbf3c07f774fc  raw/w1_ows_2023_occupation.xlsx
+534de4b0c8edc02e65deaaf2e4d8c617  raw/w1_ows_2024_occupation.xlsx
+df4ea2fb55ceb1e732cde2dd34652515  raw/w1_ows_2025_occupation.xlsx
+57ae2626ae7e11a1c0c95f8cd34d1d79  raw/w1c_lfs_median_income.csv
+8030369e27857994089f14768c016fdc  raw/w4a_cpi_annual_2024base.json
+02f79c2f5d785a236c53c76b62cd298e  raw/w4b_cpi_lowest20_annual_2024base.json
+bf37b2e2db3a02f7974847b1398b2de5  raw/RETRIEVED.txt
+
+# OUTPUTS
+75869b398dfb93f290f11e3876c60f03  figs/chart1_gap.svg
+d839907a639014f4837efea60212a978  figs/chart2_pace.svg
+d9766d871fc2277e6817c5bec9e6cae1  figs/chart3_rung.svg
+0b34e1d0df7f1714cb1c66283d26cccc  out/cpi.csv
+a793a1776689021e0b75e15ce340d512  out/dropped_titles.csv
+44e56b50c6b34212ed113b831fd96460  out/group_values.csv
+ee4f9d529012ce03296af2c47253c5d8  out/lfs_median.csv
+433043c68ecd3d7141c21744aa7064fa  out/load_log.csv
+f7b663fb1d2488a59c4967218b3dc624  out/ows_lines.csv
+2090436ce9a83f0aecc6fe0d9c958c20  out/sensitivities.csv
+476da4580160563e3ee9c402706f867f  out/t4_choice.csv
+41a18cd7be10c4c7805e78fbc3613e4d  out/t4_panel.csv
+63ed031ae6c81754215ab9785947cfee  out/t4_series.csv
+fb3a58351797eb67863ff2d5649b6195  out/t5_ratios.csv
+63f8ceaf6ff6f1a1b806cfe59bd96b05  out/tests.csv
+918eb320ff4445f19fc764b6f176dfed  RESULTS.md
+675bb1f85886c146227a9d33fdfbc94f  number_manifest.csv

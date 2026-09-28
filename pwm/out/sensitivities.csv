@@ -1,0 +1,58 @@
+test,variant,key,value
+T1,without June 2009,cleaning_slope,not run: fewer than 4 Junes
+T1,without June 2009,security_slope,0.031716798
+T1,without June 2009,landscape_slope,0.011026577
+T1,without June 2009,outcome,FAIL
+T1,Junes after the last pre-period break,cleaning_slope,not run: too few Junes (THESIS section 5)
+T1,Junes after the last pre-period break,security_slope,0.012683081
+T1,Junes after the last pre-period break,landscape_slope,0.011844693
+T1,2007-2008 added,outcome,"not run: June 2007 and 2008 are PDF only, extracted after the seal"
+T2,2007-2008 added,outcome,"not run: June 2007 and 2008 are PDF only, extracted after the seal"
+T2,basic instead of gross,landscape_est,0.21346347
+T2,basic instead of gross,pooled,0.21346347
+T2,basic instead of gross,outcome,SURVIVE
+T2,median instead of 25th percentile,landscape_est,0.1269104
+T2,median instead of 25th percentile,pooled,0.1269104
+T2,median instead of 25th percentile,outcome,SURVIVE
+T2,dropping 2022,landscape_est,0.19609572
+T2,dropping 2022,pooled,0.19609572
+T2,dropping 2022,outcome,SURVIVE
+T2,leaving out cashier,landscape_est,0.22582636
+T2,leaving out cashier,pooled,0.22582636
+T2,leaving out cashier,outcome,SURVIVE
+T2,leaving out food/drink stall assistant,landscape_est,0.22595042
+T2,leaving out food/drink stall assistant,pooled,0.22595042
+T2,leaving out food/drink stall assistant,outcome,SURVIVE
+T2,leaving out general office clerk,landscape_est,0.21359633
+T2,leaving out general office clerk,pooled,0.21359633
+T2,leaving out general office clerk,outcome,SURVIVE
+T2,leaving out kitchen assistant,landscape_est,0.22777606
+T2,leaving out kitchen assistant,pooled,0.22777606
+T2,leaving out kitchen assistant,outcome,SURVIVE
+T2,leaving out lorry driver,landscape_est,0.20871413
+T2,leaving out lorry driver,pooled,0.20871413
+T2,leaving out lorry driver,outcome,SURVIVE
+T2,leaving out shop sales assistant,landscape_est,0.22635992
+T2,leaving out shop sales assistant,pooled,0.22635992
+T2,leaving out shop sales assistant,outcome,SURVIVE
+T2,leaving out van driver,landscape_est,0.20694728
+T2,leaving out van driver,pooled,0.20694728
+T2,leaving out van driver,outcome,SURVIVE
+T2,leaving out waiter,landscape_est,0.22528018
+T2,leaving out waiter,pooled,0.22528018
+T2,leaving out waiter,outcome,SURVIVE
+T2,first transition June counted as post,landscape_est,0.17984885
+T2,first transition June counted as post,pooled,0.17984885
+T2,first transition June counted as post,outcome,SURVIVE
+T2,all successors of a grade split averaged,landscape_est,0.22005634
+T2,all successors of a grade split averaged,pooled,0.22005634
+T2,all successors of a grade split averaged,outcome,SURVIVE
+T2,Number Covered weights,landscape_est,0.25812531
+T2,Number Covered weights,pooled,0.25812531
+T2,Number Covered weights,outcome,SURVIVE
+T4,LFS residents series,outcome,not run: no second series qualifies
+T5,all successors averaged,landscape_2017_ratio,1
+T5,all successors averaged,landscape_2018_ratio,1
+T5,all successors averaged,landscape_2019_ratio,1.0384615
+T5,all successors averaged,landscape_2022_ratio,1
+T5,all successors averaged,outcome,SURVIVE

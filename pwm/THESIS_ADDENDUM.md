@@ -102,3 +102,16 @@ confidences are those sealed.
   new e4954330163edccd95d28151f106008f.
 - **No rule changed.** Only a test's precondition; no analysis script
   changed. The suite: 35 tests pass, 1 skipped.
+
+## 5. Observation from the real run, reported, not applied (28 September 2026)
+
+- **A drop inside a sensitivity that RESULTS.md does not list.** In June 2010
+  the comparison cashier line (5230, "Cashiers and ticket clerk") has no
+  basic-wage 25th percentile; its gross value is present. Under the sealed
+  missing-year rule the "basic instead of gross" sensitivity therefore
+  drops that one-June line (the cashier lineage keeps 42111 in 2009 and 52302
+  from 2011). `11_tests.py` records the missing-year drops of the main
+  series and of the all-successors sensitivity, not those made inside the
+  other sensitivities, so RESULTS.md's "Titles dropped by the missing-year
+  rule: None" describes the main series. The main series, every scored
+  test and the verdict are unaffected. No script is changed for this.

@@ -1,0 +1,232 @@
+june,group,side,code,title,series,june_role,n_covered,p25_gross,med_gross,p75_gross,p25_basic,med_basic,p75_basic
+2009,C cashier,comparison,42111,Cashier,main,pre (all),1781,1103,1238,1507,935,1022,1303
+2009,C food/drink stall assistant,comparison,91223,Food and drink stall assistant,main,pre (all),224,700,800,1000,700,800,1000
+2009,C general office clerk,comparison,41201,Office clerk,main,pre (all),5669,1400,1799,2205,1350,1700,2099
+2009,C kitchen assistant,comparison,91222,Kitchen assistant,main,pre (all),685,700,900,1286,700,800,1150
+2009,C lorry driver,comparison,83260,Lorry driver,main,pre (all),2175,1450,1800,2300,1220,1500,1800
+2009,C shop sales assistant,comparison,52102,Shop sales assistant,main,pre (all),4201,1195,1514,2000,956,1150,1400
+2009,C van driver,comparison,83242,Van driver,main,pre (all),628,1300,1601,1936,1200,1416,1673
+2009,C waiter,comparison,51230,Waiter,main,pre (all),860,879,1135,1350,850,1000,1200
+2009,cleaning,covered,91291,Office cleaner,main,pre,1849,697,767,850,610,700,800
+2009,cleaning,covered,91292,Cleaner (Industrial establishment),main,pre,589,770,850,1010,620,720,790
+2009,landscape,covered,93111,Gardener,main,pre,374,800,965,1050,800,950,1000
+2009,security,covered,51440,Private security guard,main,pre,3732,1100,1380,1644,600,743,1200
+2010,C cashier,comparison,5230,Cashiers and ticket clerk,main,pre (all),1248,1100,1279,1634,,,
+2010,C food/drink stall assistant,comparison,94102,Food/Drink stall assistant,main,pre (all),499,950,1200,1300,900,1023,1150
+2010,C general office clerk,comparison,4110,General office clerk,main,pre (all),7112,1420,1800,2214,1380,1706,2099
+2010,C kitchen assistant,comparison,94101,Kitchen assistant,main,pre (all),620,800,995,1268,780,900,1140
+2010,C lorry driver,comparison,83321,Lorry driver,main,pre (all),2554,1510,1914,2429,1300,1523,1800
+2010,C shop sales assistant,comparison,52202,Shop sales assistant,main,pre (all),3766,1200,1530,2000,950,1172,1374
+2010,C van driver,comparison,83223,Van driver,main,pre (all),772,1380,1700,2173,1220,1410,1643
+2010,C waiter,comparison,51312,Waiter,main,pre (all),711,800,1164,1496,800,1041,1300
+2010,cleaning,covered,91131,Office cleaner,main,pre,958,750,800,1000,710,800,1000
+2010,cleaning,covered,91132,Cleaner (industrial establishment),main,pre,754,522,572,750,500,500,720
+2010,landscape,covered,92141,Garden labourer,main,pre,268,800,950,1015,800,950,1000
+2010,security,covered,5414,Security guard,main,pre,5243,1100,1367,1600,566,650,990
+2011,C cashier,comparison,52302,Cashier,main,pre (all),904,1180,1342,1671,1080,1200,1450
+2011,C food/drink stall assistant,comparison,94102,Food/Drink stall assistant,main,pre (all),413,846,900,1200,800,900,1200
+2011,C general office clerk,comparison,4110,General office clerk,main,pre (all),7768,1500,1840,2256,1416,1750,2107
+2011,C kitchen assistant,comparison,94101,Kitchen assistant,main,pre (all),1140,1086,1430,1828,885,1200,1475
+2011,C lorry driver,comparison,83321,Lorry driver,main,pre (all),2229,1505,1890,2388,1300,1594,1850
+2011,C shop sales assistant,comparison,52202,Shop sales assistant,main,pre (all),4804,1221,1607,2214,1004,1200,1476
+2011,C van driver,comparison,83223,Van driver,main,pre (all),776,1400,1682,2000,1220,1480,1700
+2011,C waiter,comparison,51312,Waiter,main,pre (all),672,920,1300,1576,874,1173,1390
+2011,cleaning,covered,9113,Cleaner in offices and other establishments,main,pre,6470,700,815,915,650,760,850
+2011,landscape,covered,9214,Park and garden maintenance worker,main,pre,415,900,1050,1309,875,1020,1250
+2011,security,covered,5414,Security guard,main,pre,5149,1288,1550,2169,600,730,1153
+2012,C cashier,comparison,52302,Cashier,main,pre (all),876,1289,1440,1702,1100,1280,1500
+2012,C food/drink stall assistant,comparison,94102,Food/Drink stall assistant,main,pre (all),512,850,1045,1500,850,946,1286
+2012,C general office clerk,comparison,4110,General office clerk,main,pre (all),8483,1542,1954,2413,1497,1836,2266
+2012,C kitchen assistant,comparison,94101,Kitchen assistant,main,pre (all),555,860,1100,1451,850,1000,1200
+2012,C lorry driver,comparison,83321,Lorry driver,main,pre (all),2591,1600,2000,2543,1350,1600,1900
+2012,C shop sales assistant,comparison,52202,Shop sales assistant,main,pre (all),6723,1263,1533,2192,970,1074,1274
+2012,C van driver,comparison,83223,Van driver,main,pre (all),756,1438,1700,2052,1300,1500,1745
+2012,C waiter,comparison,51312,Waiter,main,pre (all),794,900,1291,1560,880,1100,1400
+2012,cleaning,covered,9113,Cleaner in offices and other establishments,main,pre,6123,730,850,950,600,800,900
+2012,landscape,covered,9214,Park and garden maintenance worker,main,pre,933,800,1000,1200,750,900,1100
+2012,security,covered,5414,Security guard,main,pre,4736,1351,1700,2218,667,800,1276
+2013,C cashier,comparison,52302,Cashier,main,cleaning transition; security/landscape pre,852,1300,1555,1829,1000,1200,1490
+2013,C food/drink stall assistant,comparison,94102,Food/Drink stall assistant,main,cleaning transition; security/landscape pre,724,1000,1153,1504,900,1000,1185
+2013,C general office clerk,comparison,4110,General office clerk,main,cleaning transition; security/landscape pre,8911,1600,2086,2650,1530,2000,2550
+2013,C kitchen assistant,comparison,94101,Kitchen assistant,main,cleaning transition; security/landscape pre,865,1000,1222,1567,920,1050,1275
+2013,C lorry driver,comparison,83321,Lorry driver,main,cleaning transition; security/landscape pre,2648,1600,2003,2500,1400,1600,1900
+2013,C shop sales assistant,comparison,52202,Shop sales assistant,main,cleaning transition; security/landscape pre,3905,1408,1741,2396,1100,1250,1500
+2013,C van driver,comparison,83223,Van driver,main,cleaning transition; security/landscape pre,757,1465,1741,2081,1392,1580,1800
+2013,C waiter,comparison,51312,Waiter,main,cleaning transition; security/landscape pre,1047,1000,1352,1632,932,1050,1450
+2013,cleaning,covered,9113,Cleaner in offices and other establishments,main,transition,9087,900,1000,1100,750,934,1000
+2013,landscape,covered,9214,Park and garden maintenance worker,main,pre,850,950,1050,1200,900,1000,1200
+2013,security,covered,5414,Security guard,main,pre,4176,1405,1678,2050,700,817,1335
+2014,C cashier,comparison,52302,Cashier,main,cleaning transition; security/landscape pre,847,1282,1510,1859,1142,1250,1581
+2014,C food/drink stall assistant,comparison,94102,Food/Drink stall assistant,main,cleaning transition; security/landscape pre,747,1000,1310,1606,1000,1150,1400
+2014,C general office clerk,comparison,4110,General office clerk,main,cleaning transition; security/landscape pre,7782,1700,2150,2690,1630,2037,2570
+2014,C kitchen assistant,comparison,94101,Kitchen assistant,main,cleaning transition; security/landscape pre,705,1000,1400,1800,1000,1127,1452
+2014,C lorry driver,comparison,83321,Lorry driver,main,cleaning transition; security/landscape pre,2288,1734,2200,2775,1400,1723,2000
+2014,C shop sales assistant,comparison,52202,Shop sales assistant,main,cleaning transition; security/landscape pre,3860,1400,1768,2320,1130,1265,1535
+2014,C van driver,comparison,83223,Van driver,main,cleaning transition; security/landscape pre,685,1600,1851,2194,1400,1600,1868
+2014,C waiter,comparison,51312,Waiter,main,cleaning transition; security/landscape pre,705,1000,1294,1672,1000,1081,1391
+2014,cleaning,covered,9113,Cleaner in offices and other establishments,main,transition,7458,1000,1050,1200,1000,1000,1100
+2014,landscape,covered,9214,Park and garden maintenance worker,main,pre,394,1000,1150,1350,1000,1100,1280
+2014,security,covered,5414,Security guard,main,pre,3903,1500,1749,2032,730,857,1143
+2015,C cashier,comparison,52302,Cashier,main,transition (all),2206,1500,1630,1801,1317,1428,1472
+2015,C food/drink stall assistant,comparison,94102,Food/Drink stall assistant,main,transition (all),763,1000,1370,1750,1000,1100,1400
+2015,C general office clerk,comparison,4110,General office clerk,main,transition (all),8557,1700,2180,2706,1627,2071,2593
+2015,C kitchen assistant,comparison,94101,Kitchen assistant,main,transition (all),772,1000,1270,1700,1000,1125,1414
+2015,C lorry driver,comparison,83321,Lorry driver,main,transition (all),2338,1722,2172,2662,1400,1730,2034
+2015,C shop sales assistant,comparison,52202,Shop sales assistant,main,transition (all),5451,1483,1661,2174,1276,1400,1443
+2015,C van driver,comparison,83223,Van driver,main,transition (all),792,1621,1965,2397,1400,1695,1950
+2015,C waiter,comparison,51312,Waiter,main,transition (all),916,1000,1390,1835,1000,1200,1450
+2015,cleaning,covered,91130,Office cleaner,main,transition,977,1000,1100,1266,1000,1100,1200
+2015,cleaning,covered,91151,"Food and beverage establishment cleaner (eg restaurants, food courts, hawker centres)",main,transition,508,1000,1100,1242,1000,1000,1100
+2015,cleaning,covered,91160,"Residential area cleaner (eg HDB estates, condominiums, private apartments, common areas within residential estates)",sensitivity,transition,810,1100,1200,1351,1050,1113,1200
+2015,cleaning,covered,91190,"Cleaner in other establishments (eg shopping malls, schools, hospitals, places of worship)",main,transition,5979,1025,1160,1347,1000,1050,1200
+2015,landscape,covered,9214,Park and garden maintenance worker,main,transition,501,1009,1200,1400,1000,1200,1350
+2015,security,covered,5414,Security guard,main,transition,3989,1634,1838,2140,1000,1100,1380
+2016,C cashier,comparison,52302,Cashier,main,cleaning post; security/landscape transition,810,1460,1512,2060,1350,1420,1765
+2016,C food/drink stall assistant,comparison,94102,Food/Drink stall assistant,main,cleaning post; security/landscape transition,928,1000,1245,1542,1000,1100,1250
+2016,C general office clerk,comparison,4110,General office clerk,main,cleaning post; security/landscape transition,7745,1738,2215,2766,1680,2144,2658
+2016,C kitchen assistant,comparison,94101,Kitchen assistant,main,cleaning post; security/landscape transition,679,1000,1365,1800,1000,1192,1490
+2016,C lorry driver,comparison,83321,Lorry driver,main,cleaning post; security/landscape transition,2413,1800,2268,2875,1250,1730,2081
+2016,C shop sales assistant,comparison,52202,Shop sales assistant,main,cleaning post; security/landscape transition,3291,1698,2181,2865,1273,1547,1900
+2016,C van driver,comparison,83223,Van driver,main,cleaning post; security/landscape transition,639,1629,1900,2315,1500,1750,2000
+2016,C waiter,comparison,51312,Waiter,main,cleaning post; security/landscape transition,928,1200,1600,1951,1016,1300,1533
+2016,cleaning,covered,91130,Office cleaner,main,post,1331,1000,1150,1310,1000,1000,1200
+2016,cleaning,covered,91151,"Food and beverage establishment cleaner (eg restaurants, food courts, hawker centres)",main,post,469,1000,1170,1301,954,1000,1120
+2016,cleaning,covered,91160,"Residential area cleaner (eg HDB estates, condominiums, private apartments, common areas within residential estates)",sensitivity,post,250,1085,1130,1291,1050,1050,1170
+2016,cleaning,covered,91190,"Cleaner in other establishments (eg shopping malls, schools, hospitals, places of worship)",main,post,4922,1042,1152,1300,1000,1100,1200
+2016,landscape,covered,9214,Park and garden maintenance worker,main,transition,392,1300,1300,1450,1300,1300,1400
+2016,security,covered,5414,Security guard,main,transition,4313,1884,2256,3167,1100,1300,2550
+2017,C cashier,comparison,52302,Cashier,main,post (all),2113,1695,1822,2086,1510,1667,1717
+2017,C food/drink stall assistant,comparison,94102,Food/Drink stall assistant,main,post (all),1008,1001,1156,1600,1000,1100,1300
+2017,C general office clerk,comparison,4110,General office clerk,main,post (all),7511,1800,2300,2943,1728,2203,2736
+2017,C kitchen assistant,comparison,94101,Kitchen assistant,main,post (all),726,1100,1450,2000,1050,1200,1400
+2017,C lorry driver,comparison,83321,Lorry driver,main,post (all),1805,1800,2276,2789,1500,1850,2200
+2017,C shop sales assistant,comparison,52202,Shop sales assistant,main,post (all),4445,1650,1826,2349,1430,1558,1668
+2017,C van driver,comparison,83223,Van driver,main,post (all),656,1662,2000,2393,1500,1800,2025
+2017,C waiter,comparison,51312,Waiter,main,post (all),864,1100,1621,2067,1100,1400,1606
+2017,cleaning,covered,91130,Office cleaner,main,post,1043,1058,1200,1350,1050,1200,1300
+2017,cleaning,covered,91151,"Food and beverage establishment cleaner (eg restaurants, food courts, hawker centres)",main,post,310,1000,1100,1325,1000,1100,1200
+2017,cleaning,covered,91160,"Residential area cleaner (eg HDB estates, condominiums, private apartments, common areas within residential estates)",sensitivity,post,420,1200,1255,1392,1000,1065,1200
+2017,cleaning,covered,91190,"Cleaner in other establishments (eg shopping malls, schools, hospitals, places of worship)",main,post,4386,1100,1250,1450,1030,1105,1250
+2017,landscape,covered,9214,Park and garden maintenance worker,main,post,346,1300,1400,1500,1300,1400,1475
+2017,security,covered,5414,Security guard,main,post,3560,1875,2149,2489,1100,1300,1550
+2018,C cashier,comparison,52302,Cashier,main,post (all),2251,1695,1933,2128,1441,1634,1727
+2018,C food/drink stall assistant,comparison,94102,Food/Drink stall assistant,main,post (all),860,1200,1310,1611,1100,1200,1256
+2018,C general office clerk,comparison,4110,General office clerk,main,post (all),6605,1850,2328,2860,1800,2225,2755
+2018,C kitchen assistant,comparison,94101,Kitchen assistant,main,post (all),740,1200,1632,2333,1150,1350,1450
+2018,C lorry driver,comparison,83321,Lorry driver,main,post (all),1673,1937,2410,3024,1400,1853,2200
+2018,C shop sales assistant,comparison,52202,Shop sales assistant,main,post (all),4455,1686,1873,2400,1453,1602,1701
+2018,C van driver,comparison,83223,Van driver,main,post (all),590,1770,2093,2535,1500,1821,2000
+2018,C waiter,comparison,51312,Waiter,main,post (all),1080,1200,1650,2135,1200,1410,1600
+2018,cleaning,covered,91130,Office cleaner,main,post,781,1140,1250,1400,1100,1200,1326
+2018,cleaning,covered,91151,"Food and beverage establishment cleaner (eg restaurants, food courts, hawker centres)",main,post,443,1100,1200,1302,1100,1100,1200
+2018,cleaning,covered,91160,"Residential area cleaner (eg HDB estates, condominiums, private apartments, common areas within residential estates)",sensitivity,post,559,1200,1250,1372,1060,1200,1260
+2018,cleaning,covered,91190,"Cleaner in other establishments (eg shopping malls, schools, hospitals, places of worship)",main,post,6973,1200,1300,1506,1120,1200,1300
+2018,landscape,covered,9214,Park and garden maintenance worker,main,post,491,1300,1400,1500,1300,1400,1500
+2018,security,covered,5414,Security guard,main,post,3848,1951,2225,2594,1200,1300,1600
+2019,C cashier,comparison,52302,Cashier,main,post (all),1154,1513,1653,2181,1300,1420,1900
+2019,C food/drink stall assistant,comparison,94102,Food/Drink stall assistant,main,post (all),973,1200,1300,1630,1165,1200,1300
+2019,C general office clerk,comparison,4110,General office clerk,main,post (all),5072,1800,2338,2985,1707,2238,2823
+2019,C kitchen assistant,comparison,94101,Kitchen assistant,main,post (all),774,1220,1620,2303,1200,1400,1535
+2019,C lorry driver,comparison,83321,Lorry driver,main,post (all),1353,1800,2300,2898,1500,1820,2152
+2019,C shop sales assistant,comparison,52202,Shop sales assistant,main,post (all),2434,1601,2040,2896,1210,1422,1700
+2019,C van driver,comparison,83223,Van driver,main,post (all),666,1610,2005,2400,1350,1760,2059
+2019,C waiter,comparison,51312,Waiter,main,post (all),896,1222,1696,2314,1200,1464,1700
+2019,cleaning,covered,91130,Office cleaner,main,post,794,1200,1300,1492,1200,1300,1350
+2019,cleaning,covered,91151,"Food and beverage establishment cleaner (eg restaurants, food courts, hawker centres)",main,post,385,1200,1200,1300,1121,1200,1220
+2019,cleaning,covered,91160,"Residential area cleaner (eg HDB estates, condominiums, private apartments, common areas within residential estates)",sensitivity,post,572,1300,1400,1750,1210,1320,1320
+2019,cleaning,covered,91190,"Cleaner in other establishments (eg shopping malls, schools, hospitals, places of worship)",main,post,4934,1300,1384,1600,1120,1250,1320
+2019,landscape,covered,9214,Park and garden maintenance worker,main,post,382,1395,1500,1600,1350,1460,1560
+2019,security,covered,5414,Security guard,main,post,1990,2048,2391,2779,1200,1360,1560
+2020,C cashier,comparison,52302,Cashier,main,excluded (2020-2021),645,1601,2132,3390,1356,1998,3192
+2020,C food/drink stall assistant,comparison,94102,Food/Drink stall assistant,main,excluded (2020-2021),679,1300,1300,1500,1300,1300,1400
+2020,C general office clerk,comparison,4110,General office clerk,main,excluded (2020-2021),4567,1800,2400,3001,1730,2339,2925
+2020,C kitchen assistant,comparison,94101,Kitchen assistant,main,excluded (2020-2021),882,1400,1720,2041,1350,1550,1810
+2020,C lorry driver,comparison,83321,Lorry driver,main,excluded (2020-2021),1336,1765,2163,2673,1586,1920,2300
+2020,C shop sales assistant,comparison,52202,Shop sales assistant,main,excluded (2020-2021),2181,1550,1979,2500,1400,1750,2100
+2020,C van driver,comparison,83223,Van driver,main,excluded (2020-2021),762,1752,2278,3034,1550,1923,2458
+2020,C waiter,comparison,51312,Waiter,main,excluded (2020-2021),771,1300,1400,1930,1300,1400,1574
+2020,cleaning,covered,91131,"Office, commercial and industrial establishments indoor cleaner",main,excluded (2020-2021),3355,1236,1300,1400,1200,1300,1400
+2020,cleaning,covered,91132,"Office, commercial and industrial establishments outdoor cleaner",sensitivity,excluded (2020-2021),276,1400,1408,1514,1300,1300,1400
+2020,cleaning,covered,91133,"Office, commercial and industrial establishments multi-skilled cleaner cum machine operator",sensitivity,excluded (2020-2021),80,1300,1505,1770,1300,1449,1600
+2020,cleaning,covered,91151,Food and beverage establishments general cleaner,main,excluded (2020-2021),274,1300,1300,1400,1300,1300,1400
+2020,cleaning,covered,91161,Residential and open areas general cleaner,sensitivity,excluded (2020-2021),504,1400,1400,1508,1236,1400,1400
+2020,landscape,covered,9214,"Park, garden and landscape maintenance worker",main,excluded (2020-2021),147,1400,1450,1500,1350,1450,1500
+2020,security,covered,54141,Senior security supervisor,sensitivity,excluded (2020-2021),45,2886,3399,3701,1870,2400,2670
+2020,security,covered,54142,Security supervisor,sensitivity,excluded (2020-2021),182,2615,3016,3429,1620,1718,2025
+2020,security,covered,54143,Senior private security officer,sensitivity,excluded (2020-2021),380,2308,2657,3000,1420,1420,1827
+2020,security,covered,54144,Private security officer,main,excluded (2020-2021),1447,1875,2250,2551,1250,1275,1525
+2021,C cashier,comparison,52302,Cashier,main,excluded (2020-2021),520,1400,1775,2130,1400,1598,1966
+2021,C food/drink stall assistant,comparison,94102,Food/Drink stall assistant,main,excluded (2020-2021),517,1400,1400,1500,1320,1400,1400
+2021,C general office clerk,comparison,4110,General office clerk,main,excluded (2020-2021),5469,1772,2500,3350,1684,2400,3130
+2021,C kitchen assistant,comparison,94101,Kitchen assistant,main,excluded (2020-2021),689,1400,1400,1861,1400,1400,1595
+2021,C lorry driver,comparison,83321,Lorry driver,main,excluded (2020-2021),829,1753,2400,3200,1500,2000,2500
+2021,C shop sales assistant,comparison,52202,Shop sales assistant,main,excluded (2020-2021),2304,1494,2000,2863,1400,1675,2210
+2021,C van driver,comparison,83223,Van driver,main,excluded (2020-2021),729,1500,2146,2860,1450,1950,2400
+2021,C waiter,comparison,51312,Waiter,main,excluded (2020-2021),843,1400,1400,1800,1400,1400,1650
+2021,cleaning,covered,91131,"Office, commercial and industrial establishments indoor cleaner",main,excluded (2020-2021),2824,1400,1430,1580,1240,1400,1442
+2021,cleaning,covered,91132,"Office, commercial and industrial establishments outdoor cleaner",sensitivity,excluded (2020-2021),111,1450,1600,1801,1445,1450,1550
+2021,cleaning,covered,91133,"Office, commercial and industrial establishments multi-skilled cleaner cum machine operator",sensitivity,excluded (2020-2021),460,1400,1500,1703,1400,1400,1642
+2021,cleaning,covered,91151,Food and beverage establishments general cleaner,main,excluded (2020-2021),1019,1400,1400,1700,1300,1400,1450
+2021,cleaning,covered,91161,Residential and open areas general cleaner,sensitivity,excluded (2020-2021),217,1400,1450,1648,1236,1236,1400
+2021,landscape,covered,9214,"Park, garden and landscape maintenance worker",main,excluded (2020-2021),260,1450,1500,1600,1410,1450,1500
+2021,security,covered,54141,Senior security supervisor,sensitivity,excluded (2020-2021),140,3183,3418,3688,2050,2838,3610
+2021,security,covered,54142,Security supervisor,sensitivity,excluded (2020-2021),425,2621,3020,3326,1850,2140,3000
+2021,security,covered,54143,Senior private security officer,sensitivity,excluded (2020-2021),717,2490,2737,2973,1650,1650,2078
+2021,security,covered,54144,Private security officer,main,excluded (2020-2021),1473,2088,2388,2658,1400,1500,1854
+2022,C cashier,comparison,52302,Cashier,main,post (all),791,1600,2135,2710,1500,1900,2163
+2022,C food/drink stall assistant,comparison,94102,Food/Drink stall assistant,main,post (all),645,1400,1500,1886,1400,1400,1750
+2022,C general office clerk,comparison,4110,General office clerk,main,post (all),7314,2099,2922,4057,1903,2734,3845
+2022,C kitchen assistant,comparison,94101,Kitchen assistant,main,post (all),1050,1400,1915,2700,1400,1600,1924
+2022,C lorry driver,comparison,83321,Lorry driver,main,post (all),1279,1941,2550,3400,1700,2200,2818
+2022,C shop sales assistant,comparison,52202,Shop sales assistant,main,post (all),5021,2000,2052,2282,1854,2000,2000
+2022,C van driver,comparison,83223,Van driver,main,post (all),1165,1700,2300,2914,1527,2050,2586
+2022,C waiter,comparison,51312,Waiter,main,post (all),1660,1400,1850,2500,1400,1606,2014
+2022,cleaning,covered,91131,"Office, commercial and industrial establishments indoor cleaner",main,post,4731,1400,1520,1800,1300,1400,1553
+2022,cleaning,covered,91132,"Office, commercial and industrial establishments outdoor cleaner",sensitivity,post,221,1486,1637,1800,1236,1351,1586
+2022,cleaning,covered,91133,"Office, commercial and industrial establishments multi-skilled cleaner cum machine operator",sensitivity,post,82,1700,1715,2002,1400,1450,1749
+2022,cleaning,covered,91151,Food and beverage establishments general cleaner,main,post,192,1400,1450,1557,1400,1400,1450
+2022,cleaning,covered,91161,Residential and open areas general cleaner,sensitivity,post,159,1525,1650,2599,1450,1650,1728
+2022,landscape,covered,9214,"Park, garden and landscape maintenance worker",main,post,179,1650,1700,1850,1550,1650,1700
+2022,security,covered,54141,Senior security supervisor,sensitivity,post,143,3000,3400,3976,2045,2813,3472
+2022,security,covered,54142,Security supervisor,sensitivity,post,1050,2400,2768,3256,1839,2400,2840
+2022,security,covered,54143,Senior private security officer,sensitivity,post,409,2127,2656,2966,1585,1830,2424
+2022,security,covered,54144,Private security officer,main,post,2163,2245,2565,2924,1633,1927,2532
+2023,C cashier,comparison,52302,Cashier (general),main,"after window (shown, not scored)",744,1884,2045,2400,1711,2001,2245
+2023,C food/drink stall assistant,comparison,94102,Food/Drink stall assistant,main,"after window (shown, not scored)",1043,1420,1850,2159,1400,1600,1800
+2023,C general office clerk,comparison,41101,Office clerk (including filing and copying),main,"after window (shown, not scored)",4848,2031,2753,3698,2000,2678,3492
+2023,C kitchen assistant,comparison,94101,Kitchen assistant,main,"after window (shown, not scored)",1340,1400,1850,2524,1400,1749,2190
+2023,C lorry driver,comparison,83321,Lorry driver,main,"after window (shown, not scored)",616,1701,2385,3028,1633,2100,2730
+2023,C shop sales assistant,comparison,52202,Shop sales assistant,main,"after window (shown, not scored)",2648,1961,2360,3100,1764,2074,2681
+2023,C van driver,comparison,83223,Van driver,main,"after window (shown, not scored)",870,1600,2375,3037,1500,2100,2670
+2023,C waiter,comparison,51312,Waiter,main,"after window (shown, not scored)",1227,1400,1900,2706,1400,1800,2127
+2023,landscape,covered,92142,Landscape worker,main,"after window (shown, not scored)",222,1650,1750,1850,1650,1750,1850
+2023,security,covered,54141,Senior security supervisor,sensitivity,"after window (shown, not scored)",371,3076,3770,4900,2650,3486,4500
+2023,security,covered,54142,Security supervisor,sensitivity,"after window (shown, not scored)",2194,3105,3645,4226,2600,3495,4166
+2023,security,covered,54143,Senior private security officer,sensitivity,"after window (shown, not scored)",1209,2700,3047,3406,1850,1850,2970
+2023,security,covered,54144,Private security officer,main,"after window (shown, not scored)",2228,2441,2742,3100,1650,2174,2970
+2024,C cashier,comparison,52302,Cashier (general),main,"after window (shown, not scored)",,1600,2151,2588,1472,1936,2300
+2024,C food/drink stall assistant,comparison,94102,Food/Drink stall assistant,main,"after window (shown, not scored)",,1400,1638,2056,1344,1544,1980
+2024,C general office clerk,comparison,41101,Office clerk (including filing and copying),main,"after window (shown, not scored)",,1420,1822,3050,1400,1800,3000
+2024,C kitchen assistant,comparison,94101,Kitchen assistant,main,"after window (shown, not scored)",,1400,1600,2192,1204,1419,1990
+2024,C lorry driver,comparison,83321,Lorry driver,main,"after window (shown, not scored)",,1600,2159,3000,1353,1894,2610
+2024,C shop sales assistant,comparison,52202,Shop sales assistant,main,"after window (shown, not scored)",,1600,2359,2800,1400,2030,2578
+2024,C van driver,comparison,83223,Van driver,main,"after window (shown, not scored)",,1500,2148,2886,1264,1764,2403
+2024,C waiter,comparison,51312,Waiter,main,"after window (shown, not scored)",,1400,1565,2099,1190,1360,1850
+2024,landscape,covered,92142,Landscape worker,main,"after window (shown, not scored)",,1750,1800,1902,1733,1782,1881
+2024,security,covered,54141,Senior security supervisor,sensitivity,"after window (shown, not scored)",,3346,3720,4249,3055,3418,3752
+2024,security,covered,54142,Security supervisor,sensitivity,"after window (shown, not scored)",,2750,3236,3450,2595,3062,3278
+2024,security,covered,54143,Senior private security officer,sensitivity,"after window (shown, not scored)",,2950,3082,3366,2744,2950,3000
+2024,security,covered,54144,Private security officer,main,"after window (shown, not scored)",,2250,2748,2971,2036,2643,2710
+2025,C cashier,comparison,52302,Cashier (general),main,"after window (shown, not scored)",,1620,2407,2752,1600,2300,2607
+2025,C food/drink stall assistant,comparison,94102,Food/Drink stall assistant,main,"after window (shown, not scored)",,1600,1600,2080,1496,1600,1998
+2025,C general office clerk,comparison,41101,Office clerk,main,"after window (shown, not scored)",,1600,2286,3519,1594,2215,3484
+2025,C kitchen assistant,comparison,94101,Kitchen assistant,main,"after window (shown, not scored)",,1600,1620,2384,1424,1600,2155
+2025,C lorry driver,comparison,83321,Lorry driver,main,"after window (shown, not scored)",,1600,2200,3096,1590,2001,2792
+2025,C shop sales assistant,comparison,52202,Shop sales assistant,main,"after window (shown, not scored)",,1600,2305,2902,1579,2116,2709
+2025,C van driver,comparison,83223,Van driver,main,"after window (shown, not scored)",,1600,2150,2963,1589,2000,2710
+2025,C waiter,comparison,51312,Waiter,main,"after window (shown, not scored)",,1600,1600,2280,1337,1546,2034
+2025,landscape,covered,92142,Landscape worker,main,"after window (shown, not scored)",,1850,1865,2000,1785,1850,1950
+2025,security,covered,54141,Senior security supervisor,sensitivity,"after window (shown, not scored)",,3462,3835,4410,3180,3555,4000
+2025,security,covered,54142,Security supervisor,sensitivity,"after window (shown, not scored)",,3020,3470,4086,2870,3211,3780
+2025,security,covered,54143,Senior private security officer,sensitivity,"after window (shown, not scored)",,3025,3304,3559,2870,3170,3355
+2025,security,covered,54144,Private security officer,main,"after window (shown, not scored)",,2565,2990,3356,2375,2870,3170

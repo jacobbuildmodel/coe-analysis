@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 501" role="img" aria-label="Line chart, 2009-2019: bottom pay in jobs without a ladder and the median income, both as the change from their 2010-12 average in log points. Jobs without a ladder kept pace: 4.5 log points short of the median.">
+<style>:root{--fig-ink:#0b0b0b;--fig-ink-3:#717171;--fig-rule:#e2e1dd;--fig-surface:#fcfcfa;--fig-subject:#2873ce;--fig-context:#707379;}@media (prefers-color-scheme: dark){:root{--fig-ink:#ffffff;--fig-ink-3:#9a9a9a;--fig-rule:#38393a;--fig-surface:#1a1a19;--fig-subject:#3987e5;--fig-context:#93969c;}}:root[data-theme="dark"]{--fig-ink:#ffffff;--fig-ink-3:#9a9a9a;--fig-rule:#38393a;--fig-surface:#1a1a19;--fig-subject:#3987e5;--fig-context:#93969c;}text{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}</style>
+<rect x="0" y="0" width="480" height="501" fill="var(--fig-surface,#fcfcfa)"/>
+<text x="16.0" y="28.0" font-size="16" fill="var(--fig-ink,#0b0b0b)" font-weight="600">Jobs without a ladder kept pace: 4.5 log</text>
+<text x="16.0" y="49.0" font-size="16" fill="var(--fig-ink,#0b0b0b)" font-weight="600">points short of the median</text>
+<rect x="96.0" y="112" width="108.0" height="200" fill="var(--fig-rule,#e2e1dd)" opacity="0.9"/>
+<text x="150.0" y="106.0" text-anchor="middle" font-size="14" fill="var(--fig-ink-3,#717171)">start</text>
+<rect x="348.0" y="112" width="108.0" height="200" fill="var(--fig-rule,#e2e1dd)" opacity="0.9"/>
+<text x="402.0" y="106.0" text-anchor="middle" font-size="14" fill="var(--fig-ink-3,#717171)">end</text>
+<line x1="60" x2="456" y1="312.0" y2="312.0" stroke="var(--fig-rule,#e2e1dd)" stroke-width="1"/>
+<text x="54.0" y="317.0" text-anchor="end" font-size="14" fill="var(--fig-ink-3,#717171)">-20</text>
+<line x1="60" x2="456" y1="245.3" y2="245.3" stroke="var(--fig-rule,#e2e1dd)" stroke-width="1"/>
+<text x="54.0" y="250.3" text-anchor="end" font-size="14" fill="var(--fig-ink-3,#717171)">0</text>
+<line x1="60" x2="456" y1="178.7" y2="178.7" stroke="var(--fig-rule,#e2e1dd)" stroke-width="1"/>
+<text x="54.0" y="183.7" text-anchor="end" font-size="14" fill="var(--fig-ink-3,#717171)">20</text>
+<line x1="60" x2="456" y1="112.0" y2="112.0" stroke="var(--fig-rule,#e2e1dd)" stroke-width="1"/>
+<text x="54.0" y="117.0" text-anchor="end" font-size="14" fill="var(--fig-ink-3,#717171)">40</text>
+<polyline points="78.0,278.8 114.0,265.3 150.0,239.6 186.0,231.1 222.0,204.5 258.0,201.8 294.0,182.9 330.0,179.8 366.0,156.8 402.0,152.3 438.0,135.2" fill="none" stroke="var(--fig-context,#707379)" stroke-width="2" stroke-dasharray="5 4"/>
+<circle cx="78.0" cy="278.8" r="2.5" fill="var(--fig-context,#707379)"/>
+<circle cx="114.0" cy="265.3" r="2.5" fill="var(--fig-context,#707379)"/>
+<circle cx="150.0" cy="239.6" r="2.5" fill="var(--fig-context,#707379)"/>
+<circle cx="186.0" cy="231.1" r="2.5" fill="var(--fig-context,#707379)"/>
+<circle cx="222.0" cy="204.5" r="2.5" fill="var(--fig-context,#707379)"/>
+<circle cx="258.0" cy="201.8" r="2.5" fill="var(--fig-context,#707379)"/>
+<circle cx="294.0" cy="182.9" r="2.5" fill="var(--fig-context,#707379)"/>
+<circle cx="330.0" cy="179.8" r="2.5" fill="var(--fig-context,#707379)"/>
+<circle cx="366.0" cy="156.8" r="2.5" fill="var(--fig-context,#707379)"/>
+<circle cx="402.0" cy="152.3" r="2.5" fill="var(--fig-context,#707379)"/>
+<circle cx="438.0" cy="135.2" r="2.5" fill="var(--fig-context,#707379)"/>
+<polyline points="78.0,277.8 114.0,258.6 150.0,238.4 186.0,239.0 222.0,214.3 258.0,205.6 294.0,196.4 330.0,181.3 366.0,173.6 402.0,151.1 438.0,164.7" fill="none" stroke="var(--fig-subject,#2873ce)" stroke-width="2"/>
+<circle cx="78.0" cy="277.8" r="2.5" fill="var(--fig-subject,#2873ce)"/>
+<circle cx="114.0" cy="258.6" r="2.5" fill="var(--fig-subject,#2873ce)"/>
+<circle cx="150.0" cy="238.4" r="2.5" fill="var(--fig-subject,#2873ce)"/>
+<circle cx="186.0" cy="239.0" r="2.5" fill="var(--fig-subject,#2873ce)"/>
+<circle cx="222.0" cy="214.3" r="2.5" fill="var(--fig-subject,#2873ce)"/>
+<circle cx="258.0" cy="205.6" r="2.5" fill="var(--fig-subject,#2873ce)"/>
+<circle cx="294.0" cy="196.4" r="2.5" fill="var(--fig-subject,#2873ce)"/>
+<circle cx="330.0" cy="181.3" r="2.5" fill="var(--fig-subject,#2873ce)"/>
+<circle cx="366.0" cy="173.6" r="2.5" fill="var(--fig-subject,#2873ce)"/>
+<circle cx="402.0" cy="151.1" r="2.5" fill="var(--fig-subject,#2873ce)"/>
+<circle cx="438.0" cy="164.7" r="2.5" fill="var(--fig-subject,#2873ce)"/>
+<text x="78.0" y="330.0" text-anchor="middle" font-size="14" fill="var(--fig-ink-3,#717171)">2009</text>
+<text x="186.0" y="330.0" text-anchor="middle" font-size="14" fill="var(--fig-ink-3,#717171)">2012</text>
+<text x="366.0" y="330.0" text-anchor="middle" font-size="14" fill="var(--fig-ink-3,#717171)">2017</text>
+<text x="438.0" y="330.0" text-anchor="middle" font-size="14" fill="var(--fig-ink-3,#717171)">2019</text>
+<text x="16.0" y="358.0" font-size="14" fill="var(--fig-ink-3,#717171)">Blue line: bottom pay (25th percentile, gross) in the</text>
+<text x="16.0" y="377.0" font-size="14" fill="var(--fig-ink-3,#717171)">jobs with no ladder until 2022. Grey dashed line: the</text>
+<text x="16.0" y="396.0" font-size="14" fill="var(--fig-ink-3,#717171)">median worker's income. Both are shown as the change</text>
+<text x="16.0" y="415.0" font-size="14" fill="var(--fig-ink-3,#717171)">from their 2010-12 average, in log points. Shaded: the</text>
+<text x="16.0" y="434.0" font-size="14" fill="var(--fig-ink-3,#717171)">start (2010-12) and end (2017-19) windows T3 compares.</text>
+<text x="16.0" y="453.0" font-size="14" fill="var(--fig-ink-3,#717171)">A blue line ending below the grey one fell behind; T3</text>
+<text x="16.0" y="472.0" font-size="14" fill="var(--fig-ink-3,#717171)">fails if the gap at the end reaches 5 points.</text>
+</svg>
