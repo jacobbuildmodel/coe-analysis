@@ -163,6 +163,77 @@ Every row is a sealed sensitivity. None enters the score or the verdict.
 | T5 | all successors averaged | landscape_2022_ratio | 1.0000 | not scored |
 | T5 | all successors averaged | outcome | SURVIVE | not scored |
 
+## Post-results checks (added after the results, not scored)
+
+Written by `11b_postresults.py` (THESIS_ADDENDUM.md item 6). None of these changes a sealed number, outcome or the verdict.
+
+| Key | Value | Meaning |
+|---|---|---|
+| T1_cleaning_slope_pct | -3.0 | T1 cleaning drift a year, per cent (exp(x) - 1) |
+| T1_cleaning_slope_pct0 | -3 | T1 cleaning drift a year, per cent, whole number |
+| T1_security_slope_pct | 2.5 | T1 security drift a year, per cent (exp(x) - 1) |
+| T1_security_slope_pct0 | 2 | T1 security drift a year, per cent, whole number |
+| T1_landscape_slope_pct | 0.1 | T1 landscape drift a year, per cent (exp(x) - 1) |
+| T1_landscape_slope_pct0 | 0 | T1 landscape drift a year, per cent, whole number |
+| T2_landscape_est_pct | 24.6 | T2 landscape est, per cent (exp(x) - 1) |
+| T2_landscape_est_pct0 | 25 | T2 landscape est, per cent, whole number |
+| T2_landscape_lo_pct | 17.1 | T2 landscape lo, per cent (exp(x) - 1) |
+| T2_landscape_lo_pct0 | 17 | T2 landscape lo, per cent, whole number |
+| T2_landscape_hi_pct | 32.6 | T2 landscape hi, per cent (exp(x) - 1) |
+| T2_landscape_hi_pct0 | 33 | T2 landscape hi, per cent, whole number |
+| T3_growth_c_pct | 28.0 | T3 growth_c, per cent (exp(x) - 1) |
+| T3_growth_c_pct0 | 28 | T3 growth_c, per cent, whole number |
+| T3_growth_mid_pct | 33.9 | T3 growth_mid, per cent (exp(x) - 1) |
+| T3_growth_mid_pct0 | 34 | T3 growth_mid, per cent, whole number |
+| T3_shortfall_pct | 4.6 | T3 shortfall, per cent (exp(x) - 1) |
+| T3_shortfall_pct0 | 5 | T3 shortfall, per cent, whole number |
+| line_T1_pct | 1.0 | T1 line, 1.0 log point a year, per cent (exp(x) - 1) |
+| line_T1_pct0 | 1 | T1 line, 1.0 log point a year, per cent, whole number |
+| line_T2_survive_pct | 10.5 | T2 survive line, 10 log points, per cent (exp(x) - 1) |
+| line_T2_survive_pct0 | 11 | T2 survive line, 10 log points, per cent, whole number |
+| line_T2_fail_pct | 5.1 | T2 fail line, 5 log points, per cent (exp(x) - 1) |
+| line_T2_fail_pct0 | 5 | T2 fail line, 5 log points, per cent, whole number |
+| line_T3_pct | 5.1 | T3 line, 5 log points, per cent (exp(x) - 1) |
+| line_T3_pct0 | 5 | T3 line, 5 log points, per cent, whole number |
+| A1_drift | 0.0118 | A1 steepest landscape drift among T1 sensitivities (Junes after the last pre-period break) |
+| A1_drift_pct | 1.2 | A1 steepest landscape drift a year, per cent (exp(x) - 1) |
+| A1_drift_pct0 | 1 | A1 steepest landscape drift a year, per cent, whole number |
+| A1_years | 7.5 | A1 years from pre-period to post-period midpoint (Junes scored) |
+| A1_carried | 0.0888 | A1 drift carried over those years, log points |
+| A1_carried_pct | 9.3 | A1 drift carried over those years, per cent (exp(x) - 1) |
+| A1_carried_pct0 | 9 | A1 drift carried over those years, per cent, whole number |
+| A1_T2_landscape_adjusted | 0.1312 | A1 landscape T2 net of that drift, log points |
+| A1_T2_landscape_adjusted_pct | 14.0 | A1 landscape T2 net of that drift, per cent (exp(x) - 1) |
+| A1_T2_landscape_adjusted_pct0 | 14 | A1 landscape T2 net of that drift, per cent, whole number |
+| A1_clears_T2_line | True | A1 adjusted estimate still at or above 0.10 |
+| A2_growth_mid_incl | 0.3089 | A2 median growth including employer CPF, log points |
+| A2_growth_mid_incl_pct | 36.2 | A2 median growth including employer CPF, per cent (exp(x) - 1) |
+| A2_growth_mid_incl_pct0 | 36 | A2 median growth including employer CPF, per cent, whole number |
+| A2_shortfall_incl | 0.0623 | A2 T3 shortfall against that median, log points |
+| A2_shortfall_incl_pct | 6.4 | A2 T3 shortfall against that median, per cent (exp(x) - 1) |
+| A2_shortfall_incl_pct0 | 6 | A2 T3 shortfall against that median, per cent, whole number |
+| A2_under_T3_line | False | A2 shortfall below the 0.05 line |
+| T5_landscape_2017_p25_basic | 1,300 | landscape 25th-percentile basic wage, June 2017, S$ (mean of the group's main titles) |
+| T5_landscape_2017_rung | 1,300 | landscape entry rung on 1 June 2017, S$ |
+| T5_landscape_2017_ratio_pct | 100.0 | landscape ratio, June 2017, per cent |
+| T5_landscape_2018_p25_basic | 1,300 | landscape 25th-percentile basic wage, June 2018, S$ (mean of the group's main titles) |
+| T5_landscape_2018_rung | 1,300 | landscape entry rung on 1 June 2018, S$ |
+| T5_landscape_2018_ratio_pct | 100.0 | landscape ratio, June 2018, per cent |
+| T5_landscape_2019_p25_basic | 1,350 | landscape 25th-percentile basic wage, June 2019, S$ (mean of the group's main titles) |
+| T5_landscape_2019_rung | 1,300 | landscape entry rung on 1 June 2019, S$ |
+| T5_landscape_2019_ratio_pct | 103.8 | landscape ratio, June 2019, per cent |
+| T5_landscape_2022_p25_basic | 1,550 | landscape 25th-percentile basic wage, June 2022, S$ (mean of the group's main titles) |
+| T5_landscape_2022_rung | 1,550 | landscape entry rung on 1 June 2022, S$ |
+| T5_landscape_2022_ratio_pct | 100.0 | landscape ratio, June 2022, per cent |
+| conf_T1_pct | 28 | Jacob's confidence at seal, T1, per cent |
+| conf_T2_pct | 40 | Jacob's confidence at seal, T2, per cent |
+| conf_T3_pct | 58 | Jacob's confidence at seal, T3, per cent |
+| conf_T5_pct | 50 | Jacob's confidence at seal, T5, per cent |
+| record_scored | 8 | running record: scored predictions, ERP and PWM |
+| record_held | 4 | running record: held |
+| record_expected | 3.66 | running record: expected, sum of confidences |
+| record_brier | 0.205 | running record: Brier score over all scored predictions |
+
 ## Titles dropped by the missing-year rule
 
 None.

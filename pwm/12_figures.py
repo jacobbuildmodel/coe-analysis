@@ -21,7 +21,8 @@ rules are written below, before any real value was opened).
 
 
 Presentation only: nothing here computes or changes a tested number
-(THESIS_ADDENDUM.md, items 2 and 3).
+(THESIS_ADDENDUM.md, items 2, 3 and 7). Visible text is for readers: per
+cent (100 x (exp(x) - 1) of the log-point values in out/), no test labels.
 """
 import math
 import os
@@ -150,83 +151,90 @@ def num(T, k):
         return None
 
 
-def names(groups):
-    g = [x for x in L.COVERED if x in groups]
+WORKERS = {"cleaning": "cleaners", "security": "security guards", "landscape": "landscape workers"}
+
+
+def names(groups, cap=True):
+    g = [WORKERS[x] for x in L.COVERED if x in groups]
     if not g:
         return ""
     s = g[0] if len(g) == 1 else ", ".join(g[:-1]) + " and " + g[-1]
-    return s[0].upper() + s[1:]
+    return s[0].upper() + s[1:] if cap else s
+
+
+def pct(x):
+    return 100 * (math.exp(x) - 1)
 
 
 # ------------------------------------------------------------------ chart 1
 def title1(T):
-    """The finding, by rule from T1 and T2 as sealed."""
+    """The finding in plain words, by rule from the sealed outcomes."""
     passing = T.get("T1_groups_passing", "").split()
     if T["T1_outcome"] == "NOT SCORED" or not passing:
-        return "Before the ladders, covered and comparison jobs were not moving together"
-    x = num(T, "T2_pooled")
+        return "Before the ladders, covered and comparison jobs were already drifting apart"
+    p = pct(num(T, "T2_pooled"))
     failed = [g for g in L.COVERED if g not in passing]
     if T["T2_outcome"] == "SURVIVE" and failed:
-        return (f"{names(passing)}: bottom pay pulled about {100 * x:.0f} log points ahead. "
-                f"{names(failed)} failed the design test")
+        return (f"{names(passing)}' pay pulled about {p:.0f} per cent ahead. For "
+                f"{names(failed, False)}, pay was already moving before the ladder")
     if T["T2_outcome"] == "SURVIVE":
-        return f"After the ladders, bottom pay in covered jobs pulled about {100 * x:.0f} log points ahead"
+        return f"After the ladders, bottom pay in covered jobs pulled about {p:.0f} per cent ahead"
     if T["T2_outcome"] == "INCONCLUSIVE":
-        return f"Covered jobs pulled about {100 * x:.0f} log points ahead, short of the 10-point bar"
+        return f"Covered jobs' bottom pay pulled only about {p:.0f} per cent ahead"
     below = [g for g in passing if (num(T, f"T2_{g}_est") or 0) <= 0]
     if below:
-        return f"Bottom pay did not pull ahead in {' or '.join(below)}"
-    return f"Bottom pay in covered jobs pulled only about {100 * x:.0f} log points ahead"
+        return f"Bottom pay did not pull ahead for {names(below, False)}"
+    return f"Bottom pay in covered jobs pulled only about {p:.0f} per cent ahead"
 
 
 def chart1(out, figs):
     T = tests(out)
     gv = L.read_csv(os.path.join(out, "group_values.csv"))
     passing = T.get("T1_groups_passing", "").split()
-    cap = ("Each panel is one covered group: its bottom pay (25th percentile, gross) minus the "
-           "comparison jobs', in log points, one dot per June. Dark bands: the Junes the tests "
-           "score, before and after the ladder. Pale band: transition, not scored. Dashed box: "
-           "2020-21, excluded. Dashed lines: the before and after averages; T2 is the rise from "
-           "one to the other. Look for the step between the dark bands.")
-    top0 = 40
+    cap = ("Each panel is one covered job: how far its bottom pay (the lowest-paid quarter, "
+           "gross) sat above or below the same point in jobs with no ladder, in per cent, one "
+           "dot per June. Dark bands: the years compared, before and after the ladder. Pale "
+           "band: the transition, left out. Dashed box: 2020-21, left out. Dashed lines: the "
+           "before and after averages. Look for the step between the dark bands. A job that "
+           "failed the design test was already moving before its ladder, so its step is not a "
+           "finding.")
     title = title1(T)
-    tl = len(textwrap.wrap(title, TITLE_CHARS))
-    top0 += 21 * tl
-    block = 172
+    top0 = 40 + 21 * len(textwrap.wrap(title, TITLE_CHARS))
+    block = 188
     H = top0 + 3 * block + 26 + caption_height(cap) + 10
-    alt = ("Three panels, one per covered group, showing bottom pay in covered jobs minus "
-           "comparison jobs, in log points, each June 2009-2025, with the before, transition, "
-           "excluded and after years shaded. " + title + ".")
+    alt = ("Three panels, one per covered job, showing bottom pay in covered jobs compared "
+           "with jobs that had no ladder, in per cent, each June 2009-2025, with the before, "
+           "transition, 2020-21 and after years shaded. " + title + ".")
     s, _ = head(H, alt, title)
     X = scale(2008.5, 2025.5)
     for k, g in enumerate(L.COVERED):
-        top = top0 + 44 + k * block
+        top = top0 + 60 + k * block
         bottom = top + 110
-        pts = {int(r["june"]): 100 * float(r["gap"]) for r in gv if r["group"] == g and r["gap"]}
-        label = g.capitalize() + ("" if g in passing else ": failed T1, not scored in T2")
-        text(s, LX, top - 26, label, 14, INK, weight="600")
+        pts = {int(r["june"]): pct(float(r["gap"])) for r in gv if r["group"] == g and r["gap"]}
+        logs = {int(r["june"]): float(r["gap"]) for r in gv if r["group"] == g and r["gap"]}
+        label = WORKERS[g].capitalize() + ("" if g in passing else ": failed the design test")
+        text(s, LX, top - 42, label, 14, INK, weight="600")
         post = L.POST[g]
-        for a, b, kind, lab in ((L.PRE[g][0], L.PRE[g][-1], "scored", "before"),
-                                (L.TRANSITION[g][0], L.TRANSITION[g][-1], "transition", "trans."),
-                                (post[0], 2019, "scored", "after"),
-                                (2020, 2021, "excluded", "excl."),
-                                (2022, 2022, "scored", None)):
+        for a, b, kind, lab, row in ((L.PRE[g][0], L.PRE[g][-1], "scored", "before", 22),
+                                     (L.TRANSITION[g][0], L.TRANSITION[g][-1], "transition", "transition", 6),
+                                     (post[0], 2019, "scored", "after", 22),
+                                     (2020, 2021, "excluded", "2020-21 excluded", 6),
+                                     (2022, 2022, "scored", None, 0)):
             band(s, X, top, bottom, a, b, kind)
             if lab:
-                text(s, X((a + b) / 2), top - 6, lab, 14, INK3, anchor="middle")
+                text(s, X((a + b) / 2), top - row, lab, 14, INK3, anchor="middle")
         if not pts:
             text(s, LX + 8, (top + bottom) / 2, "no values", 14)
             continue
         Y = axes(s, top, bottom, pts.values())
-        pre = [pts[j] for j in L.PRE[g] if j in pts]
-        po = [pts[j] for j in post if j in pts]
-        for yrs, vals in ((L.PRE[g], pre), (post, po)):
-            if vals:
-                m = sum(vals) / len(vals)
+        for yrs in (L.PRE[g], post):
+            v = [logs[j] for j in yrs if j in logs]
+            if v:
+                m = pct(sum(v) / len(v))
                 s.append(f'<line x1="{X(yrs[0] - 0.4):.1f}" x2="{X(yrs[-1] + 0.4):.1f}" y1="{Y(m):.1f}" '
                          f'y2="{Y(m):.1f}" stroke="{CTX}" stroke-width="1.5" stroke-dasharray="5 4"/>')
         line(s, pts, X, Y, SUBJ)
-    base = top0 + 44 + 2 * block + 110
+    base = top0 + 60 + 2 * block + 110
     for y in (2009, 2014, 2019, 2025):
         text(s, X(y), base + 18, str(y), 14, anchor="middle")
     caption(s, base + 44, cap)
@@ -236,13 +244,12 @@ def chart1(out, figs):
 # ------------------------------------------------------------------ chart 2
 def title2(T):
     if T["T3_outcome"] == "NOT SCORED":
-        return "Too few Junes to say whether jobs without a ladder kept pace"
+        return "Too few years to say whether jobs without a ladder kept pace"
     x = num(T, "T3_shortfall")
-    if T["T3_outcome"] == "FAIL":
-        return f"Jobs without a ladder fell about {100 * x:.0f} log points behind the median"
     if x <= 0:
         return "Jobs without a ladder kept pace with the median, and more"
-    return f"Jobs without a ladder kept pace: {100 * x:.1f} log points short of the median"
+    verb = "fell behind" if T["T3_outcome"] == "FAIL" else "kept pace"
+    return f"Jobs without a ladder {verb}: their bottom pay grew {pct(x):.1f} per cent less than the median"
 
 
 def chart2(out, figs):
@@ -258,19 +265,19 @@ def chart2(out, figs):
         return sum(v) / len(v) if v else None
 
     cb, mb = base(c), base(m)
-    cp = {j: 100 * (v - cb) for j, v in c.items() if 2009 <= j <= 2019} if cb is not None else {}
-    mp = {j: 100 * (v - mb) for j, v in m.items() if 2009 <= j <= 2019} if mb is not None else {}
-    cap = ("Blue line: bottom pay (25th percentile, gross) in the jobs with no ladder until 2022. "
-           "Grey dashed line: the median worker's income. Both are shown as the change from their "
-           "2010-12 average, in log points. Shaded: the start (2010-12) and end (2017-19) windows "
-           "T3 compares. A blue line ending below the grey one fell behind; T3 fails if the gap "
-           "at the end reaches 5 points.")
+    cp = {j: pct(v - cb) for j, v in c.items() if 2009 <= j <= 2019} if cb is not None else {}
+    mp = {j: pct(v - mb) for j, v in m.items() if 2009 <= j <= 2019} if mb is not None else {}
+    cap = ("Blue line: bottom pay (the lowest-paid quarter, gross) in the jobs that had no "
+           "ladder until 2022. Grey dashed line: the median worker's income. Both show the "
+           "change from their 2010-12 average, in per cent. Shaded: the start (2010-12) and end "
+           "(2017-19) years compared. A blue line that ends below the grey one fell behind; the "
+           "bet failed if the gap at the end reached about 5 per cent.")
     title = title2(T)
     top = 40 + 21 * len(textwrap.wrap(title, TITLE_CHARS)) + 30
     bottom = top + 200
     H = bottom + 26 + caption_height(cap) + 30
     alt = ("Line chart, 2009-2019: bottom pay in jobs without a ladder and the median income, "
-           "both as the change from their 2010-12 average in log points. " + title + ".")
+           "both as the change from their 2010-12 average, in per cent. " + title + ".")
     s, _ = head(H, alt, title)
     X = scale(2008.5, 2019.5)
     for a, b, lab in ((2010, 2012, "start"), (2017, 2019, "end")):
@@ -291,40 +298,43 @@ def chart2(out, figs):
 # ------------------------------------------------------------------ chart 3
 def title3(T):
     if T["T5_outcome"] == "NOT SCORED":
-        return "No covered group could be checked against its entry rung"
-    rows = {k: num(T, k) for k in T if k.startswith("T5_") and k.endswith("_ratio") and k != "T5_min_ratio"}
+        return "No covered job could be checked against its entry rung"
     groups = T.get("T2_groups_scored", "").split()
+    rows = {k: num(T, k) for k in T if k.startswith("T5_") and k.endswith("_ratio") and k != "T5_min_ratio"}
+    mine = {k: v for k, v in rows.items() if any(k.startswith(f"T5_{g}_") for g in groups)}
+    at = sum(1 for v in mine.values() if v is not None and abs(v - 1) < 0.0005)
     low = [g for g in groups if any(v is not None and v < L.T5_LINE for k, v in rows.items()
                                     if k.startswith(f"T5_{g}_"))]
-    if T["T5_outcome"] == "SURVIVE" and len(groups) < len(L.COVERED):
-        return f"{names(groups)}: in every scored June, the bottom quarter earned at least the entry rung"
+    if T["T5_outcome"] == "SURVIVE" and at:
+        return (f"{names(groups)}: the lowest-paid quarter earned exactly the entry rung "
+                f"in {at} of {len(mine)} years")
     if T["T5_outcome"] == "SURVIVE":
-        return "In every scored June, the bottom quarter earned at least the entry rung"
+        return f"{names(groups)}: the lowest-paid quarter earned at least the entry rung every year"
     if low:
-        return f"The bottom quarter fell below the entry rung in {' and '.join(low)}"
-    return "The entry rung could not be shown in every scored June"
+        return f"The lowest-paid quarter fell below the entry rung for {names(low, False)}"
+    return "The entry rung could not be shown in every year"
 
 
 def chart3(out, figs):
     T = tests(out)
     rows = L.read_csv(os.path.join(out, "t5_ratios.csv"))
     scored = T.get("T2_groups_scored", "").split()
-    cap = ("Each panel is one covered group: its bottom-quarter basic pay (25th percentile) "
-           "divided by the ladder's entry rung in force on 1 June, one dot per scored June. "
-           "Dashed line: 0.97, the sealed line. A dot below it fails T5. Solid line: 1.0, pay "
-           "exactly at the rung.")
+    cap = ("Each panel is one covered job: the basic pay of its lowest-paid quarter, as a "
+           "share of the ladder's entry rung in force on 1 June, one dot per year compared. "
+           "Solid line: 100 per cent, pay exactly at the rung. Dashed line: 97 per cent; a dot "
+           "below it would have failed the bet.")
     title = title3(T)
     top0 = 40 + 21 * len(textwrap.wrap(title, TITLE_CHARS))
     shown = [g for g in L.COVERED if g in scored]
     others = [g for g in L.COVERED if g not in scored]
-    note = f"{names(others)}: not scored (failed T1)." if others else ""
+    note = f"{names(others)}: not checked (failed the design test)." if others else ""
     if note:
         top0 += 14 + LINE * len(textwrap.wrap(note, CAPTION_CHARS))
     block = 150
     n = max(1, len(shown))
     H = top0 + n * block + 26 + caption_height(cap) + 20
-    alt = ("Three panels, one per covered group: bottom-quarter basic pay divided by the entry "
-           "rung, each post-period June, against a dashed line at 0.97. " + title + ".")
+    alt = ("Bottom-quarter basic pay as a share of the entry rung, each year compared, against "
+           "lines at 100 and 97 per cent. " + title + ".")
     s, y = head(H, alt, title)
     if note:
         caption(s, y + 10, note)
@@ -332,20 +342,19 @@ def chart3(out, figs):
     for k, g in enumerate(shown):
         top = top0 + 34 + k * block
         bottom = top + 100
-        pts = {int(r["june"]): float(r["ratio"]) for r in rows if r["group"] == g}
-        label = g.capitalize() + ("" if g in scored else ": not scored (failed T1)")
-        text(s, LX, top - 12, label, 14, INK, weight="600")
+        pts = {int(r["june"]): 100 * float(r["ratio"]) for r in rows if r["group"] == g}
+        text(s, LX, top - 12, WORKERS[g].capitalize(), 14, INK, weight="600")
         if not pts:
             text(s, LX + 8, (top + bottom) / 2, "no values", 14)
             continue
-        Y = axes(s, top, bottom, pts.values(), extra=(L.T5_LINE, 1.0))
-        s.append(f'<line x1="{LX}" x2="{RX}" y1="{Y(L.T5_LINE):.1f}" y2="{Y(L.T5_LINE):.1f}" '
+        Y = axes(s, top, bottom, pts.values(), extra=(100 * L.T5_LINE, 100.0))
+        s.append(f'<line x1="{LX}" x2="{RX}" y1="{Y(100 * L.T5_LINE):.1f}" y2="{Y(100 * L.T5_LINE):.1f}" '
                  f'stroke="{INK}" stroke-width="1" stroke-dasharray="4 3"/>')
-        s.append(f'<line x1="{LX}" x2="{RX}" y1="{Y(1.0):.1f}" y2="{Y(1.0):.1f}" stroke="{CTX}" stroke-width="1"/>')
+        s.append(f'<line x1="{LX}" x2="{RX}" y1="{Y(100.0):.1f}" y2="{Y(100.0):.1f}" stroke="{CTX}" stroke-width="1"/>')
         line(s, pts, X, Y, SUBJ)
     base = top0 + 34 + (n - 1) * block + 100
-    for y in (2016, 2019, 2022):
-        text(s, X(y), base + 18, str(y), 14, anchor="middle")
+    for yr in (2016, 2019, 2022):
+        text(s, X(yr), base + 18, str(yr), 14, anchor="middle")
     caption(s, base + 44, cap)
     write(figs, "chart3_rung.svg", s)
 

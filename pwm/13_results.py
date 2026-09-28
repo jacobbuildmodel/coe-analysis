@@ -15,7 +15,9 @@ per cent intervals, and Jacob's confidence at seal. Every number is printed
 through pwmlib.printed, which 14_manifest.py also uses.
 
 Presentation only: nothing here computes or changes a tested number
-(THESIS_ADDENDUM.md, item 1). A run on anything but pwm/ is stamped
+(THESIS_ADDENDUM.md, items 1 and 8). The post-results checks of
+11b_postresults.py, if present, are printed in their own section, marked not
+scored. A run on anything but pwm/ is stamped
 SYNTHETIC in its first line.
 """
 import os
@@ -206,6 +208,18 @@ def main():
             pass
         md.append(f"| {r['test']} | {r['variant']} | {r['key']} | {v} | not scored |")
     md.append("")
+    post = os.path.join(out, "postresults.csv")
+    if os.path.exists(post):
+        md.append("## Post-results checks (added after the results, not scored)")
+        md.append("")
+        md.append("Written by `11b_postresults.py` (THESIS_ADDENDUM.md item 6). None of these "
+                  "changes a sealed number, outcome or the verdict.")
+        md.append("")
+        md.append("| Key | Value | Meaning |")
+        md.append("|---|---|---|")
+        for r in L.read_csv(post):
+            md.append(f"| {r['key']} | {r['printed']} | {r['meaning']} |")
+        md.append("")
     md.append("## Titles dropped by the missing-year rule")
     md.append("")
     if not dropped:

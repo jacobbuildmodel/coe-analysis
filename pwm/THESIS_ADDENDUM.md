@@ -115,3 +115,61 @@ confidences are those sealed.
   other sensitivities, so RESULTS.md's "Titles dropped by the missing-year
   rule: None" describes the main series. The main series, every scored
   test and the verdict are unaffected. No script is changed for this.
+
+## 6. 11b_postresults.py: post-results checks, NOT SCORED (28 September 2026, after the results)
+
+A new script, run after `11_tests.py`; no sealed script computes differently.
+It writes `out/postresults.csv`, which `14_manifest.py` adds to the number
+manifest and `13_results.py` prints in its own section. md5
+9b344428c0df19de0d1aaea351df01de.
+
+- **A1. Landscape's pay gain net of its steepest sensitivity drift.** Of the
+  sealed T1 sensitivities, the steepest landscape drift was 0.0118 a year
+  (the Junes after the last pre-period classification break). Carried over
+  the 7.5 years from the pre-period midpoint (mean of the Junes 2009-2014,
+  2011.5) to the post-period midpoint (mean of 2017, 2018, 2019 and 2022,
+  2019.0), it accounts for 0.0888. Landscape's T2 of 0.2201 net of that is
+  0.1312, still above the 0.10 survive line. Not scored: T2 stays as sealed.
+- **A2. T3 against the LFS median including employer CPF.** The sealed T3
+  uses the median excluding employer CPF, because OWS gross wage excludes
+  employer CPF too, so the two sides are like for like (THESIS T3, "the
+  middle"). Against the median including employer CPF, the middle grew
+  0.3089 and the shortfall is 0.0623, over the 0.05 line: T3 would fail on
+  that measure. Not scored: T3 stays SURVIVE as sealed.
+- **Per-cent equivalents**, 100 x (exp(x) - 1), of every log-point figure the
+  article uses, the S$ levels behind the T5 ratios, Jacob's confidences in
+  per cent, and the running record over the ERP and PWM pieces (4 of 8 held
+  against 3.66 expected, Brier 0.205, from `erp/out/tests.csv` and
+  `out/tests.csv`).
+
+## 7. 12_figures.py: charts for readers (28 September 2026, after the results)
+
+- **What changed.** Visible text only: values shown in per cent
+  (100 x (exp(x) - 1) of the same log-point values in `out/`), no "log
+  points", no test labels (T1, T2, T5), "transition" and "2020-21 excluded"
+  for the bands (in two label rows so they do not collide), "failed the
+  design test" for the dropped jobs, and titles that state the finding in
+  plain words. Captions rewritten to match.
+- **No number changed.** The charts read the same `out/` files; the
+  overflow check passes, bold included; LF line endings.
+- **md5.** `12_figures.py`: 57b3c57f37ff4494ee593003892453f4 (item 3), new
+  6c340815bdeeafc2f9e2d2545077424a.
+
+## 8. 13_results.py, 14_manifest.py, run_all.sh: the post-results checks and the article (28 September 2026)
+
+- `run_all.sh` runs `11b_postresults.py` after `11_tests.py`. md5
+  3c83f4fdad55532093f83424a870dd6b (item 2), new
+  d167719adb1f98bc3ac1ad9c3b47c21e.
+- `13_results.py` prints the post-results rows in a section marked not
+  scored. md5 5262d00cb9fa119795007810d9285e99 (item 1), new
+  a2086450c6d15b0e7a57b1e32131e1a2.
+- `14_manifest.py` adds the post-results rows to the number manifest (script
+  `11b_postresults.py`), lists `11b_postresults.py`, `THESIS_ADDENDUM.md` and
+  the article among the checksummed inputs, and checks the article: every
+  number it prints must be in the manifest, or be a year, a count up to 10,
+  or a sealed constant (the entry rungs and LQS amounts, 97, 90, 25, and 0.25
+  and 50 for the always-50-per-cent forecaster); the front matter must match
+  the scorecard and the seal date. md5 a9a36c1ffde19085b6391a6bdcbf6b9e
+  (sealed), new 6eae8b3350a866e6c67461d49d38c536.
+- **No rule changed.** `pwmlib.py`, `10_load.py`, `11_tests.py`,
+  `15_reproduce.py` and `office/OCCUPATION_MAP.csv` keep the md5s of the seal.

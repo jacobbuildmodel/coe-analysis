@@ -28,12 +28,14 @@ import hashlib
 import io
 import csv
 import os
+import re
 import sys
 
 import pwmlib as L
 
 SCRIPTS = ["pwmlib.py", "00_coverage.py", "01_titles.py", "01b_w2a_labels.py", "01c_ows_layout.py",
-           "02_occupation_map.py", "10_load.py", "11_tests.py", "12_figures.py", "13_results.py",
+           "02_occupation_map.py", "10_load.py", "11_tests.py", "11b_postresults.py", "12_figures.py",
+           "13_results.py",
            "14_manifest.py", "15_reproduce.py", "run_all.sh", "requirements.txt",
            "tests/make_fixtures.py", "tests/test_pipeline.py"]
 
@@ -64,8 +66,22 @@ def raw_inputs(P):
     return [os.path.join(raw, f) for f in files]
 
 
+ARTICLE = "2026-10-31.md"
+# Constants the article may print that are sealed design, not results: the
+# entry rungs and LQS amounts of THESIS section 3 and T5, the 97 per cent
+# line, the 90 per cent interval, the survey's 25-employee floor.
+ALLOW = ({v for g in L.RUNG.values() for v in g.values()} |
+         {1000, 1100, 1200, 1300, 1400, 97, 0.97, 90, 25} |
+         {0.25, 50})            # Brier score of an always-50-per-cent forecaster
+ALLOW_INT_MAX = 10
+YEAR_LO, YEAR_HI = 1900, 2030
+
+
 def inputs(P):
     paths = [os.path.join(L.PWM, s) for s in SCRIPTS] + [P["thesis"], L.MAP]
+    for extra in (os.path.join(P["root"], "THESIS_ADDENDUM.md"), os.path.join(P["root"], ARTICLE)):
+        if os.path.exists(extra):
+            paths.append(extra)
     if os.path.exists(P["lfs_lines"]):
         paths.append(P["lfs_lines"])
     return paths + raw_inputs(P)
@@ -89,7 +105,54 @@ def build_manifest(P):
         v = L.printed(r["key"], r["value"])
         if v is not None:
             w.writerow([r["key"], v, "11_tests.py", "out/tests.csv", r["key"]])
+    post = os.path.join(P["out"], "postresults.csv")
+    if os.path.exists(post):
+        for r in L.read_csv(post):
+            w.writerow([r["key"], r["printed"], "11b_postresults.py", "out/postresults.csv", r["key"]])
     return buf.getvalue()
+
+
+def article_numbers(path):
+    text = open(path, encoding="utf-8").read()
+    front, body = text.split("---", 2)[1:]
+    body = re.sub(r"\]\([^)]*\)", "]", body)                     # link targets
+    body = re.sub(r"https?://\S+", "", body)                      # bare URLs
+    body = re.sub(r"\b\d{1,2} (?:January|February|March|April|May|June|July|August|"
+                  r"September|October|November|December) \d{4}\b", "", body)  # dates
+    body = re.sub(r"\b(?:19|20)\d\d-(?:\d\d)\b", "", body)            # year spans 2020-21
+    body = re.sub(r"[A-Za-z_]+\d[\w-]*", "", body)                  # tokens like w1d_x, T1
+    return front, re.findall(r"(?<![\w.,])(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?", body)
+
+
+def check_article(P, values):
+    path = os.path.join(P["root"], ARTICLE)
+    if not os.path.exists(path):
+        return 0
+    bad = 0
+    front, nums = article_numbers(path)
+    for tok in nums:
+        if tok in values or "-" + tok in values:
+            continue
+        v = float(tok.replace(",", ""))
+        if v in ALLOW or (v == int(v) and (v <= ALLOW_INT_MAX or YEAR_LO <= v <= YEAR_HI)):
+            continue
+        print(f"  ARTICLE number not in manifest or allowlist: {tok}")
+        bad += 1
+    T = {r["key"]: r["value"] for r in L.read_csv(os.path.join(P["out"], "tests.csv"))}
+    outs = [T[f"T{i}_outcome"] for i in range(1, 6) if T[f"T{i}_outcome"] != "NOT SCORED"]
+    want = {"testsPassed": outs.count("SURVIVE"), "testsFailed": outs.count("FAIL"),
+            "testsOther": len(outs) - outs.count("SURVIVE") - outs.count("FAIL"),
+            "testsTotal": len(outs)}
+    for k, v in want.items():
+        m = re.search(rf"^{k}: (\d+)$", front, re.M)
+        if not m or int(m.group(1)) != v:
+            print(f"  FRONT MATTER {k} expected {v}")
+            bad += 1
+    if 'thesisSealed: "28 September 2026"' not in front:
+        print("  FRONT MATTER thesisSealed is not the seal date")
+        bad += 1
+    print(f"  article: {len(nums)} numbers checked, front matter checked")
+    return bad
 
 
 def build_checksums(P):
@@ -115,6 +178,7 @@ def check(P):
         if r["value"] not in results:
             print(f"  NOT IN RESULTS.md: {r['number_id']} = {r['value']}")
             bad += 1
+    bad += check_article(P, {r["value"] for r in rows})
     listed = {}
     for line in open(P["checksums"], encoding="utf-8"):
         line = line.rstrip("\n")

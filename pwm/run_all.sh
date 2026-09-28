@@ -38,6 +38,9 @@ python3 pwm/10_load.py
 echo; echo "== 11 T1-T5 as sealed, sensitivities, verdict, scorecard"
 python3 pwm/11_tests.py
 
+echo; echo "== 11b post-results checks (added after the results, not scored)"
+python3 pwm/11b_postresults.py
+
 echo; echo "== 12 charts"
 python3 pwm/12_figures.py
 
