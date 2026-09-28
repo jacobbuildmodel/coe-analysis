@@ -62,3 +62,28 @@ confidences are those sealed.
 - **No rule changed.** The computation files are unchanged, with the same
   md5s as in item 1. `12_figures.py` reads `out/` only; `run_all.sh` changes
   only the two file names in the overflow-check line.
+
+## 3. 12_figures.py: chart titles and chart 3 panels (28 September 2026, after the data was opened)
+
+- **What changed.** Two presentation fixes, made after the real run:
+  - The title rules of chart 1 and chart 3 said "covered jobs" and "the
+    bottom quarter" without naming the groups. With T1 failing for cleaning
+    and security, T2 and T5 were scored on landscape alone, so those titles
+    overstated the finding. The rules now name the scored groups when T1
+    drops some, and name the groups it dropped (chart 1: "Landscape: bottom
+    pay pulled about 22 log points ahead. Cleaning and security failed the
+    design test"; chart 3: "Landscape: in every scored June, the bottom
+    quarter earned at least the entry rung").
+  - Chart 3 drew empty panels for the groups T1 dropped. It now draws a
+    panel only for each scored group and names the others in one line.
+- **Why.** A title must not claim more than the scored tests show.
+- **When.** After `pwm/SEALED`, so written with the results in view; it is
+  listed here for that reason. It changes no number: the charts read the
+  same `out/` files, and the figures in the titles (22 log points) are the
+  sealed T2 estimate rounded.
+- **md5.** `12_figures.py`: e50f87db87f180b333a0736a27946863 (item 2), new
+  57b3c57f37ff4494ee593003892453f4.
+- **No rule changed.** `pwmlib.py`, `10_load.py`, `11_tests.py`,
+  `15_reproduce.py`, `14_manifest.py` and `office/OCCUPATION_MAP.csv` keep
+  the md5s of the seal (item 1). No test, threshold, title list, window,
+  rung or confidence changed.

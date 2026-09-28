@@ -15,11 +15,13 @@ rules are written below, before any real value was opened).
                           averages (T1, T2)
   figs/chart2_pace.svg    comparison jobs' bottom pay against the median,
                           change from the 2010-2012 mean (T3)
-  figs/chart3_rung.svg    each group's bottom-quarter basic pay over its entry
-                          rung, post-period Junes, against the 0.97 line (T5)
+  figs/chart3_rung.svg    each scored group's bottom-quarter basic pay over its
+                          entry rung, post-period Junes, against the 0.97 line
+                          (T5); groups T1 dropped are named in one line
+
 
 Presentation only: nothing here computes or changes a tested number
-(THESIS_ADDENDUM.md, item 2).
+(THESIS_ADDENDUM.md, items 2 and 3).
 """
 import math
 import os
@@ -148,6 +150,14 @@ def num(T, k):
         return None
 
 
+def names(groups):
+    g = [x for x in L.COVERED if x in groups]
+    if not g:
+        return ""
+    s = g[0] if len(g) == 1 else ", ".join(g[:-1]) + " and " + g[-1]
+    return s[0].upper() + s[1:]
+
+
 # ------------------------------------------------------------------ chart 1
 def title1(T):
     """The finding, by rule from T1 and T2 as sealed."""
@@ -155,6 +165,10 @@ def title1(T):
     if T["T1_outcome"] == "NOT SCORED" or not passing:
         return "Before the ladders, covered and comparison jobs were not moving together"
     x = num(T, "T2_pooled")
+    failed = [g for g in L.COVERED if g not in passing]
+    if T["T2_outcome"] == "SURVIVE" and failed:
+        return (f"{names(passing)}: bottom pay pulled about {100 * x:.0f} log points ahead. "
+                f"{names(failed)} failed the design test")
     if T["T2_outcome"] == "SURVIVE":
         return f"After the ladders, bottom pay in covered jobs pulled about {100 * x:.0f} log points ahead"
     if T["T2_outcome"] == "INCONCLUSIVE":
@@ -282,6 +296,8 @@ def title3(T):
     groups = T.get("T2_groups_scored", "").split()
     low = [g for g in groups if any(v is not None and v < L.T5_LINE for k, v in rows.items()
                                     if k.startswith(f"T5_{g}_"))]
+    if T["T5_outcome"] == "SURVIVE" and len(groups) < len(L.COVERED):
+        return f"{names(groups)}: in every scored June, the bottom quarter earned at least the entry rung"
     if T["T5_outcome"] == "SURVIVE":
         return "In every scored June, the bottom quarter earned at least the entry rung"
     if low:
@@ -299,13 +315,21 @@ def chart3(out, figs):
            "exactly at the rung.")
     title = title3(T)
     top0 = 40 + 21 * len(textwrap.wrap(title, TITLE_CHARS))
+    shown = [g for g in L.COVERED if g in scored]
+    others = [g for g in L.COVERED if g not in scored]
+    note = f"{names(others)}: not scored (failed T1)." if others else ""
+    if note:
+        top0 += 14 + LINE * len(textwrap.wrap(note, CAPTION_CHARS))
     block = 150
-    H = top0 + 3 * block + 26 + caption_height(cap) + 20
+    n = max(1, len(shown))
+    H = top0 + n * block + 26 + caption_height(cap) + 20
     alt = ("Three panels, one per covered group: bottom-quarter basic pay divided by the entry "
            "rung, each post-period June, against a dashed line at 0.97. " + title + ".")
-    s, _ = head(H, alt, title)
+    s, y = head(H, alt, title)
+    if note:
+        caption(s, y + 10, note)
     X = scale(2015.5, 2022.5)
-    for k, g in enumerate(L.COVERED):
+    for k, g in enumerate(shown):
         top = top0 + 34 + k * block
         bottom = top + 100
         pts = {int(r["june"]): float(r["ratio"]) for r in rows if r["group"] == g}
@@ -319,7 +343,7 @@ def chart3(out, figs):
                  f'stroke="{INK}" stroke-width="1" stroke-dasharray="4 3"/>')
         s.append(f'<line x1="{LX}" x2="{RX}" y1="{Y(1.0):.1f}" y2="{Y(1.0):.1f}" stroke="{CTX}" stroke-width="1"/>')
         line(s, pts, X, Y, SUBJ)
-    base = top0 + 34 + 2 * block + 100
+    base = top0 + 34 + (n - 1) * block + 100
     for y in (2016, 2019, 2022):
         text(s, X(y), base + 18, str(y), 14, anchor="middle")
     caption(s, base + 44, cap)
