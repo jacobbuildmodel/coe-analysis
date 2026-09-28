@@ -14,15 +14,13 @@ supermarket has no ladder to follow.
 For six years Singapore ran that experiment without calling it one. Here
 are four bets on what it showed, made before the data is opened.
 
-Singapore has no minimum wage. Since 2014 it has given cleaners, then
-security officers and landscape workers, a wage ladder: a floor for each step
-up in skill, written into the licence a firm needs to operate. In 2022 and
-2023 the ladders spread to shop, food, waste, office and driving jobs.
-Opposition parties and many economists have long argued for one national
-floor instead.
+Singapore has no minimum wage. From 2014 it wrote wage ladders, a floor for
+each skill step, into the licences of cleaning, security and landscape firms,
+and in 2022-2023 into shop, food, waste, office and driving jobs. Opposition
+parties and many economists want one national floor instead.
 
-The yardstick is real pay at the bottom of the covered jobs. Whether those
-jobs held up cannot be measured (below).
+The yardstick is real pay at the bottom of covered jobs. Whether those jobs
+held up cannot be measured (below).
 
 ## The argument
 
@@ -34,13 +32,11 @@ set high where the job can bear it, and it ties pay to training.
 
 ## What economic theory says
 
-In the textbook market, a floor above what a worker's output is worth costs
-jobs. In 1933 Joan Robinson described the other case: an employer with few
-rivals, a monopsony, pays less than a worker is worth, and there a floor can
-raise pay and jobs together. In 1994 David Card and Alan Krueger found no jobs
-lost in New Jersey's fast-food restaurants after the state raised its minimum
-wage. National floors in Germany (2015) and the UK (2016) later raised pay
-with little or no job loss.
+Textbook economics says a floor above what a job is worth costs jobs. Joan
+Robinson (1933) described the other case, monopsony: an employer with few
+rivals underpays, and a floor can raise pay and jobs together. David Card and
+Alan Krueger (1994) found no jobs lost after New Jersey raised its minimum
+wage.
 
 ## Push it to the extreme
 
@@ -50,6 +46,12 @@ some, pinches others, and some leave.
 **Extreme ladder: a tailor who makes perfect suits, but only for three
 classes.** The covered workers get a floor cut to fit. Everyone else at the
 bottom gets nothing.
+
+**The obvious objection.** Singapore never had a minimum wage, so how can
+its record say anything about one? Not directly. What it can show is what
+a floor did in the jobs that got one, and whether the jobs left without one
+kept up. That second question is the minimum-wage side's strongest point,
+and bet 3 tests it.
 
 ## My bets
 
@@ -138,3 +140,5 @@ record cannot tell", and that would be published too.
 
 The [sealed predictions](https://github.com/jacobbuildmodel/coe-analysis/blob/e5f877b70f60f38a99248e6bd90a3e4063c45a65/pwm/THESIS.md)
 are THESIS.md in commit e5f877b, 28 September 2026.
+
+Previous open question: [COE or ERP](/open/2026-09-26-coe-or-erp/).
