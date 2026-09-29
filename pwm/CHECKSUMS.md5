@@ -13,18 +13,18 @@ c76beb9cefda3f5fc6be21e15e8afcfa  01b_w2a_labels.py
 069efc11c34920e7287188538edc7f85  10_load.py
 813372c48e337720a6ca63b725313d8a  11_tests.py
 9b344428c0df19de0d1aaea351df01de  11b_postresults.py
-22335840676e231df755efec9a56e38a  12_figures.py
+32e4feb56d06835b070f66ffb372b274  12_figures.py
 a2086450c6d15b0e7a57b1e32131e1a2  13_results.py
 6eae8b3350a866e6c67461d49d38c536  14_manifest.py
 116fda301b8e49f9b0732266626e37a3  15_reproduce.py
-d167719adb1f98bc3ac1ad9c3b47c21e  run_all.sh
+42fb2ead70c6a452edea0c95c4aac2c1  run_all.sh
 4a0d12e4dfbab0081454ade1668bfa3a  requirements.txt
 5039a8b02e959c1d930ab637361196e8  tests/make_fixtures.py
 e4954330163edccd95d28151f106008f  tests/test_pipeline.py
 8d5beaf453f7310eb14aa0df9fd56a20  THESIS.md
 10de6f3a90b4c8db26f0c18160aa9ba9  office/OCCUPATION_MAP.csv
-db6f1151f2baac69c94d27d44a0b9b27  THESIS_ADDENDUM.md
-6226b02d3415addd9da2a3b28fb9c9a6  2026-10-31.md
+41cedbf755954f734cb7d1320709e427  THESIS_ADDENDUM.md
+7f838620f29b375122c6c2da9bdefbe3  2026-10-31.md
 f3bba1d5dba088250e3a4c596cd7407c  raw/w1_ows_2009_occupation_gross.xls
 7db75259d3141c26fd70c6bb5d43b620  raw/w1_ows_2009_occupation_basic.xls
 dcd31e529aedea1f4736598dc56f3b0a  raw/w1_ows_2010_occupation_gross.xlsx
@@ -51,9 +51,9 @@ df4ea2fb55ceb1e732cde2dd34652515  raw/w1_ows_2025_occupation.xlsx
 bf37b2e2db3a02f7974847b1398b2de5  raw/RETRIEVED.txt
 
 # OUTPUTS
-26ccaf2f192e3e8650ff121e079011c8  figs/chart1_gap.svg
-c113e282c28d65f94a6e305f779679f7  figs/chart2_pace.svg
-4e1fef76cbb10bab107045312cf66524  figs/chart3_rung.svg
+26ccaf2f192e3e8650ff121e079011c8  figs/pwm_chart1_gap.svg
+c113e282c28d65f94a6e305f779679f7  figs/pwm_chart2_pace.svg
+4e1fef76cbb10bab107045312cf66524  figs/pwm_chart3_rung.svg
 0b34e1d0df7f1714cb1c66283d26cccc  out/cpi.csv
 a793a1776689021e0b75e15ce340d512  out/dropped_titles.csv
 44e56b50c6b34212ed113b831fd96460  out/group_values.csv

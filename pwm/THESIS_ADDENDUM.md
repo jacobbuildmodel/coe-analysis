@@ -187,3 +187,18 @@ manifest and `13_results.py` prints in its own section. md5
   included; LF line endings.
 - **md5.** `12_figures.py`: 6c340815bdeeafc2f9e2d2545077424a (item 7), new
   22335840676e231df755efec9a56e38a.
+
+## 10. Figure file names for publication (29 September 2026)
+
+- **What changed.** The three charts are renamed `figs/pwm_chart1_gap.svg`,
+  `figs/pwm_chart2_pace.svg` and `figs/pwm_chart3_rung.svg`, because the
+  site's `static/figs/` is shared by every piece. `12_figures.py` writes the
+  new names, `run_all.sh` checks them for overflow, and the article's image
+  paths point to them. The old files are removed.
+- **Why.** Publication only: two pieces must not write the same file name.
+- **No number changed.** The chart contents are byte-for-byte what item 9
+  produced; only the names differ.
+- **md5.** `12_figures.py`: 22335840676e231df755efec9a56e38a (item 9), new
+  32e4feb56d06835b070f66ffb372b274. `run_all.sh`:
+  d167719adb1f98bc3ac1ad9c3b47c21e (item 8), new
+  42fb2ead70c6a452edea0c95c4aac2c1.

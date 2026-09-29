@@ -8,14 +8,14 @@ chart carries a caption that says how to read it, and a title that states
 the finding, chosen by rule from the sealed outcomes in out/tests.csv (the
 rules are written below, before any real value was opened).
 
-  figs/chart1_gap.svg     the one that settles it: covered minus comparison,
+  figs/pwm_chart1_gap.svg     the one that settles it: covered minus comparison,
                           log points, every June, one panel per covered
                           group; pre, transition, excluded and post years
                           shaded and labelled; dashed before and after
                           averages (T1, T2)
-  figs/chart2_pace.svg    comparison jobs' bottom pay against the median,
+  figs/pwm_chart2_pace.svg    comparison jobs' bottom pay against the median,
                           change from the 2010-2012 mean (T3)
-  figs/chart3_rung.svg    each scored group's bottom-quarter basic pay over its
+  figs/pwm_chart3_rung.svg    each scored group's bottom-quarter basic pay over its
                           entry rung, post-period Junes, against the 0.97 line
                           (T5); groups T1 dropped are named in one line
 
@@ -244,7 +244,7 @@ def chart1(out, figs):
     for y in (2009, 2014, 2019, 2025):
         text(s, X(y), base + 18, str(y), 14, anchor="middle")
     caption(s, base + 44, cap)
-    write(figs, "chart1_gap.svg", s)
+    write(figs, "pwm_chart1_gap.svg", s)
 
 
 # ------------------------------------------------------------------ chart 2
@@ -298,7 +298,7 @@ def chart2(out, figs):
     for y in (2009, 2012, 2017, 2019):
         text(s, X(y), bottom + 18, str(y), 14, anchor="middle")
     caption(s, bottom + 46, cap)
-    write(figs, "chart2_pace.svg", s)
+    write(figs, "pwm_chart2_pace.svg", s)
 
 
 # ------------------------------------------------------------------ chart 3
@@ -363,7 +363,7 @@ def chart3(out, figs):
     for yr in (2016, 2019, 2022):
         text(s, X(yr), base + 18, str(yr), 14, anchor="middle")
     caption(s, base + 44, cap)
-    write(figs, "chart3_rung.svg", s)
+    write(figs, "pwm_chart3_rung.svg", s)
 
 
 def main():
