@@ -1,0 +1,56 @@
+# SEAL MANIFEST: PWM piece
+
+The md5 of every file the seal fixes, taken in the commit "pwm: SEAL",
+which adds this file and nothing else. Paths are relative to `pwm/`.
+Regenerate with `python3 pwm/14_manifest.py --seal` and compare.
+
+```
+8d5beaf453f7310eb14aa0df9fd56a20  THESIS.md
+10de6f3a90b4c8db26f0c18160aa9ba9  office/OCCUPATION_MAP.csv
+bf37b2e2db3a02f7974847b1398b2de5  raw/RETRIEVED.txt
+7c4953a001a00f30e2eb1205d57dc558  00_coverage.py
+c6a0203a717fbc2d080539d803092139  01_titles.py
+c76beb9cefda3f5fc6be21e15e8afcfa  01b_w2a_labels.py
+7b919f4559414e3e819cbc299472eb97  01c_ows_layout.py
+2ba3c9e8e95e8bb452be531402e6b95f  02_occupation_map.py
+069efc11c34920e7287188538edc7f85  10_load.py
+813372c48e337720a6ca63b725313d8a  11_tests.py
+d5112e9748ef097b9f33e56958dd86b4  12_figures.py
+3dce1abb26037126f53448a4f7b0f918  13_results.py
+a9a36c1ffde19085b6391a6bdcbf6b9e  14_manifest.py
+116fda301b8e49f9b0732266626e37a3  15_reproduce.py
+e5f62fae032b53f0eafdca530360d923  pwmlib.py
+4a0d12e4dfbab0081454ade1668bfa3a  requirements.txt
+e475040e845a57d190994f4becacb1c0  run_all.sh
+5039a8b02e959c1d930ab637361196e8  tests/make_fixtures.py
+509ec2027efdd93ade688cc2479ae3c5  tests/test_pipeline.py
+4c448b2decf6b2bcf2d1b7b4d49e7b5b  tests/fixtures/README.txt
+c697a3b0d43fb3dc408d81c9bea5a028  tests/fixtures/T4_LFS_LINES.csv
+800fc816ba895923484bd08e073aebe8  tests/fixtures/THESIS.md
+2d196dc04cff1a5b3cba8e91795b57b2  tests/fixtures/raw/w1_ows_2009_occupation_basic.xls
+deaae2d1edf1cb53d59d245137161117  tests/fixtures/raw/w1_ows_2009_occupation_gross.xls
+0c735fee5f00ad07fe1c3272215620c3  tests/fixtures/raw/w1_ows_2010_occupation_basic.xlsx
+6766850e16b88718a0f3567c9e88e2fb  tests/fixtures/raw/w1_ows_2010_occupation_gross.xlsx
+c67f4826107ee3b9ba4f11209461e041  tests/fixtures/raw/w1_ows_2011_occupation_basic.xlsx
+480a031613db5329d2391d6aeea63431  tests/fixtures/raw/w1_ows_2011_occupation_gross.xlsx
+b17922569a079e0b6658080b8c03eb95  tests/fixtures/raw/w1_ows_2012_occupation.xlsx
+9b196d3e023e1b04666787bee8c73d1a  tests/fixtures/raw/w1_ows_2013_occupation.xlsx
+8680903b27a29c4a0e50c217a249e339  tests/fixtures/raw/w1_ows_2014_occupation.xlsx
+02aeaee9b8c73022efeecedf7c4e4971  tests/fixtures/raw/w1_ows_2015_occupation.xlsx
+0f0965869f11ebcdfbbf1ff31c8031ea  tests/fixtures/raw/w1_ows_2016_occupation.xlsx
+44bcce5c1d12325fb8b6d159021da4c8  tests/fixtures/raw/w1_ows_2017_occupation.xlsx
+4d73e1d3b4a525c6cddb1fa28e2de503  tests/fixtures/raw/w1_ows_2018_occupation.xlsx
+f418bd73ceceefbe77f81446e72eb86a  tests/fixtures/raw/w1_ows_2019_occupation.xlsx
+3bcdd1efffff4c36ff0657de76c5abee  tests/fixtures/raw/w1_ows_2020_occupation.xlsx
+5862f9a1d4bdf423d8aeab9f16b89602  tests/fixtures/raw/w1_ows_2021_occupation.xlsx
+8cfd53a0bb78c7524cd161c1eb1c26da  tests/fixtures/raw/w1_ows_2022_occupation.xlsx
+2c6a738a3c5acb45d727fa637ff118f3  tests/fixtures/raw/w1_ows_2023_occupation.xlsx
+5170329291868b1e83f7e5318ed5bc54  tests/fixtures/raw/w1_ows_2024_occupation.xlsx
+d6cf0596462a18c90ffb18b5ae14c4c6  tests/fixtures/raw/w1_ows_2025_occupation.xlsx
+86816a283ff8b256741f18727290d94c  tests/fixtures/raw/w1c_lfs_median_income.csv
+9feb73d7f8657021a4b74e8ec2444996  tests/fixtures/raw/w2a_services_detailed_industry.csv
+0fa75193f4c42d743eca265a209ec249  tests/fixtures/raw/w2b_lfs_occupation_status.csv
+40ee600cf8a607b4910823c59075186f  tests/fixtures/raw/w2x_workers_by_industry_assumed.csv
+26b044d19e0e91e32c2edbaa4fe84e3d  tests/fixtures/raw/w4a_cpi_annual_2024base.json
+34cea50967cdbe104741a34d1ed95972  tests/fixtures/raw/w4b_cpi_lowest20_annual_2024base.json
+```

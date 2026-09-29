@@ -1,0 +1,1064 @@
+DataSeries,2024,2023,2022,2021,2020,2019,2018,2017,2016,2015,2014,2013,2012,2011,2010
+"Establishments, Total Services Sector",320595,305030,287340,276705,268669,260036,247840,241280,237094,230857,224095,209934,201556,191102,180796
+    SSIC 46 - Total Wholesale Trade,57715,55054,53847,54081,53506,52370,51117,50699,50572,49363,48311,47919,48369,47185,45259
+        SSIC 46100 - Wholesale On A Fee Or Commission Basis,1544,1575,1545,1732,1635,1607,1527,1443,1376,1287,1359,1468,1496,1366,1188
+        SSIC 4621/2 - Agricultural Raw Materials & Live Animals,974,922,947,921,904,901,787,749,698,684,706,701,706,689,687
+        SSIC 46301 - Fruits & Vegetables (Including Fresh And Frozen),701,694,697,661,681,608,594,593,571,545,518,513,519,495,508
+"        SSIC 46302 - Livestock, Meat, Poultry, Eggs & Seafood (Including Fresh And Frozen)",945,913,922,860,889,855,834,860,828,811,791,744,750,764,806
+"        SSIC 46303 - A General Line (Wide Range) Of Groceries (e.g. Cereals, Sugar, Edible Oils, Sauces And Dairy Products)",454,450,438,399,408,357,342,350,348,353,349,345,375,395,395
+"        SSIC 46304/5 - Confectionery & Bakery Products, Ice-Cream",237,231,238,248,256,271,257,267,260,232,231,231,238,249,278
+        SSIC 46306 - Health Supplements,464,434,434,434,531,543,560,521,492,442,435,386,349,380,412
+"        SSIC 46307 - Liquor, Soft Drinks & Beverages",713,682,624,601,525,465,444,439,427,402,381,410,366,310,256
+"        SSIC 46308/9 - Tobacco Products, Food, Beverages & Tobacco Nec (Including Dried Or Canned)",806,783,800,819,832,831,791,760,773,737,714,655,693,600,729
+"        SSIC 46411/2/3 - Textiles & Leathers, Adults' Clothing, Children And Infants' Clothing (Including Products And Accessories For Infants)",1160,1123,1103,1220,1259,1228,1155,1153,1180,1156,1108,1111,1132,1124,1143
+"        SSIC 46414/5/6 - Footwear, Bags, Luggage & Travel Accessories, Sewing & Clothing Accessories",250,247,250,256,258,280,265,268,271,289,287,294,306,313,311
+        SSIC 46421/2 - Jewellery Made From Precious Metals And Stones & Costume Jewellery,318,316,313,325,344,366,343,378,385,386,338,342,351,288,347
+        SSIC 46423 - Watches & Clocks,120,119,125,110,113,112,108,120,128,127,113,124,128,123,116
+"        SSIC 46424/9 - Cosmetics & Toiletries, Personal Effects Nec",745,727,727,807,745,732,714,712,686,654,629,593,652,623,563
+"        SSIC 46431 - Furniture (Including Mattresses, Cushions)",309,295,297,313,304,301,279,265,266,263,259,287,289,287,298
+"        SSIC 46432 - Furnishings (Including Curtains, Carpets, Wallpaper)",263,253,222,253,259,248,222,219,215,210,186,196,203,181,199
+        SSIC 46433 - Lighting & Lighting Accessories,265,261,258,286,282,282,294,294,295,301,230,235,226,186,199
+"        SSIC 46434 - Crockery, Cutlery & Kitchen Utensils",126,128,127,124,126,124,123,123,110,118,116,118,119,111,115
+"        SSIC 46435/6 - Household Electrical Appliances & Equipment, Audio & Video Equipment Except Electrical & Electronic Components",600,594,597,628,610,550,531,522,534,535,518,478,561,569,584
+"        SSIC 46439 - Furniture, Home Furnishings & Other Household Equipment Nec",349,327,323,331,327,314,283,263,221,223,210,199,225,184,226
+        SSIC 4644 - Sporting & Other Recreational Goods,677,627,642,660,618,631,611,636,667,633,575,606,577,596,595
+        SSIC 4645 - Handicrafts & Fancy Goods,457,451,448,453,462,517,524,542,596,580,521,422,534,491,495
+        SSIC 4646 - Medicinal & Pharmaceutical Products,625,606,596,641,578,532,464,436,424,410,411,427,440,439,477
+"        SSIC 4647 - Paper, Paper-Related Products, Stationery, Cellophane Products & Packaging Materials",871,854,891,907,948,988,978,1059,1095,984,915,994,993,1020,1063
+        SSIC 4649 - Other Household Goods,443,440,452,435,465,453,410,402,388,385,360,358,372,336,333
+"        SSIC 4651/2 - Computers, Computer Peripheral Equipment & Software, Electronic & Telecommunications Equipment & Parts",3089,3007,2990,2983,2951,2888,2875,2856,2896,2938,2888,2942,3013,3033,2999
+"        SSIC 46530/46549 - Agricultural Machinery, Equipment & Supplies, Industrial, Construction & Related Machinery & Equipment Nec",838,838,836,814,839,847,737,778,902,910,940,938,993,952,981
+        SSIC 46541 - Industrial Machinery & Equipment (e.g. Industrial Crane),1610,1622,1670,1672,1735,1795,1812,1847,1806,1789,1794,1832,1826,1932,1954
+"        SSIC 46542/3 - Construction Equipment, Lifts, Escalators & Industrial & Office Air-Conditioning Equipment",256,254,259,261,265,241,243,252,252,248,244,244,270,250,258
+        SSIC 46544 - Electrical & Wiring Accessories,364,360,376,382,374,388,362,387,385,379,341,380,381,362,360
+        SSIC 46551 - Marine Equipment & Accessories,661,638,599,620,655,653,648,672,674,636,596,538,576,560,527
+"        SSIC 46552/9 - Aircraft Equipment & Supplies, Transport Equipment Except Motor Vehicles & Motorcycles Nec",213,196,199,194,168,170,173,177,163,152,141,154,169,160,161
+"        SSIC 4656 - Motor Vehicles, Parts & Accessories",1071,1053,1055,1066,1010,1019,960,929,914,896,882,877,928,963,970
+        SSIC 46591 - Office Machinery & Equipment,205,201,206,212,203,173,174,194,190,178,169,148,143,226,234
+"        SSIC 46592 - Medical, Professional, Scientific & Precision Equipment",1058,1027,1037,946,880,842,747,721,688,633,607,628,659,578,619
+"        SSIC 46593/4 - Commercial Food Service Equipment, Service Establishment Equipment & Supplies",263,252,264,266,236,234,210,187,181,164,144,127,128,118,111
+        SSIC 46595 - Security & Safety Equipment,279,288,272,278,250,231,230,247,247,245,235,216,227,239,216
+        SSIC 46599 - Other Machinery & Equipment Nec,642,618,620,613,567,471,458,460,444,427,384,405,432,450,423
+        SSIC 4661 - Fuels & Related Products,783,776,784,777,690,556,526,507,553,563,462,418,415,410,379
+        SSIC 46620 - Metals & Metal Ores (e.g. Steel Pipes) Except General Hardware,768,772,804,744,738,758,741,740,715,636,588,559,546,586,545
+"        SSIC 46631 - Logs, Sawn Timber, Plywood & Related Products",347,336,363,309,327,308,251,298,292,292,309,338,365,392,420
+        SSIC 46632 - General Hardware,579,591,628,626,632,643,658,688,688,687,725,713,785,754,812
+        SSIC 46633 - Structural Clay & Concrete Products,147,148,167,172,176,180,182,191,158,135,150,147,170,182,203
+        SSIC 46634/5 - Paints & Glass,130,133,140,139,141,147,130,131,129,129,127,129,132,134,147
+"        SSIC 46639 - Construction Materials, Hardware, Plumbing & Heating Equipment & Supplies Nec",723,717,644,666,681,653,587,522,496,518,573,590,612,612,550
+        SSIC 46641/2 - Basic Industrial Chemicals (Except Fertilisers) & Chemical Fertilisers,326,320,316,348,336,301,277,283,282,272,276,243,269,250,251
+        SSIC 46643 - Petrochemical Products,267,240,249,246,240,224,194,202,203,201,168,179,173,182,159
+        SSIC 46649 - Chemicals & Chemical Products Nec,666,643,627,649,658,553,552,575,567,566,573,580,539,495,514
+"        SSIC 4665 - Other Intermediate Products, Waste & Scrap",272,284,291,285,303,350,338,325,348,350,347,355,380,401,402
+        SSIC 4666 - Ship Chandlers & Ship Bunkering,404,394,382,382,376,342,317,318,321,304,333,328,342,354,341
+        SSIC 46900 - Non-Specialised Wholesale Trade,27341,25296,24051,24007,23718,23305,23299,22838,22848,22369,22056,21678,21298,20494,18402
+    SSIC 47 - Total Retail Trade,37154,35830,34201,33314,32080,30775,29946,30151,30355,30612,30012,27265,25998,24652,23700
+        SSIC 47101 - Supermarkets & Hypermarkets,733,634,591,473,455,418,422,399,380,361,378,344,301,291,267
+"        SSIC 47102 - Mini-Marts, Convenience Stores & Provision Shops",3268,3102,3107,3067,2875,2766,2761,2710,2684,2629,2735,2742,2753,2727,2699
+        SSIC 47103 - Department Stores,168,133,122,127,126,128,125,134,135,132,123,114,98,81,66
+        SSIC 47109 - Non-Specialised Stores Nec,2022,1863,1544,1135,1015,962,948,924,961,926,982,842,854,820,807
+"        SSIC 4721/4722/4723 - Food, Beverages & Tobacco Products",4402,4181,3910,3760,3419,3171,3035,2873,2753,2701,2728,2309,2098,1898,1859
+        SSIC 47311 - Motor Vehicles Except Motorcycles & Scooters,1502,1467,1477,1375,1270,1256,1223,1173,1093,994,924,866,915,855,843
+        SSIC 47312 - Motorcycles & Scooters,153,132,135,129,127,107,106,111,111,109,109,93,86,99,75
+"        SSIC 47313/47314 - Tyres, Batteries, Spare Parts & Accessories For Motor Vehicles",674,639,635,622,637,658,639,661,668,658,604,575,636,560,474
+        SSIC 47320 - Automotive Fuel,230,227,213,223,218,216,214,210,218,214,227,226,224,220,235
+"        SSIC 4741 - Computers, Peripheral Equipment, Software & Telecommunications Equipment",1584,1472,1453,1447,1422,1356,1336,1307,1305,1319,1227,1161,1115,1052,1028
+        SSIC 47535 - Household Electrical Appliances & Equipment,655,673,660,646,647,604,565,570,609,594,550,528,539,502,498
+"        SSIC 47510/47531/47532 - Textiles, Furniture & Furnishings",1441,1214,1178,1158,1143,1015,1003,1032,1061,1034,925,896,954,969,923
+"        SSIC 4752 - Hardware, Paints & Glass",638,608,595,572,578,467,426,431,429,417,365,373,385,389,387
+"        SSIC 47533/47534/47536/47539 - Lighting, Lighting Accessories, Crockery, Cutlery, Kitchen Utensils, Security, Safety Equipment & Other Household Articles Nec",900,785,750,673,704,695,672,665,651,592,541,514,502,502,512
+"        SSIC 47610 - Books, Newspapers & Stationery",605,644,697,696,716,731,729,770,781,787,777,821,826,840,826
+"        SSIC 47620/47630/47640/47650 - Music & Video Recordings (e.g. Dvds, Blu-Ray Discs), Sporting Equipment, Games & Toys, Musical Instruments & Scores",1698,1567,1518,1397,1298,1255,1239,1243,1282,1340,1355,1192,1217,1129,1106
+"        SSIC 47711/47712 - Clothing For Adults, Children & Infants",4873,5410,5353,5837,5407,5019,4692,4832,5080,5404,5120,4681,4135,3742,3580
+"        SSIC 47713/47714/47715/47719 - Footwear, Bags, Luggage & Travel Accessories, Sewing, Clothing Accessories & Other Clothing, Footwear & Leather Articles Nec",2028,1883,1657,1676,1792,1852,1923,2167,2106,2149,2049,1774,1611,1490,1311
+        SSIC 47721 - Cosmetics & Toiletries,1510,1568,1442,1419,1325,1287,1234,1218,1273,1250,1236,982,844,730,664
+"        SSIC 47722/47723/47729 - Pharmacies, Drug Stores, Chinese Medicine Shops, Pharmaceutical & Medical Goods Nec",883,830,793,818,850,868,839,798,860,881,860,850,775,774,750
+        SSIC 47731 - Jewellery Made From Precious Metals And Stones,1150,1064,994,935,968,832,976,969,901,873,819,864,826,798,804
+        SSIC 47732 - Costume Jewellery,405,330,294,287,296,305,291,305,302,309,277,211,257,227,199
+"        SSIC 47733/47739 - Watches, Clocks & Personal Effects Nec",620,541,528,517,521,602,460,505,531,509,482,482,482,471,470
+        SSIC 4775 - Optical & Photographic Goods,868,822,815,771,772,774,799,812,759,761,755,723,715,705,660
+"        SSIC 4774/4776/4777 - Handicrafts & Fancy Goods, Flowers, Plants & Pet Animals, Other Goods & Second-Hand Goods",4143,4040,3740,3555,3498,3433,3289,3333,3423,3668,3864,3102,2850,2778,2657
+    SSIC 49-53 - Total Transportation & Storage,15374,15126,15391,15183,14697,14181,13761,13410,13176,12651,12389,11632,11252,10918,10218
+"        SSIC 4910/4921/4922 - Passenger And Freight Rail Transport, Passenger Land Transport & Aerial Cableways",2447,2377,2647,2665,2703,2672,2597,2241,2118,1876,1646,1425,1334,1276,1152
+        SSIC 49231 - Freight Transport By Road,858,828,843,835,815,856,856,897,926,912,947,970,973,962,951
+        SSIC 49232 - Moving Services,856,871,1034,1039,954,798,799,783,744,723,731,714,712,730,682
+        SSIC 49233-Rental And Leasing Of Freight Land Transport Vehicle (e.g. Lorries And Trucks) With Driver,114,104,110,110,108,111,111,113,114,113,90,88,92,92,83
+        SSIC 5001 - Passenger Water Transport,149,160,140,113,105,114,104,107,105,98,97,83,59,52,48
+        SSIC 5002 - Freight Water Transport,2793,2646,2545,2475,2333,2233,2066,2019,1908,1930,1880,1722,1621,1634,1525
+        SSIC 51 - Air Transport,150,126,118,98,95,94,91,87,83,82,92,81,87,78,72
+        SSIC 52101 - General Warehousing,436,420,391,364,344,329,321,309,303,309,291,283,275,260,250
+        SSIC 52102 - Refrigerated Warehousing And Storage,27,23,24,22,20,17,16,16,15,15,13,12,11,10,10
+        SSIC 52103 - Storage For Dangerous Goods,28,28,24,25,23,18,18,19,16,20,16,17,16,18,18
+"        SSIC 52109 - Specialised Storage Nec (e.g. Wine Warehousing, Document Storage And Warehousing)",49,47,49,54,52,51,53,46,39,40,33,24,21,16,13
+        SSIC 52211 - Carpark Management & Operation Services,48,50,54,54,60,60,62,62,60,56,56,48,51,49,45
+"        SSIC 52212/52219 - Motor Vehicle Towing Services, Supporting Services To Land Transport Nec",275,253,219,197,196,188,173,182,196,146,138,126,124,118,92
+        SSIC 5222 - Supporting Services To Water Transport,2179,2125,2069,1987,1901,1947,1839,1866,1900,1825,1859,1884,1868,1763,1578
+        SSIC 5223 - Supporting Services To Air Transport,155,149,142,135,130,123,119,111,106,100,106,102,96,97,85
+        SSIC 5224 - Cargo Handling,197,205,217,223,226,221,221,228,232,234,244,246,247,255,261
+        SSIC 5225 - Marine Surveying Services & Classification Societies,345,364,358,340,346,353,346,354,336,360,358,348,333,304,292
+        SSIC 5229 - Other Transportation Support Activities,3432,3516,3605,3698,3587,3408,3376,3378,3392,3316,3320,2987,2855,2750,2639
+        SSIC 53 - Postal & Courier,837,834,803,750,700,588,593,592,584,496,473,472,476,455,421
+    SSIC 55-56 - Total Accommodation & Food Services,20335,19282,18032,17361,16849,16870,16110,15490,14814,14446,14329,13106,11748,10268,9823
+        SSIC 55101 - Hotels,488,462,456,445,446,443,451,430,415,413,416,400,377,343,329
+        SSIC 55109/55900 - Other Accommodation,247,207,219,226,240,245,250,255,251,277,250,189,185,166,158
+        SSIC 56111 - Restaurants,8325,7796,7116,6757,6698,6707,6277,5778,5412,5184,5164,4940,4271,3725,3628
+        SSIC 56112/56123 - Cafes & Food And Drinks Kiosks,4707,4512,4184,3879,3635,3534,3215,3126,2989,2825,2856,2296,2013,1715,1621
+        SSIC 56121 - Fast Food Outlets,1073,920,766,750,742,713,670,671,649,643,618,583,570,537,521
+"        SSIC 56122 - Operators Of Food Courts, Hawker Centres, Coffees Shops And Canteens (With Mainly Food And Beverage Income)",4413,4282,4251,4167,3804,3826,3886,3938,3829,3767,3640,3406,3077,2643,2428
+        SSIC 56130 - Pubs,273,246,220,268,501,532,484,438,416,420,435,463,484,450,464
+        SSIC 56200 - Food Caterers,809,857,820,869,783,870,877,854,853,917,950,829,772,689,674
+    SSIC 58-63 - Total Information & Communications,24872,23298,21380,19904,18239,16299,14046,13281,12942,12073,10813,9495,8782,8041,7041
+        SSIC 58110 - Book Publishing,402,412,405,423,433,335,329,301,278,278,269,271,267,262,223
+        SSIC 58120 - Publishing Of Directories & Mailing Lists,29,29,30,31,36,36,43,46,47,47,51,55,67,82,108
+"        SSIC 5813/5819 - Publishing Of News, Journals, Periodicals And Other Publishing Activities",561,604,641,661,673,644,643,628,636,668,699,532,472,428,359
+        SSIC 5820 - Software Publishing,1136,984,791,586,459,293,209,156,244,91,76,90,82,50,52
+"        SSIC 59111/2 - Movie, Advertisements, Corporate Videos & Event Videos Production",1118,1132,1139,1094,988,869,784,657,591,533,409,402,373,319,288
+"        SSIC 59113 - Production Of Dramas, Variety Shows And Documentaries",93,88,89,82,91,82,71,67,62,70,70,74,53,53,57
+"        SSIC 59114/9 - Animation, Movie, Video, Television And Other Programme Production Activities Nec",507,425,464,552,398,380,258,248,246,196,194,175,148,124,93
+"        SSIC 5912 - Movie, Video, Television And Other Programme Post-Production Activities",147,162,151,150,151,135,106,105,104,104,102,85,70,62,62
+"        SSIC 5913 - Movie, Video, Television & Other Programme Distribution Activities",124,121,115,101,105,100,91,88,73,76,66,66,61,67,64
+        SSIC 5914 - Movie Projection Activities,59,62,59,58,67,80,69,49,55,57,52,47,43,39,43
+        SSIC 5920 - Sound Recording & Music Publishing Activities,298,304,252,238,225,185,157,126,126,115,108,91,94,77,58
+        SSIC 60 - Broadcasting And Content Production,160,169,161,163,161,131,114,95,89,89,85,82,80,69,60
+        SSIC 6101 - Telecommunications Network Operation,252,238,234,213,204,206,201,214,224,195,135,120,87,63,43
+        SSIC 6102 - Telecommunications Resellers,706,687,667,663,643,677,666,655,681,733,681,651,680,710,685
+        SSIC 6109 - Other Telecommunications Activities,53,40,26,29,32,25,27,14,17,19,19,21,15,14,16
+        SSIC 6201 - Computer Programming Activities,8407,7698,6799,6142,5257,4780,3633,3584,3176,2671,2253,2105,2003,1895,1606
+        SSIC 6202 - Information Technology Consultancy And Computer Facilities Management Activities,6944,6391,5809,5413,4998,4120,3639,3396,3388,3243,2865,2761,2696,2515,2320
+        SSIC 6209 - Other Information Technology And Computer Service Activities,2150,2157,2129,2095,2138,2204,2199,2179,2247,2262,2163,1391,1059,838,595
+"        SSIC 631/639 - Data Analytics, Processing, Hosting & Related Activities; Internet Search Engines And Other Information Service Activities",1450,1341,1243,1067,1049,903,704,599,582,559,470,430,392,342,284
+        SSIC 6320 Excl 63204 - Online Marketplaces Operating On A Fee Or Commission Basis (Exclude Online Marketplaces For Travel And Accommodation Services),200,182,120,98,81,69,60,34,30,26,12,14,12,7,7
+        SSIC 63204 - Online Marketplaces Operating On A Fee Or Commission Basis For Travel And Accommodation Services Provided By Third-Party,76,72,55,46,49,46,43,40,45,42,34,31,28,27,18
+    SSIC 64-66 - Total Finance & Insurance,33301,31215,28537,26146,25313,24497,23159,22174,21287,20456,19947,18925,17599,16150,14805
+        SSIC 64120 - Full Banks,223,228,234,248,310,336,351,364,380,387,385,381,380,371,360
+        SSIC 64130 - Wholesale Banks,95,97,95,95,192,193,189,185,181,177,180,176,182,180,180
+        SSIC 64140 - Merchant Banks,21,21,22,20,41,47,57,59,59,67,75,77,83,91,89
+        SSIC 64150 - Finance Companies (With Deposit Taking Functions),39,37,37,37,37,37,37,37,37,37,37,37,37,37,37
+"        SSIC 65 - Insurance, Reinsurance, Provident Funding And Pension Funding",638,628,615,596,584,538,509,480,422,380,325,275,261,239,230
+"        SSIC 66210 - Risk And Damage Evaluation (e.g. Loss Adjusting, Claims Adjusting)",54,52,56,52,52,43,37,39,33,31,33,26,25,25,25
+        SSIC 66221 - Insurance Agencies And Agents (Including Financial Planning Services),580,578,591,588,589,596,591,591,602,599,594,591,559,540,516
+        SSIC 66222 - Insurance Brokers,124,120,117,102,115,105,97,98,101,87,97,92,99,97,96
+        SSIC 6629 - Other Activities Auxiliary To Insurance And Pension Funding,78,77,76,79,80,77,76,68,58,71,69,69,69,68,64
+        SSIC 6611/6612 - Securities And Commodities Exchange; Securities And Commodity Contract Brokerage,739,691,649,644,667,666,645,631,586,588,606,603,587,584,567
+"        SSIC 66191 - Trustee, Fiduciary And Custody Services Firms (Including Nominee Companies, Trustees And Reit Trustees)",181,176,163,153,146,139,135,122,109,118,124,106,96,91,77
+        SSIC 66192 - Corporate Finance Advisory Services,370,361,347,338,329,325,314,334,323,348,370,372,397,416,429
+        SSIC 66193/66199 - Clearing And Settlement Of Financial Instruments And Other Activities Auxiliary To Financial Service Activities N.E.C. (e.g. Mortgage Advisory Firms),281,281,268,244,214,178,137,106,86,76,68,63,54,39,23
+        SSIC 66194 - Activities Auxiliary To Fund Management Activities (e.g. Independent Fund Administration Firms),76,61,55,49,42,33,24,20,15,15,16,13,9,7,4
+        SSIC 66195 - Transaction/Payment Processing Services,126,111,99,78,58,35,23,16,14,11,11,11,11,11,10
+        SSIC 66301 - Traditional/Long-Only Asset/Portfolio Management,491,504,485,473,470,460,453,424,427,421,368,352,355,340,333
+        SSIC 66302 - Hedge Fund Management,245,205,209,211,200,186,177,165,118,104,97,57,23,14,0
+        SSIC 66303 - Property Fund Management (Including Reit Management And Direct Property Fund Management),183,167,163,156,146,133,127,119,114,101,80,88,76,66,60
+        SSIC 66304 - Private Equity Firms,259,238,245,234,223,212,199,201,179,158,118,86,68,62,60
+        SSIC 66305/66306/66307/66309 - Other Fund Management Activities,2113,1968,1495,970,721,542,396,339,365,337,384,393,374,346,317
+"        SSIC 64110/6420/64300/649 - Others (Central Bank; Holding Companies; Trusts, Funds And Similar Financial Entities; Other Financial Service Activities)",26386,24614,22517,20779,20096,19616,18584,17776,17077,16343,15911,15057,13853,12526,11329
+"    SSIC 68-82 - Total Real Estate, Professional And Administrative & Support Services",77694,74134,70235,67751,66107,64728,61436,59343,58118,56542,54899,50531,48046,45659,42728
+        SSIC 68 - Real Estate,9863,9773,9673,9501,9525,9446,9266,9132,9187,9314,9246,8900,8513,8360,8025
+        SSIC 6910 - Legal Services,1255,1192,1142,1114,1099,1094,1043,1002,993,961,914,907,896,841,781
+"        SSIC 6920 - Accounting, Book-Keeping & Auditing Activities; Tax Consultancy",2432,2331,2254,2204,2184,2097,2050,1911,1854,1810,1770,1672,1584,1425,1278
+        SSIC 7010 - Head Offices; Centralised Administrative Offices & Business Representative Offices,1546,1482,1427,1378,1279,1184,1173,1109,1059,1029,1049,999,1123,1257,1259
+        SSIC 7020 - Management Consultancy,28380,26285,24006,22515,21193,20230,18943,17790,16899,16376,15748,13652,12531,11671,10861
+        SSIC 711 - Architectural & Engineering Activities And Related Technical Consultancy,6549,6352,6161,5970,5962,5949,5725,5677,5662,5513,5445,5101,4846,4581,4349
+        SSIC 7120 - Technical Testing & Analysis Services,494,473,459,444,448,435,415,395,398,395,388,365,350,345,311
+        SSIC 72 - Scientific Research & Development,1266,1222,1184,1179,1101,1046,960,874,824,772,748,635,600,562,523
+        SSIC 7310 - Advertising,1772,1719,1626,1612,1551,1490,1323,1300,1291,1215,1106,1072,1041,971,893
+        SSIC 7320 - Market Research & Public Opinion Polling,294,296,296,292,302,308,291,222,212,207,202,189,196,184,177
+        SSIC 7411 - Industrial Design Activities,612,580,549,549,543,550,466,546,575,na,na,na,na,na,na
+        SSIC 7419 - Other Specialised Design Activities,5682,5480,5254,5071,4949,4801,4336,4225,4237,na,na,na,na,na,na
+        SSIC 7420 - Photographic Activities,1379,1343,1346,1375,1384,1516,1508,1517,1494,na,na,na,na,na,na
+"        SSIC 7490 - Professional, Scientific & Technical Activities Nec",737,687,653,620,569,545,514,507,510,na,na,na,na,na,na
+        SSIC 7500 - Veterinary Activities,129,134,134,130,126,113,94,90,81,71,61,58,58,52,47
+        SSIC 771 - Rental & Leasing Of Land Transport Equipment,824,786,743,732,706,684,619,551,401,370,276,229,216,190,209
+        SSIC 772 - Rental & Leasing Of Personal & Household Goods,186,195,195,210,214,229,231,233,240,243,250,209,248,265,256
+"        SSIC 773/4 - Rental & Leasing Of Other Machinery, Equipment & Tangible Goods, Leasing Of Non-Financial Intangible Assets",1094,1088,1026,1008,994,991,950,983,886,889,905,875,793,760,752
+        SSIC 78 Excl 78103 - Employment Activities (Exclude Domestic Worker Employment Placement Agencies),3207,3071,2939,2898,2866,2955,2856,2875,2856,2785,2846,2677,2543,2390,2211
+        SSIC 78103 - Domestic Worker Employment Placement Agencies,974,921,838,767,822,845,815,793,757,749,761,726,701,663,626
+        SSIC 79 - Travel Agencies & Tour Operators,1188,1103,1032,1027,1145,1078,977,1031,1081,1028,977,894,912,953,894
+        SSIC 80 - Security And Investigation Activities,409,421,426,443,417,418,409,404,404,400,408,409,391,401,393
+        SSIC 812 - Cleaning Activities,2316,2243,2151,2147,2053,1951,1896,1854,1754,1718,1771,1499,1470,1445,1427
+"        SSIC 813 - Landscape Planting, Care And Maintenance Service Activities",577,577,566,571,548,554,535,523,530,511,498,464,410,379,352
+"        SSIC 821/2 - Office Administrative & Support Services, Call Centres",1071,1017,974,969,1003,1010,976,951,951,935,941,892,870,816,775
+"        SSIC 823 - Convention, Trade Show, Concert & Other Event Organisers",2417,2185,1970,1801,1887,1918,1688,1483,1588,1449,1369,1227,1169,1135,930
+        SSIC 829 - Business Support Services Nec,1041,1178,1211,1225,1235,1291,1377,1366,1394,1359,1436,1380,1355,1312,1281
+"    SSIC 85-96 - Total Recreation, Community & Personal Services",54149,51091,45717,42965,41877,40316,38265,36732,35830,34714,33395,31062,29763,28229,27222
+"        SSIC 851/2 - Pre-Primary Education, Primary Education",2180,2076,1924,1967,2003,1912,1868,1831,1633,1581,1509,1510,1475,1434,1354
+"        SSIC 8531/3/4/5/6 - General Secondary Education, Post-Secondary Non-Tertiary General Education, International And Foreign System Schools, Schools For Special Needs, Specialised Education Schools",476,438,362,285,282,273,263,253,244,229,220,216,199,169,164
+        SSIC 8532 - Technical And Vocational (Secondary And Post-Secondary Non-Tertiary) Education,116,116,100,101,120,121,128,138,150,165,157,161,164,163,115
+        SSIC 854 - Tertiary Education,377,372,365,360,368,371,380,391,374,397,423,443,450,444,441
+        SSIC 855 - Other Education,9624,9003,8090,6727,6407,5946,5341,4439,4275,4008,3786,3428,3293,2765,2527
+        SSIC 856 - Educational Support Services,2673,2248,1798,1448,1359,1339,1250,1176,1237,1184,1171,1030,960,732,596
+        SSIC 861 - Hospitals,24,25,25,25,25,25,25,24,24,23,21,21,20,20,20
+        SSIC 86201 - Clinics And Other General Medical Services (Western),3026,2973,2544,2528,2537,2568,2538,2475,2396,2285,2155,2034,1904,1803,1787
+        SSIC 86202 - Clinics And Other General Medical Services (Non-Western),1238,1177,1010,958,929,884,795,791,776,744,739,718,691,641,625
+        SSIC 86203 - Specialised Medical Services,1169,1151,1004,1039,1016,1055,1071,988,958,897,895,881,873,865,873
+        SSIC 86204/869 - Dental & Other Health Services,3199,3078,2758,2615,2444,2359,2252,2071,1975,1853,1696,1476,1400,1331,1267
+        SSIC 8701 - Residential Nursing Care Facilities,98,91,80,71,70,64,63,66,68,na,na,na,na,na,na
+        SSIC 8702 - Other Residential Care Services,110,106,90,93,89,85,82,84,83,na,na,na,na,na,na
+        SSIC 881 - Social Services Without Accommodation For The Elderly And Disabled,227,221,194,205,203,183,171,173,163,146,144,123,121,96,84
+        SSIC 889 - Other Social Services Without Accommodation,1459,1355,1148,995,932,737,668,612,587,554,513,463,441,425,378
+        SSIC 90 - Arts Creation And Performing Arts Activities,865,803,730,697,743,812,792,786,796,753,723,683,638,594,589
+"        SSIC 91 - Libraries, Archives, Museums & Other Cultural Activities",181,167,146,140,131,141,131,135,137,133,134,107,100,102,103
+        SSIC 92 - Gambling & Betting Activities,136,137,134,135,143,138,140,146,156,157,160,164,142,98,117
+        SSIC 931 - Sports Activities,2357,2130,1862,1559,1402,1336,1283,1254,1161,1238,980,878,782,711,569
+        SSIC 932 - Other Amusement & Recreation Activities,1351,1226,1046,672,1002,1019,927,885,915,932,942,944,950,940,905
+"        SSIC 941 - Activities Of Business, Employers & Professional Membership Organisations",760,758,758,731,805,805,804,810,788,784,772,711,611,583,559
+        SSIC 942/9 - Activities Of Trade Unions & Other Membership Organisations,3127,2988,2916,2975,2950,3091,3065,3014,2968,2957,2856,2730,2636,2609,2651
+        SSIC 951 - Repair Of Computers And Communications Equipment,458,442,428,442,456,423,332,348,344,329,304,306,299,277,259
+        SSIC 9521 - Repair Of Consumer Electronics,78,74,80,82,87,89,90,92,103,105,102,99,100,114,126
+        SSIC 9522 - Repair Of Household Appliances And Home & Garden Equipment,623,587,587,574,579,549,494,496,510,493,486,493,506,500,477
+        SSIC 9523 - Repair Of Footwear & Leather Goods,55,57,54,55,58,60,35,35,39,34,35,34,35,33,36
+        SSIC 9524 - Repair Of Furniture & Home Furnishings,86,76,72,73,74,79,58,57,66,59,69,69,69,62,59
+        SSIC 9529 - Repair Of Other Personal & Household Goods,265,249,236,217,231,222,167,182,196,179,165,146,128,118,105
+        SSIC 95301 - Repair & Maintenance Of Motor Vehicles,2583,2440,2335,2299,2271,1952,1909,1892,1890,1816,1786,1702,1710,1670,1702
+        SSIC 95302 - Car Washing & Related Services,316,332,322,313,283,288,277,275,272,305,352,285,280,267,256
+        SSIC 95303 - Motor Vehicle Inspection & Valuation Services,45,43,44,40,40,48,50,55,54,56,53,51,51,49,48
+        SSIC 9601 - Washing And (Dry-) Cleaning Of Textile & Fur Products,762,732,544,494,534,515,434,442,452,420,357,338,345,308,295
+"        SSIC 9602 - Hairdressing, Beauty And Other Personal Care Services",11241,10744,9330,9499,8889,8453,8225,8220,7849,7718,7544,6754,6595,6563,6480
+        SSIC 9603 - Funeral & Related Services,381,333,320,309,272,249,194,188,190,171,168,168,149,136,123
+        SSIC 9604 - Wedding & Related Services,423,394,408,439,481,493,428,392,394,374,324,294,276,251,210
+        SSIC 9609 - Other Personal Service Nec,2060,1950,1873,1801,1663,1630,1535,1516,1609,1484,1510,1464,1233,1227,1186
+"Operating Revenue, Total Services Sector",6086759.8,5626411.5,5976345.7,4931781.5,3752809.1,4079495.4,4040824.3,3485410.6,2941225.9,2988708.3,3178139.3,3027203.4,2741899.2,2514901.1,1994489.3
+    SSIC 46 - Total Wholesale Trade,4432329.9,4215642.8,4717193.9,3816888.9,2822087.8,3124068.3,3154652.4,2686407.1,2193329.1,2302753.9,2507478.6,2419609.9,2171570.8,1998818.2,1524788.4
+        SSIC 46100 - Wholesale On A Fee Or Commission Basis,1128.4,2986.1,4848.4,2040.8,1586.7,1866.9,1351.5,1214.5,1090,1126.5,1248.4,1203.2,1223.7,1391.8,1259.7
+        SSIC 4621/2 - Agricultural Raw Materials & Live Animals,193836.3,194394.6,233328.6,193316.4,168310.5,157778.7,139409.5,179329.7,158253.6,167728.2,161476.8,157166.8,133255.5,133258.7,94040.3
+        SSIC 46301 - Fruits & Vegetables (Including Fresh And Frozen),5671.5,5835.6,5914.9,6150.5,6059.4,5210.2,4879.3,4807.9,4593.5,4237.5,3358.2,2372,1521,1867.6,1666.8
+"        SSIC 46302 - Livestock, Meat, Poultry, Eggs & Seafood (Including Fresh And Frozen)",5582,5781.5,7481.6,6191.2,6007.2,5582.5,6019.3,6065.4,5409.2,5240.9,5426.9,5609.9,5650.6,5648.8,5509.8
+"        SSIC 46303 - A General Line (Wide Range) Of Groceries (e.g. Cereals, Sugar, Edible Oils, Sauces And Dairy Products)",78774.9,74710.4,87303.5,93897.8,72308.8,69448.3,74326.4,69612.9,61723.8,59110.8,55455,54708,58404.6,55407.6,45305.5
+"        SSIC 46304/5 - Confectionery & Bakery Products, Ice-Cream",2443.1,2530.5,2225.2,1943,1430,1175.1,1079.4,1209.8,1542.7,1679.2,1505.1,1796.4,2592.6,2574.5,2525.1
+        SSIC 46306 - Health Supplements,2220.8,2293.5,2432.4,2043.5,1233.9,2531.9,2837.3,2538,1899.5,1398.2,1481.8,1777.6,1185.8,1087,991.5
+"        SSIC 46307 - Liquor, Soft Drinks & Beverages",8206.4,10208,9354.1,10054,8754.5,9737.4,8874.7,8911.3,8384.5,8841.2,8264.5,8313.1,6887.2,6306.6,5169.4
+"        SSIC 46308/9 - Tobacco Products, Food, Beverages & Tobacco Nec (Including Dried Or Canned)",11095.6,10673.8,10725.1,9379.1,9102.5,8283.3,8625.2,8262.8,7531.9,6986.2,6216.1,5535.4,5299.1,5179,4986
+"        SSIC 46411/2/3 - Textiles & Leathers, Adults' Clothing, Children And Infants' Clothing (Including Products And Accessories For Infants)",61383.3,52705.1,40811.9,12825,6777.5,7083,6684.8,5720.2,4920.1,4925.7,4936.6,4680.6,3857.8,3752.2,3693.8
+"        SSIC 46414/5/6 - Footwear, Bags, Luggage & Travel Accessories, Sewing & Clothing Accessories",7566.9,8274.8,7630.3,6416,6519,6447.1,6216.6,5635.9,3042.3,1970.1,1940.6,1800.6,1562.6,1434,1252.8
+        SSIC 46421/2 - Jewellery Made From Precious Metals And Stones & Costume Jewellery,6322.2,7185,6506.5,4854.5,5087.6,7480,8684.3,8666,7993.4,7072.9,6791.6,5717.2,6770.8,4072.8,3373.3
+        SSIC 46423 - Watches & Clocks,3740.4,3459.1,3393.1,2538,2318.5,3148.6,3176.8,2783.2,2671.7,2944.2,2788.2,2553,2711.9,2556,2088.4
+"        SSIC 46424/9 - Cosmetics & Toiletries, Personal Effects Nec",15654.6,16885.3,16477.6,14957,17063.6,12930.7,12464.2,10847.4,10578.7,10203.2,11356.4,9528.2,6270.9,7826.8,8679.7
+"        SSIC 46431 - Furniture (Including Mattresses, Cushions)",3341,2456.7,2813.4,3587.8,2873.1,2528.5,3414.2,4127.2,3982.7,4349.3,2995.6,2816.7,2602.7,2523.3,2559
+"        SSIC 46432 - Furnishings (Including Curtains, Carpets, Wallpaper)",534.9,502.8,426.1,287,332.8,405.7,370.6,379.8,426.2,438,425.2,442.7,407.1,469.9,468.6
+        SSIC 46433 - Lighting & Lighting Accessories,905.2,877,705,689.2,835.5,972.8,981.2,936.1,931,790.5,898.1,834.4,733.3,753.5,729.1
+"        SSIC 46434 - Crockery, Cutlery & Kitchen Utensils",2716.6,2407.1,3105.5,2984,2568.8,2608.2,2842.5,2870.7,2410.1,2405.4,420.7,416.1,407.7,425.3,397.9
+"        SSIC 46435/6 - Household Electrical Appliances & Equipment, Audio & Video Equipment Except Electrical & Electronic Components",35784.8,33590.3,38566.4,38900.8,33357,31485.1,31653.8,31032,26005.5,25380.7,23379.3,23796.3,25676.2,20506,23071.2
+"        SSIC 46439 - Furniture, Home Furnishings & Other Household Equipment Nec",989.5,866.5,1155.3,935.3,876.8,1033.9,766.9,494.5,433.8,402.8,458.8,408.9,495.6,512,441.2
+        SSIC 4644 - Sporting & Other Recreational Goods,11716.7,10758.5,12579.9,11085.9,9099.8,10383.7,9871.1,9199.9,7913.7,6932.1,2398.5,2461.1,2334,2299.5,2280.5
+        SSIC 4645 - Handicrafts & Fancy Goods,289.4,280.1,298.4,261.1,244.4,350.9,371.5,320.7,361.8,318.2,337.1,306.3,328.7,326.7,268.1
+        SSIC 4646 - Medicinal & Pharmaceutical Products,33401.7,32526.7,31332.7,29893.8,26836.3,25849.6,23882.5,26934,24187.5,24061.6,24019.4,23476.5,22721.8,18340.4,12460.4
+"        SSIC 4647 - Paper, Paper-Related Products, Stationery, Cellophane Products & Packaging Materials",7773.4,8638.7,11123.8,9094.1,8265.8,9876.7,10512.2,9523.5,7184.4,6783.7,6452.2,6246.5,6130.6,5790.3,5936.3
+        SSIC 4649 - Other Household Goods,2914.8,2616.1,2709,2783.7,2585.3,2887.2,3017.5,2695.9,2547.6,2936.5,3199.6,2948.3,2215.8,2413.7,2090.3
+"        SSIC 4651/2 - Computers, Computer Peripheral Equipment & Software, Electronic & Telecommunications Equipment & Parts",716497.6,643950.9,667860,655698.7,469968.2,358506.8,396919.7,375701.7,332020.5,345831,315479.6,291339.5,270263,249854.5,229406.4
+"        SSIC 46530/46549 - Agricultural Machinery, Equipment & Supplies, Industrial, Construction & Related Machinery & Equipment Nec",5546.9,6491.8,6453.3,6772.7,6962.8,5480.4,5698.8,5888.9,5707.4,6911.7,6386.2,6300.4,6578.4,7341.8,6755.9
+        SSIC 46541 - Industrial Machinery & Equipment (e.g. Industrial Crane),21049.2,21646.9,19886.1,16790.7,17354.1,15096.6,15585,16289.6,16224.6,16892.9,17835.8,19227.6,18344.2,18053.2,17246.2
+"        SSIC 46542/3 - Construction Equipment, Lifts, Escalators & Industrial & Office Air-Conditioning Equipment",16259.6,17870.9,17870.7,13471.6,11263.3,13375.8,14773.3,11827,9890.8,11093.9,11343.4,11621.5,20013.7,17176.3,14681.5
+        SSIC 46544 - Electrical & Wiring Accessories,13484.1,13440.4,14089.6,13202.1,11671,11596.3,13135.6,11703.7,9084.3,8268.9,8695.8,7928.7,8051.8,7585.9,6916.6
+        SSIC 46551 - Marine Equipment & Accessories,4039.8,3985.4,3593.7,3506.7,3453.6,3667.8,3218.7,3308.7,3539.7,3882.4,3793.9,3454.4,3459,3445.2,3311.3
+"        SSIC 46552/9 - Aircraft Equipment & Supplies, Transport Equipment Except Motor Vehicles & Motorcycles Nec",2718.8,2446.8,2007,1765.1,1806.7,2436.3,2281.1,1864.8,1739.7,1800.8,1841.5,1869.6,1773.8,1869,1756.5
+"        SSIC 4656 - Motor Vehicles, Parts & Accessories",50252.6,46573.7,48423.4,42445.3,32213.8,42752.8,45233.1,45206.8,42835,40535.5,39840.9,41078.8,43104.3,35457.1,35380.1
+        SSIC 46591 - Office Machinery & Equipment,4962.6,4902.8,5388,4473,4365.7,5047.8,5981.1,6450.6,6450.2,6864.7,7327.5,7402.5,8530.4,8476.4,7954.7
+"        SSIC 46592 - Medical, Professional, Scientific & Precision Equipment",29046.2,27090.2,25463.8,29421.1,23662.3,19952.6,18692.6,17105.9,14552.1,11887.4,11321.6,8571.8,8592.8,7196.3,7526.3
+"        SSIC 46593/4 - Commercial Food Service Equipment, Service Establishment Equipment & Supplies",939.9,831.9,863.6,728.2,661.9,949.7,756,711.3,584.6,480.9,463.4,448.1,371.2,332.1,259.4
+        SSIC 46595 - Security & Safety Equipment,1937.7,1575.7,1512.4,1493,1332,1502.8,1436.1,1300.7,1402.9,1409.7,1215,1194.1,1095.3,1089.5,1118.1
+        SSIC 46599 - Other Machinery & Equipment Nec,5770.2,4626.6,3991.1,3402.6,3101.6,4358.8,3071.5,2267.2,2256.6,1934.4,1939.5,1894.6,1741.9,1714.2,2184.5
+        SSIC 4661 - Fuels & Related Products,2070534.9,2017042.7,2364706.5,1687845.5,1116646.4,1561394.7,1625984.6,1187055.9,878873.9,973069.2,1245356.8,1213042.4,1065381.4,953763.1,658964.7
+        SSIC 46620 - Metals & Metal Ores (e.g. Steel Pipes) Except General Hardware,429548.1,364929.7,398651,397313.5,356825.3,316923.7,284844.2,282004.1,238552.6,226925.1,210358.6,181612.4,127433.7,112676.7,73399.2
+"        SSIC 46631 - Logs, Sawn Timber, Plywood & Related Products",4540.5,4884.2,6624.4,5236.8,4222,4726.2,4359.1,4702.2,4404.7,4675.3,4702.4,4071.3,3655.8,4125.7,4219.6
+        SSIC 46632 - General Hardware,1985.1,1857.7,2423.4,2362.2,2377.1,2275.2,2339,2162.8,2144.8,2217.9,2194.7,2608.4,2901,2682.6,2693
+        SSIC 46633 - Structural Clay & Concrete Products,617.4,643.2,727.4,589.8,468,662.4,655.9,756.1,706.5,846.8,1028.1,835.3,596.1,809.4,947.4
+        SSIC 46634/5 - Paints & Glass,2126.3,1883.1,2169.8,2213,1915.2,1990.7,1891.6,1948,1712,1775.2,1577.4,908.4,871.5,809,768.3
+"        SSIC 46639 - Construction Materials, Hardware, Plumbing & Heating Equipment & Supplies Nec",18498.9,20437.3,19451.7,13313.2,10497.6,10392.1,9154.3,8739.7,9103.6,8169.7,7794.1,6580.1,6462.2,4972.4,4191.5
+        SSIC 46641/2 - Basic Industrial Chemicals (Except Fertilisers) & Chemical Fertilisers,25189.8,26266.7,39820.7,35132.2,26391.2,28146.3,30041.1,30717.2,27532,29055,29266.3,28284.2,25590.6,25268.2,21631.1
+        SSIC 46643 - Petrochemical Products,144928.4,155810.9,159120.3,113068.4,77634.2,92291.6,93874.8,74751.6,58514.7,62931.4,53482.3,65339.1,58618.5,56886.3,40394.9
+        SSIC 46649 - Chemicals & Chemical Products Nec,22456.4,19313.2,21569.7,22923.6,20696.2,20347.5,19054.5,18085.3,16277.6,13490.3,12745.4,11581.8,12477.8,11534.6,10036.7
+"        SSIC 4665 - Other Intermediate Products, Waste & Scrap",3599.4,4102.5,4217.5,3948,3748.6,4408.5,5019.5,4117.3,3286.2,3159.8,2902.1,2830.2,2760.3,3655.9,3476
+        SSIC 4666 - Ship Chandlers & Ship Bunkering,78736.2,79644,97597.8,58923.4,41569.5,55831.9,57409.3,52035.4,40706,47345.6,65078.8,70834.8,71478.7,68923.1,51260
+        SSIC 46900 - Non-Specialised Wholesale Trade,253069.2,229949.8,239462.3,213739.2,170844.4,152866.9,120928.4,115585.2,109207.1,113034.7,106276.8,101833.7,100175.8,106395.8,87064.4
+    SSIC 47 - Total Retail Trade,55012.8,53297,51346.5,47409.9,41827.3,47712.2,48290.7,48877.7,48092.1,46421.6,44892.2,44021.7,43346.6,41114.7,38055.6
+        SSIC 47101 - Supermarkets & Hypermarkets,8447,8197.6,8276.7,8792.6,8629.1,6592.8,6464.2,6298.9,6326.5,6211.6,5841.5,5570.2,5292.6,5006.6,4829.6
+"        SSIC 47102 - Mini-Marts, Convenience Stores & Provision Shops",1830,1905.6,1819.7,1888.1,2045.7,1902.2,1814.2,1959.7,2053,2022.6,2088.3,2041.5,2011.1,1884.9,1836.4
+        SSIC 47103 - Department Stores,2292.3,2411.7,2331.8,1824.8,1667.7,2739.7,2810.4,2813.7,2850.6,2993.5,3062.7,3191.1,3201.5,2981.1,2859.8
+        SSIC 47109 - Non-Specialised Stores Nec,985.2,895.5,760.9,584.1,556.2,678.8,622,641.7,637.7,638.3,491.5,404.6,395,378.5,366
+"        SSIC 4721/4722/4723 - Food, Beverages & Tobacco Products",2469.1,2185.9,1837.2,1312.9,1315.2,1784.7,1765.4,1709.4,1568.2,1600.4,1623.1,1538.3,1486.8,1398,1245.5
+        SSIC 47311 - Motor Vehicles Except Motorcycles & Scooters,7740.4,7022.2,6762.9,7990.4,6476.1,7672.9,8157.9,9524.7,9167.3,7000.4,5700.6,5269.4,6289.6,5822.2,6392
+        SSIC 47312 - Motorcycles & Scooters,288.2,282.6,254.6,218.1,212.4,269.2,249,245.9,232.4,224.8,218.5,187.2,150.7,144.3,172.9
+"        SSIC 47313/47314 - Tyres, Batteries, Spare Parts & Accessories For Motor Vehicles",545.7,513.5,489.2,424.6,397.6,495.3,534.3,544.1,534.6,544.2,578.7,609.9,568.5,530.8,506.6
+        SSIC 47320 - Automotive Fuel,2434.3,2451,2702.2,2258.5,1747.4,2202.7,2263.3,2129.1,1960.9,2036,2511.9,2484.6,2424.5,2323.8,2035
+"        SSIC 4741 - Computers, Peripheral Equipment, Software & Telecommunications Equipment",3548.9,3656.5,3576.5,3391,2711.1,2578.4,2637.5,2754.7,2870.6,3165.8,3176.2,3377.3,3321.1,3313,2487.7
+        SSIC 47535 - Household Electrical Appliances & Equipment,2170.3,2093.3,2085.1,1885.5,1684.3,1724.3,1882.1,1924.5,1843.8,1869.7,1823.7,1940.6,1991.6,2199.3,1952.2
+"        SSIC 47510/47531/47532 - Textiles, Furniture & Furnishings",1237.7,1203.1,1328.8,1242.1,1122.6,1190.5,1286,1287,1306.6,1308,1281.3,1297.4,1314,1152,976.1
+"        SSIC 4752 - Hardware, Paints & Glass",505.4,532,554,402.6,319.8,299.6,282.6,266.3,276.7,286.4,250.1,239,269.9,218.2,239.3
+"        SSIC 47533/47534/47537/47539 - Lighting, Lighting Accessories, Crockery, Cutlery, Kitchen Utensils, Security, Safety Equipment & Other Household Articles Nec",677.6,602.1,537.9,457.2,397.5,449.8,519.4,497.6,489.2,444.3,473.1,445,498.2,473.8,450.9
+"        SSIC 47610 - Books, Newspapers & Stationery",432.4,457,454.7,407.8,407.9,550.2,563.1,616.4,705.3,788.2,918.2,874.6,874.9,806.3,789.1
+"        SSIC 47620/47630/47640/47650 - Music & Video Recordings (e.g. Dvds, Blu-Ray Discs), Sporting Equipment, Games & Toys, Musical Instruments & Scores",1034.6,999.9,1018.3,841.3,695.3,779.2,793,828.4,811.8,787.5,796.5,800.8,808.6,815.7,783.7
+"        SSIC 47711/47712 - Clothing For Adults, Children & Infants",2336.2,2240.5,2161.4,1914.3,1614.1,2724.8,2712.5,2886.8,3058.7,3010.6,3121,3068.3,2739.6,2606.2,2581.2
+"        SSIC 47713/47714/47715/47719 - Footwear, Bags, Luggage & Travel Accessories, Sewing, Clothing Accessories & Other Clothing, Footwear & Leather Articles Nec",3521.6,3833.2,3491.8,2549.8,1975.2,2790.8,2570.8,2384.1,2244.9,2104.5,1950.4,1836.1,1663.2,1432,1106.6
+        SSIC 47721 - Cosmetics & Toiletries,2284.4,2142.9,1880.4,1642.8,1535.1,2283.4,2256.4,2001.9,1719.5,1704,1596.2,1530.6,1234.3,1115.6,1058.6
+"        SSIC 47722/47723/47729 - Pharmacies, Drug Stores, Chinese Medicine Shops, Pharmaceutical & Medical Goods Nec",1272.7,1321.1,1306.3,1057.4,1055.7,1047.9,1088.4,1069,1099.5,1102.3,1026.5,979.5,950.7,895.7,831.5
+        SSIC 47731 - Jewellery Made From Precious Metals And Stones,4258.7,3753.7,3352.6,2699.1,2262.4,3098.9,3151.3,2837.8,2729.5,2767.2,2493.6,2527.4,2413.3,2207.3,1674.3
+        SSIC 47732 - Costume Jewellery,154.5,147.1,139.9,106.4,103.7,114.9,86.3,85.6,110.7,149.9,163.4,138.6,123.7,122.1,108.2
+"        SSIC 47733/47739 - Watches, Clocks & Personal Effects Nec",2327.1,2247.8,2131,1731.6,1144.4,1609.9,1621.7,1559.4,1517.9,1601.5,1725.7,1691.9,1525,1550.7,1216.9
+        SSIC 4775 - Optical & Photographic Goods,660.4,701.4,694.3,686.1,697.6,836,858.2,769.8,717.7,737.9,732,720.8,700.3,735.1,686.7
+"        SSIC 4774/4776/4777 - Handicrafts & Fancy Goods, Flowers, Plants & Pet Animals, Other Goods & Second-Hand Goods",1558,1499.8,1398.2,1101.1,1053.1,1295.3,1300.7,1241.1,1258.4,1322.1,1247.5,1257.1,1098,1001.6,869
+    SSIC 49-53 - Total Transportation & Storage,321542.3,271894.3,328096.8,275913.5,168665.7,174205.7,160018.1,130425.5,117788.8,127966.1,129955.1,113899,107347.4,102277.2,95987.1
+"        SSIC 4910/4921/4922 - Passenger And Freight Rail Transport, Passenger Land Transport & Aerial Cableways",5008.2,4876.5,4352.9,3841,3686.6,4488.8,4402.8,4477.7,4372.2,4064.7,3807.9,3527,3406.6,3205.4,3002.4
+        SSIC 49231 - Freight Transport By Road,1306.4,1364.4,1438.6,1326.9,1214.9,1319.5,1354.7,1342.3,1337.2,1424.9,1370.2,1302.9,1348.2,1279.8,1268.8
+        SSIC 49232 - Moving Services,327.4,315.4,270,213.2,204.8,225.1,249.2,269,281.2,252,249.7,231.7,202.7,218.2,235.4
+        SSIC 49233-Rental And Leasing Of Freight Land Transport Vehicle (e.g. Lorries And Trucks) With Driver,104.2,107.6,128,96.4,79.6,95,92.4,73.1,62.6,66.8,57.1,63.9,55.5,59.2,69.5
+        SSIC 5001 - Passenger Water Transport,352.6,269.5,163,73.8,84.8,243.6,278.3,217.8,188.7,182.8,190.7,180.2,177.6,173.6,189.8
+        SSIC 5002 - Freight Water Transport,228114,188746.2,244977.2,211917,116827.9,112670.1,101414.9,76369,66940.1,76610.6,80506.1,65445.8,61408.6,58265.3,54351
+        SSIC 51 - Air Transport,19780.8,18810.3,16736.6,6851.1,6357.5,17862.4,18061.8,17382.5,16366.8,17061.9,17753,17975.4,17865.8,17333.7,16698.1
+        SSIC 52101 - General Warehousing,1747.6,1753.9,1718.4,1470.2,1487.2,1320.2,1263.6,1337.6,1304.7,1217.7,1237.9,1163.1,1299.1,1229.6,1203.6
+        SSIC 52102 - Refrigerated Warehousing And Storage,133.5,124.1,108.2,101.2,95.2,80.2,74.1,63.7,61.4,59.6,73.3,92.3,78.4,72.6,60.2
+        SSIC 52103 - Storage For Dangerous Goods,1939.5,1815.7,1445.4,1416,1318.8,1293.4,1310.4,1458.2,1419.6,1357.7,1275.7,1231.5,1137,1128.9,1090.3
+"        SSIC 52109 - Specialised Storage Nec (e.g. Wine Warehousing, Document Storage And Warehousing)",123.1,128.1,110.8,112.3,141.6,169.8,178.9,174.8,200.5,217.3,204.1,172.4,150.2,123.5,108.6
+        SSIC 52211 - Carpark Management & Operation Services,1070.4,1077.7,1126.9,1090.7,1036.1,1089.2,1103.6,1073.7,919.8,817,788.4,767.1,751.6,709.7,703.8
+"        SSIC 52212/52219 - Motor Vehicle Towing Services, Supporting Services To Land Transport Nec",221.5,178.4,153.8,142.1,139.2,141.9,147.5,160,137.7,118.2,118.7,107.3,100.2,87.6,77
+        SSIC 5222 - Supporting Services To Water Transport,21132.4,18414.5,18616.9,16583.1,14567.2,13123.4,11084.4,10400.9,9088.6,9268.2,8406.9,8535.2,7846,8025.2,7536.6
+        SSIC 5223 - Supporting Services To Air Transport,4651,4019.5,3123.6,1798,1764,4069.9,3920.8,3589.9,3332.1,3205.3,3165.2,3133.2,2854.2,2659.4,2250.7
+        SSIC 5224 - Cargo Handling,872.1,875.4,854.2,749.5,653.5,750.3,691.8,809,836.2,1003.3,1098.3,1080.2,944.2,842.1,877.4
+        SSIC 5225 - Marine Surveying Services & Classification Societies,677.1,606.5,547.9,444.2,434.8,435,411.1,442.4,489,582.2,567.4,538.9,517.6,550.9,470.5
+        SSIC 5229 - Other Transportation Support Activities,29030.6,23224.8,27857.7,23698.8,15559.6,12130,11401.2,8377.1,8233.2,8411.6,7117,6466,5381,4498.2,4054.1
+        SSIC 53 - Postal & Courier,4949.8,5185.9,4366.5,3988.1,3012.6,2697.9,2576.4,2407,2217,2044.3,1967.2,1885.1,1822.9,1814.4,1739.4
+    SSIC 55-56 - Total Accommodation & Food Services,30220.5,28704.2,24994.1,18827.6,18107.2,23916.8,23205.1,21854.3,21331.2,20212.4,20129.3,18473.4,17340.4,15804.7,13576.9
+        SSIC 55101 - Hotels,8327.5,7813.8,5667.4,3568.7,3958.5,6932.1,6646.5,6301.6,6103.4,6072.7,6016.1,5763.1,5569.8,5262.9,4206.5
+        SSIC 55109/55900 - Other Accommodation,1559.2,1234.9,1021.5,861.5,827.2,1013.7,1186.6,1143.9,1348.7,935.4,1408.8,979.8,891.3,788.4,740.7
+        SSIC 56111 - Restaurants,9550,9436.5,9029.1,6679.4,6005.3,7296.4,7063.1,6561,6299.5,6036.5,5752.5,5360.8,4784.3,3977.8,3431.6
+        SSIC 56112/56123 - Cafes & Food And Drinks Kiosks,2938,2881.7,2762.7,2318.5,1976.8,2279.2,2018.7,1899.4,1816.6,1626.6,1607,1297.3,1175.9,1103.9,1082.6
+        SSIC 56121 - Fast Food Outlets,1910.6,1821.3,1672.1,1496.2,1365.4,1531.6,1415,1274.3,1184,1146.6,1136.9,1041.9,997.7,951.5,837.3
+"        SSIC 56122 - Operators Of Food Courts, Hawker Centres, Coffees Shops And Canteens (With Mainly Food And Beverage Income)",3641.3,3545.5,3295.3,2784.5,2588.3,2943.3,3020.1,2898.7,2808.8,2717.1,2520.8,2345.3,2344.4,2292.7,1915.1
+        SSIC 56130 - Pubs,263.2,217.4,200.4,157.5,250.5,455.3,383.1,357.9,348.9,325.5,350.9,413.1,368,339.2,337
+        SSIC 56200 - Food Caterers,2030.8,1753.1,1345.6,961.2,1135.2,1465.3,1471.9,1417.5,1421.3,1351.9,1336.3,1272.1,1208.9,1088.3,1026.1
+    SSIC 58-63 - Total Information & Communications,249466.9,220537.7,193767,168646.8,132028.3,106451.9,93935.7,81332.8,70120.3,62587.4,56448.9,50317,46280.3,41516.8,37859.8
+        SSIC 58110 - Book Publishing,1267.8,832.3,763.6,738.6,506.4,478.8,425.2,444.6,439.8,442.3,439.8,390.5,411.3,403.2,443.9
+        SSIC 58120 - Publishing Of Directories & Mailing Lists,278.7,234,232.4,239.7,238.6,191,226.2,458.8,601,698.8,665.7,595.1,579.3,600.8,580.9
+"        SSIC 5813/5819 - Publishing Of News, Journals, Periodicals And Other Publishing Activities",577.4,608.7,727.9,745.1,797.2,914.2,1097.5,1152.2,1304.4,1320.7,1377.5,1401.5,1436.5,1440.8,1401
+        SSIC 5820 - Software Publishing,28776.7,23539,18887.1,15492.7,10408.5,6833.8,10815.6,12357.7,10157.7,10451.2,11058.8,10116.4,10253.8,9176.8,8316.3
+"        SSIC 59111/2 - Movie, Advertisements, Corporate Videos & Event Videos Production",721.9,737.3,676.4,522.5,381,468.3,372,302.9,230.9,204.8,172.2,158.6,116.2,100.4,105.3
+"        SSIC 59113 - Production Of Dramas, Variety Shows And Documentaries",669,634,648.3,645.7,693.9,533.7,563.4,570.4,588.7,584.5,533.5,514.9,480.5,446.9,383.4
+"        SSIC 59114/9 - Animation, Movie, Video, Television And Other Programme Production Activities Nec",246.2,272.6,222.2,285.6,138.9,121.1,122.2,128.9,135.2,113.5,85.3,65.1,78.7,83.3,82.2
+"        SSIC 5912 - Movie, Video, Television And Other Programme Post-Production Activities",180.9,221.4,257.3,220.9,185.8,166.2,148.6,110.5,86.9,67.6,74.3,70.3,47.7,40.9,32.2
+"        SSIC 5913 - Movie, Video, Television & Other Programme Distribution Activities",342.3,412.3,303.3,229.2,226.5,442.7,410.1,446.5,555.5,360.4,384.4,277.5,349.2,378.1,311.6
+        SSIC 5914 - Movie Projection Activities,175.9,202.8,187.5,134.4,96.3,263.1,279.7,274.3,281.3,564.3,541.1,449.6,411.5,392.6,368.8
+        SSIC 5920 - Sound Recording & Music Publishing Activities,186.5,178.3,108.4,109.7,82.8,56,55.2,47.6,37.9,35,30.4,20.5,20.2,14.2,11.8
+        SSIC 60 - Broadcasting And Content Production,29609.8,22810.4,18150.2,12344.2,7486.3,5078.6,4217.5,3329.4,2459.5,2309.3,1871.4,2716.9,2658,2508.9,2354.7
+        SSIC 6101 - Telecommunications Network Operation,10122.4,9818.8,9892,9189.3,9185.5,9801.3,9836.4,10311.5,10370.9,10828.4,10565.2,10261.7,10134.7,9832.4,9671.1
+        SSIC 6102 - Telecommunications Resellers,6788.8,6177,5157.3,4848.6,4262.7,4552.9,4076.1,3437.7,3525.9,3344.6,3232.9,3113.3,2954.1,2900.1,2562.9
+        SSIC 6109 - Other Telecommunications Activities,1330.5,1165.5,904.9,639.6,782.3,536.6,408.1,380.1,448.8,494.5,510.3,406.3,474.1,342.2,314.9
+        SSIC 6201 - Computer Programming Activities,29310.6,27421.8,18235.7,13875.1,11037,8155.3,8109.9,7339.8,6740.8,6124.6,5309.6,4984.2,4902.2,4372.3,4062.8
+        SSIC 6202 - Information Technology Consultancy And Computer Facilities Management Activities,23816.1,22207.1,20225.7,16734.5,15945.6,12772.4,10211.8,8288.7,7298.8,6764,6349.5,6232,5418,4590.6,4146.4
+        SSIC 6209 - Other Information Technology And Computer Service Activities,9891.4,7232.6,6732.6,5526.5,4802,4026.8,3872,3262,3226.1,2593.6,2117.7,1689,1298.6,1078.8,929.9
+"        SSIC 631/639 - Data Analytics, Processing, Hosting & Related Activities; Internet Search Engines And Other Information Service Activities",89968.8,81478.7,75805.5,68456.9,50478.2,41223.5,31213.1,24534.4,18375.4,13306.1,9091,5556.7,3200.5,2079.5,1243.2
+        SSIC 6320 Excl 63204 - Online Marketplaces Operating On A Fee Or Commission Basis (Exclude Online Marketplaces For Travel And Accommodation Services),10136.2,10608.1,13246.5,16477.7,13003.8,6986,4986.3,1920.3,1367.2,195.3,499.1,106.6,75,60.6,23.8
+        SSIC 63204 - Online Marketplaces Operating On A Fee Or Commission Basis For Travel And Accommodation Services Provided By Third-Party,5069,3745.1,2402.2,1190.4,1289.1,2849.7,2488.9,2234.6,1887.5,1784,1539.3,1190.3,980.4,673.4,512.6
+    SSIC 64-66 - Total Finance & Insurance,730560.7,595286.6,439010.4,406181.3,396472.5,408515.6,370381.5,324964.5,298670.5,245504.1,246022.2,217413.7,203239.5,178624,159864.1
+        SSIC 64120 - Full Banks,127529.4,116864,68339,40978.1,48923.3,64876.5,57195.1,48556.9,40892.4,38069,34127.5,31223,31057,27451.8,26102.6
+        SSIC 64130 - Wholesale Banks,48014.4,46551.7,25139.1,18521.2,22826.1,28530.1,24483,20579.8,17185.6,17083.6,16639.6,15655.5,17472.6,15603,16525.8
+        SSIC 64140 - Merchant Banks,7337.1,5952.1,4155.2,3780.4,4313.6,4348.4,4132.3,4673.8,3554.3,3515.6,3767,4361,3683.9,4530.3,3461.8
+        SSIC 64150 - Finance Companies (With Deposit Taking Functions),814,779.4,475,360.2,441.7,532.1,475.2,424.3,435.9,409,349.8,339.9,322.6,306.9,352.4
+"        SSIC 65 - Insurance, Reinsurance, Provident Funding And Pension Funding",127947.1,122959.2,61434.2,101240.6,107152.9,93434.1,68054.6,75576.7,63185.1,52198.8,59962.3,46352.8,48922.2,35126,43707.8
+"        SSIC 66210 - Risk And Damage Evaluation (e.g. Loss Adjusting, Claims Adjusting)",66.8,66,48.4,46.2,47.2,58.3,62.7,59.1,68.3,42.4,35.6,29.1,25,24.5,21
+        SSIC 66221 - Insurance Agencies And Agents (Including Financial Planning Services),1787.1,1517.4,1318.8,1281.3,1135.1,1004.9,847.9,606.3,564.4,523.2,461.1,400.1,323.4,267,235
+        SSIC 66222 - Insurance Brokers,1260.3,1155.3,1008.6,828.4,870.3,694.2,806.4,854.2,781.5,767.5,746.7,657.1,558.8,487.7,401.7
+        SSIC 6629 - Other Activities Auxiliary To Insurance And Pension Funding,278.6,234.3,204.6,167.2,145.1,145.7,137.7,123.1,144.9,141.5,147,115.5,113.6,116.4,105.4
+        SSIC 6611/6612 - Securities And Commodities Exchange; Securities And Commodity Contract Brokerage,10442.9,8487.3,7245.6,7516,6865.8,4850.4,4641.9,4042,4347.7,4060.6,3868.8,4085.3,3770.3,4097.1,4492
+"        SSIC 66191 - Trustee, Fiduciary And Custody Services Firms (Including Nominee Companies, Trustees And Reit Trustees)",553.9,528.1,510.6,501.2,457.9,389.7,388,379.5,340.9,309,283.7,257.2,234.6,231.2,231.9
+        SSIC 66192 - Corporate Finance Advisory Services,809.2,794.4,875.9,811.4,812.2,697.5,673.9,730.2,700.2,766.5,789.4,694.1,631.8,657.6,556.6
+        SSIC 66193/66199 - Clearing And Settlement Of Financial Instruments And Other Activities Auxiliary To Financial Service Activities N.E.C. (e.g. Mortgage Advisory Firms),960,901.6,923.6,872.1,744.5,586.2,554.2,540.3,555.6,542.5,528.9,446,408.2,427.4,400.8
+        SSIC 66194 - Activities Auxiliary To Fund Management Activities (e.g. Independent Fund Administration Firms),402.6,324.2,223.3,172.8,161.8,101.7,72.3,47,34.2,30.5,28.5,24.3,19.3,15.8,7.9
+        SSIC 66195 - Transaction/Payment Processing Services,35770.9,32549.5,28866.7,26259.3,23214.4,21337.5,18595.1,16276.5,14051.1,12202.4,10547.9,8988.5,7656.3,6062.4,4232.9
+        SSIC 66301 - Traditional/Long-Only Asset/Portfolio Management,7001.2,6428,7028.4,7422,5930.2,5424,5241,5649.4,4626.2,5151.7,5139.5,4689.8,3989.3,3822.7,3667.4
+        SSIC 66302 - Hedge Fund Management,6482.9,4500.6,4458,4269.3,3613.1,2610.6,2127.8,2647,1872.2,1844,961.6,468,43.4,10.8,0
+        SSIC 66303 - Property Fund Management (Including Reit Management And Direct Property Fund Management),2359.5,2246.2,1891.9,1789.5,1480.9,1861.8,1700.7,1417.3,1187.4,1076.8,873.6,703.4,707.6,631.9,702.1
+        SSIC 66304 - Private Equity Firms,4540,3045.4,2931.8,2414.1,1786.1,1608.2,1376.7,1269.8,1058.1,861.7,530.3,252,97,73,50.3
+        SSIC 66305/66306/66307/66309 - Other Fund Management Activities,3371.1,3240.3,2170.9,1877.3,1514.4,1193.8,977.9,1070.8,955.6,915.2,1052.4,1042.2,903.4,740,587.5
+"        SSIC 64110/6420/64300/649 - Others (Central Bank; Holding Companies; Trusts, Funds And Similar Financial Entities; Other Financial Service Activities)",342831.8,236161.6,219760.7,185072.7,164035.8,174229.9,177837.1,139440.6,142128.9,104992.6,105181,96629,82299.3,77940.4,54021.3
+"    SSIC 68-82 - Total Real Estate, Professional And Administrative & Support Services",202689.9,180847.5,168285.8,150145.9,131200.8,147128.3,144702.9,147864.6,150324.3,143760.5,135720.6,128919.2,120475.4,106794.5,98159.3
+        SSIC 68 - Real Estate,59990.4,57847.2,51554.1,44870.4,38370.1,44815.5,41619.9,46189.8,49105.5,51466.7,49614.2,47627.8,44856.4,39108.8,38338.1
+        SSIC 6910 - Legal Services,4399.2,4303,4249.9,4080,3625.8,3372.9,3228.7,3095.5,3039.2,2823.1,2733.7,2661.1,2436,2155.5,2120.4
+"        SSIC 6920 - Accounting, Book-Keeping & Auditing Activities; Tax Consultancy",3440.7,3200.1,2829.7,2567.8,2395.2,2451.1,2318.1,2279.4,2074.5,1999.5,1893.3,1746,1642.2,1470.8,1257.7
+        SSIC 7010 - Head Offices; Centralised Administrative Offices & Business Representative Offices,36512.3,25210.6,23577,21718.5,19018.4,19721.9,18436.1,19437.4,18314.5,16176.7,16329.5,16174.3,15228.3,13284.1,9484.2
+        SSIC 7020 - Management Consultancy,12970.4,12462.3,11105.2,9873.2,8053.1,7903.9,7264.4,6690.3,6393.4,6416.9,6086.5,5731.3,5331.3,5054.8,4569.5
+        SSIC 711 - Architectural & Engineering Activities And Related Technical Consultancy,23971.6,25258.2,25311.6,24250.2,19239.3,22078.8,19962.4,19049.7,22988.9,22001.5,21639.8,21168.2,19543.6,16632.4,16773.9
+        SSIC 7120 - Technical Testing & Analysis Services,2548.4,2307.9,2288.7,2094,1937.9,1870.7,914.7,797.6,800.6,772.6,711.8,740.5,680.2,657.3,640
+        SSIC 72 - Scientific Research & Development,5448.5,4992.4,4154.8,3638.2,3308.6,2958.9,4275.9,4292.7,4114,4030.1,3239.4,2663.2,2865.6,2805.1,2628.5
+        SSIC 7310 - Advertising,12618.2,7556.3,5724.4,4342.2,3222.4,3707.9,3456.9,3033.6,2951.7,2574.1,2489.5,2508.4,2424.6,2402.4,2383.9
+        SSIC 7320 - Market Research & Public Opinion Polling,884.9,883,878.5,789.7,732.8,744.2,649.7,570.1,575.6,629.6,556.9,542.5,503.9,468,434.3
+        SSIC 7411 - Industrial Design Activities,859.2,758.7,756.6,648.3,404.4,414.5,343.9,357.3,391.9,na,na,na,na,na,na
+        SSIC 7419 - Other Specialised Design Activities,3191.9,3149,2671.9,1991.7,1714.8,2233.1,1916.1,2050.5,1961.9,na,na,na,na,na,na
+        SSIC 7420 - Photographic Activities,208.1,207,213.8,176.4,146.6,189.6,167.8,173.7,162.5,na,na,na,na,na,na
+"        SSIC 7490 - Professional, Scientific & Technical Activities Nec",743.9,674,559.4,463.2,347.4,328.5,265.4,254.3,232.1,na,na,na,na,na,na
+        SSIC 7500 - Veterinary Activities,252.1,219.2,182.6,157.1,116.7,106.1,105.2,108.4,99,75.5,54.4,45,45.1,43.1,36.8
+        SSIC 771 - Rental & Leasing Of Land Transport Equipment,2034.4,1955.1,1762.7,1542.9,1479.5,1652.3,1555,1656.5,1344.6,1066.1,1042.7,920.5,807,703,603.6
+        SSIC 772 - Rental & Leasing Of Personal & Household Goods,86,79.5,71.3,97.9,112.7,165.5,153.7,155.1,159.4,187.5,185.9,156.1,165,152.9,149.1
+"        SSIC 773/4 - Rental & Leasing Of Other Machinery, Equipment & Tangible Goods, Leasing Of Non-Financial Intangible Assets",9476.6,8932.4,12682.9,11077.3,11302,14734.1,20306.6,20743,19402.3,16004.3,12598.4,11152.4,9663.8,8473.6,6905.6
+        SSIC 78 Excl 78103 - Employment Activities (Exclude Domestic Worker Employment Placement Agencies),6966.6,6473.4,6185.3,5600.4,4689.5,4567.5,4734.2,4566.2,4539.6,3995,3811.3,3378,3183,2948.7,2432.1
+        SSIC 78103 - Domestic Worker Employment Placement Agencies,219.9,209.3,154.2,134.9,119.4,175.3,152.6,161.7,145.7,142.1,151.5,154,156.7,134.9,133.5
+        SSIC 79 - Travel Agencies & Tour Operators,3376.3,3066.3,1517.9,773.6,1376.9,3285.5,3192.9,3372.8,3390.3,3105.3,3064.7,2926.2,2878,3038.2,2699.6
+        SSIC 80 - Security And Investigation Activities,3056.4,2865.6,2635.3,2903,3146.4,2621.3,2560.8,2300.5,2092.1,1948.6,1720.4,1550,1422,1300.9,1199.9
+        SSIC 812 - Cleaning Activities,3601.1,3268,2971.1,2781.1,2680,2606.9,2715.9,2632.6,2264.8,1975.1,1646.1,1401.3,1240.6,1056.4,954.6
+"        SSIC 813 - Landscape Planting, Care And Maintenance Service Activities",815.7,753.1,693.1,612.3,560.9,627.2,568.8,566.7,571.2,552.4,527.2,473.2,463.5,409.7,355.1
+"        SSIC 821/2 - Office Administrative & Support Services, Call Centres",1261.2,1234.4,1239.1,1176.6,1201,1062.2,1045.3,927.7,821.8,737,632.2,631.9,570.4,526,447.5
+"        SSIC 823 - Convention, Trade Show, Concert & Other Event Organisers",2645.9,1985.3,1510.3,878.9,1019.8,1757.7,1883.9,1531.1,1531.6,1371.1,1365.4,1208.6,1374,1206.5,1154.5
+        SSIC 829 - Business Support Services Nec,1109.8,996.4,804.4,906.3,879.2,975.2,908,870.3,855.7,893.7,888.6,863.3,815.3,703.6,540.2
+"    SSIC 85-96 - Total Recreation, Community & Personal Services",64936.8,60201.3,53651.2,47767.6,42419.5,47496.6,45638,43684,41569.6,39502.3,37492.3,34549.5,32298.7,29950.9,26198.1
+"        SSIC 851/2 - Pre-Primary Education, Primary Education",1815.9,1826.6,1827.7,1689.3,1525.2,1449.3,1321.4,1134.5,1059.1,970.4,904.3,817.6,730.3,687.7,618.8
+"        SSIC 8531/3/4/5/6 - General Secondary Education, Post-Secondary Non-Tertiary General Education, International And Foreign System Schools, Schools For Special Needs, Specialised Education Schools",2713.4,2449.3,2199.8,2167.5,2029.4,2035.9,1969.8,1715.9,1590.7,1518.6,1447,1297.4,1167.8,1039.9,882.9
+        SSIC 8532 - Technical And Vocational (Secondary And Post-Secondary Non-Tertiary) Education,141.6,130.5,167.5,157.2,148.8,148.3,160.3,157.2,196.3,211.4,223.8,134.8,141.7,127.1,100.2
+        SSIC 854 - Tertiary Education,6736.2,6266,5999.7,5778.8,5273.5,5091.6,5276,5143.4,4975.8,4864.2,4690.5,4458,4277.1,3882.3,3595.6
+        SSIC 855 - Other Education,2754.9,2470.5,2366.2,2253.4,2044.8,2254.7,1863.1,1853,1779,1717.3,1692.4,1509.7,1328.8,1107.8,982.6
+        SSIC 856 - Educational Support Services,432.6,466.1,390.7,429.7,368.9,397.6,418.3,373.4,370.8,318.4,339.9,323.8,301.7,253.2,231.7
+        SSIC 861 - Hospitals,15646.1,14283.4,12868.1,11482.7,10761.9,10766.1,10116.9,9478.5,8798.3,8105.2,7345.7,6620.3,5968.9,5330.1,4840.1
+        SSIC 86201 - Clinics And Other General Medical Services (Western),5120.6,5062.5,4880.4,4437.4,3223.7,3480,3142,3049.9,2952.1,2699.4,2469.6,2250.3,1965.7,1635.2,1421.1
+        SSIC 86202 - Clinics And Other General Medical Services (Non-Western),418.1,351.4,300,205.3,178.5,199,191.6,186.9,180,146.5,137.3,125.2,119.3,108,103.2
+        SSIC 86203 - Specialised Medical Services,3732.2,3394,3155.3,2890.7,2584.8,2798,2650.6,2501.4,2461,2322.8,2020.7,1875.6,1701,1500.7,1411.9
+        SSIC 86204/869 - Dental & Other Health Services,5776.6,5218.9,4877.9,4830.7,4055.2,3737.6,3423.4,3297.9,3166.1,2954.2,2587.2,2092.8,1713.6,1553.7,1396.8
+        SSIC 8701 - Residential Nursing Care Facilities,664,546.8,511.3,441.5,408.6,364.7,325.3,294.5,261.7,na,na,na,na,na,na
+        SSIC 8702 - Other Residential Care Services,208.2,179.3,194.1,176.7,197.8,188,171.6,166.5,152.8,na,na,na,na,na,na
+        SSIC 881 - Social Services Without Accommodation For The Elderly And Disabled,307.8,258.3,214.9,155.2,131.4,139.1,154.1,154.8,137.5,110.2,91.7,75.4,63.5,41.8,22.8
+        SSIC 889 - Other Social Services Without Accommodation,500.9,493.6,461.8,416.7,361.6,337.4,301.9,275.8,255.1,272.3,223.8,205.5,186.8,178.7,123.5
+        SSIC 90 - Arts Creation And Performing Arts Activities,270.5,237,183.4,125.7,111,183.6,183.2,164.6,169.5,171.9,168.3,140.9,133.7,207.1,173.2
+"        SSIC 91 - Libraries, Archives, Museums & Other Cultural Activities",544.6,498.5,296.2,164.6,154.3,459.3,462.3,420.8,388.4,395.7,381.4,368.1,253.6,208.5,188.9
+        SSIC 92 - Gambling & Betting Activities,5747.5,5290.9,4010.8,2886.5,2510.4,5068.3,5056.9,4895.5,4452.6,4518.8,5030.6,4990.1,5167.3,5497.4,4063.6
+        SSIC 931 - Sports Activities,1723,1547.2,1055.4,714.8,655.2,1137.2,1016.1,1059,950,998,843.5,735.8,786.9,620.1,561.6
+        SSIC 932 - Other Amusement & Recreation Activities,2033.9,1868.5,1453.4,942.7,974.3,1723.5,1677,1727.5,1704.2,1752.9,1726.1,1663,1650.5,1496.2,1350.6
+"        SSIC 941 - Activities Of Business, Employers & Professional Membership Organisations",280.9,232,225.3,195.8,191.5,249.1,326.7,290.1,336.7,307.9,258.1,234.1,197.1,178.8,172.2
+        SSIC 942/9 - Activities Of Trade Unions & Other Membership Organisations,711.6,581.9,556.5,558.1,460.6,610.2,579.4,601.7,579.6,577.4,495.9,437.1,425.3,414.4,365.8
+        SSIC 951 - Repair Of Computers And Communications Equipment,291.6,296.6,303.9,310.3,270.1,231.9,359.9,372.1,397.5,386.7,390.2,454,334.9,334.3,298.7
+        SSIC 9521 - Repair Of Consumer Electronics,53.7,48.3,42.1,34,33,59.1,60.7,66.3,68.3,65.3,64.7,54.5,51.7,53.9,29.4
+        SSIC 9522 - Repair Of Household Appliances And Home & Garden Equipment,233.3,226.8,208.6,166.7,164.6,168.4,172.1,172.1,165.1,137.5,130.6,130.2,133.6,131.9,136.2
+        SSIC 9523 - Repair Of Footwear & Leather Goods,8.2,8.1,8.1,7.1,9.7,10.3,10.8,9.6,8.5,8.8,10.4,9.6,9.1,8.9,8.5
+        SSIC 9524 - Repair Of Furniture & Home Furnishings,10.1,11.9,11.5,11.7,12.6,13,14.8,14.2,17.2,15.9,15.3,15.9,12.9,13.4,13.1
+        SSIC 9529 - Repair Of Other Personal & Household Goods,40.4,40.2,38.9,35,29.5,36.9,33.9,36.8,36.5,35.8,30.5,26.2,23.6,24,26
+        SSIC 95301 - Repair & Maintenance Of Motor Vehicles,1260.5,1188.8,972.5,766.7,756.4,906.2,1071.9,1113.9,1124.2,1043.8,1055.3,1011.6,1057.5,979.6,929.1
+        SSIC 95302 - Car Washing & Related Services,77,71.5,69,61.5,45.1,51.6,51,48.9,47.3,50.3,53.7,41.2,39.7,40.1,37.1
+        SSIC 95303 - Motor Vehicle Inspection & Valuation Services,130.7,108.2,110.9,111.6,100.8,107.2,117.1,112.5,126.8,119.3,103.2,95.4,82.3,73.6,68
+        SSIC 9601 - Washing And (Dry-) Cleaning Of Textile & Fur Products,433.4,359.5,325.6,253.6,267.9,329,291.1,274.4,272.6,241.6,236.1,228.2,223.1,201.7,181
+"        SSIC 9602 - Hairdressing, Beauty And Other Personal Care Services",3381.1,3394,2642.5,2333.6,1919.7,2173.8,2050.6,1985.1,1838,1598.8,1565.7,1453.4,1407.4,1419.3,1351.9
+        SSIC 9603 - Funeral & Related Services,247.8,304.7,251.8,184.6,124.5,166.9,203.9,182.8,194.2,126.9,118.1,91.5,92.5,83.3,79.2
+        SSIC 9604 - Wedding & Related Services,86.5,87.4,89.2,90.2,76.5,91.4,83.8,81.6,77.6,58.7,54.1,50.5,51.1,49.3,52.1
+        SSIC 9609 - Other Personal Service Nec,401.5,402.1,380.3,300,257.7,332.4,328.3,270.6,278.6,290,255.6,235.4,220.4,236.1,226.2
+"Operating Expenditure, Total Services Sector",5588553.1,5246263.9,5537612.4,4588869.9,3502622,3805837.8,3764688.3,3253253.7,2719820.8,2810779.2,2997768.6,2849030.1,2577449.3,2360064.4,1865899
+    SSIC 46 - Total Wholesale Trade,4329392.5,4120320.6,4580492.6,3732983,2768164.7,3069596.1,3101130.9,2639594.9,2153467.5,2269835.7,2471682.3,2378483.6,2129921.2,1956648.2,1489271.5
+        SSIC 46100 - Wholesale On A Fee Or Commission Basis,835.4,1899.6,3866.8,1013.8,733.7,1323.5,1172.1,635.8,585.6,682.1,498.8,539.5,539.5,612.2,528.7
+        SSIC 4621/2 - Agricultural Raw Materials & Live Animals,191496,192371,229048.5,191614.9,167510.6,157109.9,138614.2,178437.9,157371.6,166652.2,160585.7,156410.5,132803.3,132570,93295.4
+        SSIC 46301 - Fruits & Vegetables (Including Fresh And Frozen),5683.5,5805.8,6060.1,6023.1,5923.3,5132.8,4808.8,4726,4480.4,4151.8,3302.4,2288,1469.5,1811.4,1606.3
+"        SSIC 46302 - Livestock, Meat, Poultry, Eggs & Seafood (Including Fresh And Frozen)",5507.9,5770.9,7310.9,6093.3,5924.3,5499.5,5893.9,5923.4,5272.1,5137.6,5269.9,5501.8,5536.1,5471,5338.4
+"        SSIC 46303 - A General Line (Wide Range) Of Groceries (e.g. Cereals, Sugar, Edible Oils, Sauces And Dairy Products)",78157.4,74142.8,86543.4,93531.2,72136.7,69245.3,74042.6,69305.6,60939.1,59224.6,54739.4,53774.7,57078.7,54456.5,44359
+"        SSIC 46304/5 - Confectionery & Bakery Products, Ice-Cream",2362.1,2482.8,2245,1918.5,1412.5,1136.1,1026.2,1133.3,1427.4,1595,1396.2,1798.5,2504.3,2439.3,2428
+        SSIC 46306 - Health Supplements,2095.3,2047.1,2182.1,1791.3,1070.3,2422.4,2787.1,2515.1,1878.5,1336,1413.7,1673.1,1122.1,1034.9,953
+"        SSIC 46307 - Liquor, Soft Drinks & Beverages",8265.5,9605.9,9204.1,9467.8,8656.9,8678.8,7581.4,8236.8,7750.6,7988.5,7412.4,7392.6,5941.5,5487.2,4572.5
+"        SSIC 46308/9 - Tobacco Products, Food, Beverages & Tobacco Nec (Including Dried Or Canned)",10455.7,10031.9,10246.1,8945.2,8624.2,7840.3,8274.2,7949.1,7221.6,6724.5,6004.9,5368.8,5160.6,4976,4738
+"        SSIC 46411/2/3 - Textiles & Leathers, Adults' Clothing, Children And Infants' Clothing (Including Products And Accessories For Infants)",59986.9,50682.7,39058.8,12313.7,6576.6,6979.1,6501.2,5543,4696.2,4750.3,4758.7,4483.5,3688.5,3601.7,3578.4
+"        SSIC 46414/5/6 - Footwear, Bags, Luggage & Travel Accessories, Sewing & Clothing Accessories",6414.5,7126.5,6368.1,5408.2,5555.6,5281.4,5202.7,4625.7,2812.8,1681.6,1648,1569.8,1374.5,1241.9,1079.1
+        SSIC 46421/2 - Jewellery Made From Precious Metals And Stones & Costume Jewellery,6127.8,6984.4,6296.2,4778.9,5027.4,7336,8602.3,8593.4,7903,7005.2,6740,5663.6,6725,4004.7,3323.1
+        SSIC 46423 - Watches & Clocks,3407.3,3009,2956.9,2320.6,2194.7,2911,2902.8,2504.6,2479,2730,2518.3,2274.6,2390,2286.5,1842.4
+"        SSIC 46424/9 - Cosmetics & Toiletries, Personal Effects Nec",13957.4,16091.4,15673.8,14152,14611.3,11674.7,11371.8,10336.1,10003.2,9775.7,10795.3,9216.3,5642.7,7127,8027.5
+"        SSIC 46431 - Furniture (Including Mattresses, Cushions)",3198.3,2341.1,2724.3,3366.1,2746.5,2444,3255.7,3942.1,3798.2,4187.6,2879.5,2707.3,2504,2421.4,2462.8
+"        SSIC 46432 - Furnishings (Including Curtains, Carpets, Wallpaper)",482.2,450.3,401.9,279.6,325.7,382,364.6,375,417.8,422.7,390.2,403.8,364.8,439.5,442.4
+        SSIC 46433 - Lighting & Lighting Accessories,875,829.5,703.9,675.9,841.8,976.4,990.8,1003.9,1110.7,731.4,844.5,802.8,675.1,696.6,660.9
+"        SSIC 46434 - Crockery, Cutlery & Kitchen Utensils",2490.8,2260.2,2897.5,2812.5,2415.9,2472.8,2650.8,2701.9,2306.2,2325.8,407,398.9,388,410.8,374.7
+"        SSIC 46435/6 - Household Electrical Appliances & Equipment, Audio & Video Equipment Except Electrical & Electronic Components",35313.5,32448.9,38188.6,38079.7,32656.4,30818.1,31029.4,30653.3,25822.2,24971.2,22899.3,23302.7,25357.8,20196.7,22627.6
+"        SSIC 46439 - Furniture, Home Furnishings & Other Household Equipment Nec",971.4,835.1,1106.9,918.4,874.3,1029.8,752.1,493.7,441,410.2,444.2,388.6,463.6,473.4,406.1
+        SSIC 4644 - Sporting & Other Recreational Goods,11260.3,10244.6,11735.5,10442.3,8541,9913.5,9495.5,8862.6,7649.2,6711.6,2310.7,2379.2,2259,2219.3,2194.3
+        SSIC 4645 - Handicrafts & Fancy Goods,249.5,240.1,258.4,262.7,243.8,325.2,365.7,312.6,360.9,310.6,323,296.4,306.1,301.5,249.8
+        SSIC 4646 - Medicinal & Pharmaceutical Products,31929.4,30108.4,29406.9,27270.2,25603.6,25046,22810.2,25749.9,22983.2,22970.4,22320.9,22177.5,22855.2,16742.1,11892.2
+"        SSIC 4647 - Paper, Paper-Related Products, Stationery, Cellophane Products & Packaging Materials",7469.5,8256.6,10676.3,8803.6,8054.7,9557.2,9933.7,9057.2,7048.4,6574.5,6273.2,6106.6,5977.5,5642.5,5770.2
+        SSIC 4649 - Other Household Goods,2759.7,2540.2,2635.4,2689.1,2462.9,2702.5,2772.9,2506.7,2356.5,2721.3,2966.8,2776.4,2014.6,2228.2,1921.7
+"        SSIC 4651/2 - Computers, Computer Peripheral Equipment & Software, Electronic & Telecommunications Equipment & Parts",656516.6,605824.3,638000,626041.6,448271.6,339897.8,376892.8,356923.6,318217.4,328585.5,300600.5,278292.9,256606.7,241660.2,220698.7
+"        SSIC 46530/46549 - Agricultural Machinery, Equipment & Supplies, Industrial, Construction & Related Machinery & Equipment Nec",4720.6,5844.1,5957.1,6376.2,6583.4,5253.7,5396.6,5708.5,5486.3,6763.8,6116.6,6003.3,6223.3,7066.8,6475.8
+        SSIC 46541 - Industrial Machinery & Equipment (e.g. Industrial Crane),19696.5,20130.7,18250.7,15858.9,16522.5,14444.6,14631.3,15424.5,15513.7,15921.6,16710.1,18090.1,17052.2,16781.3,16068.1
+"        SSIC 46542/3 - Construction Equipment, Lifts, Escalators & Industrial & Office Air-Conditioning Equipment",15050.2,16885.4,16866.6,13404,11055.2,12736.8,14101.2,11204,9637.7,10880.1,11172.8,11218.3,19060.5,16302.1,13863.3
+        SSIC 46544 - Electrical & Wiring Accessories,11988.9,11998,12496.8,12189.3,10899.9,10812.8,12272.5,11128.3,8555.2,7748,8083.9,7397.4,7608.8,7117.5,6581.6
+        SSIC 46551 - Marine Equipment & Accessories,3815.7,3739.8,3509.1,3466.2,3532.2,3572.1,3103.1,3179.7,3443.6,3673.2,3548.3,3210.9,3210.9,3211.3,3034.4
+"        SSIC 46552/9 - Aircraft Equipment & Supplies, Transport Equipment Except Motor Vehicles & Motorcycles Nec",2677.5,2218.2,1880.1,1678.7,1710.1,2294.7,2157.1,1756.9,1644.9,1693.7,1755.7,1743.4,1678.7,1771.1,1659.8
+"        SSIC 4656 - Motor Vehicles, Parts & Accessories",48894.2,44825.8,47099.9,41375.5,31715.2,42068.9,44510.5,44403.6,42784.8,39671.4,38792.2,39838,41908,34542.3,34478
+        SSIC 46591 - Office Machinery & Equipment,4793.1,5194,5636.5,4403.6,4448.9,4857.2,5738.6,6253.6,6255.5,6693.5,7010.9,7060.7,8041,8083.7,7563.3
+"        SSIC 46592 - Medical, Professional, Scientific & Precision Equipment",25002.2,23834.6,22402.3,24541.1,20271,18414.3,17705.8,15877.1,13778.2,11259.6,10762.4,8045.5,8033.7,6695.6,6799.6
+"        SSIC 46593/4 - Commercial Food Service Equipment, Service Establishment Equipment & Supplies",887.8,806.2,823.5,716.3,662.8,925.6,719.9,680.5,556.5,454.5,428.5,415.9,349.2,309.6,237.4
+        SSIC 46595 - Security & Safety Equipment,1762.1,1408.8,1411.8,1394.1,1316.4,1412.4,1361.4,1229.6,1336,1330,1121.5,1119.9,1050.8,1034.5,1057.1
+        SSIC 46599 - Other Machinery & Equipment Nec,5527.8,4355.7,3836.1,3323.8,3046.7,4594.9,3017.2,2240,2234.7,1864.3,1902.9,1832.9,1669.8,1572,2045.3
+        SSIC 4661 - Fuels & Related Products,2060500.4,1994298.3,2301411.6,1668200.7,1106548.8,1545280.9,1612987.7,1179352,869344.2,973141.8,1245700.1,1205376.2,1055150.5,940159.7,650097.1
+        SSIC 46620 - Metals & Metal Ores (e.g. Steel Pipes) Except General Hardware,424370.4,360614.4,388387.3,389990.2,353943.4,313902.2,281349.3,278297.6,235535.8,224595.9,207012.3,178367.8,124872.9,109976,71695.1
+"        SSIC 46631 - Logs, Sawn Timber, Plywood & Related Products",4484.2,4756.9,6428.8,5047.2,4100.8,4553.8,4165.2,4510.2,4292.9,4543.6,4630,4008.8,3580,4025,4117.8
+        SSIC 46632 - General Hardware,1901.2,1710,2245.7,2197.8,2254.4,2151.1,2149,2044.1,1999.5,2007.3,2049.9,2338.6,2552.3,2473.6,2451.4
+        SSIC 46633 - Structural Clay & Concrete Products,566.1,589.6,680.4,568.9,475.6,634.7,642.9,737.2,680.4,802.9,969.9,796.2,554.3,745.4,889.6
+        SSIC 46634/5 - Paints & Glass,2063.4,1807.3,2095.9,2147.6,1882.4,1955.5,1842.5,1881.7,1646.4,1712.2,1527.2,862.5,834.9,762.1,736.5
+"        SSIC 46639 - Construction Materials, Hardware, Plumbing & Heating Equipment & Supplies Nec",18315,19965.7,19155.7,12953.6,10126.5,10082.9,8980.7,8502.5,8744.2,7817.9,7359.4,6172.7,6117.6,4660.3,3957.3
+        SSIC 46641/2 - Basic Industrial Chemicals (Except Fertilisers) & Chemical Fertilisers,24444.3,25192.9,38143,33585.6,25581.1,27393.6,29086.9,29619.4,26512.5,28421.1,28573.1,27836.6,25169,24320.4,20772.9
+        SSIC 46643 - Petrochemical Products,143082.7,153809.1,155543.5,110606.5,76946.8,91576.7,93939.3,74323.9,57975,62734.4,53139.6,64553,58292.9,56509.6,39935.8
+        SSIC 46649 - Chemicals & Chemical Products Nec,21415.6,18476.2,20298.4,21861,19838.5,19868.8,18537.9,17570.3,15884.8,13152.6,12226.7,11192.6,11915.5,11040,9745.2
+"        SSIC 4665 - Other Intermediate Products, Waste & Scrap",3572.4,4067.3,4166.9,3917.8,3704.8,4338.9,4916.7,4054.1,3270.8,3156.9,2851.9,2791.1,2705.7,3591,3400.6
+        SSIC 4666 - Ship Chandlers & Ship Bunkering,78624.4,79485.3,97267.6,58840.5,41358.2,55638.4,57199.6,51814.8,40505.1,47535.9,64743.3,70606.3,71332.6,68436.2,50814.2
+        SSIC 46900 - Non-Specialised Wholesale Trade,252966.8,229875.1,238700.6,213323.6,170642.8,152694.3,120522.7,114752.7,108515.9,111901.7,103749.5,99616,99207,104908.3,85423
+    SSIC 47 - Total Retail Trade,53304.7,51518.4,49845.6,45803.5,40630.7,46267.9,46411.6,46981.9,46021.9,44536.9,43112,42027.7,41196.5,38857.8,36020
+        SSIC 47101 - Supermarkets & Hypermarkets,8118.6,8013,8078.3,8380.2,8155.1,6476,6334.6,6124.9,6051.8,5958.1,5519.5,5248.2,4971,4685.7,4489
+"        SSIC 47102 - Mini-Marts, Convenience Stores & Provision Shops",1805.5,1880.6,1804.4,1833.8,1989.4,1855.5,1730.2,1871.5,1965.9,1929.2,1990,1953.5,1908.5,1775.3,1749.1
+        SSIC 47103 - Department Stores,2362.8,2489.7,2400.7,1913.1,1749.2,2690.5,2715.4,2712.1,2792.8,2930.2,2980.2,3040.9,3023.7,2765.3,2705
+        SSIC 47109 - Non-Specialised Stores Nec,1009.7,908.1,765.9,565.7,538.3,649.2,585,594.5,595.8,601.4,455.3,368.8,365.2,354.7,347
+"        SSIC 4721/4722/4723 - Food, Beverages & Tobacco Products",2464.4,2141.5,1805.5,1368,1445.1,1997.8,1967.6,1895.8,1730.4,1712.6,1698.9,1582.6,1523.6,1402.5,1303.4
+        SSIC 47311 - Motor Vehicles Except Motorcycles & Scooters,7657.8,6844.9,6594.7,7813.6,6215.4,7208,7515.5,8930,8618,6591.4,5493.9,5084.2,6052.1,5597.6,6144.5
+        SSIC 47312 - Motorcycles & Scooters,271.1,259.8,250.4,213.9,211.5,264.1,238.8,237.8,221.1,216.6,213.6,176.2,148.6,139.4,169.1
+"        SSIC 47313/47314 - Tyres, Batteries, Spare Parts & Accessories For Motor Vehicles",510.7,484.3,483.9,426.3,423.4,485.7,516.9,506.6,490.1,498.2,521.7,563.7,529,500,473.6
+        SSIC 47320 - Automotive Fuel,2087.4,2111.2,2301.1,1912.8,1477.8,1967.6,1992.5,1871.6,1681.3,1772.6,2262.6,2249.7,2196.4,2115.5,1849.4
+"        SSIC 4741 - Computers, Peripheral Equipment, Software & Telecommunications Equipment",3433.5,3590.8,3587.7,3396.3,2709.7,2547.4,2590.8,2674.7,2813.7,3107.1,3122.2,3315.2,3257.5,3245.1,2437.2
+        SSIC 47535 - Household Electrical Appliances & Equipment,2128.5,2021.3,2034.6,1859.7,1647.3,1688.2,1834.3,1848.4,1779.6,1829.2,1798.6,1910.3,1940.3,2113.1,1880.6
+"        SSIC 47510/47531/47532 - Textiles, Furniture & Furnishings",1200,1201.6,1352.5,1204.7,1118.7,1154.7,1232.6,1227,1217.5,1215.2,1191.9,1198.9,1194.3,1024.2,886.7
+"        SSIC 4752 - Hardware, Paints & Glass",493.7,511.5,530.9,393.4,324.5,299.8,269.3,252.2,252.7,265.3,231.5,220.5,249.5,200.8,224.9
+"        SSIC 47533/47534/47537/47539 - Lighting, Lighting Accessories, Crockery, Cutlery, Kitchen Utensils, Security, Safety Equipment & Other Household Articles Nec",651.9,576.1,550.9,461.8,407.3,428.4,483.7,475.8,460.2,417.5,449.4,423,474.4,439.4,411.8
+"        SSIC 47610 - Books, Newspapers & Stationery",402.9,417.8,427.7,378.5,384.7,531.1,545.1,590.2,669,758.6,873.8,833.6,848,761.8,753.3
+"        SSIC 47620/47630/47640/47650 - Music & Video Recordings (e.g. Dvds, Blu-Ray Discs), Sporting Equipment, Games & Toys, Musical Instruments & Scores",1035.2,996.7,991.1,839.5,697.8,766.4,779,828.9,797.2,774.2,784.4,780.1,790.6,800.2,762.4
+"        SSIC 47711/47712 - Clothing For Adults, Children & Infants",2482.4,2333.7,2259.5,1796.7,1625.4,2687.7,2631.1,2818.8,2964.4,2953.5,3044.2,2960.8,2589.9,2463.2,2409
+"        SSIC 47713/47714/47715/47719 - Footwear, Bags, Luggage & Travel Accessories, Sewing, Clothing Accessories & Other Clothing, Footwear & Leather Articles Nec",3197,3470.3,3217.4,2437.1,1919.8,2637.6,2446.9,2274.8,2140.8,1981.2,1833.6,1676.3,1515,1285,994
+        SSIC 47721 - Cosmetics & Toiletries,2275.1,2131,1837.2,1561.2,1531.9,2257.8,2207.6,2002.2,1725.8,1711.9,1601.1,1469,1156.5,1053.3,989.3
+"        SSIC 47722/47723/47729 - Pharmacies, Drug Stores, Chinese Medicine Shops, Pharmaceutical & Medical Goods Nec",1225.4,1247,1258.9,1026,998.7,997,1047.9,1028.9,1046.4,1056.1,971.2,917.8,891.7,842.1,775.6
+        SSIC 47731 - Jewellery Made From Precious Metals And Stones,4110.8,3571.6,3184.2,2548.1,2175.7,3023.6,3087.5,2754.4,2632.8,2631.2,2392.4,2446.5,2302.1,2085.3,1558.7
+        SSIC 47732 - Costume Jewellery,144.5,135.9,128.6,100.6,101.4,110.8,87.5,86.2,105.7,149.4,158.4,135.9,121.6,117.2,101.6
+"        SSIC 47733/47739 - Watches, Clocks & Personal Effects Nec",2101.4,2046.3,1979.3,1619.6,1061.7,1483.2,1536.4,1492.3,1405.6,1501.6,1630.9,1592.2,1439.6,1434.5,1137.1
+        SSIC 4775 - Optical & Photographic Goods,635.2,685.3,673.4,676.4,680.9,805.8,808.1,713.8,689.8,717.1,709.7,687.9,667.6,704.7,647.8
+"        SSIC 4774/4776/4777 - Handicrafts & Fancy Goods, Flowers, Plants & Pet Animals, Other Goods & Second-Hand Goods",1499.1,1448.3,1346.6,1076.7,1040.1,1254.1,1227.3,1168.6,1173.7,1257.4,1183.1,1191.9,1039.8,951.8,819.8
+    SSIC 49-53 - Total Transportation & Storage,278419.5,248726.9,265134.8,236184.2,161211.2,164654.6,152625.3,122655.7,112219.5,119331.7,122931.2,108005.8,101644.9,97550.6,86419.2
+"        SSIC 4910/4921/4922 - Passenger And Freight Rail Transport, Passenger Land Transport & Aerial Cableways",4930.3,4789.5,4483.3,3905.3,3584.8,4579.4,4358.3,4700.4,4206.9,3828.1,3647.9,3376.9,3098.5,2832.7,2601.6
+        SSIC 49231 - Freight Transport By Road,1281.8,1321.1,1366.5,1233.1,1139.5,1226.4,1299.3,1301.9,1215.3,1292.6,1266.9,1195,1256.2,1234.2,1184.5
+        SSIC 49232 - Moving Services,290.6,294,276.9,206.4,206.3,217.1,232.3,253.7,258.6,222.4,220.5,206.6,179.2,184.7,198.7
+        SSIC 49233-Rental And Leasing Of Freight Land Transport Vehicle (e.g. Lorries And Trucks) With Driver,96.6,104.2,129.9,101.1,84.5,89.7,88.5,66.3,57.9,62.3,52.3,62.2,58.4,58.5,68.5
+        SSIC 5001 - Passenger Water Transport,301.3,260.3,190.3,146.2,149,233.2,279.1,205.9,180,166.2,190.2,189.9,175.5,174.8,173.9
+        SSIC 5002 - Freight Water Transport,190025.4,170303,185468.8,174366.6,110041.5,109663.4,100316.1,74420.6,67421.8,74742.9,79443.5,65251.9,61331.1,58972.9,50754.2
+        SSIC 51 - Air Transport,20146.7,18755.6,17125.9,8625.1,8945.4,17388,17470,16885.7,15614.6,15611.7,17339.8,17803.9,17613,16978.3,15433.2
+        SSIC 52101 - General Warehousing,1602.3,1712.4,1593.9,1352.7,1362.4,1196.8,1176.7,1239.1,1237.6,1123.8,1071.9,1007.8,1135.8,1052.5,1039.5
+        SSIC 52102 - Refrigerated Warehousing And Storage,115.2,105.9,99.8,80.5,78.1,65.7,67.8,55.8,55.2,52.9,65.1,89.9,71.8,66.8,57
+        SSIC 52103 - Storage For Dangerous Goods,1098.9,947.4,811.1,766.8,720.5,594.7,601.7,627.2,580.5,556.2,535.1,498.5,487.8,496.5,489
+"        SSIC 52109 - Specialised Storage Nec (e.g. Wine Warehousing, Document Storage And Warehousing)",119.8,114.2,107.6,119.3,141.1,142,160,165.8,166.6,174.8,171.9,153.7,138.6,117.2,108
+        SSIC 52211 - Carpark Management & Operation Services,622.4,649.2,649.8,635.7,601.4,592.5,645.2,651.5,606.8,515.7,433.9,390.7,383.2,356.5,347.7
+"        SSIC 52212/52219 - Motor Vehicle Towing Services, Supporting Services To Land Transport Nec",223.6,173.7,150.9,141.6,140.8,134.9,143.6,151.2,121.7,108.6,111.8,100.5,88.9,77.8,72.1
+        SSIC 5222 - Supporting Services To Water Transport,19649.8,17253.8,17533.5,15247.6,13227.8,11164.1,9547.6,8683.2,7537.4,7652.7,6512.4,6632.1,6001.8,6292.3,5916.6
+        SSIC 5223 - Supporting Services To Air Transport,3787.2,3405.7,3067.8,2259.5,2267.8,2916.7,2765.9,2406.4,2244.8,2161.8,2096.9,2074.6,1942.3,1826.7,1702.3
+        SSIC 5224 - Cargo Handling,786.8,796.3,780,724.5,643,684.2,619.1,733.5,771.3,927.3,1018,990.9,867.6,756.6,791.9
+        SSIC 5225 - Marine Surveying Services & Classification Societies,615.3,543.2,477.8,410.4,408,404.3,398.8,416,454.1,533.4,502.1,473.3,442.3,456,388.7
+        SSIC 5229 - Other Transportation Support Activities,27938.9,22222.7,26553.9,22053.4,14560.5,10800.5,10111.9,7477,7518.6,7750.5,6496.3,5815.9,4724.6,4007.5,3590.1
+        SSIC 53 - Postal & Courier,4786.5,4974.7,4266.9,3808.7,2908.8,2561.1,2343.6,2214.5,1970,1847.7,1754.7,1691.5,1648.4,1607.9,1501.8
+    SSIC 55-56 - Total Accommodation & Food Services,28494.9,26623.8,23783.1,18518.5,17745.7,22230.4,21458.6,20326.8,19503.6,18587.7,18112.8,16478.7,15202.6,13775.3,11984
+        SSIC 55101 - Hotels,6784.7,6076.7,4775.7,3583.4,3860.5,5523.8,5263.2,5007,4799.8,4753.7,4555.4,4311.8,3983.9,3681,3152.5
+        SSIC 55109/55900 - Other Accommodation,1013.6,797.1,730.6,699,708,911.3,879,899.1,934.7,776.1,935.7,559.7,532.7,500.4,400.3
+        SSIC 56111 - Restaurants,9963.1,9735.6,9173.6,6783.7,6040.6,7319.1,7219.5,6706.7,6388.8,6111.3,5808.1,5478.3,4826.5,4010.5,3437.4
+        SSIC 56112/56123 - Cafes & Food And Drinks Kiosks,2973.4,2810.1,2687.7,2149.2,1869.3,2232.2,1982.6,1861.4,1768,1585,1597.7,1265.7,1149.5,1101.6,1087.2
+        SSIC 56121 - Fast Food Outlets,1927.8,1806.8,1638.6,1434.5,1351.5,1528.5,1391.8,1249.5,1151.9,1134.7,1133.4,1040.1,990.6,940.2,821.4
+"        SSIC 56122 - Operators Of Food Courts, Hawker Centres, Coffees Shops And Canteens (With Mainly Food And Beverage Income)",3670.8,3542.3,3247.6,2745.9,2578.7,2953.1,3027.4,2935.5,2843.2,2701.8,2538.8,2341.3,2332.5,2283,1873.2
+        SSIC 56130 - Pubs,290.2,229.3,220.1,162.3,253.5,460.6,394.9,369.8,349.2,324.8,349.8,418.1,361.2,331.4,341.5
+        SSIC 56200 - Food Caterers,1871.2,1626,1309.4,960.5,1083.5,1301.9,1300.2,1297.7,1268,1200.3,1193.9,1063.7,1025.8,927.2,870.5
+    SSIC 58-63 - Total Information & Communications,240571.7,213685.9,190977.5,163251.1,126621.2,101369.5,89726.2,76617.8,64764.2,57884.7,50689.4,45000.1,41532.5,37078.2,33940.5
+        SSIC 58110 - Book Publishing,1121.1,723,713.1,730.9,457.2,416.7,359.1,392.8,372.6,372.3,389.9,348,348.2,360,388
+        SSIC 58120 - Publishing Of Directories & Mailing Lists,192.4,184.9,191.2,189.4,207.6,145.1,175.1,368.8,556.7,623.3,602.4,539.1,546.8,493.5,516.4
+"        SSIC 5813/5819 - Publishing Of News, Journals, Periodicals And Other Publishing Activities",784.5,766.4,917,790.2,818.7,808.1,1091,1159,1175.9,1085.4,1112.7,1073.6,1073.5,1060.5,1066.5
+        SSIC 5820 - Software Publishing,23030.5,18226.7,13595.5,10722.8,8358.8,5801.2,10425.3,12133.5,9717.5,9828.8,9878.1,9285.8,9539.8,8431.8,7856.6
+"        SSIC 59111/2 - Movie, Advertisements, Corporate Videos & Event Videos Production",695.6,741.3,649.8,562.8,410,375.1,327,249.6,203.3,187.6,159.4,151.2,103,88.9,90.2
+"        SSIC 59113 - Production Of Dramas, Variety Shows And Documentaries",616.1,580.6,588.2,566.8,570.4,522.6,493.7,483.9,547.3,529.3,477.2,439.2,412,396.8,372.7
+"        SSIC 59114/9 - Animation, Movie, Video, Television And Other Programme Production Activities Nec",272.7,270.4,228.1,336.6,149.4,103.3,126.2,134.6,142,116.4,82.5,85.2,92.2,83.4,89.6
+"        SSIC 5912 - Movie, Video, Television And Other Programme Post-Production Activities",218.2,238.3,218.7,189.3,157.5,144.8,122.3,87.2,68.1,54.4,65.9,58.4,43.1,37.9,29.6
+"        SSIC 5913 - Movie, Video, Television & Other Programme Distribution Activities",295.3,316.3,207.7,170.8,191.3,326.1,329.1,326.2,450,297.5,266.4,258.8,296.2,336.4,292.1
+        SSIC 5914 - Movie Projection Activities,181.9,204.1,202.3,167.3,142.9,240.9,251.2,249,247.6,571.7,543,460.6,426.9,412.8,397.4
+        SSIC 5920 - Sound Recording & Music Publishing Activities,184.7,173.5,104.4,89.8,72.9,51.3,50,44.5,33.5,28.6,29.1,20.3,20.1,14.6,12.1
+        SSIC 60 - Broadcasting And Content Production,30992,27017.7,22168.3,16545.5,10331.1,5963.2,4045.5,3078.6,2263.9,2243.2,1820.8,2195.4,2103.1,2021.2,1827.4
+        SSIC 6101 - Telecommunications Network Operation,8441.2,8076.3,8219.6,7824.7,7390.4,7457.9,7683.4,8039.2,7846.2,8375.7,8188.8,7924.5,8011.8,7659.2,7425
+        SSIC 6102 - Telecommunications Resellers,6626.7,6049.5,5026.7,4788.1,4350.6,4654.4,3965.8,3439.8,3594,3456.5,3272.7,3134.4,2979.2,3013.9,2719.3
+        SSIC 6109 - Other Telecommunications Activities,1318.1,1162.1,909.8,632.1,780.5,610.5,394.7,374.8,433.9,492.4,467.9,376.6,438.8,344.5,297.3
+        SSIC 6201 - Computer Programming Activities,30737.3,28088.4,20289.4,15058.4,11129.2,7683.7,7875,6853.5,6315.6,5764.7,4901.8,4556.7,4638,4063.1,3940.3
+        SSIC 6202 - Information Technology Consultancy And Computer Facilities Management Activities,23572.7,21911.3,20893.7,17260.7,15612.1,12189.6,9506.7,7937,6968.4,6484.5,6090.9,5933.9,5246.6,4553.2,4149.1
+        SSIC 6209 - Other Information Technology And Computer Service Activities,9377.9,7239.6,7175.4,5456.3,4990.3,4042.4,4054.4,3189.6,3294.7,2651.4,2048.9,1635.1,1243.1,1124.8,885.8
+"        SSIC 631/639 - Data Analytics, Processing, Hosting & Related Activities; Internet Search Engines And Other Information Service Activities",85090.5,76695.2,72079.8,64225.2,47432.4,39712.1,31064.9,24159.5,17637.4,13007.5,8877.9,5373,3066.8,2023,1193.5
+        SSIC 6320 Excl 63204 - Online Marketplaces Operating On A Fee Or Commission Basis (Exclude Online Marketplaces For Travel And Accommodation Services),12110.3,11345,13741.9,14977.8,11049.7,7501.5,5107.8,1943.1,1304.4,259,159.9,158.3,112.1,57.3,16.5
+        SSIC 63204 - Online Marketplaces Operating On A Fee Or Commission Basis For Travel And Accommodation Services Provided By Third-Party,4712.1,3675.4,2856.9,1965.6,2018,2619.1,2278,1973.5,1591.1,1454.3,1253.2,992,791.1,501.3,375.1
+    SSIC 64-66 - Total Finance & Insurance,400410.2,353870.8,213101.5,199931.9,222033.3,225412.8,183281.8,175424.4,153598.1,137993.7,137790.9,115267.6,113377.3,96584.4,98051.7
+        SSIC 64120 - Full Banks,100946.8,90123.1,48389.7,27216.3,33874.7,49514.8,44011.9,35094.3,29121.2,25749.9,23109.8,20469.4,19504.2,17212.5,15643.5
+        SSIC 64130 - Wholesale Banks,44284.7,43873,22684.8,14892.3,18792.5,25220.5,21933.9,16917.8,15068.3,14427.8,13559.7,13362.7,15249.3,15537.4,14856.6
+        SSIC 64140 - Merchant Banks,6223.2,4710.9,3233.1,2417.6,2684.4,3498.1,3228.2,3007.6,2580.1,2755.3,2676.1,2888.6,3007.7,2980.2,2793.5
+        SSIC 64150 - Finance Companies (With Deposit Taking Functions),638.2,630.6,265,206.8,322.5,374.8,300.5,282.5,343.8,302,250.5,241.1,214.4,188.7,195.2
+"        SSIC 65 - Insurance, Reinsurance, Provident Funding And Pension Funding",122511.1,114026.4,56140.6,89275.5,103132.9,87233.1,61954.7,70022.4,57847,47776.1,55989.7,42440.1,45416.3,33062.8,40391.8
+"        SSIC 66210 - Risk And Damage Evaluation (e.g. Loss Adjusting, Claims Adjusting)",57,55.8,49.2,47.3,48.6,51.1,50.5,47.8,53.1,32.9,24.8,24.3,20.4,20.7,16.4
+        SSIC 66221 - Insurance Agencies And Agents (Including Financial Planning Services),1683.8,1421.2,1241.7,1194.2,1058.9,922,775.6,532.3,465.7,408.1,371.4,332.5,265.2,216.9,191
+        SSIC 66222 - Insurance Brokers,1114.8,946.5,833.1,728.5,696.9,643.7,653.2,704.1,665.5,656.6,649.6,589.3,477.8,398.4,342.9
+        SSIC 6629 - Other Activities Auxiliary To Insurance And Pension Funding,274.3,217.4,197.8,145.6,132.6,128.6,115,114.8,154.5,140.3,140.6,96,109.1,109,97.5
+        SSIC 6611/6612 - Securities And Commodities Exchange; Securities And Commodity Contract Brokerage,8198.6,7017.1,6363.7,6340.9,5085.2,4252.3,3818.2,3783.4,3951.2,3781.1,3682,3925,3711.2,3786,3907.7
+"        SSIC 66191 - Trustee, Fiduciary And Custody Services Firms (Including Nominee Companies, Trustees And Reit Trustees)",494.3,446.3,475.8,446.2,393,315.6,317.7,306.8,284,250.6,229.3,208.8,185.1,182.3,178.4
+        SSIC 66192 - Corporate Finance Advisory Services,783.3,756.1,832.5,755.7,718.4,631.3,574.8,596.4,614.5,640.4,656.5,676.7,638.9,677.7,481.7
+        SSIC 66193/66199 - Clearing And Settlement Of Financial Instruments And Other Activities Auxiliary To Financial Service Activities N.E.C. (e.g. Mortgage Advisory Firms),686,631.8,583.7,482.9,424,336.6,297.7,305.8,303.7,298.7,258.2,207.1,197.6,197.4,146.9
+        SSIC 66194 - Activities Auxiliary To Fund Management Activities (e.g. Independent Fund Administration Firms),331.3,297.9,229.6,147.6,142.8,85,60.5,43.1,30.4,27.8,26.2,21.5,19.1,15.2,7.7
+        SSIC 66195 - Transaction/Payment Processing Services,17815.5,16690,15844.5,14537.9,12951.1,10960.8,9722.2,9085.1,7789.2,7032.9,6158.8,5215.5,4836.3,3441.3,2548.4
+        SSIC 66301 - Traditional/Long-Only Asset/Portfolio Management,5504.8,5090.7,5304.9,5040.4,4257.7,4122.6,3839.6,3924.7,3475.4,3534.1,3418.7,3000.1,2654.9,2480.4,2261.5
+        SSIC 66302 - Hedge Fund Management,4895.8,3270.9,3479.5,3060,2894.9,1959.6,1545.8,1784.7,1374.4,1394.7,590.2,299.2,38.8,11.6,0
+        SSIC 66303 - Property Fund Management (Including Reit Management And Direct Property Fund Management),1273.9,1163,1132.9,1034.5,808.5,977.3,855.8,878.1,693.5,526.2,458.6,362.8,359.1,353.2,335.6
+        SSIC 66304 - Private Equity Firms,3005.9,1972,1969.8,1718.8,1286.6,1217.5,995.5,898.1,772.2,632.7,367.6,205.7,83.9,70.1,46.7
+        SSIC 66305/66306/66307/66309 - Other Fund Management Activities,2809.2,2685.8,2036,1606.3,1263.9,1115.2,869.7,901.8,831.2,733.7,863.4,736.6,634.4,540.7,437.7
+"        SSIC 64110/6420/64300/649 - Others (Central Bank; Holding Companies; Trusts, Funds And Similar Financial Entities; Other Financial Service Activities)",76877.7,57844.3,41813.7,28636.5,31063,31852.3,27360.7,26192.9,27179.2,26891.7,24309.1,19964.5,15753.6,15102.1,13171.1
+"    SSIC 68-82 - Total Real Estate, Professional And Administrative & Support Services",184300.7,164870.6,152510.5,136273,116987.8,125494.1,120683.5,124227.7,124882.3,119492.3,113270.9,106873.1,100194,88317.2,82023
+        SSIC 68 - Real Estate,49404.1,47704.3,41835.8,36483.8,32414.3,35445.7,33435.8,37822.7,38467.6,39875.8,37429.7,34798.7,33308.8,28657.2,29042.8
+        SSIC 6910 - Legal Services,3386.1,3285.9,3104,3009.4,2850.3,2516,2448.8,2390.9,2182.2,2003.3,1957.6,1841.4,1621.2,1373.6,1328.8
+"        SSIC 6920 - Accounting, Book-Keeping & Auditing Activities; Tax Consultancy",2932.5,2627.7,2114,1809.7,1882.3,2002.8,1870.2,1823.8,1587,1421,1365.1,1258.9,1202.7,1074.5,827.1
+        SSIC 7010 - Head Offices; Centralised Administrative Offices & Business Representative Offices,34622.1,23807.8,23716.4,21249.7,17456.5,17787.2,17365.2,17861.2,17155.6,14459.7,14836.8,14809.1,13900.9,12237.1,9017.7
+        SSIC 7020 - Management Consultancy,12359,11986.2,10740.6,9618.3,7821.2,7545.1,6856.5,6322.4,6075.8,5972.9,5579,5308.2,4907.3,4601.6,4109.1
+        SSIC 711 - Architectural & Engineering Activities And Related Technical Consultancy,25785.2,26602.1,26242.5,25747.2,20552.6,23133.6,20929.1,20158.5,23387,22288.2,21643.2,20973.9,19298.1,16164.4,16060.9
+        SSIC 7120 - Technical Testing & Analysis Services,2096.7,1944.7,1922.5,1805.9,1614.8,1566.1,824.8,728.9,714.4,697,635.6,662.5,595,566.6,548.2
+        SSIC 72 - Scientific Research & Development,7399.5,6815.4,5422.2,4805.3,4284,4127,5525.3,5494.2,5434.3,5207.4,4419.6,3744.9,3426.2,3275.2,2977.5
+        SSIC 7310 - Advertising,10067.9,6512.7,5511,4211.4,2997.7,3401.4,3176.7,2803.9,2733.8,2432.9,2351.2,2376.2,2308.8,2284.2,2261
+        SSIC 7320 - Market Research & Public Opinion Polling,857.5,887.2,890.2,783.2,745.1,746.3,614.1,529.7,524.6,573.4,509.2,485.6,464.9,431.6,397.4
+        SSIC 7411 - Industrial Design Activities,805.9,738.5,743.2,622.9,383.3,359,324.1,335.5,373,na,na,na,na,na,na
+        SSIC 7419 - Other Specialised Design Activities,3097.9,3016.6,2608,1928.6,1620.6,2088.8,1857.1,1932.4,1854.2,na,na,na,na,na,na
+        SSIC 7420 - Photographic Activities,180,170.2,176.5,150.9,142.2,162.5,141.4,151.3,134.9,na,na,na,na,na,na
+"        SSIC 7490 - Professional, Scientific & Technical Activities Nec",717.1,629,520.8,416.9,299.6,280.2,232.2,195.4,179.4,na,na,na,na,na,na
+        SSIC 7500 - Veterinary Activities,240.4,198,164.7,139.2,103.9,95.1,98.3,101.2,91.9,69.6,45.3,38.5,36.9,35.1,32.4
+        SSIC 771 - Rental & Leasing Of Land Transport Equipment,1909.4,1741.1,1648.7,1538.4,1422.3,1463.5,1486.8,1355.9,1112.8,954.2,848.5,739.8,563.5,541.5,431.7
+        SSIC 772 - Rental & Leasing Of Personal & Household Goods,75.4,70.5,66.6,91.8,89.5,120.6,136.8,138.9,133.2,156,166.9,129.2,146.5,135,138.1
+"        SSIC 773/4 - Rental & Leasing Of Other Machinery, Equipment & Tangible Goods, Leasing Of Non-Financial Intangible Assets",5970,5836.1,7536,6383.7,5322,5677.9,6642.8,7950.9,7629.5,7088.4,6011.1,5580.4,5177.9,4456.3,3807.7
+        SSIC 78 Excl 78103 - Employment Activities (Exclude Domestic Worker Employment Placement Agencies),6851.3,6359.4,6097.8,5541.1,4666.9,4483.8,4465.5,4389.3,4264.2,3801.9,3620.4,3209.1,2899.2,2757.8,2263.8
+        SSIC 78103 - Domestic Worker Employment Placement Agencies,212.6,198.3,159.6,139.7,137.5,161.8,140.8,144.1,132.4,132.1,144.3,137.7,143.7,122,123.5
+        SSIC 79 - Travel Agencies & Tour Operators,3316.4,2996.3,1617.5,943.2,1487.7,3248.9,3121.5,3335.2,3334.9,3090.1,3027.1,2867.5,2826.6,2974.2,2637.7
+        SSIC 80 - Security And Investigation Activities,2898.6,2746.4,2484.2,2504.3,2663.8,2379.6,2272.9,2033.5,1855.2,1730.3,1562.1,1443.1,1304.4,1187.8,1101
+        SSIC 812 - Cleaning Activities,3592.8,3286.7,3143.9,2785.7,2457.2,2602.8,2570.9,2478.1,2036.1,1745.4,1495.3,1295,1153.5,1015.5,893.8
+"        SSIC 813 - Landscape Planting, Care And Maintenance Service Activities",800.8,739,669.2,579,507.7,529.8,510.8,535.7,526.4,483.9,484.1,431.3,412.6,370.6,312.5
+"        SSIC 821/2 - Office Administrative & Support Services, Call Centres",1158.4,1129.1,1094.3,1103.9,1104.8,940.2,922.9,839.8,728.1,613.9,534.8,542.4,496,451.7,407.8
+"        SSIC 823 - Convention, Trade Show, Concert & Other Event Organisers",2506,1891.9,1504.1,1074.5,1153.6,1759.3,1838.2,1547,1462,1331.5,1315.9,1153.1,1282.3,1127.6,1058.2
+        SSIC 829 - Business Support Services Nec,1056.8,949.5,775.9,805.4,806.5,869.1,874.1,827.1,771.8,784.4,773.9,773.7,717.5,612.2,483.5
+"    SSIC 85-96 - Total Recreation, Community & Personal Services",73659,66646.9,61766.8,55924.6,49227.5,50812.4,49370.4,47424.5,45363.6,43116.5,40179.1,36893.4,34380.3,31252.6,28189
+"        SSIC 851/2 - Pre-Primary Education, Primary Education",3740.5,3167,3190.6,2559.1,2274.7,2017.5,1929.5,1720.7,1591.9,1436.3,1382.8,1240.5,1117.4,1041.7,949.6
+"        SSIC 8531/3/4/5/6 - General Secondary Education, Post-Secondary Non-Tertiary General Education, International And Foreign System Schools, Schools For Special Needs, Specialised Education Schools",3502.6,3336.8,3094.4,2962.1,2712,2715.1,2692.7,2420.7,2338.9,2254.7,2163.9,2010,1829.4,1677.4,1520.3
+        SSIC 8532 - Technical And Vocational (Secondary And Post-Secondary Non-Tertiary) Education,669.6,671.8,645.9,621.7,581.5,642.4,633.3,628.3,602.7,611.1,606.9,568.7,585.1,527.6,531.6
+        SSIC 854 - Tertiary Education,9168,8744.8,8232.1,7776.1,7159.4,7479.3,7463.7,7243.5,7034.7,6504.6,6330.5,6017.7,5759.1,5347.4,4904.7
+        SSIC 855 - Other Education,2876.1,2602.2,2516.3,2378.8,1959.3,2000.4,1735.7,1726.9,1653.8,1626,1568.2,1403.5,1259.5,1060.7,924.7
+        SSIC 856 - Educational Support Services,590.3,619.8,530.9,606.9,523.3,453.8,482.2,437.2,431.1,405.3,384.9,353,327.1,272.9,244
+        SSIC 861 - Hospitals,16008.4,14165,12962.6,11831.9,10861.4,10589.7,9994.8,9464.3,8982.8,8388.6,7435.7,6722.2,6012.8,5293.1,4719.8
+        SSIC 86201 - Clinics And Other General Medical Services (Western),4500.7,4538.6,4729.4,4149.6,2713.7,2839.8,2552.5,2534.7,2522.9,2368.4,2145.6,1717.3,1582.4,1303.8,1100.2
+        SSIC 86202 - Clinics And Other General Medical Services (Non-Western),449.6,355.7,350.6,242.9,209.9,186.1,196.5,178.8,168.2,139.8,129,121.7,115.6,101.6,97.7
+        SSIC 86203 - Specialised Medical Services,3083.7,2649.7,2594.9,2409.8,2214.5,2196.4,2155.2,2064.8,1913.2,1729.5,1612.4,1462.5,1377.8,1177.5,1085.4
+        SSIC 86204/869 - Dental & Other Health Services,5773.8,5099.1,4747.7,4606.9,4028.2,3717.2,3418.8,3332.3,3100.1,2950.4,2610.9,2104.8,1766.7,1598.4,1466.1
+        SSIC 8701 - Residential Nursing Care Facilities,743.7,645.4,570.7,519.8,422.6,440.2,369.2,336.7,292.3,na,na,na,na,na,na
+        SSIC 8702 - Other Residential Care Services,335.2,308.5,290.2,260.8,242.6,241.3,236.3,226.7,205.7,na,na,na,na,na,na
+        SSIC 881 - Social Services Without Accommodation For The Elderly And Disabled,505.1,451,443.5,391,332.5,303.5,265.8,244.8,216.1,176,136.7,119.3,105.5,83.7,75.3
+        SSIC 889 - Other Social Services Without Accommodation,1731.3,1424.8,1253.5,864.4,680.4,657.7,584.7,552.6,469.4,455.8,434.5,411,404.6,352,339.5
+        SSIC 90 - Arts Creation And Performing Arts Activities,489.7,483,336.1,273.6,254.6,329.4,321.2,319.6,305,291.9,301.7,253.6,232.7,275.6,245.6
+"        SSIC 91 - Libraries, Archives, Museums & Other Cultural Activities",2010.8,1761.3,1445.5,1319.9,1210.3,1354,1294.2,1241.4,1191.3,1153.3,1068.9,955.4,790.5,724.3,661.9
+        SSIC 92 - Gambling & Betting Activities,2866.1,2698.8,2293.8,1981.9,1811.3,2482.4,2432.9,2269.3,2347,2347,2344.2,2451.2,2364.5,2292,1746.5
+        SSIC 931 - Sports Activities,2369.1,1992.9,1812.8,1397.4,1233.2,1579.3,1510.4,1574.8,1378.6,1837.3,1379,1027.3,1030.3,928.7,865.6
+        SSIC 932 - Other Amusement & Recreation Activities,2422.8,2225,1808,1518.8,1445.6,1801,1823.2,1854.8,1891,1895.5,1963.7,1901.8,1937.2,1766,1616.5
+"        SSIC 941 - Activities Of Business, Employers & Professional Membership Organisations",527,442.6,409.5,323.6,353.7,369.5,412.9,371.6,426.9,368.3,325.5,297.6,274.4,249.5,231.1
+        SSIC 942/9 - Activities Of Trade Unions & Other Membership Organisations,2504.1,2052.9,1887.3,1977.4,1682,2091.5,2227.7,2089,1932.3,1955.8,1821.7,1996.8,1860.6,1655.2,1489.9
+        SSIC 951 - Repair Of Computers And Communications Equipment,299.5,299.9,346.7,302.7,268.2,221,344.1,357.3,359.8,351.9,358.4,420.6,308.3,314,284.7
+        SSIC 9521 - Repair Of Consumer Electronics,43.2,42.4,39.8,32.2,27.8,53.1,53,61.4,53.2,54.1,56.7,47.1,45.6,48.6,26
+        SSIC 9522 - Repair Of Household Appliances And Home & Garden Equipment,203,202.2,191.4,164.9,161.3,141.2,150.5,145.8,137.7,120.8,118.1,117.2,120.2,120.1,126
+        SSIC 9523 - Repair Of Footwear & Leather Goods,7.3,6.8,7.4,7.6,9.3,8.9,10.2,9.2,7.6,6.8,9.4,8.6,8.1,8.2,7.4
+        SSIC 9524 - Repair Of Furniture & Home Furnishings,9.7,10,10.5,10.6,11,11.1,13.2,12.9,14.8,13.1,13.5,13.4,10.5,10.6,10.7
+        SSIC 9529 - Repair Of Other Personal & Household Goods,34.4,36.6,35.1,32.8,25.9,34.2,31.9,33,31.8,28.8,25,21.4,18.6,19.5,24.5
+        SSIC 95301 - Repair & Maintenance Of Motor Vehicles,1246.7,1133.2,984.2,809.3,796.2,869.8,1024.1,1037.4,1025.9,907.6,916.1,900.8,991.9,894.5,858.6
+        SSIC 95302 - Car Washing & Related Services,81.3,75.2,76,59.3,45.1,45.2,47.9,46.2,44.9,39.8,42.6,31.6,30.8,32.4,33.5
+        SSIC 95303 - Motor Vehicle Inspection & Valuation Services,86.6,75.9,73.9,67.4,67.1,63.2,80.2,74.3,88.9,77,68.4,62.3,47.6,46.3,41.6
+        SSIC 9601 - Washing And (Dry-) Cleaning Of Textile & Fur Products,411.2,349.6,356.5,297.7,298.5,284.2,269.7,248.1,246.9,227.5,217.5,201.3,193.5,172.5,159.2
+"        SSIC 9602 - Hairdressing, Beauty And Other Personal Care Services",3634.8,3240.6,2811.9,2590.7,2114,2069,2076.6,2092.5,1883.7,1559.2,1472.6,1285.8,1270.8,1280.1,1247.9
+        SSIC 9603 - Funeral & Related Services,226.9,256.6,226.3,166.8,121.1,152.4,164.3,152.8,161.2,103.5,93.9,72.3,73.5,70.2,64.8
+        SSIC 9604 - Wedding & Related Services,79.8,75.9,80.6,89.7,88.1,89.8,80.8,79.3,75.5,54.3,48.2,47,48.1,47.8,50.1
+        SSIC 9609 - Other Personal Service Nec,426.5,404.9,380.2,318.5,287.2,282,290.4,240.5,235.8,252,229,206.9,194.1,207.4,201.2
+"Gross Operating Surplus, Total Services Sector",297122.3,258578.4,311806.5,233474.9,163331.8,172454.5,168285.1,159548.3,145038.5,136285.4,131674.2,132018.7,126875.1,119139.4,112918.2
+    SSIC 46 - Total Wholesale Trade,108045,100089.2,140797.3,87605,58305.2,57805.4,57191.6,50239.8,43118.5,35765.6,37819.9,43009.1,43530.4,43733.6,37010
+        SSIC 46100 - Wholesale On A Fee Or Commission Basis,296.9,1112.2,1014.3,1042.6,869.8,560.8,205.8,587.7,514,459.3,754.7,672.8,691.5,788.2,738.4
+        SSIC 4621/2 - Agricultural Raw Materials & Live Animals,2392.7,2075.6,4324.1,1741.8,883.3,720.2,844.7,941,925,1117.6,925.5,794.1,482.6,709.8,765.9
+        SSIC 46301 - Fruits & Vegetables (Including Fresh And Frozen),15.3,57.9,-114.7,151.9,155.1,91.9,90.9,106.2,131.8,103.4,66.5,97.8,58.9,64.9,67.9
+"        SSIC 46302 - Livestock, Meat, Poultry, Eggs & Seafood (Including Fresh And Frozen)",106.1,35.2,200.2,128.4,110.1,102.5,161.9,181.6,176.3,140.2,195,133.4,143,198.9,192.5
+"        SSIC 46303 - A General Line (Wide Range) Of Groceries (e.g. Cereals, Sugar, Edible Oils, Sauces And Dairy Products)",685.8,637.7,846.2,444.4,255.3,289.8,384.9,406.6,875.3,-28.7,789.2,997.4,1395.8,996.8,1009.1
+"        SSIC 46304/5 - Confectionery & Bakery Products, Ice-Cream",93.9,59.9,-5.4,42.5,36.1,52,66.2,90.2,128.7,103.1,121,9.7,97.2,143.3,103.1
+        SSIC 46306 - Health Supplements,137,263.2,266.9,266.3,180.3,120.6,60,32.1,30.2,71.1,75.7,110.3,70.5,57.8,45.3
+"        SSIC 46307 - Liquor, Soft Drinks & Beverages",34.3,671.9,231.2,668.2,181.1,1118.6,1360,754.9,699.7,906.4,888.8,954.1,973.8,850.4,618.4
+"        SSIC 46308/9 - Tobacco Products, Food, Beverages & Tobacco Nec (Including Dried Or Canned)",710.9,707.9,550.4,496.3,534.5,488.8,409.5,363.5,366.9,302.7,249.6,236.8,191.8,226,265.2
+"        SSIC 46411/2/3 - Textiles & Leathers, Adults' Clothing, Children And Infants' Clothing (Including Products And Accessories For Infants)",1451.9,2061.5,1784.6,533,227.2,122.4,212,207.6,256,210.3,215.5,226.3,196.9,177.5,141.4
+"        SSIC 46414/5/6 - Footwear, Bags, Luggage & Travel Accessories, Sewing & Clothing Accessories",1178.7,1169.2,1284,1042.9,987.3,1184.4,1036.3,1033.9,256.1,314.1,320.9,257.3,212.4,208.8,187.1
+        SSIC 46421/2 - Jewellery Made From Precious Metals And Stones & Costume Jewellery,221.5,231.6,240.8,98.2,76.6,150.8,93.4,81.5,99.8,74.5,58,59.6,52.6,72,56.5
+        SSIC 46423 - Watches & Clocks,368.5,474.9,452.8,234.2,148.9,265.2,309.4,313.4,229.9,250.7,305.3,314.1,349.5,292.9,266
+"        SSIC 46424/9 - Cosmetics & Toiletries, Personal Effects Nec",1879.7,974.2,946,953.8,2582.9,1311.6,1178.8,579.1,655.5,496.5,641.3,358.3,659.9,744.6,696
+"        SSIC 46431 - Furniture (Including Mattresses, Cushions)",170.7,139.6,107,236.7,140.9,91.1,168.9,198.9,194.9,170.7,126.9,123.3,107.3,110.1,103.5
+"        SSIC 46432 - Furnishings (Including Curtains, Carpets, Wallpaper)",60,58.3,30.8,11.2,13.9,28.6,11.6,11.5,14.3,19.9,43.3,43.4,48.8,34.5,30.4
+        SSIC 46433 - Lighting & Lighting Accessories,38.9,55.9,8.7,21.8,4.4,3.7,-1,-58.2,-168.3,66.8,63.4,38.4,63.4,61,72.3
+"        SSIC 46434 - Crockery, Cutlery & Kitchen Utensils",236,157.2,218.3,178.3,162.6,140.5,202.8,181,113.6,88.2,21.4,23.3,25.6,20.1,28.9
+"        SSIC 46435/6 - Household Electrical Appliances & Equipment, Audio & Video Equipment Except Electrical & Electronic Components",517.8,1226.5,454.9,906.5,806.3,692.4,661.2,415.9,220.1,441.4,515.1,536.9,356.6,342.7,477.7
+"        SSIC 46439 - Furniture, Home Furnishings & Other Household Equipment Nec",24.4,36.3,54.8,24.4,11.4,12.2,22.5,7.3,-2,-2.7,20.2,27.2,38.5,44.3,40.3
+        SSIC 4644 - Sporting & Other Recreational Goods,506.7,561.9,919.9,694.7,621.4,495.4,425.3,388.3,303.9,248.3,111.1,107.2,96.2,100.5,105.5
+        SSIC 4645 - Handicrafts & Fancy Goods,46.4,47.5,48.4,6.6,7.9,31.3,11.9,14,7.4,12.1,18.6,13.4,26.7,28.4,21.5
+        SSIC 4646 - Medicinal & Pharmaceutical Products,1596.9,2518.9,1995.1,2700.5,1307.9,850.8,1139.1,1242.7,1279.4,1143.9,1746.8,1343.4,-87.4,1634.7,596
+"        SSIC 4647 - Paper, Paper-Related Products, Stationery, Cellophane Products & Packaging Materials",326.6,403.9,469.5,315,234.2,338.7,604.8,498.3,176.3,233,203.4,161.7,177.8,166.1,188.6
+        SSIC 4649 - Other Household Goods,179.6,97.2,95.5,117.1,145.1,202.1,262,209.3,208.8,229.9,248.6,184.9,210.8,196.8,178
+"        SSIC 4651/2 - Computers, Computer Peripheral Equipment & Software, Electronic & Telecommunications Equipment & Parts",60852,38893.7,30443.8,30498.9,23417.9,20111.7,21658.8,20167.4,15101.2,18286.8,15160.2,13344.1,13891.6,8440.2,8953.6
+"        SSIC 46530/46549 - Agricultural Machinery, Equipment & Supplies, Industrial, Construction & Related Machinery & Equipment Nec",869.6,696.3,551.2,454.6,420,252.5,331.6,236.8,263.6,189.6,309.8,320,384.6,310,303
+        SSIC 46541 - Industrial Machinery & Equipment (e.g. Industrial Crane),1530.3,1664.6,1777.8,1080.9,1003.4,745.5,1085,1009.9,848.3,1094.9,1258.8,1267.6,1385.3,1392.8,1261.3
+"        SSIC 46542/3 - Construction Equipment, Lifts, Escalators & Industrial & Office Air-Conditioning Equipment",1272,1017.5,1107.5,106.8,254.5,665.3,726.3,685,319,280.7,242.2,464,1009.5,922.1,847.3
+        SSIC 46544 - Electrical & Wiring Accessories,1519.3,1465,1616.3,1035.1,799.2,799.5,885.7,605.8,551.5,571,656.5,580.1,489.7,495,361
+        SSIC 46551 - Marine Equipment & Accessories,244.2,272.1,110.1,68.1,-47.8,116.3,156,160.9,124.1,236.1,271.6,269.1,274.9,251.1,299.3
+"        SSIC 46552/9 - Aircraft Equipment & Supplies, Transport Equipment Except Motor Vehicles & Motorcycles Nec",66,244.3,140.7,101.7,127.3,158.8,145.2,139,123.1,134.4,110.9,147.1,111,113.6,106
+"        SSIC 4656 - Motor Vehicles, Parts & Accessories",1457.6,1846.1,1452.8,1159.7,605.4,745.4,803.8,889.5,127.1,921.5,1109.5,1290.9,1253.3,957.3,945.6
+        SSIC 46591 - Office Machinery & Equipment,182.7,-276.7,-233,97.6,-51.9,222.6,283,241.7,240,225.6,355.5,374.8,526.5,429,427.2
+"        SSIC 46592 - Medical, Professional, Scientific & Precision Equipment",4286.5,3455.7,3208.2,5060,3543.3,1618.3,1121.4,1343.5,884.1,728.6,647,594.7,623.3,590.5,769.4
+"        SSIC 46593/4 - Commercial Food Service Equipment, Service Establishment Equipment & Supplies",58.5,32.6,46.4,18.9,5.4,29.6,43.2,36.7,33,29.9,39,35.6,24.6,24.1,23.6
+        SSIC 46595 - Security & Safety Equipment,192.4,181.8,113.8,112.4,28.2,103.2,86.8,82.7,79.6,93,107.3,85.3,54.7,64.2,71.2
+        SSIC 46599 - Other Machinery & Equipment Nec,308.3,322.4,195.1,110.8,90.4,-200.5,73.4,44.8,35.2,86.4,71.9,81.7,92.5,157.9,153.7
+        SSIC 4661 - Fuels & Related Products,11637.5,24465.9,64558.7,20495.3,10603.3,16558,13283.3,7932.1,9735,122.8,-164.6,7827,10410,13758.2,9035.3
+        SSIC 46620 - Metals & Metal Ores (e.g. Steel Pipes) Except General Hardware,5266.1,4371,10321.5,7382.5,2956.3,3060.7,3539.2,3764,3069.5,2378.2,3387.9,3274.2,2597.3,2731.9,1730.3
+"        SSIC 46631 - Logs, Sawn Timber, Plywood & Related Products",78.1,137.2,209.8,198.7,142.2,181.5,209.7,208.3,119.5,138.2,83.3,72.8,95.6,106.6,132.1
+        SSIC 46632 - General Hardware,103.9,164.5,206,195.3,167.1,160.1,226.8,154.6,176.8,237.4,175.5,305.8,380,230.8,275.4
+        SSIC 46633 - Structural Clay & Concrete Products,63.7,68.4,64,36.5,7.1,39.1,26.4,33.1,38,59.4,70.5,48.4,49.7,71.1,65.6
+        SSIC 46634/5 - Paints & Glass,67.2,80.7,81.3,71.8,41.5,41.6,56.7,74.8,73.5,71.9,57.5,52.3,42.1,51.1,36.3
+"        SSIC 46639 - Construction Materials, Hardware, Plumbing & Heating Equipment & Supplies Nec",252.1,520.4,324,386.6,415.4,353.5,211.1,273.7,397.5,383.6,473,445.5,383.9,351.7,275.9
+        SSIC 46641/2 - Basic Industrial Chemicals (Except Fertilisers) & Chemical Fertilisers,777.3,1108.6,1738.5,1614,863.8,810.7,1004.9,1155.5,1065.4,683.1,729.6,496.4,461.7,983.6,915.3
+        SSIC 46643 - Petrochemical Products,1993.5,2139.9,3720.2,2493.6,736.4,726.3,-53.3,445.8,565.3,226,391.3,817.7,352.5,397.6,481.7
+        SSIC 46649 - Chemicals & Chemical Products Nec,1117.5,878.6,1336.5,1114.4,908.9,495.3,544.7,549.1,420.1,364.2,544,412.6,591,514.5,305.7
+"        SSIC 4665 - Other Intermediate Products, Waste & Scrap",40.1,49.2,66.3,46.6,58.1,88.2,119,79.7,29.5,15.3,61.4,53.3,67.6,74.4,84.2
+        SSIC 4666 - Ship Chandlers & Ship Bunkering,278.9,293.8,379.5,120.9,252.2,223.6,246.1,258.4,236.6,-158.4,371.1,256.9,176.4,515.2,480
+        SSIC 46900 - Non-Specialised Wholesale Trade,252.4,159.5,836.2,486,272.9,231.9,453.9,878.9,768.3,1192.5,2573.5,2265.7,1160.3,1527.9,1674.3
+    SSIC 47 - Total Retail Trade,2543.8,2480,2200.9,2297.8,1843.9,1914.5,2466.5,2477.1,2647.2,2440,2301.8,2468.6,2570.6,2631.9,2383.2
+        SSIC 47101 - Supermarkets & Hypermarkets,400.3,269.3,289.3,512.3,560.5,163.6,181.7,225.6,318,293.9,356.2,354.9,353.3,338.9,368.1
+"        SSIC 47102 - Mini-Marts, Convenience Stores & Provision Shops",44,44.3,31.5,66.9,70.9,58,97,102.6,104.8,108.1,112,102.4,118.5,126.1,101.7
+        SSIC 47103 - Department Stores,-14.7,-15.6,-12.4,-29.5,-35.1,97.7,142.9,152.5,117.1,121.6,140.8,200.1,221,257,198
+        SSIC 47109 - Non-Specialised Stores Nec,-12.9,4.9,17.1,31.8,41,35.1,45.6,55.3,51.6,47.8,40.6,38.9,32.3,26.5,21.8
+"        SSIC 4721/4722/4723 - Food, Beverages & Tobacco Products",83.9,88.8,74.7,-22.4,-92.8,-195.2,-183.5,-167.7,-146.7,-100.8,-64.8,-34.2,-25.2,7.2,-47.1
+        SSIC 47311 - Motor Vehicles Except Motorcycles & Scooters,169.1,246.5,240,274.9,340.7,537.6,721.4,678.7,636.6,480.9,285.3,257.6,293.2,272.8,296.8
+        SSIC 47312 - Motorcycles & Scooters,19.6,25.5,6.2,5.5,2.4,7.7,11.2,9.7,14,9.7,7.1,12.2,3,6.4,4.5
+"        SSIC 47313/47314 - Tyres, Batteries, Spare Parts & Accessories For Motor Vehicles",43,35.2,11.2,4,-19.6,15.6,26.6,44.9,50.7,53.3,63.1,52.3,43.8,34.9,37.4
+        SSIC 47320 - Automotive Fuel,349.2,343,404.6,349,272.9,239.1,275.3,262.6,284.3,268.2,254.4,240.7,233.1,212.1,189.6
+"        SSIC 4741 - Computers, Peripheral Equipment, Software & Telecommunications Equipment",127.2,76.2,-1.5,10.3,15.3,38.7,73.3,91.8,70.6,76.5,70.3,74.2,73.8,77.7,58.7
+        SSIC 47535 - Household Electrical Appliances & Equipment,62.4,91.3,69,44,54.7,50.2,66.5,95,78.2,60.5,43.1,46.2,65.3,97,85.5
+"        SSIC 47510/47531/47532 - Textiles, Furniture & Furnishings",77.2,30.9,7.7,66.5,36.5,53.6,79.7,84.5,112.2,118.1,110.4,122.1,149.1,154,107.4
+"        SSIC 4752 - Hardware, Paints & Glass",20.4,28.6,32.5,15.8,1.2,1.8,18.1,18.2,28.4,25.3,21.6,20.8,22.5,21.1,16.4
+"        SSIC 47533/47534/47537/47539 - Lighting, Lighting Accessories, Crockery, Cutlery, Kitchen Utensils, Security, Safety Equipment & Other Household Articles Nec",34.6,33.7,-4.6,3.7,-2.4,26.3,43.3,30.5,37.8,33.6,28.6,26.7,29.8,42.7,43.8
+"        SSIC 47610 - Books, Newspapers & Stationery",39.4,50.3,35.2,38.9,38.9,35.1,29,37.7,47,42.3,54.7,52.9,35.6,51.8,47.2
+"        SSIC 47620/47630/47640/47650 - Music & Video Recordings (e.g. Dvds, Blu-Ray Discs), Sporting Equipment, Games & Toys, Musical Instruments & Scores",20,24.7,47.6,22.4,12.9,21.2,27.1,14.9,30.6,27.1,23.7,29.3,27.7,27.9,32
+"        SSIC 47711/47712 - Clothing For Adults, Children & Infants",-41.3,-18.2,-38.1,163.3,27.6,73.1,138.9,144.4,182.7,139.8,163.7,171.5,207.8,190,212.1
+"        SSIC 47713/47714/47715/47719 - Footwear, Bags, Luggage & Travel Accessories, Sewing, Clothing Accessories & Other Clothing, Footwear & Leather Articles Nec",454.4,456.3,376.3,202,117,190.9,187.8,165.3,148,169.7,160.5,201.5,182,176,136.7
+        SSIC 47721 - Cosmetics & Toiletries,41.7,42.7,70.4,111.1,39.7,64.1,81.3,30.3,23.6,21.7,15.5,80.1,89.6,74.9,80.7
+"        SSIC 47722/47723/47729 - Pharmacies, Drug Stores, Chinese Medicine Shops, Pharmaceutical & Medical Goods Nec",68.9,87,64.4,46.3,70,64.1,53.8,53,64.5,59.4,67.3,73.9,71.4,65.3,65.6
+        SSIC 47731 - Jewellery Made From Precious Metals And Stones,174.1,201.4,193.6,171.2,114.6,94.9,95.5,107.9,117.5,153.3,121.3,103.2,128,137.5,127.2
+        SSIC 47732 - Costume Jewellery,15.4,13.8,13.5,8,4.5,4.8,0.7,1.2,7.9,3.6,8.3,5,4.9,7.1,8.4
+"        SSIC 47733/47739 - Watches, Clocks & Personal Effects Nec",239.5,213.9,159.7,117.9,94.8,134.3,91.1,73.7,119,109.3,105.1,111.8,98.6,124.8,85.8
+        SSIC 4775 - Optical & Photographic Goods,44.6,27,32.9,23.1,38.8,45.5,65.2,71,42,31.9,32.1,41.4,38.6,37,46.3
+"        SSIC 4774/4776/4777 - Handicrafts & Fancy Goods, Flowers, Plants & Pet Animals, Other Goods & Second-Hand Goods",83.6,78.7,80.3,60.7,39.1,56.7,97,93.5,106.9,85.3,80.9,83.2,73,65.3,58.7
+    SSIC 49-53 - Total Transportation & Storage,60079.7,36683.5,73615.4,49305.9,17275.1,16577.1,15303.4,16079,13190.3,16005.3,13484.9,12318.7,12086.7,11343.8,15361.1
+"        SSIC 4910/4921/4922 - Passenger And Freight Rail Transport, Passenger Land Transport & Aerial Cableways",534.5,505,287.9,409,571.4,390.6,565.7,332.4,750.1,861.8,720.3,651.8,775.8,816.1,807.3
+        SSIC 49231 - Freight Transport By Road,127.7,161.2,195.4,209.6,192,188.2,171.4,153.3,217.6,227.5,188.8,185.8,181.5,137,165.3
+        SSIC 49232 - Moving Services,57,42.1,5.9,18.1,11,18.4,29.9,30.3,40.5,39.4,40.8,33.5,32.5,41,43.1
+        SSIC 49233-Rental And Leasing Of Freight Land Transport Vehicle (e.g. Lorries And Trucks) With Driver,13.6,9.5,5.4,1.2,0.2,10.6,9.2,11,10.8,9.8,8.8,5.4,1.8,4.4,5.7
+        SSIC 5001 - Passenger Water Transport,91.8,50,1.9,-33.5,-36.9,29.1,35.9,32.8,28.8,34.9,25.6,15.8,24.5,22.2,39.7
+        SSIC 5002 - Freight Water Transport,49821.1,27257.2,65714.8,42637.6,12009.7,5917.6,5024,6123.1,3292,5346.4,3908.8,3140.9,2968.3,2471.7,6006.8
+        SSIC 51 - Air Transport,1477.7,1688.8,1161.6,-250.4,-795.5,2213.2,1957.7,2168.2,2279.9,2992.8,1980.3,1779.8,1855.8,1947.3,2947.5
+        SSIC 52101 - General Warehousing,303,196.9,245.2,263.7,244.5,208.1,172.8,182.5,165.3,175.2,247.9,208.7,217.6,221.2,204.1
+        SSIC 52102 - Refrigerated Warehousing And Storage,38.1,35.5,26.7,37.8,33.9,26.2,18.9,19.4,14.8,16.7,18.1,10.8,14.5,13.1,10.7
+        SSIC 52103 - Storage For Dangerous Goods,1192.8,1199,927.8,926.2,816,853.4,909.6,1048.1,1022.7,981.7,913.2,908.8,826.5,811.3,781.2
+"        SSIC 52109 - Specialised Storage Nec (e.g. Wine Warehousing, Document Storage And Warehousing)",16.5,23.7,11.6,3.4,11.9,41.6,30.8,20.2,56,63.1,46.5,29.3,19.5,8.9,2.6
+        SSIC 52211 - Carpark Management & Operation Services,489.9,471.8,520.6,509,474.6,525.9,493.6,455.3,341,317.4,369.3,385.8,379.4,364.2,365
+"        SSIC 52212/52219 - Motor Vehicle Towing Services, Supporting Services To Land Transport Nec",8.6,14.3,9.8,7.3,4.1,10.2,8.8,13.8,20.4,13,12.7,10.2,12.9,12.4,7.9
+        SSIC 5222 - Supporting Services To Water Transport,2361.8,1886.9,1753.1,1992,2034.2,2536,2220.3,2381.1,2166.5,2245.4,2376.8,2347.7,2331.9,2218,2104.4
+        SSIC 5223 - Supporting Services To Air Transport,1613.6,1298,692.2,178.8,89.5,1736.9,1678.2,1545.9,1406.9,1348.3,1362.7,1348.9,1227.8,1132.3,794.1
+        SSIC 5224 - Cargo Handling,158.5,154.3,145,90.9,86.2,120.4,137.4,165.1,141.5,147.4,148.9,157.9,138.4,144.7,151.8
+        SSIC 5225 - Marine Surveying Services & Classification Societies,88.3,86.8,84.6,49.4,50.1,46.5,18.3,35.1,42.5,62.8,78.5,75.9,85.2,103.8,87.7
+        SSIC 5229 - Other Transportation Support Activities,1441.5,1309.2,1648.9,1998.9,1305.1,1509.9,1525,1115.2,906.1,887.3,788.3,786.8,776.1,626,558.2
+        SSIC 53 - Postal & Courier,243.7,293.5,177.1,257,173.1,194.4,296.1,246.3,286.8,234.3,248.5,235,216.9,248.3,278.1
+    SSIC 55-56 - Total Accommodation & Food Services,3526,3461.1,2486.5,1537.2,1493.8,2700.8,3018,2807.1,2936.7,2560.4,2920.4,2868.9,2903.5,2844.8,2273.3
+        SSIC 55101 - Hotels,2459.3,2405.9,1551,618.1,689.2,1926.3,1928,1804.5,1739.8,1715.7,1834.5,1807.5,1944.5,1939.9,1368.5
+        SSIC 55109/55900 - Other Accommodation,595.1,497.6,400.3,293.1,265,263.7,528.6,511,651.5,307.4,608.6,538.4,469.5,429.1,444.4
+        SSIC 56111 - Restaurants,76.6,73.4,96.2,140,128.9,104.3,98.2,100.7,126.6,111.9,112.1,108.8,104.7,103.3,107.7
+        SSIC 56112/56123 - Cafes & Food And Drinks Kiosks,89.9,172.3,155.9,240.4,186.3,107.8,106.3,101.9,110.5,105,71.8,76.7,62.3,54,42.2
+        SSIC 56121 - Fast Food Outlets,53.7,78.8,81.4,112.4,64.8,58.2,70.3,66.9,72.4,49.5,44.5,35.8,41.9,45.6,45
+"        SSIC 56122 - Operators Of Food Courts, Hawker Centres, Coffees Shops And Canteens (With Mainly Food And Beverage Income)",59.5,65.9,109.6,81.3,54.3,39.4,57.8,58.8,42,77.5,66.5,66.8,64.1,74.7,78.7
+        SSIC 56130 - Pubs,-15.9,-2.2,-4.1,8.1,9.3,4.3,6.4,2.9,10.3,11.3,11.2,11.5,13.5,17,10.5
+        SSIC 56200 - Food Caterers,207.9,169.4,96.2,43.7,96,196.7,222.5,160.4,183.6,182.1,171.2,223.5,203.1,181.1,176.3
+    SSIC 58-63 - Total Information & Communications,14961,12375.2,8408.8,10231.4,9772.7,8446.3,7294.1,7463.9,7819.8,6975.2,7426.5,7198.2,6473.8,5955.8,5343.1
+        SSIC 58110 - Book Publishing,153.6,114.4,55.7,20,57.9,65.2,73.9,56.5,71.1,74.2,53.9,46.8,76.6,47.7,60.2
+        SSIC 58120 - Publishing Of Directories & Mailing Lists,88.7,51.3,44.1,55.3,34.2,46.9,55.6,93.3,51.1,79.3,67.4,61.9,39.3,113.4,78.6
+"        SSIC 5813/5819 - Publishing Of News, Journals, Periodicals And Other Publishing Activities",-190.5,-134.6,-95.6,-27.6,-0.6,121.3,30.2,50.1,170.2,278.7,310.8,375.9,413.9,431.5,388.3
+        SSIC 5820 - Software Publishing,5847.6,5430.9,5410,4830.8,2114.8,1086,662.5,463.7,662.1,800.4,1287.8,924.5,760.7,778.8,488
+"        SSIC 59111/2 - Movie, Advertisements, Corporate Videos & Event Videos Production",43.5,16.9,44.1,-23,-11.8,99.8,53.8,60.9,34,25.5,16.6,13.3,16.8,14.1,17.1
+"        SSIC 59113 - Production Of Dramas, Variety Shows And Documentaries",75.7,78.5,80.6,103,151.4,25.6,91,111.8,59.3,74.7,70.9,88.8,83.5,56.6,16.7
+"        SSIC 59114/9 - Animation, Movie, Video, Television And Other Programme Production Activities Nec",-14.9,14.1,4.7,-38.5,0.2,24.4,5.2,1.9,0.7,3.4,7.8,-12.5,-7.9,5.6,-0.8
+"        SSIC 5912 - Movie, Video, Television And Other Programme Post-Production Activities",-35.3,-14.7,45.6,38.7,33,22.5,29.1,26.6,22.3,16.4,14.9,15.9,6.8,5,4.5
+"        SSIC 5913 - Movie, Video, Television & Other Programme Distribution Activities",50.3,99.3,98.4,61.5,37.3,118.1,84.9,123,107.8,64.9,119.8,20.4,54.3,42.7,21.1
+        SSIC 5914 - Movie Projection Activities,10.2,11.8,7.2,5.3,-16.8,47.4,45.8,46,53.6,13.7,18.8,10.3,3.4,2.9,-4.2
+        SSIC 5920 - Sound Recording & Music Publishing Activities,4.8,8.1,7.4,22.2,11.3,5.6,6.2,4.1,5.6,7.3,2.2,1.9,1.9,1,0.4
+        SSIC 60 - Broadcasting And Content Production,-1022.1,-3808.1,-3497.8,-3742.8,-2574.9,-716.3,341.9,396,283.9,166.9,142.2,618.9,662.2,598.4,652.6
+        SSIC 6101 - Telecommunications Network Operation,2768.1,2741.5,2687.4,2348.6,2801.4,3319.6,3064.6,3254.1,3490,3441.5,3317.9,3204.6,2938.1,2917.9,2975.7
+        SSIC 6102 - Telecommunications Resellers,361.8,357.4,345.9,261.9,116.2,41.2,298.2,183.8,95.4,58.6,151.6,186.6,186.2,80.5,10.2
+        SSIC 6109 - Other Telecommunications Activities,36.7,31.2,25.9,48.3,43.1,-35.7,47.6,40,49.3,28.1,76.7,57.8,68.4,24.7,31
+        SSIC 6201 - Computer Programming Activities,-960.7,-274.2,-1623.1,-806.1,171.3,599.3,405.8,633.4,558.5,511,544.8,586.6,426.8,418.6,230.8
+        SSIC 6202 - Information Technology Consultancy And Computer Facilities Management Activities,697.8,737.7,-240.9,-181.7,638.1,729.5,866.3,500.3,449.5,368,337,374.4,263.6,112,59.7
+        SSIC 6209 - Other Information Technology And Computer Service Activities,704.6,139.9,-337.6,189.3,-100.4,31.1,-130.8,114.3,-14.1,-19.7,97.9,91.7,77.7,-21,59.9
+"        SSIC 631/639 - Data Analytics, Processing, Hosting & Related Activities; Internet Search Engines And Other Information Service Activities",7585.9,7005.7,5853.8,5991.3,4753.5,3013.9,1080.3,1007.1,1289.8,682.7,495.9,367.9,237.1,144,101.7
+        SSIC 6320 Excl 63204 - Online Marketplaces Operating On A Fee Or Commission Basis (Exclude Online Marketplaces For Travel And Accommodation Services),-1763.9,-436.1,-189.1,1736.1,2134,-490.9,-88.2,-10.2,68.3,-54.8,-16.6,-49.6,-35.2,3.3,8.2
+        SSIC 63204 - Online Marketplaces Operating On A Fee Or Commission Basis For Travel And Accommodation Services Provided By Third-Party,519.1,204.3,-317.8,-661.1,-620.5,291.7,270.1,307.2,311.3,354.4,308.1,212.1,199.6,178.3,143.3
+    SSIC 64-66 - Total Finance & Insurance,70923.1,69082.1,53429.5,54556.5,46337.2,45955.9,41772.2,40926.5,34728.8,33627.2,31436.7,29143,26362.5,21739.8,23612.3
+        SSIC 64120 - Full Banks,28443.6,28540,21624.3,15251.6,16452.3,17053.6,14869.8,14844.6,13066,13406,11939.2,11627.3,12281.8,10907.6,11115.4
+        SSIC 64130 - Wholesale Banks,4016.7,3017.2,2807.9,3984.3,4367.9,3644.1,2798.6,3905.8,2376.4,2943.2,3366.4,2546.1,2466.4,295.4,1874.4
+        SSIC 64140 - Merchant Banks,1136.6,1260.5,941.1,1381.2,1645.9,873.3,917.3,1681.1,996.4,784.7,1115.2,1499.8,702.1,1581.8,698
+        SSIC 64150 - Finance Companies (With Deposit Taking Functions),181,153.1,214.6,157.8,123.6,161.2,178.9,147.2,98.4,113.2,103.9,103.2,112.6,122.3,161
+"        SSIC 65 - Insurance, Reinsurance, Provident Funding And Pension Funding",5776.8,9256.9,5591.8,12227,4263.9,6408.3,6284.1,5722.2,5478.3,4536.3,4095.6,4029.1,3617.1,2161.1,3412.7
+"        SSIC 66210 - Risk And Damage Evaluation (e.g. Loss Adjusting, Claims Adjusting)",10.3,10.9,-0.3,-0.7,-0.9,7.3,12.5,11.7,15.7,9.7,11,5.3,4.9,4.2,4.8
+        SSIC 66221 - Insurance Agencies And Agents (Including Financial Planning Services),117.9,108.8,84.2,92.8,83.5,89.4,78.8,81.1,103.2,117.9,92.8,70,60.4,53.4,47.5
+        SSIC 66222 - Insurance Brokers,166.3,227.2,195.5,109.1,184.1,59.1,162.3,159.6,124.4,118.4,105.4,75.7,88.2,95.3,64.9
+        SSIC 6629 - Other Activities Auxiliary To Insurance And Pension Funding,14.2,25.9,11.2,24.3,16.8,22.7,24.7,10.2,-7,4.1,8.3,20.9,6.2,10.1,9.4
+        SSIC 6611/6612 - Securities And Commodities Exchange; Securities And Commodity Contract Brokerage,2332.6,1553.8,966.9,1257.8,1872.2,658.7,884.2,319.1,459.8,337.4,241.4,222.4,138.9,391.8,665.9
+"        SSIC 66191 - Trustee, Fiduciary And Custody Services Firms (Including Nominee Companies, Trustees And Reit Trustees)",63.8,84.3,38.5,57.5,67.2,75.2,71.5,73.4,57.7,59.1,55.2,49.3,50.2,50.3,55
+        SSIC 66192 - Corporate Finance Advisory Services,38.9,48.7,56.3,67.5,102.4,70.1,103.7,140.7,94.3,134.3,142.4,26.3,2.1,-10.2,82.7
+        SSIC 66193/66199 - Clearing And Settlement Of Financial Instruments And Other Activities Auxiliary To Financial Service Activities N.E.C. (e.g. Mortgage Advisory Firms),306.9,295.4,363.7,413.5,345.5,270.4,277.3,250.5,271.3,267.1,291,259.4,228.5,246.2,262.7
+        SSIC 66194 - Activities Auxiliary To Fund Management Activities (e.g. Independent Fund Administration Firms),75.6,29.7,-3,26.7,20.9,18,12.5,4.6,4.3,3,2.5,3.1,0.4,0.9,0.3
+        SSIC 66195 - Transaction/Payment Processing Services,18033,15946.8,13171.7,11826.9,10366.3,10451.9,8955.2,7274.1,6337.7,5231.9,4434.2,3812.6,2852.3,2647.3,1709.1
+        SSIC 66301 - Traditional/Long-Only Asset/Portfolio Management,1550.6,1387.4,1768.1,2429.7,1718.8,1340.5,1434.3,1756.2,1178.1,1643.2,1748.8,1721,1363,1369.9,1431.2
+        SSIC 66302 - Hedge Fund Management,1622.8,1265.8,1011.1,1234.9,738.5,671.8,598.1,875.8,509.3,460.5,376.8,172.3,5.1,-0.6,0
+        SSIC 66303 - Property Fund Management (Including Reit Management And Direct Property Fund Management),1096.5,1092.2,765.3,760.7,678.6,889.9,848.5,542,497.6,553.7,418.1,343.1,350.7,280.8,368.9
+        SSIC 66304 - Private Equity Firms,1567,1101.8,979.5,711.3,512.2,402.8,390.5,380.8,297,238,167.8,49.9,14.2,3.6,3.9
+        SSIC 66305/66306/66307/66309 - Other Fund Management Activities,606.7,603.1,164.8,294.3,272.6,94.9,119.7,183,136.2,194.7,203.2,311.5,281.2,205.9,159.6
+"        SSIC 64110/6420/64300/649 - Others (Central Bank; Holding Companies; Trusts, Funds And Similar Financial Entities; Other Financial Service Activities)",3765.3,3072.8,2676.4,2248.5,2504.8,2692.4,2749.7,2562.9,2633.7,2470.7,2517.5,2194.5,1736.2,1322.8,1484.5
+"    SSIC 68-82 - Total Real Estate, Professional And Administrative & Support Services",31503.4,28176.5,26887,24615.8,24333.9,31483.4,34046,32952.5,34574.9,32665.8,29752,28527.4,26559.2,24525.2,21486
+        SSIC 68 - Real Estate,12837.4,12093.1,11419.7,10256.9,7788.3,10875.4,9981.4,9878.3,11995.9,12956.7,13446.2,13832,12551.9,11674.5,10248.6
+        SSIC 6910 - Legal Services,1080,1073.5,1201.6,1115,818.4,871,804.3,731.1,892.5,855.8,817.4,855,857.9,812.5,814.5
+"        SSIC 6920 - Accounting, Book-Keeping & Auditing Activities; Tax Consultancy",555.8,641.3,755.6,789.1,528.5,462.9,465.3,478.4,512.9,604.6,556.2,505.3,457.2,409,445.4
+        SSIC 7010 - Head Offices; Centralised Administrative Offices & Business Representative Offices,2717.6,2166.1,629.7,1142.1,2039.6,2412.3,1397.6,1789,1532,2022.1,1712.9,1533.7,1526.2,1261.9,715
+        SSIC 7020 - Management Consultancy,740.4,610,471.3,359.9,292.3,401.9,452.7,436.7,415.6,535.5,566.5,469.9,486.9,490.4,519
+        SSIC 711 - Architectural & Engineering Activities And Related Technical Consultancy,2454.6,2457.4,1957.6,1710.8,1609.7,2223.5,1995.9,1879.8,2255.5,1979.1,1939.6,2033,2053.8,2077.1,2111.9
+        SSIC 7120 - Technical Testing & Analysis Services,509.7,415.6,412.8,331.5,370.5,335.8,123.7,102.7,117.9,110.3,105.6,110.1,115.2,111.8,112.9
+        SSIC 72 - Scientific Research & Development,627.2,472.9,732.9,587,650.1,539.1,523,436,355.2,326.3,278.3,248.7,832.9,826.8,862.2
+        SSIC 7310 - Advertising,2682.8,1165.9,284.3,173.5,264,339.6,314.7,259.4,247.8,167.4,164.6,154.2,140.4,135.6,143.3
+        SSIC 7320 - Market Research & Public Opinion Polling,37.6,7.9,-1.3,15.8,-2.8,4,43.6,46,58.5,60.3,53.5,63.2,44.8,41.2,41.7
+        SSIC 7411 - Industrial Design Activities,64.3,31.6,26.7,38.6,33,58.4,26.9,28.5,24.5,na,na,na,na,na,na
+        SSIC 7419 - Other Specialised Design Activities,142.1,181.7,110.2,100,116.4,161.2,84.5,143.4,135.9,na,na,na,na,na,na
+        SSIC 7420 - Photographic Activities,34.4,43.6,45.3,33,10.9,34,33.7,29.7,33.7,na,na,na,na,na,na
+"        SSIC 7490 - Professional, Scientific & Technical Activities Nec",35.6,54.1,45.7,53.2,52.6,51.7,36.2,61.5,55.5,na,na,na,na,na,na
+        SSIC 7500 - Veterinary Activities,24.9,32.9,25.6,24.6,17.7,14.8,13.6,15,14.7,11.3,11.2,8.4,9.9,9.7,5.8
+        SSIC 771 - Rental & Leasing Of Land Transport Equipment,693.9,704.9,608.9,513.5,571,549.2,552.9,731.9,539.7,430.2,446.8,397.9,431.2,265.3,268
+        SSIC 772 - Rental & Leasing Of Personal & Household Goods,19.2,17.9,14,16.7,34.8,52.4,41.8,39.2,41.7,49.6,39.3,35.9,28.8,31.4,21.6
+"        SSIC 773/4 - Rental & Leasing Of Other Machinery, Equipment & Tangible Goods, Leasing Of Non-Financial Intangible Assets",5285.7,5147.8,7679.1,6751.2,8103.8,11187.1,15814.6,14808.9,14019.2,11064.7,8304.2,7114.5,5798.2,5308.8,4230.1
+        SSIC 78 Excl 78103 - Employment Activities (Exclude Domestic Worker Employment Placement Agencies),148.1,147,121.9,90.2,60.3,106.5,296.1,205.7,302.4,217.6,216.9,191.1,302.9,205.6,181.3
+        SSIC 78103 - Domestic Worker Employment Placement Agencies,10,14.3,-3.3,-3,-15.5,15.9,14.6,18.8,14.2,11.1,8.9,17.2,13.7,13.3,10.3
+        SSIC 79 - Travel Agencies & Tour Operators,82.7,93.6,-70,-134.6,-64.1,67.2,108.8,64.7,80,42.9,59.8,77.9,74.3,84.5,82
+        SSIC 80 - Security And Investigation Activities,192.9,161.2,187.9,430,525.8,266.2,326.7,300,260.7,240.8,178.1,125.6,133.1,126.8,111.3
+        SSIC 812 - Cleaning Activities,87.3,62.6,-99.9,64.7,298.1,46.8,208.8,209.4,275.8,267.6,184.6,130.8,108.7,58.1,76
+"        SSIC 813 - Landscape Planting, Care And Maintenance Service Activities",40,40.7,56.8,64.9,83.5,115.8,80,52.9,64.6,84.7,58.2,56.4,61.4,48.9,52.2
+"        SSIC 821/2 - Office Administrative & Support Services, Call Centres",136,127.6,163.6,91.5,120.9,130.1,150,109.9,113,138.3,111.1,101.3,87.4,86.5,52.6
+"        SSIC 823 - Convention, Trade Show, Concert & Other Event Organisers",189.4,141.6,56.1,-134.3,-82.7,39.8,94.4,30.6,113,79.9,97.8,91.7,116.5,115.9,132.4
+        SSIC 829 - Business Support Services Nec,73.7,69.5,54.3,134.1,108.9,120.9,60,65.1,102.3,129.7,128.9,117.5,111.6,109,66.6
+"    SSIC 85-96 - Total Recreation, Community & Personal Services",5540.3,6230.7,3981,3325.3,3970.2,7571,7193.4,6602.5,6022.2,6246,6531.9,6484.8,6388.3,6364.5,5449.3
+"        SSIC 851/2 - Pre-Primary Education, Primary Education",-351.2,-222.2,-436.6,-91.8,-23.8,124,120.8,19.4,18.4,50.5,47.9,59.3,53,41.4,49.3
+"        SSIC 8531/3/4/5/6 - General Secondary Education, Post-Secondary Non-Tertiary General Education, International And Foreign System Schools, Schools For Special Needs, Specialised Education Schools",578,543.7,420.2,466.8,413.2,443.8,415,359,354,319.7,307.7,275.8,258.1,221.5,200.7
+        SSIC 8532 - Technical And Vocational (Secondary And Post-Secondary Non-Tertiary) Education,66.2,65.4,82.5,86.4,75,58.2,59.8,57.9,54.7,69.2,75.3,89.5,108.9,90.4,98
+        SSIC 854 - Tertiary Education,-132.4,-275.8,-18.1,174.6,272.8,-190.6,162.3,188.4,215.9,524.3,393.5,406,389.8,319.7,433.6
+        SSIC 855 - Other Education,119.1,95.6,47,60.3,271.1,395.4,280.9,283.2,271.1,221.9,243,199.3,161.5,140.2,156
+        SSIC 856 - Educational Support Services,-35.9,-30.7,-37.2,-51.6,-19.8,63.7,52.5,53.3,47.1,25.9,25,29.9,25.1,25.3,22.6
+        SSIC 861 - Hospitals,267.7,684,471.1,244.8,487.2,771.9,614.5,497,283.4,166.1,298.5,258,273.9,313.2,369.2
+        SSIC 86201 - Clinics And Other General Medical Services (Western),791.1,639.4,257.1,393.7,676.1,713.5,650.4,570.1,479.6,370.8,377.5,565.6,413.8,352.6,348.8
+        SSIC 86202 - Clinics And Other General Medical Services (Non-Western),10,29.1,-15.8,-13.1,-8.9,32.9,16.6,31,31.2,25.5,24.7,18.5,19,19.1,17.3
+        SSIC 86203 - Specialised Medical Services,764.4,827.1,642.6,537.9,438.5,694.2,560.5,504.1,617.6,652.9,457.5,456,391.4,371.5,358.7
+        SSIC 86204/869 - Dental & Other Health Services,226.2,294.9,330.5,397.8,186,158.9,154.6,107.2,194.7,120.2,101.6,100.4,83.5,41.9,19.2
+        SSIC 8701 - Residential Nursing Care Facilities,-3.8,-6,14,-11.6,47.7,-6.4,26.2,13.8,10.4,na,na,na,na,na,na
+        SSIC 8702 - Other Residential Care Services,3.5,9.1,8.3,17,19.6,28.5,28,24.1,22,na,na,na,na,na,na
+        SSIC 881 - Social Services Without Accommodation For The Elderly And Disabled,14.4,13.6,14.7,-21.5,-16.1,-6.2,6,3.1,6.1,5.8,5.4,5.2,6.2,5.3,4
+        SSIC 889 - Other Social Services Without Accommodation,-320.2,-233.8,-89.4,-17.1,-36,5.5,10.7,11.5,13.8,24.6,11.4,7.5,11.1,12.8,6.8
+        SSIC 90 - Arts Creation And Performing Arts Activities,-3.7,-18.7,-10.9,-17.5,-9.4,5.2,6.5,-14.6,-1.5,9,10.1,5.2,13.4,43.3,10.9
+"        SSIC 91 - Libraries, Archives, Museums & Other Cultural Activities",75.3,82,30.2,-6.8,40.1,139.9,155,120.7,75.5,90.5,100.5,121.4,102.6,110.5,108.2
+        SSIC 92 - Gambling & Betting Activities,3354.8,3067.2,2078,1264.1,1070.7,2978.9,2972.5,2999.9,2469.2,2513.4,3057.5,2920.1,3177.8,3417.2,2554.6
+        SSIC 931 - Sports Activities,-60,-75.5,-51.6,-9.7,97.3,249.2,165.9,112.6,148.8,142,128.4,97.9,129.1,116.5,89.5
+        SSIC 932 - Other Amusement & Recreation Activities,72.6,155.7,138.3,-109.1,-49.3,300.3,237.5,219.8,168.9,227.3,193.8,169.8,180.2,124.1,84.8
+"        SSIC 941 - Activities Of Business, Employers & Professional Membership Organisations",-150.6,-103.6,-93.2,-60.2,-83.5,-31.7,-23.9,-33.3,-42.5,-13.1,-24,-19.1,-41.3,-30.9,-29.1
+        SSIC 942/9 - Activities Of Trade Unions & Other Membership Organisations,129.5,130.3,165.5,168.1,198.5,185.8,169.8,190.9,169.6,161.2,148.9,144,146.9,149.2,143.8
+        SSIC 951 - Repair Of Computers And Communications Equipment,0.8,1.5,-37.1,14.4,9.4,13.3,22.3,18.4,41,38.6,42.2,38,30.9,23.3,18
+        SSIC 9521 - Repair Of Consumer Electronics,11.6,7.1,3.6,3.1,6.5,7.6,8.5,5.9,16.3,12.5,8.8,8.5,7.1,6,3.6
+        SSIC 9522 - Repair Of Household Appliances And Home & Garden Equipment,34.1,28.7,22.4,6.6,7,29.7,23.8,28.2,29.6,18.2,14,14.7,14.5,13.4,11.5
+        SSIC 9523 - Repair Of Footwear & Leather Goods,1,1.4,0.8,-0.3,0.9,1.7,1,0.7,1.1,2.2,1.1,1.1,1.1,0.9,1.2
+        SSIC 9524 - Repair Of Furniture & Home Furnishings,0.4,2,1.2,1.3,1.7,1.9,1.7,1.5,2.5,2.9,2.1,2.5,2.4,2.9,2.6
+        SSIC 9529 - Repair Of Other Personal & Household Goods,6.7,5.1,4.9,3.2,4.5,3.4,2.9,4.8,5.4,7.8,5.8,5.2,5.3,4.8,2.1
+        SSIC 95301 - Repair & Maintenance Of Motor Vehicles,41.7,81.8,12.1,-18.9,-5.2,53.9,83,109.1,128,160.1,158.2,122.5,77.6,103.3,91.5
+        SSIC 95302 - Car Washing & Related Services,-2,-2.7,-5.8,3.7,1.1,6.9,3.9,3.8,3.5,11.6,11.6,10,9.2,8.3,4
+        SSIC 95303 - Motor Vehicle Inspection & Valuation Services,50.5,38.4,41.7,49.1,38.9,47.2,40.3,41.4,42.9,45.8,38.3,35.8,37.9,30.2,29.4
+        SSIC 9601 - Washing And (Dry-) Cleaning Of Textile & Fur Products,56.7,40.3,1,-12.6,4.9,70.2,47.6,53,50.7,39.8,35,39.9,40.5,39.5,31.1
+"        SSIC 9602 - Hairdressing, Beauty And Other Personal Care Services",-104.1,275.4,-71.1,-159,-130.2,142.2,24.7,-54.7,6.1,79.4,127,197,163.2,165.5,135.4
+        SSIC 9603 - Funeral & Related Services,31.8,58.4,35.6,27.8,12.1,21.7,45.5,33.8,36.2,26.4,27.2,22.3,22.7,16.7,16.5
+        SSIC 9604 - Wedding & Related Services,9,14.9,12.5,3.8,-8.6,3.6,5.3,4,3.9,5.4,6.3,4,3.4,1.9,2.2
+        SSIC 9609 - Other Personal Service Nec,-13,7.5,12,1.9,-20.2,53.1,41,33.4,46.9,42.3,31.3,32.2,29.2,31.1,30.6
+"Value Added, Total Services Sector",403036.5,356605.7,414529.3,315373.1,238527.4,256684.1,251865.4,238958.2,223567.1,209256.2,200086.4,194985.2,187226.8,177774.8,163191.1
+    SSIC 46 - Total Wholesale Trade,142167.5,133918.5,170303.3,115140.7,83885.8,84228.6,82137.2,74472.6,66829.3,58012.1,58182.7,62488.7,62394.1,61810.2,53691
+        SSIC 46100 - Wholesale On A Fee Or Commission Basis,688.1,1403.3,1502.2,1298.3,1031.8,861.9,512.1,832.6,755.4,708.1,923.7,856.7,889.3,1037,950.5
+        SSIC 4621/2 - Agricultural Raw Materials & Live Animals,3294.9,2951.7,5160,2468.9,1547.3,1442.1,1521.5,1541.1,1520.2,1666.9,1441,1271.8,936.7,1158.1,1102.1
+        SSIC 46301 - Fruits & Vegetables (Including Fresh And Frozen),250.9,289.8,117.8,381.5,357.9,292.6,307.5,286.5,315.9,276.1,189.6,210.3,158.2,162.1,145.6
+"        SSIC 46302 - Livestock, Meat, Poultry, Eggs & Seafood (Including Fresh And Frozen)",422.9,359.1,456.8,426.4,404.8,375.3,470.2,462.7,462.8,432.5,439.9,355.9,399.6,424.1,388.3
+"        SSIC 46303 - A General Line (Wide Range) Of Groceries (e.g. Cereals, Sugar, Edible Oils, Sauces And Dairy Products)",1221.4,1164.2,1402,1151.9,896.7,1008.4,1027.5,1028.4,1439.7,570.1,1302,1420.4,1851.4,1389.6,1367.6
+"        SSIC 46304/5 - Confectionery & Bakery Products, Ice-Cream",233.5,205.1,126.2,163.3,146.5,165.5,200,195.8,234.2,212.9,232.6,133.7,203.6,231.3,176.4
+        SSIC 46306 - Health Supplements,279.2,397.8,403,389.6,251.6,266.3,238.4,212.3,169.2,187.1,174.3,209.4,170.8,144.7,130.5
+"        SSIC 46307 - Liquor, Soft Drinks & Beverages",733.6,1387.8,998.6,1268.8,887.1,1753.7,1806.4,1123.8,991.5,1155.9,1148.9,1191.1,1164.6,1018.6,754.2
+"        SSIC 46308/9 - Tobacco Products, Food, Beverages & Tobacco Nec (Including Dried Or Canned)",1290.7,1255.4,1101.6,957.9,956.2,896.7,841.6,819.3,764.9,663.6,532.3,518.6,484.1,451.2,489.8
+"        SSIC 46411/2/3 - Textiles & Leathers, Adults' Clothing, Children And Infants' Clothing (Including Products And Accessories For Infants)",1927.7,2366.2,2027.4,730.2,421.9,375.9,462,445.8,481.8,452.1,435.7,449.1,422.6,392.3,344.6
+"        SSIC 46414/5/6 - Footwear, Bags, Luggage & Travel Accessories, Sewing & Clothing Accessories",1340.9,1349.2,1420.9,1146,1078,1314.8,1213.1,1177.6,372.8,417,456.6,396,325.5,326.5,298.8
+        SSIC 46421/2 - Jewellery Made From Precious Metals And Stones & Costume Jewellery,346.7,349.2,357.2,205.6,149.5,238.6,167.6,155.4,178.2,145.7,127.2,133.1,105.8,119.5,121.3
+        SSIC 46423 - Watches & Clocks,508.2,586.8,565.3,334.8,250.7,420.8,440.5,445,366.3,388.7,428.6,446.8,469.2,408.4,358.7
+"        SSIC 46424/9 - Cosmetics & Toiletries, Personal Effects Nec",2710.4,2119.3,2027.8,2125.2,3534.5,2055.7,1883.1,1204,1356.7,1164.6,1381.6,869.5,1098.9,1172.6,1115.2
+"        SSIC 46431 - Furniture (Including Mattresses, Cushions)",328.9,286.6,260.3,371.2,249.3,217.2,279.5,348.6,315.8,257,253.7,257.2,251.8,231.7,216.4
+"        SSIC 46432 - Furnishings (Including Curtains, Carpets, Wallpaper)",133.5,129.2,102.5,64.8,65.7,94.6,83,89.6,104.6,113.3,110.3,113.6,112.9,101.2,87.2
+        SSIC 46433 - Lighting & Lighting Accessories,157.4,168.6,112.3,125.8,96.2,108.5,119.2,81.5,14,168,172.2,143.5,145.3,137.2,141.6
+"        SSIC 46434 - Crockery, Cutlery & Kitchen Utensils",327.3,245.9,300.2,261.5,240.3,227.5,310.1,281.1,199.9,171.4,89.7,91.3,84.7,72.2,79.6
+"        SSIC 46435/6 - Household Electrical Appliances & Equipment, Audio & Video Equipment Except Electrical & Electronic Components",1396.8,1974.3,1087.1,1504.4,1319.6,1317.7,1302.7,1158.8,921.8,1153.8,1208.4,1183.6,908.4,824.7,996.9
+"        SSIC 46439 - Furniture, Home Furnishings & Other Household Equipment Nec",91.5,104.2,119.4,106.6,97.2,143.3,117.1,87.5,70.9,58.6,74.5,80.3,86.9,89.9,81.3
+        SSIC 4644 - Sporting & Other Recreational Goods,846.2,933.5,1266.6,979.4,867.5,770.8,718.3,691.8,571.3,482.7,302.3,297.1,289.7,268,304.1
+        SSIC 4645 - Handicrafts & Fancy Goods,93,89,92.7,48.7,49.1,92.5,88.9,80.7,75.1,67.5,67.2,61.5,79.1,72.7,68.7
+        SSIC 4646 - Medicinal & Pharmaceutical Products,3274.2,4035.6,2910.9,3871.9,2394.6,1859.5,2086.7,2069.2,2234.3,1994.2,2417.3,1915.2,476.3,2138,1016.1
+"        SSIC 4647 - Paper, Paper-Related Products, Stationery, Cellophane Products & Packaging Materials",677.3,744.5,820.4,658.6,554.2,722.5,981.9,930.5,575.4,563.9,533.8,461.8,476,444.5,460.9
+        SSIC 4649 - Other Household Goods,401.3,336.3,340.9,366.3,362.6,437.2,446.8,441.4,421.4,416,439.5,373.5,356.3,346.9,313.4
+"        SSIC 4651/2 - Computers, Computer Peripheral Equipment & Software, Electronic & Telecommunications Equipment & Parts",68784.4,46883.4,35705.2,35065.2,27687.1,24548.2,25909,24276.1,19443.1,22390.4,19051.5,17216.5,17614.8,12069.9,12288.6
+"        SSIC 46530/46549 - Agricultural Machinery, Equipment & Supplies, Industrial, Construction & Related Machinery & Equipment Nec",1297.9,1001.2,892.1,937.8,794.6,702.7,799.9,708.7,746,812.1,786.8,753.1,859.1,792.4,692.1
+        SSIC 46541 - Industrial Machinery & Equipment (e.g. Industrial Crane),3066.5,3464.9,3394.3,2804,2699.6,1984.4,2343.3,2427.2,2192.7,2450.6,2568.1,2542,2475.6,2466.5,2293.8
+"        SSIC 46542/3 - Construction Equipment, Lifts, Escalators & Industrial & Office Air-Conditioning Equipment",1559.5,1268.6,1374.1,359.2,488,944.8,1040.4,992.9,612.2,598.9,502.4,684.9,1242.6,1139.1,1058.2
+        SSIC 46544 - Electrical & Wiring Accessories,1861.9,1799.1,1955.7,1435.8,1293.6,1301.1,1420.6,1124.4,1098.8,1040.7,1098.4,1026,873.1,802.8,656.7
+        SSIC 46551 - Marine Equipment & Accessories,577.7,595.1,413.6,383,344.8,516.1,567.5,635.5,565.6,635.3,613.5,610.3,603.4,548.9,625.5
+"        SSIC 46552/9 - Aircraft Equipment & Supplies, Transport Equipment Except Motor Vehicles & Motorcycles Nec",263.1,434.5,320.5,256.7,268,373.6,290.2,284.1,256.2,260.5,235.8,259.4,231,210.8,241.8
+"        SSIC 4656 - Motor Vehicles, Parts & Accessories",2250.9,2634.8,2127.5,1821.9,1283.8,1374.7,1410.4,1587.8,807.2,1550.7,1590.6,1761.4,1708.4,1366,1341.6
+        SSIC 46591 - Office Machinery & Equipment,507.3,429.2,487.5,404.3,232.5,564.7,646.1,665.6,613.9,604.4,739.1,762.5,918.5,827.7,775
+"        SSIC 46592 - Medical, Professional, Scientific & Precision Equipment",6293.9,5494.8,4871.3,6780.4,5139.6,3253.3,2484.1,2524.3,1955.5,1502.2,1405.6,1239.4,1374.8,1195.3,1228.5
+"        SSIC 46593/4 - Commercial Food Service Equipment, Service Establishment Equipment & Supplies",170.4,129.6,149,105.2,79.5,139.8,129,114.4,99.2,85.1,90,90.7,60.5,56.4,53.2
+        SSIC 46595 - Security & Safety Equipment,413.4,380.4,311.7,289.5,219.8,291.9,265.6,268,261.7,285.9,311.2,258.9,217.2,209.5,222.5
+        SSIC 46599 - Other Machinery & Equipment Nec,754.4,684.3,515.9,376.2,373.1,292.6,324.6,262.6,258.6,276.1,280.5,271.1,267.3,322.9,350.5
+        SSIC 4661 - Fuels & Related Products,14793.7,27663.3,67592.9,23215.3,13123.8,18902.4,15508.8,9778,11470.6,1758.5,1213.6,9105.1,11770.6,15037.4,10087.9
+        SSIC 46620 - Metals & Metal Ores (e.g. Steel Pipes) Except General Hardware,6173.7,5175.5,11228.2,8130,3676.6,3816.2,4271.2,4422.6,3717.7,2999.3,3903.3,3812.6,3107.6,3163.9,2161.4
+"        SSIC 46631 - Logs, Sawn Timber, Plywood & Related Products",182.7,234,307.6,263.7,214.7,266.3,292.5,274.1,184.3,221.2,193.9,165.9,175.7,189.7,270.2
+        SSIC 46632 - General Hardware,346.6,361.3,470.5,425,410.6,485.9,486.3,440.7,439.5,516.1,426.3,607.2,675.5,493.7,517.1
+        SSIC 46633 - Structural Clay & Concrete Products,144.7,148.8,148.5,109.8,78.9,130.3,121.3,128.3,124.4,148.4,177.8,134.7,114.5,137.7,147.7
+        SSIC 46634/5 - Paints & Glass,170.1,195.3,202.3,187.7,142.8,161,166.1,186.6,166.8,166.3,145.8,119.8,103.6,105.3,89
+"        SSIC 46639 - Construction Materials, Hardware, Plumbing & Heating Equipment & Supplies Nec",708.6,901,587.7,628.9,637.6,565.3,441.1,522.8,663,639.5,814,747,697.2,627.4,488.1
+        SSIC 46641/2 - Basic Industrial Chemicals (Except Fertilisers) & Chemical Fertilisers,1368,1718.4,2365.2,2301.6,1468.7,1464.9,1647.4,1807.9,1688.9,1221.2,1211.7,1005.7,997,1455,1409.8
+        SSIC 46643 - Petrochemical Products,2642.6,2789.1,4332.7,2919.9,1142.4,1154,313.6,810,898.9,561,706.1,1142.9,599.9,636.6,790.8
+        SSIC 46649 - Chemicals & Chemical Products Nec,1902.9,1472,1940.2,1758.5,1378.3,998.1,932.8,979.4,738.9,706.3,879,736.8,914.4,782.6,523.1
+"        SSIC 4665 - Other Intermediate Products, Waste & Scrap",124.5,133.1,154.7,123.9,132.3,203.6,229.7,171.6,110.8,96.5,119,121.8,122.5,132.2,147.6
+        SSIC 4666 - Ship Chandlers & Ship Bunkering,606.5,623.8,692.1,418.1,534.1,561.9,577.9,563.8,512.3,96.6,621,499.3,416.4,762.6,708.1
+        SSIC 46900 - Non-Specialised Wholesale Trade,2225.2,2070.4,2682.5,2231.3,1830.2,1771.4,1892,2324.1,2288.7,2500.8,3614.7,3372.9,2304.9,3114.9,3011.9
+    SSIC 47 - Total Retail Trade,8386.5,8121.4,7478.9,6697.1,5723.4,7132.2,7531.7,7398.7,7193.7,6885.3,6479.2,6266.9,6132.4,5999,5420
+        SSIC 47101 - Supermarkets & Hypermarkets,1297.4,1180.2,1107.4,1241.8,1249.4,814.8,839.6,806.3,852.8,774.3,772.6,715.9,691.4,655.5,672.4
+"        SSIC 47102 - Mini-Marts, Convenience Stores & Provision Shops",236.1,236.6,217.4,226.8,236.4,231.6,276,271.9,291.3,280.7,279.5,253.7,263.9,266.5,227.4
+        SSIC 47103 - Department Stores,182.1,185.9,166.8,132.8,125.3,380,374.9,375.6,352.3,365.3,378,429.1,442.7,460.5,387.6
+        SSIC 47109 - Non-Specialised Stores Nec,145.5,129.8,121,86.2,83.3,117.5,115,125.4,118.2,128.6,77.1,69.5,55.3,46.6,40.8
+"        SSIC 4721/4722/4723 - Food, Beverages & Tobacco Products",438.8,396.3,334.6,186.1,109.3,47.5,46.5,41.8,21.2,69.4,101.6,111.7,135.6,153,76
+        SSIC 47311 - Motor Vehicles Except Motorcycles & Scooters,640.7,678.4,671.8,750.2,727.8,1062.9,1265.8,1271.7,1170.8,976.4,751.6,634.9,668.6,615.6,643.1
+        SSIC 47312 - Motorcycles & Scooters,48.3,51.2,31.7,27.8,22.3,30.9,32.9,32.2,36.9,35.1,29,30.3,20.6,23.5,21.8
+"        SSIC 47313/47314 - Tyres, Batteries, Spare Parts & Accessories For Motor Vehicles",140.6,124,98.9,80,47.4,97.9,116.9,115.4,127.8,124,136.3,126.7,118.5,100.5,94.8
+        SSIC 47320 - Automotive Fuel,451.3,450.8,502,442.5,328.5,332,359,337.8,355.3,334.5,325,307.4,297.8,275.4,249.7
+"        SSIC 4741 - Computers, Peripheral Equipment, Software & Telecommunications Equipment",478.5,449.3,353.7,282.8,201.2,237.2,271.7,277.1,242.9,257.9,243.9,242.9,237.4,255.2,213.4
+        SSIC 47535 - Household Electrical Appliances & Equipment,252.2,276.4,233.2,182.6,161.2,206.2,238.8,269.7,255.9,232.2,207.1,190.2,220.5,246.1,219.5
+"        SSIC 47510/47531/47532 - Textiles, Furniture & Furnishings",325.9,250.8,223.2,243.4,236.1,278.5,302.5,313.3,315.5,332.8,310,326.9,321.9,306.6,249.6
+"        SSIC 4752 - Hardware, Paints & Glass",104.2,112.9,106.8,76.4,48.2,55.1,62.9,58.4,63.8,65.1,50.8,45.9,53,45.5,37.9
+"        SSIC 47533/47534/47537/47539 - Lighting, Lighting Accessories, Crockery, Cutlery, Kitchen Utensils, Security, Safety Equipment & Other Household Articles Nec",143.6,134.8,84.8,76.6,64,111.1,136,122.9,112.4,111.3,117.3,96.9,98.6,110.8,103.8
+"        SSIC 47610 - Books, Newspapers & Stationery",107.3,108.6,96.5,88,94,113.3,110.8,133.9,151.5,149,172.3,156.1,143.4,141.9,132.5
+"        SSIC 47620/47630/47640/47650 - Music & Video Recordings (e.g. Dvds, Blu-Ray Discs), Sporting Equipment, Games & Toys, Musical Instruments & Scores",182.9,194.2,197.8,151.1,104.1,156.7,148.3,146.2,152.1,136.7,134.8,135.7,137.2,144.7,136.1
+"        SSIC 47711/47712 - Clothing For Adults, Children & Infants",385.3,416.2,372.7,415.5,275.4,581.7,621.6,656.6,670.8,626.5,639.1,609.9,616.7,559.7,530.7
+"        SSIC 47713/47714/47715/47719 - Footwear, Bags, Luggage & Travel Accessories, Sewing, Clothing Accessories & Other Clothing, Footwear & Leather Articles Nec",878.7,896.5,839.2,546.9,391.3,618.2,548.5,515.1,457.6,464.5,401.6,421.2,362.4,335.2,260.7
+        SSIC 47721 - Cosmetics & Toiletries,368.2,325.3,284.5,268.6,197.1,311.9,328.9,278,252.7,219.3,198,241.3,204.7,193.3,183.7
+"        SSIC 47722/47723/47729 - Pharmacies, Drug Stores, Chinese Medicine Shops, Pharmaceutical & Medical Goods Nec",242.2,269.1,262,196.5,214.5,239.7,193.1,190.6,193.9,188.2,177.5,185.9,174.9,164.8,156.1
+        SSIC 47731 - Jewellery Made From Precious Metals And Stones,417.8,404.4,385.8,327.7,280.3,365.9,406.6,356.2,291.2,322.7,314.1,291.9,275.8,314.9,267.5
+        SSIC 47732 - Costume Jewellery,47.3,45.9,42.2,29,25.3,31.3,26,23.8,31,37.2,35.6,31,30.5,30.8,30.3
+"        SSIC 47733/47739 - Watches, Clocks & Personal Effects Nec",396,359.7,331.8,273,181.1,275.6,219.1,189.8,231.7,234.8,220.5,219.2,201.8,220.9,163
+        SSIC 4775 - Optical & Photographic Goods,161.6,160.8,146.5,146.3,137.2,189,206.6,206,174.1,151.3,138.1,152.2,138.5,140.5,140.2
+"        SSIC 4774/4776/4777 - Handicrafts & Fancy Goods, Flowers, Plants & Pet Animals, Other Goods & Second-Hand Goods",314.1,283.3,266.6,218.5,182.6,245.9,283.6,282.8,270,267.5,267.7,240.7,220.8,191.1,181.3
+    SSIC 49-53 - Total Transportation & Storage,77604.4,53306,89444.4,62375.2,28923.9,30746.7,29761.1,30582.3,26675.1,29167.7,26316.8,24013.6,23183.6,21639.3,25013.9
+"        SSIC 4910/4921/4922 - Passenger And Freight Rail Transport, Passenger Land Transport & Aerial Cableways",2662.3,2568.6,2229.7,2105,2038.8,2302,2434.4,2122.4,2397.3,2219.6,1996.3,1837.2,1816,1748.7,1660.7
+        SSIC 49231 - Freight Transport By Road,577.8,592.5,648.1,594.9,547.5,645.8,656.9,641.2,646.3,675.3,609.9,608.8,553,515.3,501.4
+        SSIC 49232 - Moving Services,156.8,137.3,92.7,75.2,64,97,101.2,119.5,126,110.1,106,96.9,87.8,88.2,92.2
+        SSIC 49233-Rental And Leasing Of Freight Land Transport Vehicle (e.g. Lorries And Trucks) With Driver,37.5,33.6,35.3,27.7,16,30,26.7,25.7,24.4,22.5,17.7,16.5,11.1,14.6,18.6
+        SSIC 5001 - Passenger Water Transport,152,105,39.6,-3.7,-1.5,81.4,91.6,81.2,70.3,74.2,66.8,54.8,59.3,56.3,72
+        SSIC 5002 - Freight Water Transport,52518.7,29738.6,68051.7,44723.8,13953.9,8097.6,7425.3,8639.2,5505.2,7544.6,6157,5102.7,4928.8,4269.1,7671.4
+        SSIC 51 - Air Transport,4547,4579.7,3640.9,856.4,462,4502.5,4265.8,4324.9,4300.9,4943.2,3825.3,3622.5,3671.5,3583.2,4621.9
+        SSIC 52101 - General Warehousing,699.6,658.6,617,595.9,575.3,534,475.5,513.3,496.4,480.5,548.3,455,502,468.4,446.9
+        SSIC 52102 - Refrigerated Warehousing And Storage,63.8,55,50.4,62.2,53.6,47,38.7,36.5,30.4,31.7,33.3,27.3,27.8,23.5,21.1
+        SSIC 52103 - Storage For Dangerous Goods,1399.6,1397.7,1113.5,1112,968.3,1017,1051.6,1201.5,1166.8,1124.8,1043.1,1035.3,950.2,926.6,886.1
+"        SSIC 52109 - Specialised Storage Nec (e.g. Wine Warehousing, Document Storage And Warehousing)",41.8,51,36.9,31.1,36.6,76.5,71.4,57.5,91.8,96.4,78.8,60.9,48.5,32,21.8
+        SSIC 52211 - Carpark Management & Operation Services,629.7,607.5,658.7,655.4,599.7,667.4,636,592.5,462.1,429.9,487.3,498,483.9,466.9,468.2
+"        SSIC 52212/52219 - Motor Vehicle Towing Services, Supporting Services To Land Transport Nec",67,68.1,59.3,50.5,39,48.5,46.6,55,56,48,49.2,46.7,41.4,38.8,30.8
+        SSIC 5222 - Supporting Services To Water Transport,5511.6,4591.2,4324.5,4514.5,4207.5,4850.7,4786.4,4890.9,4507.6,4695.5,4817.3,4452.9,4397.4,4195.5,3934.6
+        SSIC 5223 - Supporting Services To Air Transport,2665.3,2277.6,1508.1,754.3,592,2539.2,2466.9,2301,2118.6,2069.3,2053.6,2004.2,1827.2,1689.7,1282.7
+        SSIC 5224 - Cargo Handling,438.9,418.2,396,331.7,280.5,346.8,351.8,385.6,347.2,358.7,361.2,372.5,332.8,328,346.2
+        SSIC 5225 - Marine Surveying Services & Classification Societies,347.4,302.8,274.5,245.7,209.1,230,209.4,238.5,272.3,316.2,322.1,307.8,293.4,290.1,261.2
+        SSIC 5229 - Other Transportation Support Activities,4036.2,4000.3,4677.6,4624.9,3478.8,3827.2,3762,3567.8,3257.1,3199.9,3030.7,2724.5,2490.4,2232.3,2012.6
+        SSIC 53 - Postal & Courier,1051.3,1122.8,989.8,1017.6,802.8,806.2,862.8,788.1,798.3,727.4,712.9,689,661.1,672.2,663.5
+    SSIC 55-56 - Total Accommodation & Food Services,12778.8,12125.4,10117.5,7113.9,6605.9,9626.1,9827.2,9330.9,9091.4,8359.4,8549,7920.4,7584.9,7055.9,6030.8
+        SSIC 55101 - Hotels,4677.5,4461,3205.2,1770.4,1901.9,3877.9,3857.2,3573.1,3425,3388.1,3432.5,3343.2,3383.3,3276.2,2528.1
+        SSIC 55109/55900 - Other Accommodation,741.2,628.7,519.6,407.7,378.4,370,666.9,631.2,764.3,408,706.2,625.3,545.8,496.9,505.4
+        SSIC 56111 - Restaurants,3663.8,3392,3193.6,2243.4,1968.3,2473.5,2389.9,2351,2243.4,2037.6,2014.6,1838.1,1649.2,1440.4,1311.4
+        SSIC 56112/56123 - Cafes & Food And Drinks Kiosks,947.9,981.8,892.7,780.7,658.7,702.3,660.9,624.8,575.2,549.7,543,408.5,378.9,336,321.2
+        SSIC 56121 - Fast Food Outlets,545.5,566.5,527.7,467.4,412.4,481.8,456.9,411,375.5,347.6,339.7,310.1,287.5,280.5,253.5
+"        SSIC 56122 - Operators Of Food Courts, Hawker Centres, Coffees Shops And Canteens (With Mainly Food And Beverage Income)",1380.6,1373.2,1210.8,1053.5,874,1014,1060.6,1029.6,992.4,959.4,861.3,772.5,739.3,682,603
+        SSIC 56130 - Pubs,75.9,73.9,65,37.6,64.6,116.3,118.3,113.1,102.7,94.4,102.6,120.9,109.2,105.6,90.7
+        SSIC 56200 - Food Caterers,746.4,648.2,502.9,353.2,347.7,590.4,616.6,597.1,612.7,574.7,549,501.7,491.8,438.3,417.6
+    SSIC 58-63 - Total Information & Communications,41506.2,37561.1,32314.3,30733.8,27042.2,23297.6,20964,19806.4,18988.6,17357.2,17043.2,15791.1,14702.2,13494.3,12093.3
+        SSIC 58110 - Book Publishing,281.9,241.6,184.5,158.3,186.3,189.8,177.6,169.6,185,193.1,159.1,148.8,196,151.5,162.4
+        SSIC 58120 - Publishing Of Directories & Mailing Lists,145.6,119.6,125.9,128.7,109.5,100.4,116.5,155.7,120,165.4,152.6,127.4,113.9,198,196.2
+"        SSIC 5813/5819 - Publishing Of News, Journals, Periodicals And Other Publishing Activities",240.9,270.9,339.4,362.7,417.1,523.4,503.2,545.9,654.6,785.9,795.6,807.4,865,895.9,847.4
+        SSIC 5820 - Software Publishing,7898.6,7239.5,6945.9,6139.8,3161,1938.1,1665.3,1328.4,1405.4,1447.6,1867,1417.3,1225,1202.2,874.9
+"        SSIC 59111/2 - Movie, Advertisements, Corporate Videos & Event Videos Production",172,172.7,170.4,90.8,80.3,196.7,148.6,139.1,100.5,81.1,64.7,67.4,48.2,41.4,51.1
+"        SSIC 59113 - Production Of Dramas, Variety Shows And Documentaries",232.9,211.3,221.5,237.9,274.9,155.6,217.2,241.5,197.9,205.2,181.9,202.3,193.1,150.1,124.2
+"        SSIC 59114/9 - Animation, Movie, Video, Television And Other Programme Production Activities Nec",73.4,91.2,75.7,19.2,59,68.7,70.4,67,59.2,60.8,67.1,43.3,48.5,48.6,42.8
+"        SSIC 5912 - Movie, Video, Television And Other Programme Post-Production Activities",-8.7,16.6,84.8,67.3,57.1,44.4,52.3,49.8,43.7,31.5,44,43.7,23.3,22,16.2
+"        SSIC 5913 - Movie, Video, Television & Other Programme Distribution Activities",127,164.1,148.2,111.2,87.2,177.2,139.6,179.1,161.9,112.3,168.9,60.5,91.3,69.6,52.1
+        SSIC 5914 - Movie Projection Activities,35.7,36.9,35,18.6,-2.8,77.3,77.9,72.7,80.5,79.4,84.1,70.6,63.5,62.1,51.7
+        SSIC 5920 - Sound Recording & Music Publishing Activities,39.5,44.9,34.1,45.2,31.6,22,20.5,17.2,17.6,17.5,14.3,10.7,10,7.4,6.2
+        SSIC 60 - Broadcasting And Content Production,664.3,-2337.9,-2160.4,-2763.3,-1741.9,48.2,989.6,999.5,692.5,551.2,518.9,955.2,962,891.2,908.1
+        SSIC 6101 - Telecommunications Network Operation,3938,3930.1,3879.5,3433.1,3783.4,4398.5,4205.8,4439.2,4610.2,4537.5,4412.6,4243.4,3936.5,3859.4,3851.5
+        SSIC 6102 - Telecommunications Resellers,1045.4,1021.9,863.3,814.3,474.6,674.1,804.7,682,609.8,580.4,616.1,630.6,640.5,567.3,402.8
+        SSIC 6109 - Other Telecommunications Activities,383.8,338.7,282.9,260.3,264.2,195.1,201.6,205.8,217.2,201.1,241,213.6,242.2,145.4,141
+        SSIC 6201 - Computer Programming Activities,4278.1,4534.7,3116,3712.1,3220.6,3131.2,3001.5,3088.8,2780,2678.2,2420.1,2271.8,2151.4,1941.8,1677.3
+        SSIC 6202 - Information Technology Consultancy And Computer Facilities Management Activities,8474.3,8011.2,7082.8,5713.6,5987.1,5329.9,4723.6,3907.2,3434.6,3009.8,3038.4,2767.7,2495.3,2109.4,1794.6
+        SSIC 6209 - Other Information Technology And Computer Service Activities,2468.4,1744.7,1098.3,1274.6,1214.7,853.7,863.6,858.5,751.7,615.2,519.1,404.4,326.6,270.9,243.6
+"        SSIC 631/639 - Data Analytics, Processing, Hosting & Related Activities; Internet Search Engines And Other Information Service Activities",11234.5,10806.9,9013,8769,7089.1,4884.1,2432.5,2024.7,2245.5,1500.9,1233.5,1007.6,786.5,618.2,445.1
+        SSIC 6320 Excl 63204 - Online Marketplaces Operating On A Fee Or Commission Basis (Exclude Online Marketplaces For Travel And Accommodation Services),-898.4,549.5,914.6,2682.5,2699.8,-208.7,130,131.8,189.3,9.3,46.8,-1.9,10,18.7,16.6
+        SSIC 63204 - Online Marketplaces Operating On A Fee Or Commission Basis For Travel And Accommodation Services Provided By Third-Party,679.1,352.3,-141.2,-542.5,-410.7,497.6,422.1,503,431.6,493.8,397.5,299.3,273.4,223.2,187.4
+"    SSIC 68-82 - Total Real Estate, Professional And Administrative & Support Services",79636.1,73619.8,71932.8,63731.9,59309.4,69276.9,70382.9,67658.5,66991.9,63045.8,57869.8,54688.1,50830.9,46996,42333.6
+        SSIC 68 - Real Estate,19587.6,18221.9,17372,15351.7,12817.1,16633.3,15435.8,14997,16930.1,17883.1,17803.6,17840.5,16297.9,15204.7,13428.3
+        SSIC 6910 - Legal Services,3353.6,3314.5,3153.6,2917.9,2381.4,2481.7,2377.5,2188,2154.7,2029,1965,1922.9,1809.9,1651.6,1621.6
+"        SSIC 6920 - Accounting, Book-Keeping & Auditing Activities; Tax Consultancy",2259.6,2200.4,1969.1,1856.5,1678,1764.8,1690.3,1634.6,1569.6,1546.2,1446.1,1345.4,1259.2,1108,1048.7
+        SSIC 7010 - Head Offices; Centralised Administrative Offices & Business Representative Offices,12867.5,11677.1,11333.6,10434.9,9585.6,9693.2,8389.5,7986.1,7378.9,7110.7,6171.8,5999.4,5521.1,5102.7,4406.3
+        SSIC 7020 - Management Consultancy,5274.3,5018,4847.3,3801.6,3520,3819.8,3658.8,3487.8,3218,2977,2981.1,2443.3,2512,2287.3,2314.7
+        SSIC 711 - Architectural & Engineering Activities And Related Technical Consultancy,8548.4,8193,7505.7,6730.6,6130.6,7269.9,6808.8,6877.1,7171,7104.5,6815.3,6933.6,6611.3,6190.8,6184
+        SSIC 7120 - Technical Testing & Analysis Services,1070.3,910.9,862.3,735.9,728.1,742.6,504.3,480.2,484.1,452.9,411.1,414.1,397.3,386.4,364.3
+        SSIC 72 - Scientific Research & Development,3402.5,3109.5,3096,2587.5,2584.6,2372.4,2438.4,2323.1,2169.7,2089.9,1956.3,1753.6,2196.8,2118.9,1991
+        SSIC 7310 - Advertising,3700.3,2135.1,1207.1,966.9,847.9,1007.5,936.4,888.5,823.9,695.7,688.5,667,630.2,621.6,571
+        SSIC 7320 - Market Research & Public Opinion Polling,394.4,347.9,356.9,310.4,284.5,315.9,294.9,267.2,275.4,264.7,270.5,272.4,236.7,225.2,200.8
+        SSIC 7411 - Industrial Design Activities,277.7,237.6,204.4,189.3,141.8,168.7,138.4,136.9,135.6,na,na,na,na,na,na
+        SSIC 7419 - Other Specialised Design Activities,849.3,852.7,735.8,576.4,530.5,703,637.4,642.1,619.3,na,na,na,na,na,na
+        SSIC 7420 - Photographic Activities,87,93.8,94.4,76.1,52.8,92,81.2,80.1,76.1,na,na,na,na,na,na
+"        SSIC 7490 - Professional, Scientific & Technical Activities Nec",229.6,221.4,195.1,156.5,138.1,137,111.9,127.5,117.2,na,na,na,na,na,na
+        SSIC 7500 - Veterinary Activities,149.9,128,95.9,74.8,56.6,60.5,60.2,61.4,55.3,42.3,32.4,26.8,26.7,25.4,20.1
+        SSIC 771 - Rental & Leasing Of Land Transport Equipment,898.2,895.2,767.9,654.3,714.3,733.9,697.7,873.2,659.8,543.9,554.6,481.3,502,338.9,328.4
+        SSIC 772 - Rental & Leasing Of Personal & Household Goods,43.5,41.1,37.2,51.7,63.3,94.9,88.4,89.4,87.1,102.8,97.4,79.1,78.3,73.2,63.9
+"        SSIC 773/4 - Rental & Leasing Of Other Machinery, Equipment & Tangible Goods, Leasing Of Non-Financial Intangible Assets",6108.3,5912,8337.8,7283.5,8774.7,11967.3,16702.6,15642.2,14863.3,11797.7,8928.6,7661.8,6263.1,5720.2,4618.1
+        SSIC 78 Excl 78103 - Employment Activities (Exclude Domestic Worker Employment Placement Agencies),3583.9,3636.9,3874.5,3461.7,2871.9,3146.4,3174.2,3065.5,2958.3,2502.8,2440.5,2153.7,2122,1993,1734.4
+        SSIC 78103 - Domestic Worker Employment Placement Agencies,57.6,59.6,44,35.7,22.9,73.9,65.4,80.2,66.3,63.9,64.1,70.9,61.2,50.5,41.6
+        SSIC 79 - Travel Agencies & Tour Operators,428,397,220.3,121.3,214.5,544,536.9,470.5,505.6,457.3,433.3,418.8,389,401.8,365.3
+        SSIC 80 - Security And Investigation Activities,2261.7,2118,2015.9,2181.5,2098.3,2003.7,2003.4,1842.4,1645.7,1492.2,1326.5,1189.2,1070.4,1012.4,855.1
+        SSIC 812 - Cleaning Activities,2239.8,2084.3,1900.7,1749.7,1713.4,1702.7,1804.7,1769.3,1426.6,1327.6,1072.3,820.1,715.2,589.8,511.2
+"        SSIC 813 - Landscape Planting, Care And Maintenance Service Activities",379.9,359.5,358.4,329.4,298.4,384.5,320.7,327.6,304.5,309.4,272.9,250.5,233.3,205.8,191.1
+"        SSIC 821/2 - Office Administrative & Support Services, Call Centres",618.7,624.9,617,601.3,561.9,561.9,557.6,526.6,456.6,469.9,426.7,365.4,341.9,331.8,268.5
+"        SSIC 823 - Convention, Trade Show, Concert & Other Event Organisers",601.4,507.1,414.2,151.9,160.1,406.7,480.9,418.8,468.2,400,418.4,380.4,424.7,372.6,370.6
+        SSIC 829 - Business Support Services Nec,363,322.4,315.5,343.1,338.1,395,386.7,375.1,371.2,417.6,380.3,357.6,348.8,287.3,209.3
+"    SSIC 85-96 - Total Recreation, Community & Personal Services",40956.9,37953.4,32938.1,29580.6,27036.7,32376,31261.3,29708.8,27797.2,26428.6,25645.8,23816.5,22398.7,20780.1,18608.5
+"        SSIC 851/2 - Pre-Primary Education, Primary Education",2509.7,2056.4,1772.7,1682.3,1451.7,1545.1,1513,1261.1,1146.5,1054.3,1014.5,918.8,833.4,737.8,685.1
+"        SSIC 8531/3/4/5/6 - General Secondary Education, Post-Secondary Non-Tertiary General Education, International And Foreign System Schools, Schools For Special Needs, Specialised Education Schools",2913.6,2820.1,2533.9,2482.4,2212.5,2337.2,2294.6,2104.3,2029.5,1905.2,1843.8,1719.3,1534.8,1366.3,1257.4
+        SSIC 8532 - Technical And Vocational (Secondary And Post-Secondary Non-Tertiary) Education,516.5,497.6,492.3,490.1,448.5,464.6,464.2,463.5,450.5,461.4,455.4,436.2,432.6,384.9,408
+        SSIC 854 - Tertiary Education,5149.6,4802.2,4637.3,4667.4,4451.6,4144.4,4453.8,4333.6,4226.6,4251,4020.1,3839.9,3624.8,3310.7,3199.4
+        SSIC 855 - Other Education,1195.8,1109,982.8,926,1041.9,1342.6,1107.9,1072.9,991.2,935.2,906.9,772,673.3,585.7,581.8
+        SSIC 856 - Educational Support Services,119.1,107,114,103,116.6,224.1,224.7,218.8,211,180.1,175.2,158,140.6,119.6,103.9
+        SSIC 861 - Hospitals,7664,7118.7,6356.3,5639.5,5295,5785.2,5465.3,5196.6,4774.4,4297.5,4023.5,3709.9,3467.6,3099.1,2826.1
+        SSIC 86201 - Clinics And Other General Medical Services (Western),2652.8,2362.2,2076.2,1864.6,1650.4,1667.1,1550.7,1455.2,1397.4,1180.3,1172.3,1128.1,962.1,932.4,803.9
+        SSIC 86202 - Clinics And Other General Medical Services (Non-Western),258.9,223.3,155.2,88.6,71,125.8,111,114,108.5,91.4,79.3,71.9,70.5,64,56.2
+        SSIC 86203 - Specialised Medical Services,1868,1648.9,1469.1,1325.5,1202.8,1345.5,1264.7,1172.8,1224.9,1215.2,1104.5,1047.4,968,871.6,853.5
+        SSIC 86204/869 - Dental & Other Health Services,3780.1,3411,3026.3,3058.5,2703.9,2532.5,2304.9,2170.6,2069.4,1850.4,1642.5,1127,938.1,846.5,738.2
+        SSIC 8701 - Residential Nursing Care Facilities,402.8,347.3,324.1,250.6,266.3,229.5,228,186.8,162.2,na,na,na,na,na,na
+        SSIC 8702 - Other Residential Care Services,196.5,192.8,167.4,166.3,147.9,164.6,159.1,148.8,133.8,na,na,na,na,na,na
+        SSIC 881 - Social Services Without Accommodation For The Elderly And Disabled,363.6,326.2,320.2,238.8,202.3,198.5,186.9,168.6,145.3,119.5,93.6,76.1,66.5,49.2,44.7
+        SSIC 889 - Other Social Services Without Accommodation,484.1,562.7,449.1,403.6,279.6,364.9,336,318.3,262.8,257.6,230.2,209.5,215.5,176,158.6
+        SSIC 90 - Arts Creation And Performing Arts Activities,117.1,105.1,96.7,91,71.7,111.6,110.9,89.4,99.3,100.3,104.3,92.9,92.4,117.4,76.7
+"        SSIC 91 - Libraries, Archives, Museums & Other Cultural Activities",714.2,702.8,558.7,464.2,448.8,623.6,605.4,548,484.9,487.7,460.1,454.7,371.6,359.5,335.9
+        SSIC 92 - Gambling & Betting Activities,4392.1,4028.6,2949,1925.5,1637.3,3869.4,3863.8,3856.3,3262.9,3284.4,3846.3,3794.9,4000.5,4149.8,3153.1
+        SSIC 931 - Sports Activities,365.8,335,372.9,355.9,413.8,670.2,588,519.4,527,527.5,496.4,434.9,457.4,380.7,340.8
+        SSIC 932 - Other Amusement & Recreation Activities,943.1,964.7,754.3,433.3,460.2,966.8,905.4,941,873.7,908,904.7,870.4,852.9,727.3,658.1
+"        SSIC 941 - Activities Of Business, Employers & Professional Membership Organisations",104.1,108.8,114.9,100.8,91,179.2,175,164.8,148.2,166.9,149.7,141.2,100.9,82.1,69.7
+        SSIC 942/9 - Activities Of Trade Unions & Other Membership Organisations,1212.8,1094.6,991.4,1003.1,892,1132.8,1114.6,1041.2,968.1,926.5,877.6,843.3,777,710.4,673.8
+        SSIC 951 - Repair Of Computers And Communications Equipment,109.8,103.9,57.2,104.5,84.3,93.7,125.9,149.7,165.2,172.9,168.7,179.3,163.6,143.8,133.4
+        SSIC 9521 - Repair Of Consumer Electronics,31.3,29.1,22.3,13.4,17.2,35,34.2,33,40.8,40.8,36.8,32.5,30.4,29.4,11.6
+        SSIC 9522 - Repair Of Household Appliances And Home & Garden Equipment,100.4,91.8,83.9,61.2,50.5,72.7,74.4,77.6,77.4,56.5,50.5,48.4,47.3,47,44
+        SSIC 9523 - Repair Of Footwear & Leather Goods,3.1,3.5,3,1.8,3.4,4.9,4.1,3.7,3.7,4.7,5.4,4.8,4.3,3.9,3.6
+        SSIC 9524 - Repair Of Furniture & Home Furnishings,3.5,4.9,4.7,4.4,4.4,5,7.1,6.2,6.7,6.3,5.6,5.8,5.7,6,5.5
+        SSIC 9529 - Repair Of Other Personal & Household Goods,18.3,16.6,15.5,12.3,11,12.5,11.9,13.6,13.2,14.8,13.1,10.8,9.8,10.4,10.8
+        SSIC 95301 - Repair & Maintenance Of Motor Vehicles,290.4,272,259.2,251.6,174.1,334.3,400.5,417.2,434.2,415.2,397.2,370.5,320.7,321.5,294.7
+        SSIC 95302 - Car Washing & Related Services,40.6,33.4,26.9,25.8,21,26.6,26.2,24.5,23,31.3,28.2,27.3,26,25.7,18.2
+        SSIC 95303 - Motor Vehicle Inspection & Valuation Services,76.6,63.4,64.3,69.8,57.4,72,64.5,62,66.3,70.5,59.8,58.7,59.2,51,46.9
+        SSIC 9601 - Washing And (Dry-) Cleaning Of Textile & Fur Products,193.4,157.6,117.6,83.3,97.4,174.4,144.7,151.9,151,123.8,113.9,112.9,110.4,100.1,90.9
+"        SSIC 9602 - Hairdressing, Beauty And Other Personal Care Services",1898.9,1952,1292.4,978.5,810,1297.6,1107.5,1006.4,895.8,822.6,740.6,740.3,699.9,660.1,638.9
+        SSIC 9603 - Funeral & Related Services,88.4,110.7,85.9,65.2,43.6,55.5,75.9,67.2,71.2,51,50.1,38.5,39.2,30.3,30.7
+        SSIC 9604 - Wedding & Related Services,31.7,34.5,35.8,31.1,15,32.3,30.8,28.7,23.5,21.8,23.1,19.3,18.8,16.8,16.8
+        SSIC 9609 - Other Personal Service Nec,146.2,155.1,154.6,116.9,90.6,134.3,125.8,121,127.1,122.4,119,111.6,98.4,104.8,100.8

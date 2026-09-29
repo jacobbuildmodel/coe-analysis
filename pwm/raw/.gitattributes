@@ -1,0 +1,7 @@
+# Raw sources: never touch the bytes. Binary-safe for every data and document
+# type saved here (the two SingStat CPI tables are JSON as served by its API).
+*.csv   -text
+*.xlsx  -text
+*.xls   -text
+*.pdf   -text
+*.json  -text

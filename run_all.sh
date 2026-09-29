@@ -25,3 +25,6 @@ echo "   expected: 4480189cd99b4514885185843ac5f2cc"
 
 echo; echo "== ERP piece (erp/), its own steps and checksums"
 bash erp/run_all.sh
+
+echo; echo "== PWM piece (pwm/): synthetic tests always; real steps only once sealed"
+bash pwm/run_all.sh

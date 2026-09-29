@@ -1,0 +1,471 @@
+=== w1_ows_2009_occupation_gross.xls | sheets: ROW09 TABLE4 | read: ROW09 TABLE4 | 574 rows x 15 cols | code col 1 | title col 3 | first data row 8 | coded rows 432, row 10 to 549
+  non-empty cells per column in coded rows: c0=0, c1=432, c2=0, c3=432, c4=432, c5=0, c6=432, c7=0, c8=432, c9=0, c10=432, c11=0, c12=432, c13=0, c14=0
+  r0 c0: TABLE 4
+  r2 c0: MEAN, MEDIAN AND QUARTILES OF MONTHLY GROSS WAGE OF SELECTED OCCUPATIONS IN
+  r3 c0: ALL INDUSTRIES, JUNE 2009
+  r5 c0: SSOC
+  r5 c2: Occupation
+  r5 c4: Number
+  r5 c6: Mean
+  r5 c8: First
+  r5 c10: Median
+  r5 c12: Third
+  r6 c4: Covered
+  r6 c8: Quartile ($)
+  r6 c12: Quartile ($)
+=== w1_ows_2009_occupation_basic.xls | sheets: ROW09 TABLE3 | read: ROW09 TABLE3 | 575 rows x 15 cols | code col 1 | title col 3 | first data row 8 | coded rows 432, row 10 to 550
+  non-empty cells per column in coded rows: c0=0, c1=432, c2=0, c3=432, c4=432, c5=0, c6=432, c7=0, c8=432, c9=0, c10=432, c11=0, c12=432, c13=1, c14=0
+  r0 c0: TABLE 3
+  r2 c0: MEAN, MEDIAN AND QUARTILES OF MONTHLY BASIC WAGE OF SELECTED OCCUPATIONS IN
+  r3 c0: ALL INDUSTRIES, JUNE 2009
+  r5 c0: SSOC
+  r5 c2: Occupation
+  r5 c4: Number
+  r5 c6: Mean
+  r5 c8: First
+  r5 c10: Median
+  r5 c12: Third
+  r6 c4: Covered
+  r6 c8: Quartile ($)
+  r6 c12: Quartile ($)
+=== w1_ows_2010_occupation_gross.xlsx | sheets: ROW10 TABLE4 | read: ROW10 TABLE4 | 535 rows x 13 cols | code col 1 | title col 3 | first data row 8 | coded rows 360, row 11 to 500
+  non-empty cells per column in coded rows: c0=0, c1=360, c2=0, c3=360, c4=360, c5=0, c6=360, c7=0, c8=360, c9=0, c10=360, c11=0, c12=360
+  r0 c0: TABLE 4
+  r2 c0: MEAN, MEDIAN AND QUARTILES OF MONTHLY GROSS WAGE OF SELECTED OCCUPATIONS IN
+  r3 c0: ALL INDUSTRIES, JUNE 2010
+  r5 c0: SSOC
+  r5 c2: Occupation
+  r5 c4: Number
+  r5 c6: Mean
+  r5 c8: First
+  r5 c10: Median
+  r5 c12: Third
+  r6 c4: Covered
+  r6 c8: Quartile ($)
+  r6 c12: Quartile ($)
+=== w1_ows_2010_occupation_basic.xlsx | sheets: ROW10 TABLE3 | read: ROW10 TABLE3 | 530 rows x 13 cols | code col 1 | title col 3 | first data row 8 | coded rows 362, row 11 to 495
+  non-empty cells per column in coded rows: c0=0, c1=362, c2=0, c3=362, c4=362, c5=0, c6=362, c7=0, c8=362, c9=0, c10=362, c11=0, c12=362
+  r0 c0: TABLE 3
+  r2 c0: MEAN, MEDIAN AND QUARTILES OF MONTHLY BASIC WAGE OF SELECTED OCCUPATIONS IN
+  r3 c0: ALL INDUSTRIES, JUNE 2010
+  r5 c0: SSOC
+  r5 c2: Occupation
+  r5 c4: Number
+  r5 c6: Mean
+  r5 c8: First
+  r5 c10: Median
+  r5 c12: Third
+  r6 c4: Covered
+  r6 c8: Quartile ($)
+  r6 c12: Quartile ($)
+=== w1_ows_2011_occupation_gross.xlsx | sheets: ROW11 T3 | read: ROW11 T3 | 487 rows x 11 cols | code col 1 | title col 3 | first data row 7 | coded rows 336, row 9 to 470
+  non-empty cells per column in coded rows: c0=0, c1=336, c2=0, c3=336, c4=336, c5=0, c6=336, c7=0, c8=336, c9=0, c10=336
+  r0 c0: TABLE 3
+  r1 c0: MEDIAN, 25th AND 75th PERCENTILES OF MONTHLY GROSS WAGES OF COMMON OCCUPATIONS IN
+  r2 c0: ALL INDUSTRIES, JUNE 2011
+  r5 c0: SSOC 2010
+  r5 c2: Occupation
+  r5 c4: Number Covered
+  r5 c6: 25th Percentile ($)
+  r5 c8: Median ($)
+  r5 c10: 75th Percentile ($)
+=== w1_ows_2011_occupation_basic.xlsx | sheets: ROW11 TABLE2 | read: ROW11 TABLE2 | 481 rows x 11 cols | code col 1 | title col 3 | first data row 8 | coded rows 336, row 10 to 465
+  non-empty cells per column in coded rows: c0=0, c1=336, c2=0, c3=336, c4=336, c5=0, c6=336, c7=0, c8=336, c9=0, c10=336
+  r0 c0: TABLE 2
+  r1 c0: MEDIAN, 25th AND 75th PERCENTILES OF MONTHLY BASIC WAGES OF COMMON OCCUPATIONS IN
+  r2 c0: ALL INDUSTRIES, JUNE 2011
+  r5 c0: SSOC
+  r5 c2: Occupation
+  r5 c4: Number Covered
+  r5 c6: 25th Percentile ($)
+  r5 c8: Median ($)
+  r5 c10: 75th Percentile ($)
+=== w1_ows_2012_occupation.xlsx | sheets: Contents, T4, T4.1, T4.2, T4.3, T4.4, T4.5, T4.6, T4.7, T4.8, T4.9, T4.10 | read: T4 | 341 rows x 14 cols | code col 1 | title col 2 | first data row 9 | coded rows 322, row 10 to 340
+  non-empty cells per column in coded rows: c0=322, c1=322, c2=322, c3=322, c4=322, c5=322, c6=322, c7=322, c8=322, c9=322, c10=0, c11=0, c12=0, c13=0
+  r0 c0: TABLE 4
+  r1 c0: MEDIAN, 25TH AND 75TH PERCENTILES OF MONTHLY BASIC AND GROSS WAGES OF COMMON OCCUPATIONS IN
+  r1 c11: Back to Contents
+  r2 c0: ALL INDUSTRIES, JUNE 2012
+  r3 c11: Jump to:
+  r4 c11: Managers
+  r4 c12: Clerical Supp Wkrs
+  r4 c13: Craftsmen & Rel Wkrs
+  r5 c0: Reset
+  r5 c1: SSOC 2010
+  r5 c2: Occupation
+  r5 c3: Number Covered
+  r5 c4: Basic Wage
+  r5 c7: Gross Wage
+  r5 c11: Professionals
+  r5 c12: Svce & Sales Wkrs
+  r5 c13: Plant & Mach. Op. & Assem
+  r6 c4: 25th Percentile ($)
+  r6 c5: Median ($)
+  r6 c6: 75th Percentile ($)
+  r6 c7: 25th Percentile ($)
+  r6 c8: Median ($)
+  r6 c9: 75th Percentile ($)
+  r6 c11: Assoc. Prof & Tech
+  r6 c12: Agri & Fishery Wkrs
+  r6 c13: Cleaners, Labourers & Rel Wkrs
+=== w1_ows_2013_occupation.xlsx | sheets: Contents, T4, T4.1, T4.2, T4.3, T4.4, T4.5, T4.6, T4.7, T4.8, T4.9, T4.10 | read: T4 | 320 rows x 14 cols | code col 1 | title col 2 | first data row 9 | coded rows 302, row 10 to 319
+  non-empty cells per column in coded rows: c0=302, c1=302, c2=302, c3=302, c4=302, c5=302, c6=302, c7=302, c8=302, c9=302, c10=0, c11=0, c12=0, c13=0
+  r0 c0: TABLE 4
+  r1 c0: MEDIAN, 25TH AND 75TH PERCENTILES OF MONTHLY BASIC AND GROSS WAGES OF COMMON OCCUPATIONS IN
+  r1 c11: Back to Contents
+  r2 c0: ALL INDUSTRIES, JUNE 2013
+  r3 c11: Jump to:
+  r4 c11: Managers
+  r4 c12: Clerical Supp Wkrs
+  r4 c13: Plant & Mach. Op. & Assem
+  r5 c0: Reset
+  r5 c1: SSOC 2010
+  r5 c2: Occupation
+  r5 c3: Number Covered
+  r5 c4: Basic Wage
+  r5 c7: Gross Wage
+  r5 c11: Professionals
+  r5 c12: Svce & Sales Wkrs
+  r5 c13: Cleaners, Labourers & Rel Wkrs
+  r6 c4: 25th Percentile ($)
+  r6 c5: Median ($)
+  r6 c6: 75th Percentile ($)
+  r6 c7: 25th Percentile ($)
+  r6 c8: Median ($)
+  r6 c9: 75th Percentile ($)
+  r6 c11: Assoc. Prof & Tech
+  r6 c12: Craftsmen & Rel Wkrs
+=== w1_ows_2014_occupation.xlsx | sheets: Contents, T4, T4.1, T4.2, T4.3, T4.4, T4.5, T4.6, T4.7, T4.8, T4.9, T4.10 | read: T4 | 319 rows x 14 cols | code col 1 | title col 2 | first data row 9 | coded rows 300, row 10 to 318
+  non-empty cells per column in coded rows: c0=300, c1=300, c2=300, c3=300, c4=300, c5=300, c6=300, c7=300, c8=300, c9=300, c10=0, c11=0, c12=0, c13=0
+  r0 c0: TABLE 4
+  r1 c0: MEDIAN, 25TH AND 75TH PERCENTILES OF MONTHLY BASIC AND GROSS WAGES OF COMMON OCCUPATIONS IN
+  r1 c11: Back to Contents
+  r2 c0: ALL INDUSTRIES, JUNE 2014
+  r3 c11: Jump to:
+  r4 c11: Managers
+  r4 c12: Clerical Supp Wkrs
+  r4 c13: Craftsmen & Rel Wkrs
+  r5 c0: Reset
+  r5 c1: SSOC 2010
+  r5 c2: Occupation
+  r5 c3: Number Covered
+  r5 c4: Basic Wage
+  r5 c7: Gross Wage
+  r5 c11: Professionals
+  r5 c12: Svce & Sales Wkrs
+  r5 c13: Plant & Mach. Op. & Assem
+  r6 c4: 25th Percentile ($)
+  r6 c5: Median ($)
+  r6 c6: 75th Percentile ($)
+  r6 c7: 25th Percentile ($)
+  r6 c8: Median ($)
+  r6 c9: 75th Percentile ($)
+  r6 c11: Assoc. Prof & Tech
+  r6 c12: Agri & Fishery Wkrs
+  r6 c13: Cleaners, Labourers & Rel Wkrs
+=== w1_ows_2015_occupation.xlsx | sheets: Contents, T4, T4.1, T4.2, T4.3, T4.4, T4.5, T4.6, T4.7, T4.8, T4.9, T4.10 | read: T4 | 331 rows x 14 cols | code col 1 | title col 2 | first data row 9 | coded rows 312, row 10 to 330
+  non-empty cells per column in coded rows: c0=312, c1=312, c2=312, c3=312, c4=312, c5=312, c6=312, c7=312, c8=312, c9=312, c10=0, c11=0, c12=0, c13=0
+  r0 c0: TABLE 4
+  r1 c0: MEDIAN, 25TH AND 75TH PERCENTILES OF MONTHLY BASIC AND GROSS WAGES OF COMMON OCCUPATIONS IN
+  r1 c11: Back to Contents
+  r2 c0: ALL INDUSTRIES, JUNE 2015
+  r3 c11: Jump to:
+  r4 c11: Managers
+  r4 c12: Clerical Supp Wkrs
+  r4 c13: Craftsmen & Rel Wkrs
+  r5 c0: Reset
+  r5 c1: SSOC 2015
+  r5 c2: Occupation
+  r5 c3: Number Covered
+  r5 c4: Basic Wage
+  r5 c7: Gross Wage
+  r5 c11: Professionals
+  r5 c12: Svce & Sales Wkrs
+  r5 c13: Plant & Mach. Op. & Assem
+  r6 c4: 25th Percentile ($)
+  r6 c5: Median ($)
+  r6 c6: 75th Percentile ($)
+  r6 c7: 25th Percentile ($)
+  r6 c8: Median ($)
+  r6 c9: 75th Percentile ($)
+  r6 c11: Assoc. Prof & Tech
+  r6 c12: Agri & Fishery Wkrs
+  r6 c13: Cleaners, Labourers & Rel Wkrs
+=== w1_ows_2016_occupation.xlsx | sheets: Contents, T4, T4.1, T4.2, T4.3, T4.4, T4.5, T4.6, T4.7, T4.8, T4.9, T4.10 | read: T4 | 326 rows x 14 cols | code col 1 | title col 2 | first data row 9 | coded rows 307, row 10 to 325
+  non-empty cells per column in coded rows: c0=307, c1=307, c2=307, c3=307, c4=307, c5=307, c6=307, c7=307, c8=307, c9=307, c10=0, c11=0, c12=0, c13=0
+  r0 c0: TABLE 4
+  r1 c0: MEDIAN, 25TH AND 75TH PERCENTILES OF MONTHLY BASIC AND GROSS WAGES OF COMMON OCCUPATIONS IN
+  r1 c11: Back to Contents
+  r2 c0: ALL INDUSTRIES, JUNE 2016
+  r3 c11: Jump to:
+  r4 c11: Managers
+  r4 c12: Clerical Supp Wkrs
+  r4 c13: Craftsmen & Rel Wkrs
+  r5 c0: Reset
+  r5 c1: SSOC 2015
+  r5 c2: Occupation
+  r5 c3: Number Covered
+  r5 c4: Basic Wage
+  r5 c7: Gross Wage
+  r5 c11: Professionals
+  r5 c12: Svce & Sales Wkrs
+  r5 c13: Plant & Mach. Op. & Assem
+  r6 c4: 25th Percentile ($)
+  r6 c5: Median ($)
+  r6 c6: 75th Percentile ($)
+  r6 c7: 25th Percentile ($)
+  r6 c8: Median ($)
+  r6 c9: 75th Percentile ($)
+  r6 c11: Assoc. Prof & Tech
+  r6 c12: Agri & Fishery Wkrs
+  r6 c13: Cleaners, Labourers & Rel Wkrs
+=== w1_ows_2017_occupation.xlsx | sheets: Contents, T4, T4.1, T4.2, T4.3, T4.4, T4.5, T4.6, T4.7, T4.8, T4.9, T4.10 | read: T4 | 337 rows x 14 cols | code col 1 | title col 2 | first data row 9 | coded rows 318, row 10 to 336
+  non-empty cells per column in coded rows: c0=318, c1=318, c2=318, c3=318, c4=318, c5=318, c6=318, c7=318, c8=318, c9=318, c10=0, c11=0, c12=0, c13=0
+  r0 c0: TABLE 4
+  r1 c0: MEDIAN, 25TH AND 75TH PERCENTILES OF MONTHLY BASIC AND GROSS WAGES OF COMMON OCCUPATIONS IN
+  r1 c11: Back to Contents
+  r2 c0: ALL INDUSTRIES, JUNE 2017
+  r3 c11: Jump to:
+  r4 c11: Managers
+  r4 c12: Clerical Supp Wkrs
+  r4 c13: Craftsmen & Rel Wkrs
+  r5 c0: Reset
+  r5 c1: SSOC 2015
+  r5 c2: Occupation
+  r5 c3: Number Covered
+  r5 c4: Basic Wage
+  r5 c7: Gross Wage
+  r5 c11: Professionals
+  r5 c12: Svce & Sales Wkrs
+  r5 c13: Plant & Mach. Op. & Assem
+  r6 c4: 25th Percentile ($)
+  r6 c5: Median ($)
+  r6 c6: 75th Percentile ($)
+  r6 c7: 25th Percentile ($)
+  r6 c8: Median ($)
+  r6 c9: 75th Percentile ($)
+  r6 c11: Assoc. Prof & Tech
+  r6 c12: Agri & Fishery Wkrs
+  r6 c13: Cleaners, Labourers & Rel Wkrs
+=== w1_ows_2018_occupation.xlsx | sheets: Contents, T4, T4.1, T4.2, T4.3, T4.4, T4.5, T4.6, T4.7, T4.8, T4.9, T4.10 | read: T4 | 337 rows x 14 cols | code col 1 | title col 2 | first data row 9 | coded rows 317, row 10 to 336
+  non-empty cells per column in coded rows: c0=317, c1=317, c2=317, c3=317, c4=317, c5=317, c6=317, c7=317, c8=317, c9=317, c10=0, c11=0, c12=0, c13=0
+  r0 c0: TABLE 4
+  r1 c0: MEDIAN, 25TH AND 75TH PERCENTILES OF MONTHLY BASIC AND GROSS WAGES OF COMMON OCCUPATIONS IN
+  r1 c11: Back to Contents
+  r2 c0: ALL INDUSTRIES, JUNE 2018
+  r3 c11: Jump to:
+  r4 c11: Managers
+  r4 c12: Clerical Supp Wkrs
+  r4 c13: Craftsmen & Rel Wkrs
+  r5 c0: Reset
+  r5 c1: SSOC 2015
+  r5 c2: Occupation
+  r5 c3: Number Covered
+  r5 c4: Basic Wage
+  r5 c7: Gross Wage
+  r5 c11: Professionals
+  r5 c12: Svce & Sales Wkrs
+  r5 c13: Plant & Mach. Op. & Assem
+  r6 c4: 25th Percentile ($)
+  r6 c5: Median ($)
+  r6 c6: 75th Percentile ($)
+  r6 c7: 25th Percentile ($)
+  r6 c8: Median ($)
+  r6 c9: 75th Percentile ($)
+  r6 c11: Assoc. Prof & Tech
+  r6 c12: Agri & Fishery Wkrs
+  r6 c13: Cleaners, Labourers & Rel Wkrs
+=== w1_ows_2019_occupation.xlsx | sheets: Contents, T4, T4.1, T4.2, T4.3, T4.4, T4.5, T4.6, T4.7, T4.8, T4.9, T4.10 | read: T4 | 323 rows x 14 cols | code col 1 | title col 2 | first data row 9 | coded rows 304, row 10 to 322
+  non-empty cells per column in coded rows: c0=304, c1=304, c2=304, c3=304, c4=304, c5=304, c6=304, c7=304, c8=304, c9=304, c10=0, c11=0, c12=0, c13=0
+  r0 c0: TABLE 4
+  r1 c0: MEDIAN, 25TH AND 75TH PERCENTILES OF MONTHLY BASIC AND GROSS WAGES OF COMMON OCCUPATIONS IN
+  r1 c11: Back to Contents
+  r2 c0: ALL INDUSTRIES, JUNE 2019
+  r3 c11: Jump to:
+  r4 c11: Managers
+  r4 c12: Clerical Supp Wkrs
+  r4 c13: Craftsmen & Rel Wkrs
+  r5 c0: Reset
+  r5 c1: SSOC 2015
+  r5 c2: Occupation
+  r5 c3: Number Covered
+  r5 c4: Basic Wage
+  r5 c7: Gross Wage
+  r5 c11: Professionals
+  r5 c12: Svce & Sales Wkrs
+  r5 c13: Plant & Mach. Op. & Assem
+  r6 c4: 25th Percentile ($)
+  r6 c5: Median ($)
+  r6 c6: 75th Percentile ($)
+  r6 c7: 25th Percentile ($)
+  r6 c8: Median ($)
+  r6 c9: 75th Percentile ($)
+  r6 c11: Assoc. Prof & Tech
+  r6 c12: Agri & Fishery Wkrs
+  r6 c13: Cleaners, Labourers & Rel Wkrs
+=== w1_ows_2020_occupation.xlsx | sheets: Contents, T4, T4.1, T4.2, T4.3, T4.4, T4.5, T4.6, T4.7, T4.8, T4.9, T4.10 | read: T4 | 370 rows x 14 cols | code col 1 | title col 2 | first data row 9 | coded rows 352, row 10 to 369
+  non-empty cells per column in coded rows: c0=352, c1=352, c2=352, c3=352, c4=352, c5=352, c6=352, c7=352, c8=352, c9=352, c10=0, c11=0, c12=0, c13=0
+  r0 c0: TABLE 4
+  r1 c0: MEDIAN, 25TH AND 75TH PERCENTILES OF MONTHLY BASIC AND GROSS WAGES OF COMMON OCCUPATIONS IN
+  r1 c11: Back to Contents
+  r2 c0: ALL INDUSTRIES, JUNE 2020
+  r3 c11: Jump to:
+  r4 c11: Managers
+  r4 c12: Clerical Supp Wkrs
+  r4 c13: Craftsmen & Rel Wkrs
+  r5 c0: Reset
+  r5 c1: SSOC 2020
+  r5 c2: Occupation
+  r5 c3: Number Covered
+  r5 c4: Basic Wage
+  r5 c7: Gross Wage
+  r5 c11: Professionals
+  r5 c12: Svce & Sales Wkrs
+  r5 c13: Plant & Mach. Op. & Assem
+  r6 c4: 25th Percentile ($)
+  r6 c5: Median ($)
+  r6 c6: 75th Percentile ($)
+  r6 c7: 25th Percentile ($)
+  r6 c8: Median ($)
+  r6 c9: 75th Percentile ($)
+  r6 c11: Assoc. Prof & Tech
+  r6 c12: Agri & Fishery Wkrs
+  r6 c13: Cleaners, Labourers & Rel Wkrs
+=== w1_ows_2021_occupation.xlsx | sheets: Contents, T4, T4.1, T4.2, T4.3, T4.4, T4.5, T4.6, T4.7, T4.8, T4.9, T4.10, T4.11, T4.12 | read: T4 | 361 rows x 14 cols | code col 1 | title col 2 | first data row 9 | coded rows 343, row 10 to 360
+  non-empty cells per column in coded rows: c0=343, c1=343, c2=343, c3=343, c4=343, c5=343, c6=343, c7=343, c8=343, c9=343, c10=0, c11=0, c12=0, c13=0
+  r0 c0: TABLE 4
+  r1 c0: MEDIAN, 25TH AND 75TH PERCENTILES OF MONTHLY BASIC AND GROSS WAGES OF COMMON OCCUPATIONS IN
+  r1 c11: Back to Contents
+  r2 c0: ALL INDUSTRIES, JUNE 2021
+  r3 c11: Jump to:
+  r4 c11: Managers
+  r4 c12: Clerical Supp Wkrs
+  r4 c13: Craftsmen & Rel Wkrs
+  r5 c0: Reset
+  r5 c1: SSOC 2020
+  r5 c2: Occupation
+  r5 c3: Number Covered
+  r5 c4: Basic Wage
+  r5 c7: Gross Wage
+  r5 c11: Professionals
+  r5 c12: Svce & Sales Wkrs
+  r5 c13: Plant & Mach. Op. & Assem
+  r6 c4: 25th Percentile ($)
+  r6 c5: Median ($)
+  r6 c6: 75th Percentile ($)
+  r6 c7: 25th Percentile ($)
+  r6 c8: Median ($)
+  r6 c9: 75th Percentile ($)
+  r6 c11: Assoc. Prof & Tech
+  r6 c12: Agri & Fishery Wkrs
+  r6 c13: Cleaners, Labourers & Rel Wkrs
+=== w1_ows_2022_occupation.xlsx | sheets: Contents, T4, T4.1, T4.2, T4.3, T4.4, T4.5, T4.6, T4.7, T4.8, T4.9, T4.10, T4.11, T4.12 | read: T4 | 352 rows x 14 cols | code col 1 | title col 2 | first data row 9 | coded rows 334, row 10 to 351
+  non-empty cells per column in coded rows: c0=334, c1=334, c2=334, c3=334, c4=334, c5=334, c6=334, c7=334, c8=334, c9=334, c10=0, c11=0, c12=0, c13=0
+  r0 c0: TABLE 4
+  r1 c0: MEDIAN, 25TH AND 75TH PERCENTILES OF MONTHLY BASIC AND GROSS WAGES OF COMMON OCCUPATIONS IN
+  r1 c11: Back to Contents
+  r2 c0: ALL INDUSTRIES, JUNE 2022
+  r3 c11: Jump to:
+  r4 c11: Managers
+  r4 c12: Clerical Supp Wkrs
+  r4 c13: Craftsmen & Rel Wkrs
+  r5 c0: Reset
+  r5 c1: SSOC 2020
+  r5 c2: Occupation
+  r5 c3: Number Covered
+  r5 c4: Basic Wage
+  r5 c7: Gross Wage
+  r5 c11: Professionals
+  r5 c12: Svce & Sales Wkrs
+  r5 c13: Plant & Mach. Op. & Assem
+  r6 c4: 25th Percentile ($)
+  r6 c5: Median ($)
+  r6 c6: 75th Percentile ($)
+  r6 c7: 25th Percentile ($)
+  r6 c8: Median ($)
+  r6 c9: 75th Percentile ($)
+  r6 c11: Assoc. Prof & Tech
+  r6 c12: Agri & Fishery Wkrs
+  r6 c13: Cleaners, Labourers & Rel Wkrs
+=== w1_ows_2023_occupation.xlsx | sheets: Contents, T4, T4.1, T4.2, T4.3, T4.4, T4.5, T4.6, T4.7, T4.8, T4.9, T4.10, T4.11, T4.12, T4.13, T4.14 | read: T4 | 505 rows x 14 cols | code col 1 | title col 2 | first data row 9 | coded rows 487, row 10 to 504
+  non-empty cells per column in coded rows: c0=0, c1=487, c2=487, c3=487, c4=487, c5=487, c6=487, c7=487, c8=487, c9=487, c10=0, c11=0, c12=0, c13=0
+  r0 c0: TABLE 4
+  r1 c0: MEDIAN, 25TH AND 75TH PERCENTILES OF MONTHLY BASIC AND GROSS WAGES OF FULL-TIME RESIDENT EMPLOYEES IN COMMON OCCUPATIONS IN
+  r1 c11: Back to Contents
+  r2 c0: ALL INDUSTRIES, JUNE 2023
+  r3 c11: Jump to:
+  r4 c11: Managers
+  r4 c12: Clerical Supp Wkrs
+  r4 c13: Craftsmen & Rel Wkrs
+  r5 c0: Reset
+  r5 c1: SSOC 2020
+  r5 c2: Occupation
+  r5 c3: Number Covered
+  r5 c4: Basic Wage
+  r5 c7: Gross Wage
+  r5 c11: Professionals
+  r5 c12: Svce & Sales Wkrs
+  r5 c13: Plant & Mach. Op. & Assem
+  r6 c4: 25th Percentile ($)
+  r6 c5: Median ($)
+  r6 c6: 75th Percentile ($)
+  r6 c7: 25th Percentile ($)
+  r6 c8: Median ($)
+  r6 c9: 75th Percentile ($)
+  r6 c11: Assoc. Prof & Tech
+  r6 c12: Agri & Fishery Wkrs
+  r6 c13: Cleaners, Labourers & Rel Wkrs
+=== w1_ows_2024_occupation.xlsx | sheets: Contents, T4, T4.1, T4.2, T4.3, T4.4, T4.5, T4.6, T4.7, T4.8, T4.9, T4.10, T4.11, T4.12, T4.13, T4.14 | read: T4 | 579 rows x 13 cols | code col 1 | title col 2 | first data row 8 | coded rows 562, row 9 to 578
+  non-empty cells per column in coded rows: c0=562, c1=562, c2=562, c3=562, c4=562, c5=562, c6=562, c7=562, c8=562, c9=0, c10=0, c11=0, c12=0
+  r0 c0: TABLE 4
+  r1 c0: MEDIAN, 25TH AND 75TH PERCENTILES OF MONTHLY BASIC AND GROSS WAGES OF FULL-TIME RESIDENT EMPLOYEES IN COMMON OCCUPATIONS
+  r1 c10: Back to Contents
+  r2 c0: IN ALL INDUSTRIES, JUNE 2024
+  r3 c10: Jump to:
+  r4 c1: SSOC 2020
+  r4 c2: Occupation
+  r4 c3: Basic Wage
+  r4 c6: Gross Wage
+  r4 c10: Managers
+  r4 c11: Clerical Supp Wkrs
+  r4 c12: Craftsmen & Rel Wkrs
+  r5 c0: Reset
+  r5 c3: 25th Percentile ($)
+  r5 c4: Median ($)
+  r5 c5: 75th Percentile ($)
+  r5 c6: 25th Percentile ($)
+  r5 c7: Median ($)
+  r5 c8: 75th Percentile ($)
+  r5 c10: Professionals
+  r5 c11: Svce & Sales Wkrs
+  r5 c12: Plant & Mach. Op. & Assem
+  r6 c10: Assoc. Prof & Tech
+  r6 c11: Agri & Fishery Wkrs
+  r6 c12: Cleaners, Labourers & Rel Wkrs
+=== w1_ows_2025_occupation.xlsx | sheets: Contents, T4, T4.1, T4.2, T4.3, T4.4, T4.5, T4.6, T4.7, T4.8, T4.9, T4.10, T4.11, T4.12, T4.13, T4.14 | read: T4 | 540 rows x 13 cols | code col 1 | title col 2 | first data row 8 | coded rows 523, row 9 to 539
+  non-empty cells per column in coded rows: c0=523, c1=523, c2=523, c3=523, c4=523, c5=523, c6=523, c7=523, c8=523, c9=0, c10=0, c11=0, c12=0
+  r0 c0: TABLE 4
+  r1 c0: MEDIAN, 25TH AND 75TH PERCENTILES OF MONTHLY BASIC AND GROSS WAGES OF FULL-TIME RESIDENT EMPLOYEES IN COMMON OCCUPATIONS
+  r1 c10: Back to Contents
+  r2 c0: IN ALL INDUSTRIES, JUNE 2025
+  r3 c10: Jump to:
+  r4 c1: SSOC 2024
+  r4 c2: Occupation
+  r4 c3: Basic Wage
+  r4 c6: Gross Wage
+  r4 c10: Managers
+  r4 c11: Clerical Supp Wkrs
+  r4 c12: Craftsmen & Rel Wkrs
+  r5 c0: Reset
+  r5 c3: 25th Percentile ($)
+  r5 c4: Median ($)
+  r5 c5: 75th Percentile ($)
+  r5 c6: 25th Percentile ($)
+  r5 c7: Median ($)
+  r5 c8: 75th Percentile ($)
+  r5 c10: Professionals
+  r5 c11: Svce & Sales Wkrs
+  r5 c12: Plant & Mach. Op. & Assem
+  r6 c10: Assoc. Prof & Tech
+  r6 c11: Agri & Fishery Wkrs
+  r6 c12: Cleaners, Labourers & Rel Wkrs

@@ -1,0 +1,57 @@
+key,value
+T1_cleaning_pre_junes,4
+T1_cleaning_slope,-0.030780688
+T1_cleaning_lo,-0.10079426
+T1_cleaning_hi,0.039232887
+T1_cleaning_pass,False
+T1_security_pre_junes,6
+T1_security_slope,0.024398288
+T1_security_lo,0.01151103
+T1_security_hi,0.037285545
+T1_security_pass,False
+T1_landscape_pre_junes,6
+T1_landscape_slope,0.00099186044
+T1_landscape_lo,-0.014668971
+T1_landscape_hi,0.016652691
+T1_landscape_pass,True
+T1_groups_passing,landscape
+T2_landscape_est,0.22005634
+T2_landscape_lo,0.15789676
+T2_landscape_hi,0.28221591
+T2_pooled,0.22005634
+T2_pooled_lo,0.15789676
+T2_pooled_hi,0.28221591
+T2_groups_scored,landscape
+T3_start_c,7.0555758
+T3_end_c,7.3021793
+T3_growth_c,0.24660355
+T3_growth_mid,0.29155581
+T3_shortfall,0.044952269
+T3_n_start,3
+T3_n_end,3
+T4_series,none
+T4_reason,"no series qualifies (THESIS section 4): Singapore publishes no yearly count of cleaners, security officers or landscape workers, so whether the ladders cost jobs cannot be tested from public data."
+T4_industries_scored,
+T5_landscape_2017_ratio,1
+T5_landscape_2018_ratio,1
+T5_landscape_2019_ratio,1.0384615
+T5_landscape_2022_ratio,1
+T5_min_ratio,1
+T1_outcome,FAIL
+T2_outcome,SURVIVE
+T3_outcome,SURVIVE
+T4_outcome,NOT SCORED
+T5_outcome,SURVIVE
+verdict_A,the record cannot tell the two models apart
+verdict_B,the rest of the bottom kept pace
+verdict,The record cannot tell the two models apart; the rest of the bottom kept pace.
+conf_T1,0.28
+conf_T2,0.4
+conf_T3,0.58
+conf_T4,not scored
+conf_T5,0.5
+n_scored,4
+n_held,3
+scored_tests,T1 T2 T3 T5
+expected_held,1.76
+brier,0.2162

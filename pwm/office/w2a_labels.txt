@@ -1,0 +1,1354 @@
+=== w2a_services_detailed_industry.csv: DataSeries column only, 1063 rows
+    0  Establishments, Total Services Sector
+    1      SSIC 46 - Total Wholesale Trade
+    2          SSIC 46100 - Wholesale On A Fee Or Commission Basis
+    3          SSIC 4621/2 - Agricultural Raw Materials & Live Animals
+    4          SSIC 46301 - Fruits & Vegetables (Including Fresh And Frozen)
+    5          SSIC 46302 - Livestock, Meat, Poultry, Eggs & Seafood (Including Fresh And Frozen)
+    6          SSIC 46303 - A General Line (Wide Range) Of Groceries (e.g. Cereals, Sugar, Edible Oils, Sauces And Dairy Products)
+    7          SSIC 46304/5 - Confectionery & Bakery Products, Ice-Cream
+    8          SSIC 46306 - Health Supplements
+    9          SSIC 46307 - Liquor, Soft Drinks & Beverages
+   10          SSIC 46308/9 - Tobacco Products, Food, Beverages & Tobacco Nec (Including Dried Or Canned)
+   11          SSIC 46411/2/3 - Textiles & Leathers, Adults' Clothing, Children And Infants' Clothing (Including Products And Accessories For Infants)
+   12          SSIC 46414/5/6 - Footwear, Bags, Luggage & Travel Accessories, Sewing & Clothing Accessories
+   13          SSIC 46421/2 - Jewellery Made From Precious Metals And Stones & Costume Jewellery
+   14          SSIC 46423 - Watches & Clocks
+   15          SSIC 46424/9 - Cosmetics & Toiletries, Personal Effects Nec
+   16          SSIC 46431 - Furniture (Including Mattresses, Cushions)
+   17          SSIC 46432 - Furnishings (Including Curtains, Carpets, Wallpaper)
+   18          SSIC 46433 - Lighting & Lighting Accessories
+   19          SSIC 46434 - Crockery, Cutlery & Kitchen Utensils
+   20          SSIC 46435/6 - Household Electrical Appliances & Equipment, Audio & Video Equipment Except Electrical & Electronic Components
+   21          SSIC 46439 - Furniture, Home Furnishings & Other Household Equipment Nec
+   22          SSIC 4644 - Sporting & Other Recreational Goods
+   23          SSIC 4645 - Handicrafts & Fancy Goods
+   24          SSIC 4646 - Medicinal & Pharmaceutical Products
+   25          SSIC 4647 - Paper, Paper-Related Products, Stationery, Cellophane Products & Packaging Materials
+   26          SSIC 4649 - Other Household Goods
+   27          SSIC 4651/2 - Computers, Computer Peripheral Equipment & Software, Electronic & Telecommunications Equipment & Parts
+   28          SSIC 46530/46549 - Agricultural Machinery, Equipment & Supplies, Industrial, Construction & Related Machinery & Equipment Nec
+   29          SSIC 46541 - Industrial Machinery & Equipment (e.g. Industrial Crane)
+   30          SSIC 46542/3 - Construction Equipment, Lifts, Escalators & Industrial & Office Air-Conditioning Equipment
+   31          SSIC 46544 - Electrical & Wiring Accessories
+   32          SSIC 46551 - Marine Equipment & Accessories
+   33          SSIC 46552/9 - Aircraft Equipment & Supplies, Transport Equipment Except Motor Vehicles & Motorcycles Nec
+   34          SSIC 4656 - Motor Vehicles, Parts & Accessories
+   35          SSIC 46591 - Office Machinery & Equipment
+   36          SSIC 46592 - Medical, Professional, Scientific & Precision Equipment
+   37          SSIC 46593/4 - Commercial Food Service Equipment, Service Establishment Equipment & Supplies
+   38          SSIC 46595 - Security & Safety Equipment
+   39          SSIC 46599 - Other Machinery & Equipment Nec
+   40          SSIC 4661 - Fuels & Related Products
+   41          SSIC 46620 - Metals & Metal Ores (e.g. Steel Pipes) Except General Hardware
+   42          SSIC 46631 - Logs, Sawn Timber, Plywood & Related Products
+   43          SSIC 46632 - General Hardware
+   44          SSIC 46633 - Structural Clay & Concrete Products
+   45          SSIC 46634/5 - Paints & Glass
+   46          SSIC 46639 - Construction Materials, Hardware, Plumbing & Heating Equipment & Supplies Nec
+   47          SSIC 46641/2 - Basic Industrial Chemicals (Except Fertilisers) & Chemical Fertilisers
+   48          SSIC 46643 - Petrochemical Products
+   49          SSIC 46649 - Chemicals & Chemical Products Nec
+   50          SSIC 4665 - Other Intermediate Products, Waste & Scrap
+   51          SSIC 4666 - Ship Chandlers & Ship Bunkering
+   52          SSIC 46900 - Non-Specialised Wholesale Trade
+   53      SSIC 47 - Total Retail Trade
+   54          SSIC 47101 - Supermarkets & Hypermarkets
+   55          SSIC 47102 - Mini-Marts, Convenience Stores & Provision Shops
+   56          SSIC 47103 - Department Stores
+   57          SSIC 47109 - Non-Specialised Stores Nec
+   58          SSIC 4721/4722/4723 - Food, Beverages & Tobacco Products
+   59          SSIC 47311 - Motor Vehicles Except Motorcycles & Scooters
+   60          SSIC 47312 - Motorcycles & Scooters
+   61          SSIC 47313/47314 - Tyres, Batteries, Spare Parts & Accessories For Motor Vehicles
+   62          SSIC 47320 - Automotive Fuel
+   63          SSIC 4741 - Computers, Peripheral Equipment, Software & Telecommunications Equipment
+   64          SSIC 47535 - Household Electrical Appliances & Equipment
+   65          SSIC 47510/47531/47532 - Textiles, Furniture & Furnishings
+   66          SSIC 4752 - Hardware, Paints & Glass
+   67          SSIC 47533/47534/47536/47539 - Lighting, Lighting Accessories, Crockery, Cutlery, Kitchen Utensils, Security, Safety Equipment & Other Household Articles Nec
+   68          SSIC 47610 - Books, Newspapers & Stationery
+   69          SSIC 47620/47630/47640/47650 - Music & Video Recordings (e.g. Dvds, Blu-Ray Discs), Sporting Equipment, Games & Toys, Musical Instruments & Scores
+   70          SSIC 47711/47712 - Clothing For Adults, Children & Infants
+   71          SSIC 47713/47714/47715/47719 - Footwear, Bags, Luggage & Travel Accessories, Sewing, Clothing Accessories & Other Clothing, Footwear & Leather Articles Nec
+   72          SSIC 47721 - Cosmetics & Toiletries
+   73          SSIC 47722/47723/47729 - Pharmacies, Drug Stores, Chinese Medicine Shops, Pharmaceutical & Medical Goods Nec
+   74          SSIC 47731 - Jewellery Made From Precious Metals And Stones
+   75          SSIC 47732 - Costume Jewellery
+   76          SSIC 47733/47739 - Watches, Clocks & Personal Effects Nec
+   77          SSIC 4775 - Optical & Photographic Goods
+   78          SSIC 4774/4776/4777 - Handicrafts & Fancy Goods, Flowers, Plants & Pet Animals, Other Goods & Second-Hand Goods
+   79      SSIC 49-53 - Total Transportation & Storage
+   80          SSIC 4910/4921/4922 - Passenger And Freight Rail Transport, Passenger Land Transport & Aerial Cableways
+   81          SSIC 49231 - Freight Transport By Road
+   82          SSIC 49232 - Moving Services
+   83          SSIC 49233-Rental And Leasing Of Freight Land Transport Vehicle (e.g. Lorries And Trucks) With Driver
+   84          SSIC 5001 - Passenger Water Transport
+   85          SSIC 5002 - Freight Water Transport
+   86          SSIC 51 - Air Transport
+   87          SSIC 52101 - General Warehousing
+   88          SSIC 52102 - Refrigerated Warehousing And Storage
+   89          SSIC 52103 - Storage For Dangerous Goods
+   90          SSIC 52109 - Specialised Storage Nec (e.g. Wine Warehousing, Document Storage And Warehousing)
+   91          SSIC 52211 - Carpark Management & Operation Services
+   92          SSIC 52212/52219 - Motor Vehicle Towing Services, Supporting Services To Land Transport Nec
+   93          SSIC 5222 - Supporting Services To Water Transport
+   94          SSIC 5223 - Supporting Services To Air Transport
+   95          SSIC 5224 - Cargo Handling
+   96          SSIC 5225 - Marine Surveying Services & Classification Societies
+   97          SSIC 5229 - Other Transportation Support Activities
+   98          SSIC 53 - Postal & Courier
+   99      SSIC 55-56 - Total Accommodation & Food Services
+  100          SSIC 55101 - Hotels
+  101          SSIC 55109/55900 - Other Accommodation
+  102          SSIC 56111 - Restaurants
+  103          SSIC 56112/56123 - Cafes & Food And Drinks Kiosks
+  104          SSIC 56121 - Fast Food Outlets
+  105          SSIC 56122 - Operators Of Food Courts, Hawker Centres, Coffees Shops And Canteens (With Mainly Food And Beverage Income)
+  106          SSIC 56130 - Pubs
+  107          SSIC 56200 - Food Caterers
+  108      SSIC 58-63 - Total Information & Communications
+  109          SSIC 58110 - Book Publishing
+  110          SSIC 58120 - Publishing Of Directories & Mailing Lists
+  111          SSIC 5813/5819 - Publishing Of News, Journals, Periodicals And Other Publishing Activities
+  112          SSIC 5820 - Software Publishing
+  113          SSIC 59111/2 - Movie, Advertisements, Corporate Videos & Event Videos Production
+  114          SSIC 59113 - Production Of Dramas, Variety Shows And Documentaries
+  115          SSIC 59114/9 - Animation, Movie, Video, Television And Other Programme Production Activities Nec
+  116          SSIC 5912 - Movie, Video, Television And Other Programme Post-Production Activities
+  117          SSIC 5913 - Movie, Video, Television & Other Programme Distribution Activities
+  118          SSIC 5914 - Movie Projection Activities
+  119          SSIC 5920 - Sound Recording & Music Publishing Activities
+  120          SSIC 60 - Broadcasting And Content Production
+  121          SSIC 6101 - Telecommunications Network Operation
+  122          SSIC 6102 - Telecommunications Resellers
+  123          SSIC 6109 - Other Telecommunications Activities
+  124          SSIC 6201 - Computer Programming Activities
+  125          SSIC 6202 - Information Technology Consultancy And Computer Facilities Management Activities
+  126          SSIC 6209 - Other Information Technology And Computer Service Activities
+  127          SSIC 631/639 - Data Analytics, Processing, Hosting & Related Activities; Internet Search Engines And Other Information Service Activities
+  128          SSIC 6320 Excl 63204 - Online Marketplaces Operating On A Fee Or Commission Basis (Exclude Online Marketplaces For Travel And Accommodation Services)
+  129          SSIC 63204 - Online Marketplaces Operating On A Fee Or Commission Basis For Travel And Accommodation Services Provided By Third-Party
+  130      SSIC 64-66 - Total Finance & Insurance
+  131          SSIC 64120 - Full Banks
+  132          SSIC 64130 - Wholesale Banks
+  133          SSIC 64140 - Merchant Banks
+  134          SSIC 64150 - Finance Companies (With Deposit Taking Functions)
+  135          SSIC 65 - Insurance, Reinsurance, Provident Funding And Pension Funding
+  136          SSIC 66210 - Risk And Damage Evaluation (e.g. Loss Adjusting, Claims Adjusting)
+  137          SSIC 66221 - Insurance Agencies And Agents (Including Financial Planning Services)
+  138          SSIC 66222 - Insurance Brokers
+  139          SSIC 6629 - Other Activities Auxiliary To Insurance And Pension Funding
+  140          SSIC 6611/6612 - Securities And Commodities Exchange; Securities And Commodity Contract Brokerage
+  141          SSIC 66191 - Trustee, Fiduciary And Custody Services Firms (Including Nominee Companies, Trustees And Reit Trustees)
+  142          SSIC 66192 - Corporate Finance Advisory Services
+  143          SSIC 66193/66199 - Clearing And Settlement Of Financial Instruments And Other Activities Auxiliary To Financial Service Activities N.E.C. (e.g. Mortgage Advisory Firms)
+  144          SSIC 66194 - Activities Auxiliary To Fund Management Activities (e.g. Independent Fund Administration Firms)
+  145          SSIC 66195 - Transaction/Payment Processing Services
+  146          SSIC 66301 - Traditional/Long-Only Asset/Portfolio Management
+  147          SSIC 66302 - Hedge Fund Management
+  148          SSIC 66303 - Property Fund Management (Including Reit Management And Direct Property Fund Management)
+  149          SSIC 66304 - Private Equity Firms
+  150          SSIC 66305/66306/66307/66309 - Other Fund Management Activities
+  151          SSIC 64110/6420/64300/649 - Others (Central Bank; Holding Companies; Trusts, Funds And Similar Financial Entities; Other Financial Service Activities)
+  152      SSIC 68-82 - Total Real Estate, Professional And Administrative & Support Services
+  153          SSIC 68 - Real Estate
+  154          SSIC 6910 - Legal Services
+  155          SSIC 6920 - Accounting, Book-Keeping & Auditing Activities; Tax Consultancy
+  156          SSIC 7010 - Head Offices; Centralised Administrative Offices & Business Representative Offices
+  157          SSIC 7020 - Management Consultancy
+  158          SSIC 711 - Architectural & Engineering Activities And Related Technical Consultancy
+  159          SSIC 7120 - Technical Testing & Analysis Services
+  160          SSIC 72 - Scientific Research & Development
+  161          SSIC 7310 - Advertising
+  162          SSIC 7320 - Market Research & Public Opinion Polling
+  163          SSIC 7411 - Industrial Design Activities
+  164          SSIC 7419 - Other Specialised Design Activities
+  165          SSIC 7420 - Photographic Activities
+  166          SSIC 7490 - Professional, Scientific & Technical Activities Nec
+  167          SSIC 7500 - Veterinary Activities
+  168          SSIC 771 - Rental & Leasing Of Land Transport Equipment
+  169          SSIC 772 - Rental & Leasing Of Personal & Household Goods
+  170          SSIC 773/4 - Rental & Leasing Of Other Machinery, Equipment & Tangible Goods, Leasing Of Non-Financial Intangible Assets
+  171          SSIC 78 Excl 78103 - Employment Activities (Exclude Domestic Worker Employment Placement Agencies)
+  172          SSIC 78103 - Domestic Worker Employment Placement Agencies
+  173          SSIC 79 - Travel Agencies & Tour Operators
+  174          SSIC 80 - Security And Investigation Activities
+  175          SSIC 812 - Cleaning Activities
+  176          SSIC 813 - Landscape Planting, Care And Maintenance Service Activities
+  177          SSIC 821/2 - Office Administrative & Support Services, Call Centres
+  178          SSIC 823 - Convention, Trade Show, Concert & Other Event Organisers
+  179          SSIC 829 - Business Support Services Nec
+  180      SSIC 85-96 - Total Recreation, Community & Personal Services
+  181          SSIC 851/2 - Pre-Primary Education, Primary Education
+  182          SSIC 8531/3/4/5/6 - General Secondary Education, Post-Secondary Non-Tertiary General Education, International And Foreign System Schools, Schools For Special Needs, Specialised Education Schools
+  183          SSIC 8532 - Technical And Vocational (Secondary And Post-Secondary Non-Tertiary) Education
+  184          SSIC 854 - Tertiary Education
+  185          SSIC 855 - Other Education
+  186          SSIC 856 - Educational Support Services
+  187          SSIC 861 - Hospitals
+  188          SSIC 86201 - Clinics And Other General Medical Services (Western)
+  189          SSIC 86202 - Clinics And Other General Medical Services (Non-Western)
+  190          SSIC 86203 - Specialised Medical Services
+  191          SSIC 86204/869 - Dental & Other Health Services
+  192          SSIC 8701 - Residential Nursing Care Facilities
+  193          SSIC 8702 - Other Residential Care Services
+  194          SSIC 881 - Social Services Without Accommodation For The Elderly And Disabled
+  195          SSIC 889 - Other Social Services Without Accommodation
+  196          SSIC 90 - Arts Creation And Performing Arts Activities
+  197          SSIC 91 - Libraries, Archives, Museums & Other Cultural Activities
+  198          SSIC 92 - Gambling & Betting Activities
+  199          SSIC 931 - Sports Activities
+  200          SSIC 932 - Other Amusement & Recreation Activities
+  201          SSIC 941 - Activities Of Business, Employers & Professional Membership Organisations
+  202          SSIC 942/9 - Activities Of Trade Unions & Other Membership Organisations
+  203          SSIC 951 - Repair Of Computers And Communications Equipment
+  204          SSIC 9521 - Repair Of Consumer Electronics
+  205          SSIC 9522 - Repair Of Household Appliances And Home & Garden Equipment
+  206          SSIC 9523 - Repair Of Footwear & Leather Goods
+  207          SSIC 9524 - Repair Of Furniture & Home Furnishings
+  208          SSIC 9529 - Repair Of Other Personal & Household Goods
+  209          SSIC 95301 - Repair & Maintenance Of Motor Vehicles
+  210          SSIC 95302 - Car Washing & Related Services
+  211          SSIC 95303 - Motor Vehicle Inspection & Valuation Services
+  212          SSIC 9601 - Washing And (Dry-) Cleaning Of Textile & Fur Products
+  213          SSIC 9602 - Hairdressing, Beauty And Other Personal Care Services
+  214          SSIC 9603 - Funeral & Related Services
+  215          SSIC 9604 - Wedding & Related Services
+  216          SSIC 9609 - Other Personal Service Nec
+  217  Operating Revenue, Total Services Sector
+  218      SSIC 46 - Total Wholesale Trade
+  219          SSIC 46100 - Wholesale On A Fee Or Commission Basis
+  220          SSIC 4621/2 - Agricultural Raw Materials & Live Animals
+  221          SSIC 46301 - Fruits & Vegetables (Including Fresh And Frozen)
+  222          SSIC 46302 - Livestock, Meat, Poultry, Eggs & Seafood (Including Fresh And Frozen)
+  223          SSIC 46303 - A General Line (Wide Range) Of Groceries (e.g. Cereals, Sugar, Edible Oils, Sauces And Dairy Products)
+  224          SSIC 46304/5 - Confectionery & Bakery Products, Ice-Cream
+  225          SSIC 46306 - Health Supplements
+  226          SSIC 46307 - Liquor, Soft Drinks & Beverages
+  227          SSIC 46308/9 - Tobacco Products, Food, Beverages & Tobacco Nec (Including Dried Or Canned)
+  228          SSIC 46411/2/3 - Textiles & Leathers, Adults' Clothing, Children And Infants' Clothing (Including Products And Accessories For Infants)
+  229          SSIC 46414/5/6 - Footwear, Bags, Luggage & Travel Accessories, Sewing & Clothing Accessories
+  230          SSIC 46421/2 - Jewellery Made From Precious Metals And Stones & Costume Jewellery
+  231          SSIC 46423 - Watches & Clocks
+  232          SSIC 46424/9 - Cosmetics & Toiletries, Personal Effects Nec
+  233          SSIC 46431 - Furniture (Including Mattresses, Cushions)
+  234          SSIC 46432 - Furnishings (Including Curtains, Carpets, Wallpaper)
+  235          SSIC 46433 - Lighting & Lighting Accessories
+  236          SSIC 46434 - Crockery, Cutlery & Kitchen Utensils
+  237          SSIC 46435/6 - Household Electrical Appliances & Equipment, Audio & Video Equipment Except Electrical & Electronic Components
+  238          SSIC 46439 - Furniture, Home Furnishings & Other Household Equipment Nec
+  239          SSIC 4644 - Sporting & Other Recreational Goods
+  240          SSIC 4645 - Handicrafts & Fancy Goods
+  241          SSIC 4646 - Medicinal & Pharmaceutical Products
+  242          SSIC 4647 - Paper, Paper-Related Products, Stationery, Cellophane Products & Packaging Materials
+  243          SSIC 4649 - Other Household Goods
+  244          SSIC 4651/2 - Computers, Computer Peripheral Equipment & Software, Electronic & Telecommunications Equipment & Parts
+  245          SSIC 46530/46549 - Agricultural Machinery, Equipment & Supplies, Industrial, Construction & Related Machinery & Equipment Nec
+  246          SSIC 46541 - Industrial Machinery & Equipment (e.g. Industrial Crane)
+  247          SSIC 46542/3 - Construction Equipment, Lifts, Escalators & Industrial & Office Air-Conditioning Equipment
+  248          SSIC 46544 - Electrical & Wiring Accessories
+  249          SSIC 46551 - Marine Equipment & Accessories
+  250          SSIC 46552/9 - Aircraft Equipment & Supplies, Transport Equipment Except Motor Vehicles & Motorcycles Nec
+  251          SSIC 4656 - Motor Vehicles, Parts & Accessories
+  252          SSIC 46591 - Office Machinery & Equipment
+  253          SSIC 46592 - Medical, Professional, Scientific & Precision Equipment
+  254          SSIC 46593/4 - Commercial Food Service Equipment, Service Establishment Equipment & Supplies
+  255          SSIC 46595 - Security & Safety Equipment
+  256          SSIC 46599 - Other Machinery & Equipment Nec
+  257          SSIC 4661 - Fuels & Related Products
+  258          SSIC 46620 - Metals & Metal Ores (e.g. Steel Pipes) Except General Hardware
+  259          SSIC 46631 - Logs, Sawn Timber, Plywood & Related Products
+  260          SSIC 46632 - General Hardware
+  261          SSIC 46633 - Structural Clay & Concrete Products
+  262          SSIC 46634/5 - Paints & Glass
+  263          SSIC 46639 - Construction Materials, Hardware, Plumbing & Heating Equipment & Supplies Nec
+  264          SSIC 46641/2 - Basic Industrial Chemicals (Except Fertilisers) & Chemical Fertilisers
+  265          SSIC 46643 - Petrochemical Products
+  266          SSIC 46649 - Chemicals & Chemical Products Nec
+  267          SSIC 4665 - Other Intermediate Products, Waste & Scrap
+  268          SSIC 4666 - Ship Chandlers & Ship Bunkering
+  269          SSIC 46900 - Non-Specialised Wholesale Trade
+  270      SSIC 47 - Total Retail Trade
+  271          SSIC 47101 - Supermarkets & Hypermarkets
+  272          SSIC 47102 - Mini-Marts, Convenience Stores & Provision Shops
+  273          SSIC 47103 - Department Stores
+  274          SSIC 47109 - Non-Specialised Stores Nec
+  275          SSIC 4721/4722/4723 - Food, Beverages & Tobacco Products
+  276          SSIC 47311 - Motor Vehicles Except Motorcycles & Scooters
+  277          SSIC 47312 - Motorcycles & Scooters
+  278          SSIC 47313/47314 - Tyres, Batteries, Spare Parts & Accessories For Motor Vehicles
+  279          SSIC 47320 - Automotive Fuel
+  280          SSIC 4741 - Computers, Peripheral Equipment, Software & Telecommunications Equipment
+  281          SSIC 47535 - Household Electrical Appliances & Equipment
+  282          SSIC 47510/47531/47532 - Textiles, Furniture & Furnishings
+  283          SSIC 4752 - Hardware, Paints & Glass
+  284          SSIC 47533/47534/47537/47539 - Lighting, Lighting Accessories, Crockery, Cutlery, Kitchen Utensils, Security, Safety Equipment & Other Household Articles Nec
+  285          SSIC 47610 - Books, Newspapers & Stationery
+  286          SSIC 47620/47630/47640/47650 - Music & Video Recordings (e.g. Dvds, Blu-Ray Discs), Sporting Equipment, Games & Toys, Musical Instruments & Scores
+  287          SSIC 47711/47712 - Clothing For Adults, Children & Infants
+  288          SSIC 47713/47714/47715/47719 - Footwear, Bags, Luggage & Travel Accessories, Sewing, Clothing Accessories & Other Clothing, Footwear & Leather Articles Nec
+  289          SSIC 47721 - Cosmetics & Toiletries
+  290          SSIC 47722/47723/47729 - Pharmacies, Drug Stores, Chinese Medicine Shops, Pharmaceutical & Medical Goods Nec
+  291          SSIC 47731 - Jewellery Made From Precious Metals And Stones
+  292          SSIC 47732 - Costume Jewellery
+  293          SSIC 47733/47739 - Watches, Clocks & Personal Effects Nec
+  294          SSIC 4775 - Optical & Photographic Goods
+  295          SSIC 4774/4776/4777 - Handicrafts & Fancy Goods, Flowers, Plants & Pet Animals, Other Goods & Second-Hand Goods
+  296      SSIC 49-53 - Total Transportation & Storage
+  297          SSIC 4910/4921/4922 - Passenger And Freight Rail Transport, Passenger Land Transport & Aerial Cableways
+  298          SSIC 49231 - Freight Transport By Road
+  299          SSIC 49232 - Moving Services
+  300          SSIC 49233-Rental And Leasing Of Freight Land Transport Vehicle (e.g. Lorries And Trucks) With Driver
+  301          SSIC 5001 - Passenger Water Transport
+  302          SSIC 5002 - Freight Water Transport
+  303          SSIC 51 - Air Transport
+  304          SSIC 52101 - General Warehousing
+  305          SSIC 52102 - Refrigerated Warehousing And Storage
+  306          SSIC 52103 - Storage For Dangerous Goods
+  307          SSIC 52109 - Specialised Storage Nec (e.g. Wine Warehousing, Document Storage And Warehousing)
+  308          SSIC 52211 - Carpark Management & Operation Services
+  309          SSIC 52212/52219 - Motor Vehicle Towing Services, Supporting Services To Land Transport Nec
+  310          SSIC 5222 - Supporting Services To Water Transport
+  311          SSIC 5223 - Supporting Services To Air Transport
+  312          SSIC 5224 - Cargo Handling
+  313          SSIC 5225 - Marine Surveying Services & Classification Societies
+  314          SSIC 5229 - Other Transportation Support Activities
+  315          SSIC 53 - Postal & Courier
+  316      SSIC 55-56 - Total Accommodation & Food Services
+  317          SSIC 55101 - Hotels
+  318          SSIC 55109/55900 - Other Accommodation
+  319          SSIC 56111 - Restaurants
+  320          SSIC 56112/56123 - Cafes & Food And Drinks Kiosks
+  321          SSIC 56121 - Fast Food Outlets
+  322          SSIC 56122 - Operators Of Food Courts, Hawker Centres, Coffees Shops And Canteens (With Mainly Food And Beverage Income)
+  323          SSIC 56130 - Pubs
+  324          SSIC 56200 - Food Caterers
+  325      SSIC 58-63 - Total Information & Communications
+  326          SSIC 58110 - Book Publishing
+  327          SSIC 58120 - Publishing Of Directories & Mailing Lists
+  328          SSIC 5813/5819 - Publishing Of News, Journals, Periodicals And Other Publishing Activities
+  329          SSIC 5820 - Software Publishing
+  330          SSIC 59111/2 - Movie, Advertisements, Corporate Videos & Event Videos Production
+  331          SSIC 59113 - Production Of Dramas, Variety Shows And Documentaries
+  332          SSIC 59114/9 - Animation, Movie, Video, Television And Other Programme Production Activities Nec
+  333          SSIC 5912 - Movie, Video, Television And Other Programme Post-Production Activities
+  334          SSIC 5913 - Movie, Video, Television & Other Programme Distribution Activities
+  335          SSIC 5914 - Movie Projection Activities
+  336          SSIC 5920 - Sound Recording & Music Publishing Activities
+  337          SSIC 60 - Broadcasting And Content Production
+  338          SSIC 6101 - Telecommunications Network Operation
+  339          SSIC 6102 - Telecommunications Resellers
+  340          SSIC 6109 - Other Telecommunications Activities
+  341          SSIC 6201 - Computer Programming Activities
+  342          SSIC 6202 - Information Technology Consultancy And Computer Facilities Management Activities
+  343          SSIC 6209 - Other Information Technology And Computer Service Activities
+  344          SSIC 631/639 - Data Analytics, Processing, Hosting & Related Activities; Internet Search Engines And Other Information Service Activities
+  345          SSIC 6320 Excl 63204 - Online Marketplaces Operating On A Fee Or Commission Basis (Exclude Online Marketplaces For Travel And Accommodation Services)
+  346          SSIC 63204 - Online Marketplaces Operating On A Fee Or Commission Basis For Travel And Accommodation Services Provided By Third-Party
+  347      SSIC 64-66 - Total Finance & Insurance
+  348          SSIC 64120 - Full Banks
+  349          SSIC 64130 - Wholesale Banks
+  350          SSIC 64140 - Merchant Banks
+  351          SSIC 64150 - Finance Companies (With Deposit Taking Functions)
+  352          SSIC 65 - Insurance, Reinsurance, Provident Funding And Pension Funding
+  353          SSIC 66210 - Risk And Damage Evaluation (e.g. Loss Adjusting, Claims Adjusting)
+  354          SSIC 66221 - Insurance Agencies And Agents (Including Financial Planning Services)
+  355          SSIC 66222 - Insurance Brokers
+  356          SSIC 6629 - Other Activities Auxiliary To Insurance And Pension Funding
+  357          SSIC 6611/6612 - Securities And Commodities Exchange; Securities And Commodity Contract Brokerage
+  358          SSIC 66191 - Trustee, Fiduciary And Custody Services Firms (Including Nominee Companies, Trustees And Reit Trustees)
+  359          SSIC 66192 - Corporate Finance Advisory Services
+  360          SSIC 66193/66199 - Clearing And Settlement Of Financial Instruments And Other Activities Auxiliary To Financial Service Activities N.E.C. (e.g. Mortgage Advisory Firms)
+  361          SSIC 66194 - Activities Auxiliary To Fund Management Activities (e.g. Independent Fund Administration Firms)
+  362          SSIC 66195 - Transaction/Payment Processing Services
+  363          SSIC 66301 - Traditional/Long-Only Asset/Portfolio Management
+  364          SSIC 66302 - Hedge Fund Management
+  365          SSIC 66303 - Property Fund Management (Including Reit Management And Direct Property Fund Management)
+  366          SSIC 66304 - Private Equity Firms
+  367          SSIC 66305/66306/66307/66309 - Other Fund Management Activities
+  368          SSIC 64110/6420/64300/649 - Others (Central Bank; Holding Companies; Trusts, Funds And Similar Financial Entities; Other Financial Service Activities)
+  369      SSIC 68-82 - Total Real Estate, Professional And Administrative & Support Services
+  370          SSIC 68 - Real Estate
+  371          SSIC 6910 - Legal Services
+  372          SSIC 6920 - Accounting, Book-Keeping & Auditing Activities; Tax Consultancy
+  373          SSIC 7010 - Head Offices; Centralised Administrative Offices & Business Representative Offices
+  374          SSIC 7020 - Management Consultancy
+  375          SSIC 711 - Architectural & Engineering Activities And Related Technical Consultancy
+  376          SSIC 7120 - Technical Testing & Analysis Services
+  377          SSIC 72 - Scientific Research & Development
+  378          SSIC 7310 - Advertising
+  379          SSIC 7320 - Market Research & Public Opinion Polling
+  380          SSIC 7411 - Industrial Design Activities
+  381          SSIC 7419 - Other Specialised Design Activities
+  382          SSIC 7420 - Photographic Activities
+  383          SSIC 7490 - Professional, Scientific & Technical Activities Nec
+  384          SSIC 7500 - Veterinary Activities
+  385          SSIC 771 - Rental & Leasing Of Land Transport Equipment
+  386          SSIC 772 - Rental & Leasing Of Personal & Household Goods
+  387          SSIC 773/4 - Rental & Leasing Of Other Machinery, Equipment & Tangible Goods, Leasing Of Non-Financial Intangible Assets
+  388          SSIC 78 Excl 78103 - Employment Activities (Exclude Domestic Worker Employment Placement Agencies)
+  389          SSIC 78103 - Domestic Worker Employment Placement Agencies
+  390          SSIC 79 - Travel Agencies & Tour Operators
+  391          SSIC 80 - Security And Investigation Activities
+  392          SSIC 812 - Cleaning Activities
+  393          SSIC 813 - Landscape Planting, Care And Maintenance Service Activities
+  394          SSIC 821/2 - Office Administrative & Support Services, Call Centres
+  395          SSIC 823 - Convention, Trade Show, Concert & Other Event Organisers
+  396          SSIC 829 - Business Support Services Nec
+  397      SSIC 85-96 - Total Recreation, Community & Personal Services
+  398          SSIC 851/2 - Pre-Primary Education, Primary Education
+  399          SSIC 8531/3/4/5/6 - General Secondary Education, Post-Secondary Non-Tertiary General Education, International And Foreign System Schools, Schools For Special Needs, Specialised Education Schools
+  400          SSIC 8532 - Technical And Vocational (Secondary And Post-Secondary Non-Tertiary) Education
+  401          SSIC 854 - Tertiary Education
+  402          SSIC 855 - Other Education
+  403          SSIC 856 - Educational Support Services
+  404          SSIC 861 - Hospitals
+  405          SSIC 86201 - Clinics And Other General Medical Services (Western)
+  406          SSIC 86202 - Clinics And Other General Medical Services (Non-Western)
+  407          SSIC 86203 - Specialised Medical Services
+  408          SSIC 86204/869 - Dental & Other Health Services
+  409          SSIC 8701 - Residential Nursing Care Facilities
+  410          SSIC 8702 - Other Residential Care Services
+  411          SSIC 881 - Social Services Without Accommodation For The Elderly And Disabled
+  412          SSIC 889 - Other Social Services Without Accommodation
+  413          SSIC 90 - Arts Creation And Performing Arts Activities
+  414          SSIC 91 - Libraries, Archives, Museums & Other Cultural Activities
+  415          SSIC 92 - Gambling & Betting Activities
+  416          SSIC 931 - Sports Activities
+  417          SSIC 932 - Other Amusement & Recreation Activities
+  418          SSIC 941 - Activities Of Business, Employers & Professional Membership Organisations
+  419          SSIC 942/9 - Activities Of Trade Unions & Other Membership Organisations
+  420          SSIC 951 - Repair Of Computers And Communications Equipment
+  421          SSIC 9521 - Repair Of Consumer Electronics
+  422          SSIC 9522 - Repair Of Household Appliances And Home & Garden Equipment
+  423          SSIC 9523 - Repair Of Footwear & Leather Goods
+  424          SSIC 9524 - Repair Of Furniture & Home Furnishings
+  425          SSIC 9529 - Repair Of Other Personal & Household Goods
+  426          SSIC 95301 - Repair & Maintenance Of Motor Vehicles
+  427          SSIC 95302 - Car Washing & Related Services
+  428          SSIC 95303 - Motor Vehicle Inspection & Valuation Services
+  429          SSIC 9601 - Washing And (Dry-) Cleaning Of Textile & Fur Products
+  430          SSIC 9602 - Hairdressing, Beauty And Other Personal Care Services
+  431          SSIC 9603 - Funeral & Related Services
+  432          SSIC 9604 - Wedding & Related Services
+  433          SSIC 9609 - Other Personal Service Nec
+  434  Operating Expenditure, Total Services Sector
+  435      SSIC 46 - Total Wholesale Trade
+  436          SSIC 46100 - Wholesale On A Fee Or Commission Basis
+  437          SSIC 4621/2 - Agricultural Raw Materials & Live Animals
+  438          SSIC 46301 - Fruits & Vegetables (Including Fresh And Frozen)
+  439          SSIC 46302 - Livestock, Meat, Poultry, Eggs & Seafood (Including Fresh And Frozen)
+  440          SSIC 46303 - A General Line (Wide Range) Of Groceries (e.g. Cereals, Sugar, Edible Oils, Sauces And Dairy Products)
+  441          SSIC 46304/5 - Confectionery & Bakery Products, Ice-Cream
+  442          SSIC 46306 - Health Supplements
+  443          SSIC 46307 - Liquor, Soft Drinks & Beverages
+  444          SSIC 46308/9 - Tobacco Products, Food, Beverages & Tobacco Nec (Including Dried Or Canned)
+  445          SSIC 46411/2/3 - Textiles & Leathers, Adults' Clothing, Children And Infants' Clothing (Including Products And Accessories For Infants)
+  446          SSIC 46414/5/6 - Footwear, Bags, Luggage & Travel Accessories, Sewing & Clothing Accessories
+  447          SSIC 46421/2 - Jewellery Made From Precious Metals And Stones & Costume Jewellery
+  448          SSIC 46423 - Watches & Clocks
+  449          SSIC 46424/9 - Cosmetics & Toiletries, Personal Effects Nec
+  450          SSIC 46431 - Furniture (Including Mattresses, Cushions)
+  451          SSIC 46432 - Furnishings (Including Curtains, Carpets, Wallpaper)
+  452          SSIC 46433 - Lighting & Lighting Accessories
+  453          SSIC 46434 - Crockery, Cutlery & Kitchen Utensils
+  454          SSIC 46435/6 - Household Electrical Appliances & Equipment, Audio & Video Equipment Except Electrical & Electronic Components
+  455          SSIC 46439 - Furniture, Home Furnishings & Other Household Equipment Nec
+  456          SSIC 4644 - Sporting & Other Recreational Goods
+  457          SSIC 4645 - Handicrafts & Fancy Goods
+  458          SSIC 4646 - Medicinal & Pharmaceutical Products
+  459          SSIC 4647 - Paper, Paper-Related Products, Stationery, Cellophane Products & Packaging Materials
+  460          SSIC 4649 - Other Household Goods
+  461          SSIC 4651/2 - Computers, Computer Peripheral Equipment & Software, Electronic & Telecommunications Equipment & Parts
+  462          SSIC 46530/46549 - Agricultural Machinery, Equipment & Supplies, Industrial, Construction & Related Machinery & Equipment Nec
+  463          SSIC 46541 - Industrial Machinery & Equipment (e.g. Industrial Crane)
+  464          SSIC 46542/3 - Construction Equipment, Lifts, Escalators & Industrial & Office Air-Conditioning Equipment
+  465          SSIC 46544 - Electrical & Wiring Accessories
+  466          SSIC 46551 - Marine Equipment & Accessories
+  467          SSIC 46552/9 - Aircraft Equipment & Supplies, Transport Equipment Except Motor Vehicles & Motorcycles Nec
+  468          SSIC 4656 - Motor Vehicles, Parts & Accessories
+  469          SSIC 46591 - Office Machinery & Equipment
+  470          SSIC 46592 - Medical, Professional, Scientific & Precision Equipment
+  471          SSIC 46593/4 - Commercial Food Service Equipment, Service Establishment Equipment & Supplies
+  472          SSIC 46595 - Security & Safety Equipment
+  473          SSIC 46599 - Other Machinery & Equipment Nec
+  474          SSIC 4661 - Fuels & Related Products
+  475          SSIC 46620 - Metals & Metal Ores (e.g. Steel Pipes) Except General Hardware
+  476          SSIC 46631 - Logs, Sawn Timber, Plywood & Related Products
+  477          SSIC 46632 - General Hardware
+  478          SSIC 46633 - Structural Clay & Concrete Products
+  479          SSIC 46634/5 - Paints & Glass
+  480          SSIC 46639 - Construction Materials, Hardware, Plumbing & Heating Equipment & Supplies Nec
+  481          SSIC 46641/2 - Basic Industrial Chemicals (Except Fertilisers) & Chemical Fertilisers
+  482          SSIC 46643 - Petrochemical Products
+  483          SSIC 46649 - Chemicals & Chemical Products Nec
+  484          SSIC 4665 - Other Intermediate Products, Waste & Scrap
+  485          SSIC 4666 - Ship Chandlers & Ship Bunkering
+  486          SSIC 46900 - Non-Specialised Wholesale Trade
+  487      SSIC 47 - Total Retail Trade
+  488          SSIC 47101 - Supermarkets & Hypermarkets
+  489          SSIC 47102 - Mini-Marts, Convenience Stores & Provision Shops
+  490          SSIC 47103 - Department Stores
+  491          SSIC 47109 - Non-Specialised Stores Nec
+  492          SSIC 4721/4722/4723 - Food, Beverages & Tobacco Products
+  493          SSIC 47311 - Motor Vehicles Except Motorcycles & Scooters
+  494          SSIC 47312 - Motorcycles & Scooters
+  495          SSIC 47313/47314 - Tyres, Batteries, Spare Parts & Accessories For Motor Vehicles
+  496          SSIC 47320 - Automotive Fuel
+  497          SSIC 4741 - Computers, Peripheral Equipment, Software & Telecommunications Equipment
+  498          SSIC 47535 - Household Electrical Appliances & Equipment
+  499          SSIC 47510/47531/47532 - Textiles, Furniture & Furnishings
+  500          SSIC 4752 - Hardware, Paints & Glass
+  501          SSIC 47533/47534/47537/47539 - Lighting, Lighting Accessories, Crockery, Cutlery, Kitchen Utensils, Security, Safety Equipment & Other Household Articles Nec
+  502          SSIC 47610 - Books, Newspapers & Stationery
+  503          SSIC 47620/47630/47640/47650 - Music & Video Recordings (e.g. Dvds, Blu-Ray Discs), Sporting Equipment, Games & Toys, Musical Instruments & Scores
+  504          SSIC 47711/47712 - Clothing For Adults, Children & Infants
+  505          SSIC 47713/47714/47715/47719 - Footwear, Bags, Luggage & Travel Accessories, Sewing, Clothing Accessories & Other Clothing, Footwear & Leather Articles Nec
+  506          SSIC 47721 - Cosmetics & Toiletries
+  507          SSIC 47722/47723/47729 - Pharmacies, Drug Stores, Chinese Medicine Shops, Pharmaceutical & Medical Goods Nec
+  508          SSIC 47731 - Jewellery Made From Precious Metals And Stones
+  509          SSIC 47732 - Costume Jewellery
+  510          SSIC 47733/47739 - Watches, Clocks & Personal Effects Nec
+  511          SSIC 4775 - Optical & Photographic Goods
+  512          SSIC 4774/4776/4777 - Handicrafts & Fancy Goods, Flowers, Plants & Pet Animals, Other Goods & Second-Hand Goods
+  513      SSIC 49-53 - Total Transportation & Storage
+  514          SSIC 4910/4921/4922 - Passenger And Freight Rail Transport, Passenger Land Transport & Aerial Cableways
+  515          SSIC 49231 - Freight Transport By Road
+  516          SSIC 49232 - Moving Services
+  517          SSIC 49233-Rental And Leasing Of Freight Land Transport Vehicle (e.g. Lorries And Trucks) With Driver
+  518          SSIC 5001 - Passenger Water Transport
+  519          SSIC 5002 - Freight Water Transport
+  520          SSIC 51 - Air Transport
+  521          SSIC 52101 - General Warehousing
+  522          SSIC 52102 - Refrigerated Warehousing And Storage
+  523          SSIC 52103 - Storage For Dangerous Goods
+  524          SSIC 52109 - Specialised Storage Nec (e.g. Wine Warehousing, Document Storage And Warehousing)
+  525          SSIC 52211 - Carpark Management & Operation Services
+  526          SSIC 52212/52219 - Motor Vehicle Towing Services, Supporting Services To Land Transport Nec
+  527          SSIC 5222 - Supporting Services To Water Transport
+  528          SSIC 5223 - Supporting Services To Air Transport
+  529          SSIC 5224 - Cargo Handling
+  530          SSIC 5225 - Marine Surveying Services & Classification Societies
+  531          SSIC 5229 - Other Transportation Support Activities
+  532          SSIC 53 - Postal & Courier
+  533      SSIC 55-56 - Total Accommodation & Food Services
+  534          SSIC 55101 - Hotels
+  535          SSIC 55109/55900 - Other Accommodation
+  536          SSIC 56111 - Restaurants
+  537          SSIC 56112/56123 - Cafes & Food And Drinks Kiosks
+  538          SSIC 56121 - Fast Food Outlets
+  539          SSIC 56122 - Operators Of Food Courts, Hawker Centres, Coffees Shops And Canteens (With Mainly Food And Beverage Income)
+  540          SSIC 56130 - Pubs
+  541          SSIC 56200 - Food Caterers
+  542      SSIC 58-63 - Total Information & Communications
+  543          SSIC 58110 - Book Publishing
+  544          SSIC 58120 - Publishing Of Directories & Mailing Lists
+  545          SSIC 5813/5819 - Publishing Of News, Journals, Periodicals And Other Publishing Activities
+  546          SSIC 5820 - Software Publishing
+  547          SSIC 59111/2 - Movie, Advertisements, Corporate Videos & Event Videos Production
+  548          SSIC 59113 - Production Of Dramas, Variety Shows And Documentaries
+  549          SSIC 59114/9 - Animation, Movie, Video, Television And Other Programme Production Activities Nec
+  550          SSIC 5912 - Movie, Video, Television And Other Programme Post-Production Activities
+  551          SSIC 5913 - Movie, Video, Television & Other Programme Distribution Activities
+  552          SSIC 5914 - Movie Projection Activities
+  553          SSIC 5920 - Sound Recording & Music Publishing Activities
+  554          SSIC 60 - Broadcasting And Content Production
+  555          SSIC 6101 - Telecommunications Network Operation
+  556          SSIC 6102 - Telecommunications Resellers
+  557          SSIC 6109 - Other Telecommunications Activities
+  558          SSIC 6201 - Computer Programming Activities
+  559          SSIC 6202 - Information Technology Consultancy And Computer Facilities Management Activities
+  560          SSIC 6209 - Other Information Technology And Computer Service Activities
+  561          SSIC 631/639 - Data Analytics, Processing, Hosting & Related Activities; Internet Search Engines And Other Information Service Activities
+  562          SSIC 6320 Excl 63204 - Online Marketplaces Operating On A Fee Or Commission Basis (Exclude Online Marketplaces For Travel And Accommodation Services)
+  563          SSIC 63204 - Online Marketplaces Operating On A Fee Or Commission Basis For Travel And Accommodation Services Provided By Third-Party
+  564      SSIC 64-66 - Total Finance & Insurance
+  565          SSIC 64120 - Full Banks
+  566          SSIC 64130 - Wholesale Banks
+  567          SSIC 64140 - Merchant Banks
+  568          SSIC 64150 - Finance Companies (With Deposit Taking Functions)
+  569          SSIC 65 - Insurance, Reinsurance, Provident Funding And Pension Funding
+  570          SSIC 66210 - Risk And Damage Evaluation (e.g. Loss Adjusting, Claims Adjusting)
+  571          SSIC 66221 - Insurance Agencies And Agents (Including Financial Planning Services)
+  572          SSIC 66222 - Insurance Brokers
+  573          SSIC 6629 - Other Activities Auxiliary To Insurance And Pension Funding
+  574          SSIC 6611/6612 - Securities And Commodities Exchange; Securities And Commodity Contract Brokerage
+  575          SSIC 66191 - Trustee, Fiduciary And Custody Services Firms (Including Nominee Companies, Trustees And Reit Trustees)
+  576          SSIC 66192 - Corporate Finance Advisory Services
+  577          SSIC 66193/66199 - Clearing And Settlement Of Financial Instruments And Other Activities Auxiliary To Financial Service Activities N.E.C. (e.g. Mortgage Advisory Firms)
+  578          SSIC 66194 - Activities Auxiliary To Fund Management Activities (e.g. Independent Fund Administration Firms)
+  579          SSIC 66195 - Transaction/Payment Processing Services
+  580          SSIC 66301 - Traditional/Long-Only Asset/Portfolio Management
+  581          SSIC 66302 - Hedge Fund Management
+  582          SSIC 66303 - Property Fund Management (Including Reit Management And Direct Property Fund Management)
+  583          SSIC 66304 - Private Equity Firms
+  584          SSIC 66305/66306/66307/66309 - Other Fund Management Activities
+  585          SSIC 64110/6420/64300/649 - Others (Central Bank; Holding Companies; Trusts, Funds And Similar Financial Entities; Other Financial Service Activities)
+  586      SSIC 68-82 - Total Real Estate, Professional And Administrative & Support Services
+  587          SSIC 68 - Real Estate
+  588          SSIC 6910 - Legal Services
+  589          SSIC 6920 - Accounting, Book-Keeping & Auditing Activities; Tax Consultancy
+  590          SSIC 7010 - Head Offices; Centralised Administrative Offices & Business Representative Offices
+  591          SSIC 7020 - Management Consultancy
+  592          SSIC 711 - Architectural & Engineering Activities And Related Technical Consultancy
+  593          SSIC 7120 - Technical Testing & Analysis Services
+  594          SSIC 72 - Scientific Research & Development
+  595          SSIC 7310 - Advertising
+  596          SSIC 7320 - Market Research & Public Opinion Polling
+  597          SSIC 7411 - Industrial Design Activities
+  598          SSIC 7419 - Other Specialised Design Activities
+  599          SSIC 7420 - Photographic Activities
+  600          SSIC 7490 - Professional, Scientific & Technical Activities Nec
+  601          SSIC 7500 - Veterinary Activities
+  602          SSIC 771 - Rental & Leasing Of Land Transport Equipment
+  603          SSIC 772 - Rental & Leasing Of Personal & Household Goods
+  604          SSIC 773/4 - Rental & Leasing Of Other Machinery, Equipment & Tangible Goods, Leasing Of Non-Financial Intangible Assets
+  605          SSIC 78 Excl 78103 - Employment Activities (Exclude Domestic Worker Employment Placement Agencies)
+  606          SSIC 78103 - Domestic Worker Employment Placement Agencies
+  607          SSIC 79 - Travel Agencies & Tour Operators
+  608          SSIC 80 - Security And Investigation Activities
+  609          SSIC 812 - Cleaning Activities
+  610          SSIC 813 - Landscape Planting, Care And Maintenance Service Activities
+  611          SSIC 821/2 - Office Administrative & Support Services, Call Centres
+  612          SSIC 823 - Convention, Trade Show, Concert & Other Event Organisers
+  613          SSIC 829 - Business Support Services Nec
+  614      SSIC 85-96 - Total Recreation, Community & Personal Services
+  615          SSIC 851/2 - Pre-Primary Education, Primary Education
+  616          SSIC 8531/3/4/5/6 - General Secondary Education, Post-Secondary Non-Tertiary General Education, International And Foreign System Schools, Schools For Special Needs, Specialised Education Schools
+  617          SSIC 8532 - Technical And Vocational (Secondary And Post-Secondary Non-Tertiary) Education
+  618          SSIC 854 - Tertiary Education
+  619          SSIC 855 - Other Education
+  620          SSIC 856 - Educational Support Services
+  621          SSIC 861 - Hospitals
+  622          SSIC 86201 - Clinics And Other General Medical Services (Western)
+  623          SSIC 86202 - Clinics And Other General Medical Services (Non-Western)
+  624          SSIC 86203 - Specialised Medical Services
+  625          SSIC 86204/869 - Dental & Other Health Services
+  626          SSIC 8701 - Residential Nursing Care Facilities
+  627          SSIC 8702 - Other Residential Care Services
+  628          SSIC 881 - Social Services Without Accommodation For The Elderly And Disabled
+  629          SSIC 889 - Other Social Services Without Accommodation
+  630          SSIC 90 - Arts Creation And Performing Arts Activities
+  631          SSIC 91 - Libraries, Archives, Museums & Other Cultural Activities
+  632          SSIC 92 - Gambling & Betting Activities
+  633          SSIC 931 - Sports Activities
+  634          SSIC 932 - Other Amusement & Recreation Activities
+  635          SSIC 941 - Activities Of Business, Employers & Professional Membership Organisations
+  636          SSIC 942/9 - Activities Of Trade Unions & Other Membership Organisations
+  637          SSIC 951 - Repair Of Computers And Communications Equipment
+  638          SSIC 9521 - Repair Of Consumer Electronics
+  639          SSIC 9522 - Repair Of Household Appliances And Home & Garden Equipment
+  640          SSIC 9523 - Repair Of Footwear & Leather Goods
+  641          SSIC 9524 - Repair Of Furniture & Home Furnishings
+  642          SSIC 9529 - Repair Of Other Personal & Household Goods
+  643          SSIC 95301 - Repair & Maintenance Of Motor Vehicles
+  644          SSIC 95302 - Car Washing & Related Services
+  645          SSIC 95303 - Motor Vehicle Inspection & Valuation Services
+  646          SSIC 9601 - Washing And (Dry-) Cleaning Of Textile & Fur Products
+  647          SSIC 9602 - Hairdressing, Beauty And Other Personal Care Services
+  648          SSIC 9603 - Funeral & Related Services
+  649          SSIC 9604 - Wedding & Related Services
+  650          SSIC 9609 - Other Personal Service Nec
+  651  Gross Operating Surplus, Total Services Sector
+  652      SSIC 46 - Total Wholesale Trade
+  653          SSIC 46100 - Wholesale On A Fee Or Commission Basis
+  654          SSIC 4621/2 - Agricultural Raw Materials & Live Animals
+  655          SSIC 46301 - Fruits & Vegetables (Including Fresh And Frozen)
+  656          SSIC 46302 - Livestock, Meat, Poultry, Eggs & Seafood (Including Fresh And Frozen)
+  657          SSIC 46303 - A General Line (Wide Range) Of Groceries (e.g. Cereals, Sugar, Edible Oils, Sauces And Dairy Products)
+  658          SSIC 46304/5 - Confectionery & Bakery Products, Ice-Cream
+  659          SSIC 46306 - Health Supplements
+  660          SSIC 46307 - Liquor, Soft Drinks & Beverages
+  661          SSIC 46308/9 - Tobacco Products, Food, Beverages & Tobacco Nec (Including Dried Or Canned)
+  662          SSIC 46411/2/3 - Textiles & Leathers, Adults' Clothing, Children And Infants' Clothing (Including Products And Accessories For Infants)
+  663          SSIC 46414/5/6 - Footwear, Bags, Luggage & Travel Accessories, Sewing & Clothing Accessories
+  664          SSIC 46421/2 - Jewellery Made From Precious Metals And Stones & Costume Jewellery
+  665          SSIC 46423 - Watches & Clocks
+  666          SSIC 46424/9 - Cosmetics & Toiletries, Personal Effects Nec
+  667          SSIC 46431 - Furniture (Including Mattresses, Cushions)
+  668          SSIC 46432 - Furnishings (Including Curtains, Carpets, Wallpaper)
+  669          SSIC 46433 - Lighting & Lighting Accessories
+  670          SSIC 46434 - Crockery, Cutlery & Kitchen Utensils
+  671          SSIC 46435/6 - Household Electrical Appliances & Equipment, Audio & Video Equipment Except Electrical & Electronic Components
+  672          SSIC 46439 - Furniture, Home Furnishings & Other Household Equipment Nec
+  673          SSIC 4644 - Sporting & Other Recreational Goods
+  674          SSIC 4645 - Handicrafts & Fancy Goods
+  675          SSIC 4646 - Medicinal & Pharmaceutical Products
+  676          SSIC 4647 - Paper, Paper-Related Products, Stationery, Cellophane Products & Packaging Materials
+  677          SSIC 4649 - Other Household Goods
+  678          SSIC 4651/2 - Computers, Computer Peripheral Equipment & Software, Electronic & Telecommunications Equipment & Parts
+  679          SSIC 46530/46549 - Agricultural Machinery, Equipment & Supplies, Industrial, Construction & Related Machinery & Equipment Nec
+  680          SSIC 46541 - Industrial Machinery & Equipment (e.g. Industrial Crane)
+  681          SSIC 46542/3 - Construction Equipment, Lifts, Escalators & Industrial & Office Air-Conditioning Equipment
+  682          SSIC 46544 - Electrical & Wiring Accessories
+  683          SSIC 46551 - Marine Equipment & Accessories
+  684          SSIC 46552/9 - Aircraft Equipment & Supplies, Transport Equipment Except Motor Vehicles & Motorcycles Nec
+  685          SSIC 4656 - Motor Vehicles, Parts & Accessories
+  686          SSIC 46591 - Office Machinery & Equipment
+  687          SSIC 46592 - Medical, Professional, Scientific & Precision Equipment
+  688          SSIC 46593/4 - Commercial Food Service Equipment, Service Establishment Equipment & Supplies
+  689          SSIC 46595 - Security & Safety Equipment
+  690          SSIC 46599 - Other Machinery & Equipment Nec
+  691          SSIC 4661 - Fuels & Related Products
+  692          SSIC 46620 - Metals & Metal Ores (e.g. Steel Pipes) Except General Hardware
+  693          SSIC 46631 - Logs, Sawn Timber, Plywood & Related Products
+  694          SSIC 46632 - General Hardware
+  695          SSIC 46633 - Structural Clay & Concrete Products
+  696          SSIC 46634/5 - Paints & Glass
+  697          SSIC 46639 - Construction Materials, Hardware, Plumbing & Heating Equipment & Supplies Nec
+  698          SSIC 46641/2 - Basic Industrial Chemicals (Except Fertilisers) & Chemical Fertilisers
+  699          SSIC 46643 - Petrochemical Products
+  700          SSIC 46649 - Chemicals & Chemical Products Nec
+  701          SSIC 4665 - Other Intermediate Products, Waste & Scrap
+  702          SSIC 4666 - Ship Chandlers & Ship Bunkering
+  703          SSIC 46900 - Non-Specialised Wholesale Trade
+  704      SSIC 47 - Total Retail Trade
+  705          SSIC 47101 - Supermarkets & Hypermarkets
+  706          SSIC 47102 - Mini-Marts, Convenience Stores & Provision Shops
+  707          SSIC 47103 - Department Stores
+  708          SSIC 47109 - Non-Specialised Stores Nec
+  709          SSIC 4721/4722/4723 - Food, Beverages & Tobacco Products
+  710          SSIC 47311 - Motor Vehicles Except Motorcycles & Scooters
+  711          SSIC 47312 - Motorcycles & Scooters
+  712          SSIC 47313/47314 - Tyres, Batteries, Spare Parts & Accessories For Motor Vehicles
+  713          SSIC 47320 - Automotive Fuel
+  714          SSIC 4741 - Computers, Peripheral Equipment, Software & Telecommunications Equipment
+  715          SSIC 47535 - Household Electrical Appliances & Equipment
+  716          SSIC 47510/47531/47532 - Textiles, Furniture & Furnishings
+  717          SSIC 4752 - Hardware, Paints & Glass
+  718          SSIC 47533/47534/47537/47539 - Lighting, Lighting Accessories, Crockery, Cutlery, Kitchen Utensils, Security, Safety Equipment & Other Household Articles Nec
+  719          SSIC 47610 - Books, Newspapers & Stationery
+  720          SSIC 47620/47630/47640/47650 - Music & Video Recordings (e.g. Dvds, Blu-Ray Discs), Sporting Equipment, Games & Toys, Musical Instruments & Scores
+  721          SSIC 47711/47712 - Clothing For Adults, Children & Infants
+  722          SSIC 47713/47714/47715/47719 - Footwear, Bags, Luggage & Travel Accessories, Sewing, Clothing Accessories & Other Clothing, Footwear & Leather Articles Nec
+  723          SSIC 47721 - Cosmetics & Toiletries
+  724          SSIC 47722/47723/47729 - Pharmacies, Drug Stores, Chinese Medicine Shops, Pharmaceutical & Medical Goods Nec
+  725          SSIC 47731 - Jewellery Made From Precious Metals And Stones
+  726          SSIC 47732 - Costume Jewellery
+  727          SSIC 47733/47739 - Watches, Clocks & Personal Effects Nec
+  728          SSIC 4775 - Optical & Photographic Goods
+  729          SSIC 4774/4776/4777 - Handicrafts & Fancy Goods, Flowers, Plants & Pet Animals, Other Goods & Second-Hand Goods
+  730      SSIC 49-53 - Total Transportation & Storage
+  731          SSIC 4910/4921/4922 - Passenger And Freight Rail Transport, Passenger Land Transport & Aerial Cableways
+  732          SSIC 49231 - Freight Transport By Road
+  733          SSIC 49232 - Moving Services
+  734          SSIC 49233-Rental And Leasing Of Freight Land Transport Vehicle (e.g. Lorries And Trucks) With Driver
+  735          SSIC 5001 - Passenger Water Transport
+  736          SSIC 5002 - Freight Water Transport
+  737          SSIC 51 - Air Transport
+  738          SSIC 52101 - General Warehousing
+  739          SSIC 52102 - Refrigerated Warehousing And Storage
+  740          SSIC 52103 - Storage For Dangerous Goods
+  741          SSIC 52109 - Specialised Storage Nec (e.g. Wine Warehousing, Document Storage And Warehousing)
+  742          SSIC 52211 - Carpark Management & Operation Services
+  743          SSIC 52212/52219 - Motor Vehicle Towing Services, Supporting Services To Land Transport Nec
+  744          SSIC 5222 - Supporting Services To Water Transport
+  745          SSIC 5223 - Supporting Services To Air Transport
+  746          SSIC 5224 - Cargo Handling
+  747          SSIC 5225 - Marine Surveying Services & Classification Societies
+  748          SSIC 5229 - Other Transportation Support Activities
+  749          SSIC 53 - Postal & Courier
+  750      SSIC 55-56 - Total Accommodation & Food Services
+  751          SSIC 55101 - Hotels
+  752          SSIC 55109/55900 - Other Accommodation
+  753          SSIC 56111 - Restaurants
+  754          SSIC 56112/56123 - Cafes & Food And Drinks Kiosks
+  755          SSIC 56121 - Fast Food Outlets
+  756          SSIC 56122 - Operators Of Food Courts, Hawker Centres, Coffees Shops And Canteens (With Mainly Food And Beverage Income)
+  757          SSIC 56130 - Pubs
+  758          SSIC 56200 - Food Caterers
+  759      SSIC 58-63 - Total Information & Communications
+  760          SSIC 58110 - Book Publishing
+  761          SSIC 58120 - Publishing Of Directories & Mailing Lists
+  762          SSIC 5813/5819 - Publishing Of News, Journals, Periodicals And Other Publishing Activities
+  763          SSIC 5820 - Software Publishing
+  764          SSIC 59111/2 - Movie, Advertisements, Corporate Videos & Event Videos Production
+  765          SSIC 59113 - Production Of Dramas, Variety Shows And Documentaries
+  766          SSIC 59114/9 - Animation, Movie, Video, Television And Other Programme Production Activities Nec
+  767          SSIC 5912 - Movie, Video, Television And Other Programme Post-Production Activities
+  768          SSIC 5913 - Movie, Video, Television & Other Programme Distribution Activities
+  769          SSIC 5914 - Movie Projection Activities
+  770          SSIC 5920 - Sound Recording & Music Publishing Activities
+  771          SSIC 60 - Broadcasting And Content Production
+  772          SSIC 6101 - Telecommunications Network Operation
+  773          SSIC 6102 - Telecommunications Resellers
+  774          SSIC 6109 - Other Telecommunications Activities
+  775          SSIC 6201 - Computer Programming Activities
+  776          SSIC 6202 - Information Technology Consultancy And Computer Facilities Management Activities
+  777          SSIC 6209 - Other Information Technology And Computer Service Activities
+  778          SSIC 631/639 - Data Analytics, Processing, Hosting & Related Activities; Internet Search Engines And Other Information Service Activities
+  779          SSIC 6320 Excl 63204 - Online Marketplaces Operating On A Fee Or Commission Basis (Exclude Online Marketplaces For Travel And Accommodation Services)
+  780          SSIC 63204 - Online Marketplaces Operating On A Fee Or Commission Basis For Travel And Accommodation Services Provided By Third-Party
+  781      SSIC 64-66 - Total Finance & Insurance
+  782          SSIC 64120 - Full Banks
+  783          SSIC 64130 - Wholesale Banks
+  784          SSIC 64140 - Merchant Banks
+  785          SSIC 64150 - Finance Companies (With Deposit Taking Functions)
+  786          SSIC 65 - Insurance, Reinsurance, Provident Funding And Pension Funding
+  787          SSIC 66210 - Risk And Damage Evaluation (e.g. Loss Adjusting, Claims Adjusting)
+  788          SSIC 66221 - Insurance Agencies And Agents (Including Financial Planning Services)
+  789          SSIC 66222 - Insurance Brokers
+  790          SSIC 6629 - Other Activities Auxiliary To Insurance And Pension Funding
+  791          SSIC 6611/6612 - Securities And Commodities Exchange; Securities And Commodity Contract Brokerage
+  792          SSIC 66191 - Trustee, Fiduciary And Custody Services Firms (Including Nominee Companies, Trustees And Reit Trustees)
+  793          SSIC 66192 - Corporate Finance Advisory Services
+  794          SSIC 66193/66199 - Clearing And Settlement Of Financial Instruments And Other Activities Auxiliary To Financial Service Activities N.E.C. (e.g. Mortgage Advisory Firms)
+  795          SSIC 66194 - Activities Auxiliary To Fund Management Activities (e.g. Independent Fund Administration Firms)
+  796          SSIC 66195 - Transaction/Payment Processing Services
+  797          SSIC 66301 - Traditional/Long-Only Asset/Portfolio Management
+  798          SSIC 66302 - Hedge Fund Management
+  799          SSIC 66303 - Property Fund Management (Including Reit Management And Direct Property Fund Management)
+  800          SSIC 66304 - Private Equity Firms
+  801          SSIC 66305/66306/66307/66309 - Other Fund Management Activities
+  802          SSIC 64110/6420/64300/649 - Others (Central Bank; Holding Companies; Trusts, Funds And Similar Financial Entities; Other Financial Service Activities)
+  803      SSIC 68-82 - Total Real Estate, Professional And Administrative & Support Services
+  804          SSIC 68 - Real Estate
+  805          SSIC 6910 - Legal Services
+  806          SSIC 6920 - Accounting, Book-Keeping & Auditing Activities; Tax Consultancy
+  807          SSIC 7010 - Head Offices; Centralised Administrative Offices & Business Representative Offices
+  808          SSIC 7020 - Management Consultancy
+  809          SSIC 711 - Architectural & Engineering Activities And Related Technical Consultancy
+  810          SSIC 7120 - Technical Testing & Analysis Services
+  811          SSIC 72 - Scientific Research & Development
+  812          SSIC 7310 - Advertising
+  813          SSIC 7320 - Market Research & Public Opinion Polling
+  814          SSIC 7411 - Industrial Design Activities
+  815          SSIC 7419 - Other Specialised Design Activities
+  816          SSIC 7420 - Photographic Activities
+  817          SSIC 7490 - Professional, Scientific & Technical Activities Nec
+  818          SSIC 7500 - Veterinary Activities
+  819          SSIC 771 - Rental & Leasing Of Land Transport Equipment
+  820          SSIC 772 - Rental & Leasing Of Personal & Household Goods
+  821          SSIC 773/4 - Rental & Leasing Of Other Machinery, Equipment & Tangible Goods, Leasing Of Non-Financial Intangible Assets
+  822          SSIC 78 Excl 78103 - Employment Activities (Exclude Domestic Worker Employment Placement Agencies)
+  823          SSIC 78103 - Domestic Worker Employment Placement Agencies
+  824          SSIC 79 - Travel Agencies & Tour Operators
+  825          SSIC 80 - Security And Investigation Activities
+  826          SSIC 812 - Cleaning Activities
+  827          SSIC 813 - Landscape Planting, Care And Maintenance Service Activities
+  828          SSIC 821/2 - Office Administrative & Support Services, Call Centres
+  829          SSIC 823 - Convention, Trade Show, Concert & Other Event Organisers
+  830          SSIC 829 - Business Support Services Nec
+  831      SSIC 85-96 - Total Recreation, Community & Personal Services
+  832          SSIC 851/2 - Pre-Primary Education, Primary Education
+  833          SSIC 8531/3/4/5/6 - General Secondary Education, Post-Secondary Non-Tertiary General Education, International And Foreign System Schools, Schools For Special Needs, Specialised Education Schools
+  834          SSIC 8532 - Technical And Vocational (Secondary And Post-Secondary Non-Tertiary) Education
+  835          SSIC 854 - Tertiary Education
+  836          SSIC 855 - Other Education
+  837          SSIC 856 - Educational Support Services
+  838          SSIC 861 - Hospitals
+  839          SSIC 86201 - Clinics And Other General Medical Services (Western)
+  840          SSIC 86202 - Clinics And Other General Medical Services (Non-Western)
+  841          SSIC 86203 - Specialised Medical Services
+  842          SSIC 86204/869 - Dental & Other Health Services
+  843          SSIC 8701 - Residential Nursing Care Facilities
+  844          SSIC 8702 - Other Residential Care Services
+  845          SSIC 881 - Social Services Without Accommodation For The Elderly And Disabled
+  846          SSIC 889 - Other Social Services Without Accommodation
+  847          SSIC 90 - Arts Creation And Performing Arts Activities
+  848          SSIC 91 - Libraries, Archives, Museums & Other Cultural Activities
+  849          SSIC 92 - Gambling & Betting Activities
+  850          SSIC 931 - Sports Activities
+  851          SSIC 932 - Other Amusement & Recreation Activities
+  852          SSIC 941 - Activities Of Business, Employers & Professional Membership Organisations
+  853          SSIC 942/9 - Activities Of Trade Unions & Other Membership Organisations
+  854          SSIC 951 - Repair Of Computers And Communications Equipment
+  855          SSIC 9521 - Repair Of Consumer Electronics
+  856          SSIC 9522 - Repair Of Household Appliances And Home & Garden Equipment
+  857          SSIC 9523 - Repair Of Footwear & Leather Goods
+  858          SSIC 9524 - Repair Of Furniture & Home Furnishings
+  859          SSIC 9529 - Repair Of Other Personal & Household Goods
+  860          SSIC 95301 - Repair & Maintenance Of Motor Vehicles
+  861          SSIC 95302 - Car Washing & Related Services
+  862          SSIC 95303 - Motor Vehicle Inspection & Valuation Services
+  863          SSIC 9601 - Washing And (Dry-) Cleaning Of Textile & Fur Products
+  864          SSIC 9602 - Hairdressing, Beauty And Other Personal Care Services
+  865          SSIC 9603 - Funeral & Related Services
+  866          SSIC 9604 - Wedding & Related Services
+  867          SSIC 9609 - Other Personal Service Nec
+  868  Value Added, Total Services Sector
+  869      SSIC 46 - Total Wholesale Trade
+  870          SSIC 46100 - Wholesale On A Fee Or Commission Basis
+  871          SSIC 4621/2 - Agricultural Raw Materials & Live Animals
+  872          SSIC 46301 - Fruits & Vegetables (Including Fresh And Frozen)
+  873          SSIC 46302 - Livestock, Meat, Poultry, Eggs & Seafood (Including Fresh And Frozen)
+  874          SSIC 46303 - A General Line (Wide Range) Of Groceries (e.g. Cereals, Sugar, Edible Oils, Sauces And Dairy Products)
+  875          SSIC 46304/5 - Confectionery & Bakery Products, Ice-Cream
+  876          SSIC 46306 - Health Supplements
+  877          SSIC 46307 - Liquor, Soft Drinks & Beverages
+  878          SSIC 46308/9 - Tobacco Products, Food, Beverages & Tobacco Nec (Including Dried Or Canned)
+  879          SSIC 46411/2/3 - Textiles & Leathers, Adults' Clothing, Children And Infants' Clothing (Including Products And Accessories For Infants)
+  880          SSIC 46414/5/6 - Footwear, Bags, Luggage & Travel Accessories, Sewing & Clothing Accessories
+  881          SSIC 46421/2 - Jewellery Made From Precious Metals And Stones & Costume Jewellery
+  882          SSIC 46423 - Watches & Clocks
+  883          SSIC 46424/9 - Cosmetics & Toiletries, Personal Effects Nec
+  884          SSIC 46431 - Furniture (Including Mattresses, Cushions)
+  885          SSIC 46432 - Furnishings (Including Curtains, Carpets, Wallpaper)
+  886          SSIC 46433 - Lighting & Lighting Accessories
+  887          SSIC 46434 - Crockery, Cutlery & Kitchen Utensils
+  888          SSIC 46435/6 - Household Electrical Appliances & Equipment, Audio & Video Equipment Except Electrical & Electronic Components
+  889          SSIC 46439 - Furniture, Home Furnishings & Other Household Equipment Nec
+  890          SSIC 4644 - Sporting & Other Recreational Goods
+  891          SSIC 4645 - Handicrafts & Fancy Goods
+  892          SSIC 4646 - Medicinal & Pharmaceutical Products
+  893          SSIC 4647 - Paper, Paper-Related Products, Stationery, Cellophane Products & Packaging Materials
+  894          SSIC 4649 - Other Household Goods
+  895          SSIC 4651/2 - Computers, Computer Peripheral Equipment & Software, Electronic & Telecommunications Equipment & Parts
+  896          SSIC 46530/46549 - Agricultural Machinery, Equipment & Supplies, Industrial, Construction & Related Machinery & Equipment Nec
+  897          SSIC 46541 - Industrial Machinery & Equipment (e.g. Industrial Crane)
+  898          SSIC 46542/3 - Construction Equipment, Lifts, Escalators & Industrial & Office Air-Conditioning Equipment
+  899          SSIC 46544 - Electrical & Wiring Accessories
+  900          SSIC 46551 - Marine Equipment & Accessories
+  901          SSIC 46552/9 - Aircraft Equipment & Supplies, Transport Equipment Except Motor Vehicles & Motorcycles Nec
+  902          SSIC 4656 - Motor Vehicles, Parts & Accessories
+  903          SSIC 46591 - Office Machinery & Equipment
+  904          SSIC 46592 - Medical, Professional, Scientific & Precision Equipment
+  905          SSIC 46593/4 - Commercial Food Service Equipment, Service Establishment Equipment & Supplies
+  906          SSIC 46595 - Security & Safety Equipment
+  907          SSIC 46599 - Other Machinery & Equipment Nec
+  908          SSIC 4661 - Fuels & Related Products
+  909          SSIC 46620 - Metals & Metal Ores (e.g. Steel Pipes) Except General Hardware
+  910          SSIC 46631 - Logs, Sawn Timber, Plywood & Related Products
+  911          SSIC 46632 - General Hardware
+  912          SSIC 46633 - Structural Clay & Concrete Products
+  913          SSIC 46634/5 - Paints & Glass
+  914          SSIC 46639 - Construction Materials, Hardware, Plumbing & Heating Equipment & Supplies Nec
+  915          SSIC 46641/2 - Basic Industrial Chemicals (Except Fertilisers) & Chemical Fertilisers
+  916          SSIC 46643 - Petrochemical Products
+  917          SSIC 46649 - Chemicals & Chemical Products Nec
+  918          SSIC 4665 - Other Intermediate Products, Waste & Scrap
+  919          SSIC 4666 - Ship Chandlers & Ship Bunkering
+  920          SSIC 46900 - Non-Specialised Wholesale Trade
+  921      SSIC 47 - Total Retail Trade
+  922          SSIC 47101 - Supermarkets & Hypermarkets
+  923          SSIC 47102 - Mini-Marts, Convenience Stores & Provision Shops
+  924          SSIC 47103 - Department Stores
+  925          SSIC 47109 - Non-Specialised Stores Nec
+  926          SSIC 4721/4722/4723 - Food, Beverages & Tobacco Products
+  927          SSIC 47311 - Motor Vehicles Except Motorcycles & Scooters
+  928          SSIC 47312 - Motorcycles & Scooters
+  929          SSIC 47313/47314 - Tyres, Batteries, Spare Parts & Accessories For Motor Vehicles
+  930          SSIC 47320 - Automotive Fuel
+  931          SSIC 4741 - Computers, Peripheral Equipment, Software & Telecommunications Equipment
+  932          SSIC 47535 - Household Electrical Appliances & Equipment
+  933          SSIC 47510/47531/47532 - Textiles, Furniture & Furnishings
+  934          SSIC 4752 - Hardware, Paints & Glass
+  935          SSIC 47533/47534/47537/47539 - Lighting, Lighting Accessories, Crockery, Cutlery, Kitchen Utensils, Security, Safety Equipment & Other Household Articles Nec
+  936          SSIC 47610 - Books, Newspapers & Stationery
+  937          SSIC 47620/47630/47640/47650 - Music & Video Recordings (e.g. Dvds, Blu-Ray Discs), Sporting Equipment, Games & Toys, Musical Instruments & Scores
+  938          SSIC 47711/47712 - Clothing For Adults, Children & Infants
+  939          SSIC 47713/47714/47715/47719 - Footwear, Bags, Luggage & Travel Accessories, Sewing, Clothing Accessories & Other Clothing, Footwear & Leather Articles Nec
+  940          SSIC 47721 - Cosmetics & Toiletries
+  941          SSIC 47722/47723/47729 - Pharmacies, Drug Stores, Chinese Medicine Shops, Pharmaceutical & Medical Goods Nec
+  942          SSIC 47731 - Jewellery Made From Precious Metals And Stones
+  943          SSIC 47732 - Costume Jewellery
+  944          SSIC 47733/47739 - Watches, Clocks & Personal Effects Nec
+  945          SSIC 4775 - Optical & Photographic Goods
+  946          SSIC 4774/4776/4777 - Handicrafts & Fancy Goods, Flowers, Plants & Pet Animals, Other Goods & Second-Hand Goods
+  947      SSIC 49-53 - Total Transportation & Storage
+  948          SSIC 4910/4921/4922 - Passenger And Freight Rail Transport, Passenger Land Transport & Aerial Cableways
+  949          SSIC 49231 - Freight Transport By Road
+  950          SSIC 49232 - Moving Services
+  951          SSIC 49233-Rental And Leasing Of Freight Land Transport Vehicle (e.g. Lorries And Trucks) With Driver
+  952          SSIC 5001 - Passenger Water Transport
+  953          SSIC 5002 - Freight Water Transport
+  954          SSIC 51 - Air Transport
+  955          SSIC 52101 - General Warehousing
+  956          SSIC 52102 - Refrigerated Warehousing And Storage
+  957          SSIC 52103 - Storage For Dangerous Goods
+  958          SSIC 52109 - Specialised Storage Nec (e.g. Wine Warehousing, Document Storage And Warehousing)
+  959          SSIC 52211 - Carpark Management & Operation Services
+  960          SSIC 52212/52219 - Motor Vehicle Towing Services, Supporting Services To Land Transport Nec
+  961          SSIC 5222 - Supporting Services To Water Transport
+  962          SSIC 5223 - Supporting Services To Air Transport
+  963          SSIC 5224 - Cargo Handling
+  964          SSIC 5225 - Marine Surveying Services & Classification Societies
+  965          SSIC 5229 - Other Transportation Support Activities
+  966          SSIC 53 - Postal & Courier
+  967      SSIC 55-56 - Total Accommodation & Food Services
+  968          SSIC 55101 - Hotels
+  969          SSIC 55109/55900 - Other Accommodation
+  970          SSIC 56111 - Restaurants
+  971          SSIC 56112/56123 - Cafes & Food And Drinks Kiosks
+  972          SSIC 56121 - Fast Food Outlets
+  973          SSIC 56122 - Operators Of Food Courts, Hawker Centres, Coffees Shops And Canteens (With Mainly Food And Beverage Income)
+  974          SSIC 56130 - Pubs
+  975          SSIC 56200 - Food Caterers
+  976      SSIC 58-63 - Total Information & Communications
+  977          SSIC 58110 - Book Publishing
+  978          SSIC 58120 - Publishing Of Directories & Mailing Lists
+  979          SSIC 5813/5819 - Publishing Of News, Journals, Periodicals And Other Publishing Activities
+  980          SSIC 5820 - Software Publishing
+  981          SSIC 59111/2 - Movie, Advertisements, Corporate Videos & Event Videos Production
+  982          SSIC 59113 - Production Of Dramas, Variety Shows And Documentaries
+  983          SSIC 59114/9 - Animation, Movie, Video, Television And Other Programme Production Activities Nec
+  984          SSIC 5912 - Movie, Video, Television And Other Programme Post-Production Activities
+  985          SSIC 5913 - Movie, Video, Television & Other Programme Distribution Activities
+  986          SSIC 5914 - Movie Projection Activities
+  987          SSIC 5920 - Sound Recording & Music Publishing Activities
+  988          SSIC 60 - Broadcasting And Content Production
+  989          SSIC 6101 - Telecommunications Network Operation
+  990          SSIC 6102 - Telecommunications Resellers
+  991          SSIC 6109 - Other Telecommunications Activities
+  992          SSIC 6201 - Computer Programming Activities
+  993          SSIC 6202 - Information Technology Consultancy And Computer Facilities Management Activities
+  994          SSIC 6209 - Other Information Technology And Computer Service Activities
+  995          SSIC 631/639 - Data Analytics, Processing, Hosting & Related Activities; Internet Search Engines And Other Information Service Activities
+  996          SSIC 6320 Excl 63204 - Online Marketplaces Operating On A Fee Or Commission Basis (Exclude Online Marketplaces For Travel And Accommodation Services)
+  997          SSIC 63204 - Online Marketplaces Operating On A Fee Or Commission Basis For Travel And Accommodation Services Provided By Third-Party
+  998      SSIC 68-82 - Total Real Estate, Professional And Administrative & Support Services
+  999          SSIC 68 - Real Estate
+ 1000          SSIC 6910 - Legal Services
+ 1001          SSIC 6920 - Accounting, Book-Keeping & Auditing Activities; Tax Consultancy
+ 1002          SSIC 7010 - Head Offices; Centralised Administrative Offices & Business Representative Offices
+ 1003          SSIC 7020 - Management Consultancy
+ 1004          SSIC 711 - Architectural & Engineering Activities And Related Technical Consultancy
+ 1005          SSIC 7120 - Technical Testing & Analysis Services
+ 1006          SSIC 72 - Scientific Research & Development
+ 1007          SSIC 7310 - Advertising
+ 1008          SSIC 7320 - Market Research & Public Opinion Polling
+ 1009          SSIC 7411 - Industrial Design Activities
+ 1010          SSIC 7419 - Other Specialised Design Activities
+ 1011          SSIC 7420 - Photographic Activities
+ 1012          SSIC 7490 - Professional, Scientific & Technical Activities Nec
+ 1013          SSIC 7500 - Veterinary Activities
+ 1014          SSIC 771 - Rental & Leasing Of Land Transport Equipment
+ 1015          SSIC 772 - Rental & Leasing Of Personal & Household Goods
+ 1016          SSIC 773/4 - Rental & Leasing Of Other Machinery, Equipment & Tangible Goods, Leasing Of Non-Financial Intangible Assets
+ 1017          SSIC 78 Excl 78103 - Employment Activities (Exclude Domestic Worker Employment Placement Agencies)
+ 1018          SSIC 78103 - Domestic Worker Employment Placement Agencies
+ 1019          SSIC 79 - Travel Agencies & Tour Operators
+ 1020          SSIC 80 - Security And Investigation Activities
+ 1021          SSIC 812 - Cleaning Activities
+ 1022          SSIC 813 - Landscape Planting, Care And Maintenance Service Activities
+ 1023          SSIC 821/2 - Office Administrative & Support Services, Call Centres
+ 1024          SSIC 823 - Convention, Trade Show, Concert & Other Event Organisers
+ 1025          SSIC 829 - Business Support Services Nec
+ 1026      SSIC 85-96 - Total Recreation, Community & Personal Services
+ 1027          SSIC 851/2 - Pre-Primary Education, Primary Education
+ 1028          SSIC 8531/3/4/5/6 - General Secondary Education, Post-Secondary Non-Tertiary General Education, International And Foreign System Schools, Schools For Special Needs, Specialised Education Schools
+ 1029          SSIC 8532 - Technical And Vocational (Secondary And Post-Secondary Non-Tertiary) Education
+ 1030          SSIC 854 - Tertiary Education
+ 1031          SSIC 855 - Other Education
+ 1032          SSIC 856 - Educational Support Services
+ 1033          SSIC 861 - Hospitals
+ 1034          SSIC 86201 - Clinics And Other General Medical Services (Western)
+ 1035          SSIC 86202 - Clinics And Other General Medical Services (Non-Western)
+ 1036          SSIC 86203 - Specialised Medical Services
+ 1037          SSIC 86204/869 - Dental & Other Health Services
+ 1038          SSIC 8701 - Residential Nursing Care Facilities
+ 1039          SSIC 8702 - Other Residential Care Services
+ 1040          SSIC 881 - Social Services Without Accommodation For The Elderly And Disabled
+ 1041          SSIC 889 - Other Social Services Without Accommodation
+ 1042          SSIC 90 - Arts Creation And Performing Arts Activities
+ 1043          SSIC 91 - Libraries, Archives, Museums & Other Cultural Activities
+ 1044          SSIC 92 - Gambling & Betting Activities
+ 1045          SSIC 931 - Sports Activities
+ 1046          SSIC 932 - Other Amusement & Recreation Activities
+ 1047          SSIC 941 - Activities Of Business, Employers & Professional Membership Organisations
+ 1048          SSIC 942/9 - Activities Of Trade Unions & Other Membership Organisations
+ 1049          SSIC 951 - Repair Of Computers And Communications Equipment
+ 1050          SSIC 9521 - Repair Of Consumer Electronics
+ 1051          SSIC 9522 - Repair Of Household Appliances And Home & Garden Equipment
+ 1052          SSIC 9523 - Repair Of Footwear & Leather Goods
+ 1053          SSIC 9524 - Repair Of Furniture & Home Furnishings
+ 1054          SSIC 9529 - Repair Of Other Personal & Household Goods
+ 1055          SSIC 95301 - Repair & Maintenance Of Motor Vehicles
+ 1056          SSIC 95302 - Car Washing & Related Services
+ 1057          SSIC 95303 - Motor Vehicle Inspection & Valuation Services
+ 1058          SSIC 9601 - Washing And (Dry-) Cleaning Of Textile & Fur Products
+ 1059          SSIC 9602 - Hairdressing, Beauty And Other Personal Care Services
+ 1060          SSIC 9603 - Funeral & Related Services
+ 1061          SSIC 9604 - Wedding & Related Services
+ 1062          SSIC 9609 - Other Personal Service Nec
+=== w2a_services_industry_group.csv: DataSeries column only, 289 rows
+    0  Establishments, Total Services Sector
+    1      SSIC 46 - Total Wholesale Trade
+    2          SSIC 462/463 - Agricultural Materials
+    3          SSIC 464 - Household Goods
+    4          SSIC 4661/4664 - Fuels & Chemicals
+    5          SSIC 4651/4652/4653/4654/4659 - Machinery & Equipment
+    6          SSIC 4655/4656 - Transport Equipment
+    7          SSIC 461/4662/4663/4665/4666/469 - Others
+    8      SSIC 47 - Total Retail Trade
+    9          SSIC 471 - General Merchandise
+   10          SSIC 473 - Transport Equipment
+   11          SSIC 476/4771/4772/4773/4775 - Personal Goods
+   12          SSIC 474/4751/4753 - Household Equipment
+   13          SSIC 472/4752/4774/4776/4777 - Others
+   14      SSIC 49-53 - Total Transportation & Storage
+   15          SSIC 49/5221 - Land Transport And Supporting Services To Land Transport
+   16          SSIC 50/5222/5225 - Water Transport And Supporting Services To Water Transport
+   17          SSIC 51/5223 - Air Transport And Supporting Services To Air Transport
+   18          SSIC 521 - Warehousing & Storage
+   19          SSIC 5224/5229 - Others
+   20          SSIC 53 - Post & Courier
+   21      SSIC 55-56 - Total Accommodation & Food Services
+   22          SSIC 55 - Total Accommodation Services
+   23          SSIC 56 - Total Food & Beverage Services
+   24      SSIC 58-63 - Total Information & Communications
+   25          SSIC 58 - Publishing Activities
+   26          SSIC 59-60 - Movie, Video, Television, Broadcasting & Content Production
+   27          SSIC 61 - Telecommunications
+   28          SSIC 62-63 - Computer Programming, Information Technology Consultancy, Information Services & Online Marketplaces
+   29      SSIC 64-66 - Total Finance & Insurance
+   30      SSIC 68-82 - Total Real Estate, Professional And Administrative & Support Services
+   31          SSIC 68 - Real Estate
+   32          SSIC 69 - Legal & Accounting
+   33          SSIC 70 - Head Office & Management Consultancy
+   34          SSIC 71 - Architectural & Engineering Activities, Technical Testing & Analysis
+   35          SSIC 72 - Scientific Research & Development
+   36          SSIC 73 - Advertising & Market Research
+   37          SSIC 74-75 - Other Professional, Scientific & Technical Services/Veterinary Activities
+   38          SSIC 77 - Rental & Leasing
+   39          SSIC 78 - Employment Services
+   40          SSIC 79 - Travel Agencies & Tour Operators
+   41          SSIC 80 - Security & Investigation
+   42          SSIC 81 - Cleaning & Landscape Maintenance
+   43          SSIC 82 - Office Administrative, Office Support & Other Business Support Services
+   44      SSIC 85-96 - Total Recreation, Community & Personal Services
+   45          SSIC 85 - Education
+   46          SSIC 86 - Total Health Services
+   47              SSIC 861 - Hospitals
+   48              SSIC 86201/3 - Western Clinics And Specialised Medical Services
+   49              SSIC 86202 - Clinics And Other General Medical Services (Non-Western)
+   50              SSIC 86204/869 - Dental & Other Health Services
+   51          SSIC 87-88 - Residential Care & Social Services Without Accommodation
+   52          SSIC 90-91 - Arts Creation, Performing Arts, Libraries, Archives, Museums & Other Cultural Activities
+   53          SSIC 92 - Gambling & Betting Activities
+   54          SSIC 93 - Sports, Amusement & Recreation Activities
+   55          SSIC 94 - Activities Of Membership Organisations
+   56          SSIC 95 - Repair Of Computers, Personal & Household Goods & Vehicles
+   57          SSIC 96 - Other Personal Service Activities
+   58  Operating Revenue, Total Services Sector
+   59      SSIC 46 - Total Wholesale Trade
+   60          SSIC 462/463 - Agricultural Materials
+   61          SSIC 464 - Household Goods
+   62          SSIC 4661/4664 - Fuels & Chemicals
+   63          SSIC 4651/4652/4653/4654/4659 - Machinery & Equipment
+   64          SSIC 4655/4656 - Transport Equipment
+   65          SSIC 461/4662/4663/4665/4666/469 - Others
+   66      SSIC 47 - Total Retail Trade
+   67          SSIC 471 - General Merchandise
+   68          SSIC 473 - Transport Equipment
+   69          SSIC 476/4771/4772/4773/4775 - Personal Goods
+   70          SSIC 474/4751/4753 - Household Equipment
+   71          SSIC 472/4752/4774/4776/4777 - Others
+   72      SSIC 49-53 - Total Transportation & Storage
+   73          SSIC 49/5221 - Land Transport And Supporting Services To Land Transport
+   74          SSIC 50/5222/5225 - Water Transport And Supporting Services To Water Transport
+   75          SSIC 51/5223 - Air Transport And Supporting Services To Air Transport
+   76          SSIC 521 - Warehousing & Storage
+   77          SSIC 5224/5229 - Others
+   78          SSIC 53 - Post & Courier
+   79      SSIC 55-56 - Total Accommodation & Food Services
+   80          SSIC 55 - Total Accommodation Services
+   81          SSIC 56 - Total Food & Beverage Services
+   82      SSIC 58-63 - Total Information & Communications
+   83          SSIC 58 - Publishing Activities
+   84          SSIC 59-60 - Movie, Video, Television, Broadcasting & Content Production
+   85          SSIC 61 - Telecommunications
+   86          SSIC 62-63 - Computer Programming, Information Technology Consultancy, Information Services & Online Marketplaces
+   87      SSIC 64-66 - Total Finance & Insurance
+   88      SSIC 68-82 - Total Real Estate, Professional And Administrative & Support Services
+   89          SSIC 68 - Real Estate
+   90          SSIC 69 - Legal & Accounting
+   91          SSIC 70 - Head Office & Management Consultancy
+   92          SSIC 71 - Architectural & Engineering Activities, Technical Testing & Analysis
+   93          SSIC 72 - Scientific Research & Development
+   94          SSIC 73 - Advertising & Market Research
+   95          SSIC 74-75 - Other Professional, Scientific & Technical Services/Veterinary Activities
+   96          SSIC 77 - Rental & Leasing
+   97          SSIC 78 - Employment Services
+   98          SSIC 79 - Travel Agencies & Tour Operators
+   99          SSIC 80 - Security & Investigation
+  100          SSIC 81 - Cleaning & Landscape Maintenance
+  101          SSIC 82 - Office Administrative, Office Support & Other Business Support Services
+  102      SSIC 85-96 - Total Recreation, Community & Personal Services
+  103          SSIC 85 - Education
+  104          SSIC 86 - Total Health Services
+  105              SSIC 861 - Hospitals
+  106              SSIC 86201/3 - Western Clinics And Specialised Medical Services
+  107              SSIC 86202 - Clinics And Other General Medical Services (Non-Western)
+  108              SSIC 86204/869 - Dental & Other Health Services
+  109          SSIC 87-88 - Residential Care & Social Services Without Accommodation
+  110          SSIC 90-91 - Arts Creation, Performing Arts, Libraries, Archives, Museums & Other Cultural Activities
+  111          SSIC 92 - Gambling & Betting Activities
+  112          SSIC 93 - Sports, Amusement & Recreation Activities
+  113          SSIC 94 - Activities Of Membership Organisations
+  114          SSIC 95 - Repair Of Computers, Personal & Household Goods & Vehicles
+  115          SSIC 96 - Other Personal Service Activities
+  116  Operating Expenditure, Total Services Sector
+  117      SSIC 46 - Total Wholesale Trade
+  118          SSIC 462/463 - Agricultural Materials
+  119          SSIC 464 - Household Goods
+  120          SSIC 4661/4664 - Fuels & Chemicals
+  121          SSIC 4651/4652/4653/4654/4659 - Machinery & Equipment
+  122          SSIC 4655/4656 - Transport Equipment
+  123          SSIC 461/4662/4663/4665/4666/469 - Others
+  124      SSIC 47 - Total Retail Trade
+  125          SSIC 471 - General Merchandise
+  126          SSIC 473 - Transport Equipment
+  127          SSIC 476/4771/4772/4773/4775 - Personal Goods
+  128          SSIC 474/4751/4753 - Household Equipment
+  129          SSIC 472/4752/4774/4776/4777 - Others
+  130      SSIC 49-53 - Total Transportation & Storage
+  131          SSIC 49/5221 - Land Transport And Supporting Services To Land Transport
+  132          SSIC 50/5222/5225 - Water Transport And Supporting Services To Water Transport
+  133          SSIC 51/5223 - Air Transport And Supporting Services To Air Transport
+  134          SSIC 521 - Warehousing & Storage
+  135          SSIC 5224/5229 - Others
+  136          SSIC 53 - Post & Courier
+  137      SSIC 55-56 - Total Accommodation & Food Services
+  138          SSIC 55 - Total Accommodation Services
+  139          SSIC 56 - Total Food & Beverage Services
+  140      SSIC 58-63 - Total Information & Communications
+  141          SSIC 58 - Publishing Activities
+  142          SSIC 59-60 - Movie, Video, Television, Broadcasting & Content Production
+  143          SSIC 61 - Telecommunications
+  144          SSIC 62-63 - Computer Programming, Information Technology Consultancy, Information Services & Online Marketplaces
+  145      SSIC 64-66 - Total Finance & Insurance
+  146      SSIC 68-82 - Total Real Estate, Professional And Administrative & Support Services
+  147          SSIC 68 - Real Estate
+  148          SSIC 69 - Legal & Accounting
+  149          SSIC 70 - Head Office & Management Consultancy
+  150          SSIC 71 - Architectural & Engineering Activities, Technical Testing & Analysis
+  151          SSIC 72 - Scientific Research & Development
+  152          SSIC 73 - Advertising & Market Research
+  153          SSIC 74-75 - Other Professional, Scientific & Technical Services/Veterinary Activities
+  154          SSIC 77 - Rental & Leasing
+  155          SSIC 78 - Employment Services
+  156          SSIC 79 - Travel Agencies & Tour Operators
+  157          SSIC 80 - Security & Investigation
+  158          SSIC 81 - Cleaning & Landscape Maintenance
+  159          SSIC 82 - Office Administrative, Office Support & Other Business Support Services
+  160      SSIC 85-96 - Total Recreation, Community & Personal Services
+  161          SSIC 85 - Education
+  162          SSIC 86 - Total Health Services
+  163              SSIC 861 - Hospitals
+  164              SSIC 86201/3 - Western Clinics And Specialised Medical Services
+  165              SSIC 86202 - Clinics And Other General Medical Services (Non-Western)
+  166              SSIC 86204/869 - Dental & Other Health Services
+  167          SSIC 87-88 - Residential Care & Social Services Without Accommodation
+  168          SSIC 90-91 - Arts Creation, Performing Arts, Libraries, Archives, Museums & Other Cultural Activities
+  169          SSIC 92 - Gambling & Betting Activities
+  170          SSIC 93 - Sports, Amusement & Recreation Activities
+  171          SSIC 94 - Activities Of Membership Organisations
+  172          SSIC 95 - Repair Of Computers, Personal & Household Goods & Vehicles
+  173          SSIC 96 - Other Personal Service Activities
+  174  Gross Operating Surplus, Total Services Sector
+  175      SSIC 46 - Total Wholesale Trade
+  176          SSIC 462/463 - Agricultural Materials
+  177          SSIC 464 - Household Goods
+  178          SSIC 4661/4664 - Fuels & Chemicals
+  179          SSIC 4651/4652/4653/4654/4659 - Machinery & Equipment
+  180          SSIC 4655/4656 - Transport Equipment
+  181          SSIC 461/4662/4663/4665/4666/469 - Others
+  182      SSIC 47 - Total Retail Trade
+  183          SSIC 471 - General Merchandise
+  184          SSIC 473 - Transport Equipment
+  185          SSIC 476/4771/4772/4773/4775 - Personal Goods
+  186          SSIC 474/4751/4753 - Household Equipment
+  187          SSIC 472/4752/4774/4776/4777 - Others
+  188      SSIC 49-53 - Total Transportation & Storage
+  189          SSIC 49/5221 - Land Transport And Supporting Services To Land Transport
+  190          SSIC 50/5222/5225 - Water Transport And Supporting Services To Water Transport
+  191          SSIC 51/5223 - Air Transport And Supporting Services To Air Transport
+  192          SSIC 521 - Warehousing & Storage
+  193          SSIC 5224/5229 - Others
+  194          SSIC 53 - Post & Courier
+  195      SSIC 55-56 - Total Accommodation & Food Services
+  196          SSIC 55 - Total Accommodation Services
+  197          SSIC 56 - Total Food & Beverage Services
+  198      SSIC 58-63 - Total Information & Communications
+  199          SSIC 58 - Publishing Activities
+  200          SSIC 59-60 - Movie, Video, Television, Broadcasting & Content Production
+  201          SSIC 61 - Telecommunications
+  202          SSIC 62-63 - Computer Programming, Information Technology Consultancy, Information Services & Online Marketplaces
+  203      SSIC 64-66 - Total Finance & Insurance
+  204      SSIC 68-82 - Total Real Estate, Professional And Administrative & Support Services
+  205          SSIC 68 - Real Estate
+  206          SSIC 69 - Legal & Accounting
+  207          SSIC 70 - Head Office & Management Consultancy
+  208          SSIC 71 - Architectural & Engineering Activities, Technical Testing & Analysis
+  209          SSIC 72 - Scientific Research & Development
+  210          SSIC 73 - Advertising & Market Research
+  211          SSIC 74-75 - Other Professional, Scientific & Technical Services/Veterinary Activities
+  212          SSIC 77 - Rental & Leasing
+  213          SSIC 78 - Employment Services
+  214          SSIC 79 - Travel Agencies & Tour Operators
+  215          SSIC 80 - Security & Investigation
+  216          SSIC 81 - Cleaning & Landscape Maintenance
+  217          SSIC 82 - Office Administrative, Office Support & Other Business Support Services
+  218      SSIC 85-96 - Total Recreation, Community & Personal Services
+  219          SSIC 85 - Education
+  220          SSIC 86 - Total Health Services
+  221              SSIC 861 - Hospitals
+  222              SSIC 86201/3 - Western Clinics And Specialised Medical Services
+  223              SSIC 86202 - Clinics And Other General Medical Services (Non-Western)
+  224              SSIC 86204/869 - Dental & Other Health Services
+  225          SSIC 87-88 - Residential Care & Social Services Without Accommodation
+  226          SSIC 90-91 - Arts Creation, Performing Arts, Libraries, Archives, Museums & Other Cultural Activities
+  227          SSIC 92 - Gambling & Betting Activities
+  228          SSIC 93 - Sports, Amusement & Recreation Activities
+  229          SSIC 94 - Activities Of Membership Organisations
+  230          SSIC 95 - Repair Of Computers, Personal & Household Goods & Vehicles
+  231          SSIC 96 - Other Personal Service Activities
+  232  Value Added, Total Services Sector
+  233      SSIC 46 - Total Wholesale Trade
+  234          SSIC 462/463 - Agricultural Materials
+  235          SSIC 464 - Household Goods
+  236          SSIC 4661/4664 - Fuels & Chemicals
+  237          SSIC 4651/4652/4653/4654/4659 - Machinery & Equipment
+  238          SSIC 4655/4656 - Transport Equipment
+  239          SSIC 461/4662/4663/4665/4666/469 - Others
+  240      SSIC 47 - Total Retail Trade
+  241          SSIC 471 - General Merchandise
+  242          SSIC 473 - Transport Equipment
+  243          SSIC 476/4771/4772/4773/4775 - Personal Goods
+  244          SSIC 474/4751/4753 - Household Equipment
+  245          SSIC 472/4752/4774/4776/4777 - Others
+  246      SSIC 49-53 - Total Transportation & Storage
+  247          SSIC 49/5221 - Land Transport And Supporting Services To Land Transport
+  248          SSIC 50/5222/5225 - Water Transport And Supporting Services To Water Transport
+  249          SSIC 51/5223 - Air Transport And Supporting Services To Air Transport
+  250          SSIC 521 - Warehousing & Storage
+  251          SSIC 5224/5229 - Others
+  252          SSIC 53 - Post & Courier
+  253      SSIC 55-56 - Total Accommodation & Food Services
+  254          SSIC 55 - Total Accommodation Services
+  255          SSIC 56 - Total Food & Beverage Services
+  256      SSIC 58-63 - Total Information & Communications
+  257          SSIC 58 - Publishing Activities
+  258          SSIC 59-60 - Movie, Video, Television, Broadcasting & Content Production
+  259          SSIC 61 - Telecommunications
+  260          SSIC 62-63 - Computer Programming, Information Technology Consultancy, Information Services & Online Marketplaces
+  261      SSIC 68-82 - Total Real Estate, Professional And Administrative & Support Services
+  262          SSIC 68 - Real Estate
+  263          SSIC 69 - Legal & Accounting
+  264          SSIC 70 - Head Office & Management Consultancy
+  265          SSIC 71 - Architectural & Engineering Activities, Technical Testing & Analysis
+  266          SSIC 72 - Scientific Research & Development
+  267          SSIC 73 - Advertising & Market Research
+  268          SSIC 74-75 - Other Professional, Scientific & Technical Services/Veterinary Activities
+  269          SSIC 77 - Rental & Leasing
+  270          SSIC 78 - Employment Services
+  271          SSIC 79 - Travel Agencies & Tour Operators
+  272          SSIC 80 - Security & Investigation
+  273          SSIC 81 - Cleaning & Landscape Maintenance
+  274          SSIC 82 - Office Administrative, Office Support & Other Business Support Services
+  275      SSIC 85-96 - Total Recreation, Community & Personal Services
+  276          SSIC 85 - Education
+  277          SSIC 86 - Total Health Services
+  278              SSIC 861 - Hospitals
+  279              SSIC 86201/3 - Western Clinics And Specialised Medical Services
+  280              SSIC 86202 - Clinics And Other General Medical Services (Non-Western)
+  281              SSIC 86204/869 - Dental & Other Health Services
+  282          SSIC 87-88 - Residential Care & Social Services Without Accommodation
+  283          SSIC 90-91 - Arts Creation, Performing Arts, Libraries, Archives, Museums & Other Cultural Activities
+  284          SSIC 92 - Gambling & Betting Activities
+  285          SSIC 93 - Sports, Amusement & Recreation Activities
+  286          SSIC 94 - Activities Of Membership Organisations
+  287          SSIC 95 - Repair Of Computers, Personal & Household Goods & Vehicles
+  288          SSIC 96 - Other Personal Service Activities

@@ -1,0 +1,5 @@
+file,unit,occupation_column,occupation,count_column,filters
+w2b_lfs_occupation_status.csv,security,occupation,Security guards (synthetic),employed,sex=Total;employment_status=Total
+w2b_lfs_occupation_status.csv,landscape,occupation,Park and garden workers (synthetic),employed,sex=Total;employment_status=Total
+w2b_lfs_occupation_status.csv,cleaning,occupation,Office cleaners (synthetic),employed,sex=Total;employment_status=Total
+w2b_lfs_occupation_status.csv,comparison,occupation,Shop sales and food service (synthetic),employed,sex=Total;employment_status=Total
