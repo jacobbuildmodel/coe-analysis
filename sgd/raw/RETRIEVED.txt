@@ -1,0 +1,303 @@
+RETRIEVED.txt -- sgd piece, raw/ inventory
+
+STATE ON 29 September 2026 (SGT): NOTHING RETRIEVED. raw/ holds only this
+file. Checkpoint 0 (data feasibility) was done from the web search index; no
+file was downloaded, so no md5 is recorded. The paragraph below describes the
+sandbox attempt.
+
+Every download attempt from the researcher session failed at the network
+layer, not at the source. The session's egress proxy refused CONNECT (HTTP
+403, organization policy) to every data host tried, on 29 September 2026,
+with curl through the session proxy. The session's web-fetch tool was refused
+for data.bis.org with the same policy block ("EGRESS_BLOCKED"). Hosts tried:
+
+  stats.bis.org                  data.bis.org
+  www.bis.org                    www.mas.gov.sg
+  eservices.mas.gov.sg           tablebuilder.singstat.gov.sg
+  www.singstat.gov.sg            data.gov.sg
+  api-production.data.gov.sg     www.hkma.gov.hk
+  www.boj.or.jp                  www.stat-search.boj.or.jp
+  www.mof.go.jp                  www.bnm.gov.my
+  fred.stlouisfed.org            api.db.nomics.world
+  sdmx.oecd.org                  dataservices.imf.org
+  api.imf.org                    api.worldbank.org
+  www.econdb.com                 web.archive.org
+  huggingface.co
+
+Reachable: pypi.org and github.com only. No mirror was used: a mirror is not
+the primary source, and the policy denial is not to be routed around.
+
+No md5 can be recorded for a file that was never received, so none is
+recorded here. Every source below was located through a web search index on
+29 September 2026. Titles, series keys and URLs come from the index; anything
+the index said about coverage is marked UNVERIFIED and is re-checked from the
+file on receipt.
+
+The files below are for the design chat to download from Jacob's machine and
+upload to sgd/raw/ on branch sgd-wip, under the suggested filenames. After
+upload, run
+
+    python3 sgd/00_coverage.py
+
+and paste its output into the RECEIVED section at the end of this file, with
+the retrieval time (UTC) and the "last updated" date shown on each page. The
+script prints bytes, md5, column headers, series keys and labels, and the
+first and last period with a count for each series. It prints no
+observation value. Nobody opens a data file in a spreadsheet program, or
+previews one in a browser, before THESIS.md is sealed: a sheet opened is a
+sheet read. Where a page shows a chart or a table of values next to the
+download button, download without reading the page body.
+
+===============================================================================
+S1  BIS EFFECTIVE EXCHANGE RATES (WS_EER), MONTHLY, NOMINAL, BROAD BASKET
+===============================================================================
+
+Dataflow BIS,WS_EER,1.0. Series key FREQ.TYPE.BASKET.REF_AREA:
+M = monthly, N = nominal, B = broad basket (64 economies), then the ISO
+two-letter area code (euro area XM). Index 2020 = 100; geometric
+trade-weighted average of bilateral rates; weights from manufacturing trade
+with double weighting for third-market competition; weights time-varying on
+three-year periods; broad monthly series from 1994 (BIS pages, UNVERIFIED
+until the file is in). A rise means the currency strengthened against its
+basket.
+
+Series needed (label as shown in the index, "Nominal effective exchange
+rate, <area> / Broad basket"):
+
+  key        area            role                         label seen in index
+  M.N.B.SG   Singapore       the piece                    yes
+  M.N.B.JP   Japan           T2, T4, world view (float)   yes
+  M.N.B.MY   Malaysia        T3, T4                       yes
+  M.N.B.KR   Korea           T4, T5                       yes
+  M.N.B.CN   China           T4, T5                       real (R) seen; N by pattern
+  M.N.B.TH   Thailand        T4, T5                       not seen; by pattern
+  M.N.B.ID   Indonesia       T4, T5                       yes
+  M.N.B.US   United States   T4, T5                       real (R) seen; N by pattern
+  M.N.B.XM   Euro area       T4, T5                       yes
+  M.N.B.AU   Australia       T4, T5                       not seen; by pattern
+  M.N.B.HK   Hong Kong SAR   T4, T5, world view (peg)     not seen; by pattern
+
+"By pattern": the 64-economy broad basket lists all eleven areas (BIS
+documentation), so the series exist; the exact key is confirmed on receipt.
+
+S1  preferred: one CSV, all eleven series, from the BIS Stats API v2
+    https://stats.bis.org/api/v2/data/dataflow/BIS/WS_EER/1.0/M.N.B.SG+JP+MY+KR+CN+TH+ID+US+XM+AU+HK?format=csv
+    file: s1_bis_eer_neer_broad_monthly.csv
+    API documentation: https://stats.bis.org/api-doc/v2/
+  fallback A: one CSV per series from the data portal export (pattern seen
+    in the index for M.N.B.RO and M.N.B.XM):
+    https://data.bis.org/topics/EER/BIS,WS_EER,1.0/M.N.B.SG?file_format=csv&format=long&include=code,label
+    (repeat with JP, MY, KR, CN, TH, ID, US, XM, AU, HK)
+    files: s1_bis_eer_neer_broad_monthly_<AREA>.csv
+  fallback B: the whole EER dataset, flat CSV, zipped, from
+    https://data.bis.org/bulkdownload  (the WS_EER entry)
+    file: s1z_bis_eer_bulk.zip
+
+S1b optional, context only (not in any scored test): real effective
+    exchange rates, same eleven areas, key M.R.B.<AREA>
+    https://stats.bis.org/api/v2/data/dataflow/BIS/WS_EER/1.0/M.R.B.SG+JP+MY+KR+CN+TH+ID+US+XM+AU+HK?format=csv
+    file: s1b_bis_eer_reer_broad_monthly.csv
+
+S1c optional, for the T1 residual note: the broad-basket trade weights
+    (three-year periods). Located by description only ("trade weights
+    information" on the EER pages); no file URL found. If the EER page
+    at https://data.bis.org/topics/EER offers a weights download, save it as
+    s1c_bis_eer_weights_broad.<ext>.
+
+Methodology, for SOURCES_REPORT and THESIS (PDFs, not data):
+    https://www.bis.org/statistics/eer.htm
+    https://www.bis.org/publ/qtrpdf/r_qt0603e.pdf   (The new BIS effective
+      exchange rate indices, Quarterly Review, March 2006)
+    https://www.bis.org/publ/work217.pdf   (Estimation of Asian effective
+      exchange rates: a technical note)
+    files: s1d_bis_eer_overview.pdf (page printed), s1e_bis_qr0603_eer.pdf,
+      s1f_bis_wp217_asian_eer.pdf
+
+===============================================================================
+S2  BIS BILATERAL EXCHANGE RATES AGAINST THE US DOLLAR (WS_XRU), MONTHLY
+===============================================================================
+
+Dataflow BIS,WS_XRU,1.0. Series key FREQ.REF_AREA.CURRENCY.COLLECTION: units
+of the currency per US dollar. COLLECTION E = end of period (seen in the
+index: M.MY.MYR.E, A.SG.SGD.E, A.JP.JPY.E); A = average of the period
+(UNVERIFIED: expected by the SDMX code list, not seen in the index). The
+bilateral cross (units of X per Singapore dollar) is X/USD divided by
+SGD/USD.
+
+Monthly averages are wanted, to match S1, which BIS builds from daily rates.
+
+S2  preferred:
+    https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/M.SG+JP+MY+KR+CN+TH+ID+XM+AU+HK..A?format=csv
+    file: s2_bis_xru_usd_monthly_avg.csv
+    If the API rejects collection A, take the same with E:
+    https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/M.SG+JP+MY+KR+CN+TH+ID+XM+AU+HK..E?format=csv
+    file: s2_bis_xru_usd_monthly_eop.csv  (and note it here)
+  fallback: https://data.bis.org/bulkdownload  (the WS_XRU entry)
+    file: s2z_bis_xru_bulk.zip
+    Documentation: https://www.bis.org/statistics/xrusd/xrusd_doc.pdf
+    file: s2d_bis_xru_doc.pdf
+
+===============================================================================
+S3  MAS EXCHANGE RATES, MONTHLY (SGD PER UNIT, OR PER 100 UNITS, OF FOREIGN
+    CURRENCY), THE PUBLISHED SINGAPORE SERIES
+===============================================================================
+
+Used for the T1 cross-check (BIS cross against MAS's own published rate) and
+for the reader-facing bilateral numbers. MAS compiles; SingStat republishes.
+Rates are "the average of buying and selling interbank rates quoted around
+midday in Singapore" (MAS page, index summary).
+
+S3a monthly average: SingStat TableBuilder M700051, "Exchange Rates (Average
+    For Period)", source MAS. Coverage January 1988 on (index; the data.gov.sg
+    copy was said to end November 2024, last updated 14/11/2025; UNVERIFIED).
+    https://tablebuilder.singstat.gov.sg/api/table/tabledata/M700051?limit=5000
+    file: s3a_mas_fx_monthly_avg_M700051.json
+    table page: https://tablebuilder.singstat.gov.sg/table/TS/M700051
+S3b monthly end of period: SingStat TableBuilder M700041, "Exchange Rates,
+    (As At End Of Period)"
+    https://tablebuilder.singstat.gov.sg/api/table/tabledata/M700041?limit=5000
+    file: s3b_mas_fx_monthly_eop_M700041.json
+S3c optional mirror, data.gov.sg "Exchange Rates, (Average For Period),
+    Monthly", dataset d_3c62d5eed03c40aeafbb6d0fa324e976 (poll-download, as
+    for the pwm piece):
+    https://data.gov.sg/datasets/d_3c62d5eed03c40aeafbb6d0fa324e976/view
+    file: s3c_datagov_fx_monthly_avg.csv
+S3d MAS's own page (interactive; download button), for the page record:
+    https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx
+    https://www.mas.gov.sg/statistics/exchange-rates
+    file: s3d_mas_exchange_rates_page.pdf (page printed, no table read)
+
+===============================================================================
+S4  MAS S$NEER INDEX, WEEKLY (MAS'S OWN BASKET)
+===============================================================================
+
+The index the policy band is set on. MAS does not disclose the basket or its
+weights; it "releases weekly indexed data on the S$NEER" (MAS FAQ, index
+summary), shown for "current and previous years" (MAS page, index summary).
+Coverage therefore possibly only about two years: UNVERIFIED. This is the
+design test T6 series (does the BIS broad Singapore index track MAS's own?).
+
+    https://www.mas.gov.sg/statistics/exchange-rates/s$neer
+    file: s4_mas_sneer_weekly.<csv|xlsx> (whatever the download button
+      serves; every year the page offers, one file per year if need be:
+      s4_mas_sneer_weekly_<YYYY>.<ext>)
+    Release timing: https://www.mas.gov.sg/monetary-policy/advance-release-calendar
+      (weekly data released monthly, index summary)
+
+===============================================================================
+S5  MAS MONETARY POLICY DECISIONS AND STATEMENTS (PRIMARY PAGES)
+===============================================================================
+
+S5a Past Monetary Policy Decisions: "MAS' monetary policy decisions since
+    2001", one row per statement: Date, Slope, Width, Level (the level at
+    which the band is centred), "-" where unchanged (index summary and a
+    third-party copy of the layout; UNVERIFIED). Each date links to its
+    statement. This is the coding source for T7.
+    https://www.mas.gov.sg/monetary-policy/past-monetary-policy-decisions
+    files: s5a_mas_past_mp_decisions.html (saved as served) and
+      s5a_mas_past_mp_decisions.pdf (printed)
+S5b Every Monetary Policy Statement linked from S5a, for the date and the
+    verbatim wording of each decision (listing page:
+    https://www.mas.gov.sg/monetary-policy/mas-monetary-policy-statements).
+    URL pattern seen in the index:
+    https://www.mas.gov.sg/news/monetary-policy-statements/<YYYY>/mas-monetary-policy-statement-<DDmonYY>
+    e.g. .../2026/mas-monetary-policy-statement-27jul26,
+         .../2026/mas-monetary-policy-statement-14apr26,
+         .../2026/mas-monetary-policy-statement-29jan26,
+         .../2025/mas-monetary-policy-statement-14oct25,
+         .../2025/mas-monetary-policy-statement-14apr25,
+         .../2024/mas-monetary-policy-statement-29jan24,
+         .../2023/mas-monetary-policy-statement-13oct23,
+         .../2022/mas-monetary-policy-statement-14jul22,
+         .../2005/mas-press-statement  (July 2005, after the renminbi
+           and ringgit announcements)
+    files: s5b_mas_mps_<YYYYMMDD>.pdf, one per statement (printed). Only the
+      decision paragraph is read; the outlook paragraphs are not coded.
+S5c MAS FAQ on the monetary policy framework (basket and band undisclosed;
+    qualitative wording of changes; the three parameters):
+    https://www.mas.gov.sg/-/media/mas-media-library/monetary-policy/singapores-monetary-policy-framework/faqs/mp_faqs.pdf
+    https://www.mas.gov.sg/monetary-policy/singapores-monetary-policy-framework/faqs/section-4
+    files: s5c_mas_mp_faqs.pdf, s5c_mas_mp_faq_section4.pdf
+S5d MAS foreign exchange intervention operations (net purchases, six-month
+    aggregates, three-month lag, released the first business day of April and
+    October; context only, not in any test):
+    https://www.mas.gov.sg/statistics/reserve-statistics/foreign-exchange-operations
+    https://www.mas.gov.sg/news/media-releases/2020/mas-brings-forward-the-date-of-disclosure-of-its-foreign-exchange-intervention-operations
+    files: s5d_mas_fx_operations.<ext>, s5d_mas_fx_ops_2020_release.pdf
+
+===============================================================================
+S6  SINGSTAT GDP GROWTH (THE "STRONG ECONOMY" SIDE OF T7)
+===============================================================================
+
+S6a GDP, year-on-year growth, quarterly, in chained (2015) dollars. The index
+    gave TableBuilder M015631 as "Gross Domestic Product Year On Year Growth
+    Rate, Quarterly" (UNVERIFIED id; confirm the title on receipt).
+    https://tablebuilder.singstat.gov.sg/api/table/tabledata/M015631?limit=5000
+    file: s6a_singstat_gdp_yoy_quarterly_M015631.json
+S6b fallback, the level from which growth is computed: M015661, "Gross
+    Domestic Product In Chained (2015) Dollars, By Industry (SSIC 2020)"
+    https://tablebuilder.singstat.gov.sg/api/table/tabledata/M015661?limit=5000
+    file: s6b_singstat_gdp_chained2015_M015661.json
+S6c mirror, data.gov.sg "Gross Domestic Product, Year On Year Growth Rate,
+    Quarterly", dataset d_a5ff719648a0e6d4b4c623ee383ab686
+    https://data.gov.sg/datasets/d_a5ff719648a0e6d4b4c623ee383ab686/view
+    file: s6c_datagov_gdp_yoy_quarterly.csv
+
+===============================================================================
+S7  SINGSTAT CPI (SENSITIVITY TO T7 ONLY)
+===============================================================================
+
+S7a CPI, 2024 as base year, monthly: TableBuilder M213751 (index: "Consumer
+    Price Index (CPI), 2024 As Base Year"; data.gov.sg copy
+    d_bdaff844e3ef89d39fceb962ff8f0791)
+    https://tablebuilder.singstat.gov.sg/api/table/tabledata/M213751?limit=5000
+    file: s7a_singstat_cpi_monthly_M213751.json
+S7b MAS core inflation (CPI excluding accommodation and private transport):
+    monthly, from the SingStat CPI series (MAS page, index summary). No
+    TableBuilder id located. MAS's monthly "Consumer Price Developments"
+    PDFs carry it, e.g.
+    https://www.mas.gov.sg/-/media/mas-media-library/news/consumer-price-developments/2026/consumer-price-developments-in-february-2026.pdf
+    Not needed for any scored test; skip unless a TableBuilder id turns up.
+
+===============================================================================
+W  WORLD VIEW: TWO ECONOMIES THAT CHOSE DIFFERENTLY (PAGES, NOT DATA)
+===============================================================================
+
+Their exchange-rate series are already in S1 and S2 (HK, JP).
+
+W1 Hong Kong, a hard peg to the US dollar (Linked Exchange Rate System,
+   convertibility undertakings at HK$7.75 and HK$7.85 per US dollar):
+    https://www.hkma.gov.hk/eng/key-functions/money/linked-exchange-rate-system/how-does-the-lers-work/
+    file: w1_hkma_lers_how_it_works.pdf (printed)
+W2 Japan, a free float since February 1973, with occasional intervention by
+   the Ministry of Finance, executed by the Bank of Japan:
+    https://www.boj.or.jp/en/intl_finance/outline/expkainyu.htm
+    https://www.mof.go.jp/english/policy/international_policy/reference/feio/index.html
+    https://www.mof.go.jp/english/policy/international_policy/reference/feio/quarter/index.html
+    files: w2a_boj_fx_intervention_outline.pdf, w2b_mof_feio_index.pdf,
+      w2c_mof_feio_quarterly_index.pdf (pages printed; the intervention
+      amounts are context, not a test)
+W3 Malaysia, the ringgit fixed at RM3.80 per US dollar from 2 September 1998
+   to 21 July 2005, then a managed float (fixes the start of the window):
+    https://www.bnm.gov.my/significant-milestones-in-the-malaysian-foreign-exchange-market
+    file: w3_bnm_fx_milestones.pdf (printed)
+W4 China, the renminbi moved from a US dollar peg to a managed float with
+   reference to a basket on 21 July 2005 (fixes the start of the window):
+    https://www.pbc.gov.cn/english/130721/2025080815062860021/index.html
+    file: w4_pboc_20050721_reform.pdf (printed)
+
+===============================================================================
+NOT SOUGHT
+===============================================================================
+
+- A survey of what Singaporeans believe about the exchange rate. The belief
+  on trial is the approved editorial direction; no poll was looked for, and
+  the piece does not claim a share of Singaporeans holds it.
+- Real-time GDP vintages (the advance estimate as published on each MPS
+  date). T7 uses the current published series; see THESIS section 5.
+
+===============================================================================
+RECEIVED
+===============================================================================
+
+(empty: nothing received yet)
