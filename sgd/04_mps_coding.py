@@ -5,11 +5,17 @@ paragraphs in office/MPS_CANDIDATES.txt (written by 03_mps_candidates.py).
 
   python3 sgd/04_mps_coding.py
 
-The codes below were set by the researcher on 4 October 2026, reading only
+The codes below were set by the researcher on 3 October 2026, reading only
 MPS_CANDIDATES.txt. This script does not decide any code. It
   - checks that every quote is a verbatim substring of the paragraph it cites;
   - attaches S5a's own Slope, Width and Level cells for the date, as the
     cross-check (raw/s5a_mas_past_mp_decisions.html);
+  - applies the checker's ruling of 3 October 2026 on the centre: where the
+    statement's words give no direction (re-centred "at the prevailing
+    level", flagged recentre_no_direction) or are AMBIGUOUS, the direction
+    is taken from S5a's Level cell, MAS's own record of the decision. The
+    statement-based code stays in centre_statement and the source of each
+    direction in centre_source;
   - derives the slope in force, the re-centring score and p by the THESIS
     mapping;
   - writes office/MPS_CODING.csv.
@@ -330,6 +336,15 @@ def main():
             print(f"  {date}: no S5a row")
             bad += 1
         s5 = S.get(date, ("", "", ""))
+        centre_statement, centre_source = centre, "statement"
+        if nodir == "yes" or centre == "AMBIGUOUS":
+            lvl = s5[2].lower()
+            d = "up" if "upward" in lvl else "down" if "downward" in lvl else None
+            if d is None:
+                print(f"  {date}: ruling needs a direction in S5a's Level cell, found {s5[2]!r}")
+                bad += 1
+            else:
+                centre, centre_source = d, "S5a Level cell (checker ruling, 3 Oct 2026)"
         # slope in force (THESIS section 5 mapping); AMBIGUOUS slope keeps the previous value
         if slope == "zero":
             sif = 0
@@ -340,7 +355,8 @@ def main():
         elif slope == "same":
             sif = 1 if sif is None else sif
         rc = {"up": 1, "down": -1}.get(centre, 0)   # unchanged and AMBIGUOUS count 0 (THESIS T7)
-        rows.append([date, f"s5b_mas_mps_{date}.html", slope, width, centre, nodir, sif, rc, sif + rc,
+        rows.append([date, f"s5b_mas_mps_{date}.html", slope, width, centre, centre_statement, centre_source,
+                     nodir, sif, rc, sif + rc,
                      src, qs, qw, qc, s5[0], s5[1], s5[2], review, note])
     missing = sorted(set(S) - {r[0] for r in rows})
     for d in missing:
@@ -348,12 +364,14 @@ def main():
         bad += 1
     with open(OUT, "w", encoding="utf-8", newline="") as fh:
         w = csv.writer(fh, lineterminator="\n")
-        w.writerow(["date", "statement_file", "slope", "width", "centre", "recentre_no_direction",
+        w.writerow(["date", "statement_file", "slope", "width", "centre", "centre_statement", "centre_source",
+                    "recentre_no_direction",
                     "slope_in_force", "recentre_score", "p", "source_para", "quote_slope", "quote_width",
                     "quote_centre", "s5a_slope", "s5a_width", "s5a_level", "checker_review", "note"])
         w.writerows(rows)
     print(f"  {len(rows)} rows written to {os.path.relpath(OUT, HERE)}; "
-          f"{sum(r[16] == 'yes' for r in rows)} flagged for the checker; {bad} problem(s)")
+          f"{sum(r[18] == 'yes' for r in rows)} flagged for the checker; "
+          f"{sum(r[6] != 'statement' for r in rows)} centre directions from S5a; {bad} problem(s)")
     sys.exit(1 if bad else 0)
 
 

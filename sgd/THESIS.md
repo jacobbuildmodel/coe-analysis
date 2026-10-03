@@ -36,7 +36,7 @@ Revision after the checker review of 6f9b6c2:
   downloads slip.
 - **No title or opening.**
 
-Revision after the checker review of 3b8026f (4 October 2026, before any
+Revision after the checker review of 3b8026f (3 October 2026, before any
 statement was read):
 - **Check C became gate C,** with a threshold fixed here (section 6). Below
   it, T4 and T7 read "the record cannot say" and are not scored. It is not a
@@ -202,7 +202,7 @@ for T1's second check.
   if it spans at least two months.
 - **Gate C** runs on every month in which both S1 and S4 exist (section 6).
 
-**The MPS coding rule (fixed 4 October 2026, before any statement was read).**
+**The MPS coding rule (fixed 3 October 2026, before any statement was read).**
 Applied to each of the 62 statements linked from S5a (`raw/s5b_*.html`), one
 row per statement in `office/MPS_CODING.csv`, dated by the statement.
 
@@ -257,6 +257,16 @@ row per statement in `office/MPS_CODING.csv`, dated by the statement.
     unchanged and flagged `recentre_no_direction = yes`. Its direction is
     where the S$NEER stood against the old centre, which is an outcome and
     is not looked up.
+- **Checker's ruling, 3 October 2026 (after the coding, before the seal).**
+  Eight rows are affected: the six re-centred "at the prevailing level" with
+  no direction word, and the two AMBIGUOUS ("up to its prevailing level").
+  - **Their direction is taken from S5a's Level cell.** That cell is MAS's
+    own record of the decision, not exchange-rate data.
+  - `MPS_CODING.csv` keeps both codes: the statement-based code in
+    `centre_statement`, the source of each direction in `centre_source`,
+    and the `recentre_no_direction` flag.
+  - The Feb 2001 and Apr 2004 rows, coded from MAS's later descriptions,
+    are accepted and stay flagged.
 - **Ambiguity.** If the quoted words fit no category, or more than one, in
   any of the three, the code is AMBIGUOUS. The row is put to the checker
   before the seal, and no code is guessed.
@@ -676,7 +686,7 @@ Brier score is the mean over them. A test not scored drops out of both.
 2. **`office/MPS_CODING.csv`**, from the statements' decision paragraphs by
    the MPS coding rule (section 5), before the seal. Any AMBIGUOUS row is
    put to the checker.
-   - **Done 4 October 2026.** 62 rows, one per statement. Every quote is
+   - **Done 3 October 2026.** 62 rows, one per statement. Every quote is
      checked verbatim against its paragraph by `04_mps_coding.py`.
    - **Slope and width** agree with S5a, MAS's own decisions table, on all
      62 rows.
@@ -686,11 +696,9 @@ Brier score is the mean over them. A test not scored drops out of both.
      2010, 30 Mar 2020 and 14 Apr 2022. On two (14 Jul and 14 Oct 2022), "up
      to its prevailing level" is AMBIGUOUS. S5a gives a direction for all
      eight in MAS's own words: down, down, down, up, down, up, up, up.
-   - **Proposed resolution, not applied.** Take the direction from S5a's
-     Level cell. It is MAS's record of the decision, not a reading of the
-     S$NEER, so no outcome is looked up. Applied, it would change `p` on
-     those eight rows. Left as coded, T7 counts all eight re-centrings as
-     0, which leans T7 toward FAIL. The checker decides before the seal.
+   - **Ruled 3 October 2026: the direction comes from S5a's Level cell.**
+     It is applied in `04_mps_coding.py`, with the statement-based code and
+     the source kept per row (section 5).
    - **Two more rows are flagged as coded from MAS's later descriptions:**
      22 Feb 2001 (own paragraph excluded) and 12 Apr 2004 (own decision
      paragraph not caught by the phrase list).
@@ -702,5 +710,5 @@ Brier score is the mean over them. A test not scored drops out of both.
    seal manifest**, as for the pwm piece.
 6. **The answer date: December 2026.** The data is monthly and quick to
    run. January 2027 only if the downloads slip.
-7. **The seal date:** to follow, once items 2 (the checker's ruling on the
-   eight centre rows), 3 and 5 are done.
+7. **The seal date:** to follow, once items 3 and 5 are done (item 2's
+   ruling is in).

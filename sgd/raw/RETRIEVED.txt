@@ -1143,3 +1143,17 @@ w4_pboc_20050721_reform.html
   title   Spokesman of the People''s Bank of China on the Reform of the RMB Exchange Rate Regime
 
 -------------------------------------------------------------------------------
+
+RECEIVED, addition (3 October 2026, 08:37 UTC; 16:37 SGT)
+-------------------------------------------------------------------------------
+s2e_bis_xru_usd_monthly_eop.csv
+  for     THESIS section 5, sensitivity 3 (end-of-period US dollar rates);
+          the original download took the monthly-average collection only.
+  source  https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/M.SG+JP+MY+KR+CN+TH+ID+XM+AU+HK..E?format=csv
+  method  curl, byte-for-byte as served; no value opened. 00_coverage.py output:
+  bytes   913244
+  md5     3c3d432a19aa8f842b92bd83c431b640
+  rows 8031, columns 13; long layout, period column TIME_PERIOD
+  same for every series  FREQ=M | COLLECTION=E | AVAILABILITY=A
+  series 10: AUD, CNY, HKD, JPY, KRW, MYR, SGD, THB from 1957-01; IDR from
+          1967-01; EUR from 1974-06; all to 2026-08, 0 empty.
