@@ -237,3 +237,66 @@ Every row is a sealed sensitivity or descriptive check (THESIS sections 5, 6 and
 | world | long | JP_rank | 11.0000 | not scored |
 | world | scored | SG_rank_scored_window | 1.0000 | not scored |
 | world | scored | present_scored_window | 11.0000 | not scored |
+
+## Post-results numbers for the article (NOT SCORED)
+
+Written by `11b_postresults.py` from `out/` (THESIS_ADDENDUM item 5): per-cent forms (100 x (exp(x) - 1)) of log changes, shares in per cent, rounded forms of tested numbers, and the specimen. None changes a sealed number, outcome or the verdict.
+
+| Key | Printed | Meaning |
+|---|---|---|
+| spec_sgd_per_100jpy_2021_01 | 1.28 | MAS monthly average, S$ per 100 yen, January 2021 |
+| spec_yen_per_budget_2021_01 | 78,000 | yen bought by a S$1,000 budget, January 2021, to the nearest 1,000 |
+| spec_sgd_per_100jpy_2025_12 | 0.83 | MAS monthly average, S$ per 100 yen, December 2025 |
+| spec_yen_per_budget_2025_12 | 121,000 | yen bought by a S$1,000 budget, December 2025, to the nearest 1,000 |
+| T2_b_pct | 49.5 | the Singapore dollar against the yen, Jan 2021 to Dec 2025, per cent, up |
+| T2_b_pct0 | 49 | the Singapore dollar against the yen, Jan 2021 to Dec 2025, per cent, up, whole |
+| T2_s_pct | 13.1 | the Singapore dollar's broad index (against everyone), per cent, up |
+| T2_s_pct0 | 13 | the Singapore dollar's broad index (against everyone), per cent, up, whole |
+| T2_nx_pct | 25.5 | the yen's broad index (against everyone), per cent, down |
+| T2_nx_pct0 | 25 | the yen's broad index (against everyone), per cent, down, whole |
+| T2_S_share | 30.7 | share: the Singapore dollar rising against everyone, per cent of the rise |
+| T2_S_share0 | 31 | share: the Singapore dollar rising against everyone, per cent of the rise, whole |
+| T2_P_share | 73.2 | share: the yen falling against everyone, per cent of the rise |
+| T2_P_share0 | 73 | share: the yen falling against everyone, per cent of the rise, whole |
+| T2_R_share | 3.9 | share: neither broad index (the residual), per cent of the rise, negative (printed without sign) |
+| T2_R_share0 | 4 | share: neither broad index (the residual), per cent of the rise, negative (printed without sign), whole |
+| T3_b_pct | 5.0 | the Singapore dollar against the ringgit, Jan 2021 to Dec 2025, per cent, up |
+| T3_b_pct0 | 5 | the Singapore dollar against the ringgit, Jan 2021 to Dec 2025, per cent, up, whole |
+| T3_s_pct | 13.1 | the Singapore dollar's broad index (against everyone), per cent, up |
+| T3_s_pct0 | 13 | the Singapore dollar's broad index (against everyone), per cent, up, whole |
+| T3_nx_pct | 8.6 | the ringgit's broad index (against everyone), per cent, up |
+| T3_nx_pct0 | 9 | the ringgit's broad index (against everyone), per cent, up, whole |
+| T3_S_share | 253.9 | share: the Singapore dollar rising against everyone, per cent of the rise |
+| T3_S_share0 | 254 | share: the Singapore dollar rising against everyone, per cent of the rise, whole |
+| T3_P_share | 170.6 | share: the ringgit falling against everyone, per cent of the rise, negative (printed without sign) |
+| T3_P_share0 | 171 | share: the ringgit falling against everyone, per cent of the rise, negative (printed without sign), whole |
+| T3_R_share | 16.7 | share: neither broad index (the residual), per cent of the rise |
+| T3_R_share0 | 17 | share: neither broad index (the residual), per cent of the rise, whole |
+| T1_scored_MYR_R_share | 16.7 | T1: the ringgit's residual, scored window, per cent of the rise |
+| T1_scored_MYR_R_share0 | 17 | T1: the ringgit's residual, scored window, per cent of the rise, whole |
+| long_JPY_b_pct | 87.1 | the Singapore dollar against the yen, Aug 2005 on (sensitivity), per cent, up |
+| long_JPY_b_pct0 | 87 | the Singapore dollar against the yen, Aug 2005 on (sensitivity), per cent, up, whole |
+| long_JPY_S_share | 57.2 | long run: the Singapore dollar rising against everyone, per cent of the rise |
+| long_JPY_S_share0 | 57 | long run: the Singapore dollar rising against everyone, per cent of the rise, whole |
+| long_JPY_P_share | 50.6 | long run: the yen falling against everyone, per cent of the rise |
+| long_JPY_P_share0 | 51 | long run: the yen falling against everyone, per cent of the rise, whole |
+| gateC_r_2dp | 0.92 | gate C correlation, two decimals |
+| T7_rho_p_2dp | 0.47 | T7: rank correlation with MAS's decisions, two decimals |
+| T7_rho_g_2dp | 0.11 | T7: rank correlation with growth, two decimals |
+| T7_D_2dp | 0.35 | T7: D, two decimals |
+| T7_D_lo_2dp | 0.11 | T7: D, 90% interval, low, two decimals |
+| T7_D_hi_2dp | 0.59 | T7: D, 90% interval, high, two decimals |
+| HK_US_sd_ratio_2dp | 0.78 | world view: Hong Kong dollar's swing over the US dollar's, two decimals |
+| HK_US_corr_2dp | 0.92 | world view: Hong Kong and US broad indices, correlation, two decimals |
+| T7_cpi_rho_g_2dp | 0.51 | T7 with CPI inflation in place of growth: rank correlation with inflation (not scored) |
+| T7_cpi_D_2dp | -0.04 | T7 with CPI inflation in place of growth: D (not scored) |
+| T4_SG_sd_pct | 0.47 | T4: typical monthly move of SG's broad index, per cent |
+| T4_HK_sd_pct | 1.00 | T4: typical monthly move of HK's broad index, per cent |
+| T4_US_sd_pct | 1.28 | T4: typical monthly move of US's broad index, per cent |
+| T4_JP_sd_pct | 2.16 | T4: typical monthly move of JP's broad index, per cent |
+| expected_held_2dp | 2.68 | expected held, sum of Jacob's confidences |
+| conf_T1_pct | 55 | Jacob's confidence at seal, T1, per cent |
+| conf_T2_pct | 90 | Jacob's confidence at seal, T2, per cent |
+| conf_T3_pct | 8 | Jacob's confidence at seal, T3, per cent |
+| conf_T4_pct | 80 | Jacob's confidence at seal, T4, per cent |
+| conf_T7_pct | 35 | Jacob's confidence at seal, T7, per cent |
