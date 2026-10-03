@@ -16,7 +16,9 @@
                                                    run_all.sh and tests/.
 
 CHECKSUMS.md5 has two sections, paths relative to ROOT. INPUTS: the scripts,
-THESIS.md, office/MPS_CODING.csv and every raw file the loader reads.
+THESIS.md, office/MPS_CODING.csv, THESIS_ADDENDUM.md and the article when
+present, and every raw file the loader reads. --check also checks every
+number in the article (THESIS_ADDENDUM item 5).
 OUTPUTS: out/, figs/, RESULTS.md, number_manifest.csv.
 """
 import csv
@@ -24,13 +26,26 @@ import glob
 import hashlib
 import io
 import os
+import re
 import sys
 
 import sgdlib as L
 
 SCRIPTS = ["sgdlib.py", "00_coverage.py", "03_mps_candidates.py", "04_mps_coding.py", "10_load.py",
-           "11_tests.py", "12_figures.py", "13_results.py", "14_manifest.py", "15_reproduce.py",
+           "11_tests.py", "11b_postresults.py", "12_figures.py", "13_results.py", "14_manifest.py", "15_reproduce.py",
            "run_all.sh", "requirements.txt", "tests/make_fixtures.py", "tests/test_pipeline.py"]
+
+
+ARTICLE = "2026-11-14.md"
+SEAL_DATE = "3 October 2026"
+# Constants the article may print that are sealed design or plain facts, not
+# results: THESIS lines (0.90, 120, 0.20, 20 and 50 per cent), the BIS basket of 64
+# economies, MAS's 62 statements, the Hong Kong band (7.75, 7.85), the eleven
+# currencies, index bases and per-100 quotes (100), the S$1,000 trip budget,
+# and the Brier score of an always-50-per-cent forecaster (0.25).
+ALLOW = {0.90, 90, 120, 0.20, 20, 50, 64, 62, 61, 7.75, 7.85, 11, 100, 1000, 0.25}
+ALLOW_INT_MAX = 10
+YEAR_LO, YEAR_HI = 1900, 2030
 
 
 def md5(path):
@@ -43,6 +58,9 @@ def md5(path):
 
 def inputs(P):
     paths = [os.path.join(L.SGD, s) for s in SCRIPTS] + [P["thesis"], P["coding"]]
+    for extra in (os.path.join(P["root"], "THESIS_ADDENDUM.md"), os.path.join(P["root"], ARTICLE)):
+        if os.path.exists(extra):
+            paths.append(extra)
     paths += [os.path.join(P["raw"], f) for f in L.RAW_FILES if os.path.exists(os.path.join(P["raw"], f))]
     ret = os.path.join(P["raw"], "RETRIEVED.txt")
     if os.path.exists(ret):
@@ -68,7 +86,58 @@ def build_manifest(P):
         v = L.printed(r["key"], r["value"])
         if v is not None:
             w.writerow([r["key"], v, "11_tests.py", "out/tests.csv", r["key"]])
+    post = os.path.join(P["out"], "postresults.csv")
+    if os.path.exists(post):
+        for r in L.read_csv(post):
+            w.writerow([r["key"], r["printed"], "11b_postresults.py", "out/postresults.csv", r["key"]])
     return buf.getvalue()
+
+
+def article_numbers(path):
+    """Front matter, and every number token in the article body, with link
+    targets, URLs, written dates, year spans and labels removed."""
+    text = open(path, encoding="utf-8").read()
+    front, body = text.split("---", 2)[1:]
+    body = re.sub(r"\]\([^)]*\)", "]", body)
+    body = re.sub(r"https?://\S+", "", body)
+    body = re.sub(r"\b\d{1,2} (?:January|February|March|April|May|June|July|August|"
+                  r"September|October|November|December) \d{4}\b", "", body)
+    body = re.sub(r"\b(?:19|20)\d\d-(?:\d\d)\b", "", body)
+    body = re.sub(r"[A-Za-z_]+\d[\w-]*", "", body)
+    return front, re.findall(r"(?<![\w.,])(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?", body)
+
+
+def check_article(P, values):
+    """Every number in the article is a manifest value as printed, or a
+    listed constant, a small integer or a year; the front matter's counts
+    match the scorecard."""
+    path = os.path.join(P["root"], ARTICLE)
+    if not os.path.exists(path):
+        return 0
+    bad = 0
+    front, nums = article_numbers(path)
+    for tok in nums:
+        if tok in values or "-" + tok in values:
+            continue
+        v = float(tok.replace(",", ""))
+        if v in ALLOW or (v == int(v) and (v <= ALLOW_INT_MAX or YEAR_LO <= v <= YEAR_HI)):
+            continue
+        print(f"  ARTICLE number not in manifest or allowlist: {tok}")
+        bad += 1
+    T = {r["key"]: r["value"] for r in L.read_csv(os.path.join(P["out"], "tests.csv"))}
+    outs = [T[f"{t}_outcome"] for t in L.SCORED if T[f"{t}_outcome"] != "NOT SCORED"]
+    want = {"testsPassed": outs.count("SURVIVE"), "testsFailed": outs.count("FAIL"),
+            "testsOther": len(outs) - outs.count("SURVIVE") - outs.count("FAIL"), "testsTotal": len(outs)}
+    for k, v in want.items():
+        m = re.search(rf"^{k}: (\d+)$", front, re.M)
+        if not m or int(m.group(1)) != v:
+            print(f"  FRONT MATTER {k} expected {v}")
+            bad += 1
+    if f'thesisSealed: "{SEAL_DATE}"' not in front:
+        print("  FRONT MATTER thesisSealed is not the seal date")
+        bad += 1
+    print(f"  article: {len(nums)} numbers checked, front matter checked")
+    return bad
 
 
 def build_checksums(P):
@@ -93,6 +162,7 @@ def check(P):
         if r["value"] not in results:
             print(f"  NOT IN RESULTS.md: {r['number_id']} = {r['value']}")
             bad += 1
+    bad += check_article(P, {r["value"] for r in rows})
     listed = {}
     for line in open(P["checksums"], encoding="utf-8"):
         line = line.rstrip("\n")

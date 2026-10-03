@@ -106,3 +106,37 @@ score changed. The title rules of item 2 are unchanged.
   390 px and 1280 px in light and dark mode and looked at.
 - **md5:** 5f5f848f70bbf4b240f7523b36ca9f44 -> c5f61ff717eb1023160d21820ca02f58
 - **Tests:** the synthetic suite passes.
+
+## 5. The article's numbers: 11b_postresults.py and the article check (3 October 2026, after the data was opened)
+
+Machinery only, not scored. No computation of a scored number, rule,
+threshold, window, coding row or score changed.
+
+- **New script, `11b_postresults.py`.** It writes `out/postresults.csv`, the
+  numbers the article prints, each derived from `out/` with its meaning:
+  - the specimen: MAS's monthly average rate, S$ per 100 yen, for January
+    2021 and December 2025, and the yen that a S$1,000 budget bought at each
+    (to the nearest 1,000);
+  - every move in per cent, 100 x (exp(log change) - 1), never typed by hand;
+  - the shares in per cent;
+  - rounded forms of tested numbers, each beside its unrounded source key;
+  - the CPI sensitivity of T7 to two decimals;
+  - Jacob's confidences in per cent.
+  - md5: (new) 436f2967fba5a64fd8cfb44cec169dee
+- **`14_manifest.py`.** It adds those rows to `number_manifest.csv` with
+  their script. It lists `11b_postresults.py`, `THESIS_ADDENDUM.md` and the
+  article among the inputs. `--check` now also checks the article. Every
+  number in it must be a manifest value as printed, or a listed sealed
+  constant (THESIS lines, the 64-economy basket, the Hong Kong band, the
+  trip budget, the 0.25 coin-flip Brier score), a small integer or a year.
+  The front matter's test counts must match the scorecard, and its seal
+  date must match the seal.
+  - md5: cbf89d662a0d9f95dedaa87120f192b6 -> 45408a7f0fe63f0b152bec162a853d6f
+- **`13_results.py`.** It prints the post-results rows in a table marked NOT
+  SCORED, so every manifest value appears in `RESULTS.md`.
+  - md5: 66ebecd0c414b713b8ab12008fdaea63 -> 0554f69be0c8ccec930d07a13d315ef9
+- **`run_all.sh`.** It runs `11b_postresults.py` after step 11.
+  - md5: 17005d2a75d4818c1c0be59509e82970 -> abe15c405be256ed53386bfbc27c6105
+- **`tests/test_pipeline.py`.** The end-to-end fixture run includes step 11b.
+  - md5: 8496283a9a9ec871e0e247ea050a5311 -> db3c95c08109f0f68176d082a24055aa
+- **Tests:** the synthetic suite passes.

@@ -89,7 +89,7 @@ class Guard(unittest.TestCase):
 
 class EndToEnd(Tmp):
     def full(self, root):
-        for s in ("10_load.py", "11_tests.py", "12_figures.py", "13_results.py"):
+        for s in ("10_load.py", "11_tests.py", "11b_postresults.py", "12_figures.py", "13_results.py"):
             r = step(s, root)
             self.assertEqual(r.returncode, 0, f"{s}: {r.stderr[-800:]}")
         self.assertEqual(step("14_manifest.py", root).returncode, 0)

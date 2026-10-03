@@ -201,6 +201,16 @@ def main():
             pass
         md.append(f"| {r['test']} | {r['variant']} | {r['key']} | {v} | not scored |")
     md.append("")
+    post = os.path.join(out, "postresults.csv")
+    if os.path.exists(post):
+        md += ["## Post-results numbers for the article (NOT SCORED)", "",
+               "Written by `11b_postresults.py` from `out/` (THESIS_ADDENDUM item 5): per-cent forms "
+               "(100 x (exp(x) - 1)) of log changes, shares in per cent, rounded forms of tested numbers, "
+               "and the specimen. None changes a sealed number, outcome or the verdict.", "",
+               "| Key | Printed | Meaning |", "|---|---|---|"]
+        for r in L.read_csv(post):
+            md.append(f"| {r['key']} | {r['printed']} | {r['meaning']} |")
+        md.append("")
     L.write_text(P["results"], "\n".join(md))
     print(f"  {os.path.relpath(P['results'], P['root'])}: {len(md)} lines")
 

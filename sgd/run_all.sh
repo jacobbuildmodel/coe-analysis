@@ -38,6 +38,9 @@ python3 sgd/10_load.py
 echo; echo "== 11 T1-T4, T7 and gate C as sealed, sensitivities, verdict, scorecard"
 python3 sgd/11_tests.py
 
+echo; echo "== 11b the article's numbers, from out/ (post-results, not scored)"
+python3 sgd/11b_postresults.py
+
 echo; echo "== 12 charts"
 python3 sgd/12_figures.py
 
