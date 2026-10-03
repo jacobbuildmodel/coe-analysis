@@ -60,3 +60,25 @@ value was read.
 - **Computation:** none changed.
 - **md5:** 63dc2b90f5db6b62a3ce9c358782036a -> 5f5f848f70bbf4b240f7523b36ca9f44
 - **Tests:** the synthetic suite passes (20 tests).
+
+## 3. Opening the data (3 October 2026): no fix was needed
+
+- **The key.** `sgd/SEALED` was created in 59789e4, a commit of its own,
+  after items 1 and 2.
+- **The run.** `sgd/run_all.sh` read every real file with the scripts as
+  sealed and as amended by items 1 and 2. No change was needed to read the
+  real data. No rule, threshold, window, coding row or script changed after
+  the key.
+- **The only stop was by design.** The first real run stopped at
+  `14_manifest.py --check`, because `CHECKSUMS.md5` and
+  `number_manifest.csv` did not exist yet. They are written by hand, last
+  (`python3 sgd/14_manifest.py`), and the second run verified them.
+- **Results** are in 1e14611 (`RESULTS.md`, `out/`, `figs/`, the number
+  manifest and the checksums).
+- **One presentation note, not changed after the key.** The sensitivity
+  table in `RESULTS.md` prints integer counts (intervals, ranks) with four
+  decimals, for example 61.0000. The values are exact.
+- **One reading note on the "real indices" sensitivity.** It sets the BIS
+  real broad indices against the nominal cross rate, since BIS publishes no
+  real bilateral rate. Its residual therefore absorbs the inflation
+  differentials. It is context only, as THESIS section 7 says.
