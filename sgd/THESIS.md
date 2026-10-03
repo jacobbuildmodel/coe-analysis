@@ -36,6 +36,14 @@ Revision after the checker review of 6f9b6c2:
   downloads slip.
 - **No title or opening.**
 
+Revision after the checker review of 3b8026f (4 October 2026, before any
+statement was read):
+- **Check C became gate C,** with a threshold fixed here (section 6). Below
+  it, T4 and T7 read "the record cannot say" and are not scored. It is not a
+  scored test and carries no confidence. Scored tests stay five.
+- **The coding rule for MAS's statements** is fixed in section 5 before any
+  statement is read. `office/MPS_CODING.csv` follows it.
+
 ## 1. The question
 
 **The belief on trial (approved direction).** The Singapore dollar rises
@@ -118,10 +126,10 @@ They add to 1. The question's "how much ... and how much" is `S_X` and
 
 | Id | Series | Used in |
 |---|---|---|
-| S1 | BIS WS_EER, monthly, nominal, broad basket: SG, JP, MY, KR, CN, TH, ID, US, XM (euro area), AU, HK (key M.N.B.<AREA>) | T1, T2, T3, T4, T7; sensitivity B; check C |
+| S1 | BIS WS_EER, monthly, nominal, broad basket: SG, JP, MY, KR, CN, TH, ID, US, XM (euro area), AU, HK (key M.N.B.<AREA>) | T1, T2, T3, T4, T7; sensitivity B; gate C |
 | S2 | BIS WS_XRU, monthly average, units per US dollar: SGD, JPY, MYR, KRW, CNY, THB, IDR, EUR, AUD, HKD (key M.<AREA>.<CUR>.A) | T1, T2, T3; sensitivity B |
 | S3 | MAS exchange rates, monthly average (SingStat M700051) | T1 (cross-check); reader numbers |
-| S4 | MAS S$NEER, weekly | check C only |
+| S4 | MAS S$NEER, weekly | gate C only |
 | S5 | MAS Past Monetary Policy Decisions (since 2001) and each Monetary Policy Statement | T7 |
 | S6 | SingStat real GDP, year-on-year growth, quarterly | T7 |
 | S7 | SingStat CPI, monthly | T7 sensitivity only |
@@ -183,7 +191,7 @@ for T1's second check.
    used for the scored run.
 4. **Sensitivity B, breadth** (section 7), on both windows.
 
-**Question 2 (T7, and check C beside it).**
+**Question 2 (T7, gated by gate C).**
 - **T7 runs from the first decision in S5a to the last complete interval.**
   S5a lists decisions "since 2001". The unit is the interval between two
   consecutive decisions, on or off cycle.
@@ -192,7 +200,76 @@ for T1's second check.
   decision i+1's.
 - **The last interval** ends at the last full month in S1, and is kept only
   if it spans at least two months.
-- **Check C** runs on every month in which both S1 and S4 exist.
+- **Gate C** runs on every month in which both S1 and S4 exist (section 6).
+
+**The MPS coding rule (fixed 4 October 2026, before any statement was read).**
+Applied to each of the 62 statements linked from S5a (`raw/s5b_*.html`), one
+row per statement in `office/MPS_CODING.csv`, dated by the statement.
+
+- **What is read: the decision paragraph only.**
+  - This is the paragraph in which MAS states what it will do, or has
+    decided to do, with the S$NEER policy band.
+  - Candidates are found mechanically before any reading. A candidate
+    contains a decision phrase ("MAS will", "MAS has decided", "MAS
+    decided", "MAS has", "will maintain", "will re-centre", "will set",
+    "will continue") and a band word ("slope", "policy band", "appreciation",
+    "re-centre", "centre", "width").
+  - Paragraphs that describe how the S$NEER or the economy moved are
+    outcomes and are excluded mechanically. These are paragraphs containing
+    "S$NEER has", "S$NEER was", "has appreciated", "has depreciated",
+    "appreciated by", "depreciated by", "strengthened", "weakened",
+    "traded", "GDP" or "year-on-year".
+  - If no paragraph or more than one qualifies, the candidates are read in
+    order and reading stops at the first that states a decision.
+  - Anything seen outside a decision paragraph is disclosed in
+    SOURCES_REPORT.
+- **Slope.** Five categories. "Zero" and "negative" are levels and take
+  precedence; the other three are changes from the slope in force before
+  the decision.
+  - **zero.** "zero percent appreciation", "zero per cent appreciation",
+    "zero appreciation", "zero rate of appreciation", "slope of zero" or
+    "0% appreciation", whether the zero slope is newly set or kept.
+  - **negative.** "depreciation" of the policy band, "depreciating" slope,
+    or "negative" slope.
+  - **steeper.** "increase" or "raise" the slope or the rate of
+    appreciation (with or without "slightly"), "steepen", "steeper". Also a
+    move from a zero or negative slope to an appreciating one, for example
+    "modest and gradual appreciation" after a zero slope.
+  - **flatter.** "reduce" or "lower" the slope or the rate of appreciation
+    (with or without "slightly") to a rate that is still positive,
+    "flatten", "flatter".
+  - **same.** A positive slope kept. The triggers are "maintain" or
+    "continue with" the (prevailing) rate of appreciation, or the modest
+    and gradual appreciation; the slope "unchanged" or "kept"; "no change"
+    to the slope; or no slope wording at all while the policy stance is
+    stated unchanged.
+- **Width.**
+  - **wider.** "widen", "widened", "wider".
+  - **narrower.** "narrow", "narrowed", "narrower".
+  - **same.** No width wording, or the width "unchanged" or "maintained".
+- **Centre.**
+  - **up.** "re-centre" (or "re-center") with "upward", "upwards",
+    "higher" or "above"; "upward shift" of the band.
+  - **down.** "re-centre" with "downward", "downwards", "lower" or "below";
+    "downward shift" of the band.
+  - **unchanged.** No re-centring wording, or the level "unchanged".
+  - **Re-centred "at the prevailing level" with no direction word** is coded
+    unchanged and flagged `recentre_no_direction = yes`. Its direction is
+    where the S$NEER stood against the old centre, which is an outcome and
+    is not looked up.
+- **Ambiguity.** If the quoted words fit no category, or more than one, in
+  any of the three, the code is AMBIGUOUS. The row is put to the checker
+  before the seal, and no code is guessed.
+- **Audit trail.** Every row records:
+  - the quoted words that justify each code;
+  - S5a's own Slope, Width and Level cells for that date, as a cross-check.
+- **Mapping to T7's policy score.**
+  - **Slope in force after decision i:** 0 after zero, -1 after negative,
+    1 after steeper or flatter. After "same", the previous value is carried
+    (a positive slope kept is 1).
+  - **Re-centring:** +1 up, -1 down, 0 unchanged.
+  - `p_i` is the slope in force plus the re-centring, from -2 to 2. Width
+    is recorded but is not part of `p_i`.
 
 **Growth vintage (T7).** The current published GDP series is used, not the
 advance estimate MAS saw on the day. The question is what the rate's path
@@ -222,7 +299,7 @@ a finding, and is stated here.
 ## 6. Pre-registered tests
 
 Five tests are scored: T1, T2, T3, T4 and T7. The numbers T5 and T6 are not
-used; their former content is sensitivity B and check C (section 7).
+used; their former content is sensitivity B (section 7) and gate C (above T4).
 
 A failed prediction is a finding to publish, not a reason to change the
 test. Thresholds marked "judgement" are the researcher's, with reasons. They
@@ -337,6 +414,42 @@ the rate Singapore itself publishes.
   - Then `P_MYR` is small or negative, and T3 fails. Or `b_MYR <= 0`, and
     T3 is not scored.
 
+### Gate C. The BIS index stands in for MAS's own (a gate, not a scored test)
+
+T4 and T7 read the BIS broad index for Singapore, because MAS's basket is
+undisclosed. This gate checks that the BIS index moves with MAS's own
+S$NEER, the index the policy band is set on. It carries no prediction and
+no confidence, and is not counted in the scorecard.
+
+- **Computation.**
+  - S4's weekly readings are assigned to calendar months by their dates. A
+    month counts only if it has at least three readings, and its value is
+    the mean of its readings.
+  - The statistic is the Pearson correlation between the monthly change in
+    the log of that monthly mean and the monthly change in the log of S1
+    M.N.B.SG. It runs over every pair of consecutive counted months in
+    which both exist: 1999-01 to the last full month, about 330 changes
+    (SOURCES_REPORT section 2A).
+- **Pass if:** the correlation >= 0.90, on at least 120 monthly changes.
+- **Otherwise the gate fails.** T4 and T7 read "the record cannot say".
+  Neither is scored, and both drop out of the count and the Brier score.
+  Their numbers are still reported, marked "BIS index; gate C failed".
+- **Why 0.90 (judgement).**
+  - Both indices are geometric trade-weighted averages of the same
+    bilateral rates against largely the same partners. They differ only
+    in weights (MAS's are undisclosed) and in sampling (weekly readings
+    against BIS's averages of daily rates).
+  - A correlation of 0.90 means the two share about 81 per cent of the
+    variance of their monthly moves. Below that, a fifth or more of the
+    BIS index's month-to-month movement is not in MAS's index.
+  - That is too much for T4, which ranks monthly volatility, or T7, which
+    lines up the index's path with MAS's band, to describe the index MAS
+    actually steers.
+  - The sampling difference alone pulls the correlation below 1, so a
+    higher line would fail on timing rather than on substance.
+- **Why 120 changes.** Ten years of months is the least that spans more
+  than one policy cycle. The overlap received is about 330.
+
 ### T4. The slow path: the Singapore dollar is the steadiest in the set
 
 The rival says MAS moves the Singapore dollar slowly and deliberately. The
@@ -364,6 +477,8 @@ broad index swings with the US dollar's, and a free float (Japan).
 
   This applies only if at least 9 of the 11 are present. Below that, T4 is
   not scored.
+- **Gated by gate C.** If gate C fails, T4 is not scored and reads "the
+  record cannot say".
 - **Why rank 2 (judgement).** The renminbi was also managed against a
   reference basket from July 2005. It could be as steady on its own
   policy, so second place is allowed. Below the median is a plain
@@ -384,22 +499,16 @@ broad index swings with the US dollar's, and a free float (Japan).
 - **The path in each interval, `y_i`.** The annualised change in the log of
   S1 M.N.B.SG from the month before decision i to the month before
   decision i+1: `y_i = 12 x change / months`.
-- **The policy score, `p_i`.** The coding rule is fixed now, and is applied
-  to S5a's Slope and Level columns before the seal, in
-  `office/MPS_CODING.csv`. The statement's decision paragraph (S5b) is read
-  wherever S5a is blank or ambiguous.
-  - **Slope in force after decision i:** 1 if the band appreciates at any
-    rate. That covers "modest and gradual appreciation", "increase
-    slightly", "reduce slightly" and "maintain the rate of appreciation"
-    when the prevailing rate is positive. It is 0 for "zero per cent
-    appreciation" or a zero slope, and -1 for any depreciating slope. A
-    decision that leaves the slope unchanged carries the previous value.
-  - **Re-centring at decision i:** +1 for upward, -1 for downward, 0 for
-    none. "At the prevailing level" with no direction word also counts 0.
-    "Downward to the prevailing level" counts -1.
-  - **Width** is not coded: it is about how much movement MAS tolerates,
-    not which way the rate goes.
-  - `p_i` = slope in force + re-centring, from -2 to 2.
+- **The policy score, `p_i`.** It comes from the decision paragraph of each
+  statement (S5b), coded by the MPS coding rule in section 5, in
+  `office/MPS_CODING.csv`, before the seal.
+  - `p_i` = slope in force + re-centring, from -2 to 2, by that rule's
+    mapping.
+  - Width is recorded, not scored: it is about how much movement MAS
+    tolerates, not which way the rate goes.
+  - **An AMBIGUOUS row left unresolved at the seal** keeps the previous
+    slope in force and counts its re-centring as 0. It is listed in
+    RESULTS.
 - **Growth, `g_i`.** The mean year-on-year growth of real GDP (S6) over
   the quarters whose last month falls inside interval i. If none does, the
   quarter containing the month of decision i is used.
@@ -410,8 +519,8 @@ broad index swings with the US dollar's, and a free float (Japan).
 
   A 90 per cent interval for D, by bootstrap over intervals (10,000 draws,
   seed 20260929), is reported and not used in the rule.
-- **Printed beside it, gating nothing:** check C, the BIS index against
-  MAS's own S$NEER (section 7).
+- **Gated by gate C** (above). If gate C fails, T7 is not scored and Part B
+  reads "the record cannot say".
 - **Prediction.** The broad path lines up with MAS's decisions clearly
   better than with growth.
 - **Survive if:** D >= 0.20 and rho_p > 0.
@@ -454,7 +563,7 @@ As for the pwm piece:
 
 No script is written at Checkpoint 0, apart from the coverage lister.
 
-## 7. Sensitivity B, check C, and other descriptive output (not scored)
+## 7. Sensitivity B and other descriptive output (not scored)
 
 **Sensitivity B. Breadth: month to month, is a move against one currency
 mostly that currency?** (Formerly T5; no prediction, no confidence.)
@@ -472,17 +581,9 @@ mostly that currency?** (Formerly T5; no prediction, no confidence.)
   the partner's. That is why question 1 rests on T2 and T3, which read the
   whole window, and this only shows breadth.
 
-**Check C. Does the BIS index move with MAS's own S$NEER?** (Formerly T6;
-no prediction, no confidence; gates nothing.)
-- **Computation.** Monthly means of MAS's weekly S$NEER (S4), counting only
-  months with at least three weekly readings. Then the Pearson correlation
-  between the monthly change in its log and the monthly change in the log
-  of S1 M.N.B.SG, over every month both exist.
-- **Printed beside T7.** The correlation and the number of monthly changes
-  it rests on.
-- **If fewer than 24 changes overlap,** it is printed with the words "too
-  short to read". S4 as received runs from January 1999, so about 330
-  monthly changes overlap S1 (SOURCES_REPORT section 2A).
+**Gate C** (formerly T6, then check C) is now a gate in section 6. Its
+correlation and the number of changes it rests on are printed beside T4 and
+T7.
 
 **World view (with T4).**
 - The Hong Kong dollar's broad index against the US dollar's: the monthly
@@ -520,6 +621,8 @@ change its wording.
 
 **Part B, the broad path (question 2).** Exactly one of these:
 
+- **"the record cannot say whether the broad path followed MAS or
+  growth"**: gate C fails. The BIS index does not stand in for MAS's own.
 - **"the broad path followed MAS's decisions more closely than growth"**: T7
   survives. The weak-evidence sentence of T7 is printed beside it.
 - **"the broad path followed growth at least as closely as MAS's
@@ -527,14 +630,15 @@ change its wording.
 - **"the broad path followed MAS's decisions a little more closely than
   growth, by less than the line"**: T7 is INCONCLUSIVE.
 
-Check C's correlation and overlap are printed beside Part B.
+Gate C's correlation and overlap are printed beside Part B.
 
 T4 is scored and reported with the verdict, but does not change its
-wording.
+wording. If gate C fails, T4 reads "the record cannot say whether the
+Singapore dollar was the steadiest".
 
-**The scorecard.** Five tests: T1, T2, T3, T4 and T7. Held against expected
-is counted over the tests scored, and the Brier score is the mean over
-them. A test not scored drops out of both.
+**The scorecard.** Five tests: T1, T2, T3, T4 and T7. Gate C is not
+counted. Held against expected is counted over the tests scored, and the
+Brier score is the mean over them. A test not scored drops out of both.
 
 ## 9. What would prove the framing wrong, and what it leaves out
 
@@ -562,7 +666,9 @@ them. A test not scored drops out of both.
    - Done 3 October 2026: retrieved by the researcher after Jacob opened
      network access; every series the scored tests use is present and
      complete (SOURCES_REPORT section 2A).
-2. **`office/MPS_CODING.csv`**, from S5a by the rule in T7, before the seal.
+2. **`office/MPS_CODING.csv`**, from the statements' decision paragraphs by
+   the MPS coding rule (section 5), before the seal. Any AMBIGUOUS row is
+   put to the checker.
 3. **Jacob's confidences** for T1, T2, T3, T4 and T7.
 4. **The windows and the sensitivities** (section 5): accepted or changed.
 5. **The analysis scripts, the synthetic suite, the SEALED guard and the

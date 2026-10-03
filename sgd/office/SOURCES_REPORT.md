@@ -201,6 +201,11 @@ T7. Every series they use is present and complete, under the planned keys.
   it might not run, no longer holds. Whether to restore it as a scored
   design test is the checker's and Jacob's call; THESIS keeps it as check
   C until they decide.
+  - **Decided 4 October 2026 (checker review of 3b8026f):** it is gate C,
+    with the threshold 0.90 on the correlation of monthly log changes, on
+    at least 120 changes. It is not a scored test and carries no
+    confidence. Below the threshold, T4 and T7 read "the record cannot
+    say" (THESIS section 6).
 - **TableBuilder truncates at 5,000 observations.** Only series the THESIS
   does not use were cut. The loader will assert that every series it reads
   runs to the expected last period.
@@ -287,9 +292,9 @@ turned off.
 - **Coverage (search index, 29 September).** The page shows "current and previous years" (index summary).
   If that is literal, about 2024 to 2026 is available, roughly 30 monthly
   changes. The count is UNVERIFIED.
-- **Use.** Check C only (formerly T6): does the BIS broad Singapore index
-  move with MAS's own? It is printed beside T7 and gates nothing; under 24
-  monthly changes it is printed as "too short to read".
+- **Use.** Gate C only (formerly T6, then check C): does the BIS broad
+  Singapore index move with MAS's own? Since 4 October 2026 it gates T4 and
+  T7 (THESIS section 6).
 
 ### S5 -- MAS monetary policy decisions and statements
 
@@ -388,8 +393,8 @@ statement). That date fixes the start of the long window (THESIS section 5).
   (ringgit), T4 (slow path), T7 (policy or growth).
 - **Reported, not scored:**
   - sensitivity B (breadth, formerly T5);
-  - check C (BIS against MAS's own index, formerly T6), printed beside T7
-    and gating nothing.
+  - gate C (BIS against MAS's own index, formerly T6), which gates T4 and
+    T7 and is not scored (from 4 October 2026).
 - **Dropped:** position in the band; growth relative to partners; real-time
   growth; prevalence of the belief (section 2).
 
