@@ -29,3 +29,34 @@ value was read.
   `out/sensitivities.csv` as before.
 - **md5:** f35f7add0fe2a6877d9fdcf93af39daa -> 66ebecd0c414b713b8ab12008fdaea63
 - **Tests:** the synthetic suite passes (20 tests).
+
+## 2. 12_figures.py: titles, captions and muting for Checkpoint 1 (3 October 2026, before the data key)
+
+Presentation only, written before `sgd/SEALED` existed and before any real
+value was read.
+
+- **Titles state the finding,** chosen by fixed rules from the sealed
+  outcomes in `out/tests.csv`:
+  - `title1`: one clause each for the yen and the ringgit (the partner's own
+    fall did most of the work; the Singapore dollar's own rise did; neither
+    did; the Singapore dollar did not rise; the split did not close).
+  - `title2`: steadiest or second steadiest of N; ranked K-th of N;
+    steadier than only K of the others, or least steady; not read when gate
+    C failed.
+  - `title3`: followed MAS's decisions more closely than growth; growth at
+    least as closely; only a little more closely; not read.
+- **Captions** now begin "How to read" and say what each mark is.
+- **Muting.** Anything a failed gate or a test not scored makes unreadable
+  is drawn at 0.35 opacity, and the caption says so:
+  - chart 1: the currency whose share test was not scored;
+  - chart 2: the ranking, when T4 is not scored;
+  - chart 3: the path and the decision ticks, when T7 is not scored.
+- **Heights** allow for titles that wrap; two charts lose spare space at
+  the bottom.
+- **Checks.** All 24 fixture charts (eight outcome fixtures) pass
+  `tools/check_figure_overflow.py`, which includes the bold face. LF line
+  endings. Rendered at 390 px and 1280 px in light and dark mode and looked
+  at.
+- **Computation:** none changed.
+- **md5:** 63dc2b90f5db6b62a3ce9c358782036a -> 5f5f848f70bbf4b240f7523b36ca9f44
+- **Tests:** the synthetic suite passes (20 tests).

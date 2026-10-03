@@ -3,9 +3,13 @@
 
 Same rules as pwm/12_figures.py: the shared --fig-* tokens with literal
 fallbacks, a prefers-color-scheme block plus :root[data-theme="dark"], a
-480-wide canvas, no text below 14px, hairline grids, LF line endings. Titles
-describe what is drawn; they state no finding (reader titles come at
-Checkpoint 2, after the results).
+480-wide canvas, no text below 14px, hairline grids, LF line endings.
+
+Titles state the finding, chosen by fixed rules from the sealed outcomes in
+out/tests.csv (title1, title2, title3 below; written before the data key,
+THESIS_ADDENDUM item 2). Every caption says how to read the chart. Anything
+a failed gate or test makes unreadable is drawn muted (MUTED opacity), and
+the caption says why.
 
   figs/sgd_chart1_split.svg   the Singapore dollar's rise against the yen and
                               the ringgit, January 2021 to December 2025,
@@ -31,6 +35,7 @@ RULE = "var(--fig-rule,#e2e1dd)"
 SURF = "var(--fig-surface,#fcfcfa)"
 SUBJ = "var(--fig-subject,#2873ce)"
 CTX = "var(--fig-context,#707379)"
+MUTED = 0.35
 STYLE = ("<style>"
          ":root{--fig-ink:#0b0b0b;--fig-ink-3:#717171;--fig-rule:#e2e1dd;--fig-surface:#fcfcfa;"
          "--fig-subject:#2873ce;--fig-context:#707379;}"
@@ -71,6 +76,11 @@ def caption(s, y, body):
     return y
 
 
+def title_extra(title):
+    """Height the title adds beyond its first line."""
+    return 21 * (len(textwrap.wrap(title, TITLE_CHARS)) - 1)
+
+
 def caption_height(body):
     return LINE * len(textwrap.wrap(body, CAPTION_CHARS))
 
@@ -101,23 +111,45 @@ def num(T, k):
         return None
 
 
+def clause1(T, t, name):
+    o, why = T.get(f"{t}_outcome"), T.get(f"{t}_reason", "")
+    if o == "SURVIVE":
+        return f"Against the {name}, the {name}'s own fall did most of the work"
+    if o == "FAIL":
+        return f"Against the {name}, the Singapore dollar's own rise did most of the work"
+    if o == "INCONCLUSIVE":
+        return f"Against the {name}, neither side did most of the work"
+    if why.startswith("premise"):
+        return f"The Singapore dollar did not rise against the {name}"
+    return f"Against the {name}, the split did not close"
+
+
+def title1(T):
+    return clause1(T, "T2", "yen") + ". " + clause1(T, "T3", "ringgit") + "."
+
+
 def chart1(T, figs):
-    cap = ("Each bar is a share of the Singapore dollar's rise against that currency, January 2021 to "
-           "December 2025, in per cent: the Singapore dollar rising against all its trading partners, "
-           "that currency falling against all of its own, or neither. The three add to 100.")
-    rows = []
+    cap = ("How to read: each bar is a share of the Singapore dollar's rise against that currency, "
+           "January 2021 to December 2025, in per cent. Blue: the Singapore dollar rising against all its "
+           "trading partners. Grey: that currency falling against all of its own. Pale: neither. The "
+           "three add to 100.")
+    rows, muted = [], []
     for t, cur, name in (("T2", "JPY", "yen"), ("T3", "MYR", "ringgit")):
         vals = [num(T, f"{t}_{k}") for k in ("S", "P", "R")]
         rows.append((name, vals))
+        if T.get(f"{t}_outcome") == "NOT SCORED":
+            muted.append(name)
+    if muted:
+        cap += (" Drawn faint: " + " and ".join(f"the {m}" for m in muted) +
+                ", where the test was not scored, so the shares are not read.")
     allv = [100 * v for _, vs in rows for v in vs if v is not None] + [0, 100]
     lo, hi, st = nice(min(allv), max(allv))
     LX, RX = 190, W - 24
     X = lambda v: LX + (RX - LX) * (v - lo) / (hi - lo)
     labels = ("Singapore dollar rose", "{0} fell", "neither index")
     H0 = 92
-    H = H0 + 2 * (3 * 26 + 34) + 40 + caption_height(cap) + 12
-    s, y = head(H, "Split of the Singapore dollar's rise against the yen and the ringgit",
-                "Where the Singapore dollar's rise against the yen and the ringgit came from")
+    H = H0 + 2 * (3 * 26 + 34) + 40 + caption_height(cap) - 12 + title_extra(title1(T))
+    s, y = head(H, "Split of the Singapore dollar's rise against the yen and the ringgit", title1(T))
     top = y + 14
     bottom = top + 2 * (3 * 26 + 34)
     v = lo
@@ -127,7 +159,8 @@ def chart1(T, figs):
         v += st
     yy = top
     for name, vals in rows:
-        text(s, 16, yy + 16, f"Against the {name}", 14, INK, weight="600")
+        op = f' opacity="{MUTED}"' if name in muted else ""
+        text(s, 16, yy + 16, f"Against the {name}", 14, INK3 if op else INK, weight="600")
         yy += 26
         if vals[0] is None:
             text(s, LX, yy + 12, "did not rise over these years", 14, INK3)
@@ -136,21 +169,49 @@ def chart1(T, figs):
         for lab, val, fill in zip(labels, vals, (SUBJ, CTX, RULE)):
             text(s, LX - 8, yy + 13, lab.format(name), 14, INK3, anchor="end")
             x0, x1 = X(0), X(100 * val)
-            s.append(f'<rect x="{min(x0, x1):.1f}" y="{yy:.1f}" width="{abs(x1 - x0):.1f}" height="17" fill="{fill}"/>')
+            s.append(f'<rect x="{min(x0, x1):.1f}" y="{yy:.1f}" width="{abs(x1 - x0):.1f}" height="17" '
+                     f'fill="{fill}"{op}/>')
             yy += 26
         yy += 8
     caption(s, bottom + 44, cap)
     write(figs, "sgd_chart1_split.svg", s)
 
 
+WORDS = {0: "none", 1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven",
+         8: "eight", 9: "nine", 10: "ten", 11: "eleven"}
+ORDS = {1: "first", 2: "second", 3: "third", 4: "fourth", 5: "fifth", 6: "sixth", 7: "seventh",
+        8: "eighth", 9: "ninth", 10: "tenth", 11: "eleventh"}
+
+
+def title2(T):
+    o, why = T.get("T4_outcome"), T.get("T4_reason", "")
+    if o == "NOT SCORED":
+        if "gate C" in why:
+            return "How steady eleven currencies were: not read, as the BIS index did not track MAS's own"
+        return "How steady the currencies were: not scored, too few series"
+    rank, st = int(float(T["T4_rank"])), int(float(T["T4_steadier_than"]))
+    n = int(float(T["T4_present"]))
+    if o == "SURVIVE":
+        return (f"The Singapore dollar was the {'steadiest' if rank == 1 else 'second steadiest'} of "
+                f"{WORDS[n]} currencies")
+    if o == "FAIL":
+        if st == 0:
+            return f"The Singapore dollar was the least steady of {WORDS[n]} currencies"
+        return f"The Singapore dollar was steadier than only {WORDS[st]} of the {WORDS[n - 1]} others"
+    return f"The Singapore dollar ranked {ORDS[rank]} of {WORDS[n]} for steadiness"
+
+
 def chart2(T, figs):
     vols = sorted(((100 * float(v), k.split("_")[1]) for k, v in T.items()
                    if k.startswith("T4_") and k.endswith("_sd") and v not in ("", None)))
-    cap = ("Typical month-to-month move of each currency's broad index against its trading partners, "
-           "August 2005 on, in per cent. Shorter is steadier.")
-    H = 70 + 24 * len(vols) + 40 + caption_height(cap) + 12
-    s, y = head(H, "Month-to-month swing of eleven currencies' broad indices",
-                "How much each currency's broad index swings from month to month")
+    cap = ("How to read: each bar is the typical month-to-month move of a currency's broad index "
+           "against its trading partners, August 2005 on, in per cent. Shorter is steadier; the "
+           "Singapore dollar is in blue.")
+    muted = T.get("T4_outcome") == "NOT SCORED"
+    if muted:
+        cap += " Drawn faint: the ranking was not scored, so it is not read."
+    H = 70 + 24 * len(vols) + 40 + caption_height(cap) + 12 + title_extra(title2(T))
+    s, y = head(H, "Month-to-month swing of eleven currencies' broad indices", title2(T))
     LX, RX = 170, W - 24
     hi = nice(0, max([v for v, _ in vols] + [0.1]))[1]
     X = lambda v: LX + (RX - LX) * v / hi
@@ -160,7 +221,8 @@ def chart2(T, figs):
         fill = SUBJ if a == "SG" else CTX
         text(s, LX - 8, yy + 14, NAMES.get(a, a), 14, INK if a == "SG" else INK3, anchor="end",
              weight="600" if a == "SG" else None)
-        s.append(f'<rect x="{LX}" y="{yy + 2:.1f}" width="{X(v) - LX:.1f}" height="16" fill="{fill}"/>')
+        op = f' opacity="{MUTED}"' if muted else ""
+        s.append(f'<rect x="{LX}" y="{yy + 2:.1f}" width="{X(v) - LX:.1f}" height="16" fill="{fill}"{op}/>')
     bottom = top + 24 * len(vols)
     s.append(f'<line x1="{LX}" x2="{RX}" y1="{bottom}" y2="{bottom}" stroke="{RULE}" stroke-width="1"/>')
     text(s, LX, bottom + 18, "0", 14, anchor="middle")
@@ -169,18 +231,32 @@ def chart2(T, figs):
     write(figs, "sgd_chart2_steady.svg", s)
 
 
-def chart3(out, figs):
+def title3(T):
+    o = T.get("T7_outcome")
+    if o == "SURVIVE":
+        return "The Singapore dollar's path followed MAS's decisions more closely than growth"
+    if o == "FAIL":
+        return "The Singapore dollar's path followed growth at least as closely as MAS's decisions"
+    if o == "INCONCLUSIVE":
+        return "The Singapore dollar's path followed MAS's decisions only a little more closely than growth"
+    return "The Singapore dollar's broad index and MAS's decisions: not read"
+
+
+def chart3(T, out, figs):
     neer = {r["period"]: float(r["value"]) for r in L.read_csv(os.path.join(out, "neer.csv")) if r["area"] == "SG"}
     mps = L.read_csv(os.path.join(out, "mps.csv"))
     first = "2001-01"
     ps = [p for p in sorted(neer) if p >= first]
     base = neer[ps[0]]
     ys = [100 * neer[p] / base for p in ps]
-    cap = ("The Singapore dollar's broad index, January 2001 = 100. Each tick is a MAS decision: above "
-           "the line for a tighter score, below for a looser one, on the line for no change.")
-    H = 70 + 220 + 40 + caption_height(cap) + 12
-    s, y = head(H, "The Singapore dollar's broad index and MAS's decisions",
-                "The Singapore dollar's broad index and MAS's decisions")
+    cap = ("How to read: the line is the Singapore dollar's broad index, January 2001 = 100. Each tick "
+           "below it is a MAS decision: up for a tighter score, down for a looser one, a dot for no "
+           "change.")
+    muted = T.get("T7_outcome") == "NOT SCORED"
+    if muted:
+        cap += " Drawn faint: the comparison was not scored, so the path is not read against MAS."
+    H = 70 + 220 + 40 + caption_height(cap) - 8 + title_extra(title3(T))
+    s, y = head(H, "The Singapore dollar's broad index and MAS's decisions", title3(T))
     LX, RX = 60, W - 24
     top, bottom = y + 10, y + 210
     lo, hi, st = nice(min(ys), max(ys))
@@ -192,7 +268,8 @@ def chart3(out, figs):
         text(s, LX - 6, Y(v) + 5, f"{v:g}", 14, anchor="end")
         v += st
     pts = " ".join(f"{X(i):.1f},{Y(v):.1f}" for i, v in enumerate(ys))
-    s.append(f'<polyline points="{pts}" fill="none" stroke="{SUBJ}" stroke-width="2"/>')
+    op = f' opacity="{MUTED}"' if muted else ""
+    s.append(f'<polyline points="{pts}" fill="none" stroke="{SUBJ}" stroke-width="2"{op}/>')
     idx = {p: i for i, p in enumerate(ps)}
     for r in mps:
         m = r["date"][:4] + "-" + r["date"][4:6]
@@ -201,8 +278,8 @@ def chart3(out, figs):
             x = X(idx[m])
             y0 = bottom + 14
             s.append(f'<line x1="{x:.1f}" x2="{x:.1f}" y1="{y0:.1f}" y2="{y0 - 5 * p:.1f}" stroke="{CTX}" '
-                     f'stroke-width="2"/>' if p else
-                     f'<circle cx="{x:.1f}" cy="{y0:.1f}" r="1.5" fill="{CTX}"/>')
+                     f'stroke-width="2"{op}/>' if p else
+                     f'<circle cx="{x:.1f}" cy="{y0:.1f}" r="1.5" fill="{CTX}"{op}/>')
     for yr in range(int(ps[0][:4]), int(ps[-1][:4]) + 1, 5):
         p = f"{yr}-01"
         if p in idx:
@@ -217,7 +294,7 @@ def main():
     T = {r["key"]: r["value"] for r in L.read_csv(os.path.join(P["out"], "tests.csv"))}
     chart1(T, P["figs"])
     chart2(T, P["figs"])
-    chart3(P["out"], P["figs"])
+    chart3(T, P["out"], P["figs"])
 
 
 if __name__ == "__main__":
