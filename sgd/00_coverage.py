@@ -13,12 +13,18 @@ For every file in raw/ (except RETRIEVED.txt): bytes and md5. Then, by type:
          headers, one row per series, as data.gov.sg serves): the same, per
          row. Columns that are mostly numeric are never printed: they are
          values, not labels.
+         Observation-level attribute columns (OBS_STATUS, OBS_CONF, ...) are
+         not part of a series' identity; their distinct codes are listed
+         once.
   .json  SingStat TableBuilder: title, dataLastUpdated, and per row its
          seriesNo, rowText and unit, with the period count, first and last
-         period key.
+         period key. MAS chart API ({"name", "elements": [...]}): the name,
+         the element keys, the count, the first and last date, and the
+         distinct "updatedat" stamps.
   .zip   the member names and sizes; CSV members as above.
   .xlsx  sheet names and their row and column counts (openpyxl, read-only).
-  other  (html, pdf) bytes and md5 only.
+  .html  the page <title> only.
+  .pdf   the /Title metadata only.
 
 Standard library only, apart from openpyxl for .xlsx. Writes nothing.
 """
@@ -41,6 +47,11 @@ VALUE_NAMES = {"obs_value", "value", "values"}
 
 def md5(data):
     return hashlib.md5(data).hexdigest()
+
+
+def ascii_text(s):
+    """ASCII only, whitespace collapsed (non-ASCII characters dropped)."""
+    return " ".join(s.encode("ascii", "ignore").decode("ascii").split())
 
 
 def period_key(s):
@@ -97,8 +108,11 @@ def csv_listing(text, indent="  "):
     wide = [i for i, h in enumerate(head) if period_key(h) is not None]
     if not pcols and len(wide) >= 3:
         print(indent + "layout  wide (period headers)")
-        print(indent + "label columns  " + " | ".join(h for i, h in enumerate(head) if i not in wide))
         lab = [i for i in range(len(head)) if i not in wide]
+        lab = [i for i in lab
+               if sum(numeric(r[i]) for r in body if i < len(r) and r[i].strip())
+               <= 0.5 * max(1, sum(1 for r in body if i < len(r) and r[i].strip()))]
+        print(indent + "label columns  " + " | ".join(head[i] for i in lab))
         for r in body:
             filled = [head[i] for i in wide if i < len(r) and r[i].strip() not in ("", "na", "NA", "-")]
             n, a, b, how = span(filled)
@@ -116,11 +130,18 @@ def csv_listing(text, indent="  "):
         vals = [r[i] for r in body if i < len(r) and r[i].strip()]
         if vals and sum(numeric(v) for v in vals) > 0.5 * len(vals):
             mostly_numeric.add(i)
-    lab = [i for i in range(len(head)) if i != p and i not in vcols and i not in mostly_numeric]
+    attrs = [i for i, h in enumerate(head) if h.strip().upper().startswith("OBS_") and i not in vcols]
+    lab = [i for i in range(len(head))
+           if i != p and i not in vcols and i not in mostly_numeric and i not in attrs]
     print(indent + "layout  long (period column " + head[p] + ")")
     print(indent + "columns  " + " | ".join(head))
     print(indent + "not printed (values or numeric)  "
           + (" | ".join(head[i] for i in sorted((set(vcols) | mostly_numeric) - {p})) or "none"))
+    for i in attrs:
+        if i in mostly_numeric:
+            continue
+        codes = sorted({r[i] for r in body if i < len(r)} - {""})
+        print(indent + f"attribute {head[i]} codes  " + (", ".join(codes) if codes else "(always empty)"))
     series = {}
     for r in body:
         k = tuple(r[i] if i < len(r) else "" for i in lab)
@@ -144,6 +165,18 @@ def json_listing(data, indent="  "):
         d = json.loads(data.decode("utf-8-sig"))
     except ValueError as e:
         print(indent + f"not JSON: {e}")
+        return
+    if isinstance(d, dict) and isinstance(d.get("elements"), list):
+        els = [e for e in d["elements"] if isinstance(e, dict)]
+        keys = sorted({k for e in els for k in e})
+        n, a, b, how = span([str(e.get("date", "")) for e in els])
+        print(indent + f"layout  MAS chart API, name {d.get('name')!r}")
+        print(indent + "element keys  " + ", ".join(keys) + "  (value not printed)")
+        print(indent + f"elements {len(els)}  :: {n} distinct dates, {a} to {b} ({how}), "
+              f"{sum(e.get('value') in (None, '') for e in els)} empty")
+        stamps = sorted({str(e.get("updatedat")) for e in els})
+        print(indent + f"updatedat  {len(stamps)} distinct: " + ", ".join(stamps[:3])
+              + (" ..." if len(stamps) > 3 else ""))
         return
     D = d.get("Data") if isinstance(d, dict) else None
     if not isinstance(D, dict) or "row" not in D:
@@ -169,7 +202,7 @@ def xlsx_listing(path, indent="  "):
         return
     wb = openpyxl.load_workbook(path, read_only=True)
     for ws in wb.worksheets:
-        print(indent + f"sheet {ws.title!r}: {ws.max_row} rows, {ws.max_column} columns")
+        print(indent + f"sheet {ascii_text(ws.title)!r}: {ws.max_row} rows, {ws.max_column} columns")
 
 
 def main():
@@ -198,6 +231,15 @@ def main():
                         csv_listing(z.read(m).decode("utf-8-sig", errors="replace"), indent="    ")
         elif ext == "xlsx":
             xlsx_listing(path)
+        elif ext in ("html", "htm"):
+            m = re.search(rb"<title[^>]*>\s*(.*?)\s*</title>", data, re.S | re.I)
+            print("  title   " + (ascii_text(m.group(1).decode("utf-8", "replace")) if m else "(none)"))
+        elif ext == "pdf":
+            m = re.search(rb"/Title\s*\((.*?)\)", data)
+            raw = m.group(1).decode("latin-1") if m else ""
+            ok = raw and sum(32 <= ord(c) < 127 for c in raw) >= 0.9 * len(raw)
+            print("  title   " + (ascii_text(raw) if ok else
+                                  "(/Title metadata not plain text)" if m else "(no /Title metadata)"))
         print()
 
 

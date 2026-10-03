@@ -1,0 +1,8 @@
+# Raw sources: never touch the bytes. Binary-safe for every data and document
+# type saved here, as served (BIS CSV, SingStat and MAS JSON, MAS and other
+# pages as HTML, PDFs, the BIS weights workbook).
+*.csv   -text
+*.json  -text
+*.xlsx  -text
+*.pdf   -text
+*.html  -text

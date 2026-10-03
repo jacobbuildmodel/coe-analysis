@@ -11,6 +11,12 @@ review of 6f9b6c2:
 Changed sections: 0, 1 (items 2 and 6), 2, 3 (S4), 4 (last line), 5 (item
 2), 6, 7.
 
+**Update, 3 October 2026, after the downloads.** Jacob opened network access;
+the researcher session retrieved 93 files (`raw/RETRIEVED.txt`, RECEIVED).
+`00_coverage.py` listed labels and coverage only; no value was opened.
+Section 2A records what closed. Sections 0, 3 (S4), 5 and 7 are updated where
+the files contradicted the search index.
+
 Scope: Checkpoint 0 (data feasibility), sources and the data check only. No
 analysis, no charts, no data value opened. The exact URLs and target filenames
 are in `sgd/raw/RETRIEVED.txt`; the coverage lister for the files, once they
@@ -23,6 +29,9 @@ basket of trading partners' currencies on a slow, deliberate path, so most of
 a move against one currency is that currency moving.
 
 ## 0. The one-paragraph version
+
+(Update, 3 October 2026: everything below was then retrieved; section 2A has
+the result. The paragraph is kept as the record of Checkpoint 0.)
 
 Nothing was downloaded. The session's egress proxy refuses every data host
 tried with HTTP 403 at CONNECT, a policy denial. That covers BIS, MAS,
@@ -42,8 +51,9 @@ index, not opened**. What exists:
   average collection is expected but was not seen.
 - **S3, MAS's own monthly exchange rates, as republished by SingStat.** Found
   as table M700051 (average) and M700041 (end of period), from January 1988.
-- **S4, MAS's own S$NEER index, weekly.** It exists, but MAS's page shows only
-  the "current and previous years", so the overlap with BIS may be short.
+- **S4, MAS's own S$NEER index, weekly.** It exists. The search index said
+  MAS's page shows only the "current and previous years"; the file received
+  on 3 October runs from January 1999 (section 2A).
 - **S5, MAS policy decisions.** A primary MAS page lists every decision since
   2001 by slope, width and level of the band centre, with a link to each
   statement.
@@ -162,6 +172,43 @@ Every row stays "pending receipt" until `00_coverage.py` lists the file.
 | T7 policy or growth | S5a decisions table; S5b statements; S1 M.N.B.SG; S6a GDP year-on-year growth, quarterly | S5a: page title seen; layout (Date, Slope, Width, Level) from index summary and a third-party copy. S6a: table title seen (id M015631 UNVERIFIED; fallback M015661 levels) | decisions since 2001; GDP quarterly from the 1970s (UNVERIFIED) | Yes, pending receipt. The slope is coded from words, since MAS publishes no number (section 5) |
 | (sensitivity to T7) inflation | S7a CPI monthly | table title seen (M213751) | 2024 base; long history (UNVERIFIED) | Yes, reported and not scored |
 
+### 2A. Received, 3 October 2026: every row closes
+
+From the `00_coverage.py` listing in `raw/RETRIEVED.txt` (labels and
+coverage only):
+
+| Series | Planned key or table | Received | Coverage |
+|---|---|---|---|
+| S1 nominal, broad | M.N.B.<AREA>, 11 areas | all 11, "<Area> - Nominal - Broad (64 economies)" | 1994-01 to 2026-08, 392 months each, none empty |
+| S1b real, broad | M.R.B.<AREA> | all 11 | same |
+| S1c weights | broad basket | `weightsb.xlsx`, sheets 1993_1995 to 2020_2022 | three-year periods |
+| S2 US dollar rates | M.<AREA>.<CUR>.A | all 10, "Average of observations through period"; collection A exists, so the E fallback is not needed | to 2026-08; SGD, JPY, MYR from 1957-01 |
+| S3a MAS monthly average | M700051 | JPY (per 100) and MYR complete; table TRUNCATED at the API's 5,000-observation limit (renminbi ends 2017 Jan; two series absent) | 1988 Jan to 2026 Aug |
+| S3c data.gov.sg copy | d_3c62... | 15 series, complete | 1988Jan to 2026May |
+| S4 MAS S$NEER | weekly | 1,443 weeks, from the chart feed `/api/v1/MAS/chart/rev/sneer` | **1999-01-08 to 2026-08-28**, not "current and previous years" |
+| S5a decisions | page | HTML as served; links 62 statements | 22 February 2001 to 27 July 2026 |
+| S5b statements | 62 pages | all 62 saved | as S5a |
+| S6a GDP growth | M015631 (id confirmed) | series 2, "GDP In Chained (2015) Dollars", Per Cent, complete; table TRUNCATED after it | 1976 1Q to 2026 2Q |
+| S6c data.gov.sg copy | d_a5ff... | complete | 19761Q to 20262Q |
+| S7a CPI | M213751 | series 1, All Items, complete; table TRUNCATED after 22 series | 1961 Jan to 2026 Aug |
+
+**Every scored test is feasible on the files received:** T1, T2, T3, T4 and
+T7. Every series they use is present and complete, under the planned keys.
+
+**Two facts change the picture, for the checker:**
+- **Check C is not short.** S4 overlaps S1 from 1999-01 to 2026-08, about
+  330 monthly changes. The reason given for demoting the former T6, that
+  it might not run, no longer holds. Whether to restore it as a scored
+  design test is the checker's and Jacob's call; THESIS keeps it as check
+  C until they decide.
+- **TableBuilder truncates at 5,000 observations.** Only series the THESIS
+  does not use were cut. The loader will assert that every series it reads
+  runs to the expected last period.
+
+**Pages were saved as HTML, not printed to PDF.** The session's headless
+browser does not trust the proxy's certificate, and TLS checks were not
+turned off.
+
 **Tests considered and dropped at Checkpoint 0:**
 
 - **Where the S$NEER sat inside MAS's band.** Not feasible: MAS does not
@@ -234,7 +281,10 @@ Every row stays "pending receipt" until `00_coverage.py` lists the file.
 - **What it is.** MAS's own trade-weighted index, the one the policy band is
   set on. Basket and weights undisclosed. MAS releases weekly indexed data
   on a monthly schedule (Advance Release Calendar, index summary).
-- **Coverage.** The page shows "current and previous years" (index summary).
+- **Coverage (received 3 October).** 1999-01-08 to 2026-08-28, 1,443 weeks,
+  from the page's chart feed. The search index's "current and previous
+  years" (below) was wrong.
+- **Coverage (search index, 29 September).** The page shows "current and previous years" (index summary).
   If that is literal, about 2024 to 2026 is available, roughly 30 monthly
   changes. The count is UNVERIFIED.
 - **Use.** Check C only (formerly T6): does the BIS broad Singapore index
@@ -310,10 +360,12 @@ statement). That date fixes the start of the long window (THESIS section 5).
 
 ## 5. What could not be closed, and what it does to the tests
 
-1. **Nothing was downloaded.** Every row of section 2 is "pending receipt".
+1. **Nothing was downloaded** at Checkpoint 0. (Closed 3 October 2026:
+   section 2A.) Every row of section 2 was "pending receipt".
    A key that turns out missing is handled by the rules in THESIS; no rule
    is changed after a file arrives.
-2. **The S$NEER's overlap.** If MAS shows only the current and previous
+2. **The S$NEER's overlap.** (Closed 3 October 2026: S4 runs from January
+   1999, section 2A.) If MAS shows only the current and previous
    years, check C rests on about 30 monthly changes; with fewer than 24 it is
    printed as "too short to read". T7 is read on the BIS index either way;
    check C gates nothing (THESIS section 7).
@@ -351,7 +403,8 @@ THESIS.md is drafted, unsealed, for the tests that survive.
    - **Who fetches.** If Jacob opens network access for this environment,
      the researcher fetches. Otherwise the design chat does, from Jacob's
      machine.
-   - **Status on 3 October 2026:** still blocked.
+   - **Status on 3 October 2026:** blocked in the morning; retrieved by the
+     researcher once Jacob opened network access (done; section 2A).
    - Nothing is to be opened in a spreadsheet program or previewed.
 2. **S4, MAS's S$NEER page.** How many years the download offers. One line
    is enough; it decides whether check C is readable.

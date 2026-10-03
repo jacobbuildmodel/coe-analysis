@@ -2,8 +2,9 @@
 
 **UNSEALED DRAFT. First draft 29 September 2026 (6f9b6c2); revised 3 October
 2026 after the checker review of 6f9b6c2. Not sealed. Written before any data
-file was received or opened (`raw/RETRIEVED.txt`: nothing retrieved; the
-sandbox could reach no data host). Everything below can still change before
+file was received or opened. The files were retrieved on 3 October 2026 and
+listed for labels and coverage only (`raw/RETRIEVED.txt`, RECEIVED); no value
+has been opened. Everything below can still change before
 the seal, by Jacob's decision or on receipt of the files. Nothing is scored
 against it until it is sealed in a commit that adds only `SEAL_MANIFEST.md`,
 as for the pwm piece.**
@@ -131,7 +132,9 @@ the three largest reserve currencies, and Hong Kong's peg as the world-view
 case. For USD, `n_USD` is the change in the BIS US index and `b_USD` is
 the change in the log of US dollars per Singapore dollar.
 
-**If S2 has no monthly-average collection.** End-of-period rates (E) are
+**If S2 has no monthly-average collection.** (Received 3 October: the
+average collection A exists for all ten currencies, so this rule is not
+expected to apply.) End-of-period rates (E) are
 used for S2, and the endpoints in section 5 become three-month means of
 end-of-month rates. The BIS indices stay monthly averages; the mismatch
 enters `e_X` and T1 reads it.
@@ -478,8 +481,8 @@ no prediction, no confidence; gates nothing.)
 - **Printed beside T7.** The correlation and the number of monthly changes
   it rests on.
 - **If fewer than 24 changes overlap,** it is printed with the words "too
-  short to read". MAS's page may show only the current and previous years
-  (SOURCES_REPORT section 3, S4).
+  short to read". S4 as received runs from January 1999, so about 330
+  monthly changes overlap S1 (SOURCES_REPORT section 2A).
 
 **World view (with T4).**
 - The Hong Kong dollar's broad index against the US dollar's: the monthly
@@ -556,9 +559,9 @@ them. A test not scored drops out of both.
    (`00_coverage.py`).
    - Every "pending receipt" row in SOURCES_REPORT section 2 closes here, or
      its missing-series rule applies.
-   - The sandbox still could not reach any data host on 3 October 2026. If
-     Jacob opens network access for this environment, the researcher
-     fetches from RETRIEVED.txt; otherwise the design chat does.
+   - Done 3 October 2026: retrieved by the researcher after Jacob opened
+     network access; every series the scored tests use is present and
+     complete (SOURCES_REPORT section 2A).
 2. **`office/MPS_CODING.csv`**, from S5a by the rule in T7, before the seal.
 3. **Jacob's confidences** for T1, T2, T3, T4 and T7.
 4. **The windows and the sensitivities** (section 5): accepted or changed.

@@ -5,8 +5,14 @@ file. Checkpoint 0 (data feasibility) was done from the web search index; no
 file was downloaded, so no md5 is recorded. The paragraph below describes the
 sandbox attempt.
 
-STATE ON 3 October 2026: still nothing retrieved; the same hosts still refuse
-CONNECT (403, policy). Roles below: B = sensitivity B (breadth, formerly
+STATE ON 3 October 2026, morning (SGT): still nothing retrieved; the same
+hosts refused CONNECT (403, policy).
+
+STATE ON 3 October 2026, 10:27-10:37 SGT (02:27-02:37 UTC): RETRIEVED by the
+researcher session, after Jacob opened network access for these hosts. 93
+files plus this one and .gitattributes; see RECEIVED at the end. The
+paragraphs from "Every download attempt" down to the first RECEIVED line
+describe the earlier, blocked state and the plan; they are kept as written. Roles below: B = sensitivity B (breadth, formerly
 T5); check C = BIS index against MAS's own (formerly T6). Neither is scored.
 
 Every download attempt from the researcher session failed at the network
@@ -304,4 +310,836 @@ NOT SOUGHT
 RECEIVED
 ===============================================================================
 
-(empty: nothing received yet)
+Retrieved 3 October 2026, 02:27-02:37 UTC, by the researcher session (curl
+through the session proxy, certificates verified; byte-for-byte as served).
+No data value was opened, printed or previewed. Download checks printed only
+the HTTP status, byte count, content type and, for the BIS CSVs, the header
+line of column names. Locating the S$NEER feed read only the page's link
+targets and the chart's configuration, with every decimal number masked.
+The only script that read a data file is sgd/00_coverage.py; its output is
+below verbatim. HTML pages and PDFs were not read beyond their titles.
+
+Summary
+  files      93 (plus this file and .gitattributes)
+  S1  BIS WS_EER, monthly, broad, nominal (s1) and real (s1b): all 11 areas
+      present under the planned keys (M.N.B.<AREA>, M.R.B.<AREA>),
+      1994-01 to 2026-08, 392 months each, no empty observation.
+  S1c broad-basket weights workbook: one sheet per three-year period,
+      1993_1995 to 2020_2022. Located on the EER page as
+      https://www.bis.org/statistics/eer/weightsb.xlsx
+  S2  BIS WS_XRU, monthly AVERAGE (collection A exists): all 10 currencies,
+      to 2026-08; SGD, JPY, MYR and seven others from 1957-01, IDR from
+      1967-01, EUR from 1974-06. The end-of-period fallback was not needed.
+  S3a MAS monthly average rates (SingStat M700051), last updated 14/09/2026:
+      Japanese Yen (SGD per 100 JPY) and Malaysian Ringgit (SGD per MYR)
+      1988 Jan to 2026 Aug, complete. TRUNCATED: the TableBuilder API stops
+      at 5,000 observations, so the last series served (Renminbi) ends at
+      2017 Jan and two series in the data.gov.sg copy (Indian Rupee,
+      Philippine Peso) are not in the JSON at all. The THESIS uses JPY and
+      MYR only. The same applies to M700041 (s3b).
+  S3c data.gov.sg copy of the monthly averages: 15 series, 1988Jan to
+      2026May (last updated 2026-06-12), complete; three months shorter than
+      TableBuilder.
+  S4  MAS S$NEER, weekly: 1,443 weeks, 1999-01-08 to 2026-08-28, no empty
+      value. Served by https://www.mas.gov.sg/api/v1/MAS/chart/rev/sneer (the
+      feed behind the page's chart; the page has no download button).
+      COVERAGE IS NOT "current and previous years" as the search summary
+      said: it is from January 1999.
+  S5a Past Monetary Policy Decisions page (HTML as served): links 62
+      statements, 22 February 2001 to 27 July 2026, all saved as s5b_*.html.
+      The 30 March 2020 statement is titled "April 2020" by MAS.
+  S6a GDP year-on-year growth, quarterly (M015631), last updated 11/08/2026:
+      series 2, "GDP In Chained (2015) Dollars", 1976 1Q to 2026 2Q,
+      complete. TRUNCATED at 5,000 observations after that series (series
+      2.1.1 ends 2020 2Q; later series absent). The THESIS uses series 2
+      only. s6c (data.gov.sg copy, last updated 2026-08-11) is complete.
+  S6b GDP levels, chained (2015) dollars (M015661): series 1 complete, 1975
+      1Q to 2026 2Q.
+  S7a CPI, 2024 base, monthly (M213751), last updated 23/09/2026: series 1
+      "All Items", 1961 Jan to 2026 Aug, complete. TRUNCATED at 5,000
+      observations after 22 series; the THESIS uses All Items only.
+  Pages (HTML as served, not printed to PDF): the session's headless
+      browser does not trust the proxy's certificate, and TLS checks were
+      not turned off, so pages were saved with curl instead of printed.
+      Filenames end .html where RETRIEVED planned .pdf.
+  PDFs: s1e and s1f came from new BIS paths
+      (https://www.bis.org/publications/qr/r-qt0603e.pdf and
+      https://www.bis.org/publications/working-paper-217-estimation-asian-effective-exchange-rates-technical-note.pdf);
+      the old /publ/ paths now serve a landing page.
+  Also saved: s3e (MAS eServices exchange-rate form page), s5e (MAS Advance
+      Release Calendar), s5f (MAS Press Statement, July 2005).
+  NOT READ, and holding values: s3d, s3e (MAS exchange-rate pages) and the
+      62 statements (their outlook paragraphs quote growth and inflation
+      forecasts and describe the S$NEER's movement). The T7 coding reads
+      only the decision paragraph (THESIS T7), and that reading is disclosed
+      when it is done.
+
+Sources, exact URLs
+  s1   https://stats.bis.org/api/v2/data/dataflow/BIS/WS_EER/1.0/M.N.B.SG+JP+MY+KR+CN+TH+ID+US+XM+AU+HK?format=csv
+  s1b  https://stats.bis.org/api/v2/data/dataflow/BIS/WS_EER/1.0/M.R.B.SG+JP+MY+KR+CN+TH+ID+US+XM+AU+HK?format=csv
+  s1c  https://www.bis.org/statistics/eer/weightsb.xlsx
+  s1d  https://www.bis.org/statistics/eer.htm
+  s2   https://stats.bis.org/api/v2/data/dataflow/BIS/WS_XRU/1.0/M.SG+JP+MY+KR+CN+TH+ID+XM+AU+HK..A?format=csv
+  s2d  https://www.bis.org/statistics/xrusd/xrusd_doc.pdf
+  s3a  https://tablebuilder.singstat.gov.sg/api/table/tabledata/M700051?limit=5000
+  s3b  https://tablebuilder.singstat.gov.sg/api/table/tabledata/M700041?limit=5000
+  s3c  data.gov.sg poll-download, dataset d_3c62d5eed03c40aeafbb6d0fa324e976
+  s3d  https://www.mas.gov.sg/statistics/exchange-rates
+  s3e  https://eservices.mas.gov.sg/Statistics/msb/ExchangeRates.aspx
+  s4   https://www.mas.gov.sg/api/v1/MAS/chart/rev/sneer
+  s5a  https://www.mas.gov.sg/monetary-policy/past-monetary-policy-decisions
+  s5b  each statement linked from s5a, https://www.mas.gov.sg/news/monetary-policy-statements/<YYYY>/<slug>
+  s5c  https://www.mas.gov.sg/-/media/mas-media-library/monetary-policy/singapores-monetary-policy-framework/faqs/mp_faqs.pdf
+       https://www.mas.gov.sg/monetary-policy/singapores-monetary-policy-framework/faqs/section-4
+  s5d  https://www.mas.gov.sg/statistics/reserve-statistics/foreign-exchange-operations
+       https://www.mas.gov.sg/news/media-releases/2020/mas-brings-forward-the-date-of-disclosure-of-its-foreign-exchange-intervention-operations
+  s5e  https://www.mas.gov.sg/monetary-policy/advance-release-calendar
+  s5f  https://www.mas.gov.sg/news/monetary-policy-statements/2005/mas-press-statement
+  s6a  https://tablebuilder.singstat.gov.sg/api/table/tabledata/M015631?limit=5000
+  s6b  https://tablebuilder.singstat.gov.sg/api/table/tabledata/M015661?limit=5000
+  s6c  data.gov.sg poll-download, dataset d_a5ff719648a0e6d4b4c623ee383ab686
+  s7a  https://tablebuilder.singstat.gov.sg/api/table/tabledata/M213751?limit=5000
+  w1   https://www.hkma.gov.hk/eng/key-functions/money/linked-exchange-rate-system/how-does-the-lers-work/
+  w2a  https://www.boj.or.jp/en/intl_finance/outline/expkainyu.htm
+  w2b  https://www.mof.go.jp/english/policy/international_policy/reference/feio/index.html
+  w2c  https://www.mof.go.jp/english/policy/international_policy/reference/feio/quarter/index.html
+  w3   https://www.bnm.gov.my/significant-milestones-in-the-malaysian-foreign-exchange-market
+  w4   https://www.pbc.gov.cn/english/130721/2025080815062860021/index.html
+
+00_coverage.py output, verbatim (3 October 2026)
+-------------------------------------------------------------------------------
+s1_bis_eer_neer_broad_monthly.csv
+  bytes   335396
+  md5     e3467448791abd778b12b06b482bca79
+  rows 4312, columns 13
+  layout  long (period column TIME_PERIOD)
+  columns  FREQ | EER_TYPE | EER_BASKET | REF_AREA | UNIT_MEASURE | TIME_FORMAT | COLLECTION | TITLE_TS | TIME_PERIOD | OBS_VALUE | OBS_STATUS | OBS_CONF | OBS_PRE_BREAK
+  not printed (values or numeric)  UNIT_MEASURE | OBS_VALUE
+  attribute OBS_STATUS codes  A
+  attribute OBS_CONF codes  F
+  attribute OBS_PRE_BREAK codes  (always empty)
+  same for every series  FREQ=M | EER_TYPE=N | EER_BASKET=B | TIME_FORMAT= | COLLECTION=A
+  series 11
+    AU | Australia - Nominal - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+    CN | China - Nominal - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+    HK | Hong Kong SAR - Nominal - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+    ID | Indonesia - Nominal - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+    JP | Japan - Nominal - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+    KR | Korea - Nominal - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+    MY | Malaysia - Nominal - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+    SG | Singapore - Nominal - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+    TH | Thailand - Nominal - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+    US | United States - Nominal - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+    XM | Euro area - Nominal - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+
+s1b_bis_eer_reer_broad_monthly.csv
+  bytes   322739
+  md5     d4c2f2770353fbda55f2493c43b58272
+  rows 4312, columns 13
+  layout  long (period column TIME_PERIOD)
+  columns  FREQ | EER_TYPE | EER_BASKET | REF_AREA | UNIT_MEASURE | TIME_FORMAT | COLLECTION | TITLE_TS | TIME_PERIOD | OBS_VALUE | OBS_STATUS | OBS_CONF | OBS_PRE_BREAK
+  not printed (values or numeric)  UNIT_MEASURE | OBS_VALUE
+  attribute OBS_STATUS codes  A
+  attribute OBS_CONF codes  F
+  attribute OBS_PRE_BREAK codes  (always empty)
+  same for every series  FREQ=M | EER_TYPE=R | EER_BASKET=B | TIME_FORMAT= | COLLECTION=A
+  series 11
+    AU | Australia - Real - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+    CN | China - Real - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+    HK | Hong Kong SAR - Real - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+    ID | Indonesia - Real - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+    JP | Japan - Real - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+    KR | Korea - Real - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+    MY | Malaysia - Real - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+    SG | Singapore - Real - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+    TH | Thailand - Real - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+    US | United States - Real - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+    XM | Euro area - Real - Broad (64 economies)  :: 392 periods, 1994-01 to 2026-08 (time order), 0 empty
+
+s1c_bis_eer_weights_broad.xlsx
+  bytes   492941
+  md5     4f46a9e028460a920a003947ce24bc21
+  sheet '1993_1995': 72 rows, 67 columns
+  sheet '1996_1998': 72 rows, 67 columns
+  sheet '1999_2001': 72 rows, 67 columns
+  sheet '2002_2004': 72 rows, 67 columns
+  sheet '2005_2007': 72 rows, 67 columns
+  sheet '2008_2010': 72 rows, 67 columns
+  sheet '2011_2013': 72 rows, 67 columns
+  sheet '2014_2016': 72 rows, 67 columns
+  sheet '2017_2019': 72 rows, 67 columns
+  sheet '2020_2022': 72 rows, 67 columns
+
+s1d_bis_eer_overview.html
+  bytes   227479
+  md5     b9178c9e2cab22e8f0abbf06043fe0a5
+  title   Effective exchange rates - overview | BIS Data Portal
+
+s1e_bis_qr0603_eer.pdf
+  bytes   131532
+  md5     865eae2b70a51b63129f8cb7fb617090
+  title   The new BIS effective exchange rate indices
+
+s1f_bis_wp217_asian_eer.pdf
+  bytes   223616
+  md5     2a3b0e238930b1a4e97b0728ddab8356
+  title   Estimation of Asian effective exchange rates: a technical note
+
+s2_bis_xru_usd_monthly_avg.csv
+  bytes   1120217
+  md5     1f740cf8c1d3832c5c9e13307cd0e4de
+  rows 8031, columns 13
+  layout  long (period column TIME_PERIOD)
+  columns  FREQ | REF_AREA | CURRENCY | COLLECTION | UNIT_MULT | DECIMALS | AVAILABILITY | TITLE | TIME_PERIOD | OBS_VALUE | OBS_STATUS | OBS_PRE_BREAK | OBS_CONF
+  not printed (values or numeric)  UNIT_MULT | DECIMALS | OBS_VALUE
+  attribute OBS_STATUS codes  A
+  attribute OBS_PRE_BREAK codes  (always empty)
+  attribute OBS_CONF codes  F
+  same for every series  FREQ=M | COLLECTION=A | AVAILABILITY=A
+  series 10
+    AU | AUD |  Exchange rates against USD Australia - Australian dollar - Monthly - Average of observations through period  :: 836 periods, 1957-01 to 2026-08 (time order), 0 empty
+    CN | CNY |  Exchange rates against USD China - Renminbi - Monthly - Average of observations through period  :: 836 periods, 1957-01 to 2026-08 (time order), 0 empty
+    HK | HKD |  Exchange rates against USD Hong Kong SAR - Hong Kong dollar - Monthly - Average of observations through period  :: 836 periods, 1957-01 to 2026-08 (time order), 0 empty
+    ID | IDR |  Exchange rates against USD Indonesia - Rupiah - Monthly - Average of observations through period  :: 716 periods, 1967-01 to 2026-08 (time order), 0 empty
+    JP | JPY |  Exchange rates against USD Japan - Yen - Monthly - Average of observations through period  :: 836 periods, 1957-01 to 2026-08 (time order), 0 empty
+    KR | KRW |  Exchange rates against USD Korea - Won - Monthly - Average of observations through period  :: 836 periods, 1957-01 to 2026-08 (time order), 0 empty
+    MY | MYR |  Exchange rates against USD Malaysia - Malaysian ringgit - Monthly - Average of observations through period  :: 836 periods, 1957-01 to 2026-08 (time order), 0 empty
+    SG | SGD |  Exchange rates against USD Singapore - Singapore dollar - Monthly - Average of observations through period  :: 836 periods, 1957-01 to 2026-08 (time order), 0 empty
+    TH | THB |  Exchange rates against USD Thailand - Baht - Monthly - Average of observations through period  :: 836 periods, 1957-01 to 2026-08 (time order), 0 empty
+    XM | EUR |  Exchange rates against USD Euro area - Euro - Monthly - Average of observations through period  :: 627 periods, 1974-06 to 2026-08 (time order), 0 empty
+
+s2d_bis_xru_doc.pdf
+  bytes   169762
+  md5     d2bc0718cdece3cf40534fbf4f1467cb
+  title   USD exchange rates
+
+s3a_mas_fx_monthly_avg_M700051.json
+  bytes   181521
+  md5     014858ba90ce5df154681ceaaaa3969e
+  title   Exchange Rates (Average For Period), Monthly
+  id      M700051
+  last updated 14/09/2026
+  series  13
+    1 | US Dollar | Singapore Dollar Per US Dollar  :: 464 periods, 1988 Jan to 2026 Aug (time order)
+    2 | Sterling Pound | Singapore Dollar Per Pound Sterling  :: 464 periods, 1988 Jan to 2026 Aug (time order)
+    4 | Swiss Franc | Singapore Dollar Per Swiss Franc  :: 464 periods, 1988 Jan to 2026 Aug (time order)
+    5 | Japanese Yen | Singapore Dollar Per 100 Japanese Yen  :: 464 periods, 1988 Jan to 2026 Aug (time order)
+    6 | Malaysian Ringgit | Singapore Dollar Per Malaysian Ringgit  :: 464 periods, 1988 Jan to 2026 Aug (time order)
+    7 | Hong Kong Dollar | Singapore Dollar Per Hong Kong Dollar  :: 464 periods, 1988 Jan to 2026 Aug (time order)
+    9 | Australian Dollar | Singapore Dollar Per Australian Dollar  :: 464 periods, 1988 Jan to 2026 Aug (time order)
+    10 | Korean Won | Singapore Dollar Per 100 Korean Won  :: 284 periods, 2003 Jan to 2026 Aug (time order)
+    11 | New Taiwan Dollar | Singapore Dollar Per 100 New Taiwan Dollar  :: 284 periods, 2003 Jan to 2026 Aug (time order)
+    13 | Euro | Singapore Dollar Per Euro  :: 332 periods, 1999 Jan to 2026 Aug (time order)
+    15 | Indonesian Rupiah | Singapore Dollar Per 100 Indonesian Rupiah  :: 284 periods, 2003 Jan to 2026 Aug (time order)
+    16 | Thai Baht | Singapore Dollar Per 100 Thai Baht  :: 284 periods, 2003 Jan to 2026 Aug (time order)
+    17 | Renminbi | Singapore Dollar Per Renminbi  :: 284 periods, 1993 Jun to 2017 Jan (time order)
+
+s3b_mas_fx_monthly_eop_M700041.json
+  bytes   181543
+  md5     bd55ab6012f3336cc00db2e639d4bef7
+  title   Exchange Rates, (As At End Of Period), Monthly
+  id      M700041
+  last updated 14/09/2026
+  series  13
+    1 | US Dollar | Singapore Dollar Per US Dollar  :: 464 periods, 1988 Jan to 2026 Aug (time order)
+    2 | Sterling Pound | Singapore Dollar Per Pound Sterling  :: 464 periods, 1988 Jan to 2026 Aug (time order)
+    4 | Swiss Franc | Singapore Dollar Per Swiss Franc  :: 464 periods, 1988 Jan to 2026 Aug (time order)
+    5 | Japanese Yen | Singapore Dollar Per 100 Japanese Yen  :: 464 periods, 1988 Jan to 2026 Aug (time order)
+    6 | Malaysian Ringgit | Singapore Dollar Per Malaysian Ringgit  :: 464 periods, 1988 Jan to 2026 Aug (time order)
+    7 | Hong Kong Dollar | Singapore Dollar Per Hong Kong Dollar  :: 464 periods, 1988 Jan to 2026 Aug (time order)
+    9 | Australian Dollar | Singapore Dollar Per Australian Dollar  :: 464 periods, 1988 Jan to 2026 Aug (time order)
+    10 | Korean Won | Singapore Dollar Per 100 Korean Won  :: 284 periods, 2003 Jan to 2026 Aug (time order)
+    11 | New Taiwan Dollar | Singapore Dollar Per 100 New Taiwan Dollar  :: 284 periods, 2003 Jan to 2026 Aug (time order)
+    13 | Euro | Singapore Dollar Per Euro  :: 332 periods, 1999 Jan to 2026 Aug (time order)
+    15 | Indonesian Rupiah | Singapore Dollar Per 100 Indonesian Rupiah  :: 284 periods, 2003 Jan to 2026 Aug (time order)
+    16 | Thai Baht | Singapore Dollar Per 100 Thai Baht  :: 284 periods, 2003 Jan to 2026 Aug (time order)
+    17 | Renminbi | Singapore Dollar Per Renminbi  :: 284 periods, 1993 Jun to 2017 Jan (time order)
+
+s3c_datagov_fx_monthly_avg.csv
+  bytes   46439
+  md5     56284f7aa67aa89684d9be1cbad89a02
+  rows 15, columns 462
+  layout  wide (period headers)
+  label columns  DataSeries
+    US Dollar  :: 461 periods, 1988Jan to 2026May (time order), 0 empty
+    Sterling Pound  :: 461 periods, 1988Jan to 2026May (time order), 0 empty
+    Swiss Franc  :: 461 periods, 1988Jan to 2026May (time order), 0 empty
+    Japanese Yen  :: 461 periods, 1988Jan to 2026May (time order), 0 empty
+    Malaysian Ringgit  :: 461 periods, 1988Jan to 2026May (time order), 0 empty
+    Hong Kong Dollar  :: 461 periods, 1988Jan to 2026May (time order), 0 empty
+    Australian Dollar  :: 461 periods, 1988Jan to 2026May (time order), 0 empty
+    Korean Won  :: 281 periods, 2003Jan to 2026May (time order), 180 empty
+    New Taiwan Dollar  :: 281 periods, 2003Jan to 2026May (time order), 180 empty
+    Euro  :: 329 periods, 1999Jan to 2026May (time order), 132 empty
+    Indonesian Rupiah  :: 281 periods, 2003Jan to 2026May (time order), 180 empty
+    Thai Baht  :: 281 periods, 2003Jan to 2026May (time order), 180 empty
+    Renminbi  :: 396 periods, 1993Jun to 2026May (time order), 65 empty
+    Indian Rupee  :: 245 periods, 2006Jan to 2026May (time order), 216 empty
+    Philippine Peso  :: 281 periods, 2003Jan to 2026May (time order), 180 empty
+
+s3d_mas_exchange_rates_page.html
+  bytes   246928
+  md5     e835948e2260ce095b1222d2bbd20935
+  title   Exchange Rates
+
+s3e_mas_eservices_exchangerates.html
+  bytes   65865
+  md5     6178c013f456f512952496cf4c8a4f19
+  title   Monetary Authority of Singapore - Exchange Rates
+
+s4_mas_sneer_weekly.json
+  bytes   126742
+  md5     54966f6d59e0e40d5fb561fedcab21a5
+  layout  MAS chart API, name 'bv_epgs_vep_sneer_mon_w'
+  element keys  date, no_of_rec, updatedat, value  (value not printed)
+  elements 1443  :: 1443 distinct dates, 1999-01-08 to 2026-08-28 (time order), 0 empty
+  updatedat  1 distinct: 2026-09-07T00:00:00
+
+s5a_mas_past_mp_decisions.html
+  bytes   272951
+  md5     355bb0d7cbc7a61ea69532f66fe0ee63
+  title   Past Monetary Policy Decisions
+
+s5b_mas_mps_20010222.html
+  bytes   270191
+  md5     df3fc4171c78150c12af554a2b7b7757
+  title   MAS Monetary Policy Statement - February 2001
+
+s5b_mas_mps_20010712.html
+  bytes   260903
+  md5     0479564770291513c27e6df53e71da9d
+  title   MAS Monetary Policy Statement - July 2001
+
+s5b_mas_mps_20011010.html
+  bytes   255656
+  md5     886913131f1f2eba16c1684b60dfa59f
+  title   MAS Press Statement on Monetary Policy - October 2001
+
+s5b_mas_mps_20020102.html
+  bytes   266272
+  md5     4a90537361e9f44096db33b556383401
+  title   MAS Monetary Policy Statement - January 2002
+
+s5b_mas_mps_20020711.html
+  bytes   265231
+  md5     27a6c0e16b4cd843793b0643c27a3f94
+  title   MAS Monetary Policy Statement - July 2002
+
+s5b_mas_mps_20030102.html
+  bytes   259340
+  md5     84f4f02abbb6899b2189d93b3dcbe924
+  title   MAS Monetary Policy Statement - January 2003
+
+s5b_mas_mps_20030710.html
+  bytes   259396
+  md5     367fd1882bcc363232b228e7461956bb
+  title   MAS Monetary Policy Statement - July 2003
+
+s5b_mas_mps_20031010.html
+  bytes   259036
+  md5     c0aa8f4a0b9bf9215582dabba8098bc1
+  title   MAS Monetary Policy Statement - October 2003
+
+s5b_mas_mps_20040412.html
+  bytes   258912
+  md5     11835206c564a0eb2a18d56cace33018
+  title   MAS Monetary Policy Statement - April 2004
+
+s5b_mas_mps_20041011.html
+  bytes   259481
+  md5     d3c4892a2c853bf29d18215ed2aba420
+  title   MAS Monetary Policy Statement - October 2004
+
+s5b_mas_mps_20050412.html
+  bytes   261074
+  md5     bda142cf98bd2000a12c774cf1d9d030
+  title   MAS Monetary Policy Statement - April 2005
+
+s5b_mas_mps_20051011.html
+  bytes   259316
+  md5     145b5be05f63ba5318d0ea29349cb213
+  title   MAS Monetary Policy Statement - October 2005
+
+s5b_mas_mps_20060411.html
+  bytes   259502
+  md5     85dfe44ab3ee87bcc15858048eaf1ee5
+  title   MAS Monetary Policy Statement - April 2006
+
+s5b_mas_mps_20061010.html
+  bytes   259664
+  md5     66014a027ce7e0b0b1d6aca2a21f72f7
+  title   MAS Monetary Policy Statement - October 2006
+
+s5b_mas_mps_20070410.html
+  bytes   259520
+  md5     aaa1cc10d61ee69a4845fe564ce37f40
+  title   MAS Monetary Policy Statement - April 2007
+
+s5b_mas_mps_20071010.html
+  bytes   261008
+  md5     fb17618cd306b48a183542d1ee7ae743
+  title   MAS Monetary Policy Statement - October 2007
+
+s5b_mas_mps_20080410.html
+  bytes   259985
+  md5     88eb19afca1190ac7a43c68f4bb9b51c
+  title   MAS Monetary Policy Statement - April 2008
+
+s5b_mas_mps_20081010.html
+  bytes   260819
+  md5     18c4d95e40c9f448b94adb8dd50a8516
+  title   MAS Monetary Policy Statement - October 2008
+
+s5b_mas_mps_20090414.html
+  bytes   258931
+  md5     ab375c5417e18badb791c3123b8952bb
+  title   MAS Monetary Policy Statement - April 2009
+
+s5b_mas_mps_20091012.html
+  bytes   259537
+  md5     82661efae765785f9f6b3054005552db
+  title   MAS Monetary Policy Statement - October 2009
+
+s5b_mas_mps_20100414.html
+  bytes   259709
+  md5     6eccc7ce9d0ef9000c6a1606fa5a27ef
+  title   MAS Monetary Policy Statement - April 2010
+
+s5b_mas_mps_20101014.html
+  bytes   260697
+  md5     b4adae513dbb7d60e12ebb11a9c3fedc
+  title   MAS Monetary Policy Statement - October 2010
+
+s5b_mas_mps_20110414.html
+  bytes   260130
+  md5     e0cebdf7b4dd2e105c98f2509bae0ecc
+  title   MAS Monetary Policy Statement - April 2011
+
+s5b_mas_mps_20111014.html
+  bytes   262021
+  md5     2af2e0932a1f31f730a30d882f3b1f51
+  title   MAS Monetary Policy Statement - October 2011
+
+s5b_mas_mps_20120413.html
+  bytes   260311
+  md5     7187232d23c34d867fde6567f9df3ca2
+  title   MAS Monetary Policy Statement - April 2012
+
+s5b_mas_mps_20121012.html
+  bytes   261213
+  md5     ab30eef0bfc30696aedc6bf7ea37cc2e
+  title   MAS Monetary Policy Statement - October 2012
+
+s5b_mas_mps_20130412.html
+  bytes   261063
+  md5     05ababbf81ccd670203be5d5fe55e975
+  title   MAS Monetary Policy Statement - April 2013
+
+s5b_mas_mps_20131014.html
+  bytes   262410
+  md5     6387e8b689c18acf99e995e5f264a9b4
+  title   MAS Monetary Policy Statement - October 2013
+
+s5b_mas_mps_20140414.html
+  bytes   262628
+  md5     14ea009c5852be7dfda8b9f731003a54
+  title   MAS Monetary Policy Statement - April 2014
+
+s5b_mas_mps_20141014.html
+  bytes   261747
+  md5     8e77e32ab34881ff9a52298b5463e2a2
+  title   MAS Monetary Policy Statement - October 2014
+
+s5b_mas_mps_20150128.html
+  bytes   262059
+  md5     054c1a6ea8f207e5861c50c3edf81a00
+  title   MAS Monetary Policy Statement - January 2015
+
+s5b_mas_mps_20150414.html
+  bytes   262272
+  md5     98fa51fd5681e6c161d7db891029f332
+  title   MAS Monetary Policy Statement - April 2015
+
+s5b_mas_mps_20151014.html
+  bytes   261707
+  md5     0921de82fb8c517eed474eb57455efaa
+  title   MAS Monetary Policy Statement - October 2015
+
+s5b_mas_mps_20160414.html
+  bytes   264368
+  md5     7e38783383b0be5d0d7b985858231cae
+  title   MAS Monetary Policy Statement - April 2016
+
+s5b_mas_mps_20161014.html
+  bytes   263354
+  md5     b8b64931ece27a1651c02977d17ac392
+  title   MAS Monetary Policy Statement - October 2016
+
+s5b_mas_mps_20170413.html
+  bytes   262197
+  md5     cd64dad5f644ec4833c3feea1855d8d3
+  title   MAS Monetary Policy Statement - April 2017
+
+s5b_mas_mps_20171013.html
+  bytes   262523
+  md5     6db990ce32c02cdd646f9d2690512d06
+  title   MAS Monetary Policy Statement - October 2017
+
+s5b_mas_mps_20180413.html
+  bytes   262888
+  md5     a2bf74c8a43ccfca7d4a7031efdfad32
+  title   MAS Monetary Policy Statement - April 2018
+
+s5b_mas_mps_20181012.html
+  bytes   260941
+  md5     7792b411a1c9c8798a52f7b3f1518efb
+  title   MAS Monetary Policy Statement - October 2018
+
+s5b_mas_mps_20190412.html
+  bytes   261647
+  md5     d923bde15b7bc25d64b09f758495cafd
+  title   MAS Monetary Policy Statement - April 2019
+
+s5b_mas_mps_20191014.html
+  bytes   261878
+  md5     d6cbab1f336af5e43bc5fb2afd079a0d
+  title   MAS Monetary Policy Statement - October 2019
+
+s5b_mas_mps_20200330.html
+  bytes   263300
+  md5     afa8fd0dc3c7b0d0f43fb2694e226faf
+  title   MAS Monetary Policy Statement - April 2020
+
+s5b_mas_mps_20201014.html
+  bytes   262572
+  md5     50496906f84711f067fbc52eb7424640
+  title   MAS Monetary Policy Statement - October 2020
+
+s5b_mas_mps_20210414.html
+  bytes   260859
+  md5     1d4f10c04b15d3bfe58dc86a4a89301b
+  title   MAS Monetary Policy Statement - April 2021
+
+s5b_mas_mps_20211014.html
+  bytes   261693
+  md5     ff21182d756efcd3bc5452e14d846c53
+  title   MAS Monetary Policy Statement - October 2021
+
+s5b_mas_mps_20220125.html
+  bytes   260112
+  md5     133d70fad38c0d151d975cbb3a4f259a
+  title   MAS Monetary Policy Statement - January 2022
+
+s5b_mas_mps_20220414.html
+  bytes   263487
+  md5     2afce773cd13428fbf8b6be9ba9d0a6c
+  title   MAS Monetary Policy Statement - April 2022
+
+s5b_mas_mps_20220714.html
+  bytes   261426
+  md5     9b7d360f79576e6f3f6f55383c013437
+  title   MAS Monetary Policy Statement - July 2022
+
+s5b_mas_mps_20221014.html
+  bytes   262664
+  md5     2faff3fa406f736840c1bca9fa4bdfda
+  title   MAS Monetary Policy Statement - October 2022
+
+s5b_mas_mps_20230414.html
+  bytes   263376
+  md5     98a22dee48b8518ad74b4f0ba9a76034
+  title   MAS Monetary Policy Statement - April 2023
+
+s5b_mas_mps_20231013.html
+  bytes   261752
+  md5     345646cbbdaa11db87b0adf6f9c55ca5
+  title   MAS Monetary Policy Statement - October 2023
+
+s5b_mas_mps_20240129.html
+  bytes   263110
+  md5     2cef9f08156391c7e82688771ca43eee
+  title   MAS Monetary Policy Statement - January 2024
+
+s5b_mas_mps_20240412.html
+  bytes   261630
+  md5     81730ec9c334432ff51c46a9c0817e2c
+  title   MAS Monetary Policy Statement - April 2024
+
+s5b_mas_mps_20240726.html
+  bytes   261126
+  md5     c6869183b4012d5fb4a353ae551c722b
+  title   MAS Monetary Policy Statement - July 2024
+
+s5b_mas_mps_20241014.html
+  bytes   262158
+  md5     7a4d17223c3896e4dd44344634297e0c
+  title   MAS Monetary Policy Statement - October 2024
+
+s5b_mas_mps_20250124.html
+  bytes   261605
+  md5     adc99d7911518825449a58db6c7812da
+  title   MAS Monetary Policy Statement - January 2025
+
+s5b_mas_mps_20250414.html
+  bytes   261309
+  md5     7acf2ce4ffd2974a2cd626ec6b88d55e
+  title   MAS Monetary Policy Statement - April 2025
+
+s5b_mas_mps_20250730.html
+  bytes   260194
+  md5     d3cc7befd5612d22187a03cc40310b73
+  title   MAS Monetary Policy Statement - July 2025
+
+s5b_mas_mps_20251014.html
+  bytes   262158
+  md5     dceb04bcdb3e8ca88fbb95ec38a7e96a
+  title   MAS Monetary Policy Statement - October 2025
+
+s5b_mas_mps_20260129.html
+  bytes   260711
+  md5     0711dac237048e85e84209d1ab83fb9a
+  title   MAS Monetary Policy Statement - January 2026
+
+s5b_mas_mps_20260414.html
+  bytes   261349
+  md5     9f3e8bf7af3e815c36b87d076074e70c
+  title   MAS Monetary Policy Statement - April 2026
+
+s5b_mas_mps_20260727.html
+  bytes   262037
+  md5     a46991e3ec3da88ea9afa2e42f2d4724
+  title   MAS Monetary Policy Statement - July 2026
+
+s5c_mas_mp_faq_section4.html
+  bytes   260735
+  md5     b1a17b3a52d36239fb6c58de64f5c731
+  title   How does MAS carry out its monetary policy?
+
+s5c_mas_mp_faqs.pdf
+  bytes   465207
+  md5     6f88d086b74953f248a5c2fb2e727578
+  title   (/Title metadata not plain text)
+
+s5d_mas_fx_operations.html
+  bytes   248438
+  md5     d35c94126a62bfeb4c8587be0022fce4
+  title   Foreign exchange operations
+
+s5d_mas_fx_ops_2020_release.html
+  bytes   246954
+  md5     da0f47076e5360d4b139dadce08a0736
+  title   MAS brings forward the date of disclosure of its foreign exchange intervention operations
+
+s5e_mas_advance_release_calendar.html
+  bytes   268726
+  md5     5455e0d58365fbbed9d7f4552d49991b
+  title   Advance Release Calendar
+
+s5f_mas_press_statement_jul2005.html
+  bytes   257149
+  md5     840954881053401ad7c784e22dc63b35
+  title   MAS Press Statement - July 2005
+
+s6a_singstat_gdp_yoy_quarterly_M015631.json
+  bytes   166351
+  md5     4d4971b4cfa3e78912274b873bf98239
+  title   Gross Domestic Product, Year On Year Growth Rate, Quarterly
+  id      M015631
+  last updated 11/08/2026
+  series  32
+    1 | GDP At Current Market Prices | Per Cent  :: 202 periods, 1976 1Q to 2026 2Q (time order)
+    1.1 | Goods Producing Industries | Per Cent  :: 202 periods, 1976 1Q to 2026 2Q (time order)
+    1.1.1 | Manufacturing | Per Cent  :: 202 periods, 1976 1Q to 2026 2Q (time order)
+    1.1.2 | Construction | Per Cent  :: 202 periods, 1976 1Q to 2026 2Q (time order)
+    1.1.3 | Utilities | Per Cent  :: 202 periods, 1976 1Q to 2026 2Q (time order)
+    1.1.4 | Other Goods Industries | Per Cent  :: 202 periods, 1976 1Q to 2026 2Q (time order)
+    1.2 | Services Producing Industries | Per Cent  :: 202 periods, 1976 1Q to 2026 2Q (time order)
+    1.2.1 | Wholesale & Retail Trade | Per Cent  :: 202 periods, 1976 1Q to 2026 2Q (time order)
+    1.2.1.1 | Wholesale Trade | Per Cent  :: 82 periods, 2006 1Q to 2026 2Q (time order)
+    1.2.1.2 | Retail Trade | Per Cent  :: 82 periods, 2006 1Q to 2026 2Q (time order)
+    1.2.2 | Transportation & Storage | Per Cent  :: 202 periods, 1976 1Q to 2026 2Q (time order)
+    1.2.3 | Accommodation & Food Services | Per Cent  :: 202 periods, 1976 1Q to 2026 2Q (time order)
+    1.2.3.1 | Accommodation | Per Cent  :: 82 periods, 2006 1Q to 2026 2Q (time order)
+    1.2.3.2 | Food & Beverage Services | Per Cent  :: 82 periods, 2006 1Q to 2026 2Q (time order)
+    1.2.4 | Information & Communications | Per Cent  :: 202 periods, 1976 1Q to 2026 2Q (time order)
+    1.2.5 | Finance & Insurance | Per Cent  :: 202 periods, 1976 1Q to 2026 2Q (time order)
+    1.2.6 | Real Estate, Professional Services And Administrative & Support Services | Per Cent  :: 202 periods, 1976 1Q to 2026 2Q (time order)
+    1.2.6.1 | Real Estate | Per Cent  :: 82 periods, 2006 1Q to 2026 2Q (time order)
+    1.2.6.2 | Professional Services | Per Cent  :: 82 periods, 2006 1Q to 2026 2Q (time order)
+    1.2.6.3 | Administrative & Support Services | Per Cent  :: 82 periods, 2006 1Q to 2026 2Q (time order)
+    1.2.7 | Other Services Industries | Per Cent  :: 202 periods, 1976 1Q to 2026 2Q (time order)
+    1.2.7.1 | Public Administration & Defence | Per Cent  :: 82 periods, 2006 1Q to 2026 2Q (time order)
+    1.2.7.2 | Education | Per Cent  :: 82 periods, 2006 1Q to 2026 2Q (time order)
+    1.2.7.3 | Health & Social Services | Per Cent  :: 82 periods, 2006 1Q to 2026 2Q (time order)
+    1.2.7.4 | Arts, Entertainment & Recreation | Per Cent  :: 82 periods, 2006 1Q to 2026 2Q (time order)
+    1.2.7.5 | Other Services - Others | Per Cent  :: 82 periods, 2006 1Q to 2026 2Q (time order)
+    1.3 | Ownership Of Dwellings | Per Cent  :: 202 periods, 1976 1Q to 2026 2Q (time order)
+    1.4 | Gross Value Added At Basic Prices | Per Cent  :: 202 periods, 1976 1Q to 2026 2Q (time order)
+    1.5 | Add: Taxes On Products | Per Cent  :: 202 periods, 1976 1Q to 2026 2Q (time order)
+    2 | GDP In Chained (2015) Dollars | Per Cent  :: 202 periods, 1976 1Q to 2026 2Q (time order)
+    2.1 | Goods Producing Industries | Per Cent  :: 202 periods, 1976 1Q to 2026 2Q (time order)
+    2.1.1 | Manufacturing | Per Cent  :: 178 periods, 1976 1Q to 2020 2Q (time order)
+
+s6b_singstat_gdp_chained2015_M015661.json
+  bytes   162765
+  md5     1423ec7ffcc2e47c80ef5b6bc66a29e0
+  title   Gross Domestic Product In Chained (2015) Dollars, By Industry (SSIC 2020), Quarterly
+  id      M015661
+  last updated 11/08/2026
+  series  29
+    1 | GDP In Chained (2015) Dollars | Million Dollars  :: 206 periods, 1975 1Q to 2026 2Q (time order)
+    1.1 | Goods Producing Industries | Million Dollars  :: 206 periods, 1975 1Q to 2026 2Q (time order)
+    1.1.1 | Manufacturing | Million Dollars  :: 206 periods, 1975 1Q to 2026 2Q (time order)
+    1.1.2 | Construction | Million Dollars  :: 206 periods, 1975 1Q to 2026 2Q (time order)
+    1.1.3 | Utilities | Million Dollars  :: 206 periods, 1975 1Q to 2026 2Q (time order)
+    1.1.4 | Other Goods Industries | Million Dollars  :: 206 periods, 1975 1Q to 2026 2Q (time order)
+    1.2 | Services Producing Industries | Million Dollars  :: 206 periods, 1975 1Q to 2026 2Q (time order)
+    1.2.1 | Wholesale & Retail Trade | Million Dollars  :: 206 periods, 1975 1Q to 2026 2Q (time order)
+    1.2.1.1 | Wholesale Trade | Million Dollars  :: 86 periods, 2005 1Q to 2026 2Q (time order)
+    1.2.1.2 | Retail Trade | Million Dollars  :: 86 periods, 2005 1Q to 2026 2Q (time order)
+    1.2.2 | Transportation & Storage | Million Dollars  :: 206 periods, 1975 1Q to 2026 2Q (time order)
+    1.2.3 | Accommodation & Food Services | Million Dollars  :: 206 periods, 1975 1Q to 2026 2Q (time order)
+    1.2.3.1 | Accommodation | Million Dollars  :: 86 periods, 2005 1Q to 2026 2Q (time order)
+    1.2.3.2 | Food & Beverage Services | Million Dollars  :: 86 periods, 2005 1Q to 2026 2Q (time order)
+    1.2.4 | Information & Communications | Million Dollars  :: 206 periods, 1975 1Q to 2026 2Q (time order)
+    1.2.5 | Finance & Insurance | Million Dollars  :: 206 periods, 1975 1Q to 2026 2Q (time order)
+    1.2.6 | Real Estate, Professional Services And Administrative & Support Services | Million Dollars  :: 206 periods, 1975 1Q to 2026 2Q (time order)
+    1.2.6.1 | Real Estate | Million Dollars  :: 86 periods, 2005 1Q to 2026 2Q (time order)
+    1.2.6.2 | Professional Services | Million Dollars  :: 86 periods, 2005 1Q to 2026 2Q (time order)
+    1.2.6.3 | Administrative & Support Services | Million Dollars  :: 86 periods, 2005 1Q to 2026 2Q (time order)
+    1.2.7 | Other Services Industries | Million Dollars  :: 206 periods, 1975 1Q to 2026 2Q (time order)
+    1.2.7.1 | Public Administration & Defence | Million Dollars  :: 86 periods, 2005 1Q to 2026 2Q (time order)
+    1.2.7.2 | Education | Million Dollars  :: 86 periods, 2005 1Q to 2026 2Q (time order)
+    1.2.7.3 | Health & Social Services | Million Dollars  :: 86 periods, 2005 1Q to 2026 2Q (time order)
+    1.2.7.4 | Arts, Entertainment & Recreation | Million Dollars  :: 86 periods, 2005 1Q to 2026 2Q (time order)
+    1.2.7.5 | Other Services - Others | Million Dollars  :: 86 periods, 2005 1Q to 2026 2Q (time order)
+    1.3 | Ownership Of Dwellings | Million Dollars  :: 206 periods, 1975 1Q to 2026 2Q (time order)
+    1.4 | Gross Value Added At Basic Prices | Million Dollars  :: 206 periods, 1975 1Q to 2026 2Q (time order)
+    1.5 | Add: Taxes On Products | Million Dollars  :: 206 periods, 1975 1Q to 2026 2Q (time order)
+
+s6c_datagov_gdp_yoy_quarterly.csv
+  bytes   50181
+  md5     9b83e87d02b4a3f3964dacba652be9e2
+  rows 58, columns 203
+  layout  wide (period headers)
+  label columns  DataSeries
+    GDP At Current Market Prices  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+        Goods Producing Industries  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+            Manufacturing  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+            Construction  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+            Utilities  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+            Other Goods Industries  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+        Services Producing Industries  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+            Wholesale & Retail Trade  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+                Wholesale Trade  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+                Retail Trade  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+            Transportation & Storage  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+            Accommodation & Food Services  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+                Accommodation  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+                Food & Beverage Services  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+            Information & Communications  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+            Finance & Insurance  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+            Real Estate, Professional Services And Administrative & Support Services  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+                Real Estate  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+                Professional Services  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+                Administrative & Support Services  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+            Other Services Industries  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+                Public Administration & Defence  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+                Education  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+                Health & Social Services  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+                Arts, Entertainment & Recreation  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+                Other Services - Others  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+        Ownership Of Dwellings  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+        Gross Value Added At Basic Prices  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+        Add: Taxes On Products  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+    GDP In Chained (2015) Dollars  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+        Goods Producing Industries  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+            Manufacturing  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+            Construction  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+            Utilities  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+            Other Goods Industries  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+        Services Producing Industries  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+            Wholesale & Retail Trade  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+                Wholesale Trade  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+                Retail Trade  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+            Transportation & Storage  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+            Accommodation & Food Services  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+                Accommodation  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+                Food & Beverage Services  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+            Information & Communications  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+            Finance & Insurance  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+            Real Estate, Professional Services And Administrative & Support Services  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+                Real Estate  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+                Professional Services  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+                Administrative & Support Services  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+            Other Services Industries  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+                Public Administration & Defence  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+                Education  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+                Health & Social Services  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+                Arts, Entertainment & Recreation  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+                Other Services - Others  :: 82 periods, 20061Q to 20262Q (time order), 120 empty
+        Ownership Of Dwellings  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+        Gross Value Added At Basic Prices  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+        Add: Taxes On Products  :: 202 periods, 19761Q to 20262Q (time order), 0 empty
+
+s7a_singstat_cpi_monthly_M213751.json
+  bytes   182931
+  md5     a6ef0f94ae00a08f8f789add4cbe58c9
+  title   Consumer Price Index (CPI), 2024 As Base Year, Monthly
+  id      M213751
+  last updated 23/09/2026
+  series  22
+    1 | All Items | Index  :: 788 periods, 1961 Jan to 2026 Aug (time order)
+    1.0 | Food | Index  :: 788 periods, 1961 Jan to 2026 Aug (time order)
+    1.01 | Food Excl Food & Beverage Serving Services | Index  :: 440 periods, 1990 Jan to 2026 Aug (time order)
+    1.01.1 | Rice & Cereal Products | Index  :: 260 periods, 2005 Jan to 2026 Aug (time order)
+    1.01.1.1 | Rice | Index  :: 140 periods, 2015 Jan to 2026 Aug (time order)
+    1.01.1.2 | Flour | Index  :: 140 periods, 2015 Jan to 2026 Aug (time order)
+    1.01.1.3 | Bread | Index  :: 140 periods, 2015 Jan to 2026 Aug (time order)
+    1.01.1.4 | Macaroni, Noodles & Similar Pasta Products | Index  :: 140 periods, 2015 Jan to 2026 Aug (time order)
+    1.01.1.5 | Biscuits & Cookies | Index  :: 140 periods, 2015 Jan to 2026 Aug (time order)
+    1.01.1.6 | Cakes & Pastries | Index  :: 140 periods, 2015 Jan to 2026 Aug (time order)
+    1.01.1.7 | Breakfast Cereals | Index  :: 140 periods, 2015 Jan to 2026 Aug (time order)
+    1.01.1.8 | Other Cereal Products Nec | Index  :: 140 periods, 2015 Jan to 2026 Aug (time order)
+    1.01.2 | Meat | Index  :: 260 periods, 2005 Jan to 2026 Aug (time order)
+    1.01.2.1 | Pork, Chilled Or Frozen | Index  :: 140 periods, 2015 Jan to 2026 Aug (time order)
+    1.01.2.2 | Beef, Chilled Or Frozen | Index  :: 140 periods, 2015 Jan to 2026 Aug (time order)
+    1.01.2.3 | Mutton, Chilled Or Frozen | Index  :: 140 periods, 2015 Jan to 2026 Aug (time order)
+    1.01.2.4 | Poultry, Chilled Or Frozen | Index  :: 140 periods, 2015 Jan to 2026 Aug (time order)
+    1.01.2.5 | Meat, Preserved Or Prepared | Index  :: 140 periods, 2015 Jan to 2026 Aug (time order)
+    1.01.3 | Fish & Other Seafood | Index  :: 260 periods, 2005 Jan to 2026 Aug (time order)
+    1.01.3.1 | Fish, Fresh Or Chilled | Index  :: 140 periods, 2015 Jan to 2026 Aug (time order)
+    1.01.3.2 | Fish, Frozen | Index  :: 140 periods, 2015 Jan to 2026 Aug (time order)
+    1.01.3.3 | Other Seafood, Fresh, Chilled Or Frozen | Index  :: 104 periods, 2015 Jan to 2023 Aug (time order)
+
+w1_hkma_lers_how_it_works.html
+  bytes   127856
+  md5     9e41c00504e5b1e165915a6aa5cde4bc
+  title   Hong Kong Monetary Authority - How Does the LERS Work?
+
+w2a_boj_fx_intervention_outline.html
+  bytes   43763
+  md5     fa0a0fe4341e8fdc719a7a12e7ac5e70
+  title   Outline of the Bank of Japan's Foreign Exchange Intervention Operations : Bank of Japan
+
+w2b_mof_feio_index.html
+  bytes   17490
+  md5     f1434b7a2b738f4781a4d58d615656d1
+  title   Foreign Exchange Intervention Operations : Ministry of Finance
+
+w2c_mof_feio_quarterly_index.html
+  bytes   18550
+  md5     62301c8f8fa3f5ce0de1e77d1bdd9c53
+  title   Foreign Exchange Intervention Operations (Quarterly Release) : Ministry of Finance
+
+w3_bnm_fx_milestones.html
+  bytes   237516
+  md5     997d2a21a114423e4d82e897b21370fb
+  title   Significant milestones in the Malaysian Foreign Exchange Market - Bank Negara Malaysia
+
+w4_pboc_20050721_reform.html
+  bytes   27889
+  md5     d86aa5a2086fb9e4a959c2039ab2c6a3
+  title   Spokesman of the People''s Bank of China on the Reform of the RMB Exchange Rate Regime
+
+-------------------------------------------------------------------------------
