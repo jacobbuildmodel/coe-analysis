@@ -561,7 +561,14 @@ As for the pwm piece:
 - every number printed goes through one function;
 - an independent reproduction script re-derives every scored number.
 
-No script is written at Checkpoint 0, apart from the coverage lister.
+Written so far:
+- `00_coverage.py`, the coverage lister;
+- `03_mps_candidates.py`, which extracts the decision-paragraph candidates;
+- `04_mps_coding.py`, which writes `office/MPS_CODING.csv` from the codes
+  and checks every quote.
+
+None reads an exchange-rate, GDP or CPI value. All three go into the seal
+manifest.
 
 ## 7. Sensitivity B and other descriptive output (not scored)
 
@@ -669,9 +676,31 @@ Brier score is the mean over them. A test not scored drops out of both.
 2. **`office/MPS_CODING.csv`**, from the statements' decision paragraphs by
    the MPS coding rule (section 5), before the seal. Any AMBIGUOUS row is
    put to the checker.
+   - **Done 4 October 2026.** 62 rows, one per statement. Every quote is
+     checked verbatim against its paragraph by `04_mps_coding.py`.
+   - **Slope and width** agree with S5a, MAS's own decisions table, on all
+     62 rows.
+   - **For the checker: the centre on 8 rows.** On six, MAS re-centred "at
+     the prevailing level" with no direction word, so the rule codes them
+     unchanged and flags them: 2 Jan 2002, 10 Jul 2003, 14 Apr 2009, 14 Apr
+     2010, 30 Mar 2020 and 14 Apr 2022. On two (14 Jul and 14 Oct 2022), "up
+     to its prevailing level" is AMBIGUOUS. S5a gives a direction for all
+     eight in MAS's own words: down, down, down, up, down, up, up, up.
+   - **Proposed resolution, not applied.** Take the direction from S5a's
+     Level cell. It is MAS's record of the decision, not a reading of the
+     S$NEER, so no outcome is looked up. Applied, it would change `p` on
+     those eight rows. Left as coded, T7 counts all eight re-centrings as
+     0, which leans T7 toward FAIL. The checker decides before the seal.
+   - **Two more rows are flagged as coded from MAS's later descriptions:**
+     22 Feb 2001 (own paragraph excluded) and 12 Apr 2004 (own decision
+     paragraph not caught by the phrase list).
+   - **What was seen beyond the decisions** is in SOURCES_REPORT section 1A.
+     That includes one S$NEER outcome sentence (14 Apr 2016).
 3. **Jacob's confidences** for T1, T2, T3, T4 and T7.
 4. **The windows and the sensitivities** (section 5): accepted or changed.
 5. **The analysis scripts, the synthetic suite, the SEALED guard and the
    seal manifest**, as for the pwm piece.
 6. **The answer date: December 2026.** The data is monthly and quick to
    run. January 2027 only if the downloads slip.
+7. **The seal date:** to follow, once items 2 (the checker's ruling on the
+   eight centre rows), 3 and 5 are done.

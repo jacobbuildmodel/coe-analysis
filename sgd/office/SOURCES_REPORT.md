@@ -150,6 +150,80 @@ The seal is only worth something if it is clear what had been seen.
      T7 (from 2001, the first MAS decision listed), T1's second check, and
      the long-run sensitivity of T2 and T3.
 
+## 1A. Seen while coding MAS's statements (4 October 2026)
+
+**How the statements were read.**
+- The coding rule (THESIS section 5) was committed at 0c69c80 before any
+  statement was opened.
+- `03_mps_candidates.py` then wrote only the candidate decision paragraphs
+  to `office/MPS_CANDIDATES.txt`, by the rule's phrase lists. That file is
+  all the researcher read of the 62 statements.
+- No other paragraph was written or read: 1,059 paragraphs in all, of which
+  72 were candidates.
+- One paragraph (22 February 2001) matched a decision phrase but also an
+  outcome marker. It was excluded and not read.
+
+**The phrase filter is not perfect.** Several candidate paragraphs carried
+more than a decision. Everything seen beyond the decision itself is listed
+here.
+
+1. **An S$NEER outcome (the one value-like item).** 14 April 2016, para 16:
+   "The actual outcome of S$NEER movements over the six months since October
+   2015 has in fact been a zero percent appreciation compared to the
+   preceding six-month period."
+   - This says MAS's own index was flat, by MAS's measure, over October
+     2015 to April 2016.
+   - It bears on one T7 interval (14 Oct 2015 to 14 Apr 2016) and on
+     nothing else scored.
+   - The outcome filter missed it: its wording is "S$NEER movements ... has
+     been", not "S$NEER has".
+2. **MAS's inflation forecasts and outlook** (not S1 to S7 values; they bear
+   only on T7's CPI sensitivity, which is not scored).
+   - 10 Jul 2003: CPI inflation "expected to stay below 2% into 2004".
+   - 10 Oct 2008, para 8: MAS's parsing merged the outlook section with the
+     decision, so the paragraph also gives:
+     - CPI inflation projected at 6-7% for 2008;
+     - MAS underlying inflation at 5-6% for 2008;
+     - 2.5-3.5% CPI inflation forecast for 2009, with underlying inflation
+       around 2%;
+     - growth "expected to remain below potential".
+   - 14 Oct 2010: the aim to "cap CPI inflation at 2-3% in 2011 from
+     2.5-3.0% in 2010", and underlying inflation "around 2% in 2010 and 2-3%
+     next year".
+   - 14 Apr 2023: "imported inflation turning more negative and core
+     inflation expected to ease materially by end-2023".
+3. **Qualitative descriptions of the economy or the exchange rate** (no
+   numbers).
+   - 12 Jul 2001: growth "came off its cyclical high and moderated to a
+     slower pace".
+   - 2 Jan 2002: the current S$NEER level "supportive of economic recovery
+     and growth".
+   - 12 Apr 2004: "recovery in the domestic economy, in a low inflation
+     environment".
+   - 12 Apr 2005: "With the S$NEER currently close to the mid-point of the
+     policy band".
+   - 10 Oct 2007: "The Singapore economy has expanded at a rapid pace in
+     2007".
+   - 10 Apr 2008: "The gradual appreciation of the S$ exchange rate over the
+     past few years has helped to mitigate inflationary pressures".
+   - 10 Oct 2008, para 2: "amidst sustained economic growth".
+   - 14 Oct 2016: "near-term weakness in inflation and growth".
+   - 14 Apr 2009: "no reason for any undue weakening of the Singapore
+     dollar".
+
+   These are of the kind already in the researcher's background knowledge
+   (section 1, item 5).
+4. **MAS's own descriptions of earlier decisions** (decisions, not
+   outcomes). Some candidates recap past decisions, and three rows use
+   them:
+   - 22 Feb 2001, from 12 Jul 2001, para 3;
+   - 12 Apr 2004, from 10 Oct 2008, para 2 and 11 Oct 2005, para 12;
+   - the direction notes for July 2003 and April 2009.
+
+   Every such use is marked in the `note` column of `MPS_CODING.csv`.
+5. **S5a, MAS's decisions table,** was read in full: 62 rows of Slope,
+   Width and Level changes. It holds decisions only.
+
 ## 2. Checkpoint 0: data feasibility, test by test
 
 Status words:
