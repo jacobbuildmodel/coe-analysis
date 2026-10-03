@@ -196,23 +196,44 @@ class Branches(Tmp):
         self.assertEqual(R["T7_outcome"], "INCONCLUSIVE")
         self.assertIn("by less than the line", R["verdict_B"])
 
+    def thesis_with(self, root, confs):
+        """A copy of THESIS.md in the fixture root with the five confidences
+        set to `confs` (percent strings), or to [JACOB] when confs is None."""
+        import re
+        with open(os.path.join(SGD, "THESIS.md"), encoding="utf-8") as fh:
+            text = fh.read()
+        pat = re.compile(r"\*\*Confidence at seal: (?:\[JACOB\]\.|\d+(?:\.\d+)?%)\*\*")
+        self.assertEqual(len(pat.findall(text)), 5)
+        vals = iter(confs or ["[JACOB]"] * 5)
+        text = pat.sub(lambda m: "**Confidence at seal: " + (lambda v: v + "." if v == "[JACOB]" else v + "%")(
+            next(vals)) + "**", text)
+        with open(os.path.join(root, "THESIS.md"), "w", encoding="utf-8") as fh:
+            fh.write(text)
+
     def test_scorecard_with_and_without_confidences(self):
         root = self.build()
+        self.thesis_with(root, None)
         R = run_through(root)
         self.assertEqual(R["expected_held"], "")
         self.assertEqual(R["conf_T1"], "[JACOB]")
-        with open(os.path.join(SGD, "THESIS.md"), encoding="utf-8") as fh:
-            text = fh.read()
-        for c in ("60", "70", "25", "65", "65"):
-            text = text.replace("**Confidence at seal: [JACOB].**", f"**Confidence at seal: {c}%.**", 1)
-        with open(os.path.join(root, "THESIS.md"), "w", encoding="utf-8") as fh:
-            fh.write(text)
+        self.thesis_with(root, ["60", "70", "25", "65", "65"])
         R = run_through(root)
         conf = [0.60, 0.70, 0.25, 0.65, 0.65]
         self.assertAlmostEqual(float(R["expected_held"]), sum(conf), places=6)
         brier = sum((c - 1) ** 2 for c in conf) / 5          # all five survive in the default fixture
         self.assertAlmostEqual(float(R["brier"]), brier, places=6)
         self.assertEqual(R["n_scored"], "5")
+
+    def test_not_scored_drops_out_of_count_and_brier(self):
+        root = self.build(jpy_scored=0.6)                     # T2's premise false: T2 not scored
+        self.thesis_with(root, ["50", "90", "40", "80", "30"])
+        R = run_through(root)
+        scored = R["scored_tests"].split()
+        self.assertNotIn("T2", scored)
+        conf = {"T1": 0.50, "T3": 0.40, "T4": 0.80, "T7": 0.30}
+        self.assertAlmostEqual(float(R["expected_held"]), sum(conf[t] for t in scored), places=6)
+        brier = sum((conf[t] - (R[t + "_outcome"] == "SURVIVE")) ** 2 for t in scored) / len(scored)
+        self.assertAlmostEqual(float(R["brier"]), brier, places=6)
 
 
 class Units(unittest.TestCase):

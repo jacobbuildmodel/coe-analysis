@@ -1,13 +1,16 @@
 # THESIS -- sgd piece
 
-**UNSEALED DRAFT. First draft 29 September 2026 (6f9b6c2); revised 3 October
-2026 after the checker review of 6f9b6c2. Not sealed. Written before any data
-file was received or opened. The files were retrieved on 3 October 2026 and
-listed for labels and coverage only (`raw/RETRIEVED.txt`, RECEIVED); no value
-has been opened. Everything below can still change before
-the seal, by Jacob's decision or on receipt of the files. Nothing is scored
-against it until it is sealed in a commit that adds only `SEAL_MANIFEST.md`,
-as for the pwm piece.**
+**SEALED, 3 October 2026 (Singapore time), in the commit "sgd: SEAL", which
+adds only `SEAL_MANIFEST.md` (the md5 of this file, the MPS coding sheet,
+RETRIEVED.txt and every script). Written and sealed before any exchange-rate,
+GDP or CPI value was opened: the files were retrieved on 3 October 2026 and
+listed for labels and coverage only (`raw/RETRIEVED.txt`, RECEIVED). After
+the seal this file is never edited; changes go in `THESIS_ADDENDUM.md`,
+dated, and are reported, not applied to the scoring.**
+
+First draft 29 September 2026 (6f9b6c2); revised 3 October 2026 after the
+checker reviews of 6f9b6c2, 3b8026f and 1470d51; confidences filled 3
+October 2026.
 
 Author: `sgd` (Claude Code session). Repository: coe-analysis, subdirectory
 `sgd/`, branch `sgd-wip`, from `origin/main` at 6e4acf0. The title and the
@@ -19,8 +22,14 @@ for titles, series keys, URLs and documented coverage, recorded in
 policy settings, policy-decision titles) and the background knowledge held
 when the windows were set are listed in `office/SOURCES_REPORT.md` section 1.
 
-Confidences are **the researcher's proposals**, marked as such, with
-`[JACOB]` where Jacob's number goes. Jacob sets his; only his are scored.
+**Confidences are Jacob's** ("Confidence at seal: NN%"), set 3 October 2026,
+with his Why lines verbatim. The researcher's proposals are kept beside them,
+for the record, and are not scored.
+- **Each confidence is the chance the test holds IF it is scored.** A test
+  not scored drops out of both the count and the Brier score (section 8).
+- **Jacob's expected count:** 2.68 of 5.
+- **What Jacob had seen before setting them** is in SOURCES_REPORT section
+  1B. He pulled no BIS data.
 
 Revision after the checker review of 6f9b6c2:
 - **Five scored tests:** T1 (design), T2 (yen), T3 (ringgit), T4 (steadiest)
@@ -54,12 +63,12 @@ Singapore dollar got stronger.
 trading partners' currencies on a slow, deliberate path. So most of a move
 against one currency is that currency moving, not the Singapore dollar.
 
-**Sealed question 1 (draft wording, window from section 5).** "From January
+**Sealed question 1 (window from section 5).** "From January
 2021 to December 2025, how much of the Singapore dollar's rise against the
 yen and the ringgit came from the Singapore dollar rising against everyone,
 and how much from those currencies falling against everyone?"
 
-**Sealed question 2 (draft wording).** "Did the Singapore dollar's broad path
+**Sealed question 2.** "Did the Singapore dollar's broad path
 follow MAS's announced policy decisions more closely than Singapore's
 growth?"
 
@@ -361,7 +370,11 @@ the rate Singapore itself publishes.
   That can leave a larger residual than for the yen. And on the scored
   window a small `b_MYR` would magnify any residual's share. Both lean T1
   toward FAIL for MYR.
-- **Confidence at seal: [JACOB].** Researcher's proposal: 60%.
+- **Confidence at seal: 55%** (Jacob). Why (Jacob, verbatim): "The yen
+  checks and the ringgit check since 2005 involve big moves and are likely
+  to pass, but our dollar's move against the ringgit over 2021-25 is small,
+  and the unexplained leftover could exceed 20 per cent of it."
+- Researcher's proposal, for the record: 60%.
   - Chain-linked BIS indices on broad baskets usually account for most of a
     bilateral move.
   - But T1 now has four chances to fail (two currencies, two windows).
@@ -390,7 +403,11 @@ the rate Singapore itself publishes.
   for the window, and the verdict says so.
 - **Why 0.50.** The rival says "most"; half is where most begins. This is
   not a judgement.
-- **Confidence at seal: [JACOB].** Researcher's proposal: 70%.
+- **Confidence at seal: 90%** (Jacob). Why (Jacob, verbatim): "By my rough
+  reckoning, our dollar rose roughly 40 to 50 per cent against the yen over
+  the window, far more than its own gradual climb against everyone, so most
+  of the rise has to come from the yen's side."
+- Researcher's proposal, for the record: 70%.
   - General knowledge (SOURCES_REPORT section 1, item 5): the yen fell a
     long way against the US dollar over these years.
   - MAS tightened in 2021-2022, so `s` is positive too.
@@ -414,7 +431,11 @@ the rate Singapore itself publishes.
   dollar "rising against everyone", and part of the Singapore dollar's rise
   shows up as the ringgit "falling against everyone". A result either way
   is weaker evidence for the ringgit than for the yen.
-- **Confidence at seal: [JACOB].** Researcher's proposal: 25%.
+- **Confidence at seal: 8%** (Jacob). Why (Jacob, verbatim): "The ringgit was
+  weak in 2022-23 but led Asia in both 2024 and 2025, rising strongly
+  against the yen, won and rupiah, so its index against everyone probably
+  ended the window higher than it started."
+- Researcher's proposal, for the record: 25%.
   - The ringgit weakened in 2022-2024 (general knowledge, SOURCES_REPORT
     section 1, item 5).
   - But one index point seen before the seal (SOURCES_REPORT section 1,
@@ -498,8 +519,12 @@ broad index swings with the US dollar's, and a free float (Japan).
     peg predicts it is close to 1.
   - The yen's rank. The float predicts it is among the least steady.
   - The same ranking over the scored window, January 2021 to December 2025.
-- **Confidence at seal: [JACOB].** Researcher's proposal: 65%. A crawling
-  band damps month-to-month moves by design. The main risk is the renminbi
+- **Confidence at seal: 80%** (Jacob). Why (Jacob, verbatim): "A managed
+  crawl with re-centrings only every few years is likely to beat floating
+  currencies on month-to-month steadiness, and second place still counts.
+  The real risk is the Hong Kong dollar, whose basket is anchored by the
+  yuan."
+- Researcher's proposal, for the record: 65%. A crawling band damps month-to-month moves by design. The main risk is the renminbi
   and the ringgit, both managed, sitting close.
 
 ### T7. Policy or growth: what the broad path followed
@@ -565,8 +590,11 @@ broad index swings with the US dollar's, and a free float (Japan).
   - A finer slope coding: an ordinal step up for each "increase", down for
     each "reduce", reset to 0 at "zero per cent".
   - Intervals from 2010 only.
-- **Confidence at seal: [JACOB].** Researcher's proposal: 65%. The band
-  makes the prediction likely by construction (the lean above). The
+- **Confidence at seal: 35%** (Jacob). Why (Jacob, verbatim): "MAS often
+  eases and tightens as growth turns, so the two usually line up together,
+  and "clearly better" needs episodes like 2021-22, when MAS tightened on
+  inflation while growth was slowing, to carry the result."
+- Researcher's proposal, for the record: 65%. The band makes the prediction likely by construction (the lean above). The
   coarse score and the shared cause are what could hold D under 0.20.
 
 ### Computation, fixed with the analysis scripts (before the seal)
@@ -672,6 +700,9 @@ Singapore dollar was the steadiest".
 **The scorecard.** Five tests: T1, T2, T3, T4 and T7. Gate C is not
 counted. Held against expected is counted over the tests scored, and the
 Brier score is the mean over them. A test not scored drops out of both.
+- Each confidence is the chance the test holds if it is scored.
+- Jacob's expected count, all five scored, is 2.68 (0.55 + 0.90 + 0.08 +
+  0.80 + 0.35).
 
 ## 9. What would prove the framing wrong, and what it leaves out
 
@@ -690,43 +721,19 @@ Brier score is the mean over them. A test not scored drops out of both.
     are context (section 7).
   - **How many Singaporeans hold the belief.** No survey was sought.
 
-## 10. Open before the seal
+## 10. Open before the seal: all closed, 3 October 2026
 
-1. **The downloads** (`raw/RETRIEVED.txt`) and the coverage listing
-   (`00_coverage.py`).
-   - Every "pending receipt" row in SOURCES_REPORT section 2 closes here, or
-     its missing-series rule applies.
-   - Done 3 October 2026: retrieved by the researcher after Jacob opened
-     network access; every series the scored tests use is present and
-     complete (SOURCES_REPORT section 2A).
-2. **`office/MPS_CODING.csv`**, from the statements' decision paragraphs by
-   the MPS coding rule (section 5), before the seal. Any AMBIGUOUS row is
-   put to the checker.
-   - **Done 3 October 2026.** 62 rows, one per statement. Every quote is
-     checked verbatim against its paragraph by `04_mps_coding.py`.
-   - **Slope and width** agree with S5a, MAS's own decisions table, on all
-     62 rows.
-   - **For the checker: the centre on 8 rows.** On six, MAS re-centred "at
-     the prevailing level" with no direction word, so the rule codes them
-     unchanged and flags them: 2 Jan 2002, 10 Jul 2003, 14 Apr 2009, 14 Apr
-     2010, 30 Mar 2020 and 14 Apr 2022. On two (14 Jul and 14 Oct 2022), "up
-     to its prevailing level" is AMBIGUOUS. S5a gives a direction for all
-     eight in MAS's own words: down, down, down, up, down, up, up, up.
-   - **Ruled 3 October 2026: the direction comes from S5a's Level cell.**
-     It is applied in `04_mps_coding.py`, with the statement-based code and
-     the source kept per row (section 5).
-   - **Two more rows are flagged as coded from MAS's later descriptions:**
-     22 Feb 2001 (own paragraph excluded) and 12 Apr 2004 (own decision
-     paragraph not caught by the phrase list).
-   - **What was seen beyond the decisions** is in SOURCES_REPORT section 1A.
-     That includes one S$NEER outcome sentence (14 Apr 2016).
-3. **Jacob's confidences** for T1, T2, T3, T4 and T7.
-4. **The windows and the sensitivities** (section 5): accepted or changed.
-5. **The analysis scripts, the synthetic suite, the SEALED guard and the
-   seal manifest**, as for the pwm piece.
-   - Done 3 October 2026: 19 synthetic tests pass.
-   - `14_manifest.py --seal` writes `SEAL_MANIFEST.md` in the seal commit.
-6. **The answer date: December 2026.** The data is monthly and quick to
-   run. January 2027 only if the downloads slip.
-7. **The seal date:** to follow, once item 3 (Jacob's confidences) is done.
-   Items 2 and 5 are done.
+1. **The downloads and the coverage listing.** Done (`raw/RETRIEVED.txt`,
+   RECEIVED); every series the scored tests use is present and complete
+   (SOURCES_REPORT section 2A).
+2. **`office/MPS_CODING.csv`.** Done. 62 rows, coded by the rule in section
+   5, with the checker's ruling on the eight centre rows applied.
+3. **Jacob's confidences.** Done: T1 55%, T2 90%, T3 8%, T4 80%, T7 35%,
+   with his Why lines (section 6). Expected 2.68 of 5.
+4. **The windows and the sensitivities** (section 5). Accepted.
+5. **The analysis scripts, the synthetic suite and the SEALED guard.** Done.
+   `14_manifest.py --seal` writes `SEAL_MANIFEST.md` in the seal commit.
+   `sgd/SEALED` is created only when the data is opened, after the seal.
+6. **The answer date: December 2026.**
+7. **The seal date: 3 October 2026** (Singapore time), the date of the
+   commit "sgd: SEAL".

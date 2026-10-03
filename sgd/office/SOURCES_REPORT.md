@@ -224,6 +224,46 @@ here.
 5. **S5a, MAS's decisions table,** was read in full: 62 rows of Slope,
    Width and Level changes. It holds decisions only.
 
+## 1B. What Jacob had seen before setting the confidences (3 October 2026)
+
+Recorded at the seal, from the checker-verified inputs to the fill commit.
+None of it is a value from S1 to S7 opened in this repository.
+
+1. **The checker's second and third context notes to Jacob.** The second
+   set out the test definitions. The third gave corrected facts. Both were
+   sent before Jacob set his numbers.
+2. **Facts from Jacob's own outside review,** seen before he set the
+   confidences:
+   - **The yen.** It weakened again in the fourth quarter of 2025: USD/JPY
+     averaged about 154 in December 2025. It hit a record low against the
+     euro in October 2025.
+   - **The Bank of Japan's path.** Negative rates ended in March 2024. The
+     policy rate went to 0.25% in July 2024, 0.5% in January 2025, 0.75% in
+     December 2025 and 1% in June 2026.
+   - **The ringgit.** It was Asia's best performer in 2024 and in 2025, up
+     about 9% against the US dollar in 2025. Bank Negara stated that the
+     ringgit's nominal effective exchange rate rose 6.3% in 2025.
+   - **MAS's April and July 2026 tightenings.**
+   - **The yen passing its July 2024 low in June 2026.**
+3. **Jacob's statement.** His numbers draw on general knowledge of public
+   exchange-rate history plus the facts above. He pulled no BIS data. Bet
+   2's reason rests on his rough recollection of the Singapore dollar's
+   level against the yen.
+
+**What these bear on.**
+- The yen facts bear on T2. The level in December 2025 sits inside the
+  scored window's end months, though not as a broad index.
+- The ringgit facts bear on T3 and on T1's ringgit check.
+  - Bank Negara's 6.3% is a ringgit effective-rate change for 2025, by
+    Bank Negara's own basket, not the BIS broad index.
+  - It points the same way as the one BIS index point already disclosed
+    (section 1, item 2).
+- MAS's 2026 decisions are already in `MPS_CODING.csv` from MAS's own
+  statements. They fall after the scored window and bear only on T7's last
+  intervals.
+- None of it was used to set a threshold or a window. All of those were
+  fixed before.
+
 ## 2. Checkpoint 0: data feasibility, test by test
 
 Status words:

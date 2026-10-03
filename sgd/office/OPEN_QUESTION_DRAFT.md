@@ -1,10 +1,10 @@
-# Japan felt cheap. Was it our dollar, or their yen?
+# Tokyo got cheaper. Did Singapore get richer?
 
-Open question. Predictions sealed on [SEAL DATE]. Answer due December 2026.
+Open question. Predictions sealed on 3 October 2026.
 
-<!-- Draft. Title pending Jacob's friend test. Confidences and "Why" lines
-are Jacob's ([JACOB]); the researcher's proposals stay in THESIS.md. The
-opening paragraph is Jacob's, verbatim. -->
+<!-- Page text as sealed. Confidences and "Why" lines are Jacob's, verbatim;
+the researcher's proposals stay in THESIS.md. The opening paragraph is
+Jacob's, verbatim. -->
 
 Every Singaporean who has come home from Japan knows the story. The ramen
 was cheap because our dollar is strong, and our dollar is strong because
@@ -17,142 +17,134 @@ cheap, most of that may be them falling, not us rising. That is my bet,
 sealed before I opened the data; the comfortable story and I now face the
 same numbers.
 
-A rate against one currency is a ratio, so it moves when either side
-moves. The Bank for International Settlements publishes a broad index for
-each currency, its value against 64 economies' currencies weighted by
-trade. With those, a rise against the yen splits into the Singapore dollar
-rising against everyone, the yen falling against everyone, and a small
-remainder.
+Picture two friends in a photo. If one looks taller than last year, either
+one grew or the other slouched. A rate against one currency is a ratio, so
+it moves when either side moves. The only way to tell who grew is to
+measure each against everyone else.
 
-## The argument
+## The argument: strength or steering
 
-**The comfortable story.** A strong economy makes a strong currency. When
-Singapore grows, its dollar rises, and a cheap yen is a sign of that
+**The comfortable story.** A strong economy makes a strong currency. Fast
+productivity growth tends to lift a country's real exchange rate over time
+(the Balassa-Samuelson effect). A cheap yen is a sign of Singapore's
 strength.
 
-**The steering story.** Since 1981 MAS has run monetary policy through the
-exchange rate, keeping the Singapore dollar inside an unpublished band
-whose slope it describes only in words, such as "a slight increase". The
-rate follows the band; the band follows MAS's decisions.
+**The steering story.** Since 1981 MAS has kept the Singapore dollar inside
+an unpublished band, describing changes only in words such as "a slight
+increase". MAS's case is that trade is so large relative to Singapore's
+economy that the exchange rate is its strongest lever on inflation.
 
-## What economic theory says
-
-Fast productivity growth tends to lift a country's real exchange rate over
-time (the Balassa-Samuelson effect), and strong growth draws capital in.
-That is the comfortable story's best case. MAS's case is that trade is so
-large relative to Singapore's economy that the exchange rate is its
-strongest lever on inflation.
-
-## Push it to the extreme
+## Push it to the extreme: Hong Kong and Japan
 
 **Extreme steering: Hong Kong.** The Hong Kong dollar is held between
 HK$7.75 and HK$7.85 per US dollar. When it rises against the yen, that is
-the US dollar's move against the yen, nothing more.
+almost exactly the US dollar's move against the yen. Hong Kong's dollar is a
+passenger in the US dollar's car.
 
 **Extreme drifting: Japan.** The yen has floated since 1973, with occasional
-intervention. When it falls, much of the fall is Japan's own.
+intervention. The yen is a boat without an anchor; Japan only occasionally
+grabs a rope.
 
-Singapore sits between them: a basket, a band and a slow crawl.
+Singapore sits between them: a basket, a band and a slow crawl. Singapore
+drives on cruise control inside a lane: MAS sets a slow speed and lets the
+car drift a little either side.
 
-**The obvious objection.** MAS sets its slope partly on how the economy is
-doing, so isn't steering just the comfortable story with an extra step?
-Partly. These bets ask what the path lined up with, not why MAS chose it.
-If growth lines up as well as MAS's decisions, steering loses.
+## The obvious objection: isn't steering just strength?
 
-## My bets
+In part: MAS's slope partly tracks the economy. The bets ask what the path
+lined up with, not why. If growth lines up at least
+as well as MAS's decisions, steering loses; it wins only if it lines up
+clearly better.
 
-**What counts.** Fixed before any exchange rate was opened:
+## My bets: whose move it was
 
-- **Against everyone:** the BIS broad index, monthly.
-- **The reader's window:** January 2021 to December 2025, the last five
-  full years before the seal.
-- **The long window:** August 2005 onward, after the ringgit and the
-  renminbi stopped being pegged to the US dollar.
-- **MAS's decisions:** all 62 statements, February 2001 to July 2026, coded
-  from MAS's wording before the data was opened.
-- **The comparison set:** the yen, the ringgit, the won, the renminbi, the
-  baht, the rupiah, the US dollar, the euro, the Australian dollar and the
-  Hong Kong dollar.
+**What counts.** The Bank for International Settlements publishes a broad
+index for each currency, its value against 64 economies' currencies
+weighted by trade. With those, a rise against the yen splits into the
+Singapore dollar rising against everyone, the yen falling against everyone,
+and a small remainder.
 
-1. **The split adds up.** On both windows, the two broad indices explain at
-   least 80 per cent of the move against the yen and the ringgit, and the
-   international figures match MAS's own rates to within half a per cent.
-   If not, the record cannot split that move.
-   Confidence: [JACOB].
+Fixed before the data was opened: the reader's window, January
+2021 to December 2025; a long window from August 2005; MAS's 62 statements
+since 2001; and ten other currencies: the yen, ringgit, won, renminbi, baht,
+rupiah, US dollar, euro, Australian dollar and Hong Kong dollar.
 
-   Why: [JACOB]
-2. **The yen fell.** From January 2021 to December 2025, at least half of
-   the Singapore dollar's rise against the yen came from the yen falling
-   against everyone.
-   Confidence: [JACOB].
+**Bet 1. The split adds up.** On both windows, the two broad indices
+explain at least 80 per cent of the move against the yen and the ringgit,
+and the BIS exchange rates match MAS's own published rates to within half
+a per cent on average.
+Confidence: 55%.
 
-   Why: [JACOB]
-3. **The ringgit fell.** Over the same years, at least half of the
-   Singapore dollar's rise against the ringgit came from the ringgit falling
-   against everyone.
-   Confidence: [JACOB].
+Why: The yen checks and the ringgit check since 2005 involve big moves and
+are likely to pass, but our dollar's move against the ringgit over 2021-25
+is small, and the unexplained leftover could exceed 20 per cent of it.
 
-   Why: [JACOB]
-4. **The slow path.** Since August 2005, the Singapore dollar's broad index
-   has been the steadiest or second steadiest, month to month, of the eleven
-   currencies.
-   Confidence: [JACOB].
+**Bet 2. The yen's share.** Over the reader's window, at least half of the
+Singapore dollar's rise against the yen was the yen falling against
+everyone.
+Confidence: 90%.
 
-   Why: [JACOB]
-5. **Policy, not growth.** Since 2001, the Singapore dollar's broad path
-   lined up clearly better with MAS's decisions than with Singapore's
-   economic growth.
-   Confidence: [JACOB].
+Why: By my rough reckoning, our dollar rose roughly 40 to 50 per cent
+against the yen over the window, far more than its own gradual climb
+against everyone, so most of the rise has to come from the yen's side.
 
-   Why: [JACOB]
+**Bet 3. The ringgit's share.** The same, for the ringgit.
+Confidence: 8%.
 
-If my confidences are right, about [JACOB] of these 5 would hold.
+Why: The ringgit was weak in 2022-23 but led Asia in both 2024 and 2025,
+rising strongly against the yen, won and rupiah, so its index against
+everyone probably ended the window higher than it started.
 
-**One check comes first.** MAS publishes its own index but not its basket.
-If the BIS index for Singapore does not move closely with MAS's own (a
-correlation of 0.90 in monthly moves, over at least ten years), bets 4 and 5
-read "the record cannot say".
+**One check comes first.** MAS publishes its own index but not its basket
+or its band. If the BIS index does not track it (a 0.90 correlation of
+monthly moves), bets 4 and 5 read "the record cannot say".
 
-Reported but not scored: the twenty-year split, and a month-to-month split
-across all ten currencies.
+**Bet 4. The slow path.** Since August 2005, the Singapore dollar's broad
+index has been the steadiest or second steadiest of the eleven currencies
+(the ten above, plus the Singapore dollar).
+Confidence: 80%.
 
-## What this does not explain
+Why: A managed crawl with re-centrings only every few years is likely to
+beat floating currencies on month-to-month steadiness, and second place
+still counts. The real risk is the Hong Kong dollar, whose basket is
+anchored by the yuan.
 
-Why MAS set the slopes it did, or how interest rates and money flows fed
-in. It covers exchange rates, not prices: cheap ramen also depends on what
-Japanese restaurants charged. Nor does it say how many Singaporeans believe
-the comfortable story; nobody has counted.
+**Bet 5. Policy, not growth.** Since 2001, the Singapore dollar's broad
+path lined up clearly better with MAS's decisions than with Singapore's
+growth.
+Confidence: 35%.
 
-## The catch I already know about
+Why: MAS often eases and tightens as growth turns, so the two usually line
+up together, and "clearly better" needs episodes like 2021-22, when MAS
+tightened on inflation while growth was slowing, to carry the result.
 
-Bet 5 leans my way. MAS keeps its index inside the band, so the path will
-match MAS's decisions partly by construction. A result for steering is weak
-evidence; a result that growth lines up as well is strong evidence against
-me.
+If my confidences are right, about 2.7 of these 5 would hold.
 
-The ringgit is harder to split than the yen. Malaysia and Singapore weigh
-heavily in each other's baskets, so part of each currency's move shows up
-in the other's index. Either answer on bet 3 is weaker than on bet 2.
+## The catch I already know about: one bet leans my way
 
-The reader's window was set by a rule, the last five full years, but I
-knew the yen had fallen since 2020. One figure for the ringgit in early 2026
-was also seen before the seal. Both are listed with the sealed predictions.
+Bet 5 leans my way: the path follows MAS's band partly by construction, so
+a result for steering is weak evidence, and one for growth is strong.
+
+Malaysia and Singapore weigh heavily in each other's baskets, so either
+answer on bet 3 is weaker than on bet 2. And this covers exchange rates,
+not Japanese prices.
+
+The reader's window was set by a rule, but I knew the yen had fallen since
+2021; that is disclosed with the sealed predictions.
 
 ## What would change my mind
 
-- The Singapore dollar's own rise explaining more than the yen's fall.
-- The Singapore dollar's broad index swinging as much as the floating
-  currencies.
-- Its path lining up with growth as closely as with MAS's decisions.
-
-The answer will say whose move it mostly was, for the yen and the ringgit,
-and whether the broad path followed MAS or the economy. Any part can come
-back as "the record cannot say", and that would be published too.
+- The Singapore dollar's own rise outweighing the yen's fall.
+- Its broad index swinging like a floating currency.
+- Its path lining up with growth as closely as with MAS.
 
 ## Proof
 
 The [sealed predictions]([SEAL LINK]) are THESIS.md in commit [SEAL COMMIT],
-[SEAL DATE].
+3 October 2026.
 
-Previous open question:
-[Minimum wage or PWM](/open/2026-09-28-minimum-wage-or-pwm/).
+Answer due December 2026, published here whichever way it lands.
+
+Last answered: [Was the HDB loan really cheaper than a bank's?](/economics/2026-10-03/)
+
+Previous open question: [Minimum wage or the Progressive Wage Model](/open/2026-09-28-minimum-wage-or-pwm/)
