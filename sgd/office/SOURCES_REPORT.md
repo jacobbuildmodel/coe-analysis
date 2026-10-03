@@ -1,7 +1,15 @@
 # SOURCES REPORT -- sgd piece
 
 Researcher: `sgd` (Claude Code session), 29 September 2026, branch `sgd-wip`,
-cut from `origin/main` at 6e4acf0.
+cut from `origin/main` at 6e4acf0. Revised 3 October 2026 after the checker
+review of 6f9b6c2:
+- five scored tests;
+- former T5 is sensitivity B; former T6 is check C;
+- T2 and T3 score January 2021 to December 2025;
+- answer due December 2026.
+
+Changed sections: 0, 1 (items 2 and 6), 2, 3 (S4), 4 (last line), 5 (item
+2), 6, 7.
 
 Scope: Checkpoint 0 (data feasibility), sources and the data check only. No
 analysis, no charts, no data value opened. The exact URLs and target filenames
@@ -44,11 +52,15 @@ index, not opened**. What exists:
   interventions), BNM and PBOC (the dates the ringgit and renminbi pegs
   ended).
 
-**Six of the seven planned tests survive the feasibility check on sources**
-(T1 to T5 and T7), pending the keys and coverage on receipt. **T6 survives
-conditionally.** It needs at least 24 months of MAS's own S$NEER, and MAS's
-page may show only about two years. **Not feasible and not planned:** any test
-of where the Singapore dollar sat inside MAS's band. The band's slope, width
+**All five scored tests survive the feasibility check on sources** (T1, T2,
+T3, T4 and T7), pending the keys and coverage on receipt.
+- **Sensitivity B (breadth, formerly T5)** is feasible on the same series.
+- **Check C (BIS index against MAS's own, formerly T6)** is printed beside
+  T7 and gates nothing. MAS's page may show only about two years of its
+  S$NEER, which is why it is no longer a scored test.
+
+**Not feasible and not planned:** any test of where the Singapore dollar sat
+inside MAS's band. The band's slope, width
 and centre are not disclosed, only described in words. Also not feasible:
 any claim about how many Singaporeans hold the belief, since no survey was
 sought.
@@ -62,11 +74,15 @@ The seal is only worth something if it is clear what had been seen.
    - **Ringgit.** One summary said: "as of February 2026, Malaysia's broad
      effective exchange rate stands at 112.93 on an index with 2020=100".
      This is one point of S1 for MY. It says the ringgit's broad index in
-     February 2026 was about 13 per cent above its 2020 average. It bears
-     on T3 and on the recent-years sensitivity: over a window starting in
-     2021, the ringgit's own broad index may have risen. It is recorded
-     here because it was seen before the seal. The window proposal in
-     THESIS section 5 does not use it; its reasons are the peg dates.
+     February 2026 was about 13 per cent above its 2020 average.
+     - **It bears directly on T3,** whose scored window is now January
+       2021 to December 2025. The ringgit's own broad index may have ended
+       that window near or above where it started. In that case T3 fails,
+       or the Singapore dollar did not rise against the ringgit and T3 is
+       not scored.
+     - **Where it is used.** It is recorded here because it was seen
+       before the seal. The researcher's proposed confidence for T3
+       (THESIS section 6) uses it; the window rule does not (item 6).
    - **Renminbi.** One summary gave the renminbi's July 2005 revaluation as
      8.11 per US dollar (2.1 per cent). This is a policy setting on the
      reform date, not a series.
@@ -106,10 +122,23 @@ The seal is only worth something if it is clear what had been seen.
 
    This knowledge informs the researcher's proposed confidences in THESIS,
    which are marked as such; Jacob sets his own.
-6. **What this means for the seal.** Items 2 and 5 are the reason the
-   primary window is fixed on reasons unrelated to any outcome (the end of
-   the ringgit and renminbi pegs on 21 July 2005, THESIS section 5). The
-   recent-years window is kept as a sensitivity, not scored.
+6. **What this means for the seal: the windows.**
+   - **The scored window for T2 and T3** is the last five full calendar
+     years before the seal: January 2021 to December 2025. It is fixed by
+     that rule, set at the checker review of 6f9b6c2 because the reader's
+     hook is that Japan got cheaper lately.
+   - **Stated plainly: general knowledge of the yen's fall since 2021 was in
+     mind when the rule was set** (item 5), both the checker's and the
+     researcher's. The rule ties the window to the seal date, not to any
+     turning point in the yen. It is fixed now and does not move if the
+     seal slips. But it was not set blind to the yen's recent path, and the
+     article says so.
+   - **The ringgit index point** (item 2) was also seen before the rule was
+     set. The rule does not depend on it; the researcher's T3 proposal does.
+   - **The long window** (August 2005 on) is fixed on the end of the ringgit
+     and renminbi pegs on 21 July 2005, not on any outcome. It carries T4,
+     T7 (from 2001, the first MAS decision listed), T1's second check, and
+     the long-run sensitivity of T2 and T3.
 
 ## 2. Checkpoint 0: data feasibility, test by test
 
@@ -125,11 +154,11 @@ Every row stays "pending receipt" until `00_coverage.py` lists the file.
 | Test (THESIS) | Series needed | Exists? | Coverage (documented) | Feasible? |
 |---|---|---|---|---|
 | T1 decomposition closes (design) | S1 M.N.B.SG, JP, MY; S2 SGD, JPY, MYR per USD, monthly average; S3a SGD per 100 JPY, per 100 MYR | S1: LABEL SEEN (all three). S2: LABEL SEEN for the end-of-period (E) collection; average (A) UNVERIFIED. S3a: table title seen | S1 from 1994-01; S2 from about 1957; S3a from 1988-01 (UNVERIFIED) | Yes, pending receipt. If S2 has no A collection, S2 E is used and the rule in THESIS T1 applies |
-| T2 yen share | S1 M.N.B.SG, JP; S2 SGD, JPY | as T1 | window 2005-08 on, inside all coverage | Yes, pending receipt |
+| T2 yen share | S1 M.N.B.SG, JP; S2 SGD, JPY | as T1 | scored window 2021-01 to 2025-12; long-run sensitivity 2005-08 on; both inside all coverage | Yes, pending receipt |
 | T3 ringgit share | S1 M.N.B.SG, MY; S2 SGD, MYR | as T1 | as T2 | Yes, pending receipt |
 | T4 slow path (volatility rank) | S1 M.N.B for SG, JP, MY, KR, CN, TH, ID, US, XM, AU, HK | LABEL SEEN: SG, JP, MY, KR, ID, XM (and CN, US for the real index). BY PATTERN: TH, AU, HK; CN and US nominal | from 1994-01 (UNVERIFIED) | Yes, pending receipt. THESIS T4 fixes what happens if a comparison series is missing |
-| T5 breadth (monthly moves) | S1 as T4; S2 for the ten partner currencies | S1 as T4; S2 LABEL SEEN for SGD, JPY, MYR; others BY PATTERN | as T4 | Yes, pending receipt |
-| T6 BIS index tracks MAS's own (design) | S1 M.N.B.SG; S4 MAS S$NEER weekly | S4: page title seen; the download format is not known | "current and previous years" (MAS page, index summary): possibly only about 2024-2026 | **Conditional.** Scored only if at least 24 monthly changes overlap (THESIS T6) |
+| Sensitivity B, breadth (formerly T5; not scored) | S1 as T4; S2 for the ten partner currencies | S1 as T4; S2 LABEL SEEN for SGD, JPY, MYR; others BY PATTERN | as T4 | Yes, pending receipt |
+| Check C, BIS index against MAS's own (formerly T6; not scored, gates nothing) | S1 M.N.B.SG; S4 MAS S$NEER weekly | S4: page title seen; the download format is not known | "current and previous years" (MAS page, index summary): possibly only about 2024-2026 | Printed beside T7; "too short to read" under 24 monthly changes |
 | T7 policy or growth | S5a decisions table; S5b statements; S1 M.N.B.SG; S6a GDP year-on-year growth, quarterly | S5a: page title seen; layout (Date, Slope, Width, Level) from index summary and a third-party copy. S6a: table title seen (id M015631 UNVERIFIED; fallback M015661 levels) | decisions since 2001; GDP quarterly from the 1970s (UNVERIFIED) | Yes, pending receipt. The slope is coded from words, since MAS publishes no number (section 5) |
 | (sensitivity to T7) inflation | S7a CPI monthly | table title seen (M213751) | 2024 base; long history (UNVERIFIED) | Yes, reported and not scored |
 
@@ -207,9 +236,10 @@ Every row stays "pending receipt" until `00_coverage.py` lists the file.
   on a monthly schedule (Advance Release Calendar, index summary).
 - **Coverage.** The page shows "current and previous years" (index summary).
   If that is literal, about 2024 to 2026 is available, roughly 30 monthly
-  changes. That is enough for T6's 24-change minimum, but only just, and the
-  count is UNVERIFIED.
-- **Use.** T6 only: does the BIS broad Singapore index move with MAS's own?
+  changes. The count is UNVERIFIED.
+- **Use.** Check C only (formerly T6): does the BIS broad Singapore index
+  move with MAS's own? It is printed beside T7 and gates nothing; under 24
+  monthly changes it is printed as "too short to read".
 
 ### S5 -- MAS monetary policy decisions and statements
 
@@ -276,8 +306,7 @@ than both. They also serve as descriptive checks, reported and not scored:
 
 Malaysia and China are in the set as partners. Their pegs to the US dollar
 ended on the same day, 21 July 2005 (BNM milestones page; PBOC spokesman's
-statement). That date fixes the start of the primary window (THESIS section
-5).
+statement). That date fixes the start of the long window (THESIS section 5).
 
 ## 5. What could not be closed, and what it does to the tests
 
@@ -285,9 +314,9 @@ statement). That date fixes the start of the primary window (THESIS section
    A key that turns out missing is handled by the rules in THESIS; no rule
    is changed after a file arrives.
 2. **The S$NEER's overlap.** If MAS shows only the current and previous
-   years, T6 rests on about 30 monthly changes. With fewer than 24, T6 is
-   not scored and T7 is read on the BIS index with that stated (THESIS T6;
-   a decision for Jacob, section 10 of THESIS).
+   years, check C rests on about 30 monthly changes; with fewer than 24 it is
+   printed as "too short to read". T7 is read on the BIS index either way;
+   check C gates nothing (THESIS section 7).
 3. **The band is undisclosed.** T7 codes the stance from MAS's words. This
    is coarse by design: a "slight" increase and a larger one both count as
    a positive slope in the scored coding. A finer ordinal coding is a
@@ -303,10 +332,12 @@ statement). That date fixes the start of the primary window (THESIS section
 
 ## 6. Which tests survive the feasibility check
 
-- **Survive, pending receipt:** T1 (design), T2 (yen), T3 (ringgit), T4
-  (slow path), T5 (breadth), T7 (policy or growth).
-- **Conditional:** T6 (design, BIS against MAS's own index), on at least 24
-  monthly changes of overlap.
+- **Scored, all feasible pending receipt:** T1 (design), T2 (yen), T3
+  (ringgit), T4 (slow path), T7 (policy or growth).
+- **Reported, not scored:**
+  - sensitivity B (breadth, formerly T5);
+  - check C (BIS against MAS's own index, formerly T6), printed beside T7
+    and gating nothing.
 - **Dropped:** position in the band; growth relative to partners; real-time
   growth; prevalence of the belief (section 2).
 
@@ -315,19 +346,24 @@ THESIS.md is drafted, unsealed, for the tests that survive.
 ## 7. Asks of Jacob (one list)
 
 1. **The downloads.** Everything in `raw/RETRIEVED.txt`, under the suggested
-   filenames, uploaded to `sgd/raw/` on `sgd-wip`. Then paste the output of
-   `python3 sgd/00_coverage.py` into RETRIEVED.txt's RECEIVED section.
-   Nothing is to be opened in a spreadsheet program or previewed.
+   filenames, in `sgd/raw/` on `sgd-wip`. Then the output of
+   `python3 sgd/00_coverage.py` goes into RETRIEVED.txt's RECEIVED section.
+   - **Who fetches.** If Jacob opens network access for this environment,
+     the researcher fetches. Otherwise the design chat does, from Jacob's
+     machine.
+   - **Status on 3 October 2026:** still blocked.
+   - Nothing is to be opened in a spreadsheet program or previewed.
 2. **S4, MAS's S$NEER page.** How many years the download offers. One line
-   is enough; it settles T6.
+   is enough; it decides whether check C is readable.
 3. **S5a, the decisions table.** Saved as served and printed to PDF. Coding
    (`office/MPS_CODING.csv`) follows from it before the seal.
-4. **Confidences.** For T1 to T7 (THESIS section 6). The researcher's
-   proposals are marked as such.
-5. **The window.** Accept or change the primary window (August 2005 on) and
-   the sensitivities (THESIS section 5).
-6. **T6 when it cannot be run.** Whether T7 is scored with a stated caveat
-   (the draft) or not scored.
+4. **Confidences.** For T1, T2, T3, T4 and T7 (THESIS section 6). The
+   researcher's proposals are marked as such.
+5. **The windows.** Accept or change the scored window for T2 and T3
+   (January 2021 to December 2025), the long window (August 2005 on), and the
+   sensitivities (THESIS section 5).
+6. **The answer date.** December 2026; January 2027 only if the downloads
+   slip.
 
 ## Sources used to locate the above (search index, 29 September 2026)
 

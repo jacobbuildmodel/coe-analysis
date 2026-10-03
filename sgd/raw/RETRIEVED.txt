@@ -5,6 +5,10 @@ file. Checkpoint 0 (data feasibility) was done from the web search index; no
 file was downloaded, so no md5 is recorded. The paragraph below describes the
 sandbox attempt.
 
+STATE ON 3 October 2026: still nothing retrieved; the same hosts still refuse
+CONNECT (403, policy). Roles below: B = sensitivity B (breadth, formerly
+T5); check C = BIS index against MAS's own (formerly T6). Neither is scored.
+
 Every download attempt from the researcher session failed at the network
 layer, not at the source. The session's egress proxy refused CONNECT (HTTP
 403, organization policy) to every data host tried, on 29 September 2026,
@@ -68,14 +72,14 @@ rate, <area> / Broad basket"):
   M.N.B.SG   Singapore       the piece                    yes
   M.N.B.JP   Japan           T2, T4, world view (float)   yes
   M.N.B.MY   Malaysia        T3, T4                       yes
-  M.N.B.KR   Korea           T4, T5                       yes
-  M.N.B.CN   China           T4, T5                       real (R) seen; N by pattern
-  M.N.B.TH   Thailand        T4, T5                       not seen; by pattern
-  M.N.B.ID   Indonesia       T4, T5                       yes
-  M.N.B.US   United States   T4, T5                       real (R) seen; N by pattern
-  M.N.B.XM   Euro area       T4, T5                       yes
-  M.N.B.AU   Australia       T4, T5                       not seen; by pattern
-  M.N.B.HK   Hong Kong SAR   T4, T5, world view (peg)     not seen; by pattern
+  M.N.B.KR   Korea           T4, B                        yes
+  M.N.B.CN   China           T4, B                        real (R) seen; N by pattern
+  M.N.B.TH   Thailand        T4, B                        not seen; by pattern
+  M.N.B.ID   Indonesia       T4, B                        yes
+  M.N.B.US   United States   T4, B                        real (R) seen; N by pattern
+  M.N.B.XM   Euro area       T4, B                        yes
+  M.N.B.AU   Australia       T4, B                        not seen; by pattern
+  M.N.B.HK   Hong Kong SAR   T4, B, world view (peg)      not seen; by pattern
 
 "By pattern": the 64-economy broad basket lists all eleven areas (BIS
 documentation), so the series exist; the exact key is confirmed on receipt.
@@ -175,7 +179,7 @@ The index the policy band is set on. MAS does not disclose the basket or its
 weights; it "releases weekly indexed data on the S$NEER" (MAS FAQ, index
 summary), shown for "current and previous years" (MAS page, index summary).
 Coverage therefore possibly only about two years: UNVERIFIED. This is the
-design test T6 series (does the BIS broad Singapore index track MAS's own?).
+check C series (does the BIS broad Singapore index track MAS's own?).
 
     https://www.mas.gov.sg/statistics/exchange-rates/s$neer
     file: s4_mas_sneer_weekly.<csv|xlsx> (whatever the download button
