@@ -140,8 +140,8 @@ The reader's window was set by a rule, but I knew the yen had fallen since
 
 ## Proof
 
-The [sealed predictions]([SEAL LINK]) are THESIS.md in commit [SEAL COMMIT],
-3 October 2026.
+The [sealed predictions](https://github.com/jacobbuildmodel/coe-analysis/blob/9e460349ebfc56bf313728e14243876e9dd6c9f4/sgd/THESIS.md)
+are THESIS.md in commit 9e46034, 3 October 2026.
 
 Answer due December 2026, published here whichever way it lands.
 
