@@ -1,0 +1,120 @@
+test,variant,key,value
+T7,lagged growth,rho_p,0.46529073
+T7,lagged growth,rho_g,0.19237484
+T7,lagged growth,D,0.27291589
+T7,lagged growth,intervals,61
+T7,CPI inflation,rho_p,0.46529073
+T7,CPI inflation,rho_g,0.50738376
+T7,CPI inflation,D,-0.04209303
+T7,CPI inflation,intervals,61
+T7,finer slope coding,rho_p,0.45869185
+T7,finer slope coding,rho_g,0.11273006
+T7,finer slope coding,D,0.34596179
+T7,finer slope coding,intervals,61
+T7,intervals from 2010,rho_p,0.54898696
+T7,intervals from 2010,rho_g,0.033458222
+T7,intervals from 2010,D,0.51552874
+T7,intervals from 2010,intervals,41
+B,scored,B_scored_JPY_pi,1.0103164
+B,scored,B_scored_JPY_sigma,0.067908427
+B,scored,B_scored_MYR_pi,0.9060003
+B,scored,B_scored_MYR_sigma,0.1680219
+B,scored,B_scored_KRW_pi,1.0248187
+B,scored,B_scored_KRW_sigma,0.032006609
+B,scored,B_scored_CNY_pi,1.0305463
+B,scored,B_scored_CNY_sigma,0.27155718
+B,scored,B_scored_THB_pi,0.90590396
+B,scored,B_scored_THB_sigma,0.068839156
+B,scored,B_scored_IDR_pi,0.95649694
+B,scored,B_scored_IDR_sigma,0.079918495
+B,scored,B_scored_USD_pi,1.0001095
+B,scored,B_scored_USD_sigma,0.0023071489
+B,scored,B_scored_EUR_pi,0.63344944
+B,scored,B_scored_EUR_sigma,0.11295296
+B,scored,B_scored_AUD_pi,0.96408247
+B,scored,B_scored_AUD_sigma,0.020546408
+B,scored,B_scored_HKD_pi,0.91101302
+B,scored,B_scored_HKD_sigma,0.0061779088
+B,scored,B_scored_partner_larger_count,10
+B,long,B_long_JPY_pi,1.0098814
+B,long,B_long_JPY_sigma,0.073873884
+B,long,B_long_MYR_pi,1.0428984
+B,long,B_long_MYR_sigma,0.037786018
+B,long,B_long_KRW_pi,1.0504192
+B,long,B_long_KRW_sigma,0.038306572
+B,long,B_long_CNY_pi,0.92213131
+B,long,B_long_CNY_sigma,0.28585627
+B,long,B_long_THB_pi,0.91955029
+B,long,B_long_THB_sigma,0.11289755
+B,long,B_long_IDR_pi,1.0090216
+B,long,B_long_IDR_sigma,0.044402449
+B,long,B_long_USD_pi,0.96769168
+B,long,B_long_USD_sigma,0.21150945
+B,long,B_long_EUR_pi,0.69978928
+B,long,B_long_EUR_sigma,0.11543634
+B,long,B_long_AUD_pi,1.0239633
+B,long,B_long_AUD_sigma,-0.020879861
+B,long,B_long_HKD_pi,0.79390268
+B,long,B_long_HKD_sigma,0.21206948
+B,long,B_long_partner_larger_count,10
+Q1,long run,long_JPY_b,0.62630396
+Q1,long run,long_JPY_S,0.57235245
+Q1,long run,long_JPY_P,0.50582792
+Q1,long run,long_JPY_R,-0.078180374
+Q1,"single-month endpoints, scored",single-month_scored_JPY_b,0.433279
+Q1,"single-month endpoints, scored",single-month_scored_JPY_S,0.29212068
+Q1,"single-month endpoints, scored",single-month_scored_JPY_P,0.75373982
+Q1,"single-month endpoints, scored",single-month_scored_JPY_R,-0.045860495
+Q1,"end-of-period rates, scored",end-of-period_scored_JPY_b,0.40241277
+Q1,"end-of-period rates, scored",end-of-period_scored_JPY_S,0.30659251
+Q1,"end-of-period rates, scored",end-of-period_scored_JPY_P,0.7310798
+Q1,"end-of-period rates, scored",end-of-period_scored_JPY_R,-0.037672311
+Q1,"real indices, scored",real_scored_JPY_b,0.40183494
+Q1,"real indices, scored",real_scored_JPY_S,0.34186084
+Q1,"real indices, scored",real_scored_JPY_P,0.76797771
+Q1,"real indices, scored",real_scored_JPY_R,-0.10983856
+Q1,"single-month endpoints, long",single-month_long_JPY_b,0.62602323
+Q1,"single-month endpoints, long",single-month_long_JPY_S,0.56876684
+Q1,"single-month endpoints, long",single-month_long_JPY_P,0.51221045
+Q1,"single-month endpoints, long",single-month_long_JPY_R,-0.080977298
+Q1,"end-of-period rates, long",end-of-period_long_JPY_b,0.62256956
+Q1,"end-of-period rates, long",end-of-period_long_JPY_S,0.57578562
+Q1,"end-of-period rates, long",end-of-period_long_JPY_P,0.50886206
+Q1,"end-of-period rates, long",end-of-period_long_JPY_R,-0.08464768
+Q1,"real indices, long",real_long_JPY_b,0.62630396
+Q1,"real indices, long",real_long_JPY_S,0.47404205
+Q1,"real indices, long",real_long_JPY_P,1.0348503
+Q1,"real indices, long",real_long_JPY_R,-0.5088924
+Q1,long run,long_MYR_b,0.34487524
+Q1,long run,long_MYR_S,1.0394095
+Q1,long run,long_MYR_P,0.026940284
+Q1,long run,long_MYR_R,-0.06634981
+Q1,"single-month endpoints, scored",single-month_scored_MYR_b,0.039862562
+Q1,"single-month endpoints, scored",single-month_scored_MYR_S,3.1751535
+Q1,"single-month endpoints, scored",single-month_scored_MYR_P,-2.3900515
+Q1,"single-month endpoints, scored",single-month_scored_MYR_R,0.21489792
+Q1,"end-of-period rates, scored",end-of-period_scored_MYR_b,0.040991305
+Q1,"end-of-period rates, scored",end-of-period_scored_MYR_S,3.0098271
+Q1,"end-of-period rates, scored",end-of-period_scored_MYR_P,-2.0224345
+Q1,"end-of-period rates, scored",end-of-period_scored_MYR_R,0.012607365
+Q1,"real indices, scored",real_scored_MYR_b,0.048599834
+Q1,"real indices, scored",real_scored_MYR_S,2.8265864
+Q1,"real indices, scored",real_scored_MYR_P,-0.78494991
+Q1,"real indices, scored",real_scored_MYR_R,-1.0416365
+Q1,"single-month endpoints, long",single-month_long_MYR_b,0.34259103
+Q1,"single-month endpoints, long",single-month_long_MYR_S,1.0393187
+Q1,"single-month endpoints, long",single-month_long_MYR_P,0.02866405
+Q1,"single-month endpoints, long",single-month_long_MYR_R,-0.067982746
+Q1,"end-of-period rates, long",end-of-period_long_MYR_b,0.35004755
+Q1,"end-of-period rates, long",end-of-period_long_MYR_S,1.0240512
+Q1,"end-of-period rates, long",end-of-period_long_MYR_P,0.026542214
+Q1,"end-of-period rates, long",end-of-period_long_MYR_R,-0.050593399
+Q1,"real indices, long",real_long_MYR_b,0.34487524
+Q1,"real indices, long",real_long_MYR_S,0.86087484
+Q1,"real indices, long",real_long_MYR_P,0.13233092
+Q1,"real indices, long",real_long_MYR_R,0.006794239
+world,long,HK_US_sd_ratio,0.77977599
+world,long,HK_US_corr,0.92482711
+world,long,JP_rank,11
+world,scored,SG_rank_scored_window,1
+world,scored,present_scored_window,11
