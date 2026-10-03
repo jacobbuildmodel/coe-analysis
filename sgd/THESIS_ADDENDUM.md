@@ -82,3 +82,27 @@ value was read.
   real broad indices against the nominal cross rate, since BIS publishes no
   real bilateral rate. Its residual therefore absorbs the inflation
   differentials. It is context only, as THESIS section 7 says.
+
+## 4. 12_figures.py: charts 1 and 3 for the answer article (3 October 2026, after the data was opened)
+
+Presentation only. No computation, rule, threshold, window, coding row or
+score changed. The title rules of item 2 are unchanged.
+
+- **Chart 1** shows moves in per cent, not shares. For each currency it draws
+  three bars, each 100 x (exp(log change) - 1) of a change already in
+  `out/tests.csv`: the Singapore dollar against everyone, the partner against
+  everyone, and the Singapore dollar against the partner. Right of the zero
+  line is a rise, so the ringgit's rise against everyone is drawn as a rise.
+  The shares stay in the text and in `RESULTS.md`.
+- **Chart 3** gains growth. Below the index and the MAS decision strip, a
+  second panel draws GDP growth over each stretch between decisions, on the
+  same intervals T7 scored (`out/intervals.csv`, column g). The decision ticks
+  are taller and labelled "MAS". There are at most three tick intervals per
+  axis, so the ticks stay readable at 390 px.
+- **Captions** of both still begin "How to read" and now say what each panel
+  and colour is.
+- **Checks.** The three real charts and all 24 fixture charts (eight outcome
+  fixtures) pass `tools/check_figure_overflow.py`, bold included. Rendered at
+  390 px and 1280 px in light and dark mode and looked at.
+- **md5:** 5f5f848f70bbf4b240f7523b36ca9f44 -> c5f61ff717eb1023160d21820ca02f58
+- **Tests:** the synthetic suite passes.

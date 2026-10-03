@@ -11,15 +11,17 @@ THESIS_ADDENDUM item 2). Every caption says how to read the chart. Anything
 a failed gate or test makes unreadable is drawn muted (MUTED opacity), and
 the caption says why.
 
-  figs/sgd_chart1_split.svg   the Singapore dollar's rise against the yen and
-                              the ringgit, January 2021 to December 2025,
-                              split three ways in per cent of the rise
-                              (T2, T3)
+  figs/sgd_chart1_split.svg   for the yen and the ringgit, January 2021 to
+                              December 2025, three moves in per cent: the
+                              Singapore dollar against everyone, the partner
+                              against everyone, the Singapore dollar against
+                              the partner (T2, T3)
   figs/sgd_chart2_steady.svg  month-to-month swing of each currency's broad
                               index, August 2005 on, steadiest first (T4)
   figs/sgd_chart3_path.svg    the Singapore dollar's broad index from 2001,
-                              with a tick at each MAS decision, raised for a
-                              tighter score and lowered for a looser one (T7)
+                              MAS's decisions in a strip below it, and GDP
+                              growth over each interval between decisions in
+                              a bottom panel, on one time axis (T7)
 
 Presentation only: nothing here computes or changes a tested number.
 """
@@ -129,27 +131,32 @@ def title1(T):
 
 
 def chart1(T, figs):
-    cap = ("How to read: each bar is a share of the Singapore dollar's rise against that currency, "
-           "January 2021 to December 2025, in per cent. Blue: the Singapore dollar rising against all its "
-           "trading partners. Grey: that currency falling against all of its own. Pale: neither. The "
-           "three add to 100.")
+    """Moves in per cent, January-March 2021 to October-December 2025: for
+    each currency, the Singapore dollar against everyone, the partner against
+    everyone, and the Singapore dollar against the partner (THESIS_ADDENDUM
+    item 4). The shares stay in the text."""
+    cap = ("How to read: each bar is a move in per cent, from the average of January to March 2021 to "
+           "the average of October to December 2025. Blue: the Singapore dollar against all its trading "
+           "partners. Grey: the other currency against all of its own. Dark: the Singapore dollar "
+           "against that one currency. Right of the line is a rise, left a fall.")
     rows, muted = [], []
     for t, cur, name in (("T2", "JPY", "yen"), ("T3", "MYR", "ringgit")):
-        vals = [num(T, f"{t}_{k}") for k in ("S", "P", "R")]
+        logs = [num(T, f"{t}_{k}") for k in ("s", "nx", "b")]
+        vals = [None if x is None else 100 * (math.exp(x) - 1) for x in logs]
         rows.append((name, vals))
         if T.get(f"{t}_outcome") == "NOT SCORED":
             muted.append(name)
     if muted:
         cap += (" Drawn faint: " + " and ".join(f"the {m}" for m in muted) +
-                ", where the test was not scored, so the shares are not read.")
-    allv = [100 * v for _, vs in rows for v in vs if v is not None] + [0, 100]
+                ", where the test was not scored, so the split is not read.")
+    allv = [v for _, vs in rows for v in vs if v is not None] + [0]
     lo, hi, st = nice(min(allv), max(allv))
-    LX, RX = 190, W - 24
+    LX, RX = 214, W - 66
     X = lambda v: LX + (RX - LX) * (v - lo) / (hi - lo)
-    labels = ("Singapore dollar rose", "{0} fell", "neither index")
+    labels = ("Singapore dollar vs all", "{0} vs all", "Singapore dollar vs {0}")
     H0 = 92
     H = H0 + 2 * (3 * 26 + 34) + 40 + caption_height(cap) - 12 + title_extra(title1(T))
-    s, y = head(H, "Split of the Singapore dollar's rise against the yen and the ringgit", title1(T))
+    s, y = head(H, "Moves of the Singapore dollar, the yen and the ringgit, 2021 to 2025", title1(T))
     top = y + 14
     bottom = top + 2 * (3 * 26 + 34)
     v = lo
@@ -157,20 +164,20 @@ def chart1(T, figs):
         s.append(f'<line x1="{X(v):.1f}" x2="{X(v):.1f}" y1="{top}" y2="{bottom}" stroke="{RULE}" stroke-width="1"/>')
         text(s, X(v), bottom + 18, f"{v:g}", 14, anchor="middle")
         v += st
+    s.append(f'<line x1="{X(0):.1f}" x2="{X(0):.1f}" y1="{top}" y2="{bottom}" stroke="{INK3}" stroke-width="1"/>')
     yy = top
     for name, vals in rows:
         op = f' opacity="{MUTED}"' if name in muted else ""
-        text(s, 16, yy + 16, f"Against the {name}", 14, INK3 if op else INK, weight="600")
+        text(s, 16, yy + 16, f"The {name}", 14, INK3 if op else INK, weight="600")
         yy += 26
-        if vals[0] is None:
-            text(s, LX, yy + 12, "did not rise over these years", 14, INK3)
-            yy += 3 * 26 + 8 - 26
-            continue
-        for lab, val, fill in zip(labels, vals, (SUBJ, CTX, RULE)):
+        for lab, val, fill in zip(labels, vals, (SUBJ, CTX, INK3)):
             text(s, LX - 8, yy + 13, lab.format(name), 14, INK3, anchor="end")
-            x0, x1 = X(0), X(100 * val)
-            s.append(f'<rect x="{min(x0, x1):.1f}" y="{yy:.1f}" width="{abs(x1 - x0):.1f}" height="17" '
-                     f'fill="{fill}"{op}/>')
+            if val is not None:
+                x0, x1 = X(0), X(val)
+                s.append(f'<rect x="{min(x0, x1):.1f}" y="{yy:.1f}" width="{abs(x1 - x0):.1f}" height="17" '
+                         f'fill="{fill}"{op}/>')
+                word = f"up {abs(val):.0f}%" if val >= 0 else f"down {abs(val):.0f}%"
+                text(s, max(x0, x1) + 6, yy + 13, word, 14, INK3 if op else INK)
             yy += 26
         yy += 8
     caption(s, bottom + 44, cap)
@@ -243,24 +250,35 @@ def title3(T):
 
 
 def chart3(T, out, figs):
+    """The broad index since 2001 (top), MAS's decisions (middle strip) and
+    GDP growth over each interval between decisions (bottom), on one time
+    axis, so both things T7 ranked against the path are drawn
+    (THESIS_ADDENDUM item 4)."""
     neer = {r["period"]: float(r["value"]) for r in L.read_csv(os.path.join(out, "neer.csv")) if r["area"] == "SG"}
     mps = L.read_csv(os.path.join(out, "mps.csv"))
+    iv = L.read_csv(os.path.join(out, "intervals.csv"))
     first = "2001-01"
     ps = [p for p in sorted(neer) if p >= first]
     base = neer[ps[0]]
     ys = [100 * neer[p] / base for p in ps]
-    cap = ("How to read: the line is the Singapore dollar's broad index, January 2001 = 100. Each tick "
-           "below it is a MAS decision: up for a tighter score, down for a looser one, a dot for no "
-           "change.")
+    cap = ("How to read: top, the Singapore dollar's broad index, January 2001 = 100. Middle, each MAS "
+           "decision: a bar up for a tighter score, down for a looser one, a dot for none. Bottom, "
+           "Singapore's GDP growth, year on year, in per cent, averaged over each stretch between "
+           "decisions. The test ranked each stretch's move in the index against the two.")
     muted = T.get("T7_outcome") == "NOT SCORED"
     if muted:
         cap += " Drawn faint: the comparison was not scored, so the path is not read against MAS."
-    H = 70 + 220 + 40 + caption_height(cap) - 8 + title_extra(title3(T))
-    s, y = head(H, "The Singapore dollar's broad index and MAS's decisions", title3(T))
+    op = f' opacity="{MUTED}"' if muted else ""
+    P1, STRIP, P2 = 160, 64, 150
+    H = 70 + P1 + STRIP + P2 + 40 + caption_height(cap) + 4 + title_extra(title3(T))
+    s, y = head(H, "The Singapore dollar's broad index, MAS's decisions and growth", title3(T))
     LX, RX = 60, W - 24
-    top, bottom = y + 10, y + 210
-    lo, hi, st = nice(min(ys), max(ys))
+    idx = {p: i for i, p in enumerate(ps)}
     X = lambda i: LX + (RX - LX) * i / max(1, len(ps) - 1)
+    Xm = lambda m: X(idx[m]) if m in idx else (X(0) if m < ps[0] else X(len(ps) - 1))
+    # panel 1: the index
+    top, bottom = y + 10, y + 10 + P1
+    lo, hi, st = nice(min(ys), max(ys))
     Y = lambda v: bottom - (bottom - top) * (v - lo) / (hi - lo)
     v = lo
     while v <= hi + 1e-9:
@@ -268,23 +286,46 @@ def chart3(T, out, figs):
         text(s, LX - 6, Y(v) + 5, f"{v:g}", 14, anchor="end")
         v += st
     pts = " ".join(f"{X(i):.1f},{Y(v):.1f}" for i, v in enumerate(ys))
-    op = f' opacity="{MUTED}"' if muted else ""
     s.append(f'<polyline points="{pts}" fill="none" stroke="{SUBJ}" stroke-width="2"{op}/>')
-    idx = {p: i for i, p in enumerate(ps)}
+    # strip: decisions
+    mid = bottom + 30
+    s.append(f'<line x1="{LX}" x2="{RX}" y1="{mid:.1f}" y2="{mid:.1f}" stroke="{RULE}" stroke-width="1"/>')
+    text(s, LX - 6, mid + 5, "MAS", 14, anchor="end")
     for r in mps:
         m = r["date"][:4] + "-" + r["date"][4:6]
         if m in idx:
             p = int(r["p"])
             x = X(idx[m])
-            y0 = bottom + 14
-            s.append(f'<line x1="{x:.1f}" x2="{x:.1f}" y1="{y0:.1f}" y2="{y0 - 5 * p:.1f}" stroke="{CTX}" '
-                     f'stroke-width="2"{op}/>' if p else
-                     f'<circle cx="{x:.1f}" cy="{y0:.1f}" r="1.5" fill="{CTX}"{op}/>')
+            s.append(f'<line x1="{x:.1f}" x2="{x:.1f}" y1="{mid:.1f}" y2="{mid - 8 * p:.1f}" stroke="{CTX}" '
+                     f'stroke-width="3"{op}/>' if p else
+                     f'<circle cx="{x:.1f}" cy="{mid:.1f}" r="2.5" fill="{CTX}"{op}/>')
+    # panel 2: growth over each interval
+    text(s, 16, bottom + STRIP + 14, "GDP growth over each stretch, per cent", 14, INK3)
+    top2, bottom2 = bottom + STRIP + 30, bottom + STRIP + P2
+    gs = [float(r["g"]) for r in iv if r["g"] not in ("", None)]
+    glo, ghi, gst = nice(min(gs + [0]), max(gs + [0]))
+    while (ghi - glo) / gst > 3:
+        gst *= 2
+        glo = math.floor(glo / gst) * gst
+        ghi = math.ceil(ghi / gst) * gst
+    Yg = lambda v: bottom2 - (bottom2 - top2) * (v - glo) / (ghi - glo)
+    v = glo
+    while v <= ghi + 1e-9:
+        s.append(f'<line x1="{LX}" x2="{RX}" y1="{Yg(v):.1f}" y2="{Yg(v):.1f}" stroke="{RULE}" stroke-width="1"/>')
+        text(s, LX - 6, Yg(v) + 5, f"{v:g}", 14, anchor="end")
+        v += gst
+    s.append(f'<line x1="{LX}" x2="{RX}" y1="{Yg(0):.1f}" y2="{Yg(0):.1f}" stroke="{INK3}" stroke-width="1"/>')
+    for r in iv:
+        if r["g"] in ("", None):
+            continue
+        x0, x1, gy = Xm(r["start"]), Xm(r["end"]), Yg(float(r["g"]))
+        s.append(f'<line x1="{x0:.1f}" x2="{x1:.1f}" y1="{gy:.1f}" y2="{gy:.1f}" stroke="{CTX}" '
+                 f'stroke-width="3"{op}/>')
     for yr in range(int(ps[0][:4]), int(ps[-1][:4]) + 1, 5):
         p = f"{yr}-01"
         if p in idx:
-            text(s, X(idx[p]), bottom + 40, str(yr), 14, anchor="middle")
-    caption(s, bottom + 64, cap)
+            text(s, X(idx[p]), bottom2 + 20, str(yr), 14, anchor="middle")
+    caption(s, bottom2 + 44, cap)
     write(figs, "sgd_chart3_path.svg", s)
 
 
