@@ -62,7 +62,7 @@ def paragraphs(t):
 
 
 def norm(s):
-    return s.replace("’", "'").replace("–", "-").replace("—", "-").replace("\xa0", " ")
+    return s.replace("\u2019", "'").replace("\u2013", "-").replace("\u2014", "-").replace("\xa0", " ")
 
 
 def classify(p):
