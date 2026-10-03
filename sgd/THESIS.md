@@ -522,6 +522,13 @@ broad index swings with the US dollar's, and a free float (Japan).
 - **Growth, `g_i`.** The mean year-on-year growth of real GDP (S6) over
   the quarters whose last month falls inside interval i. If none does, the
   quarter containing the month of decision i is used.
+  - **"Inside" means** after the interval's start month and up to its end
+    month: the months whose change the interval measures. So each quarter
+    belongs to one interval.
+  - **An interval with no growth value at all** is dropped and counted in
+    RESULTS. That happens only if its quarter is not yet published.
+
+  (Clarified 3 October 2026 with the analysis scripts, before the seal.)
 - **Statistic.** Spearman rank correlations, ties at average rank:
   - `rho_p = rho(y, p)`;
   - `rho_g = rho(y, g)`;
@@ -571,14 +578,23 @@ As for the pwm piece:
 - every number printed goes through one function;
 - an independent reproduction script re-derives every scored number.
 
-Written so far:
+Written 3 October 2026, tested on synthetic fixtures only:
+- `sgdlib.py`;
+- `10_load.py` to `15_reproduce.py`;
+- `tests/make_fixtures.py` and `tests/test_pipeline.py`;
+- `run_all.sh`.
+
+The guard: `10_load.py` and `15_reproduce.py` refuse `sgd/raw/` until
+`sgd/SEALED` exists.
+
+Before that came:
 - `00_coverage.py`, the coverage lister;
 - `03_mps_candidates.py`, which extracts the decision-paragraph candidates;
 - `04_mps_coding.py`, which writes `office/MPS_CODING.csv` from the codes
   and checks every quote.
 
-None reads an exchange-rate, GDP or CPI value. All three go into the seal
-manifest.
+None of these reads an exchange-rate, GDP or CPI value. All go into the
+seal manifest.
 
 ## 7. Sensitivity B and other descriptive output (not scored)
 
@@ -708,7 +724,9 @@ Brier score is the mean over them. A test not scored drops out of both.
 4. **The windows and the sensitivities** (section 5): accepted or changed.
 5. **The analysis scripts, the synthetic suite, the SEALED guard and the
    seal manifest**, as for the pwm piece.
+   - Done 3 October 2026: 19 synthetic tests pass.
+   - `14_manifest.py --seal` writes `SEAL_MANIFEST.md` in the seal commit.
 6. **The answer date: December 2026.** The data is monthly and quick to
    run. January 2027 only if the downloads slip.
-7. **The seal date:** to follow, once items 3 and 5 are done (item 2's
-   ruling is in).
+7. **The seal date:** to follow, once item 3 (Jacob's confidences) is done.
+   Items 2 and 5 are done.
