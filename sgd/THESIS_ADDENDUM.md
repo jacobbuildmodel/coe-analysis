@@ -186,3 +186,34 @@ everything after the new elements, is byte-for-byte as before.
 - **md5, figs/sgd_chart1_split.svg:** 8aac7d8c7d81a6021b6cda983c7c838e -> aff30e6b87da39568d4c902b554e4f87
 - **md5, figs/sgd_chart2_steady.svg:** 52eea1ce317096ffba5ee252021aef20 -> 1bbf1c4e5eb9568b07cf43f7473ac08e
 - **md5, figs/sgd_chart3_path.svg:** f759a95c9496db7c1a54f3b297d58b76 -> cf9d81a104932771e93eb60f6dfe9ae7
+
+## 8. The researchers' page and its number check (4 October 2026)
+
+Machinery and a new page, not scored. No computation, rule, threshold,
+window, coding row or score changed.
+
+- **New page, `FOR_RESEARCHERS.md`.** It sets out the derivation, every test
+  with its sealed Survive and Fail lines, every sealed sensitivity, the
+  design's limits, data provenance and how to rerun. It is listed among the
+  checksum inputs. The article links to it in one line before its Sources.
+- **`14_manifest.py`.**
+  - The sealed sensitivities (`out/sensitivities.csv`) join the number
+    manifest as `sens_*` rows, printed as `RESULTS.md` prints them: counts
+    and ranks whole, everything else to four decimals.
+  - `--check` checks every number in `FOR_RESEARCHERS.md` as it does the
+    article's. The front-matter test counts are checked for the article
+    only.
+  - Before numbers are read, the check also removes:
+    - commit and md5 hashes;
+    - script names such as `14_manifest.py`;
+    - a closing "References" section, since bibliographic volumes and pages
+      are not results.
+  - New allowed constants, all sealed in THESIS:
+    - the T1 and T2 lines (0.005, 0.50);
+    - months in a year for y_i (12);
+    - T7's reasoning for its line (59, 0.13);
+    - the bootstrap's draws and seed (10,000; 20260929).
+  - md5: 45408a7f0fe63f0b152bec162a853d6f -> 97a3d014fd064e8cde419e5709eff24b
+- **Check of the check.** Changing one printed value on the page (rho_p
+  0.4653 to 0.4654) makes `--check` fail, naming the number.
+- **Tests:** the synthetic suite passes.

@@ -17,8 +17,9 @@
 
 CHECKSUMS.md5 has two sections, paths relative to ROOT. INPUTS: the scripts,
 THESIS.md, office/MPS_CODING.csv, THESIS_ADDENDUM.md and the article when
-present, and every raw file the loader reads. --check also checks every
-number in the article (THESIS_ADDENDUM item 5).
+present, FOR_RESEARCHERS.md when present, and every raw file the loader
+reads. --check also checks every number in the article (THESIS_ADDENDUM
+item 5) and in FOR_RESEARCHERS.md (item 8).
 OUTPUTS: out/, figs/, RESULTS.md, number_manifest.csv.
 """
 import csv
@@ -37,13 +38,19 @@ SCRIPTS = ["sgdlib.py", "00_coverage.py", "03_mps_candidates.py", "04_mps_coding
 
 
 ARTICLE = "2026-11-14.md"
+RESEARCHERS = "FOR_RESEARCHERS.md"
 SEAL_DATE = "3 October 2026"
 # Constants the article may print that are sealed design or plain facts, not
 # results: THESIS lines (0.90, 120, 0.20, 20 and 50 per cent), the BIS basket of 64
 # economies, MAS's 62 statements, the Hong Kong band (7.75, 7.85), the eleven
 # currencies, index bases and per-100 quotes (100), the S$1,000 trip budget,
-# and the Brier score of an always-50-per-cent forecaster (0.25).
-ALLOW = {0.90, 90, 120, 0.20, 20, 50, 64, 62, 61, 7.75, 7.85, 11, 100, 1000, 0.25}
+# and the Brier score of an always-50-per-cent forecaster (0.25). Added for
+# FOR_RESEARCHERS.md (THESIS_ADDENDUM item 8), all sealed in THESIS: the T1
+# and T2 lines (0.005, 0.50), months in a year for y_i (12), T7's reasoning
+# for its line (59 degrees of freedom, a standard error of 0.13), and the
+# bootstrap's draws and seed (10,000; 20260929).
+ALLOW = {0.90, 90, 120, 0.20, 20, 50, 64, 62, 61, 7.75, 7.85, 11, 100, 1000, 0.25,
+         0.005, 0.50, 12, 59, 0.13, 10000, 20260929}
 ALLOW_INT_MAX = 10
 YEAR_LO, YEAR_HI = 1900, 2030
 
@@ -58,7 +65,8 @@ def md5(path):
 
 def inputs(P):
     paths = [os.path.join(L.SGD, s) for s in SCRIPTS] + [P["thesis"], P["coding"]]
-    for extra in (os.path.join(P["root"], "THESIS_ADDENDUM.md"), os.path.join(P["root"], ARTICLE)):
+    for extra in (os.path.join(P["root"], "THESIS_ADDENDUM.md"), os.path.join(P["root"], ARTICLE),
+                  os.path.join(P["root"], RESEARCHERS)):
         if os.path.exists(extra):
             paths.append(extra)
     paths += [os.path.join(P["raw"], f) for f in L.RAW_FILES if os.path.exists(os.path.join(P["raw"], f))]
@@ -90,14 +98,30 @@ def build_manifest(P):
     if os.path.exists(post):
         for r in L.read_csv(post):
             w.writerow([r["key"], r["printed"], "11b_postresults.py", "out/postresults.csv", r["key"]])
+    # The sealed sensitivities, as RESULTS.md prints them: counts and ranks
+    # whole, everything else to four decimals (THESIS_ADDENDUM item 8).
+    for r in L.read_csv(os.path.join(P["out"], "sensitivities.csv")):
+        try:
+            v = float(r["value"])
+        except (TypeError, ValueError):
+            continue
+        whole = re.search(r"intervals|_count$|_rank|^present", r["key"])
+        slug = re.sub(r"[^a-z0-9]+", "_", f'{r["test"]} {r["variant"]} {r["key"]}'.lower()).strip("_")
+        w.writerow([f"sens_{slug}", "{:d}".format(int(v)) if whole else "{:.4f}".format(v),
+                    "11_tests.py", "out/sensitivities.csv", r["key"]])
     return buf.getvalue()
 
 
 def article_numbers(path):
-    """Front matter, and every number token in the article body, with link
-    targets, URLs, written dates, year spans and labels removed."""
+    """Front matter, and every number token in the body, with link targets,
+    URLs, written dates, year spans, labels, script names, commit and md5
+    hashes, and a closing "References" section (bibliographic volumes and
+    pages, not results) removed. A file without front matter has an empty one."""
     text = open(path, encoding="utf-8").read()
-    front, body = text.split("---", 2)[1:]
+    front, body = text.split("---", 2)[1:] if text.startswith("---") else ("", text)
+    body = re.split(r"^## (?:\d+\. )?References\s*$", body, flags=re.M)[0]
+    body = re.sub(r"\b(?=[0-9a-f]*[a-f])[0-9a-f]{7,40}\b", "", body)
+    body = re.sub(r"\b\d+[a-z]?_[\w.-]+", "", body)          # script names, 14_manifest.py
     body = re.sub(r"\]\([^)]*\)", "]", body)
     body = re.sub(r"https?://\S+", "", body)
     body = re.sub(r"\b\d{1,2} (?:January|February|March|April|May|June|July|August|"
@@ -107,11 +131,11 @@ def article_numbers(path):
     return front, re.findall(r"(?<![\w.,])(?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d+)?", body)
 
 
-def check_article(P, values):
-    """Every number in the article is a manifest value as printed, or a
-    listed constant, a small integer or a year; the front matter's counts
-    match the scorecard."""
-    path = os.path.join(P["root"], ARTICLE)
+def check_article(P, values, name=ARTICLE):
+    """Every number in the article (or FOR_RESEARCHERS.md) is a manifest
+    value as printed, or a listed constant, a small integer or a year; the
+    article's front matter counts match the scorecard."""
+    path = os.path.join(P["root"], name)
     if not os.path.exists(path):
         return 0
     bad = 0
@@ -122,8 +146,11 @@ def check_article(P, values):
         v = float(tok.replace(",", ""))
         if v in ALLOW or (v == int(v) and (v <= ALLOW_INT_MAX or YEAR_LO <= v <= YEAR_HI)):
             continue
-        print(f"  ARTICLE number not in manifest or allowlist: {tok}")
+        print(f"  {name}: number not in manifest or allowlist: {tok}")
         bad += 1
+    if name != ARTICLE:
+        print(f"  {name}: {len(nums)} numbers checked")
+        return bad
     T = {r["key"]: r["value"] for r in L.read_csv(os.path.join(P["out"], "tests.csv"))}
     outs = [T[f"{t}_outcome"] for t in L.SCORED if T[f"{t}_outcome"] != "NOT SCORED"]
     want = {"testsPassed": outs.count("SURVIVE"), "testsFailed": outs.count("FAIL"),
@@ -163,6 +190,7 @@ def check(P):
             print(f"  NOT IN RESULTS.md: {r['number_id']} = {r['value']}")
             bad += 1
     bad += check_article(P, {r["value"] for r in rows})
+    bad += check_article(P, {r["value"] for r in rows}, RESEARCHERS)
     listed = {}
     for line in open(P["checksums"], encoding="utf-8"):
         line = line.rstrip("\n")
