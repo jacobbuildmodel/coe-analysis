@@ -136,9 +136,12 @@ def chart1(T, figs):
     everyone, and the Singapore dollar against the partner (THESIS_ADDENDUM
     item 4). The shares stay in the text."""
     cap = ("How to read: each bar is a move in per cent, from the average of January to March 2021 to "
-           "the average of October to December 2025. Blue: the Singapore dollar against all its trading "
-           "partners. Grey: the other currency against all of its own. Dark: the Singapore dollar "
-           "against that one currency. Right of the line is a rise, left a fall.")
+           "the average of October to December 2025. Blue, \"Singapore dollar vs all\": the Singapore "
+           "dollar against all its trading partners. Grey, \"yen vs all\" or \"ringgit vs all\": the "
+           "other currency against its own trading partners. Outlined, \"Singapore dollar vs yen\" or "
+           "\"vs ringgit\": the Singapore dollar against that one currency. The two moves multiply "
+           "rather than add, and a small remainder neither index explains makes up the difference. "
+           "Right of the line is a rise, left a fall.")
     rows, muted = [], []
     for t, cur, name in (("T2", "JPY", "yen"), ("T3", "MYR", "ringgit")):
         logs = [num(T, f"{t}_{k}") for k in ("s", "nx", "b")]
@@ -170,13 +173,24 @@ def chart1(T, figs):
         op = f' opacity="{MUTED}"' if name in muted else ""
         text(s, 16, yy + 16, f"The {name}", 14, INK3 if op else INK, weight="600")
         yy += 26
-        for lab, val, fill in zip(labels, vals, (SUBJ, CTX, INK3)):
+        # The third bar is outlined, not shaded, so it reads the same in light
+        # and dark mode (THESIS_ADDENDUM item 6).
+        for i, (lab, val, fill) in enumerate(zip(labels, vals, (SUBJ, CTX, SURF))):
             text(s, LX - 8, yy + 13, lab.format(name), 14, INK3, anchor="end")
             if val is not None:
                 x0, x1 = X(0), X(val)
-                s.append(f'<rect x="{min(x0, x1):.1f}" y="{yy:.1f}" width="{abs(x1 - x0):.1f}" height="17" '
-                         f'fill="{fill}"{op}/>')
-                word = f"up {abs(val):.0f}%" if val >= 0 else f"down {abs(val):.0f}%"
+                if i < 2:
+                    s.append(f'<rect x="{min(x0, x1):.1f}" y="{yy:.1f}" width="{abs(x1 - x0):.1f}" height="17" '
+                             f'fill="{fill}"{op}/>')
+                    mag = f"{abs(val):.0f}"
+                else:
+                    s.append(f'<rect x="{min(x0, x1) + 0.75:.1f}" y="{yy + 0.75:.1f}" '
+                             f'width="{max(abs(x1 - x0) - 1.5, 0):.1f}" height="15.5" fill="{fill}" '
+                             f'stroke="{INK}" stroke-width="1.5"{op}/>')
+                    # The cross rate to one decimal, as the article prints it
+                    # ("49.5"); a whole number drops its ".0".
+                    mag = f"{abs(val):.1f}".removesuffix(".0")
+                word = f"up {mag}%" if val >= 0 else f"down {mag}%"
                 text(s, max(x0, x1) + 6, yy + 13, word, 14, INK3 if op else INK)
             yy += 26
         yy += 8

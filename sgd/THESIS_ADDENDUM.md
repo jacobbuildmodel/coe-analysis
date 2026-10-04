@@ -140,3 +140,27 @@ threshold, window, coding row or score changed.
 - **`tests/test_pipeline.py`.** The end-to-end fixture run includes step 11b.
   - md5: 8496283a9a9ec871e0e247ea050a5311 -> db3c95c08109f0f68176d082a24055aa
 - **Tests:** the synthetic suite passes.
+
+## 6. 12_figures.py: chart 1's third bar and caption (4 October 2026)
+
+Presentation only. No computation, rule, threshold, window, coding row,
+title rule or score changed. Charts 2 and 3 are unchanged.
+
+- **The third bar is outlined.** "Singapore dollar vs yen" and "vs ringgit"
+  were drawn in the ink-3 grey, which is nearly the context grey in light
+  mode and slightly lighter than it in dark mode. So the caption's "Dark"
+  was false in dark mode, and the two partner bars looked alike. The bar is now outlined in the ink colour
+  with an empty fill, which reads the same in light and dark mode.
+- **The caption names each bar by its label,** with its colour or outline:
+  blue, grey, outlined. "Grey: the other currency against all of its own"
+  now reads "against its own trading partners". A sentence was added: the two
+  moves multiply rather than add, and a small remainder neither index
+  explains makes up the difference.
+- **The cross-rate label has one decimal,** as the article prints it ("up
+  49.5%"). A whole number drops its ".0" ("up 5%"). The other bars stay whole,
+  as in the text.
+- **Checks.** The three real charts and all 24 fixture charts pass
+  `tools/check_figure_overflow.py`, bold included. Rendered at 390 px and
+  1280 px in light and dark mode and looked at.
+- **md5, 12_figures.py:** c5f61ff717eb1023160d21820ca02f58 -> 153f2dce250de868f726f5e6546585eb
+- **md5, figs/sgd_chart1_split.svg:** 3381c6149eac382817b411487eda4c11 -> 8aac7d8c7d81a6021b6cda983c7c838e
