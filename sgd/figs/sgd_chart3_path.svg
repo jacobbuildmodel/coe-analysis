@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 642" role="img" aria-labelledby="sgd-chart3-title sgd-chart3-desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 737" role="img" aria-labelledby="sgd-chart3-title sgd-chart3-desc">
 <title id="sgd-chart3-title">The Singapore dollar's path followed MAS's decisions more closely than growth</title>
-<desc id="sgd-chart3-desc">How to read: top, the Singapore dollar's broad index, January 2001 = 100. Middle, each MAS decision: a bar up for a tighter score, down for a looser one, a dot for none. Bottom, Singapore's GDP growth, year on year, in per cent, averaged over each stretch between decisions. The test ranked each stretch's move in the index against the two.</desc>
+<desc id="sgd-chart3-desc">How to read: top, the Singapore dollar's broad index, January 2001 = 100. Middle, MAS's setting after each decision: a bar up when the band was set to rise (taller when MAS also lifted the whole band), down when it was lowered or set to fall, a dot when it was held flat. Bottom, Singapore's GDP growth, year on year, in per cent, averaged over each stretch between decisions. Read along each stretch: the test asked whether faster climbs in the index lined up with taller MAS bars more than with higher growth. Inflation, not drawn, lined up with the path about as well as MAS's decisions did.</desc>
 <style>:root{--fig-ink:#0b0b0b;--fig-ink-3:#717171;--fig-rule:#e2e1dd;--fig-surface:#fcfcfa;--fig-subject:#2873ce;--fig-context:#707379;}@media (prefers-color-scheme: dark){:root{--fig-ink:#ffffff;--fig-ink-3:#9a9a9a;--fig-rule:#38393a;--fig-surface:#1a1a19;--fig-subject:#3987e5;--fig-context:#93969c;}}:root[data-theme="dark"]{--fig-ink:#ffffff;--fig-ink-3:#9a9a9a;--fig-rule:#38393a;--fig-surface:#1a1a19;--fig-subject:#3987e5;--fig-context:#93969c;}text{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}</style>
-<rect x="0" y="0" width="480" height="642" fill="var(--fig-surface,#fcfcfa)"/>
+<rect x="0" y="0" width="480" height="737" fill="var(--fig-surface,#fcfcfa)"/>
 <text x="16.0" y="28.0" font-size="16" fill="var(--fig-ink,#0b0b0b)" font-weight="600">The Singapore dollar's path followed MAS's</text>
 <text x="16.0" y="49.0" font-size="16" fill="var(--fig-ink,#0b0b0b)" font-weight="600">decisions more closely than growth</text>
 <line x1="60" x2="456" y1="240.0" y2="240.0" stroke="var(--fig-rule,#e2e1dd)" stroke-width="1"/>
@@ -156,10 +156,15 @@
 <text x="369.6" y="474.0" text-anchor="middle" font-size="14" fill="var(--fig-ink-3,#717171)">2021</text>
 <text x="447.0" y="474.0" text-anchor="middle" font-size="14" fill="var(--fig-ink-3,#717171)">2026</text>
 <text x="16.0" y="498.0" font-size="14" fill="var(--fig-ink-3,#717171)">How to read: top, the Singapore dollar's broad index,</text>
-<text x="16.0" y="517.0" font-size="14" fill="var(--fig-ink-3,#717171)">January 2001 = 100. Middle, each MAS decision: a bar</text>
-<text x="16.0" y="536.0" font-size="14" fill="var(--fig-ink-3,#717171)">up for a tighter score, down for a looser one, a dot</text>
-<text x="16.0" y="555.0" font-size="14" fill="var(--fig-ink-3,#717171)">for none. Bottom, Singapore's GDP growth, year on</text>
-<text x="16.0" y="574.0" font-size="14" fill="var(--fig-ink-3,#717171)">year, in per cent, averaged over each stretch between</text>
-<text x="16.0" y="593.0" font-size="14" fill="var(--fig-ink-3,#717171)">decisions. The test ranked each stretch's move in the</text>
-<text x="16.0" y="612.0" font-size="14" fill="var(--fig-ink-3,#717171)">index against the two.</text>
+<text x="16.0" y="517.0" font-size="14" fill="var(--fig-ink-3,#717171)">January 2001 = 100. Middle, MAS's setting after each</text>
+<text x="16.0" y="536.0" font-size="14" fill="var(--fig-ink-3,#717171)">decision: a bar up when the band was set to rise</text>
+<text x="16.0" y="555.0" font-size="14" fill="var(--fig-ink-3,#717171)">(taller when MAS also lifted the whole band), down</text>
+<text x="16.0" y="574.0" font-size="14" fill="var(--fig-ink-3,#717171)">when it was lowered or set to fall, a dot when it was</text>
+<text x="16.0" y="593.0" font-size="14" fill="var(--fig-ink-3,#717171)">held flat. Bottom, Singapore's GDP growth, year on</text>
+<text x="16.0" y="612.0" font-size="14" fill="var(--fig-ink-3,#717171)">year, in per cent, averaged over each stretch between</text>
+<text x="16.0" y="631.0" font-size="14" fill="var(--fig-ink-3,#717171)">decisions. Read along each stretch: the test asked</text>
+<text x="16.0" y="650.0" font-size="14" fill="var(--fig-ink-3,#717171)">whether faster climbs in the index lined up with</text>
+<text x="16.0" y="669.0" font-size="14" fill="var(--fig-ink-3,#717171)">taller MAS bars more than with higher growth.</text>
+<text x="16.0" y="688.0" font-size="14" fill="var(--fig-ink-3,#717171)">Inflation, not drawn, lined up with the path about as</text>
+<text x="16.0" y="707.0" font-size="14" fill="var(--fig-ink-3,#717171)">well as MAS's decisions did.</text>
 </svg>

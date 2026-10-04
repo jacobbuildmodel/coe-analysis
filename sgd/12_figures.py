@@ -122,16 +122,19 @@ def num(T, k):
 
 
 def clause1(T, t, name):
+    """One short clause per currency (THESIS_ADDENDUM item 9), for example
+    "Yen: mostly the yen's own fall"."""
     o, why = T.get(f"{t}_outcome"), T.get(f"{t}_reason", "")
+    lead = name.capitalize() + ": "
     if o == "SURVIVE":
-        return f"Against the {name}, the {name}'s own fall did most of the work"
+        return lead + f"mostly the {name}'s own fall"
     if o == "FAIL":
-        return f"Against the {name}, the Singapore dollar's own rise did most of the work"
+        return lead + "mostly the Singapore dollar's own rise"
     if o == "INCONCLUSIVE":
-        return f"Against the {name}, neither side did most of the work"
+        return lead + "neither side did most"
     if why.startswith("premise"):
-        return f"The Singapore dollar did not rise against the {name}"
-    return f"Against the {name}, the split did not close"
+        return lead + "the Singapore dollar did not rise"
+    return lead + "the split did not close"
 
 
 def title1(T):
@@ -147,8 +150,9 @@ def chart1(T, figs):
            "the average of October to December 2025. Blue, \"Singapore dollar vs all\": the Singapore "
            "dollar against all its trading partners. Grey, \"yen vs all\" or \"ringgit vs all\": the "
            "other currency against its own trading partners. Outlined, \"Singapore dollar vs yen\" or "
-           "\"vs ringgit\": the Singapore dollar against that one currency. The two moves multiply "
-           "rather than add, and a small remainder neither index explains makes up the difference. "
+           "\"vs ringgit\": the Singapore dollar against that one currency. The moves compound "
+           "rather than add, and a remainder that neither \"vs all\" move explains makes up the "
+           "difference. "
            "Right of the line is a rise, left a fall.")
     rows, muted = [], []
     for t, cur, name in (("T2", "JPY", "yen"), ("T3", "MYR", "ringgit")):
@@ -221,6 +225,9 @@ def title2(T):
     rank, st = int(float(T["T4_rank"])), int(float(T["T4_steadier_than"]))
     n = int(float(T["T4_present"]))
     if o == "SURVIVE":
+        if rank == 1 and T.get("T4_HK_sd") not in (None, ""):
+            return (f"The Singapore dollar was steadier than all {WORDS[n - 1]} others, "
+                    "Hong Kong's peg included")
         return (f"The Singapore dollar was the {'steadiest' if rank == 1 else 'second steadiest'} of "
                 f"{WORDS[n]} currencies")
     if o == "FAIL":
@@ -230,18 +237,26 @@ def title2(T):
     return f"The Singapore dollar ranked {ORDS[rank]} of {WORDS[n]} for steadiness"
 
 
-def chart2(T, figs):
+LABELLED2 = ("SG", "HK", "JP")   # chart 2's value labels (THESIS_ADDENDUM item 9)
+
+
+def chart2(T, out, figs):
     vols = sorted(((100 * float(v), k.split("_")[1]) for k, v in T.items()
                    if k.startswith("T4_") and k.endswith("_sd") and v not in ("", None)))
-    cap = ("How to read: each bar is the typical month-to-month move of a currency's broad index "
-           "against its trading partners, August 2005 on, in per cent. Shorter is steadier; the "
+    # Value labels come from out/postresults.csv as printed there, so each is
+    # a row of number_manifest.csv (T4_<AREA>_sd_pct).
+    post = os.path.join(out, "postresults.csv")
+    printed = {r["key"]: r["printed"] for r in L.read_csv(post)} if os.path.exists(post) else {}
+    labels = {a: printed[f"T4_{a}_sd_pct"] + "%" for a in LABELLED2 if f"T4_{a}_sd_pct" in printed}
+    cap = ("How to read: each bar is how much a currency's value against all its trading partners "
+           "typically moved in a month, August 2005 on, in per cent. Shorter is steadier; the "
            "Singapore dollar is in blue.")
     muted = T.get("T4_outcome") == "NOT SCORED"
     if muted:
         cap += " Drawn faint: the ranking was not scored, so it is not read."
     H = 70 + 24 * len(vols) + 40 + caption_height(cap) + 12 + title_extra(title2(T))
     s, y = head(H, "sgd-chart2", title2(T), cap)
-    LX, RX = 170, W - 24
+    LX, RX = 170, W - 70             # room right of the longest bar for its label
     hi = nice(0, max([v for v, _ in vols] + [0.1]))[1]
     X = lambda v: LX + (RX - LX) * v / hi
     top = y + 10
@@ -252,6 +267,8 @@ def chart2(T, figs):
              weight="600" if a == "SG" else None)
         op = f' opacity="{MUTED}"' if muted else ""
         s.append(f'<rect x="{LX}" y="{yy + 2:.1f}" width="{X(v) - LX:.1f}" height="16" fill="{fill}"{op}/>')
+        if a in labels:
+            text(s, X(v) + 6, yy + 15, labels[a], 14, INK3 if muted else INK)
     bottom = top + 24 * len(vols)
     s.append(f'<line x1="{LX}" x2="{RX}" y1="{bottom}" y2="{bottom}" stroke="{RULE}" stroke-width="1"/>')
     text(s, LX, bottom + 18, "0", 14, anchor="middle")
@@ -283,10 +300,17 @@ def chart3(T, out, figs):
     ps = [p for p in sorted(neer) if p >= first]
     base = neer[ps[0]]
     ys = [100 * neer[p] / base for p in ps]
-    cap = ("How to read: top, the Singapore dollar's broad index, January 2001 = 100. Middle, each MAS "
-           "decision: a bar up for a tighter score, down for a looser one, a dot for none. Bottom, "
-           "Singapore's GDP growth, year on year, in per cent, averaged over each stretch between "
-           "decisions. The test ranked each stretch's move in the index against the two.")
+    cap = ("How to read: top, the Singapore dollar's broad index, January 2001 = 100. Middle, MAS's "
+           "setting after each decision: a bar up when the band was set to rise (taller when MAS "
+           "also lifted the whole band), down when it was lowered or set to fall, a dot when it was "
+           "held flat. Bottom, Singapore's GDP growth, year on year, in per cent, averaged over each "
+           "stretch between decisions. Read along each stretch: the test asked whether faster "
+           "climbs in the index lined up with taller MAS bars more than with higher growth.")
+    # The sealed CPI sensitivity, read from out/ (THESIS_ADDENDUM item 9).
+    cpi_d = [r["value"] for r in L.read_csv(os.path.join(out, "sensitivities.csv"))
+             if r["test"] == "T7" and r["variant"] == "CPI inflation" and r["key"] == "D"]
+    if cpi_d and cpi_d[0] not in ("", None) and float(cpi_d[0]) <= 0:
+        cap += " Inflation, not drawn, lined up with the path about as well as MAS's decisions did."
     muted = T.get("T7_outcome") == "NOT SCORED"
     if muted:
         cap += " Drawn faint: the comparison was not scored, so the path is not read against MAS."
@@ -356,7 +380,7 @@ def main():
     P = L.paths(a.root)
     T = {r["key"]: r["value"] for r in L.read_csv(os.path.join(P["out"], "tests.csv"))}
     chart1(T, P["figs"])
-    chart2(T, P["figs"])
+    chart2(T, P["out"], P["figs"])
     chart3(T, P["out"], P["figs"])
 
 

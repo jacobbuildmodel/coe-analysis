@@ -11,7 +11,7 @@ c4134a08bde7729f350862b40becddbb  04_mps_coding.py
 9d9099e0b287ec27e06803301819b907  10_load.py
 72ce4aef5b1f459163823d2308664f8c  11_tests.py
 436f2967fba5a64fd8cfb44cec169dee  11b_postresults.py
-fa2583a5cd8821df7d12f61b8febecc8  12_figures.py
+4c63044358ccd53dc6720ff6452e18f8  12_figures.py
 0554f69be0c8ccec930d07a13d315ef9  13_results.py
 97a3d014fd064e8cde419e5709eff24b  14_manifest.py
 47cea78053dfe319bc24e627ce4724d8  15_reproduce.py
@@ -21,7 +21,7 @@ adb189f01d33697d952821ff28e5ed9e  requirements.txt
 db3c95c08109f0f68176d082a24055aa  tests/test_pipeline.py
 8acdcf79b52383b9cee21cdf2e973dc0  THESIS.md
 535bab42fad7156a3a579a05275cc860  office/MPS_CODING.csv
-99a030f88252d0a6ec138c8da491dcb2  THESIS_ADDENDUM.md
+3ba4fe68b566106d15202343780cf0b2  THESIS_ADDENDUM.md
 6412aef8717bac89cf410cf48fbc8134  2026-11-14.md
 ce5eb6549b9e5310026404d0b15b3a59  FOR_RESEARCHERS.md
 e3467448791abd778b12b06b482bca79  raw/s1_bis_eer_neer_broad_monthly.csv
@@ -35,9 +35,9 @@ a6ef0f94ae00a08f8f789add4cbe58c9  raw/s7a_singstat_cpi_monthly_M213751.json
 8550c0cfcad82fe8771fc14ac4f9ef92  raw/RETRIEVED.txt
 
 # OUTPUTS
-aff30e6b87da39568d4c902b554e4f87  figs/sgd_chart1_split.svg
-1bbf1c4e5eb9568b07cf43f7473ac08e  figs/sgd_chart2_steady.svg
-cf9d81a104932771e93eb60f6dfe9ae7  figs/sgd_chart3_path.svg
+11a36cebf01e23ed484f29a14a8aee90  figs/sgd_chart1_split.svg
+77f2ea041862e4ddbbde9c9d154eb74c  figs/sgd_chart2_steady.svg
+da66e8cbfa2a72a3e65d25013e614968  figs/sgd_chart3_path.svg
 5bc878e3277768d459cb98224440d5ff  out/coverage.csv
 b381fb4cd9bacd2137e340b99382c9f9  out/cpi.csv
 f63f76c6abfda434fb03174abd225ae8  out/gdp.csv

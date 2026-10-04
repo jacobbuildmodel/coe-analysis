@@ -217,3 +217,47 @@ window, coding row or score changed.
 - **Check of the check.** Changing one printed value on the page (rho_p
   0.4653 to 0.4654) makes `--check` fail, naming the number.
 - **Tests:** the synthetic suite passes.
+
+## 9. 12_figures.py: chart wording from the Editor's chart review (4 October 2026)
+
+Presentation only, every change made in `12_figures.py` and no SVG edited
+by hand. No computation, rule, threshold, window, coding row or score
+changed, and no article text changed. The article's alt texts do not quote
+the chart titles, so none needed a change.
+
+- **Chart 1, title.** One short clause per currency. The branch that
+  occurred (T2 SURVIVE, T3 FAIL) reads "Yen: mostly the yen's own fall.
+  Ringgit: mostly the Singapore dollar's own rise." The other branches keep
+  their rules in the same short form:
+  - "<Currency>: neither side did most" (INCONCLUSIVE);
+  - "<Currency>: the Singapore dollar did not rise" (premise failed);
+  - "<Currency>: the split did not close" (T1 failed).
+- **Chart 1, caption.** "The moves compound rather than add, and a
+  remainder that neither "vs all" move explains makes up the difference."
+  "Small" was dropped, since the ringgit's remainder was 17 per cent of its
+  move. "Compound" replaces "multiply", since the partner's fall divides.
+- **Chart 2, title.** On the rank-1 branch, when the Hong Kong dollar is in
+  the set: "The Singapore dollar was steadier than all ten others, Hong
+  Kong's peg included". Other branches are unchanged.
+- **Chart 2, caption.** It now reads: "each bar is how much a currency's
+  value against all its trading partners typically moved in a month".
+- **Chart 2, value labels** on the Singapore dollar, Hong Kong dollar and
+  yen bars, at each bar's end in chart 1's label style. They are read as
+  printed from `out/postresults.csv` (`T4_<AREA>_sd_pct`), so each is a row
+  of `number_manifest.csv`. The plot's right edge moved in by 46 px to
+  leave room for a label on the longest bar.
+- **Chart 3, caption.** The middle and last sentences now say what the strip
+  draws: p_i, MAS's setting after each decision. A dot is a band held flat
+  (p_i = 0), not "no change". The last sentence says what the test asked.
+- **Chart 3, a conditional last sentence.** "Inflation, not drawn, lined up
+  with the path about as well as MAS's decisions did." It is added only when
+  the sealed CPI sensitivity's D, read from `out/sensitivities.csv`, is 0 or
+  less. On the real data it is -0.0421, so the sentence is drawn.
+- **Checks.** The three real charts and all 24 fixture charts pass
+  `tools/check_figure_overflow.py`, bold included, after rebuilding each
+  fixture's `out/postresults.csv`. Rendered at 390 px and 1280 px in light
+  and dark mode and looked at.
+- **md5, 12_figures.py:** fa2583a5cd8821df7d12f61b8febecc8 -> 4c63044358ccd53dc6720ff6452e18f8
+- **md5, figs/sgd_chart1_split.svg:** aff30e6b87da39568d4c902b554e4f87 -> 11a36cebf01e23ed484f29a14a8aee90
+- **md5, figs/sgd_chart2_steady.svg:** 1bbf1c4e5eb9568b07cf43f7473ac08e -> 77f2ea041862e4ddbbde9c9d154eb74c
+- **md5, figs/sgd_chart3_path.svg:** cf9d81a104932771e93eb60f6dfe9ae7 -> da66e8cbfa2a72a3e65d25013e614968
