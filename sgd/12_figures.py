@@ -25,6 +25,7 @@ the caption says why.
 
 Presentation only: nothing here computes or changes a tested number.
 """
+import html
 import math
 import os
 import textwrap
@@ -61,8 +62,15 @@ def text(s, x, y, body, size=14, fill=INK3, anchor="start", weight=None):
     s.append(f'<text x="{x:.1f}" y="{y:.1f}"{a} font-size="{size}" fill="{fill}"{w}>{body}</text>')
 
 
-def head(H, alt, title):
-    s = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="{alt}">',
+def head(H, key, title, desc):
+    """The <svg> root: role="img", labelled by a <title> (the finding title)
+    and a <desc> (the how-to-read caption), its first two children
+    (THESIS_ADDENDUM item 7). Ids are prefixed by the chart, so they stay
+    unique when the three charts are inlined on one page."""
+    esc = lambda x: html.escape(x, quote=False)
+    s = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" '
+         f'aria-labelledby="{key}-title {key}-desc">',
+         f'<title id="{key}-title">{esc(title)}</title>', f'<desc id="{key}-desc">{esc(desc)}</desc>',
          STYLE, f'<rect x="0" y="0" width="{W}" height="{H}" fill="{SURF}"/>']
     y = 28
     for line in textwrap.wrap(title, TITLE_CHARS):
@@ -159,7 +167,7 @@ def chart1(T, figs):
     labels = ("Singapore dollar vs all", "{0} vs all", "Singapore dollar vs {0}")
     H0 = 92
     H = H0 + 2 * (3 * 26 + 34) + 40 + caption_height(cap) - 12 + title_extra(title1(T))
-    s, y = head(H, "Moves of the Singapore dollar, the yen and the ringgit, 2021 to 2025", title1(T))
+    s, y = head(H, "sgd-chart1", title1(T), cap)
     top = y + 14
     bottom = top + 2 * (3 * 26 + 34)
     v = lo
@@ -232,7 +240,7 @@ def chart2(T, figs):
     if muted:
         cap += " Drawn faint: the ranking was not scored, so it is not read."
     H = 70 + 24 * len(vols) + 40 + caption_height(cap) + 12 + title_extra(title2(T))
-    s, y = head(H, "Month-to-month swing of eleven currencies' broad indices", title2(T))
+    s, y = head(H, "sgd-chart2", title2(T), cap)
     LX, RX = 170, W - 24
     hi = nice(0, max([v for v, _ in vols] + [0.1]))[1]
     X = lambda v: LX + (RX - LX) * v / hi
@@ -285,7 +293,7 @@ def chart3(T, out, figs):
     op = f' opacity="{MUTED}"' if muted else ""
     P1, STRIP, P2 = 160, 64, 150
     H = 70 + P1 + STRIP + P2 + 40 + caption_height(cap) + 4 + title_extra(title3(T))
-    s, y = head(H, "The Singapore dollar's broad index, MAS's decisions and growth", title3(T))
+    s, y = head(H, "sgd-chart3", title3(T), cap)
     LX, RX = 60, W - 24
     idx = {p: i for i, p in enumerate(ps)}
     X = lambda i: LX + (RX - LX) * i / max(1, len(ps) - 1)

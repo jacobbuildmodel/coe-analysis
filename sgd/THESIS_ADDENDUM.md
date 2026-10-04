@@ -164,3 +164,25 @@ title rule or score changed. Charts 2 and 3 are unchanged.
   1280 px in light and dark mode and looked at.
 - **md5, 12_figures.py:** c5f61ff717eb1023160d21820ca02f58 -> 153f2dce250de868f726f5e6546585eb
 - **md5, figs/sgd_chart1_split.svg:** 3381c6149eac382817b411487eda4c11 -> 8aac7d8c7d81a6021b6cda983c7c838e
+
+## 7. 12_figures.py: a title and a description in each chart, for screen readers (4 October 2026)
+
+Presentation only. No computation, rule, threshold, window, coding row,
+title rule or score changed, and no visible text changed: each SVG's body,
+everything after the new elements, is byte-for-byte as before.
+
+- **What was added.** Each of the three SVGs now has a `<title>` (its
+  finding title, as drawn) and a `<desc>` (its how-to-read caption, as
+  drawn) as its first two children. The root has `role="img"` and
+  `aria-labelledby` pointing at both. The ids carry the chart's name
+  (`sgd-chart1-title` and so on), so they stay unique when the charts sit
+  on one page.
+- **What was removed.** The old `aria-label` alt strings. `aria-labelledby`
+  replaces them.
+- **Checks.** The three real charts and all 24 fixture charts pass
+  `tools/check_figure_overflow.py`, bold included. Each SVG parses as XML,
+  with `title` and `desc` first.
+- **md5, 12_figures.py:** 153f2dce250de868f726f5e6546585eb -> fa2583a5cd8821df7d12f61b8febecc8
+- **md5, figs/sgd_chart1_split.svg:** 8aac7d8c7d81a6021b6cda983c7c838e -> aff30e6b87da39568d4c902b554e4f87
+- **md5, figs/sgd_chart2_steady.svg:** 52eea1ce317096ffba5ee252021aef20 -> 1bbf1c4e5eb9568b07cf43f7473ac08e
+- **md5, figs/sgd_chart3_path.svg:** f759a95c9496db7c1a54f3b297d58b76 -> cf9d81a104932771e93eb60f6dfe9ae7
