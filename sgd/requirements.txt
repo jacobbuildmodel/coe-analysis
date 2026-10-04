@@ -1,0 +1,11 @@
+# Pinned to the versions this piece was built and tested on.
+# Python 3.11.15
+# 00, 03, 04, 10-14 and the tests use the standard library only (openpyxl
+# for 00's .xlsx sheet listing). 15_reproduce.py uses pandas, numpy and
+# scipy, a deliberately different path from 10 and 11.
+pandas==3.0.2
+numpy==2.4.4
+scipy==1.17.1
+openpyxl==3.1.5
+# Optional, only for tools/check_figure_overflow.py (as pwm/).
+playwright==1.56.0

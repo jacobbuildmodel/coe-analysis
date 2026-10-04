@@ -1,0 +1,56 @@
+# MD5 checksums, sgd piece. Regenerate with:
+#   python3 sgd/14_manifest.py [--root DIR]
+# Never written by run_all.sh, which only runs --check.
+# Paths are relative to the run's root.
+
+# INPUTS
+c8bd8c4aab8f15dad2816a39d31c7c9e  sgdlib.py
+a4f04687c77e5c33baf31e46ce3a1359  00_coverage.py
+837261925633a5f062627f1aa8410a05  03_mps_candidates.py
+c4134a08bde7729f350862b40becddbb  04_mps_coding.py
+9d9099e0b287ec27e06803301819b907  10_load.py
+72ce4aef5b1f459163823d2308664f8c  11_tests.py
+436f2967fba5a64fd8cfb44cec169dee  11b_postresults.py
+4c63044358ccd53dc6720ff6452e18f8  12_figures.py
+0554f69be0c8ccec930d07a13d315ef9  13_results.py
+97a3d014fd064e8cde419e5709eff24b  14_manifest.py
+47cea78053dfe319bc24e627ce4724d8  15_reproduce.py
+abe15c405be256ed53386bfbc27c6105  run_all.sh
+adb189f01d33697d952821ff28e5ed9e  requirements.txt
+4048323aeab9db33f65f86c841313ae1  tests/make_fixtures.py
+db3c95c08109f0f68176d082a24055aa  tests/test_pipeline.py
+8acdcf79b52383b9cee21cdf2e973dc0  THESIS.md
+535bab42fad7156a3a579a05275cc860  office/MPS_CODING.csv
+3ba4fe68b566106d15202343780cf0b2  THESIS_ADDENDUM.md
+6412aef8717bac89cf410cf48fbc8134  2026-11-14.md
+ce5eb6549b9e5310026404d0b15b3a59  FOR_RESEARCHERS.md
+e3467448791abd778b12b06b482bca79  raw/s1_bis_eer_neer_broad_monthly.csv
+d4c2f2770353fbda55f2493c43b58272  raw/s1b_bis_eer_reer_broad_monthly.csv
+1f740cf8c1d3832c5c9e13307cd0e4de  raw/s2_bis_xru_usd_monthly_avg.csv
+3c3d432a19aa8f842b92bd83c431b640  raw/s2e_bis_xru_usd_monthly_eop.csv
+014858ba90ce5df154681ceaaaa3969e  raw/s3a_mas_fx_monthly_avg_M700051.json
+54966f6d59e0e40d5fb561fedcab21a5  raw/s4_mas_sneer_weekly.json
+4d4971b4cfa3e78912274b873bf98239  raw/s6a_singstat_gdp_yoy_quarterly_M015631.json
+a6ef0f94ae00a08f8f789add4cbe58c9  raw/s7a_singstat_cpi_monthly_M213751.json
+8550c0cfcad82fe8771fc14ac4f9ef92  raw/RETRIEVED.txt
+
+# OUTPUTS
+11a36cebf01e23ed484f29a14a8aee90  figs/sgd_chart1_split.svg
+77f2ea041862e4ddbbde9c9d154eb74c  figs/sgd_chart2_steady.svg
+da66e8cbfa2a72a3e65d25013e614968  figs/sgd_chart3_path.svg
+5bc878e3277768d459cb98224440d5ff  out/coverage.csv
+b381fb4cd9bacd2137e340b99382c9f9  out/cpi.csv
+f63f76c6abfda434fb03174abd225ae8  out/gdp.csv
+e174fe5c92264708b46bdbb0fe47bd3b  out/intervals.csv
+5f7da680cb76453edb8938f2e1a7a914  out/masfx.csv
+e07f876ab7c7a71c3389a78e5eaac535  out/mps.csv
+86d51aca3ffb3bc56a84d11e2a69704b  out/neer.csv
+4ee4808409c8542d73233d46d1389971  out/postresults.csv
+bf5bea35154d9f7c4abb64f32a5363c2  out/reer.csv
+8e4c44f17b1683f0fba9ac0cdbaf2726  out/sensitivities.csv
+876e3964544bd4c1b5df62a8a52a3739  out/sneer.csv
+8f311f1ec47b811824f84d36bdbf4801  out/tests.csv
+e7dc854987a70e98bc1c645265275fa1  out/usd.csv
+f125b32d73ca881c406647df3ee3a520  out/usd_eop.csv
+939503d417f9b7a9df56e34fc16ef665  RESULTS.md
+64041db449e976a52b83c153f647b141  number_manifest.csv

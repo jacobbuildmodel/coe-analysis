@@ -1,0 +1,84 @@
+key,value
+T1_long_JPY_R,-0.078180374
+T1_long_JPY_b,0.62630396
+T1_long_JPY_mad,0.00065324993
+T1_long_JPY_mad_count,253
+T1_long_JPY_ok,True
+T1_long_JPY_status,
+T1_long_MYR_R,-0.06634981
+T1_long_MYR_b,0.34487524
+T1_long_MYR_mad,0.00035806162
+T1_long_MYR_mad_count,253
+T1_long_MYR_ok,True
+T1_long_MYR_status,
+T1_outcome,SURVIVE
+T1_scored_JPY_R,-0.039164466
+T1_scored_JPY_b,0.40183494
+T1_scored_JPY_mad,0.00055378547
+T1_scored_JPY_mad_count,60
+T1_scored_JPY_ok,True
+T1_scored_JPY_status,
+T1_scored_MYR_R,0.16718826
+T1_scored_MYR_b,0.048599834
+T1_scored_MYR_mad,0.00031547019
+T1_scored_MYR_mad_count,60
+T1_scored_MYR_ok,True
+T1_scored_MYR_status,
+T2_P,0.73213108
+T2_R,-0.039164466
+T2_S,0.30703338
+T2_b,0.40183494
+T2_e,-0.015737651
+T2_nx,-0.29419585
+T2_outcome,SURVIVE
+T2_s,0.12337674
+T3_P,-1.705813
+T3_R,0.16718826
+T3_S,2.5386247
+T3_b,0.048599834
+T3_e,0.0081253219
+T3_nx,0.082902229
+T3_outcome,FAIL
+T3_s,0.12337674
+T4_AU_sd,0.020839562
+T4_CN_sd,0.010994108
+T4_HK_sd,0.0099827275
+T4_ID_sd,0.019450903
+T4_JP_sd,0.021634243
+T4_KR_sd,0.018575625
+T4_MY_sd,0.011475369
+T4_SG_sd,0.0047124454
+T4_TH_sd,0.012872765
+T4_US_sd,0.012802045
+T4_XM_sd,0.011085084
+T4_outcome,SURVIVE
+T4_present,11
+T4_rank,1
+T4_steadier_than,10
+T7_D,0.35256067
+T7_D_hi,0.58671397
+T7_D_lo,0.11173413
+T7_dropped_count,1
+T7_intervals,61
+T7_outcome,SURVIVE
+T7_rho_g,0.11273006
+T7_rho_p,0.46529073
+brier,0.13628
+conf_T1,0.55
+conf_T2,0.9
+conf_T3,0.08
+conf_T4,0.8
+conf_T7,0.35
+expected_held,2.68
+gateC_changes,331
+gateC_pass,True
+gateC_r,0.92396
+n_held,4
+n_scored,5
+scored_tests,T1 T2 T3 T4 T7
+verdict,Most of the Singapore dollar's rise against the yen was the yen falling against everyone; most of the Singapore dollar's rise against the ringgit was the Singapore dollar rising against everyone; the broad path followed MAS's decisions more closely than growth.
+verdict_A_ringgit,most of the Singapore dollar's rise against the ringgit was the Singapore dollar rising against everyone
+verdict_A_yen,most of the Singapore dollar's rise against the yen was the yen falling against everyone
+verdict_B,the broad path followed MAS's decisions more closely than growth
+window_long,2005-08 to 2026-08
+window_scored,2021-01 to 2025-12

@@ -1,0 +1,200 @@
+# MPS_CANDIDATES.txt -- written by sgd/03_mps_candidates.py
+# Decision-paragraph candidates only, verbatim (THESIS section 5, MPS coding rule).
+# Paragraphs with an outcome marker, and all other paragraphs, are not written.
+
+=== 20010222  (s5b_mas_mps_20010222.html)  candidates 0, excluded-as-outcome 1
+
+=== 20010712  (s5b_mas_mps_20010712.html)  candidates 2, excluded-as-outcome 0
+[para 3] 2 In January 2001, MAS decided to maintain this stance of a modest appreciation of the trade-weighted Singapore dollar within an unchanged policy band. It aimed to cap medium-term inflationary pressures, while continuing to be supportive of economic activity as growth came off its cyclical high and moderated to a slower pace.
+[para 16] 12 MAS has therefore shifted to a neutral exchange rate policy stance, with a policy band centred on a zero percent appreciation of the S$NEER. MAS will continue to guide the S$NEER within this exchange rate band, and stands ready to intervene to dampen excessive volatility should this become necessary.
+
+=== 20011010  (s5b_mas_mps_20011010.html)  candidates 1, excluded-as-outcome 0
+[para 5] 4 Greater uncertainty in the external environment, particularly in light of the recent anti-terrorism strikes, is likely to lead to more volatile market conditions. The MAS has therefore decided to widen the policy band to allow greater flexibility in managing the exchange rate. The widened policy band will continue to be centred on a zero percent appreciation of the S$NEER.
+
+=== 20020102  (s5b_mas_mps_20020102.html)  candidates 2, excluded-as-outcome 0
+[para 3] 2 With the heightened uncertainty in the external environment following the terrorist attacks in the US, MAS decided to widen the policy band in October, so as to allow greater flexibility managing the exchange rate.
+[para 23] 13 In our assessment, the current level of the S$NEER is supportive of economic recovery and growth in a benign inflationary environment. The MAS will therefore maintain a zero percent appreciation path for the policy band, centred on the current level of the S$NEER. We are also restoring a narrower policy band, as market and economic conditions have become less volatile.
+
+=== 20020711  (s5b_mas_mps_20020711.html)  candidates 1, excluded-as-outcome 0
+[para 20] 11 The domestic economy is expected to continue on its recovery path, although some uncertainty remains over its strength for the rest of the year. Inflationary conditions should, however, remain generally subdued. In view of the benign inflationary environment, and to facilitate continued economic recovery, MAS will maintain its current policy stance of a zero per cent appreciation in the S$NEER for the second half of 2002.
+
+=== 20030102  (s5b_mas_mps_20030102.html)  candidates 2, excluded-as-outcome 0
+[para 2] 1 MAS has maintained a neutral policy stance in 2002. Since the beginning of 2002, it has adopted a zero per cent appreciation path for the exchange rate policy band, centred on the level of the trade-weighted Singapore dollar nominal effective exchange rate (S$NEER) prevailing at the start of the year. This policy stance, reaffirmed by MAS in its mid-year review in July 2002, reflected subdued inflationary conditions and the need to facilitate economic growth.
+[para 12] 8 MAS will therefore maintain the neutral policy stance of a zero percent appreciation for the S$NEER policy path in the period ahead, with no change in the level at which the policy band is centred and in the width of the band. This policy stance will provide sufficient flexibility to support the recovery in the domestic economy while keeping inflation low.
+
+=== 20030710  (s5b_mas_mps_20030710.html)  candidates 1, excluded-as-outcome 0
+[para 10] 9 In our assessment, the current level of the S$NEER is conducive to supporting the incipient recovery in the Singapore economy, and to maintaining domestic price stability in a low-inflation environment. The MAS will therefore re-centre the exchange rate policy band at the current level of the S$NEER, while maintaining a zero percent appreciation path. The width of the band will remain unchanged. This monetary policy stance will help support economic growth, particularly in view of the downside risks in the external environment. CPI inflation is expected to stay below 2% into 2004.
+
+=== 20031010  (s5b_mas_mps_20031010.html)  candidates 1, excluded-as-outcome 0
+[para 12] 8 MAS will therefore maintain the current neutral policy stance of a zero percent appreciation of the S$NEER policy path in the period ahead, with no change in the level at which the policy band is centred and in the width of the band.
+
+=== 20040412  (s5b_mas_mps_20040412.html)  candidates 1, excluded-as-outcome 0
+[para 2] 1 Following a re-centring of the policy band at a lower level in July 2003, MAS has maintained a zero percent appreciation path for the Singapore dollar nominal effective exchange rate (S$NEER). This policy stance was reaffirmed in October last year. MAS assessed this stance to be appropriately accommodative of the recovery in the domestic economy, in a low inflation environment.
+
+=== 20041011  (s5b_mas_mps_20041011.html)  candidates 1, excluded-as-outcome 0
+[para 11] 7 Going forward, the domestic economy will be entering a period of more moderate and sustainable pace of expansion. CPI inflation will remain largely contained for 2005 as a whole, although some upward pressures on consumer prices are expected. Against this backdrop, MAS will be maintaining its policy of a modest and gradual appreciation of the S$NEER. There will be no change in the slope or the width of the policy band. This policy stance will remain supportive of economic growth, while ensuring low and stable inflation over the medium term.
+
+=== 20050412  (s5b_mas_mps_20050412.html)  candidates 1, excluded-as-outcome 0
+[para 14] 10 MAS will therefore maintain the current policy of a modest and gradual appreciation of the S$NEER policy band. There will be no change in the slope or the width of the policy band. With the S$NEER currently close to the mid-point of the policy band, there is scope for exchange rate flexibility in line with developments in external conditions in the period ahead.
+
+=== 20051011  (s5b_mas_mps_20051011.html)  candidates 1, excluded-as-outcome 0
+[para 12] 8. MAS will maintain its current policy of a modest and gradual appreciation of the S$NEER policy band which has been adopted since April 2004. There will be no change in the level, slope or width of the policy band.
+
+=== 20060411  (s5b_mas_mps_20060411.html)  candidates 1, excluded-as-outcome 0
+[para 12] 8 MAS will therefore maintain the current policy of a modest and gradual appreciation of the S$NEER policy band. There will be no re-centring of the policy band, nor any change to its slope or width.
+
+=== 20061010  (s5b_mas_mps_20061010.html)  candidates 1, excluded-as-outcome 0
+[para 13] 9 MAS will maintain the policy of a modest and gradual appreciation of the S$NEER policy band. There will be no re-centring of the policy band, or any change to its slope or width.
+
+=== 20070410  (s5b_mas_mps_20070410.html)  candidates 1, excluded-as-outcome 0
+[para 11] 8 MAS will maintain the policy of a modest and gradual appreciation of the S$NEER policy band in the period ahead. There will be no re-centring of the policy band, or any change to its slope or width.
+
+=== 20071010  (s5b_mas_mps_20071010.html)  candidates 1, excluded-as-outcome 0
+[para 10] 9 The Singapore economy has expanded at a rapid pace in 2007, underpinned by robust growth in non-IT manufacturing and asset market-related activities in the first half of the year. Going forward, while the economy is expected to moderate to a more sustainable pace, inflationary pressures stemming from external sources, as well as domestic conditions including a tight labour market and rising rental costs, will persist. 10 Against this backdrop, MAS will continue with the policy of a modest and gradual appreciation of the S$NEER policy band in the period ahead. However, we will increase slightly the slope of the S$NEER policy band. There will be no re-centring of the policy band, or any change in its width. In our assessment, this policy stance will remain supportive of economic growth while capping inflationary pressures and ensuring price stability over the medium term.
+
+=== 20080410  (s5b_mas_mps_20080410.html)  candidates 2, excluded-as-outcome 0
+[para 1] 1 Since April 2004, MAS has maintained the policy of a modest and gradual appreciation of the Singapore dollar nominal effective exchange rate (S$NEER) policy band. In October 2007, the policy was tightened through a slight increase in the slope of the band. The gradual appreciation of the S$ exchange rate over the past few years has helped to mitigate inflationary pressures.
+[para 12] 9 Against this backdrop of continuing external and domestic cost pressures, an upward shift of the policy band at this point will help to moderate inflation going forward, while providing support for sustainable growth in the economy. MAS will therefore re-centre the exchange rate policy band at the prevailing level of the S$NEER. There will be no change to the slope or width of the policy band.
+
+=== 20081010  (s5b_mas_mps_20081010.html)  candidates 2, excluded-as-outcome 0
+[para 2] 1 MAS has maintained the policy of a modest and gradual appreciation of the Singapore dollar nominal effective exchange rate (S$NEER) policy band since April 2004. In October 2007, the policy was tightened through a slight increase in the slope of the band, following which the policy band was re-centred at the then-prevailing level of the S$NEER in April 2008. The policy stance has helped to mitigate inflationary pressures amidst sustained economic growth and rising global commodity prices.
+[para 8] 8 CPI inflation is projected to come within the 6-7% forecast range in 2008, while the MAS underlying inflation measure, which excludes accommodation and private road transport costs, is expected to be 5-6%. Over the coming months and into early 2009, the headline inflation rate will continue to be impacted by the pass-through of some earlier domestic cost increases. Nevertheless, CPI inflation is expected to trend down in 2009 as the global and domestic economies slow and for the year as a whole it is forecast to moderate to 2.5-3.5%, with the MAS underlying inflation coming down to around 2%. MONETARY POLICY 9 Against the backdrop of a weakening external economic environment and continuing stresses in global financial markets, the growth of the Singapore economy is expected to remain below potential in the period ahead. Concomitantly, external and domestic inflationary pressures are likely to ease. 10 MAS is therefore shifting its policy stance to a zero percent appreciation of the S$NEER policy band. This policy maintains the current level of the policy band, and there will be no re-centring of the band or change to its width. MAS stands ready to intervene to dampen excessive volatility in the S$NEER should this become necessary. MAS will also continue to closely monitor developments in the external environment and their impact on the Singapore economy.
+
+=== 20090414  (s5b_mas_mps_20090414.html)  candidates 1, excluded-as-outcome 0
+[para 10] 7 In our assessment, the current level of the S$NEER is appropriate for maintaining domestic price stability over the medium term, taking into account the prospects for growth in the Singapore economy. MAS will therefore re-centre the exchange rate policy band to the prevailing level of the S$NEER, while keeping the zero percent appreciation path. The width of the band will remain unchanged. The Singapore economy continues to be anchored by sound fundamentals and a resilient financial system. There is therefore no reason for any undue weakening of the Singapore dollar.
+
+=== 20091012  (s5b_mas_mps_20091012.html)  candidates 1, excluded-as-outcome 0
+[para 9] 7 MAS will therefore maintain the current policy stance of a zero percent appreciation of the S$NEER policy path. There will be no change to the width of the policy band and the level at which it is centred. MAS will continue to be vigilant over developments in the external environment including the medium-term risk of stronger global inflationary pressures.
+
+=== 20100414  (s5b_mas_mps_20100414.html)  candidates 2, excluded-as-outcome 0
+[para 2] 1 MAS has maintained a zero percent appreciation path for the S$NEER policy band since October 2008. The policy band was re-centred downwards in April last year, and kept at that level during the last policy announcement in October. This policy stance was assessed to be appropriate, given continuing weakness and uncertainties in global and domestic economic prospects.
+[para 7] 7 MAS will therefore re-centre the exchange rate policy band at the prevailing level of the S$NEER. Further, we will shift the policy band from that of a zero percent appreciation to one of modest and gradual appreciation. There will be no change to the width of the policy band. MAS will continue to be vigilant over developments in the external environment and their impact on the domestic economy, and stands ready to curb excessive volatility in the S$NEER.
+
+=== 20101014  (s5b_mas_mps_20101014.html)  candidates 1, excluded-as-outcome 0
+[para 7] 7 MAS will therefore continue with the policy of a modest and gradual appreciation of the S$NEER policy band in the period ahead. However, the slope of the policy band will be increased slightly, with no change to the level at which the band is centred. The policy band will at the same time be widened slightly in view of the volatility across international financial markets. This policy stance will remain supportive of economic growth while seeking to cap CPI inflation at 2-3% in 2011 from 2.5-3.0% in 2010, and ensure medium-term price stability. The MAS underlying inflation measure, which excludes the cost of accommodation and private road transport, is expected to average around 2% in 2010 and 2-3% next year.
+
+=== 20110414  (s5b_mas_mps_20110414.html)  candidates 1, excluded-as-outcome 0
+[para 7] 7 MAS will therefore re-centre the exchange rate policy band upwards. The exchange rate policy band will be re-centred below the prevailing level of the S$NEER. This adjustment takes into account the tighter policy stance adopted in April and October last year, which will continue to have a restraining effect on the economy and prices. There will be no change to the slope and width of the band. This policy will ensure price stability in the medium term while keeping growth on a sustainable path.
+
+=== 20111014  (s5b_mas_mps_20111014.html)  candidates 1, excluded-as-outcome 0
+[para 13] 10 MAS will continue with the policy of a modest and gradual appreciation of the S$NEER policy band in the period ahead. However, given the expected moderation in core inflation, the slope of the policy band will be reduced, with no change to the width of the band and the level at which it is centred.
+
+=== 20120413  (s5b_mas_mps_20120413.html)  candidates 1, excluded-as-outcome 0
+[para 10] 9 MAS will therefore continue with the policy of a modest and gradual appreciation of the S$NEER policy band. The slope will be increased slightly, and there will be no change to the level at which the band is centred. MAS is also restoring a narrower policy band. This policy stance will help anchor inflation expectations, ensure medium-term price stability, and keep growth on a sustainable path.
+
+=== 20121012  (s5b_mas_mps_20121012.html)  candidates 1, excluded-as-outcome 0
+[para 13] 11 MAS will therefore maintain the policy of a modest and gradual appreciation of the S$NEER policy band. There will be no change to the slope and width of the policy band, as well as the level at which it is centred. This policy stance is assessed to be appropriate in containing inflationary pressures and keeping the economy on a path of restructuring towards sustainable growth. MAS will continue to be vigilant in assessing external economic and financial developments, and their impact on the Singapore economy.
+
+=== 20130412  (s5b_mas_mps_20130412.html)  candidates 1, excluded-as-outcome 0
+[para 13] 11 MAS will maintain its policy of a modest and gradual appreciation of the S$NEER policy band. There will be no change to the slope and width of the policy band, as well as the level at which it is centred. This policy stance is assessed to be appropriate for containing inflationary pressures, anchoring inflation expectations, and facilitating the restructuring of the economy towards sustainable growth.
+
+=== 20131014  (s5b_mas_mps_20131014.html)  candidates 1, excluded-as-outcome 0
+[para 11] 11 MAS will therefore maintain its policy of a modest and gradual appreciation of the S$NEER policy band. There will be no change to the slope of the policy band, and the level at which it is centred. The present width of the band is sufficient to accommodate temporary fluctuations in the S$NEER, and will be kept unchanged. This policy stance is assessed to be appropriate, taking into account the balance of risks between external demand uncertainties and rising domestic inflationary pressures.
+
+=== 20140414  (s5b_mas_mps_20140414.html)  candidates 1, excluded-as-outcome 0
+[para 15] 11 MAS will therefore maintain its policy of a modest and gradual appreciation of the S$NEER policy band. There will be no change to the slope of the policy band, and the level at which it is centred. The width of the band will be kept unchanged. The policy stance is assessed to be appropriate for containing domestic and imported sources of inflation, and ensuring medium-term price stability as a basis for sustainable growth. MAS will continue to be vigilant over developments in the external environment, including in financial markets, and stands ready to curb excessive volatility in the S$NEER.
+
+=== 20141014  (s5b_mas_mps_20141014.html)  candidates 1, excluded-as-outcome 0
+[para 15] 11. MAS will therefore maintain its policy of a modest and gradual appreciation of the S$NEER policy band. There will be no change to the slope and width of the policy band, and the level at which it is centred. This policy stance is assessed to be appropriate for containing domestic and imported sources of inflationary pressures, and ensuring that inflation expectations remain well anchored. MAS will continue to closely monitor the impact of external developments and domestic restructuring on the growth and inflation prospects for Singapore.
+
+=== 20150128  (s5b_mas_mps_20150128.html)  candidates 1, excluded-as-outcome 0
+[para 14] 12. MAS will therefore continue with the policy of a modest and gradual appreciation of the S$NEER policy band. However, the slope of the policy band will be reduced, with no change to its width and the level at which it is centred. This measured adjustment to the policy stance is consistent with the more benign inflation outlook in 2015 and appropriate for ensuring medium-term price stability in the economy.
+
+=== 20150414  (s5b_mas_mps_20150414.html)  candidates 1, excluded-as-outcome 0
+[para 15] 13. MAS will therefore maintain the policy of a modest and gradual appreciation of the S$NEER policy band. There will be no change to the slope and width of the policy band, and the level at which it is centred. This policy stance is consistent with the benign inflation outlook and moderate growth prospects for the whole of 2015, and appropriate for ensuring medium-term price stability in the economy.
+
+=== 20151014  (s5b_mas_mps_20151014.html)  candidates 1, excluded-as-outcome 0
+[para 13] 11. MAS will therefore continue with the policy of a modest and gradual appreciation of the S$NEER policy band. However, the rate of appreciation will be reduced slightly. There will be no change to the width of the policy band and the level at which it is centred. This measured adjustment follows the move to reduce the rate of appreciation of the policy band in January this year, and is supportive of economic growth into 2016, while ensuring price stability over the medium term.
+
+=== 20160414  (s5b_mas_mps_20160414.html)  candidates 2, excluded-as-outcome 0
+[para 14] 12. MAS will therefore set the rate of appreciation of the S$NEER policy band at zero percent, beginning 14 April 2016. This is not a policy to depreciate the domestic currency, and only removes the modest and gradual appreciation path of the S$NEER policy band that was in place.
+[para 16] 14. This move to a neutral policy stance of zero percent appreciation follows the measured steps that MAS has taken to reduce the rate of appreciation of the policy band in January and October 2015 respectively. MAS had adopted a modest and gradual appreciation path for the S$NEER policy band since April 2010. The actual outcome of S$NEER movements over the six months since October 2015 has in fact been a zero percent appreciation compared to the preceding six-month period. The cumulative effects of past S$NEER movements and the new policy path will continue to ensure price stability over the medium term.
+
+=== 20161014  (s5b_mas_mps_20161014.html)  candidates 2, excluded-as-outcome 0
+[para 15] 13. MAS will therefore maintain the rate of appreciation of the S$NEER policy band at zero percent. The width of the policy band and the level at which it is centred will be unchanged.
+[para 16] 14. MAS assesses that a neutral policy stance will be needed for an extended period to ensure medium-term price stability. The current policy band provides some flexibility for the S$NEER to accommodate the near-term weakness in inflation and growth. MAS will continue to closely monitor economic developments as they evolve over the coming months.
+
+=== 20170413  (s5b_mas_mps_20170413.html)  candidates 1, excluded-as-outcome 0
+[para 14] 12. MAS will therefore maintain the rate of appreciation of the S$NEER policy band at zero percent. The width of the policy band and the level at which it is centred will be unchanged. As indicated in the October 2016 MPS, a neutral policy stance is appropriate for an extended period and should ensure medium-term price stability.
+
+=== 20171013  (s5b_mas_mps_20171013.html)  candidates 1, excluded-as-outcome 0
+[para 14] 12. MAS had indicated in the October 2016 MPS that the neutral policy stance would be appropriate for an extended period. Given the economic outlook at this stage and consistent with medium-term price stability, MAS will maintain the rate of appreciation of the S$NEER policy band at zero percent. The width of the policy band and the level at which it is centred will be unchanged.
+
+=== 20180413  (s5b_mas_mps_20180413.html)  candidates 1, excluded-as-outcome 0
+[para 17] 15. MAS has therefore decided to increase slightly the slope of the S$NEER policy band, from zero percent previously. The width of the policy band and the level at which it is centred will be unchanged. This policy stance is consistent with a modest and gradual appreciation path of the S$NEER policy band that will ensure medium-term price stability.
+
+=== 20181012  (s5b_mas_mps_20181012.html)  candidates 1, excluded-as-outcome 0
+[para 16] 14. MAS has therefore decided to increase slightly the slope of the S$NEER policy band. The width of the policy band and the level at which it is centred will be unchanged. This measured adjustment follows the slight increase in the slope of the policy band in April 2018 from zero percent previously, and is consistent with a modest and gradual appreciation path of the S$NEER policy band that will ensure medium-term price stability.
+
+=== 20190412  (s5b_mas_mps_20190412.html)  candidates 1, excluded-as-outcome 0
+[para 15] 13. MAS will therefore maintain the current rate of appreciation of the S$NEER policy band. There will be no change to its width and the level at which it is centred. This policy stance is consistent with a modest and gradual appreciation path of the S$NEER policy band that will ensure medium-term price stability.
+
+=== 20191014  (s5b_mas_mps_20191014.html)  candidates 1, excluded-as-outcome 0
+[para 15] 13. MAS will therefore reduce slightly the rate of appreciation of the S$NEER policy band. There will be no change to the width of the policy band and the level at which it is centred. This measured adjustment to the policy stance is consistent with medium-term price stability, given the current economic outlook. MAS will continue to closely monitor economic developments and is prepared to recalibrate monetary policy should prospects for inflation and growth weaken significantly.
+
+=== 20200330  (s5b_mas_mps_20200330.html)  candidates 1, excluded-as-outcome 0
+[para 18] 16. MAS will adopt a zero percent per annum rate of appreciation of the policy band starting at the prevailing level of the S$NEER. There will be no change to the width of the policy band. This policy decision hence affirms the present level of the S$NEER, as well as the width and zero percent appreciation slope of the policy band going forward, thus providing stability to the trade-weighted exchange rate.
+
+=== 20201014  (s5b_mas_mps_20201014.html)  candidates 1, excluded-as-outcome 0
+[para 17] 15. MAS will therefore maintain a zero percent per annum rate of appreciation of the policy band. The width of the policy band and the level at which it is centred will be unchanged.
+
+=== 20210414  (s5b_mas_mps_20210414.html)  candidates 1, excluded-as-outcome 0
+[para 14] 12. MAS will therefore maintain a zero percent per annum rate of appreciation of the policy band. The width of the policy band and the level at which it is centred will be unchanged. As core inflation is expected to stay low this year, MAS assesses that an accommodative policy stance remains appropriate.
+
+=== 20211014  (s5b_mas_mps_20211014.html)  candidates 1, excluded-as-outcome 0
+[para 16] 14. MAS will therefore raise slightly the slope of the S$NEER policy band, from zero percent previously. The width of the policy band and the level at which it is centred will be unchanged. This appreciation path for the S$NEER policy band will ensure price stability over the medium term while recognising the risks to the economic recovery.
+
+=== 20220125  (s5b_mas_mps_20220125.html)  candidates 1, excluded-as-outcome 0
+[para 15] 13. MAS will therefore raise slightly the rate of appreciation of the S$NEER policy band. The width of the policy band and the level at which it is centred will be unchanged. This move builds on the pre-emptive shift to an appreciating stance in October 2021 and is appropriate for ensuring medium-term price stability.
+
+=== 20220414  (s5b_mas_mps_20220414.html)  candidates 1, excluded-as-outcome 0
+[para 19] 17. MAS has therefore decided to further tighten monetary policy, in two ways. First, MAS will re-centre the mid-point of the exchange rate policy band at the prevailing level of the S$NEER. Second, MAS will increase slightly the rate of appreciation of the policy band to exert a continuing dampening effect on inflation. There will be no change to the width of the policy band.
+
+=== 20220714  (s5b_mas_mps_20220714.html)  candidates 1, excluded-as-outcome 0
+[para 16] 14. Accordingly, MAS will re-centre the mid-point of the S$NEER policy band up to its prevailing level. There will be no change to the slope and width of the band. This policy move, building on previous tightening moves, should help slow the momentum of inflation and ensure medium-term price stability.
+
+=== 20221014  (s5b_mas_mps_20221014.html)  candidates 1, excluded-as-outcome 0
+[para 18] 16. MAS will therefore re-centre the mid-point of the S$NEER policy band up to its prevailing level. There will be no change to the slope and width of the band.
+
+=== 20230414  (s5b_mas_mps_20230414.html)  candidates 2, excluded-as-outcome 0
+[para 16] 14. With imported inflation turning more negative and core inflation expected to ease materially by end-2023, MAS has assessed that the current appreciating path of the S$NEER policy band is sufficiently tight and appropriate for securing medium-term price stability.
+[para 17] 15. MAS will therefore maintain the prevailing rate of appreciation of the S$NEER policy band. There will be no change to its width and the level at which it is centred. This policy stance will continue to reduce imported inflation and help curb domestic cost pressures.
+
+=== 20231013  (s5b_mas_mps_20231013.html)  candidates 1, excluded-as-outcome 0
+[para 13] 11. MAS will therefore maintain the prevailing rate of appreciation of the S$NEER policy band. There will be no change to its width and the level at which it is centred. MAS will closely monitor global and domestic economic developments, amid uncertainty on both inflation and growth.
+
+=== 20240129  (s5b_mas_mps_20240129.html)  candidates 2, excluded-as-outcome 0
+[para 15] 13. Accordingly, current monetary policy settings remain appropriate. The sustained appreciation of the policy band will continue to dampen imported inflation and curb domestic cost pressures, thus ensuring medium-term price stability.
+[para 16] 14. MAS will therefore maintain the prevailing rate of appreciation of the S$NEER policy band. There will be no change to its width and the level at which it is centred. MAS will closely monitor global and domestic economic developments, and remain vigilant to risks to inflation and growth.
+
+=== 20240412  (s5b_mas_mps_20240412.html)  candidates 1, excluded-as-outcome 0
+[para 14] 12. MAS will therefore maintain the prevailing rate of appreciation of the S$NEER policy band. There will be no change to its width and the level at which it is centred. MAS will closely monitor global and domestic economic developments, and remain vigilant to risks to inflation and growth.
+
+=== 20240726  (s5b_mas_mps_20240726.html)  candidates 1, excluded-as-outcome 0
+[para 16] 14. MAS will therefore maintain the prevailing rate of appreciation of the S$NEER policy band. There will be no change to its width and the level at which it is centred. MAS will closely monitor global and domestic economic developments, and remain vigilant to risks to inflation and growth.
+
+=== 20241014  (s5b_mas_mps_20241014.html)  candidates 1, excluded-as-outcome 0
+[para 16] 14. MAS will therefore maintain the prevailing rate of appreciation of the S$NEER policy band. There will be no change to its width and the level at which it is centred.
+
+=== 20250124  (s5b_mas_mps_20250124.html)  candidates 1, excluded-as-outcome 0
+[para 13] 11. MAS will therefore reduce slightly the slope of the S$NEER policy band. There will be no change to the width of the policy band or the level at which it is centred. This measured adjustment is consistent with a modest and gradual appreciation path of the S$NEER policy band that will ensure medium-term price stability. MAS will closely monitor global and domestic economic developments, and remain vigilant to risks to inflation and growth.
+
+=== 20250414  (s5b_mas_mps_20250414.html)  candidates 1, excluded-as-outcome 0
+[para 13] 11. MAS will continue with the policy of a modest and gradual appreciation of the S$NEER policy band. However, the rate of appreciation will be reduced slightly. There will be no change to the width of the band and the level at which it is centred.
+
+=== 20250730  (s5b_mas_mps_20250730.html)  candidates 1, excluded-as-outcome 0
+[para 13] 11. MAS will maintain the prevailing rate of appreciation of the S$NEER policy band. There will be no change to its width and the level at which it is centred. MAS had eased monetary policy twice earlier this year, and is in an appropriate position to respond to risks to medium-term price stability.
+
+=== 20251014  (s5b_mas_mps_20251014.html)  candidates 1, excluded-as-outcome 0
+[para 15] 13. MAS will therefore maintain the prevailing rate of appreciation of the S$NEER policy band. There will be no change to its width and the level at which it is centred.
+
+=== 20260129  (s5b_mas_mps_20260129.html)  candidates 1, excluded-as-outcome 0
+[para 12] 10. MAS will therefore maintain the prevailing rate of appreciation of the S$NEER policy band. There will be no change to its width and the level at which it is centred. MAS is in an appropriate position to respond effectively to any risk to medium-term price stability and will continue to closely monitor economic developments amid uncertainties in the external environment.
+
+=== 20260414  (s5b_mas_mps_20260414.html)  candidates 1, excluded-as-outcome 0
+[para 14] 12. MAS will therefore increase slightly the rate of appreciation of the S$NEER policy band. There will be no change to its width and the level at which it is centred.
+
+=== 20260727  (s5b_mas_mps_20260727.html)  candidates 2, excluded-as-outcome 0
+[para 14] 12. MAS will therefore increase the rate of appreciation of the policy band very slightly . The extent of this increase is smaller than that in April. There will be no change to the width of the policy band and the level at which it is centred.
+[para 15] 13. In an environment of continued heightened uncertainty, this calibrated adjustment to the policy stance builds on the tightening in April. It sustains an appropriate appreciation path for the S$NEER policy band which will cap inflationary pressures. MAS is well-positioned to respond effectively to any risk to medium-term price stability and will continue to closely monitor economic developments. MAS also stands ready to curb excessive volatility in the S$NEER.
+
