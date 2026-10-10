@@ -261,3 +261,116 @@ the chart titles, so none needed a change.
 - **md5, figs/sgd_chart1_split.svg:** aff30e6b87da39568d4c902b554e4f87 -> 11a36cebf01e23ed484f29a14a8aee90
 - **md5, figs/sgd_chart2_steady.svg:** 1bbf1c4e5eb9568b07cf43f7473ac08e -> 77f2ea041862e4ddbbde9c9d154eb74c
 - **md5, figs/sgd_chart3_path.svg:** cf9d81a104932771e93eb60f6dfe9ae7 -> da66e8cbfa2a72a3e65d25013e614968
+
+## 10. After outside review (10 October 2026): added after outside review, not sealed
+
+Two outside reviewers, a lecturer and an economics faculty member at SMU,
+confirmed the arithmetic and asked for the meaning to be tightened. Every
+change below was **added after outside review, not sealed**, and none is
+scored. No sealed number, outcome, threshold or verdict-rule wording changed.
+The round-4 brief relayed the reviewers' comments as asks A1-A5, article items
+1-8 and the FOR_RESEARCHERS section, without saying which reviewer made each
+ask. So each line cites the brief's label for the comment it answers.
+
+**Analyses (new script `16_review.py`, outputs `out/review_*.csv`, every
+printed number in `number_manifest.csv`):**
+
+- **A1, the US dollar as numeraire (an exact identity).** Answers ask A1. It
+  confirmed the checker's 2021-25 figures: SGD up 2.7%, JPY down 31.3%
+  (shares 7/93), MYR down 2.1% (55/45).
+- **A2, the ex-pair split, using raw/s1c period weights** (a first-order
+  approximation for a chain-linked index). Answers ask A2.
+- **A3, the real split of the yen cross, with Japan's CPI from BIS
+  WS_LONG_CPI** (stats.bis.org). Answers ask A3. The long window was not
+  computed, because Japan's series ends in July 2026.
+- **A4, rolling five-year windows, and the new chart 4.** Answers ask A4. It
+  corrected the checker's count to 39 of 46. The checker's 38 of 45 is the
+  same count without the last window, which ends in August 2026.
+- **A5, T7.** Answers ask A5:
+  - (a) a moving-block bootstrap with blocks of 2, 4 and 8;
+  - (b) growth and CPI inflation led by 1 and 2 quarters;
+  - (c) the effective sample size.
+
+**Data:**
+
+- **`raw/s8_bis_long_cpi_jp_monthly.csv`, retrieved 10 October 2026** and
+  recorded in `raw/RETRIEVED.txt` by an appended block. The sealed text above
+  it is unchanged. Answers ask A3.
+  - md5 (new): 7fcc997a6e726449913ff18adc2d2d6f
+  - md5, RETRIEVED.txt: 8550c0cfcad82fe8771fc14ac4f9ef92 -> 11e68bd861c8fd882fda1213b8eb23b9
+
+**Machinery:**
+
+- **`16_review.py` (new).** It reuses `11_tests.py`'s sealed definitions and
+  is guarded like 10 and 15. Answers asks A1-A5.
+  - md5 (new): 7bd3e63dd228006118d5d9725b7c2459
+- **`12_figures.py`: chart 4.** It has a rule-based finding title and a "How
+  to read" caption, and is drawn only when the review outputs exist. Charts 1
+  to 3 are unchanged. Answers ask A4.
+  - md5: 4c63044358ccd53dc6720ff6452e18f8 -> f785232aed80b6b1ee343ef41fce830e
+- **`13_results.py`.** It prints the review rows in a section marked
+  "added after outside review, not sealed, NOT SCORED", so every manifest
+  value appears in RESULTS.md. Answers the brief's number-check requirement.
+  - md5: 0554f69be0c8ccec930d07a13d315ef9 -> c80b6111ee90e52ac6f3cd9be2a47a1b
+- **`14_manifest.py`.** It adds the review rows to the manifest with
+  `16_review.py` as their script, and lists `16_review.py`, raw/s1c and
+  raw/s8 among the inputs. Answers the brief's number-check requirement.
+  - md5: 97a3d014fd064e8cde419e5709eff24b -> db84e81dbbadddd9ec5261b00bf565b3
+- **`run_all.sh`.** It runs `16_review.py` after step 11b and adds chart 4
+  to the overflow check. Answers the brief's run_all requirement.
+  - md5: abe15c405be256ed53386bfbc27c6105 -> 5eab55b06a53e558240daf5833538aec
+
+**Article, `2026-11-14.md` (1,800 words before Sources):**
+
+- **First screen and summary lead with the window result** (39 of 46
+  five-year stretches; over two decades the Singapore dollar's own climb was
+  larger). The title is kept. Answers article item 1.
+- **"Who moved is not who benefits."** A Singaporean's dollar bought the full
+  gain in yen, whichever currency moved. Answers article item 2.
+- **The strength-or-steering either/or is replaced by a reaction-function
+  paragraph, as theory context.** It quotes MAS's framework FAQ (raw/s5c) and
+  cites Balassa (1964) and Samuelson (1964). Answers article item 3.
+- **The verdict keeps the sealed sentence exactly.** It is followed by the
+  inflation result: CPI in place of growth gives MAS's lead -0.04, and -0.01
+  with inflation a quarter ahead (A5b). The weak parts are now a short list.
+  Answers article item 4.
+- **Renamed: "What failed, as I expected: the ringgit rose against
+  everyone".** Answers article item 5.
+- **Wording.** Answers article item 6:
+  - log shares;
+  - the summary's remainder;
+  - "about 50% more yen";
+  - "the yen's broad index fell 25 per cent";
+  - single months give 54 per cent;
+  - the specimen at S.278 and S/bin/bash.829, about 78,200 and 120,600 yen;
+  - the ringgit's moves in per cent, with 254%/-171% moved to the
+    researchers' page;
+  - "Hong Kong's broad index";
+  - the 11 currencies named;
+  - "typical month" defined;
+  - both 0.92 correlations on monthly changes;
+  - the reason for the August 2005 start;
+  - the finer coding's D 0.346;
+  - what a rank correlation of 0.47 means.
+- **New section "What it changes".** QUESTION_RULES Rule 0 has four items on
+  main; this answers item 3, the stakes. Answers article item 7.
+- **A1 in one sentence.** Answers article item 8.
+- **To stay within 1,800 words, three passages were cut.** None of them is a
+  number the article needs:
+  - the January 2015 counter-example on chart 3;
+  - "the strongest setting on the scale" clause;
+  - the sentence on calibration.
+
+**Researchers' page, `FOR_RESEARCHERS.md`:**
+
+- **New section 10, "After outside review (not sealed)",** with A1-A5 in
+  tables and the reasoning for each, and the ringgit's 254%/-171% explained.
+  References are now section 11. Answers the brief's FOR_RESEARCHERS item.
+
+**Checks.**
+
+- The number check covers both files and every review output.
+- All four real charts and all 32 fixture charts (eight fixtures, four charts
+  each) pass `tools/check_figure_overflow.py`, bold included.
+- Chart 4 was rendered at 390 px and 1280 px, light and dark, and looked at.
+- The synthetic suite passes.

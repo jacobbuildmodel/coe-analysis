@@ -41,6 +41,9 @@ python3 sgd/11_tests.py
 echo; echo "== 11b the article's numbers, from out/ (post-results, not scored)"
 python3 sgd/11b_postresults.py
 
+echo; echo "== 16 analyses added after outside review (not sealed, not scored)"
+python3 sgd/16_review.py
+
 echo; echo "== 12 charts"
 python3 sgd/12_figures.py
 
@@ -51,7 +54,7 @@ echo; echo "== 15 independent reproduction of every scored number"
 python3 sgd/15_reproduce.py
 
 echo; echo "== figure overflow check (DejaVu Sans, needs playwright + chromium)"
-python3 tools/check_figure_overflow.py sgd/figs/sgd_chart1_split.svg sgd/figs/sgd_chart2_steady.svg sgd/figs/sgd_chart3_path.svg
+python3 tools/check_figure_overflow.py sgd/figs/sgd_chart1_split.svg sgd/figs/sgd_chart2_steady.svg sgd/figs/sgd_chart3_path.svg sgd/figs/sgd_chart4_rolling.svg
 
 echo; echo "== 14 checksums and number manifest, verified"
 python3 sgd/14_manifest.py --check

@@ -34,7 +34,10 @@ import sgdlib as L
 
 SCRIPTS = ["sgdlib.py", "00_coverage.py", "03_mps_candidates.py", "04_mps_coding.py", "10_load.py",
            "11_tests.py", "11b_postresults.py", "12_figures.py", "13_results.py", "14_manifest.py", "15_reproduce.py",
-           "run_all.sh", "requirements.txt", "tests/make_fixtures.py", "tests/test_pipeline.py"]
+           "run_all.sh", "requirements.txt", "tests/make_fixtures.py", "tests/test_pipeline.py",
+           "16_review.py"]
+# Raw files read only by 16_review.py (THESIS_ADDENDUM item 10, not sealed).
+REVIEW_RAW = ("s1c_bis_eer_weights_broad.xlsx", "s8_bis_long_cpi_jp_monthly.csv")
 
 
 ARTICLE = "2026-11-14.md"
@@ -69,7 +72,7 @@ def inputs(P):
                   os.path.join(P["root"], RESEARCHERS)):
         if os.path.exists(extra):
             paths.append(extra)
-    paths += [os.path.join(P["raw"], f) for f in L.RAW_FILES if os.path.exists(os.path.join(P["raw"], f))]
+    paths += [os.path.join(P["raw"], f) for f in L.RAW_FILES + REVIEW_RAW if os.path.exists(os.path.join(P["raw"], f))]
     ret = os.path.join(P["raw"], "RETRIEVED.txt")
     if os.path.exists(ret):
         paths.append(ret)
@@ -98,6 +101,12 @@ def build_manifest(P):
     if os.path.exists(post):
         for r in L.read_csv(post):
             w.writerow([r["key"], r["printed"], "11b_postresults.py", "out/postresults.csv", r["key"]])
+    # Added after outside review, not sealed (THESIS_ADDENDUM item 10).
+    for f in sorted(glob.glob(os.path.join(P["out"], "review_*.csv"))):
+        if f.endswith("review_rolling_windows.csv"):
+            continue
+        for r in L.read_csv(f):
+            w.writerow([r["key"], r["printed"], "16_review.py", "out/" + os.path.basename(f), r["key"]])
     # The sealed sensitivities, as RESULTS.md prints them: counts and ranks
     # whole, everything else to four decimals (THESIS_ADDENDUM item 8).
     for r in L.read_csv(os.path.join(P["out"], "sensitivities.csv")):
