@@ -10,6 +10,8 @@ A3_scored_JPY_s_real_pct,14.725443,14.7,"scored window: the Singapore dollar's r
 A3_scored_JPY_s_real_pct0,14.725443,15,"scored window: the Singapore dollar's real broad index, per cent, up, whole"
 A3_scored_JPY_n_real_pct,26.55257,26.6,"scored window: the yen's real broad index, per cent, down"
 A3_scored_JPY_n_real_pct0,26.55257,27,"scored window: the yen's real broad index, per cent, down, whole"
+A3_scored_JPY_tokyo_goods_pct,32.120385,32.1,"scored window: Tokyo goods per Singapore dollar (b - dln CPI_JP), per cent, up"
+A3_scored_JPY_tokyo_goods_pct0,32.120385,32,"scored window: Tokyo goods per Singapore dollar (b - dln CPI_JP), per cent, up, whole"
 A3_scored_JPY_S,0.3145622,0.3146,"scored window, real: the Singapore dollar rising, share of the log change"
 A3_scored_JPY_S_pct0,31.45622,31,"scored window, real: the Singapore dollar rising, per cent of the log change, whole"
 A3_scored_JPY_P,0.70665231,0.7067,"scored window, real: the yen falling, share of the log change"

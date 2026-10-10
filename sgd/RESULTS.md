@@ -406,6 +406,8 @@ Written by `16_review.py` from `out/` and raw/s1c, raw/s8 (THESIS_ADDENDUM item 
 | A3_scored_JPY_s_real_pct0 | 15 | scored window: the Singapore dollar's real broad index, per cent, up, whole |
 | A3_scored_JPY_n_real_pct | 26.6 | scored window: the yen's real broad index, per cent, down |
 | A3_scored_JPY_n_real_pct0 | 27 | scored window: the yen's real broad index, per cent, down, whole |
+| A3_scored_JPY_tokyo_goods_pct | 32.1 | scored window: Tokyo goods per Singapore dollar (b - dln CPI_JP), per cent, up |
+| A3_scored_JPY_tokyo_goods_pct0 | 32 | scored window: Tokyo goods per Singapore dollar (b - dln CPI_JP), per cent, up, whole |
 | A3_scored_JPY_S | 0.3146 | scored window, real: the Singapore dollar rising, share of the log change |
 | A3_scored_JPY_S_pct0 | 31 | scored window, real: the Singapore dollar rising, per cent of the log change, whole |
 | A3_scored_JPY_P | 0.7067 | scored window, real: the yen falling, share of the log change |
@@ -460,6 +462,24 @@ Written by `16_review.py` from `out/` and raw/s1c, raw/s8 (THESIS_ADDENDUM item 
 | A5_neff_g | 52 | effective sample size for rho(y, g), Bartlett lag-1 |
 | A5_se_g | 0.14 | approximate standard error of rho(y, g) at that size |
 
+### review_a6_context.csv
+
+| Key | Printed | Meaning |
+|---|---|---|
+| A6_usdjpy_start | 105.9 | yen per US dollar, mean of the log over the scored window's start months (S2) |
+| A6_usdjpy_start0 | 106 | yen per US dollar, scored window start, whole |
+| A6_usdjpy_end | 154.1 | yen per US dollar, mean of the log over the scored window's end months (S2) |
+| A6_usdjpy_end0 | 154 | yen per US dollar, scored window end, whole |
+| A6_reer_jp_months | 392 | months in Japan's real broad index, 1994-01 to 2026-08 |
+| A6_reer_jp_low_value | 65.2 | Japan's real broad index, lowest month (2026-07) |
+| A6_reer_jp_low_year | 2026 | year of that lowest month |
+| A6_reer_jp_2025_12_rank | 9 | rank of December 2025 among all months, 1 = lowest |
+| A6_reer_jp_years | 32 | full calendar years in Japan's real broad index |
+| A6_reer_jp_2025_avg | 72.5 | Japan's real broad index, 2025 average |
+| A6_reer_jp_2025_rank | 2 | rank of the 2025 average among full years, 1 = lowest |
+| A6_reer_jp_lowest_year | 2024 | full year with the lowest average |
+| A6_reer_jp_lowest_year_avg | 71.5 | that year's average |
+
 ### review_article.csv
 
 | Key | Printed | Meaning |
@@ -469,4 +489,11 @@ Written by `16_review.py` from `out/` and raw/s1c, raw/s8 (THESIS_ADDENDUM item 
 | art_sgd_per_100jpy_2025_12 | 0.829 | MAS monthly average, S$ per 100 yen, 2025-12, three decimals |
 | art_yen_per_budget_2025_12 | 120,600 | yen bought by S$1,000, 2025-12, to the nearest 100 |
 | art_single_month_JPY_pct0 | 54 | the Singapore dollar against the yen, single-month endpoints, per cent, whole |
+| art_yen_per_budget_2dp_2021_01 | 78,125 | yen per S$1,000 at the two-decimal rate, 2021-01 |
+| art_yen_per_budget_2dp_k_2021_01 | 78,000 | the same, rounded as the article says it ('about'), 2021-01 |
+| art_yen_per_budget_2dp_2025_12 | 120,482 | yen per S$1,000 at the two-decimal rate, 2025-12 |
+| art_yen_per_budget_2dp_k_2025_12 | 120,000 | the same, rounded as the article says it ('about'), 2025-12 |
+| art_T2_P_pct10 | 70 | T2 share, the yen's fall, per cent to the nearest 10 ('about') |
+| art_T2_S_pct10 | 30 | T2 share, the Singapore dollar's rise, per cent to the nearest 10 ('about') |
+| art_long_JPY_R_pct0 | 8 | long window: the yen split's remainder, per cent of the log change, negative |
 | art_finer_D_3dp | 0.346 | T7 with the finer slope coding: D, three decimals |

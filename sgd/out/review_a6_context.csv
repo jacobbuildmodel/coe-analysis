@@ -1,0 +1,14 @@
+key,value,printed,meaning
+A6_usdjpy_start,105.94759,105.9,"yen per US dollar, mean of the log over the scored window's start months (S2)"
+A6_usdjpy_start0,105.94759,106,"yen per US dollar, scored window start, whole"
+A6_usdjpy_end,154.13661,154.1,"yen per US dollar, mean of the log over the scored window's end months (S2)"
+A6_usdjpy_end0,154.13661,154,"yen per US dollar, scored window end, whole"
+A6_reer_jp_months,392,392,"months in Japan's real broad index, 1994-01 to 2026-08"
+A6_reer_jp_low_value,65.24,65.2,"Japan's real broad index, lowest month (2026-07)"
+A6_reer_jp_low_year,2026,2026,year of that lowest month
+A6_reer_jp_2025_12_rank,9,9,"rank of December 2025 among all months, 1 = lowest"
+A6_reer_jp_years,32,32,full calendar years in Japan's real broad index
+A6_reer_jp_2025_avg,72.5025,72.5,"Japan's real broad index, 2025 average"
+A6_reer_jp_2025_rank,2,2,"rank of the 2025 average among full years, 1 = lowest"
+A6_reer_jp_lowest_year,2024,2024,full year with the lowest average
+A6_reer_jp_lowest_year_avg,71.455833,71.5,that year's average

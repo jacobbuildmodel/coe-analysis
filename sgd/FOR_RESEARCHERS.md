@@ -326,9 +326,12 @@ none changed a rule, a threshold, a window, the coding or a score.
 
 ## 10. After outside review (not sealed)
 
-Added on 10 October 2026, after two outside reviews, by a lecturer and by an
-economics faculty member at SMU. Both confirmed the arithmetic and asked for
-the meaning to be tightened. Everything in this section was **added after
+Added on 10 October 2026, after reading by four outside readers: a lecturer,
+an economics faculty member, a reader with no economics training, and a reader
+who works in currency markets. The first two confirmed the arithmetic and
+asked for the meaning to be tightened. The other two also confirmed it: 78,125
+and 120,482 yen per S$1,000 at the two-decimal rates; 31 + 73 - 4 = 100; 2.68;
+0.136. Everything in this section was **added after
 outside review, not sealed**, and none of it is scored. No sealed number,
 outcome, threshold or verdict wording changed. The script is
 `sgd/16_review.py`: it reuses the sealed definitions in `11_tests.py`
@@ -364,7 +367,8 @@ rose 2.7% and the yen fell 31.3% against the US dollar (shares 7 and 93 per
 cent), and the ringgit fell 2.1% (55 and 45). The identity is exact, but its
 yardstick is a single currency, whose own swings sit inside both shares. On
 the long window the yardstick decides the reading. Against everyone, the
-Singapore dollar's own rise was the larger part (0.5724 against 0.5058).
+Singapore dollar's own rise was the larger part (0.5724 against 0.5058, with
+a remainder of -0.0782).
 Against the US dollar, the yen's fall was (0.5737 against 0.4263).
 
 ### A2. Each currency removed from the other's basket
@@ -414,9 +418,14 @@ recorded in RETRIEVED.txt.
 | SGD real broad index | up 14.7% |
 | Yen real broad index | down 26.6% |
 | S, P, R (real cross) | 0.3146, 0.7067, -0.0212 |
+| Tokyo goods per SGD, b - d ln CPI_JP (round 5) | up 32.1% |
 | Sealed "real indices" row (nominal cross) | 0.3419, 0.7680, -0.1098 |
 
-On a real cross the remainder shrank from -0.1098 to -0.0212, as expected
+The traveller's figure and the real exchange rate sit on opposite sides of the
+nominal 49.5%: deflating by Japan's prices alone gives 32.1% more Tokyo
+goods per Singapore dollar, while the real exchange rate, deflated by both
+countries' prices, rose 54.8%, because Singapore's prices rose faster (17.1%
+against 13.1%). On a real cross the remainder shrank from -0.1098 to -0.0212, as expected
 once both countries' prices are on both sides. The yen's real fall was still
 most of the real rise. The long window was not computed: Japan's series ends
 in July 2026, before the long window's last endpoint month.
@@ -432,7 +441,11 @@ three-month mean. Chart 4 plots S and P for the yen.
 | 65 | 46 | 19 | 39 | 7 |
 
 The checker's quick count, one window fewer, matches these counts without
-the last window, which ends in August 2026. The Singapore dollar did not rise against the yen in the
+the last window, which ends in August 2026. The windows overlap: consecutive
+ones share 57 of 60 months, so the 46 are not independent results. They
+describe one persistent pattern, and, as with the serial dependence in A5(c),
+the effective number of independent observations is far smaller than the
+count. The Singapore dollar did not rise against the yen in the
 windows starting from 2005 to 2008 and from 2014 to 2016. Its own rise was
 larger only in windows starting in 2008, 2009, 2013 and 2014. Over the full
 long window the order reverses (S 0.5724, P 0.5058). The Singapore dollar's broad index
@@ -480,6 +493,30 @@ N_eff = N * (1 - r_y * r_x) / (1 + r_y * r_x)      Bartlett, lag 1
 
 This gives 53 for MAS's score and 52 for growth. A Spearman coefficient then
 has a standard error of about 0.14, against the 0.13 that THESIS assumed.
+
+### A6. Context for the article (round 5)
+
+| Item | Value |
+|---|---|
+| Yen per US dollar, Jan-Mar 2021 (mean of the log, S2) | 105.9 |
+| Yen per US dollar, Oct-Dec 2025 | 154.1 |
+| Japan's real broad index (S1b), 2025 average | 72.5, the 2nd lowest of 32 full years since 1994 |
+| Lowest full year | 2024, at 71.5 |
+| December 2025 among all 392 months | 9th lowest |
+| Lowest month | 65.2, in July 2026 |
+
+The 2025 average was near the bottom of the series but not the lowest: 2024's
+was lower, and the lowest months came in 2026. One line of context in the
+article links the yen's fall to the gap between Japanese and US interest
+rates. Japan's side is cited to the Bank of Japan's statement of 19 March 2024
+(`raw/s9_boj_mps_20240319.html`), which ended its negative interest rate
+policy. The Federal Reserve's policy-rate page could not be retrieved: the
+session's network policy refused the host. So the US side stays general and
+cites nothing. Nothing here tests the interest-rate link.
+
+The specimen at the two-decimal rates the article prints, S$1.28 and S$0.83
+per 100 yen: 78,125 and 120,482 yen per S$1,000, said as "about 78,000" and
+"about 120,000".
 
 ## 11. References
 
