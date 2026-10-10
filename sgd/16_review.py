@@ -25,6 +25,10 @@ the number manifest):
   out/review_a5_t7.csv       A5. T7: a moving-block bootstrap for D; growth
                              and CPI inflation led by 1 and 2 quarters; the
                              effective sample size.
+  out/review_a6_context.csv  Context for the article (round 5): USD/JPY at the
+                             scored window's endpoints (S2), and where the
+                             BIS real broad index for Japan (S1b) sat in its
+                             series since 1994.
   out/review_article.csv     Article forms of numbers already sealed or above.
 
 and out/review_rolling_windows.csv, one row per rolling window (the data for
@@ -204,6 +208,9 @@ def a3(D, W, cpi_jp):
         R.pct(k + "_b_real", br, f"{w} window: the Singapore dollar against the yen, real")
         R.pct(k + "_s_real", s_r, f"{w} window: the Singapore dollar's real broad index")
         R.pct(k + "_n_real", n_r, f"{w} window: the yen's real broad index")
+        # A traveller's figure (round 5): Tokyo goods per Singapore dollar,
+        # the nominal cross deflated by Japan's prices alone.
+        R.pct(k + "_tokyo_goods", sp["b"] - jp, f"{w} window: Tokyo goods per Singapore dollar (b - dln CPI_JP)")
         if br > 0:
             R.share(k + "_S", s_r / br, f"{w} window, real: the Singapore dollar rising")
             R.share(k + "_P", -n_r / br, f"{w} window, real: the yen falling")
@@ -321,7 +328,42 @@ def a5(D, iv):
 
 
 # ------------------------------------------------------------------ article forms
-def article(D, sens):
+def context(D, W):
+    """USD/JPY at the scored window's three-month endpoints, and the rank of
+    Japan's real broad index (S1b) in its series."""
+    R = Rows()
+    first, last, start, end = W["scored"]
+    u = D["usd"].get("JPY", {})
+    for tag, ms in (("start", start), ("end", end)):
+        if all(m in u for m in ms):
+            v = math.exp(sum(math.log(u[m]) for m in ms) / len(ms))
+            R.add(f"A6_usdjpy_{tag}", v, "{:.1f}", f"yen per US dollar, mean of the log over the scored window's {tag} months (S2)")
+            R.add(f"A6_usdjpy_{tag}0", v, "{:.0f}", f"yen per US dollar, scored window {tag}, whole")
+    re_ = D["reer"].get("JP", {})
+    if re_:
+        ps = sorted(re_)
+        order = sorted(ps, key=lambda p: re_[p])
+        R.add("A6_reer_jp_months", len(ps), "{:d}", f"months in Japan's real broad index, {ps[0]} to {ps[-1]}")
+        R.add("A6_reer_jp_low_value", re_[order[0]], "{:.1f}", f"Japan's real broad index, lowest month ({order[0]})")
+        R.add("A6_reer_jp_low_year", int(order[0][:4]), "{:d}", "year of that lowest month")
+        if "2025-12" in re_:
+            R.add("A6_reer_jp_2025_12_rank", order.index("2025-12") + 1, "{:d}",
+                  "rank of December 2025 among all months, 1 = lowest")
+        ann = {}
+        for p in ps:
+            ann.setdefault(p[:4], []).append(re_[p])
+        full = {y: sum(v) / len(v) for y, v in ann.items() if len(v) == 12}
+        ys = sorted(full, key=lambda y: full[y])
+        R.add("A6_reer_jp_years", len(full), "{:d}", "full calendar years in Japan's real broad index")
+        if "2025" in full:
+            R.add("A6_reer_jp_2025_avg", full["2025"], "{:.1f}", "Japan's real broad index, 2025 average")
+            R.add("A6_reer_jp_2025_rank", ys.index("2025") + 1, "{:d}", "rank of the 2025 average among full years, 1 = lowest")
+        R.add("A6_reer_jp_lowest_year", int(ys[0]), "{:d}", "full year with the lowest average")
+        R.add("A6_reer_jp_lowest_year_avg", full[ys[0]], "{:.1f}", "that year's average")
+    return R
+
+
+def article(D, sens, T):
     R = Rows()
     for m, tag in (("2021-01", "2021_01"), ("2025-12", "2025_12")):
         v = D["masfx"].get("JPY", {}).get(m)
@@ -334,6 +376,21 @@ def article(D, sens):
     if b1 not in (None, ""):
         R.add("art_single_month_JPY_pct0", 100 * (math.exp(float(b1)) - 1), "{:.0f}",
               "the Singapore dollar against the yen, single-month endpoints, per cent, whole")
+    # Round 5: the specimen at the two-decimal rates the article prints.
+    for m, tag in (("2021-01", "2021_01"), ("2025-12", "2025_12")):
+        v = D["masfx"].get("JPY", {}).get(m)
+        if v:
+            r2 = round(100 * v, 2) / 100
+            R.add(f"art_yen_per_budget_2dp_{tag}", 1000 / r2, "{:,.0f}", f"yen per S$1,000 at the two-decimal rate, {m}")
+            R.add(f"art_yen_per_budget_2dp_k_{tag}", round(1000 / r2, -4 if m == "2025-12" else -3), "{:,.0f}",
+                  f"the same, rounded as the article says it ('about'), {m}")
+    for key, name in (("T2_P", "the yen's fall"), ("T2_S", "the Singapore dollar's rise")):
+        v = T.get(key)
+        if v not in (None, ""):
+            R.add(f"art_{key}_pct10", round(10 * float(v)) * 10, "{:d}", f"T2 share, {name}, per cent to the nearest 10 ('about')")
+    v = T.get("T1_long_JPY_R")
+    if v not in (None, ""):
+        R.add("art_long_JPY_R_pct0", abs(100 * float(v)), "{:.0f}", "long window: the yen split's remainder, per cent of the log change, negative")
     d = S.get(("finer slope coding", "D"))
     if d not in (None, ""):
         R.add("art_finer_D_3dp", float(d), "{:.3f}", "T7 with the finer slope coding: D, three decimals")
@@ -355,10 +412,12 @@ def main():
         iv.append({"date": r["date"], "start": r["start"], "end": r["end"], "y": float(r["y"]),
                    "g": float(r["g"]), "p": int(r["p"])})
     sens = L.read_csv(os.path.join(out, "sensitivities.csv"))
+    T = {r["key"]: r["value"] for r in L.read_csv(os.path.join(out, "tests.csv"))}
     for name, R in (("review_a1_usd.csv", a1(D, W)), ("review_a2_expair.csv", a2(D, W, P["raw"])),
                     ("review_a3_real.csv", a3(D, W, load_cpi_jp(P["raw"]))),
                     ("review_a4_rolling.csv", a4(D, out)), ("review_a5_t7.csv", a5(D, iv)),
-                    ("review_article.csv", article(D, sens))):
+                    ("review_a6_context.csv", context(D, W)),
+                    ("review_article.csv", article(D, sens, T))):
         R.write(os.path.join(out, name))
 
 

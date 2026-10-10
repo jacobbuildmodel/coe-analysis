@@ -37,7 +37,8 @@ SCRIPTS = ["sgdlib.py", "00_coverage.py", "03_mps_candidates.py", "04_mps_coding
            "run_all.sh", "requirements.txt", "tests/make_fixtures.py", "tests/test_pipeline.py",
            "16_review.py"]
 # Raw files read only by 16_review.py (THESIS_ADDENDUM item 10, not sealed).
-REVIEW_RAW = ("s1c_bis_eer_weights_broad.xlsx", "s8_bis_long_cpi_jp_monthly.csv")
+REVIEW_RAW = ("s1c_bis_eer_weights_broad.xlsx", "s8_bis_long_cpi_jp_monthly.csv",
+              "s9_boj_mps_20240319.html")
 
 
 ARTICLE = "2026-11-14.md"
