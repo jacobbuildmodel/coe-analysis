@@ -300,3 +300,200 @@ Written by `11b_postresults.py` from `out/` (THESIS_ADDENDUM item 5): per-cent f
 | conf_T3_pct | 8 | Jacob's confidence at seal, T3, per cent |
 | conf_T4_pct | 80 | Jacob's confidence at seal, T4, per cent |
 | conf_T7_pct | 35 | Jacob's confidence at seal, T7, per cent |
+
+## After outside review (added after outside review, not sealed, NOT SCORED)
+
+Written by `16_review.py` from `out/` and raw/s1c, raw/s8 (THESIS_ADDENDUM item 10). None changes a sealed number, outcome, threshold or the verdict.
+
+### review_a1_usd.csv
+
+| Key | Printed | Meaning |
+|---|---|---|
+| A1_scored_JPY_b | 0.4018 | scored window: ln(X per SGD) change, = d ln(X per USD) - d ln(SGD per USD) |
+| A1_scored_JPY_sgd_vs_usd_pct | 2.7 | scored window: the Singapore dollar against the US dollar, per cent, up |
+| A1_scored_JPY_sgd_vs_usd_pct0 | 3 | scored window: the Singapore dollar against the US dollar, per cent, up, whole |
+| A1_scored_JPY_x_vs_usd_pct | 31.3 | scored window: JPY against the US dollar, per cent, down |
+| A1_scored_JPY_x_vs_usd_pct0 | 31 | scored window: JPY against the US dollar, per cent, down, whole |
+| A1_scored_JPY_share_sgd | 0.0670 | scored window, JPY: the Singapore dollar's own move against the US dollar, share of the log change |
+| A1_scored_JPY_share_sgd_pct0 | 7 | scored window, JPY: the Singapore dollar's own move against the US dollar, per cent of the log change, whole |
+| A1_scored_JPY_share_x | 0.9330 | scored window, JPY: JPY's own fall against the US dollar, share of the log change |
+| A1_scored_JPY_share_x_pct0 | 93 | scored window, JPY: JPY's own fall against the US dollar, per cent of the log change, whole |
+| A1_scored_MYR_b | 0.0486 | scored window: ln(X per SGD) change, = d ln(X per USD) - d ln(SGD per USD) |
+| A1_scored_MYR_sgd_vs_usd_pct | 2.7 | scored window: the Singapore dollar against the US dollar, per cent, up |
+| A1_scored_MYR_sgd_vs_usd_pct0 | 3 | scored window: the Singapore dollar against the US dollar, per cent, up, whole |
+| A1_scored_MYR_x_vs_usd_pct | 2.1 | scored window: MYR against the US dollar, per cent, down |
+| A1_scored_MYR_x_vs_usd_pct0 | 2 | scored window: MYR against the US dollar, per cent, down, whole |
+| A1_scored_MYR_share_sgd | 0.5543 | scored window, MYR: the Singapore dollar's own move against the US dollar, share of the log change |
+| A1_scored_MYR_share_sgd_pct0 | 55 | scored window, MYR: the Singapore dollar's own move against the US dollar, per cent of the log change, whole |
+| A1_scored_MYR_share_x | 0.4457 | scored window, MYR: MYR's own fall against the US dollar, share of the log change |
+| A1_scored_MYR_share_x_pct0 | 45 | scored window, MYR: MYR's own fall against the US dollar, per cent of the log change, whole |
+| A1_long_JPY_b | 0.6263 | long window: ln(X per SGD) change, = d ln(X per USD) - d ln(SGD per USD) |
+| A1_long_JPY_sgd_vs_usd_pct | 30.6 | long window: the Singapore dollar against the US dollar, per cent, up |
+| A1_long_JPY_sgd_vs_usd_pct0 | 31 | long window: the Singapore dollar against the US dollar, per cent, up, whole |
+| A1_long_JPY_x_vs_usd_pct | 30.2 | long window: JPY against the US dollar, per cent, down |
+| A1_long_JPY_x_vs_usd_pct0 | 30 | long window: JPY against the US dollar, per cent, down, whole |
+| A1_long_JPY_share_sgd | 0.4263 | long window, JPY: the Singapore dollar's own move against the US dollar, share of the log change |
+| A1_long_JPY_share_sgd_pct0 | 43 | long window, JPY: the Singapore dollar's own move against the US dollar, per cent of the log change, whole |
+| A1_long_JPY_share_x | 0.5737 | long window, JPY: JPY's own fall against the US dollar, share of the log change |
+| A1_long_JPY_share_x_pct0 | 57 | long window, JPY: JPY's own fall against the US dollar, per cent of the log change, whole |
+| A1_long_MYR_b | 0.3449 | long window: ln(X per SGD) change, = d ln(X per USD) - d ln(SGD per USD) |
+| A1_long_MYR_sgd_vs_usd_pct | 30.6 | long window: the Singapore dollar against the US dollar, per cent, up |
+| A1_long_MYR_sgd_vs_usd_pct0 | 31 | long window: the Singapore dollar against the US dollar, per cent, up, whole |
+| A1_long_MYR_x_vs_usd_pct | 7.5 | long window: MYR against the US dollar, per cent, down |
+| A1_long_MYR_x_vs_usd_pct0 | 7 | long window: MYR against the US dollar, per cent, down, whole |
+| A1_long_MYR_share_sgd | 0.7741 | long window, MYR: the Singapore dollar's own move against the US dollar, share of the log change |
+| A1_long_MYR_share_sgd_pct0 | 77 | long window, MYR: the Singapore dollar's own move against the US dollar, per cent of the log change, whole |
+| A1_long_MYR_share_x | 0.2259 | long window, MYR: MYR's own fall against the US dollar, share of the log change |
+| A1_long_MYR_share_x_pct0 | 23 | long window, MYR: MYR's own fall against the US dollar, per cent of the log change, whole |
+
+### review_a2_expair.csv
+
+| Key | Printed | Meaning |
+|---|---|---|
+| A2_scored_JPY_w_in_sg | 6.1 | scored window: weight of JPY in Singapore's basket, per cent |
+| A2_scored_JPY_w_sg_in_x | 2.7 | scored window: weight of SGD in JP's basket, per cent |
+| A2_scored_JPY_s_ex | 0.1053 | scored window: SGD broad index without JPY, log change |
+| A2_scored_JPY_n_ex | -0.2912 | scored window: JP broad index without SGD, log change |
+| A2_scored_JPY_S | 0.2620 | scored window, JPY, ex-pair: the Singapore dollar rising, share of the log change |
+| A2_scored_JPY_S_pct0 | 26 | scored window, JPY, ex-pair: the Singapore dollar rising, per cent of the log change, whole |
+| A2_scored_JPY_P | 0.7246 | scored window, JPY, ex-pair: JPY falling, share of the log change |
+| A2_scored_JPY_P_pct0 | 72 | scored window, JPY, ex-pair: JPY falling, per cent of the log change, whole |
+| A2_scored_JPY_R | 0.0133 | scored window, JPY, ex-pair: the remainder, share of the log change |
+| A2_scored_JPY_R_pct0 | 1 | scored window, JPY, ex-pair: the remainder, per cent of the log change, whole |
+| A2_scored_MYR_w_in_sg | 13.1 | scored window: weight of MYR in Singapore's basket, per cent |
+| A2_scored_MYR_w_sg_in_x | 12.6 | scored window: weight of SGD in MY's basket, per cent |
+| A2_scored_MYR_s_ex | 0.1346 | scored window: SGD broad index without MYR, log change |
+| A2_scored_MYR_n_ex | 0.1019 | scored window: MY broad index without SGD, log change |
+| A2_scored_MYR_S | 2.7703 | scored window, MYR, ex-pair: the Singapore dollar rising, share of the log change |
+| A2_scored_MYR_S_pct0 | 277 | scored window, MYR, ex-pair: the Singapore dollar rising, per cent of the log change, whole |
+| A2_scored_MYR_P | -2.0960 | scored window, MYR, ex-pair: MYR falling, share of the log change |
+| A2_scored_MYR_P_pct0 | 210 | scored window, MYR, ex-pair: MYR falling, per cent of the log change, whole, negative |
+| A2_scored_MYR_R | 0.3257 | scored window, MYR, ex-pair: the remainder, share of the log change |
+| A2_scored_MYR_R_pct0 | 33 | scored window, MYR, ex-pair: the remainder, per cent of the log change, whole |
+| A2_long_JPY_w_in_sg | 8.4 | long window: weight of JPY in Singapore's basket, per cent |
+| A2_long_JPY_w_sg_in_x | 2.7 | long window: weight of SGD in JP's basket, per cent |
+| A2_long_JPY_s_ex | 0.3339 | long window: SGD broad index without JPY, log change |
+| A2_long_JPY_n_ex | -0.3084 | long window: JP broad index without SGD, log change |
+| A2_long_JPY_S | 0.5332 | long window, JPY, ex-pair: the Singapore dollar rising, share of the log change |
+| A2_long_JPY_S_pct0 | 53 | long window, JPY, ex-pair: the Singapore dollar rising, per cent of the log change, whole |
+| A2_long_JPY_P | 0.4924 | long window, JPY, ex-pair: JPY falling, share of the log change |
+| A2_long_JPY_P_pct0 | 49 | long window, JPY, ex-pair: JPY falling, per cent of the log change, whole |
+| A2_long_JPY_R | -0.0256 | long window, JPY, ex-pair: the remainder, share of the log change |
+| A2_long_JPY_R_pct0 | 3 | long window, JPY, ex-pair: the remainder, per cent of the log change, whole, negative |
+| A2_long_MYR_w_in_sg | 9.3 | long window: weight of MYR in Singapore's basket, per cent |
+| A2_long_MYR_w_sg_in_x | 10.5 | long window: weight of SGD in MY's basket, per cent |
+| A2_long_MYR_s_ex | 0.3599 | long window: SGD broad index without MYR, log change |
+| A2_long_MYR_n_ex | 0.0300 | long window: MY broad index without SGD, log change |
+| A2_long_MYR_S | 1.0435 | long window, MYR, ex-pair: the Singapore dollar rising, share of the log change |
+| A2_long_MYR_S_pct0 | 104 | long window, MYR, ex-pair: the Singapore dollar rising, per cent of the log change, whole |
+| A2_long_MYR_P | -0.0868 | long window, MYR, ex-pair: MYR falling, share of the log change |
+| A2_long_MYR_P_pct0 | 9 | long window, MYR, ex-pair: MYR falling, per cent of the log change, whole, negative |
+| A2_long_MYR_R | 0.0434 | long window, MYR, ex-pair: the remainder, share of the log change |
+| A2_long_MYR_R_pct0 | 4 | long window, MYR, ex-pair: the remainder, per cent of the log change, whole |
+
+### review_a3_real.csv
+
+| Key | Printed | Meaning |
+|---|---|---|
+| A3_scored_JPY_cpi_sg_pct | 17.1 | scored window: Singapore's CPI (S7), per cent, up |
+| A3_scored_JPY_cpi_sg_pct0 | 17 | scored window: Singapore's CPI (S7), per cent, up, whole |
+| A3_scored_JPY_cpi_jp_pct | 13.1 | scored window: Japan's CPI (BIS long CPI), per cent, up |
+| A3_scored_JPY_cpi_jp_pct0 | 13 | scored window: Japan's CPI (BIS long CPI), per cent, up, whole |
+| A3_scored_JPY_b_real | 0.4367 | scored window: real yen per SGD, log change |
+| A3_scored_JPY_b_real_pct | 54.8 | scored window: the Singapore dollar against the yen, real, per cent, up |
+| A3_scored_JPY_b_real_pct0 | 55 | scored window: the Singapore dollar against the yen, real, per cent, up, whole |
+| A3_scored_JPY_s_real_pct | 14.7 | scored window: the Singapore dollar's real broad index, per cent, up |
+| A3_scored_JPY_s_real_pct0 | 15 | scored window: the Singapore dollar's real broad index, per cent, up, whole |
+| A3_scored_JPY_n_real_pct | 26.6 | scored window: the yen's real broad index, per cent, down |
+| A3_scored_JPY_n_real_pct0 | 27 | scored window: the yen's real broad index, per cent, down, whole |
+| A3_scored_JPY_tokyo_goods_pct | 32.1 | scored window: Tokyo goods per Singapore dollar (b - dln CPI_JP), per cent, up |
+| A3_scored_JPY_tokyo_goods_pct0 | 32 | scored window: Tokyo goods per Singapore dollar (b - dln CPI_JP), per cent, up, whole |
+| A3_scored_JPY_S | 0.3146 | scored window, real: the Singapore dollar rising, share of the log change |
+| A3_scored_JPY_S_pct0 | 31 | scored window, real: the Singapore dollar rising, per cent of the log change, whole |
+| A3_scored_JPY_P | 0.7067 | scored window, real: the yen falling, share of the log change |
+| A3_scored_JPY_P_pct0 | 71 | scored window, real: the yen falling, per cent of the log change, whole |
+| A3_scored_JPY_R | -0.0212 | scored window, real: the remainder, share of the log change |
+| A3_scored_JPY_R_pct0 | 2 | scored window, real: the remainder, per cent of the log change, whole, negative |
+
+### review_a4_rolling.csv
+
+| Key | Printed | Meaning |
+|---|---|---|
+| A4_windows | 65 | rolling five-year windows, August 2005 on, in three-month steps |
+| A4_rose | 46 | windows in which the Singapore dollar rose against the yen |
+| A4_not_rose | 19 | windows in which it did not |
+| A4_yen_larger | 39 | of the windows where it rose, those where the yen's own fall was the larger part |
+| A4_sgd_larger | 7 | of the windows where it rose, those where the Singapore dollar's own rise was larger |
+| A4_first_start_year | 2005 | first window starts (year) |
+| A4_last_end_year | 2026 | last window ends (year) |
+
+### review_a5_t7.csv
+
+| Key | Printed | Meaning |
+|---|---|---|
+| A5_block2_lo | 0.10 | T7 D, moving-block bootstrap, block 2, 90% range, low |
+| A5_block2_hi | 0.63 | T7 D, moving-block bootstrap, block 2, 90% range, high |
+| A5_block4_lo | 0.09 | T7 D, moving-block bootstrap, block 4, 90% range, low |
+| A5_block4_hi | 0.69 | T7 D, moving-block bootstrap, block 4, 90% range, high |
+| A5_block8_lo | 0.14 | T7 D, moving-block bootstrap, block 8, 90% range, low |
+| A5_block8_hi | 0.71 | T7 D, moving-block bootstrap, block 8, 90% range, high |
+| A5_g_lead1_rho_p | 0.48 | T7 with growth led 1 quarter(s): rho with MAS's decisions |
+| A5_g_lead1_rho | 0.04 | T7 with growth led 1 quarter(s): rho with growth |
+| A5_g_lead1_D | 0.44 | T7 with growth led 1 quarter(s): D |
+| A5_g_lead1_n | 60 | T7 with growth led 1 quarter(s): intervals with data |
+| A5_cpi_lead1_rho_p | 0.48 | T7 with CPI inflation led 1 quarter(s): rho with MAS's decisions |
+| A5_cpi_lead1_rho | 0.49 | T7 with CPI inflation led 1 quarter(s): rho with CPI inflation |
+| A5_cpi_lead1_D | -0.01 | T7 with CPI inflation led 1 quarter(s): D |
+| A5_cpi_lead1_n | 60 | T7 with CPI inflation led 1 quarter(s): intervals with data |
+| A5_g_lead2_rho_p | 0.48 | T7 with growth led 2 quarter(s): rho with MAS's decisions |
+| A5_g_lead2_rho | -0.18 | T7 with growth led 2 quarter(s): rho with growth |
+| A5_g_lead2_D | 0.66 | T7 with growth led 2 quarter(s): D |
+| A5_g_lead2_n | 59 | T7 with growth led 2 quarter(s): intervals with data |
+| A5_cpi_lead2_rho_p | 0.48 | T7 with CPI inflation led 2 quarter(s): rho with MAS's decisions |
+| A5_cpi_lead2_rho | 0.40 | T7 with CPI inflation led 2 quarter(s): rho with CPI inflation |
+| A5_cpi_lead2_D | 0.08 | T7 with CPI inflation led 2 quarter(s): D |
+| A5_cpi_lead2_n | 59 | T7 with CPI inflation led 2 quarter(s): intervals with data |
+| A5_n | 61 | T7 intervals |
+| A5_r1_y | 0.14 | lag-1 autocorrelation of the path y_i |
+| A5_r1_p | 0.52 | lag-1 autocorrelation of MAS's score p_i |
+| A5_r1_g | 0.57 | lag-1 autocorrelation of growth g_i |
+| A5_neff_p | 53 | effective sample size for rho(y, p), Bartlett lag-1 |
+| A5_se_p | 0.14 | approximate standard error of rho(y, p) at that size |
+| A5_neff_g | 52 | effective sample size for rho(y, g), Bartlett lag-1 |
+| A5_se_g | 0.14 | approximate standard error of rho(y, g) at that size |
+
+### review_a6_context.csv
+
+| Key | Printed | Meaning |
+|---|---|---|
+| A6_usdjpy_start | 105.9 | yen per US dollar, mean of the log over the scored window's start months (S2) |
+| A6_usdjpy_start0 | 106 | yen per US dollar, scored window start, whole |
+| A6_usdjpy_end | 154.1 | yen per US dollar, mean of the log over the scored window's end months (S2) |
+| A6_usdjpy_end0 | 154 | yen per US dollar, scored window end, whole |
+| A6_reer_jp_months | 392 | months in Japan's real broad index, 1994-01 to 2026-08 |
+| A6_reer_jp_low_value | 65.2 | Japan's real broad index, lowest month (2026-07) |
+| A6_reer_jp_low_year | 2026 | year of that lowest month |
+| A6_reer_jp_2025_12_rank | 9 | rank of December 2025 among all months, 1 = lowest |
+| A6_reer_jp_years | 32 | full calendar years in Japan's real broad index |
+| A6_reer_jp_2025_avg | 72.5 | Japan's real broad index, 2025 average |
+| A6_reer_jp_2025_rank | 2 | rank of the 2025 average among full years, 1 = lowest |
+| A6_reer_jp_lowest_year | 2024 | full year with the lowest average |
+| A6_reer_jp_lowest_year_avg | 71.5 | that year's average |
+
+### review_article.csv
+
+| Key | Printed | Meaning |
+|---|---|---|
+| art_sgd_per_100jpy_2021_01 | 1.278 | MAS monthly average, S$ per 100 yen, 2021-01, three decimals |
+| art_yen_per_budget_2021_01 | 78,200 | yen bought by S$1,000, 2021-01, to the nearest 100 |
+| art_sgd_per_100jpy_2025_12 | 0.829 | MAS monthly average, S$ per 100 yen, 2025-12, three decimals |
+| art_yen_per_budget_2025_12 | 120,600 | yen bought by S$1,000, 2025-12, to the nearest 100 |
+| art_single_month_JPY_pct0 | 54 | the Singapore dollar against the yen, single-month endpoints, per cent, whole |
+| art_yen_per_budget_2dp_2021_01 | 78,125 | yen per S$1,000 at the two-decimal rate, 2021-01 |
+| art_yen_per_budget_2dp_k_2021_01 | 78,000 | the same, rounded as the article says it ('about'), 2021-01 |
+| art_yen_per_budget_2dp_2025_12 | 120,482 | yen per S$1,000 at the two-decimal rate, 2025-12 |
+| art_yen_per_budget_2dp_k_2025_12 | 120,000 | the same, rounded as the article says it ('about'), 2025-12 |
+| art_T2_P_pct10 | 70 | T2 share, the yen's fall, per cent to the nearest 10 ('about') |
+| art_T2_S_pct10 | 30 | T2 share, the Singapore dollar's rise, per cent to the nearest 10 ('about') |
+| art_long_JPY_R_pct0 | 8 | long window: the yen split's remainder, per cent of the log change, negative |
+| art_finer_D_3dp | 0.346 | T7 with the finer slope coding: D, three decimals |

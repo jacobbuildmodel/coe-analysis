@@ -261,3 +261,210 @@ the chart titles, so none needed a change.
 - **md5, figs/sgd_chart1_split.svg:** aff30e6b87da39568d4c902b554e4f87 -> 11a36cebf01e23ed484f29a14a8aee90
 - **md5, figs/sgd_chart2_steady.svg:** 1bbf1c4e5eb9568b07cf43f7473ac08e -> 77f2ea041862e4ddbbde9c9d154eb74c
 - **md5, figs/sgd_chart3_path.svg:** cf9d81a104932771e93eb60f6dfe9ae7 -> da66e8cbfa2a72a3e65d25013e614968
+
+## 10. After outside review (10 October 2026): added after outside review, not sealed
+
+Four outside readers read the piece in two rounds:
+- round 4: a lecturer and an economics faculty member (reviewers 1 and 2);
+- round 5: a reader with no economics training and a reader who works in
+  currency markets (readers 3 and 4).
+
+Reviewers 1 and 2 confirmed the arithmetic and asked for the meaning to be
+tightened. Readers 3 and 4 also confirmed it: 78,125 and 120,482 yen;
+31 + 73 - 4 = 100; 2.68; 0.136.
+
+Every change below was **added after outside review, not sealed**, and none
+is scored. No sealed number, outcome, threshold or verdict-rule wording
+changed.
+
+The round-4 brief relayed the reviewers' comments as asks A1-A5, article items
+1-8 and the FOR_RESEARCHERS section. Each line cites the brief's label for the
+comment it answers. Reviewers 1 and 2 raised the same points; the brief
+consolidated them, so asks are not split by reviewer.
+
+**Analyses (new script `16_review.py`, outputs `out/review_*.csv`, every
+printed number in `number_manifest.csv`):**
+
+- **A1, the US dollar as numeraire (an exact identity).** Answers ask A1. It
+  confirmed the checker's 2021-25 figures: SGD up 2.7%, JPY down 31.3%
+  (shares 7/93), MYR down 2.1% (55/45).
+- **A2, the ex-pair split, using raw/s1c period weights** (a first-order
+  approximation for a chain-linked index). Answers ask A2.
+- **A3, the real split of the yen cross, with Japan's CPI from BIS
+  WS_LONG_CPI** (stats.bis.org). Answers ask A3. The long window was not
+  computed, because Japan's series ends in July 2026.
+- **A4, rolling five-year windows, and the new chart 4.** Answers ask A4. It
+  corrected the checker's count to 39 of 46. The checker's 38 of 45 is the
+  same count without the last window, which ends in August 2026.
+- **A5, T7.** Answers ask A5:
+  - (a) a moving-block bootstrap with blocks of 2, 4 and 8;
+  - (b) growth and CPI inflation led by 1 and 2 quarters;
+  - (c) the effective sample size.
+
+**Data:**
+
+- **`raw/s8_bis_long_cpi_jp_monthly.csv`, retrieved 10 October 2026** and
+  recorded in `raw/RETRIEVED.txt` by an appended block. The sealed text above
+  it is unchanged. Answers ask A3.
+  - md5 (new): 7fcc997a6e726449913ff18adc2d2d6f
+  - md5, RETRIEVED.txt: 8550c0cfcad82fe8771fc14ac4f9ef92 -> 11e68bd861c8fd882fda1213b8eb23b9
+
+**Machinery:**
+
+- **`16_review.py` (new).** It reuses `11_tests.py`'s sealed definitions and
+  is guarded like 10 and 15. Answers asks A1-A5.
+  - md5 (new): 7bd3e63dd228006118d5d9725b7c2459
+- **`12_figures.py`: chart 4.** It has a rule-based finding title and a "How
+  to read" caption, and is drawn only when the review outputs exist. Charts 1
+  to 3 are unchanged. Answers ask A4.
+  - md5: 4c63044358ccd53dc6720ff6452e18f8 -> f785232aed80b6b1ee343ef41fce830e
+- **`13_results.py`.** It prints the review rows in a section marked
+  "added after outside review, not sealed, NOT SCORED", so every manifest
+  value appears in RESULTS.md. Answers the brief's number-check requirement.
+  - md5: 0554f69be0c8ccec930d07a13d315ef9 -> c80b6111ee90e52ac6f3cd9be2a47a1b
+- **`14_manifest.py`.** It adds the review rows to the manifest with
+  `16_review.py` as their script, and lists `16_review.py`, raw/s1c and
+  raw/s8 among the inputs. Answers the brief's number-check requirement.
+  - md5: 97a3d014fd064e8cde419e5709eff24b -> db84e81dbbadddd9ec5261b00bf565b3
+- **`run_all.sh`.** It runs `16_review.py` after step 11b and adds chart 4
+  to the overflow check. Answers the brief's run_all requirement.
+  - md5: abe15c405be256ed53386bfbc27c6105 -> 5eab55b06a53e558240daf5833538aec
+
+**Article, `2026-11-14.md` (1,800 words before Sources):**
+
+- **First screen and summary lead with the window result** (39 of 46
+  five-year stretches; over two decades the Singapore dollar's own climb was
+  larger). The title is kept. Answers article item 1.
+- **"Who moved is not who benefits."** A Singaporean's dollar bought the full
+  gain in yen, whichever currency moved. Answers article item 2.
+- **The strength-or-steering either/or is replaced by a reaction-function
+  paragraph, as theory context.** It quotes MAS's framework FAQ (raw/s5c) and
+  cites Balassa (1964) and Samuelson (1964). Answers article item 3.
+- **The verdict keeps the sealed sentence exactly.** It is followed by the
+  inflation result: CPI in place of growth gives MAS's lead -0.04, and -0.01
+  with inflation a quarter ahead (A5b). The weak parts are now a short list.
+  Answers article item 4.
+- **Renamed: "What failed, as I expected: the ringgit rose against
+  everyone".** Answers article item 5.
+- **Wording.** Answers article item 6:
+  - log shares;
+  - the summary's remainder;
+  - "about 50% more yen";
+  - "the yen's broad index fell 25 per cent";
+  - single months give 54 per cent;
+  - the specimen at S.278 and S/bin/bash.829, about 78,200 and 120,600 yen;
+  - the ringgit's moves in per cent, with 254%/-171% moved to the
+    researchers' page;
+  - "Hong Kong's broad index";
+  - the 11 currencies named;
+  - "typical month" defined;
+  - both 0.92 correlations on monthly changes;
+  - the reason for the August 2005 start;
+  - the finer coding's D 0.346;
+  - what a rank correlation of 0.47 means.
+- **New section "What it changes".** It answers QUESTION_RULES Rule 0 item 5
+  (the decision test, added 5 October in the project's QUESTION_RULES; per
+  Jacob's ruling (a) of round 5). Answers article item 7.
+- **A1 in one sentence.** Answers article item 8.
+- **To stay within 1,800 words, three passages were cut.** None of them is a
+  number the article needs:
+  - the January 2015 counter-example on chart 3;
+  - "the strongest setting on the scale" clause;
+  - the sentence on calibration.
+
+**Researchers' page, `FOR_RESEARCHERS.md`:**
+
+- **New section 10, "After outside review (not sealed)",** with A1-A5 in
+  tables and the reasoning for each, and the ringgit's 254%/-171% explained.
+  References are now section 11. Answers the brief's FOR_RESEARCHERS item.
+
+**Checks.**
+
+- The number check covers both files and every review output.
+- All four real charts and all 32 fixture charts (eight fixtures, four charts
+  each) pass `tools/check_figure_overflow.py`, bold included.
+- Chart 4 was rendered at 390 px and 1280 px, light and dark, and looked at.
+- The synthetic suite passes.
+
+**Round 5 (10 October 2026): readers 3 and 4 and the checker's notes on round
+4.** Added after outside review, not sealed. Round 4's fixes are kept and not
+duplicated. Labels: Jacob's rulings (a)-(d), article items 1-13 and the
+checker's notes 14-19 of the round-5 brief.
+
+- **Rulings (a) and (b).** Done in the lines above: Rule 0 item 5, and the
+  sentence on reviewer attribution.
+- **Ruling (c).** RETRIEVED.txt gained a second appended block (the BoJ page,
+  and a record that the Fed host was refused). It is additions only.
+  - md5, RETRIEVED.txt: 11e68bd861c8fd882fda1213b8eb23b9 -> 04f77fc1cb1a8689a52281486f46caf1
+- **Ruling (d).** "About 50% more yen" and "bought the full gain in yen" are
+  kept. Item 18 below finishes the prices paragraph.
+- **The specimen comes first, at S$1.28 and S$0.83.** "About 78,000" and
+  "about 120,000" yen (1,000/0.83 x 100 = 120,482) replace round 4's 78,200
+  and 120,600. Answers article item 1.
+- **The opening gives "about 70%" and "about 30%, with a small remainder", in
+  log terms.** Answers article item 2.
+- **The ringgit paragraph is in plain words** ("That small gap is the whole
+  5%"). 254%/-171% stay on the researchers' page only. Answers article item 3.
+- **How the scoring works, in two sentences.** The tally scores each
+  confidence, not the hit rate, and 2.68 is the five confidences added up.
+  Answers article item 4.
+- **"Monetary Authority of Singapore (MAS)" is spelled out at first use.**
+  Answers article item 5.
+- **The MAS path names the 2025 easings.** MAS reduced the slope in January
+  and April 2025 (MPS_CODING rows 20250124 and 20250414, both "flatter").
+  Answers article item 6.
+- **Hong Kong.** The heading is now "steadier even than Hong Kong's dollar",
+  with one clause on why: the peg is to the US dollar alone, while MAS manages
+  against a basket. Answers article item 7.
+- **Terms are defined before use.** "Both windows" is defined at bet 1, with
+  the July 2005 reason. The 11 currencies and "typical month" were already
+  defined in round 4 and are kept. Answers article item 8.
+- **The long-window split states its remainder:** 57, 51 and -8. Answers
+  article item 9.
+- **One line of context on why the yen fell:** the gap between Japanese and
+  US interest rates. Answers article item 10.
+  - The Japan side cites the BoJ statement of 19 March 2024
+    (`raw/s9_boj_mps_20240319.html`, new, md5
+    60770f0b5154516bf37dbe987173197a).
+  - The Federal Reserve host was refused by the session's network policy (403)
+    and was not routed around, so the US side stays general and uncited.
+- **USD/JPY from S2:** 105.9 to 154.1 (`review_a6_context.csv`). Answers
+  article item 11.
+- **The real effective yen, from S1b.** Its 2025 average, 72.5, was the
+  second lowest of 32 full years since 1994; 2024 was lower, at 71.5, and the
+  lowest months came in 2026. It is reported as "second lowest", not as the
+  lowest. Answers article item 12.
+- **"What to watch next" now says what would change the picture.** The
+  replication page is not live on the site, so the next open question is not
+  named; the line points to the open questions page. Answers article item 13.
+- **The two-decade claim now says "against everyone".** Once, it adds that
+  against the US dollar alone the order reverses (A1: 0.5737 against 0.4263).
+  This applies in the summary, the second paragraph, the five-year section,
+  "What it changes" and "Weaker than they read". Answers checker's note 14.
+- **"Overlapping" five-year stretches.** One clause in the article (57 of 60
+  months shared) and one sentence on the researchers' page, tied to A5(c).
+  Answers checker's note 15.
+- **The T7 range clause.** The 90% range "reaches below the pass line, so the
+  lead is not clear of chance". This is description; the sealed outcome stands
+  on the point estimate. Answers checker's note 16.
+- **The single-month sentence is rewritten** ("Measured from single months at
+  each end, the rise is 54 per cent; the tests average three months ..., which
+  gives 49.5"). Answers checker's note 17.
+- **The prices paragraph gives the traveller's figure.** Tokyo goods per
+  Singapore dollar rose 32.1% (b - dln CPI_JP, new in `review_a3_real.csv`).
+  It also says plainly that the real exchange rate rose more, 54.8%, because
+  Singapore's prices rose faster. Answers checker's note 18.
+- **Credit wording.** The institution is no longer named, here or on the
+  researchers' page. Four outside readers are credited, with who confirmed
+  the arithmetic. Answers checker's note 19.
+- **`16_review.py`.** It adds the round-5 numbers: the specimen at two-decimal
+  rates, the rounded shares, the long remainder, the traveller's figure, and
+  the new `review_a6_context.csv` (USD/JPY and the real-yen rank). Answers
+  article items 1, 2, 9, 11 and 12, and checker's note 18.
+  - md5: 7bd3e63dd228006118d5d9725b7c2459 -> 3a64cd4205cb6df083d29ce14d7d792e
+- **`14_manifest.py`.** raw/s9 joins the checksum inputs. Answers article item
+  10 (every cited source is checksummed).
+  - md5: db84e81dbbadddd9ec5261b00bf565b3 -> 9c17a563ed1d44010b649f425e3814ae
+- **Length.** To stay within 1,800 words, "The extremes" was cut to one
+  sentence first, as the brief allows. Other sentences were tightened, with
+  the detail kept on the researchers' page (A6 and the A1 to A4 notes).
