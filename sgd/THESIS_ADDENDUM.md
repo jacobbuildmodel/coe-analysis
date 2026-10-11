@@ -468,3 +468,17 @@ checker's notes 14-19 of the round-5 brief.
 - **Length.** To stay within 1,800 words, "The extremes" was cut to one
   sentence first, as the brief allows. Other sentences were tightened, with
   the detail kept on the researchers' page (A6 and the A1 to A4 notes).
+
+**Final touch (11 October 2026).** Added after outside review, not sealed;
+wording only.
+
+- **"The extremes" heading dropped.** Its one sentence is folded into the
+  end of "The argument: strength, delivered through steering". Answers
+  Jacob's ruling (c): a one-sentence section looked thin in the table of
+  contents. Rulings (a), keep the uncited general line on US rates, and (b),
+  keep /open/ until publication day, needed no change.
+- **"What it changes", first sentence.** It names the half: "The evidence cut
+  against reading the cheap yen as a sign of Singapore's strength". Answers
+  Jacob's edit note: "the comfortable story's second half" made the reader
+  work out which half.
+- 1,794 words before Sources.
