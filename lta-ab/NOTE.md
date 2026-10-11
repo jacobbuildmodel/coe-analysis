@@ -5,14 +5,14 @@
 code and data are public at https://github.com/jacobbuildmodel/coe-analysis (folder
 `lta-ab`).*
 
-This note sets out what the published record showed on four points the paper raised. It covers every bidding exercise from January 2010 to October 2026, exercise 1. Amounts are in nominal dollars. The note takes no view on the proposal.
+This note sets out what the published record showed on four points the consultation paper raised. It covers every bidding exercise from January 2010 to October 2026, exercise 1. Amounts are in nominal dollars. The note takes no view on the proposal.
 
 ## 1. How often Category A cleared above Category B (Q1)
 
-The paper said that "from Feb to Jun 2026, Category A price exceeded the Category B price
-on three occasions" (para 1.8). The record agrees. Of the 10 exercises from February to
-June 2026, Category A cleared above Category B in 3: the second exercises of February, April and
-June 2026. Those 3 were the only such exercises among the 19 held in 2026 up
+Of the 10 exercises from February to June 2026, Category A cleared above Category B in 3:
+the second exercises of February, April and June 2026. This matches the paper: "from Feb to
+Jun 2026, Category A price exceeded the Category B price on three occasions" (para 1.8).
+Those 3 were the only such exercises among the 19 held in 2026 up
 to the cut-off.
 
 There were also 18 earlier occasions, in 2013, 2016-2018 and 2020. That makes 21 of the
@@ -24,6 +24,7 @@ categories did not hold the same cars throughout.
 
 ## 2. The B-A premium gap, beside LTA's example amounts (Q1, Q3)
 
+Category B cleared a median $9,010 above A from 2010, and $19,568 over the last five years.
 The paper named "the historical price gaps between Category A and Category B" as "one
 possible reference point" for the feebate amounts (para 2.17). In its examples, adjacent
 bands differ by $15,000 (Option A) or $7,500 (Option B). The lowest and highest bands
@@ -43,21 +44,20 @@ The last five years began in October 2021, exercise 2. Within them, the gap ran 
 Category A $2,009 above B (April 2026) to Category B $50,335 above A. At the cut-off it was
 $99.
 
-*What this shows and does not show:* it shows that the size of a "historical gap" depended
+*What this shows and does not show:* it shows that the size of the historical gap depended
 on the window chosen. A premium is the price that cleared each category's own quota on one
 day. It is not a measure of a car's value, and it does not show what the gap would be
 within one merged pool.
 
 ## 3. Renewal prices: the PQP (Q4)
 
-The paper said that "existing owners of Category A and B cars already pay broadly similar
-PQPs when renewing" (para 2.19). The PQP is "the moving average of COE prices in the last
-three months" (footnote 3).
+In October 2026, Category A's PQP was $128,715 and Category B's $131,616: $2,901 apart, or
+2.3% of A's. The paper said that "existing owners of Category A and B cars already pay
+broadly similar PQPs when renewing" (para 2.19).
 
 ![Category B's PQP minus Category A's, per month](figs/lta_ab_chart2_pqp.svg)
 
-In October 2026, Category A's PQP was $128,715 and Category B's $131,616: $2,901 apart, or
-2.3% of A's. The gap over different windows:
+The gap over different windows:
 
 - **Last 12 months:** median $4,930 (4% of A's PQP), between $1,390 and $16,941.
 - **Last five years:** median $20,056 (22%), up to $36,738.
@@ -66,8 +66,8 @@ In October 2026, Category A's PQP was $128,715 and Category B's $131,616: $2,901
 Category A's PQP was at or above B's in 3 months: June 2013, June 2018 and July 2018. It
 was in none of the last five years.
 
-*What this shows and does not show:* the record bore out the paper's statement for October
-2026 (2.3%). Across the last five years, the median gap was 22% of A's PQP. It does not
+*What this shows and does not show:* it shows the gap between the two PQPs: 2.3% of A's in
+October 2026, and a median monthly gap of 22% of A's over the last five years. It does not
 show how many owners renewed, or what they would pay under a single PQP.
 
 ## 4. Quota shares and Category E (Q1, Q5)
@@ -82,7 +82,7 @@ deregistrations; it is not a measure of demand.
 **Category E.** Over the last five years, Category E cleared at or above both A and B in 86
 of 120 exercises, and below B in 34. Its median premium was $992 above B's.
 
-*What this shows and does not show:* that E's price sat close to B's. It does not show who
+*What this shows and does not show:* that E's price usually sat at or just above B's. It does not show who
 used E certificates; the paper's statement that they went mostly to Category B cars
 (para 2.22) cannot be checked from prices alone.
 
@@ -104,6 +104,6 @@ used E certificates; the paper's statement that they went mostly to Category B c
 
 ## For the feedback form (three lines)
 
-Category A cleared above B in 3 of 10 exercises from February to June 2026, as LTA said; there were 18 earlier occasions since 2010.
+Category A cleared above B in 3 of 10 exercises from February to June 2026, as the paper states. There were 18 earlier occasions since 2010.
 The B-A premium gap had a median of $9,010 from 2010 and $19,568 over the last five years, beside LTA's example band steps of $7,500 and $15,000.
-In October 2026 the PQPs for A and B were $2,901 apart, against a five-year median of $20,056. Note and data: https://github.com/jacobbuildmodel/coe-analysis (lta-ab).
+In October 2026 the PQPs for A and B were $2,901 apart; their median gap over the last five years was $20,056. The note takes no view on the proposal. Note and data: https://github.com/jacobbuildmodel/coe-analysis (lta-ab).

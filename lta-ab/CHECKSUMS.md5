@@ -9,8 +9,9 @@ dac8d85770a81011556068c0a4f23adf  raw/d1_coe_bidding_results_20261011.csv
 546ae77e763dbcb2c0ca40bad6442bf0  raw/d3_lta_m11_coe_results_2025_2026.pdf
 682a15339cf4ce51494f39955d07050d  office/LTA_CONSTANTS.csv
 7cf2512984ad4c53083906592624dabe  10_facts.py
-ca0361168087c1ddd987c6797ee2d9f0  12_figures.py
+17dd57bb59d75540eb8c79260897f120  12_figures.py
 e57c80c4bfeb458ec01d5763685321e3  14_manifest.py
+f602276600f4a1b5436dc714b3a99fa7  20_pdf.py
 ccd5d3608204c03b7a4b36ec4a787cb5  run_all.sh
 00ae6fb3f099500c8b77dba0887114ea  out/a_above_b.csv
 b9500c85294a91da910b536c2b009c8c  out/checks.csv
@@ -18,5 +19,5 @@ a3c7acf5c86a41cf9ef5365df70a3fe5  out/exercises.csv
 ea589d1f0e7ed782833b066c2b6d5261  out/facts.csv
 509ae5bc88e064f09134bf897348a7ac  out/pqp_monthly.csv
 9695758520e9c7df9223b0120f2f011c  figs/lta_ab_chart1_gap.svg
-bff3afeb8ac41097125d6c3a55a4cf9a  figs/lta_ab_chart2_pqp.svg
-8d2a4ede50105756338181b37a1ca95a  NOTE.md
+97d1571c73c3ee3bd75501eb5881891d  figs/lta_ab_chart2_pqp.svg
+256109821e41a72ff9e2d74c13d2eadf  NOTE.md

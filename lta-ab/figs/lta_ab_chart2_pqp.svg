@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 520" width="480" height="520" role="img" aria-labelledby="t d">
 <style>:root{--fig-ink:#0b0b0b;--fig-ink-3:#717171;--fig-rule:#e2e1dd;--fig-surface:#fcfcfa;--fig-subject:#2873ce;--fig-context:#707379;--fig-accent:#c2410c;--fig-shade:#efeee9;}@media (prefers-color-scheme: dark){:root{--fig-ink:#ffffff;--fig-ink-3:#9a9a9a;--fig-rule:#38393a;--fig-surface:#1a1a19;--fig-subject:#3987e5;--fig-context:#93969c;--fig-accent:#f08a4b;--fig-shade:#262624;}}:root[data-theme="dark"]{--fig-ink:#ffffff;--fig-ink-3:#9a9a9a;--fig-rule:#38393a;--fig-surface:#1a1a19;--fig-subject:#3987e5;--fig-context:#93969c;--fig-accent:#f08a4b;--fig-shade:#262624;}text{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}</style>
-<title id="t">Renewal prices for B and A were $2,901 apart in October 2026, against a five-year median of $20,056</title>
+<title id="t">Renewal prices for B and A were $2,901 apart in October 2026; the five-year median gap was $20,056</title>
 <desc id="d">Line chart, one point per month from January 2010 to October 2026: the Prevailing Quota Premium for Category B minus that for Category A. The gap was $2,901 in October 2026, a median $4,930 over the last 12 months, $20,056 over the last five years and $8,668 from 2010.</desc>
 <rect x="0" y="0" width="480" height="520" fill="var(--fig-surface,#fcfcfa)"/>
 <text x="12" y="33" font-size="17" font-weight="600" fill="var(--fig-ink,#0b0b0b)">Renewal prices for B and A were $2,901</text>
-<text x="12" y="52" font-size="17" font-weight="600" fill="var(--fig-ink,#0b0b0b)">apart in October 2026, against a five-year</text>
-<text x="12" y="71" font-size="17" font-weight="600" fill="var(--fig-ink,#0b0b0b)">median of $20,056</text>
+<text x="12" y="52" font-size="17" font-weight="600" fill="var(--fig-ink,#0b0b0b)">apart in October 2026; the five-year</text>
+<text x="12" y="71" font-size="17" font-weight="600" fill="var(--fig-ink,#0b0b0b)">median gap was $20,056</text>
 <text x="12" y="93" font-size="14" fill="var(--fig-ink-3,#717171)">B minus A, $</text>
 <rect x="341.8" y="107" width="122.2" height="230" fill="var(--fig-shade,#efeee9)"/>
 <text x="345.8" y="331" font-size="14" fill="var(--fig-ink-3,#717171)">last 5 years</text>

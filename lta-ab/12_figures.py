@@ -152,8 +152,8 @@ def main():
     pq = rows("pqp_monthly.csv")
     s2 = [(t_of(r["month"], 1, 1), int(r["gap"])) for r in pq]
     chart(os.path.join(FIGS, "lta_ab_chart2_pqp.svg"),
-          title=(f"Renewal prices for B and A were ${F['pqp_gap_oct2026']} apart in October 2026, "
-                 f"against a five-year median of ${F['pqp_gap_median_5y']}"),
+          title=(f"Renewal prices for B and A were ${F['pqp_gap_oct2026']} apart in October 2026; "
+                 f"the five-year median gap was ${F['pqp_gap_median_5y']}"),
           desc=(f"Line chart, one point per month from January 2010 to October 2026: the Prevailing Quota "
                 f"Premium for Category B minus that for Category A. The gap was ${F['pqp_gap_oct2026']} in "
                 f"October 2026, a median ${F['pqp_gap_median_12m']} over the last 12 months, "
