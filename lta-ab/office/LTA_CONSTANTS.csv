@@ -1,0 +1,9 @@
+key,value,printed,source
+step_option_a,15000,"15,000","Consultation paper para 2.18(a) and Table 1: Option A, three bands: $15,000 rebate, $0, $15,000 surcharge (adjacent bands differ by $15,000)"
+step_option_b,7500,"7,500","Consultation paper para 2.18(b) and Table 2: Option B, five bands: $15,000 and $7,500 rebates, $0, $7,500 and $15,000 surcharges (adjacent bands differ by $7,500)"
+rebate_max,15000,"15,000","Consultation paper paras 2.18(a)-(b), Tables 1-2: largest rebate in both options"
+surcharge_max,15000,"15,000","Consultation paper paras 2.18(a)-(b), Tables 1-2: largest surcharge in both options"
+claim_occasions,3,three,"Consultation paper para 1.8: 'from Feb to Jun 2026, Category A price exceeded the Category B price on three occasions' (also news release para 3)"
+claim_from_month,2,February,"Consultation paper para 1.8 (Feb 2026)"
+claim_to_month,6,June,"Consultation paper para 1.8 (Jun 2026)"
+e_share_pct,10,10,"Consultation paper footnote 5: 'Since May 2017, Category E receives 10% of the deregistrations from Categories A, B and C'"

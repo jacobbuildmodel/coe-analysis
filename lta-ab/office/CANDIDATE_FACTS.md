@@ -103,3 +103,12 @@ renewal treatment knowing:
 - how large the A-B gap and the PQP gap were;
 - how much they moved;
 - how much the "historical gap" depends on the window chosen.
+
+## Checker's rulings (11 Oct 2026)
+
+- **F1 and F3 kept as the two charts.** F1 has two windows: from 2010 and the last five
+  years. It checks LTA's "three occasions" (P 1.8).
+- **F2 and F4 kept,** as one sentence each with no chart.
+- **F5 dropped.** Dealer bids were too easy to misread.
+- **The cut-off** is the first October 2026 exercise, with the data frozen.
+- The definitions as built are in `10_facts.py`'s docstring.

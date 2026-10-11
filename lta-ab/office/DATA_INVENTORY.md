@@ -55,3 +55,17 @@ Notes:
   not in the files held.
 - **Bids below the clearing price** (the bid distribution). Only counts are published.
 - **The feebate's amounts or cut-offs.** These are in the unretrieved paper, if anywhere.
+
+## Update, Checkpoint 1 (11 Oct 2026)
+
+- **Bidding to the cut-off:** `raw/d1_coe_bidding_results_20261011.csv`. It ends at October
+  2026 exercise 1, which is the cut-off. Its earlier 1,965 rows are identical to root
+  `raw.csv`.
+- **PQP:**
+  - `raw/d2_...` (SingStat) is unchanged since erp's copy and ends with its August 2026
+    column.
+  - LTA's `raw/d3_lta_m11_coe_results_2025_2026.pdf` adds the PQP for September and October
+    2026.
+  - SingStat's column for month m holds LTA's "PQP for m+1" (20 of 20 months).
+  - LTA's definition, recomputed from premiums, matched 392 of 392 published PQPs within $1.
+- **The consultation paper:** `raw/coe-public-consult.pdf`, supplied by Jacob.

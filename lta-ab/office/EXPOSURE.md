@@ -36,3 +36,21 @@ few rows, or labels only.
 | 11 Oct, about 16:20 | data.gov.sg metadata (2 datasets) | Last-updated dates and coverage only; no values |
 
 No statistic was computed at Checkpoint 0.
+
+## Checkpoint 1, 11 Oct 2026 (the note itself)
+
+Everything in `out/` was computed and looked at for this note. A later sealed A/B piece
+treats all of it as exposed:
+- the B-A premium gap per exercise, 2010-01 to 2026-10 exercise 1, and its summaries;
+- every exercise with A above B;
+- the monthly PQP for A and B, and their gap, 2010-01 to 2026-10;
+- the A, B and E quota shares;
+- the E-B premium gap;
+- the cross-checks.
+
+| Time (SGT) | What | Exactly what was seen |
+|---|---|---|
+| 11 Oct, about 18:00 | `raw/coe-public-consult.pdf` | Full text. Its only data: the three occasions (1.8); 2025 OMV percentile bands and typical models (Tables 1-2); the 2025 bid clustering (3.12); multiple-car households (3.19) |
+| 11 Oct, about 18:15 | Web search snippets (secondary, not used) | October 2026 exercise 1 premiums for A and B; the PQP for A and B in September and October 2026; a press summary of the 9 and 23 September results |
+| 11 Oct, 18:21 | `raw/d3_lta_m11_coe_results_2025_2026.pdf` | **Printed by accident while checking the layout:** January 2026 exercise 1-2 values for all categories (quota, bids, premiums), and every "PQP for <month>" row, February 2025 to October 2026, for A, B, C and D |
+| 11 Oct, 18:2x-19:xx | `out/*.csv`, `figs/*.svg` | All of the above, computed by `10_facts.py`, read in full while drafting NOTE.md |

@@ -1,16 +1,18 @@
-# LTA_PROPOSAL -- what LTA published on 8 October 2026 (Checkpoint 0, 11 Oct 2026)
+# LTA_PROPOSAL -- what LTA published on 8 October 2026 (Checkpoint 0; paper added at Checkpoint 1, 11 Oct 2026)
 
 A summary of the record as published, with references. It describes what LTA said; it does
 not assess it. Files are in `lta-ab/raw/` (md5s in `raw/RETRIEVED.txt`).
 
-**Coverage gap.** The consultation PAPER itself was NOT retrieved. The release links it only
-through go.gov.sg/coe-public-consult (para 8), and network policy refused go.gov.sg (403). It
-was not routed around. What follows rests on the news release and Annexes A-C only. Press
-reports describe band cut-offs and dollar amounts said to come from the paper. They are
-not used here, and stay UNVERIFIED until the paper is in `raw/`.
+**Coverage.** The consultation paper was refused to this session (go.gov.sg, 403, not routed
+around). Jacob then obtained it via his browser and added it as `raw/coe-public-consult.pdf`
+(md5 5ec997f4..., matching the checker's). The section "Consultation paper" below cites it by
+paragraph. The earlier sections rest on the release and annexes. The press-reported band
+amounts noted at Checkpoint 0 are now confirmed from the paper itself (paras 2.18(a)-(b),
+Tables 1-2).
 
-References: **NR** = news release `c0_...html` (paragraph numbers as printed); **A**, **B**,
-**C** = Annexes A-C, one page each (`c1a`, `c1b`, `c1c`).
+References: **P** = consultation paper `coe-public-consult.pdf` (paragraph, footnote and table
+numbers as printed); **NR** = news release `c0_...html` (paragraph numbers as printed); **A**,
+**B**, **C** = Annexes A-C, one page each (`c1a`, `c1b`, `c1c`).
 
 ## Timing and process
 
@@ -83,6 +85,87 @@ References: **NR** = news release `c0_...html` (paragraph numbers as printed); *
   Category A's premium exceeded Category B's (NR para 3).
 - No series, chart or OMV distribution appeared in the release or annexes.
 - Annex C's OMV figures were illustrative.
+
+## Consultation paper (P), the passages the note uses
+
+- **P 1.3:** the COE clearing price is "the highest unsuccessful bid plus $1". Bidding runs
+  twice a month, and each COE is valid for 10 years.
+- **P 1.5:** in 1999, the four cc-based car categories were "consolidated into the current
+  Category A and Category B structure". Footnote 1 gives the old cc bands.
+- **P 1.6:** an engine power criterion was added in 2014. In 2022, "the Category A power
+  threshold was raised to accommodate newer mass-market electric vehicles".
+- **P 1.8:**
+  - Software-driven EVs can be set to fit Category A power thresholds. "The same car model
+    (e.g. Tesla Model Y) can fall into either Category A or B depending on its power
+    rating."
+  - "Buyers of mass-market and higher-value vehicles increasingly compete for Category A
+    COEs."
+  - "From Feb to Jun 2026, Category A price exceeded the Category B price on three
+    occasions."
+- **P 1.11:** participants said the distinction "has hence become less meaningful, with
+  Category A prices exceeding Category B prices more frequently".
+- **P 1.12:** participants suggested merging A and B with another differentiating
+  mechanism, using OMV, selling price or dimensions. Some suggested removing Category E.
+- **P 2.1-2.3, the guiding principles:**
+  - efficient allocation;
+  - "buyers of higher-value cars pay more for a COE than those of lower-value cars";
+  - open and transparent.
+- **P 2.4:** merging would "create a larger pool of COEs, which could also help reduce
+  volatility in the COE price".
+- **P 2.9-2.10:** the rebate or surcharge "would be applied to the prevailing COE price". The
+  objective "is not to influence overall COE prices".
+- **P 2.13-2.16:**
+  - Selling price was set aside: it is open to structuring.
+  - OMV is "a good starting point".
+  - A median OMV for each car model sets its band, by "OMV percentile of cars".
+  - Bands are reviewed and published annually, and retailers may appeal.
+- **P 2.17:** "one possible reference point is the historical price gaps between Category A
+  and Category B. This provides an indication of the difference in COE premiums that buyers
+  of the two groups of cars have historically been willing to pay under the existing
+  system."
+- **P 2.18(a), Table 1, Option A, three bands:**
+  - $15,000 rebate for the 0-35th percentile of 2025 registrations' OMV;
+  - $0 for the 35-50th;
+  - $15,000 surcharge above the 50th.
+- **P 2.18(b), Table 2, Option B, five bands:**
+  - $15,000 rebate (0-10th) and $7,500 rebate (10-35th);
+  - $0 (35-50th);
+  - $7,500 surcharge (50-75th) and $15,000 surcharge (above 75th).
+  - Both tables list typical models. The banding is "indicative", "based on cars registered
+    in 2025".
+- **P 2.19 (Q4):**
+  - "As Category A and B prices have converged in recent years, existing owners of Category
+    A and B cars already pay broadly similar PQPs when renewing their COEs. Hence, there may
+    not be a need to apply the feebate to the PQP for COE renewals."
+  - Transitional arrangements "could therefore be considered".
+- **Footnote 3:** "PQP is the moving average of COE prices in the last three months." LTA's
+  M11 table, footnote 1, gives the longer form: "a moving average of the Quota Premium (QP)
+  in the latest 3 months in which bidding exercises were conducted".
+- **P 2.21-2.23 (Q5):**
+  - Category E can register any A, B or C vehicle. Its Temporary COEs, valid three months
+    (footnote 4), are transferable if bid for by an individual.
+  - Footnote 5: "Since May 2017, Category E receives 10% of the deregistrations from
+    Categories A, B and C."
+  - Bidders "typically use Category E COEs to register vehicles in the category with the
+    highest COE price. In recent years, Category E COEs have been mostly used for Category B
+    cars."
+  - The options given were removing Category E, or keeping it for cars only.
+- **P 3.12:** in 2025, around two in three Category A and B bids were within 5% of the
+  clearing price, and around three in four successful bids. This bears on pay-as-you-bid,
+  outside the note.
+- **P 3.19:** multiple-car households were about 66,000 (13%) in 2025, against about 87,000
+  (19%) in 2012. Outside the note.
+- **P 4.3:** the review was expected to be completed by end-2026, with responses due by
+  2 November 2026.
+
+## Data LTA cited (paper)
+
+Beyond the release, the paper cited the following:
+- the 2025 bid distribution (P 3.12, Figure 1);
+- multiple-car households (P 3.19, Figure 2);
+- the 2025 OMV percentiles behind Tables 1-2, not published as data.
+
+The note checks only P 1.8, and puts P 2.17 and P 2.19 beside the record.
 
 ## Other suggestions LTA reported and answered (Annex A, "Other Suggestions We Heard")
 

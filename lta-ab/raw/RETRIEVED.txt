@@ -45,3 +45,38 @@ METADATA ONLY (no values downloaded)
     lastUpdatedAt 2026-10-07T17:13:33+08:00, coverage 2010-01 to 2026-10
   data.gov.sg v2 metadata, d_22094bf608253d36c0c63b52d852dd6e "Motor Vehicle Quota, Quota
     Premium And Prevailing Quota Premium, Monthly": lastUpdatedAt 2026-08-25, coverage 2002-02 to 2026-08
+
+== 11 October 2026, Checkpoint 1 (the checker's rulings: cut-off = October 2026, exercise 1)
+
+coe-public-consult.pdf
+  source  obtained by Jacob via browser from go.gov.sg/coe-public-consult on 11 Oct 2026,
+          uploaded to lta-ab/raw/ on lta-ab-wip (commit c5a1d6e)
+  title   LTA consultation paper on COE categorisation for cars (20 pages)
+  bytes   487738
+  md5     5ec997f401311f480f45b49ddc9b8be0   (matches the checker's md5 of the copy Jacob sent)
+  pdf     CreationDate 2026-10-08 11:23:39 +08:00
+
+d1_coe_bidding_results_20261011.csv
+  source  data.gov.sg d_69b3380ad7e51aff3a7dcc84eba52b8a "COE Bidding Results / Prices" (LTA)
+          https://api-open.data.gov.sg/v1/public/api/datasets/d_69b3380ad7e51aff3a7dcc84eba52b8a/poll-download
+  retrieved 2026-10-11 18:20 SGT (10:20 UTC); dataset last updated 2026-10-07 17:13 SGT
+  bytes   78897
+  md5     dac8d85770a81011556068c0a4f23adf
+  rows    1985 + header; 2010-01 exercise 1 to 2026-10 exercise 1 (the cut-off)
+  check   all 1,965 rows of root raw.csv (md5 7b68a001...) present and identical (10_facts.py)
+
+d2_quota_premium_pqp_monthly_20261011.csv
+  source  data.gov.sg d_22094bf608253d36c0c63b52d852dd6e (SingStat M651121), poll-download as above
+  retrieved 2026-10-11 18:20 SGT
+  bytes   74930
+  md5     8b9f1f55f0c73ad145b78cdbe7006864   (byte-identical to erp/raw/e4b_quota_premium_monthly.csv)
+  coverage 2002-02 to 2026-08 (no newer columns)
+
+d3_lta_m11_coe_results_2025_2026.pdf
+  source  https://www.lta.gov.sg/content/dam/ltagov/who_we_are/statistics_and_publications/statistics/pdf/M11-COE_Results_2025_2026.pdf
+  title   LTA "COE Bidding Results" 2025-2026 (2 pages), with "PQP for <month>" rows to Oct 2026
+  retrieved 2026-10-11 18:20 SGT (10:20 UTC)
+  bytes   344470
+  md5     546ae77e763dbcb2c0ca40bad6442bf0
+  pdf     ModDate 2026-10-08 10:00:48 +08:00
+  check   its PQP rows equal SingStat's PQP shifted one month in all 20 overlapping months
