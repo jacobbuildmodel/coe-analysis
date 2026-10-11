@@ -482,3 +482,8 @@ wording only.
   Jacob's edit note: "the comfortable story's second half" made the reader
   work out which half.
 - 1,794 words before Sources.
+
+**Wording fix (11 October 2026).** Added after outside review, not sealed;
+wording only.
+
+- **"Yardstick" reworded (site Vale rule Site.Jargon).** Article line 94 now reads "depended on what it was measured against"; FOR_RESEARCHERS A1 heading reads "reference currency", and its notes read "reference" and "the choice of reference". No number changed. md5, 2026-11-14.md: f386b95af10efc3fd8100a95d75d42d9 -> 89fdd1eed106d42e3987fe4e6bb4b46f; FOR_RESEARCHERS.md: 06301df82da33d7c7a05dad19a442861 -> c13530cb0d61376ce4539fce9b40157d.
