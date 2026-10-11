@@ -25,18 +25,17 @@ Other pieces (GST, HDB affordability, HDB loan) live in other repos (e.g. hdb-af
 
 ## Open branches and PRs
 
-- **PR #5, `sgd-review` -> main (draft), head d57f873.** Rounds 4-5 of outside review:
-  `16_review.py` (A1-A6), chart 4, the article and FOR_RESEARCHERS rewrites, and
-  THESIS_ADDENDUM item 10. The checker verified round 5. **Next step:** Jacob marks it ready and merges it with
-    "Create a merge commit". Then the publication-day PR in the site repo (by 14 Nov)
-    copies the merged files into the site:
-    - `sgd/2026-11-14.md` -> `content/economics/2026-11-14.md`. The site still holds the
-      Checkpoint-2 text.
-    - `sgd/FOR_RESEARCHERS.md` -> `content/researchers/singapore-dollar.md`.
-    - all four `sgd/figs/*.svg` -> `static/figs/`. `sgd_chart4_rolling.svg` is new.
-    - The same PR switches "What to watch next" from /open/ to the replication's open
-      question page, if that page is live. The checker confirms.
-- **`handover-2026-10`:** this file.
+- **No open PRs in this repo.** PR #5 (`sgd-review`, rounds 4-5 of outside review) was
+  merged on 11 Oct 2026 as merge commit, head d57f873; the seal 9e46034 and key 59789e4
+  are on main.
+- **Next step for sgd: the publication-day PR in the site repo (by 14 Nov).** The site
+  still holds the Checkpoint-2 text. That PR copies:
+  - `sgd/2026-11-14.md` -> `content/economics/2026-11-14.md`;
+  - `sgd/FOR_RESEARCHERS.md` -> `content/researchers/singapore-dollar.md`;
+  - all four `sgd/figs/*.svg` -> `static/figs/` (`sgd_chart4_rolling.svg` is new).
+  It also switches "What to watch next" from /open/ to the replication's open question
+  page, if that page is live. The checker confirms.
+- **`handover-2026-10`:** this file (PR #6 merged; this update is its follow-up).
 - **All other branches** (`erp-wip`, `erp-merge`, `pwm-wip`, `pwm-merge`, `sgd-wip`,
   `phase3-shared-tokens`) are fully merged into main. Leave them; never delete `pwm-wip`.
 
