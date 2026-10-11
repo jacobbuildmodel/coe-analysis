@@ -5,16 +5,14 @@
 code and data are public at https://github.com/jacobbuildmodel/coe-analysis (folder
 `lta-ab`).*
 
-This note sets out what the published record showed on four points the consultation paper
-raised. It covers every bidding exercise from January 2010 to the first exercise of
-October 2026. Amounts are in nominal dollars. The note takes no view on the proposal.
+This note sets out what the published record showed on four points the paper raised. It covers every bidding exercise from January 2010 to October 2026, exercise 1. Amounts are in nominal dollars. The note takes no view on the proposal.
 
 ## 1. How often Category A cleared above Category B (Q1)
 
 The paper said that "from Feb to Jun 2026, Category A price exceeded the Category B price
 on three occasions" (para 1.8). The record agrees. Of the 10 exercises from February to
-June 2026, Category A cleared above Category B in 3: February, April and June 2026, each
-in the second exercise. Those 3 were the only such exercises among the 19 held in 2026 up
+June 2026, Category A cleared above Category B in 3: the second exercises of February, April and
+June 2026. Those 3 were the only such exercises among the 19 held in 2026 up
 to the cut-off.
 
 There were also 18 earlier occasions, in 2013, 2016-2018 and 2020. That makes 21 of the
@@ -41,7 +39,7 @@ differ by $30,000 in both (paras 2.18(a)-(b)).
 | Gap of $15,000 or more | 117 (29%) | 77 (64%) |
 | Gap of $30,000 or more | 11 (3%) | 10 (8%) |
 
-The last five years ran from October 2021, exercise 2. Within them, the gap swung from
+The last five years began in October 2021, exercise 2. Within them, the gap ran from
 Category A $2,009 above B (April 2026) to Category B $50,335 above A. At the cut-off it was
 $99.
 
