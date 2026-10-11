@@ -1,0 +1,8 @@
+key,value,printed,meaning
+A4_windows,65,65,"rolling five-year windows, August 2005 on, in three-month steps"
+A4_rose,46,46,windows in which the Singapore dollar rose against the yen
+A4_not_rose,19,19,windows in which it did not
+A4_yen_larger,39,39,"of the windows where it rose, those where the yen's own fall was the larger part"
+A4_sgd_larger,7,7,"of the windows where it rose, those where the Singapore dollar's own rise was larger"
+A4_first_start_year,2005,2005,first window starts (year)
+A4_last_end_year,2026,2026,last window ends (year)

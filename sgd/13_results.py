@@ -14,6 +14,7 @@ its numbers, and Jacob's confidence at seal. Every number is printed through
 sgdlib.printed, which 14_manifest.py also uses. A run on anything but sgd/ is
 stamped SYNTHETIC in its first line.
 """
+import glob
 import os
 import re
 
@@ -211,6 +212,18 @@ def main():
         for r in L.read_csv(post):
             md.append(f"| {r['key']} | {r['printed']} | {r['meaning']} |")
         md.append("")
+    # Added after outside review, not sealed (THESIS_ADDENDUM item 10).
+    review = sorted(glob.glob(os.path.join(out, "review_*.csv")))
+    review = [f for f in review if not f.endswith("review_rolling_windows.csv")]
+    if review:
+        md += ["## After outside review (added after outside review, not sealed, NOT SCORED)", "",
+               "Written by `16_review.py` from `out/` and raw/s1c, raw/s8 (THESIS_ADDENDUM item 10). "
+               "None changes a sealed number, outcome, threshold or the verdict.", ""]
+        for f in review:
+            md += [f"### {os.path.basename(f)}", "", "| Key | Printed | Meaning |", "|---|---|---|"]
+            for r in L.read_csv(f):
+                md.append(f"| {r['key']} | {r['printed']} | {r['meaning']} |")
+            md.append("")
     L.write_text(P["results"], "\n".join(md))
     print(f"  {os.path.relpath(P['results'], P['root'])}: {len(md)} lines")
 

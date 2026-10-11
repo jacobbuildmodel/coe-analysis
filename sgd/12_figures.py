@@ -22,6 +22,12 @@ the caption says why.
                               MAS's decisions in a strip below it, and GDP
                               growth over each interval between decisions in
                               a bottom panel, on one time axis (T7)
+  figs/sgd_chart4_rolling.svg every five-year window from August 2005, in
+                              three-month steps: the yen's and the Singapore
+                              dollar's shares of the rise against the yen.
+                              Added after outside review, not sealed
+                              (THESIS_ADDENDUM item 10); drawn only when
+                              out/review_rolling_windows.csv exists.
 
 Presentation only: nothing here computes or changes a tested number.
 """
@@ -375,6 +381,92 @@ def chart3(T, out, figs):
     write(figs, "sgd_chart3_path.svg", s)
 
 
+def title4(post):
+    rose, yen = int(post["A4_rose"]), int(post["A4_yen_larger"])
+    if rose == 0:
+        return "The Singapore dollar did not gain on the yen in any five-year stretch"
+    who = "the yen's own fall" if 2 * yen > rose else "the Singapore dollar's own rise"
+    k = yen if 2 * yen > rose else rose - yen
+    count = f"all {rose}" if k == rose else f"{k} of the {rose}"
+    return (f"In {count} five-year stretches when the Singapore dollar gained on the yen, "
+            f"{who} was the larger part")
+
+
+def chart4(out, figs):
+    """Rolling five-year windows (THESIS_ADDENDUM item 10, not sealed): the
+    yen's share P and the Singapore dollar's share S of the log rise against
+    the yen, by the month each window ends, where the Singapore dollar rose;
+    shaded where it did not. Shares beyond the axis are drawn at its edge."""
+    path = os.path.join(out, "review_rolling_windows.csv")
+    summ = os.path.join(out, "review_a4_rolling.csv")
+    if not (os.path.exists(path) and os.path.exists(summ)):
+        return
+    rows = L.read_csv(path)
+    post = {r["key"]: r["printed"] for r in L.read_csv(summ)}
+    LO, HI, ST = -50, 150, 50
+    cap = ("How to read: each point is one five-year window, placed at the month it ends; windows "
+           "start every three months from August 2005, and each end is a three-month average. Blue: "
+           "the Singapore dollar's own rise against all its trading partners, as a share of its rise "
+           "against the yen. Grey: the yen's own fall against all of its partners, as a share of the "
+           "same rise. The shares are of log changes; with the remainder they add to 100. The dashed "
+           "line marks half. Shaded: "
+           "windows in which the Singapore dollar did not rise against the yen, where no share is "
+           f"defined. Where the rise was tiny the shares run past the scale and are drawn at its edge, "
+           f"{LO} or {HI}.")
+    title = title4(post)
+    P1 = 220
+    H = 70 + 30 + P1 + 40 + caption_height(cap) + 4 + title_extra(title)
+    s, y = head(H, "sgd-chart4", title, cap)
+    LX, RX = 60, W - 24
+    ends = [r["end"] for r in rows]
+    X = lambda i: LX + (RX - LX) * i / max(1, len(ends) - 1)
+    # legend
+    ly = y + 6
+    for i, (lab, col) in enumerate((("Singapore dollar's own rise", SUBJ), ("Yen's own fall", CTX))):
+        x0 = 16 + i * 250
+        s.append(f'<line x1="{x0}" x2="{x0 + 22}" y1="{ly:.1f}" y2="{ly:.1f}" stroke="{col}" stroke-width="3"/>')
+        text(s, x0 + 28, ly + 5, lab, 14, INK)
+    top, bottom = y + 30, y + 30 + P1
+    Y = lambda v: bottom - (bottom - top) * (min(max(v, LO), HI) - LO) / (HI - LO)
+    # shaded windows where the Singapore dollar did not rise
+    i = 0
+    while i < len(rows):
+        if rows[i]["rose"] == "0":
+            j = i
+            while j + 1 < len(rows) and rows[j + 1]["rose"] == "0":
+                j += 1
+            x0, x1 = X(i) - (X(1) - X(0)) / 2, X(j) + (X(1) - X(0)) / 2
+            s.append(f'<rect x="{max(x0, LX):.1f}" y="{top}" width="{min(x1, RX) - max(x0, LX):.1f}" '
+                     f'height="{bottom - top}" fill="{RULE}"/>')
+            i = j + 1
+        else:
+            i += 1
+    v = LO
+    while v <= HI:
+        s.append(f'<line x1="{LX}" x2="{RX}" y1="{Y(v):.1f}" y2="{Y(v):.1f}" stroke="{RULE}" stroke-width="1"/>')
+        text(s, LX - 6, Y(v) + 5, f"{v:g}", 14, anchor="end")
+        v += ST
+    s.append(f'<line x1="{LX}" x2="{RX}" y1="{Y(0):.1f}" y2="{Y(0):.1f}" stroke="{INK3}" stroke-width="1"/>')
+    s.append(f'<line x1="{LX}" x2="{RX}" y1="{Y(50):.1f}" y2="{Y(50):.1f}" stroke="{INK3}" stroke-width="1" '
+             f'stroke-dasharray="4 4"/>')
+    for key, col in (("P", CTX), ("S", SUBJ)):
+        seg = []
+        for i, r in enumerate(rows):
+            if r["rose"] == "1" and r[key] not in ("", None):
+                seg.append(f"{X(i):.1f},{Y(100 * float(r[key])):.1f}")
+            elif seg:
+                s.append(f'<polyline points="{" ".join(seg)}" fill="none" stroke="{col}" stroke-width="2.5"/>')
+                seg = []
+        if seg:
+            s.append(f'<polyline points="{" ".join(seg)}" fill="none" stroke="{col}" stroke-width="2.5"/>')
+    for yr in range(int(ends[0][:4]) + 1, int(ends[-1][:4]) + 1, 5):
+        k = next((i for i, e in enumerate(ends) if e[:4] == str(yr)), None)
+        if k is not None:
+            text(s, X(k), bottom + 20, str(yr), 14, anchor="middle")
+    caption(s, bottom + 44, cap)
+    write(figs, "sgd_chart4_rolling.svg", s)
+
+
 def main():
     a = L.args("sgd step 12: charts")
     P = L.paths(a.root)
@@ -382,6 +474,7 @@ def main():
     chart1(T, P["figs"])
     chart2(T, P["out"], P["figs"])
     chart3(T, P["out"], P["figs"])
+    chart4(P["out"], P["figs"])
 
 
 if __name__ == "__main__":

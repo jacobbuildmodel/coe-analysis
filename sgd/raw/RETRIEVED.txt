@@ -1157,3 +1157,39 @@ s2e_bis_xru_usd_monthly_eop.csv
   same for every series  FREQ=M | COLLECTION=E | AVAILABILITY=A
   series 10: AUD, CNY, HKD, JPY, KRW, MYR, SGD, THB from 1957-01; IDR from
           1967-01; EUR from 1974-06; all to 2026-08, 0 empty.
+
+RECEIVED, addition after outside review (10 October 2026, 00:37 UTC; 08:37 SGT)
+-------------------------------------------------------------------------------
+Added after outside review, not sealed (THESIS_ADDENDUM item 10). Read only
+by 16_review.py (A3, the real split of the yen cross); no sealed test reads it.
+s8_bis_long_cpi_jp_monthly.csv
+  for     A3 (post-hoc): Japan's consumer price index, monthly
+  source  https://stats.bis.org/api/v2/data/dataflow/BIS/WS_LONG_CPI/1.0/M.JP.628?format=csv
+          (BIS long series on consumer prices, dataflow WS_LONG_CPI; key
+          FREQ.REF_AREA.UNIT_MEASURE = M.JP.628, the index level; host
+          stats.bis.org, as for S1 and S2)
+  method  curl through the session proxy, certificates verified, byte-for-byte
+          as served
+  bytes   37798
+  md5     7fcc997a6e726449913ff18adc2d2d6f
+  rows 960, columns 14; long layout, period column TIME_PERIOD
+  series 1: JP, UNIT_MEASURE 628, 1946-08 to 2026-07
+
+RECEIVED, addition after outside review, round 5 (10 October 2026, 01:15 UTC)
+-------------------------------------------------------------------------------
+Added after outside review, not sealed (THESIS_ADDENDUM item 10). Cited by
+the article for one line of context; no test or script reads it.
+s9_boj_mps_20240319.html
+  for     context (post-hoc): the Bank of Japan's statement "Changes in the
+          Monetary Policy Framework", 19 March 2024, which ended the negative
+          interest rate policy
+  source  https://www.boj.or.jp/en/mopo/mpmdeci/state_2024/k240319a.htm
+  method  curl through the session proxy, certificates verified, byte-for-byte
+          as served (HTML page, not printed to PDF)
+  bytes   48519
+  md5     60770f0b5154516bf37dbe987173197a
+  not retrieved: the Federal Reserve's policy-rate page,
+          https://www.federalreserve.gov/monetarypolicy/openmarket.htm; the
+          session proxy refused CONNECT (HTTP 403, policy), and the denial was
+          not routed around. The article's line on US rates stays general and
+          cites nothing for them.
