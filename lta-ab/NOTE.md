@@ -57,8 +57,6 @@ broadly similar PQPs when renewing" (para 2.19).
 
 ![Category B's PQP minus Category A's, per month](figs/lta_ab_chart2_pqp.svg)
 
-The gap over different windows:
-
 - **Last 12 months:** median $4,930 (4% of A's PQP), between $1,390 and $16,941.
 - **Last five years:** median $20,056 (22%), up to $36,738.
 - **From 2010:** median $8,668 (15%).
