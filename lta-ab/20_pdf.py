@@ -33,7 +33,7 @@ PDF = os.path.join(HERE, "NOTE.pdf")
 FONTS = os.path.join(HERE, "fonts")
 TITLE = "COE Categories A and B: Evidence from the Bidding Record, 2010-2026"
 
-# note.html's stylesheet, verbatim except for the font URLs and the ligature rule at the end.
+# note.html's stylesheet, verbatim except for the font URLs and the rules added at the end.
 CSS = """
 @font-face{font-family:"Source Serif 4";src:url(FONTDIR/SourceSerif4-Regular.ttf);font-weight:400}
 @font-face{font-family:"Source Serif 4";src:url(FONTDIR/SourceSerif4-It.ttf);font-style:italic}
@@ -71,6 +71,16 @@ ul.method{padding-left:12pt;margin:0;font:7.8pt/1.35 "Source Sans 3";color:#3a39
    font-variant-ligatures, so Chromium set ff/fi ligatures (U+FB00, U+FB01)
    and the PDF text was not pure ASCII. This restores the intent. */
 *{font-variant-ligatures:none !important}
+/* added 12 Oct 2026 (checker: "tighten layout if needed; the figure may shrink
+   slightly") to keep two pages after the four-window table and window text */
+table{width:100%;break-inside:avoid}
+th,td{padding:2.2pt 6pt}
+figure{margin:6pt 0 4pt}
+figure img{width:80%;display:block;margin:0 auto}
+td:not(:first-child),th:not(:first-child){white-space:nowrap}
+h2{margin:8.5pt 0 3pt}
+.summary li{margin-bottom:3pt}
+.meta{margin-bottom:10pt}
 """
 
 

@@ -15,6 +15,7 @@ Sources lines are in the document, not in the image.
            Category A (out/pqp_monthly.csv: SingStat M651121, then LTA M11),
            January 2010 to October 2026. Unlike the reference fig.py, the
            PQP is not recomputed here.
+  Shading  window 2: since May 2022, exercise 1 (out/facts.csv w2_start_*).
 
   figs/lta_ab_fig1.png  220 dpi, embedded in NOTE.pdf
   figs/lta_ab_fig1.svg  the same figure as vector (text kept as text)
@@ -79,7 +80,8 @@ def main():
     xp = [dt.date(int(r["month"][:4]), int(r["month"][5:7]), 15) for r in pq]
     gp = [int(r["gap"]) / 1000 for r in pq]
 
-    start5 = xa[-120]
+    # shading: window 2, from the 2022 change to Category A's power threshold
+    start5 = ex_date(F["w2_start_month"], 1)
     end = dt.date(2026, 12, 31)
     fig, axes = plt.subplots(2, 1, figsize=(6.6, 4.4), sharex=True, gridspec_kw={"hspace": 0.42})
     panels = [
@@ -104,7 +106,7 @@ def main():
         ax.set_title(title, loc="left", fontsize=9, fontweight="semibold", pad=14, color="#0b0b0b")
         ax.text(0, 1.015, "S$ thousand", transform=ax.transAxes, fontsize=7.5, color=MUTED, va="bottom")
         if ax is axes[0]:
-            ax.text(start5 + dt.timedelta(days=40), ylim[1] * 0.97, "Last five years", fontsize=7.5,
+            ax.text(start5 + dt.timedelta(days=40), ylim[1] * 0.97, f"Since {F['w2_start_label'].split(',')[0]}", fontsize=7.5,
                     color=MUTED, va="top")
 
     ax = axes[0]
@@ -116,7 +118,7 @@ def main():
                 clip_on=False, linespacing=1.1)
     ax.scatter([c[0] for c in cross], [c[1] for c in cross], s=10, color=ACCENT, zorder=4,
                edgecolors="white", linewidths=0.6)
-    ax.annotate(f"Category A above B in {F['a_above_b_full']} of {F['n_ex_full']} exercises",
+    ax.annotate(f"Category A above B in {F['a_above_b_w1']} of {F['n_ex_w1']} exercises",
                 xy=(xa[lo], ga[lo]), xytext=(xa[lo] + dt.timedelta(days=238), ga[lo]),
                 fontsize=7, color=MUTED, va="center",
                 arrowprops=dict(arrowstyle="-", color="#8a8984", lw=0.5))

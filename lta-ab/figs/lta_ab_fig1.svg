@@ -32,10 +32,10 @@ z
 " style="fill: #ffffff"/>
    </g>
    <g id="patch_3">
-    <path d="M 278.095232 131 
+    <path d="M 289.841276 131 
 L 390.5725 131 
 L 390.5725 30.2 
-L 278.095232 30.2 
+L 289.841276 30.2 
 z
 " clip-path="url(#p87448dc852)" style="fill: #f1f0ec"/>
    </g>
@@ -572,7 +572,7 @@ L 385.58933 105.67526
     <text style="font-size: 7.5px; font-family: 'Source Sans 3'; text-anchor: start; fill: #6b6a66" x="22.2925" y="26.243" transform="rotate(-0 22.2925 26.243)">S$ thousand</text>
    </g>
    <g id="text_7">
-    <text style="font-size: 7.5px; font-family: 'Source Sans 3'; text-anchor: start; fill: #6b6a66" x="280.46817" y="39.968" transform="rotate(-0 280.46817 39.968)">Last five years</text>
+    <text style="font-size: 7.5px; font-family: 'Source Sans 3'; text-anchor: start; fill: #6b6a66" x="292.214214" y="39.968" transform="rotate(-0 292.214214 39.968)">Since May 2022</text>
    </g>
    <g id="text_8">
     <text style="font-size: 7px; font-family: 'Source Sans 3'; text-anchor: start; fill: #6b6a66" x="394.131907" y="88.800391" transform="rotate(-0 394.131907 88.800391)">Option A step, $15,000</text>
@@ -640,10 +640,10 @@ z
 " style="fill: #ffffff"/>
    </g>
    <g id="patch_7">
-    <path d="M 278.095232 274.136 
+    <path d="M 289.841276 274.136 
 L 390.5725 274.136 
 L 390.5725 173.336 
-L 278.095232 173.336 
+L 289.841276 173.336 
 z
 " clip-path="url(#p8d0c397e1f)" style="fill: #f1f0ec"/>
    </g>

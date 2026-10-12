@@ -54,3 +54,12 @@ treats all of it as exposed:
 | 11 Oct, about 18:15 | Web search snippets (secondary, not used) | October 2026 exercise 1 premiums for A and B; the PQP for A and B in September and October 2026; a press summary of the 9 and 23 September results |
 | 11 Oct, 18:21 | `raw/d3_lta_m11_coe_results_2025_2026.pdf` | **Printed by accident while checking the layout:** January 2026 exercise 1-2 values for all categories (quota, bids, premiums), and every "PQP for <month>" row, February 2025 to October 2026, for A, B, C and D |
 | 11 Oct, 18:2x-19:xx | `out/*.csv`, `figs/*.svg` | All of the above, computed by `10_facts.py`, read in full while drafting NOTE.md |
+
+## Checker's rulings of 12 Oct 2026 (outside reader's review)
+
+All computed by `10_facts.py` and seen while revising NOTE.md and FORM_TEXT.md:
+- every statistic for the four fixed windows: since January 2010, since May 2022 exercise 1,
+  the last 12 months and the latest exercise or month;
+- the median of (B-A)/A per exercise, overall and by calendar year;
+- the median absolute 6- and 12-month change in the B-A gap.
+The window-2 start comes from LTA's news release of 14 Apr 2022 (raw/c2b_...).

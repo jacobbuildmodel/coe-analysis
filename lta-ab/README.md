@@ -9,7 +9,15 @@ It takes no view on the proposal. Written by Jacob Ong in a personal capacity.
 - **`NOTE.md`** is its source; the PDF's text comes only from it. The three-line
   feedback-form version at its end stays out of the PDF.
 - **Submitted on:** ____________ (date to be filled in by Jacob)
+- **`FORM_TEXT.md`** holds the text for the feedback form's three boxes, from the same numbers.
 - **Cut-off:** the data run to the first October 2026 bidding exercise.
+- **Windows** (checker's ruling of 12 Oct 2026), the same in every section, table and figure,
+  in this order:
+  1. since January 2010;
+  2. since May 2022, exercise 1, the first exercise under Category A's raised power threshold
+     for electric cars (LTA news release of 14 Apr 2022, para 3);
+  3. the last 12 months;
+  4. the latest exercise or month.
 
 ## Rerun
 
@@ -25,10 +33,9 @@ It runs, in order:
 
 **Word cap (checker's ruling, 12 Oct 2026).** The 800-word cap applies to the prose only:
 the paragraphs of sections 1-4 and Scope, without the Summary box, Table 1, captions, Notes
-lines and the figure block. It was 488 of 800 at 9830843, and 528 after the share-of-premium
-sentence was added. The whole note, everything before "Data and method", is reported but
-not capped: 875 words for the redesign text fixed by the checker, and 939 with the
-share-of-premium additions.
+lines and the figure block. `14_manifest.py --check` prints the current count. The whole note,
+everything before "Data and method", is reported but not capped. The check covers
+`FORM_TEXT.md` too.
 
 `python3 lta-ab/20_pdf.py` rebuilds NOTE.pdf (A4, 2 pages, fonts embedded). It needs
 playwright and Chromium. The versions used are in `requirements.txt`.
