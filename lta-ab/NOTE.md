@@ -42,7 +42,7 @@ Figure 1. Category B minus Category A, January 2010 to October 2026
 
 ![Two panels: the Category B minus Category A premium per bidding exercise, and the PQP difference per month](figs/lta_ab_fig1.png)
 
-Notes: Panel A shows each bidding exercise; red markers denote exercises in which Category A cleared above Category B. Dashed lines mark the band steps in the consultation paper's examples (para 2.18). Panel B shows the monthly PQP. Shading marks the last five years. Nominal dollars. Sources: LTA via data.gov.sg; SingStat table M651121; LTA, M11 COE Results 2025-2026; author's calculations.
+Notes: Panel A shows each bidding exercise; orange markers denote exercises in which Category A cleared above Category B. Dashed lines mark the band steps in the consultation paper's examples (para 2.18). Panel B shows the monthly PQP. Shading marks the last five years. Nominal dollars. Sources: LTA via data.gov.sg; SingStat table M651121; LTA, M11 COE Results 2025-2026; author's calculations.
 :::
 
 ## 3. Renewal prices

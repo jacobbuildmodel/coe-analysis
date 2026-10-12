@@ -23,6 +23,12 @@ It runs, in order:
 - `14_manifest.py --check`: checksums, plus every number in NOTE.md checked against the
   number manifest, ASCII, banned words, and the 800-word cap on the prose.
 
+**Word cap (checker's ruling, 12 Oct 2026).** The 800-word cap applies to the prose only:
+the paragraphs of sections 1-4 and Scope, without the Summary box, Table 1, captions, Notes
+lines and the figure block (488 of 800 at 9830843). The whole note, everything before "Data
+and method", is reported but not capped; the redesign text fixed by the checker is 875
+words in all.
+
 `python3 lta-ab/20_pdf.py` rebuilds NOTE.pdf (A4, 2 pages, fonts embedded). It needs
 playwright and Chromium. The versions used are in `requirements.txt`.
 
