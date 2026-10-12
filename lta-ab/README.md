@@ -25,9 +25,10 @@ It runs, in order:
 
 **Word cap (checker's ruling, 12 Oct 2026).** The 800-word cap applies to the prose only:
 the paragraphs of sections 1-4 and Scope, without the Summary box, Table 1, captions, Notes
-lines and the figure block (488 of 800 at 9830843). The whole note, everything before "Data
-and method", is reported but not capped; the redesign text fixed by the checker is 875
-words in all.
+lines and the figure block. It was 488 of 800 at 9830843, and 528 after the share-of-premium
+sentence was added. The whole note, everything before "Data and method", is reported but
+not capped: 875 words for the redesign text fixed by the checker, and 939 with the
+share-of-premium additions.
 
 `python3 lta-ab/20_pdf.py` rebuilds NOTE.pdf (A4, 2 pages, fonts embedded). It needs
 playwright and Chromium. The versions used are in `requirements.txt`.

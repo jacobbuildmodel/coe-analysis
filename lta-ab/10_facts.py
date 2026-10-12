@@ -242,6 +242,9 @@ def main():
         med = d.gap.median()
         fact(f"gap_median_{wn}", med, dollars(rnd(med)), f"median B-A premium gap, {wn}, dollars")
         fact(f"gap_mean_{wn}", d.gap.mean(), dollars(rnd(d.gap.mean())), f"mean B-A gap, {wn}")
+        rel = 100 * d.gap / d.premium_A
+        fact(f"gap_rel_median_{wn}", rel.median(), str(rnd(rel.median())),
+             f"median of (B-A)/A per exercise, per cent, {wn}")
         lo_ = d.loc[d.gap.idxmin()]
         if lo_.gap < 0:
             fact(f"a_over_b_max_{wn}", int(-lo_.gap), dollars(-lo_.gap), f"largest margin of A above B, {wn}, dollars")
@@ -272,6 +275,13 @@ def main():
     fact("n_ex_2026_other", n_other, str(n_other), "exercises in 2026 to the cut-off in which A did not clear above B")
     pre26 = w[w.month < "2026-01"]
     fact("a_above_b_before_2026", int((pre26.gap < 0).sum()), str(int((pre26.gap < 0).sum())), "A above B, 2010 to Dec 2025")
+    # The median of (B-A)/A per exercise, by calendar year (2026 to the cut-off).
+    yr = w.assign(year=w.month.str[:4], rel=100 * w.gap / w.premium_A).groupby("year").rel.median()
+    fact("gap_rel_year_min", yr.min(), str(rnd(yr.min())), "lowest calendar-year median of (B-A)/A, per cent")
+    fact("gap_rel_year_min_year", 0, yr.idxmin(), "the year of that lowest median")
+    fact("gap_rel_year_max", yr.max(), str(rnd(yr.max())), "highest calendar-year median of (B-A)/A, per cent")
+    fact("gap_rel_year_max_year", 0, yr.idxmax(), "the year of that highest median")
+    yr.rename("median_gap_pct_of_A").to_csv(os.path.join(OUT, "gap_rel_by_year.csv"), lineterminator="\n", float_format="%.4f")
     cut = w.iloc[-1]
     fact("gap_cutoff", int(cut.gap), dollars(cut.gap), "B-A gap at the cut-off exercise")
 

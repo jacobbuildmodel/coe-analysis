@@ -8,7 +8,7 @@ dac8d85770a81011556068c0a4f23adf  raw/d1_coe_bidding_results_20261011.csv
 8b9f1f55f0c73ad145b78cdbe7006864  raw/d2_quota_premium_pqp_monthly_20261011.csv
 546ae77e763dbcb2c0ca40bad6442bf0  raw/d3_lta_m11_coe_results_2025_2026.pdf
 682a15339cf4ce51494f39955d07050d  office/LTA_CONSTANTS.csv
-507257421d375c2c14c5080e8e952546  10_facts.py
+0d5d613da3e7b5bebf4e6497cd2c058f  10_facts.py
 a1337aa0079eae768b71a1c4615732e7  12_figures.py
 2d490ed3ab22af7c2fbe5828d6b84c69  14_manifest.py
 075bebdc466ffa2d4c5d54925f87023b  20_pdf.py
@@ -16,7 +16,8 @@ a1337aa0079eae768b71a1c4615732e7  12_figures.py
 00ae6fb3f099500c8b77dba0887114ea  out/a_above_b.csv
 b9500c85294a91da910b536c2b009c8c  out/checks.csv
 a3c7acf5c86a41cf9ef5365df70a3fe5  out/exercises.csv
-734efc8d5bbdba354b1e40f7a8c7eb1c  out/facts.csv
+00e1f8e498ecee6f93ffa541fdf4051d  out/facts.csv
+3c5bef153093d66fa0e7af0db42aaee0  out/gap_rel_by_year.csv
 509ae5bc88e064f09134bf897348a7ac  out/pqp_monthly.csv
 8d21fa94dd92f46a9e8bff02f2f33ad9  figs/lta_ab_fig1.svg
 e3bd4fafb4f6157eacda4a8b89e3a45f  figs/lta_ab_fig1.png
@@ -28,4 +29,4 @@ afae59d126e379ca6abdd1e3717dce2b  fonts/SourceSerif4-It.ttf
 6695e7557fdc2f382acfbb59a630a2c4  fonts/SourceSerif4-LICENSE.md
 4e07a8a5ade833eaf92639c393e439b2  fonts/SourceSerif4-Regular.ttf
 2b770f46d16fb0624e200586dc1b8517  fonts/SourceSerif4-Semibold.ttf
-67d10fdae958073c4e7f0bd3a170f195  NOTE.md
+0b9dde8d4bc1a4a455387993bb3d80c4  NOTE.md

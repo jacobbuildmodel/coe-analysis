@@ -4,6 +4,7 @@ n_ex_full,397,10_facts.py,out/facts.csv
 start_full,"January 2010, exercise 1",10_facts.py,out/facts.csv
 gap_median_full,"9,010",10_facts.py,out/facts.csv
 gap_mean_full,"11,140",10_facts.py,out/facts.csv
+gap_rel_median_full,16,10_facts.py,out/facts.csv
 a_over_b_max_full,"16,599",10_facts.py,out/facts.csv
 a_over_b_max_when_full,"March 2013, exercise 1",10_facts.py,out/facts.csv
 gap_max_full,"50,335",10_facts.py,out/facts.csv
@@ -19,6 +20,7 @@ n_ex_5y,120,10_facts.py,out/facts.csv
 start_5y,"October 2021, exercise 2",10_facts.py,out/facts.csv
 gap_median_5y,"19,568",10_facts.py,out/facts.csv
 gap_mean_5y,"18,314",10_facts.py,out/facts.csv
+gap_rel_median_5y,19,10_facts.py,out/facts.csv
 a_over_b_max_5y,"2,009",10_facts.py,out/facts.csv
 a_over_b_max_when_5y,"April 2026, exercise 2",10_facts.py,out/facts.csv
 gap_max_5y,"50,335",10_facts.py,out/facts.csv
@@ -38,6 +40,10 @@ a_above_b_2026,3,10_facts.py,out/facts.csv
 n_ex_2026,19,10_facts.py,out/facts.csv
 n_ex_2026_other,16,10_facts.py,out/facts.csv
 a_above_b_before_2026,18,10_facts.py,out/facts.csv
+gap_rel_year_min,2,10_facts.py,out/facts.csv
+gap_rel_year_min_year,2026,10_facts.py,out/facts.csv
+gap_rel_year_max,39,10_facts.py,out/facts.csv
+gap_rel_year_max_year,2012,10_facts.py,out/facts.csv
 gap_cutoff,99,10_facts.py,out/facts.csv
 pqp_n_full,202,10_facts.py,out/facts.csv
 pqp_start_full,January 2010,10_facts.py,out/facts.csv

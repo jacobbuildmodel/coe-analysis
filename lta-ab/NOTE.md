@@ -13,7 +13,7 @@ Data and code: github.com/jacobbuildmodel/coe-analysis, folder lta-ab. Data to O
 ## Summary
 
 - Category A cleared above Category B in 3 of the 10 bidding exercises from February to June 2026, consistent with paragraph 1.8 of the consultation paper, and in 21 of 397 exercises since January 2010.
-- The median gap between the Category B and Category A premiums was $9,010 over 2010-2026 and $19,568 over the last five years. The consultation paper's example band steps are $7,500 and $15,000.
+- The median gap between the Category B and Category A premiums was $9,010 over 2010-2026 and $19,568 over the last five years (16 and 19 per cent of Category A's premium). The consultation paper's example band steps are $7,500 and $15,000.
 - In October 2026 the Prevailing Quota Premiums (PQP) for Categories A and B differed by $2,901 (2.3 per cent of A's). The median monthly difference over the last five years was $20,056 (22 per cent).
 :::
 
@@ -23,7 +23,7 @@ Paragraph 1.8 of the consultation paper states that "from Feb to Jun 2026, Categ
 
 ## 2. The size of the gap between Categories A and B
 
-Paragraph 2.17 identifies "the historical price gaps between Category A and Category B" as "one possible reference point" for the feebate amounts. Table 1 summarises the gap over two windows. Its median was $9,010 from 2010 and $19,568 over the last five years, and it was $15,000 or more in 29 per cent and 64 per cent of exercises respectively. Within the last five years it ranged from Category A $2,009 above B (April 2026) to Category B $50,335 above A; at the cut-off it was $99. A reference value drawn from the historical gap therefore depends materially on the window chosen.
+Paragraph 2.17 identifies "the historical price gaps between Category A and Category B" as "one possible reference point" for the feebate amounts. Table 1 summarises the gap over two windows. Its median was $9,010 from 2010 and $19,568 over the last five years, and it was $15,000 or more in 29 per cent and 64 per cent of exercises respectively. As a share of Category A's premium, the median gap was 16 per cent from 2010 and 19 per cent over the last five years; by calendar year it ranged from 2 per cent (2026) to 39 per cent (2012). Within the last five years it ranged from Category A $2,009 above B (April 2026) to Category B $50,335 above A; at the cut-off it was $99. A reference value drawn from the historical gap therefore depends materially on the window chosen.
 
 Table 1. Category B premium minus Category A premium, per bidding exercise
 
@@ -31,6 +31,7 @@ Table 1. Category B premium minus Category A premium, per bidding exercise
 |---|---|---|
 | Exercises | 397 | 120 |
 | Median gap | $9,010 | $19,568 |
+| Median gap as a share of Category A's premium | 16% | 19% |
 | Gap of $7,500 or more | 225 (57%) | 101 (84%) |
 | Gap of $15,000 or more | 117 (29%) | 77 (64%) |
 | Gap of $30,000 or more | 11 (3%) | 10 (8%) |

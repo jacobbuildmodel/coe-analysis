@@ -4,6 +4,7 @@ n_ex_full,397.000000,397,exercises in the full window
 start_full,0.000000,"January 2010, exercise 1",first exercise in the full window
 gap_median_full,9010.000000,"9,010","median B-A premium gap, full, dollars"
 gap_mean_full,11140.397985,"11,140","mean B-A gap, full"
+gap_rel_median_full,16.112903,16,"median of (B-A)/A per exercise, per cent, full"
 a_over_b_max_full,16599.000000,"16,599","largest margin of A above B, full, dollars"
 a_over_b_max_when_full,0.000000,"March 2013, exercise 1","exercise of the largest margin of A above B, full"
 gap_max_full,50335.000000,"50,335","largest B-A gap, full"
@@ -19,6 +20,7 @@ n_ex_5y,120.000000,120,exercises in the 5y window
 start_5y,0.000000,"October 2021, exercise 2",first exercise in the 5y window
 gap_median_5y,19568.000000,"19,568","median B-A premium gap, 5y, dollars"
 gap_mean_5y,18313.950000,"18,314","mean B-A gap, 5y"
+gap_rel_median_5y,19.185633,19,"median of (B-A)/A per exercise, per cent, 5y"
 a_over_b_max_5y,2009.000000,"2,009","largest margin of A above B, 5y, dollars"
 a_over_b_max_when_5y,0.000000,"April 2026, exercise 2","exercise of the largest margin of A above B, 5y"
 gap_max_5y,50335.000000,"50,335","largest B-A gap, 5y"
@@ -38,6 +40,10 @@ a_above_b_2026,3.000000,3,"A above B, Jan 2026 to the cut-off"
 n_ex_2026,19.000000,19,"exercises, Jan 2026 to the cut-off"
 n_ex_2026_other,16.000000,16,exercises in 2026 to the cut-off in which A did not clear above B
 a_above_b_before_2026,18.000000,18,"A above B, 2010 to Dec 2025"
+gap_rel_year_min,1.945510,2,"lowest calendar-year median of (B-A)/A, per cent"
+gap_rel_year_min_year,0.000000,2026,the year of that lowest median
+gap_rel_year_max,39.202021,39,"highest calendar-year median of (B-A)/A, per cent"
+gap_rel_year_max_year,0.000000,2012,the year of that highest median
 gap_cutoff,99.000000,99,B-A gap at the cut-off exercise
 pqp_n_full,202.000000,202,"months with a PQP, full"
 pqp_start_full,0.000000,January 2010,"first month, full"
