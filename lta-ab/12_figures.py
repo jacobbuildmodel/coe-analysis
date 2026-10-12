@@ -1,170 +1,135 @@
 """
-12_figures.py -- the lta-ab note's two charts, from out/ only.
+12_figures.py -- Figure 1 of the lta-ab note, from out/ only.
 
-Same conventions as the site's other charts (sgd/12_figures.py): the shared
---fig-* tokens with literal fallbacks, a prefers-color-scheme block plus
-:root[data-theme="dark"], a 480-wide canvas for phone reading, no text below
-14px, hairline grids, LF line endings. Each title states the finding, with its
-numbers taken from out/facts.csv; each caption says how to read the chart.
+One two-panel figure in the house print style, reproducing the checker's
+reference design (office/redesign/fig.py): Source Sans 3 (lta-ab/fonts/, from
+the site repo's research/paper-template/fonts), navy line #1f3a5f, accent
+#c2410c for exercises in which Category A cleared above Category B, hairline
+grid, no top, right or left spines, dashed band-step lines labelled at the
+right margin, the last five years shaded. The figure title and the Notes and
+Sources lines are in the document, not in the image.
 
-  figs/lta_ab_chart1_gap.svg  per exercise, Category B's premium minus
-                              Category A's, January 2010 to the cut-off, with
-                              LTA's two example band steps marked (F1)
-  figs/lta_ab_chart2_pqp.svg  per month, Category B's PQP minus Category A's,
-                              January 2010 to October 2026 (F3)
+  Panel A  per exercise, Category B's premium minus Category A's
+           (out/exercises.csv), January 2010 to the cut-off
+  Panel B  per month, the PUBLISHED PQP for Category B minus that for
+           Category A (out/pqp_monthly.csv: SingStat M651121, then LTA M11),
+           January 2010 to October 2026. Unlike the reference fig.py, the
+           PQP is not recomputed here.
+
+  figs/lta_ab_fig1.png  220 dpi, embedded in NOTE.pdf
+  figs/lta_ab_fig1.svg  the same figure as vector (text kept as text)
+
+Annotation numbers come from out/facts.csv. Output is byte-stable for a given
+matplotlib version (metadata stripped, fixed SVG hash salt); the version is
+pinned in lta-ab/requirements.txt.
 
 Presentation only: nothing here computes a number the note prints.
 """
 import csv
-import html
+import datetime as dt
 import os
-import textwrap
+
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt  # noqa: E402
+from matplotlib import font_manager as fm  # noqa: E402
+from matplotlib.dates import DateFormatter, YearLocator  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
 FIGS = os.path.join(HERE, "figs")
+FONTS = os.path.join(HERE, "fonts")
 
-INK = "var(--fig-ink,#0b0b0b)"
-INK3 = "var(--fig-ink-3,#717171)"
-RULE = "var(--fig-rule,#e2e1dd)"
-SURF = "var(--fig-surface,#fcfcfa)"
-SUBJ = "var(--fig-subject,#2873ce)"
-CTX = "var(--fig-context,#707379)"
-WARN = "var(--fig-accent,#c2410c)"
-SHADE = "var(--fig-shade,#efeee9)"
-STYLE = ("<style>"
-         ":root{--fig-ink:#0b0b0b;--fig-ink-3:#717171;--fig-rule:#e2e1dd;--fig-surface:#fcfcfa;"
-         "--fig-subject:#2873ce;--fig-context:#707379;--fig-accent:#c2410c;--fig-shade:#efeee9;}"
-         "@media (prefers-color-scheme: dark){:root{--fig-ink:#ffffff;--fig-ink-3:#9a9a9a;"
-         "--fig-rule:#38393a;--fig-surface:#1a1a19;--fig-subject:#3987e5;--fig-context:#93969c;"
-         "--fig-accent:#f08a4b;--fig-shade:#262624;}}"
-         ":root[data-theme=\"dark\"]{--fig-ink:#ffffff;--fig-ink-3:#9a9a9a;--fig-rule:#38393a;"
-         "--fig-surface:#1a1a19;--fig-subject:#3987e5;--fig-context:#93969c;--fig-accent:#f08a4b;"
-         "--fig-shade:#262624;}"
-         "text{font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}"
-         "</style>")
-W = 480
-TITLE_CHARS, CAPTION_CHARS = 42, 56
-LINE = 19
-LEFT, RIGHT = 62, 16
-PLOT_H = 230
+INK, MUTED, GRID, SHADE = "#1f3a5f", "#6b6a66", "#e4e3df", "#f1f0ec"
+ACCENT = "#c2410c"
 
 
-def facts():
-    return {r["key"]: r["printed"] for r in csv.DictReader(open(os.path.join(OUT, "facts.csv"), encoding="utf-8"))}
+def setup():
+    for f in ("SourceSans3-Regular", "SourceSans3-Semibold", "SourceSans3-Bold"):
+        fm.fontManager.addfont(os.path.join(FONTS, f + ".ttf"))
+    plt.rcParams.update({
+        "font.family": "Source Sans 3", "font.size": 8.5,
+        "axes.edgecolor": "#8a8984", "axes.linewidth": 0.6,
+        "xtick.color": "#52514e", "ytick.color": "#52514e",
+        "xtick.major.width": 0.6, "ytick.major.width": 0, "xtick.major.size": 3,
+        "axes.labelcolor": "#52514e", "text.color": "#0b0b0b",
+        "svg.fonttype": "none", "pdf.fonttype": 42, "svg.hashsalt": "lta-ab",
+    })
 
 
 def rows(name):
     return list(csv.DictReader(open(os.path.join(OUT, name), encoding="utf-8")))
 
 
-def esc(s):
-    return html.escape(s, quote=True)
-
-
-def t_of(month, ex=1, per_month=2):
-    y, m = int(month[:4]), int(month[5:])
-    return y + (m - 1) / 12 + (ex - 1) / (12 * per_month)
-
-
-def chart(path, title, desc, caption, series, ymin, ymax, yticks, refs, t_shade, ylab, ref_label=None):
-    title_lines = textwrap.wrap(title, TITLE_CHARS)
-    cap_lines = []
-    for para in caption:
-        cap_lines += textwrap.wrap(para, CAPTION_CHARS)
-    top = 14 + LINE * len(title_lines) + 22
-    plot_top = top + 14
-    plot_bot = plot_top + PLOT_H
-    axis_bot = plot_bot + 26
-    H = axis_bot + 14 + LINE * len(cap_lines) + 10
-    x0, x1 = LEFT, W - RIGHT
-    t0, t1 = 2010.0, 2027.0
-
-    def X(t):
-        return x0 + (t - t0) / (t1 - t0) * (x1 - x0)
-
-    def Y(v):
-        return plot_bot - (v - ymin) / (ymax - ymin) * PLOT_H
-
-    o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" '
-         f'role="img" aria-labelledby="t d">', STYLE,
-         f"<title id=\"t\">{esc(title)}</title>", f"<desc id=\"d\">{esc(desc)}</desc>",
-         f'<rect x="0" y="0" width="{W}" height="{H}" fill="{SURF}"/>']
-    y = 14
-    for i, line in enumerate(title_lines):
-        y += LINE
-        o.append(f'<text x="{x0 - LEFT + 12}" y="{y}" font-size="17" font-weight="600" fill="{INK}">{esc(line)}</text>')
-    o.append(f'<text x="12" y="{top}" font-size="14" fill="{INK3}">{esc(ylab)}</text>')
-    # shaded last-five-years band
-    o.append(f'<rect x="{X(t_shade):.1f}" y="{plot_top}" width="{X(t1) - X(t_shade):.1f}" height="{PLOT_H}" fill="{SHADE}"/>')
-    o.append(f'<text x="{X(t_shade) + 4:.1f}" y="{plot_bot - 6}" font-size="14" fill="{INK3}">last 5 years</text>')
-    for v in yticks:
-        o.append(f'<line x1="{x0}" x2="{x1}" y1="{Y(v):.1f}" y2="{Y(v):.1f}" stroke="{RULE}" stroke-width="{1.2 if v == 0 else 0.6}"/>')
-        lab = "0" if v == 0 else ("-" if v < 0 else "") + "{:,}".format(abs(v) // 1000) + "k"
-        o.append(f'<text x="{x0 - 6}" y="{Y(v) + 5:.1f}" font-size="14" fill="{INK3}" text-anchor="end">{lab}</text>')
-    for v in refs:
-        o.append(f'<line x1="{x0}" x2="{x1}" y1="{Y(v):.1f}" y2="{Y(v):.1f}" stroke="{INK3}" stroke-width="1" stroke-dasharray="4 3"/>')
-    if ref_label:
-        # on the axis-label line, right-aligned, clear of the plot
-        o.append(f'<text x="{W - RIGHT}" y="{top}" font-size="14" fill="{INK3}" text-anchor="end">{esc(ref_label)}</text>')
-        o.append(f'<line x1="{W - RIGHT - 272}" x2="{W - RIGHT - 248}" y1="{top - 5}" y2="{top - 5}" stroke="{INK3}" stroke-width="1" stroke-dasharray="4 3"/>')
-    pts = " ".join(f"{X(t):.1f},{Y(v):.1f}" for t, v in series)
-    o.append(f'<polyline points="{pts}" fill="none" stroke="{SUBJ}" stroke-width="1.4" stroke-linejoin="round"/>')
-    for t, v in series:
-        if v < 0:
-            o.append(f'<circle cx="{X(t):.1f}" cy="{Y(v):.1f}" r="3" fill="{WARN}"/>')
-    for yr in [2010, 2014, 2018, 2022, 2026]:
-        o.append(f'<line x1="{X(yr):.1f}" x2="{X(yr):.1f}" y1="{plot_bot}" y2="{plot_bot + 5}" stroke="{INK3}" stroke-width="0.8"/>')
-        o.append(f'<text x="{X(yr):.1f}" y="{plot_bot + 21}" font-size="14" fill="{INK3}" text-anchor="middle">{yr}</text>')
-    y = axis_bot + 8
-    for line in cap_lines:
-        y += LINE
-        o.append(f'<text x="12" y="{y}" font-size="14" fill="{INK3}">{esc(line)}</text>')
-    o.append("</svg>")
-    with open(path, "w", encoding="utf-8", newline="\n") as f:
-        f.write("\n".join(o) + "\n")
+def ex_date(month, n):
+    # the reference figure's convention: exercise 1 on the 8th, exercise 2 on the 22nd
+    return dt.date(int(month[:4]), int(month[5:7]), 8 if n == 1 else 22)
 
 
 def main():
+    setup()
     os.makedirs(FIGS, exist_ok=True)
-    F = facts()
+    F = {r["key"]: r["printed"] for r in rows("facts.csv")}
     ex = rows("exercises.csv")
-    s1 = [(t_of(r["month"], int(r["bidding_no"])), int(r["gap"])) for r in ex]
-    start5 = ex[-120]
-    t5 = t_of(start5["month"], int(start5["bidding_no"]))
-    chart(os.path.join(FIGS, "lta_ab_chart1_gap.svg"),
-          title=(f"Category B cleared a median ${F['gap_median_full']} above A from 2010, "
-                 f"and ${F['gap_median_5y']} over the last five years"),
-          desc=(f"Line chart, one point per COE bidding exercise from January 2010 to "
-                f"{F['cutoff_label']}: Category B's premium minus Category A's. The median gap was "
-                f"${F['gap_median_full']} over the {F['n_ex_full']} exercises and ${F['gap_median_5y']} over the "
-                f"last {F['n_ex_5y']}. Category A cleared above B in {F['a_above_b_full']} exercises, "
-                f"{F['a_above_b_2026']} of them in 2026. Dashed lines mark the steps between adjacent bands in "
-                f"LTA's two examples, $7,500 and $15,000."),
-          caption=["How to read: each point is one bidding exercise, Category B's premium minus "
-                   "Category A's. Orange dots, below zero: A cleared above B. Dashed lines: the steps "
-                   "between adjacent bands in LTA's examples (Option B $7,500, Option A $15,000). "
-                   "Nominal dollars.",
-                   f"Source: LTA via data.gov.sg, January 2010 to {F['cutoff_label']}."],
-          series=s1, ymin=-20000, ymax=60000, yticks=[-20000, 0, 20000, 40000, 60000],
-          refs=[7500, 15000], ref_label="LTA's band steps: $7,500, $15,000",
-          t_shade=t5, ylab="B minus A, $")
+    xa = [ex_date(r["month"], int(r["bidding_no"])) for r in ex]
+    ga = [int(r["gap"]) / 1000 for r in ex]
+    cross = [(x, g) for x, g in zip(xa, ga) if g < 0]
+    lo = min(range(len(ga)), key=lambda i: ga[i])
     pq = rows("pqp_monthly.csv")
-    s2 = [(t_of(r["month"], 1, 1), int(r["gap"])) for r in pq]
-    chart(os.path.join(FIGS, "lta_ab_chart2_pqp.svg"),
-          title=(f"Renewal prices for B and A were ${F['pqp_gap_oct2026']} apart in October 2026; "
-                 f"the five-year median gap was ${F['pqp_gap_median_5y']}"),
-          desc=(f"Line chart, one point per month from January 2010 to October 2026: the Prevailing Quota "
-                f"Premium for Category B minus that for Category A. The gap was ${F['pqp_gap_oct2026']} in "
-                f"October 2026, a median ${F['pqp_gap_median_12m']} over the last 12 months, "
-                f"${F['pqp_gap_median_5y']} over the last five years and ${F['pqp_gap_median_full']} from 2010."),
-          caption=["How to read: each point is one month, the PQP that renewing Category B owners paid "
-                   "minus the PQP for Category A. PQP is the average premium over the latest three "
-                   "months with bidding (LTA). Below zero: A's PQP was higher. Nominal dollars.",
-                   "Source: SingStat M651121 and LTA M11, January 2010 to October 2026."],
-          series=s2, ymin=-10000, ymax=40000, yticks=[-10000, 0, 10000, 20000, 30000, 40000],
-          refs=[], t_shade=t_of(pq[-60]["month"], 1, 1), ylab="B minus A, $")
-    print("  wrote figs/lta_ab_chart1_gap.svg, figs/lta_ab_chart2_pqp.svg")
+    xp = [dt.date(int(r["month"][:4]), int(r["month"][5:7]), 15) for r in pq]
+    gp = [int(r["gap"]) / 1000 for r in pq]
+
+    start5 = xa[-120]
+    end = dt.date(2026, 12, 31)
+    fig, axes = plt.subplots(2, 1, figsize=(6.6, 4.4), sharex=True, gridspec_kw={"hspace": 0.42})
+    panels = [
+        (axes[0], xa, ga, "A.  Premium: Category B minus Category A, each bidding exercise",
+         (-20, 60), [-20, 0, 20, 40, 60]),
+        (axes[1], xp, gp, "B.  Renewal price (PQP): Category B minus Category A, each month",
+         (-10, 40), [-10, 0, 10, 20, 30, 40]),
+    ]
+    for ax, x, y, title, ylim, yt in panels:
+        ax.axvspan(start5, end, color=SHADE, lw=0, zorder=0)
+        for t in yt:
+            ax.axhline(t, color=GRID, lw=0.6, zorder=1)
+        ax.axhline(0, color="#52514e", lw=0.8, zorder=2)
+        ax.plot(x, y, color=INK, lw=1.1, zorder=3, solid_joinstyle="round")
+        ax.set_ylim(*ylim)
+        ax.set_yticks(yt)
+        ax.set_yticklabels([f"{t:g}" for t in yt])
+        ax.set_xlim(dt.date(2010, 1, 1), end)
+        for s in ("top", "right", "left"):
+            ax.spines[s].set_visible(False)
+        ax.tick_params(axis="y", length=0, pad=4)
+        ax.set_title(title, loc="left", fontsize=9, fontweight="semibold", pad=14, color="#0b0b0b")
+        ax.text(0, 1.015, "S$ thousand", transform=ax.transAxes, fontsize=7.5, color=MUTED, va="bottom")
+        if ax is axes[0]:
+            ax.text(start5 + dt.timedelta(days=40), ylim[1] * 0.97, "Last five years", fontsize=7.5,
+                    color=MUTED, va="top")
+
+    ax = axes[0]
+    C = {r["key"]: r for r in csv.DictReader(open(os.path.join(HERE, "office", "LTA_CONSTANTS.csv"), encoding="utf-8"))}
+    for v, lab in ((int(C["step_option_a"]["value"]) / 1000, f"Option A step, ${C['step_option_a']['printed']}"),
+                   (int(C["step_option_b"]["value"]) / 1000, f"Option B step, ${C['step_option_b']['printed']}")):
+        ax.axhline(v, color="#8a8984", lw=0.7, ls=(0, (3, 2)), zorder=2)
+        ax.text(end + dt.timedelta(days=60), v, lab, fontsize=7, color=MUTED, va="center",
+                clip_on=False, linespacing=1.1)
+    ax.scatter([c[0] for c in cross], [c[1] for c in cross], s=10, color=ACCENT, zorder=4,
+               edgecolors="white", linewidths=0.6)
+    ax.annotate(f"Category A above B in {F['a_above_b_full']} of {F['n_ex_full']} exercises",
+                xy=(xa[lo], ga[lo]), xytext=(xa[lo] + dt.timedelta(days=238), ga[lo]),
+                fontsize=7, color=MUTED, va="center",
+                arrowprops=dict(arrowstyle="-", color="#8a8984", lw=0.5))
+    axes[1].annotate(f"Oct 2026: ${F['pqp_gap_oct2026']}", xy=(xp[-1], gp[-1]),
+                     xytext=(xp[-1] + dt.timedelta(days=60), -6.5), fontsize=7, color=MUTED, ha="center",
+                     arrowprops=dict(arrowstyle="-", color="#8a8984", lw=0.5))
+    axes[1].xaxis.set_major_locator(YearLocator(2))
+    axes[1].xaxis.set_major_formatter(DateFormatter("%Y"))
+    base = os.path.join(FIGS, "lta_ab_fig1")
+    fig.savefig(base + ".png", bbox_inches="tight", dpi=220, metadata={"Software": None})
+    fig.savefig(base + ".svg", bbox_inches="tight", metadata={"Date": None, "Creator": None})
+    print(f"  wrote figs/lta_ab_fig1.png, figs/lta_ab_fig1.svg ({len(cross)} A-above-B markers, "
+          f"panel B from the published PQP, {len(pq)} months)")
 
 
 if __name__ == "__main__":

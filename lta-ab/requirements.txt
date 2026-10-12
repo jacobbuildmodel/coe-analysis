@@ -1,0 +1,5 @@
+# lta-ab: versions used to build the committed outputs (Figure 1's bytes depend on matplotlib's)
+pandas==3.0.2
+pypdf==5.1.0
+matplotlib==3.11.2
+playwright==1.56.0   # 20_pdf.py only (NOTE.pdf), with its Chromium

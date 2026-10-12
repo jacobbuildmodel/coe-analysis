@@ -1,38 +1,33 @@
-# COE Categories A and B: what the bidding record showed, January 2010 to October 2026
+::: kicker
+Submission to LTA's public consultation on COE categorisation for cars
+:::
 
-*Evidence note for LTA's public consultation on COE categorisation for cars (8 October to
-2 November 2026). Written by Jacob, an independent researcher, in a personal capacity. The
-code and data are public at https://github.com/jacobbuildmodel/coe-analysis (folder
-`lta-ab`).*
+# COE Categories A and B: Evidence from the Bidding Record, 2010-2026
 
-This note sets out what the published record showed on four points the consultation paper raised. It covers every bidding exercise from January 2010 to October 2026, exercise 1. Amounts are in nominal dollars. The note takes no view on the proposal.
+::: meta
+**Jacob Ong**, independent researcher, writing in a personal capacity (ORCID 0009-0005-4438-9657).
+Data and code: github.com/jacobbuildmodel/coe-analysis, folder lta-ab. Data to October 2026, first bidding exercise.
+:::
 
-## 1. How often Category A cleared above Category B (Q1)
+::: summary
+## Summary
 
-Of the 10 exercises from February to June 2026, Category A cleared above Category B in 3:
-the second exercises of February, April and June 2026. This matches the paper: "from Feb to
-Jun 2026, Category A price exceeded the Category B price on three occasions" (para 1.8).
-Those 3 were the only such exercises among the 19 held in 2026 up
-to the cut-off.
+- Category A cleared above Category B in 3 of the 10 bidding exercises from February to June 2026, consistent with paragraph 1.8 of the consultation paper, and in 21 of 397 exercises since January 2010.
+- The median gap between the Category B and Category A premiums was $9,010 over 2010-2026 and $19,568 over the last five years. The consultation paper's example band steps are $7,500 and $15,000.
+- In October 2026 the Prevailing Quota Premiums (PQP) for Categories A and B differed by $2,901 (2.3 per cent of A's). The median monthly difference over the last five years was $20,056 (22 per cent).
+:::
 
-There were also 18 earlier occasions, in 2013, 2016-2018 and 2020. That makes 21 of the
-397 exercises since January 2010. The largest margin was $16,599, in March 2013, exercise 1.
+## 1. Crossings of the Category A and B premiums
 
-*What this shows and does not show:* it shows when the two clearing prices crossed. It does
-not show why. Category A's criteria changed in 2014 and 2022 (para 1.6), so the two
-categories did not hold the same cars throughout.
+Paragraph 1.8 of the consultation paper states that "from Feb to Jun 2026, Category A price exceeded the Category B price on three occasions". The bidding record is consistent with this: Category A cleared above Category B in the second exercises of February, April and June 2026, and in none of the other 16 exercises held in 2026 up to the cut-off. Between January 2010 and October 2026, Category A cleared above Category B in 21 of 397 exercises, in 2013, 2016-2018, 2020 and 2026 (Figure 1, panel A). The largest margin was $16,599, in the first exercise of March 2013. Category A's eligibility criteria changed in 2014 and 2022 (para 1.6), so the composition of each category was not constant over the period.
 
-## 2. The B-A premium gap, beside LTA's example amounts (Q1, Q3)
+## 2. The size of the gap between Categories A and B
 
-Category B cleared a median $9,010 above A from 2010, and $19,568 over the last five years.
-The paper named "the historical price gaps between Category A and Category B" as "one
-possible reference point" for the feebate amounts (para 2.17). In its examples, adjacent
-bands differ by $15,000 (Option A) or $7,500 (Option B). The lowest and highest bands
-differ by $30,000 in both (paras 2.18(a)-(b)).
+Paragraph 2.17 identifies "the historical price gaps between Category A and Category B" as "one possible reference point" for the feebate amounts. Table 1 summarises the gap over two windows. Its median was $9,010 from 2010 and $19,568 over the last five years, and it was $15,000 or more in 29 per cent and 64 per cent of exercises respectively. Within the last five years it ranged from Category A $2,009 above B (April 2026) to Category B $50,335 above A; at the cut-off it was $99. A reference value drawn from the historical gap therefore depends materially on the window chosen.
 
-![Category B's premium minus Category A's, per exercise](figs/lta_ab_chart1_gap.svg)
+Table 1. Category B premium minus Category A premium, per bidding exercise
 
-| B minus A, per exercise | From January 2010 | Last five years |
+| | January 2010 to October 2026 | Last five years |
 |---|---|---|
 | Exercises | 397 | 120 |
 | Median gap | $9,010 | $19,568 |
@@ -40,65 +35,36 @@ differ by $30,000 in both (paras 2.18(a)-(b)).
 | Gap of $15,000 or more | 117 (29%) | 77 (64%) |
 | Gap of $30,000 or more | 11 (3%) | 10 (8%) |
 
-The last five years began in October 2021, exercise 2. Within them, the gap ran from
-Category A $2,009 above B (April 2026) to Category B $50,335 above A. At the cut-off it was
-$99.
+Notes: The last five years run from October 2021 (exercise 2) to October 2026 (exercise 1). $7,500 and $15,000 are the steps between adjacent bands in the consultation paper's Options B and A; under both options the lowest and highest bands differ by $30,000 (paras 2.18(a)-(b)). Nominal dollars.
 
-*What this shows and does not show:* it shows that the size of the historical gap depended
-on the window chosen. A premium is the price that cleared each category's own quota on one
-day. It is not a measure of a car's value, and it does not show what the gap would be
-within one merged pool.
+::: figure
+Figure 1. Category B minus Category A, January 2010 to October 2026
 
-## 3. Renewal prices: the PQP (Q4)
+![Two panels: the Category B minus Category A premium per bidding exercise, and the PQP difference per month](figs/lta_ab_fig1.png)
 
-In October 2026, Category A's PQP was $128,715 and Category B's $131,616: $2,901 apart, or
-2.3% of A's. The paper said that "existing owners of Category A and B cars already pay
-broadly similar PQPs when renewing" (para 2.19).
+Notes: Panel A shows each bidding exercise; red markers denote exercises in which Category A cleared above Category B. Dashed lines mark the band steps in the consultation paper's examples (para 2.18). Panel B shows the monthly PQP. Shading marks the last five years. Nominal dollars. Sources: LTA via data.gov.sg; SingStat table M651121; LTA, M11 COE Results 2025-2026; author's calculations.
+:::
 
-![Category B's PQP minus Category A's, per month](figs/lta_ab_chart2_pqp.svg)
+## 3. Renewal prices
 
-- **Last 12 months:** median $4,930 (4% of A's PQP), between $1,390 and $16,941.
-- **Last five years:** median $20,056 (22%), up to $36,738.
-- **From 2010:** median $8,668 (15%).
+Paragraph 2.19 states that owners of Category A and B cars "already pay broadly similar PQPs when renewing". In October 2026 the PQP was $128,715 for Category A and $131,616 for Category B, a difference of $2,901, or 2.3 per cent of Category A's. Over the preceding 12 months the median monthly difference was $4,930 (4 per cent, ranging from $1,390 to $16,941). Over the last five years it was $20,056 (22 per cent, with a maximum of $36,738), and since 2010 it was $8,668 (15 per cent) (Figure 1, panel B). Category A's PQP was at or above Category B's in three months, June 2013, June 2018 and July 2018, and in none of the last five years.
 
-Category A's PQP was at or above B's in 3 months: June 2013, June 2018 and July 2018. It
-was in none of the last five years.
+## 4. Quota shares and Category E
 
-*What this shows and does not show:* it shows the gap between the two PQPs: 2.3% of A's in
-October 2026, and a median monthly gap of 22% of A's over the last five years. It does not
-show how many owners renewed, or what they would pay under a single PQP.
+Over the last five years Category A received 58 per cent of the combined Category A and B quota (57 per cent since 2010), and Category E received 11 per cent of the combined A, B and E quota (15 per cent since 2010). Category E cleared at or above both Categories A and B in 86 of the last 120 exercises and below Category B in 34; its median premium was $992 above Category B's.
 
-## 4. Quota shares and Category E (Q1, Q5)
+## Scope
 
-**Quota.** Over the last five years, Category A held 58% of the combined A and B quota (57%
-from 2010). Category E held 11% of A, B and E together (15% from 2010). Since May 2017,
-Category E has received 10% of deregistrations from Categories A, B and C (footnote 5).
+The figures describe clearing prices and quotas. A premium is the price that cleared one category's quota in one exercise; it is not a measure of vehicle value, and it does not indicate what prices would be in a merged pool. The data do not show renewal volumes, or which vehicles were registered with Category E certificates (para 2.22). This note takes no view on the proposals.
 
-*What this shows and does not show:* how certificates were divided. Quota follows
-deregistrations; it is not a measure of demand.
+## Data and method
 
-**Category E.** Over the last five years, Category E cleared at or above both A and B in 86
-of 120 exercises, and below B in 34. Its median premium was $992 above B's.
-
-*What this shows and does not show:* that E's price usually sat at or just above B's. It does not show who
-used E certificates; the paper's statement that they went mostly to Category B cars
-(para 2.22) cannot be checked from prices alone.
-
-## Method and sources
-
-- **Bidding results:** LTA via data.gov.sg (`d_69b3380ad7e51aff3a7dcc84eba52b8a`),
-  downloaded 11 October 2026.
-- **PQP:** SingStat table M651121 via data.gov.sg (`d_22094bf608253d36c0c63b52d852dd6e`),
-  and LTA's "M11 COE Results 2025-2026".
-- **Cross-checks:**
-  - The bidding file matched the copy held since August in all 1,965 earlier rows.
-  - Its Category A and B premiums matched SingStat's in all 394 exercises SingStat covers.
-  - LTA's PQP, recomputed from premiums as a three-month average, matched all 392 published
-    values to within $1.
-- **Data corrections:** the two documented corrections to 2010 values in the repository
-  README were applied. One is a Category B quota.
-- **Reproduction:** every number in this note is produced by `lta-ab/10_facts.py` and
-  checked against a number manifest.
+::: method
+- **Bidding results:** LTA via data.gov.sg (dataset d_69b3380ad7e51aff3a7dcc84eba52b8a), retrieved 11 October 2026.
+- **PQP:** SingStat table M651121 via data.gov.sg (dataset d_22094bf608253d36c0c63b52d852dd6e) and LTA, M11 COE Results 2025-2026.
+- **Cross-checks:** the bidding file matched an earlier copy in all 1,965 overlapping rows; its Category A and B premiums matched SingStat in all 394 exercises SingStat covers; the PQP, recomputed as a three-month average of premiums, matched all 392 published values to within $1. Two documented corrections to 2010 values were applied.
+- **Reproduction:** every figure in this note is produced by lta-ab/10_facts.py and checked against a number manifest.
+:::
 
 ## For the feedback form (three lines)
 

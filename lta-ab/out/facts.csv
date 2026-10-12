@@ -36,6 +36,7 @@ claim_a_above_b,3.000000,3,of which A cleared above B
 claim_agrees,1.000000,agrees,whether the count equals LTA's 'three occasions'
 a_above_b_2026,3.000000,3,"A above B, Jan 2026 to the cut-off"
 n_ex_2026,19.000000,19,"exercises, Jan 2026 to the cut-off"
+n_ex_2026_other,16.000000,16,exercises in 2026 to the cut-off in which A did not clear above B
 a_above_b_before_2026,18.000000,18,"A above B, 2010 to Dec 2025"
 gap_cutoff,99.000000,99,B-A gap at the cut-off exercise
 pqp_n_full,202.000000,202,"months with a PQP, full"

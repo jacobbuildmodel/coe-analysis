@@ -36,6 +36,7 @@ claim_a_above_b,3,10_facts.py,out/facts.csv
 claim_agrees,agrees,10_facts.py,out/facts.csv
 a_above_b_2026,3,10_facts.py,out/facts.csv
 n_ex_2026,19,10_facts.py,out/facts.csv
+n_ex_2026_other,16,10_facts.py,out/facts.csv
 a_above_b_before_2026,18,10_facts.py,out/facts.csv
 gap_cutoff,99,10_facts.py,out/facts.csv
 pqp_n_full,202,10_facts.py,out/facts.csv

@@ -268,6 +268,8 @@ def main():
     y26 = w[w.month >= "2026-01"]
     fact("a_above_b_2026", int((y26.gap < 0).sum()), str(int((y26.gap < 0).sum())), "A above B, Jan 2026 to the cut-off")
     fact("n_ex_2026", len(y26), str(len(y26)), "exercises, Jan 2026 to the cut-off")
+    n_other = len(y26) - int((y26.gap < 0).sum())
+    fact("n_ex_2026_other", n_other, str(n_other), "exercises in 2026 to the cut-off in which A did not clear above B")
     pre26 = w[w.month < "2026-01"]
     fact("a_above_b_before_2026", int((pre26.gap < 0).sum()), str(int((pre26.gap < 0).sum())), "A above B, 2010 to Dec 2025")
     cut = w.iloc[-1]

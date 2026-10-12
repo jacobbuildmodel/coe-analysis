@@ -6,7 +6,11 @@
         - every number token in NOTE.md is a printed value in the manifest,
           an integer of 10 or less, or a year (1990-2030);
         - pure ASCII; no banned word; the word count of the note body
-          (before "## Method and sources") is at most WORD_CAP.
+          of prose (sections 1-4 and Scope: paragraphs only, without the
+          Summary box, table, captions, Notes lines and figure block) is at
+          most WORD_CAP. The count of everything before "## Data and method"
+          is reported alongside it, not capped: the redesign text was fixed
+          by the checker's ruling of 12 Oct 2026 at more than 800 words in all.
 
 The manifest holds every printed value from out/facts.csv, the results in
 out/checks.csv, and LTA's amounts in office/LTA_CONSTANTS.csv (quoted from the
@@ -42,6 +46,8 @@ def tracked():
     files += sorted(glob.glob(os.path.join(HERE, "*.py"))) + [os.path.join(HERE, "run_all.sh")]
     files += sorted(glob.glob(os.path.join(HERE, "out", "*.csv")))
     files += sorted(glob.glob(os.path.join(HERE, "figs", "*.svg")))
+    files += sorted(glob.glob(os.path.join(HERE, "figs", "*.png")))
+    files += sorted(glob.glob(os.path.join(HERE, "fonts", "*")))
     files += [NOTE]
     return [f for f in files if os.path.isfile(f)]
 
@@ -69,15 +75,27 @@ def note_numbers(text):
     t = re.sub(r"\]\([^)]*\)", "]", t)
     t = re.sub(r"\bd_[0-9a-f]{32}\b", "", t)
     t = re.sub(r"\b\d+[a-z]?_[\w.-]+", "", t)
-    t = re.sub(r"\b(?:paras?|footnotes?|Tables?)\s+[\d.]+(?:\([a-z]\))?(?:\s*(?:-|to|and|,)\s*[\d.]+(?:\([a-z]\))?)*", "", t)
+    t = re.sub(r"\(ORCID \d{4}-\d{4}-\d{4}-\d{3}[\dX]\)", "", t)
+    t = re.sub(r"\b(?:[Pp]aragraphs?|paras?|footnotes?|Tables?|Figures?)\s+[\d.]+(?:\([a-z]\))?(?:\s*(?:-|to|and|,)\s*[\d.]+(?:\([a-z]\))?)*", "", t)
     t = re.sub(r"\(\s*[a-z]\s*\)", "", t)
     return re.findall(r"(?<![\w.,-])-?\d+(?:,\d{3})*(?:\.\d+)?(?![\w]|,\d)", t)
 
 
 def body_words(text):
-    body = text.split("## Method and sources")[0]
+    """(all words before "## Data and method", prose words of sections 1-4 and Scope)."""
+    body = text.split("## Data and method")[0]
     body = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", body)
-    return len(re.findall(r"\S+", body))
+    total = len(re.findall(r"\S+", re.sub(r"^:::.*$", "", body, flags=re.M)))
+    prose = "## 1." + body.split("## 1.", 1)[1]
+    prose = re.sub(r"^::: figure$.*?^:::$", "", prose, flags=re.S | re.M)
+    prose = re.sub(r"^:::.*$", "", prose, flags=re.M)
+    keep = []
+    for para in re.split(r"\n\s*\n", prose):
+        p = para.strip()
+        if not p or p.startswith(("#", "|", "Table ", "Notes:", "![")):
+            continue
+        keep.append(p)
+    return total, len(re.findall(r"\S+", " ".join(keep)))
 
 
 def check():
@@ -118,11 +136,11 @@ def check():
         if ph in low:
             print(f"  BANNED PHRASE: {ph}")
             ok = False
-    words = body_words(text)
+    total, words = body_words(text)
     if words > WORD_CAP:
-        print(f"  WORD COUNT {words} over {WORD_CAP}")
+        print(f"  WORD COUNT {words} (prose) over {WORD_CAP}")
         ok = False
-    print(f"  NOTE.md: {len(nums)} numbers checked, {words} words before Method and sources")
+    print(f"  NOTE.md: {len(nums)} numbers checked, {words} words of prose (cap {WORD_CAP}), {total} words in all before Data and method")
     print(f"  {len(have)} checksums, {len(printed)} distinct printed values in the manifest")
     return ok
 
