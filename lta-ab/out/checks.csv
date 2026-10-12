@@ -1,0 +1,10 @@
+check,result
+"fresh bidding file vs root raw.csv, rows compared",1965
+"fresh bidding file vs root raw.csv, cells differing",0
+documented corrections applied (root README),2
+"premiums A and B vs SingStat M651121, exercises compared",394
+"premiums A and B vs SingStat M651121, values differing",0
+"PQP: SingStat month m equals LTA 'PQP for m+1', months compared",20
+"PQP: SingStat month m equals LTA 'PQP for m+1', months matching",20
+"PQP recomputed as 3-month mean of premiums, values compared",392
+"PQP recomputed as 3-month mean of premiums, within $1",392

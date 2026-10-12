@@ -1,0 +1,82 @@
+RETRIEVED -- lta-ab (evidence note for LTA's COE categorisation consultation)
+Append only. One block per download or refused request.
+
+== 11 October 2026, Checkpoint 0 (retrieved 2026-10-11 16:11 SGT, 08:11 UTC)
+
+c0_lta_news_release_20261008.html
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2026/10/news-releases/launch-of-public-consultation-on-coe-categorisation-for-cars.html
+  title   "Launch of Public Consultation on COE Categorisation for Cars", LTA news release, 08 Oct 2026
+  bytes   53693
+  md5     b01072533113cc10f7a36ba67ec1ae5e
+  method  curl -L, saved byte-for-byte as served (HTTP 200)
+
+c1a_lta_annex_a.pdf
+  source  https://www.lta.gov.sg/content/dam/ltagov/news/press/2026/261008-coe-public-consultation-annex-a.pdf
+  title   "Annex A: At a Glance: Overview of COE Categorisation Consultation" (1 page, text)
+  bytes   108732
+  md5     1443b89d2d2608dedd0f59ba86513c9e
+  pdf     CreationDate 2026-10-08 17:17:12 +08:00
+
+c1b_lta_annex_b.pdf
+  source  https://www.lta.gov.sg/content/dam/ltagov/news/press/2026/261008-coe-public-consultation-annex-b.pdf
+  title   "Annex B: How the Proposed COE Merger and Feebate System Could Work" (1 page, image)
+  bytes   286377
+  md5     c78df55f93eeb87a0bc5628b99a27c04
+  note    infographic; text read from the embedded JPEG (1055 x 1491), not OCR'd into the repo
+
+c1c_lta_annex_c.pdf
+  source  https://www.lta.gov.sg/content/dam/ltagov/news/press/2026/261008-coe-public-consultation-annex-c.pdf
+  title   "Annex C: Use of Median Open Market Value (OMV) to Determine Feebate Band" (1 page, image)
+  bytes   229460
+  md5     6f465da761bb1dfa097228c90220fa6f
+  note    infographic; text read from the embedded JPEG (1137 x 1383)
+
+REFUSED / NOT RETRIEVED (not routed around)
+  https://go.gov.sg/coe-public-consult   CONNECT 403, network policy (go.gov.sg). This is the
+                                         only link to the consultation PAPER in the release (para 8).
+  https://go.gov.sg/coe-pcd-feedback     CONNECT 403, network policy (feedback form; not needed as data)
+  https://www.reach.gov.sg/latest-happenings/public-consultations/2026/public-consultation-on-proposed-changes-to-certificate-of-entitlement--coe--categorisation-for-cars/
+                                         CONNECT 403, network policy (www.reach.gov.sg)
+  https://www.lta.gov.sg/content/dam/ltagov/news/press/2026/261008-coe-{paper,public-consultation-paper,consultation-paper}.pdf
+                                         404 (three guessed paths on LTA's own host; guessing stopped)
+
+METADATA ONLY (no values downloaded)
+  data.gov.sg v2 metadata, d_69b3380ad7e51aff3a7dcc84eba52b8a "COE Bidding Results / Prices":
+    lastUpdatedAt 2026-10-07T17:13:33+08:00, coverage 2010-01 to 2026-10
+  data.gov.sg v2 metadata, d_22094bf608253d36c0c63b52d852dd6e "Motor Vehicle Quota, Quota
+    Premium And Prevailing Quota Premium, Monthly": lastUpdatedAt 2026-08-25, coverage 2002-02 to 2026-08
+
+== 11 October 2026, Checkpoint 1 (the checker's rulings: cut-off = October 2026, exercise 1)
+
+coe-public-consult.pdf
+  source  obtained by Jacob via browser from go.gov.sg/coe-public-consult on 11 Oct 2026,
+          uploaded to lta-ab/raw/ on lta-ab-wip (commit c5a1d6e)
+  title   LTA consultation paper on COE categorisation for cars (20 pages)
+  bytes   487738
+  md5     5ec997f401311f480f45b49ddc9b8be0   (matches the checker's md5 of the copy Jacob sent)
+  pdf     CreationDate 2026-10-08 11:23:39 +08:00
+
+d1_coe_bidding_results_20261011.csv
+  source  data.gov.sg d_69b3380ad7e51aff3a7dcc84eba52b8a "COE Bidding Results / Prices" (LTA)
+          https://api-open.data.gov.sg/v1/public/api/datasets/d_69b3380ad7e51aff3a7dcc84eba52b8a/poll-download
+  retrieved 2026-10-11 18:20 SGT (10:20 UTC); dataset last updated 2026-10-07 17:13 SGT
+  bytes   78897
+  md5     dac8d85770a81011556068c0a4f23adf
+  rows    1985 + header; 2010-01 exercise 1 to 2026-10 exercise 1 (the cut-off)
+  check   all 1,965 rows of root raw.csv (md5 7b68a001...) present and identical (10_facts.py)
+
+d2_quota_premium_pqp_monthly_20261011.csv
+  source  data.gov.sg d_22094bf608253d36c0c63b52d852dd6e (SingStat M651121), poll-download as above
+  retrieved 2026-10-11 18:20 SGT
+  bytes   74930
+  md5     8b9f1f55f0c73ad145b78cdbe7006864   (byte-identical to erp/raw/e4b_quota_premium_monthly.csv)
+  coverage 2002-02 to 2026-08 (no newer columns)
+
+d3_lta_m11_coe_results_2025_2026.pdf
+  source  https://www.lta.gov.sg/content/dam/ltagov/who_we_are/statistics_and_publications/statistics/pdf/M11-COE_Results_2025_2026.pdf
+  title   LTA "COE Bidding Results" 2025-2026 (2 pages), with "PQP for <month>" rows to Oct 2026
+  retrieved 2026-10-11 18:20 SGT (10:20 UTC)
+  bytes   344470
+  md5     546ae77e763dbcb2c0ca40bad6442bf0
+  pdf     ModDate 2026-10-08 10:00:48 +08:00
+  check   its PQP rows equal SingStat's PQP shifted one month in all 20 overlapping months
