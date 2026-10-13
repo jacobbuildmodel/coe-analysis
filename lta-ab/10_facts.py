@@ -15,7 +15,8 @@ Reads (all in lta-ab/raw/, md5s in raw/RETRIEVED.txt and CHECKSUMS.md5):
 and, for one cross-check only, the repository's root raw.csv (md5 asserted).
 
 Writes (lta-ab/out/):
-  exercises.csv   one row per exercise: premiums and quotas for A, B, E; gaps
+  exercises.csv   one row per exercise: premiums, quotas and bids received for
+                  A, B, E; gaps; bids received per certificate for A and B
   pqp_monthly.csv one row per month: PQP for A and B applying in that month
   a_above_b.csv   every exercise in which Category A cleared above Category B
   facts.csv       key, value, printed, definition: every number the note uses
@@ -115,17 +116,20 @@ def load_bidding():
 
 def wide(df):
     w = df[df.cat.isin(["A", "B", "E"])].pivot_table(
-        index=["month", "bidding_no"], columns="cat", values=["premium", "quota"], aggfunc="first")
+        index=["month", "bidding_no"], columns="cat", values=["premium", "quota", "bids_received"], aggfunc="first")
     w.columns = [f"{a}_{b}" for a, b in w.columns]
     w = w.reset_index().sort_values(["month", "bidding_no"]).reset_index(drop=True)
     keep = [(m, b) for m, b in zip(w.month, w.bidding_no) if FULL_START <= (m, b) <= CUTOFF]
     w = w[[k in set(keep) for k in zip(w.month, w.bidding_no)]].reset_index(drop=True)
     assert (w.month.iloc[-1], w.bidding_no.iloc[-1]) == CUTOFF, "data does not reach the cut-off"
     assert not w.isna().any().any()
-    for c in ["premium_A", "premium_B", "premium_E", "quota_A", "quota_B", "quota_E"]:
+    for c in ["premium_A", "premium_B", "premium_E", "quota_A", "quota_B", "quota_E",
+              "bids_received_A", "bids_received_B", "bids_received_E"]:
         w[c] = w[c].astype(int)
     w["gap"] = w.premium_B - w.premium_A
     w["gap_EB"] = w.premium_E - w.premium_B
+    w["bids_per_cert_A"] = w.bids_received_A / w.quota_A
+    w["bids_per_cert_B"] = w.bids_received_B / w.quota_B
     w["label"] = [label(m, b) for m, b in zip(w.month, w.bidding_no)]
     return w
 
@@ -257,6 +261,15 @@ def main():
     def pct(x):
         return str(rnd(x)) if abs(x) >= 1 else "{:.1f}".format(x)
     fact("cutoff_label", 0, label(*CUTOFF), "the last exercise used (checker's ruling)")
+    # Scheduled exercises in window 1 (two a month), and those with no bidding.
+    sched = [(f"{y}-{m:02d}", b) for y in range(2010, 2027) for m in range(1, 13) for b in (1, 2)]
+    sched = [k for k in sched if FULL_START <= k <= CUTOFF]
+    held = set(zip(w.month, w.bidding_no))
+    missing = [k for k in sched if k not in held]
+    assert missing == [(f"2020-{m:02d}", b) for m in (4, 5, 6) for b in (1, 2)], missing
+    assert len(sched) - len(missing) == len(w)
+    fact("n_scheduled_w1", len(sched), str(len(sched)), "exercises scheduled (two a month), January 2010 to the cut-off")
+    fact("n_no_bidding_w1", len(missing), str(len(missing)), "scheduled exercises with no bidding (April to June 2020), w1")
     for wn, d in windows.items():
         fact(f"n_ex_{wn}", len(d), str(len(d)), f"exercises in the {wn} window")
         fact(f"start_{wn}", 0, d.label.iloc[0], f"first exercise in the {wn} window")
@@ -347,7 +360,20 @@ def main():
         n_top = int(((d.premium_E >= d.premium_A) & (d.premium_E >= d.premium_B)).sum())
         fact(f"e_below_b_{wn}", n_eb, str(n_eb), f"exercises with E below B, {wn}")
         fact(f"e_at_or_above_both_{wn}", n_top, str(n_top), f"exercises with E at or above both A and B, {wn}")
-        fact(f"gap_EB_median_{wn}", d.gap_EB.median(), dollars(rnd(d.gap_EB.median())), f"median E-B gap, {wn}")
+        n_mid = int(((d.premium_E >= d.premium_B) & (d.premium_E < d.premium_A)).sum())
+        fact(f"e_at_or_above_b_below_a_{wn}", n_mid, str(n_mid), f"exercises with E at or above B but below A, {wn}")
+        assert n_top + n_mid + n_eb == len(d)
+        fact(f"gap_EB_median_{wn}", d.gap_EB.median(), dollars(rnd(d.gap_EB.median())),
+             f"median over exercises of premium(E) - premium(B) in the same exercise, {wn}")
+
+    # Quota and demand per exercise, Categories A and B (raw d1, after the corrections).
+    for wn, d in windows.items():
+        for cat in "AB":
+            q = d[f"quota_{cat}"].median()
+            fact(f"quota_median_{cat}_{wn}", q, dollars(rnd(q)), f"median quota per exercise, Category {cat}, {wn}")
+            r = d[f"bids_per_cert_{cat}"].median()
+            fact(f"bids_per_cert_median_{cat}_{wn}", r, "{:.2f}".format(r),
+                 f"median over exercises of bids received / quota, Category {cat}, {wn}")
 
     # ---- write -------------------------------------------------------------
     w.to_csv(os.path.join(OUT, "exercises.csv"), index=False, lineterminator="\n")

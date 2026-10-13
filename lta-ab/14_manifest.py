@@ -25,6 +25,7 @@ import io
 import os
 import re
 import sys
+from pathlib import Path
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 NOTE = os.path.join(HERE, "NOTE.md")
@@ -67,7 +68,7 @@ def build_manifest():
 
 
 def build_checksums():
-    return "".join(f"{md5(f)}  {os.path.relpath(f, HERE)}\n" for f in tracked()
+    return "".join(f"{md5(f)}  {Path(os.path.relpath(f, HERE)).as_posix()}\n" for f in tracked()
                    if os.path.basename(f) != "CHECKSUMS.md5")
 
 
@@ -106,7 +107,7 @@ def check():
     for line in open(CHECKSUMS, encoding="utf-8"):
         h, f = line.rstrip("\n").split("  ", 1)
         want[f] = h
-    have = {os.path.relpath(f, HERE): md5(f) for f in tracked() if os.path.basename(f) != "CHECKSUMS.md5"}
+    have = {Path(os.path.relpath(f, HERE)).as_posix(): md5(f) for f in tracked() if os.path.basename(f) != "CHECKSUMS.md5"}
     for f in sorted(set(want) | set(have)):
         if want.get(f) != have.get(f):
             print(f"  CHECKSUM MISMATCH: {f}")
