@@ -12,7 +12,7 @@ dac8d85770a81011556068c0a4f23adf  raw/d1_coe_bidding_results_20261011.csv
 fd13e8745660b70e1548ecbb42c0ea47  10_facts.py
 4249052480110cff6395d378e498737c  12_figures.py
 fbbda10404a72cd44bb51d0cf90b85f0  14_manifest.py
-47a65c0c648b4c904516e5f8e4eac61e  20_pdf.py
+b19219df201d82e569965379b18d82f4  20_pdf.py
 6301e85072323ee17023f01985829862  run_all.sh
 00ae6fb3f099500c8b77dba0887114ea  out/a_above_b.csv
 b9500c85294a91da910b536c2b009c8c  out/checks.csv
@@ -30,5 +30,5 @@ afae59d126e379ca6abdd1e3717dce2b  fonts/SourceSerif4-It.ttf
 6695e7557fdc2f382acfbb59a630a2c4  fonts/SourceSerif4-LICENSE.md
 4e07a8a5ade833eaf92639c393e439b2  fonts/SourceSerif4-Regular.ttf
 2b770f46d16fb0624e200586dc1b8517  fonts/SourceSerif4-Semibold.ttf
-20da35e1dde89d674d3e8d0babac65d7  NOTE.md
+0c27c16d288075af0fe1da816c6d7970  NOTE.md
 60f048e75c0d8308cf13ef7d068e43f9  FORM_TEXT.md
