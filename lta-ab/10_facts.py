@@ -23,13 +23,23 @@ Writes (lta-ab/out/):
 
 Definitions (fixed here, before any number was looked at in the note):
   gap          premium(B) - premium(A), dollars, per exercise
-  full window  every exercise from 2010-01 exercise 1 to the cut-off
-  last 5 years the 120 exercises ending at the cut-off (60 months x 2)
+  windows      set by the data's start and the 2022 rule change, not by results
+               (checker's ruling of 12 Oct 2026), used in this order everywhere:
+    w1  January 2010, exercise 1, to the cut-off (the whole record held)
+    w2  since the 2022 change to Category A's power threshold for electric
+        cars: from May 2022, exercise 1 (LTA news release of 14 Apr 2022,
+        para 3, raw/c2b_lta_news_coe_quota_may_jul_2022.html)
+    w3  the last 12 months: the 24 exercises ending at the cut-off
+    w4  the latest exercise (the cut-off)
   PQP month M  the PQP that applied in month M. SingStat's column for month m
                holds the PQP set after m's second exercise, which applies in
                m + 1 (asserted below against LTA's own "PQP for <month>" rows)
-  PQP windows  months 2010-01 to 2026-10 with a published PQP; last 5 years =
-               the 60 months to 2026-10; last 12 months = the 12 to 2026-10
+  PQP windows  w1 months 2010-01 to 2026-10 with a published PQP; w2 months from
+               2022-05; w3 the 12 months to 2026-10; w4 October 2026
+  gap change   for exercise t in a window, |gap(t) - gap(same exercise number,
+               6 or 12 calendar months earlier)|; the earlier exercise may lie
+               before the window start; pairs with no earlier exercise (the 2020
+               suspension, the record's first months) are skipped
 """
 import csv
 import hashlib
@@ -49,7 +59,8 @@ ROOT_RAW_MD5 = "7b68a001709821c71ece5b8ed209d4d3"
 
 CUTOFF = ("2026-10", 1)          # the checker's ruling, 11 Oct 2026
 FULL_START = ("2010-01", 1)
-N_5Y = 120
+W2_START = ("2022-05", 1)       # LTA news release, 14 Apr 2022, para 3
+N_12M = 24
 MON = {m: i for i, m in enumerate(
     ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], 1)}
 MONTH_NAME = {v: k for k, v in MON.items()}
@@ -233,8 +244,18 @@ def main():
     def fact(key, value, printed, definition):
         F.append({"key": key, "value": value, "printed": printed, "definition": definition})
 
-    five = w.tail(N_5Y)
-    windows = {"full": w, "5y": five}
+    w2 = w[[(m, b) >= W2_START for m, b in zip(w.month, w.bidding_no)]]
+    windows = {"w1": w, "w2": w2, "w3": w.tail(N_12M), "w4": w.tail(1)}
+    gap_at = {(m, b): g for m, b, g in zip(w.month, w.bidding_no, w.gap)}
+
+    def back(m, k):
+        y, mm = int(m[:4]), int(m[5:]) - k
+        while mm < 1:
+            y, mm = y - 1, mm + 12
+        return f"{y}-{mm:02d}"
+
+    def pct(x):
+        return str(rnd(x)) if abs(x) >= 1 else "{:.1f}".format(x)
     fact("cutoff_label", 0, label(*CUTOFF), "the last exercise used (checker's ruling)")
     for wn, d in windows.items():
         fact(f"n_ex_{wn}", len(d), str(len(d)), f"exercises in the {wn} window")
@@ -242,11 +263,22 @@ def main():
         med = d.gap.median()
         fact(f"gap_median_{wn}", med, dollars(rnd(med)), f"median B-A premium gap, {wn}, dollars")
         fact(f"gap_mean_{wn}", d.gap.mean(), dollars(rnd(d.gap.mean())), f"mean B-A gap, {wn}")
+        rel = 100 * d.gap / d.premium_A
+        fact(f"gap_rel_median_{wn}", rel.median(), pct(rel.median()),
+             f"median of (B-A)/A per exercise, per cent, {wn}")
         lo_ = d.loc[d.gap.idxmin()]
         if lo_.gap < 0:
             fact(f"a_over_b_max_{wn}", int(-lo_.gap), dollars(-lo_.gap), f"largest margin of A above B, {wn}, dollars")
             fact(f"a_over_b_max_when_{wn}", 0, lo_.label, f"exercise of the largest margin of A above B, {wn}")
         fact(f"gap_max_{wn}", int(d.gap.max()), dollars(d.gap.max()), f"largest B-A gap, {wn}")
+        fact(f"gap_max_when_{wn}", 0, d.loc[d.gap.idxmax()].label, f"exercise of the largest B-A gap, {wn}")
+        for k in (6, 12):
+            ch = [abs(g - gap_at[(back(m, k), b)]) for m, b, g in zip(d.month, d.bidding_no, d.gap)
+                  if (back(m, k), b) in gap_at]
+            med_ch = pd.Series(ch).median()
+            fact(f"gap_change_{k}m_median_{wn}", med_ch, dollars(rnd(med_ch)),
+                 f"median absolute change in the B-A gap over {k} months, exercise-matched, {wn}")
+            fact(f"gap_change_{k}m_n_{wn}", len(ch), str(len(ch)), f"exercise pairs in that median, {wn}")
         fact(f"a_above_b_{wn}", int((d.gap < 0).sum()), str(int((d.gap < 0).sum())), f"exercises with A above B, {wn}")
         fact(f"a_equal_b_{wn}", int((d.gap == 0).sum()), str(int((d.gap == 0).sum())), f"exercises with A equal to B, {wn}")
         for thr_key in ["step_option_b", "step_option_a", "span_both"]:
@@ -272,11 +304,18 @@ def main():
     fact("n_ex_2026_other", n_other, str(n_other), "exercises in 2026 to the cut-off in which A did not clear above B")
     pre26 = w[w.month < "2026-01"]
     fact("a_above_b_before_2026", int((pre26.gap < 0).sum()), str(int((pre26.gap < 0).sum())), "A above B, 2010 to Dec 2025")
+    # The median of (B-A)/A per exercise, by calendar year (2026 to the cut-off).
+    yr = w.assign(year=w.month.str[:4], rel=100 * w.gap / w.premium_A).groupby("year").rel.median()
+    fact("gap_rel_year_min", yr.min(), str(rnd(yr.min())), "lowest calendar-year median of (B-A)/A, per cent")
+    fact("gap_rel_year_min_year", 0, yr.idxmin(), "the year of that lowest median")
+    fact("gap_rel_year_max", yr.max(), str(rnd(yr.max())), "highest calendar-year median of (B-A)/A, per cent")
+    fact("gap_rel_year_max_year", 0, yr.idxmax(), "the year of that highest median")
+    yr.rename("median_gap_pct_of_A").to_csv(os.path.join(OUT, "gap_rel_by_year.csv"), lineterminator="\n", float_format="%.4f")
     cut = w.iloc[-1]
     fact("gap_cutoff", int(cut.gap), dollars(cut.gap), "B-A gap at the cut-off exercise")
 
     # F3, PQP.
-    pw = {"full": p, "5y": p.tail(60), "12m": p.tail(12)}
+    pw = {"w1": p, "w2": p[p.month >= "%s" % W2_START[0]], "w3": p.tail(12), "w4": p.tail(1)}
     for wn, d in pw.items():
         fact(f"pqp_n_{wn}", len(d), str(len(d)), f"months with a PQP, {wn}")
         fact(f"pqp_start_{wn}", 0, f"{LONG[int(d.month.iloc[0][5:])]} {d.month.iloc[0][:4]}", f"first month, {wn}")
@@ -286,11 +325,13 @@ def main():
         fact(f"pqp_a_ge_b_months_{wn}", 0, "; ".join(f"{LONG[int(m[5:])]} {m[:4]}" for m in ab.month) or "none",
              f"months with A's PQP at or above B's, {wn}")
         fact(f"pqp_gap_max_{wn}", int(d.gap.max()), dollars(d.gap.max()), f"largest PQP B-A gap, {wn}")
-        fact(f"pqp_gap_pct_median_{wn}", d.gap_pct_of_A.median(), str(rnd(d.gap_pct_of_A.median())), f"median PQP gap as % of A's PQP, {wn}")
+        fact(f"pqp_gap_pct_median_{wn}", d.gap_pct_of_A.median(), pct(d.gap_pct_of_A.median()), f"median PQP gap as % of A's PQP, {wn}")
         fact(f"pqp_a_ge_b_{wn}", int((d.gap <= 0).sum()), str(int((d.gap <= 0).sum())), f"months with A's PQP at or above B's, {wn}")
     last = p.iloc[-1]
     fact("pqp_gap_oct2026", int(last.gap), dollars(last.gap), "PQP B-A gap, October 2026")
     fact("pqp_gap_pct_oct2026", last.gap_pct_of_A, "{:.1f}".format(last.gap_pct_of_A), "as % of A's PQP, October 2026")
+    fact("w2_start_label", 0, label(*W2_START), "first exercise of window 2")
+    fact("w2_start_month", 0, W2_START[0], "first month of window 2 (PQP)")
     fact("pqp_A_oct2026", int(last.pqp_A), dollars(last.pqp_A), "A's PQP, October 2026")
     fact("pqp_B_oct2026", int(last.pqp_B), dollars(last.pqp_B), "B's PQP, October 2026")
 

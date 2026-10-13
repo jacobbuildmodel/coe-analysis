@@ -33,7 +33,7 @@ PDF = os.path.join(HERE, "NOTE.pdf")
 FONTS = os.path.join(HERE, "fonts")
 TITLE = "COE Categories A and B: Evidence from the Bidding Record, 2010-2026"
 
-# note.html's stylesheet, verbatim except for the font URLs and the ligature rule at the end.
+# note.html's stylesheet, verbatim except for the font URLs and the rules added at the end.
 CSS = """
 @font-face{font-family:"Source Serif 4";src:url(FONTDIR/SourceSerif4-Regular.ttf);font-weight:400}
 @font-face{font-family:"Source Serif 4";src:url(FONTDIR/SourceSerif4-It.ttf);font-style:italic}
@@ -71,6 +71,17 @@ ul.method{padding-left:12pt;margin:0;font:7.8pt/1.35 "Source Sans 3";color:#3a39
    font-variant-ligatures, so Chromium set ff/fi ligatures (U+FB00, U+FB01)
    and the PDF text was not pure ASCII. This restores the intent. */
 *{font-variant-ligatures:none !important}
+/* added 12 Oct 2026 (checker: "tighten layout if needed; the figure may shrink
+   slightly") to keep two pages after the four-window table and window text */
+table{width:100%;break-inside:avoid}
+.tblock{break-inside:avoid}
+th,td{padding:2.2pt 6pt}
+figure{margin:6pt 0 4pt}
+figure img{width:80%;display:block;margin:0 auto}
+td:not(:first-child),th:not(:first-child){white-space:nowrap}
+h2{margin:8.5pt 0 3pt}
+.summary li{margin-bottom:3pt}
+.meta{margin-bottom:10pt}
 """
 
 
@@ -110,8 +121,11 @@ def blocks(lines):
 
 
 def render(bl, ul_class=None):
-    h, pending_caption = [], None
+    h, pending_caption, table_open = [], None, False
     for kind, v in bl:
+        if table_open and not (kind == "p" and v.startswith("Notes:")):
+            h.append("</div>")
+            table_open = False
         if kind == "h":
             lvl = len(v) - len(v.lstrip("#"))
             h.append(f"<h{lvl}>{inline(v[lvl:].strip())}</h{lvl}>")
@@ -120,6 +134,9 @@ def render(bl, ul_class=None):
         elif kind == "p":
             cls = ' class="note"' if v.startswith("Notes:") else ""
             h.append(f"<p{cls}>{inline(v)}</p>")
+            if table_open:
+                h.append("</div>")
+                table_open = False
         elif kind == "ul":
             cls = f' class="{ul_class}"' if ul_class else ""
             h.append(f"<ul{cls}>" + "".join(f"<li>{inline(x)}</li>" for x in v) + "</ul>")
@@ -129,13 +146,18 @@ def render(bl, ul_class=None):
         elif kind == "table":
             rows = [[c.strip() for c in r.strip().strip("|").split("|")] for r in v]
             rows = [r for r in rows if not all(re.fullmatch(r"-+", c) for c in r)]
-            t = ["<table>"]
+            # a table, its caption and the Notes line after it form one block
+            # that never splits across a page (PRESENTATION_STANDARD)
+            t = ['<div class="tblock"><table>']
             if pending_caption:
                 t.append(f"<caption>{inline(pending_caption)}</caption>")
                 pending_caption = None
             t.append("<thead><tr>" + "".join(f"<th>{inline(c)}</th>" for c in rows[0]) + "</tr></thead><tbody>")
             t += ["<tr>" + "".join(f"<td>{inline(c)}</td>" for c in r) + "</tr>" for r in rows[1:]]
             h.append("".join(t) + "</tbody></table>")
+            table_open = True
+    if table_open:
+        h.append("</div>")
     return "\n".join(h)
 
 

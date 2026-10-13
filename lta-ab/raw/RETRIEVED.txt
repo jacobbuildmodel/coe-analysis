@@ -80,3 +80,22 @@ d3_lta_m11_coe_results_2025_2026.pdf
   md5     546ae77e763dbcb2c0ca40bad6442bf0
   pdf     ModDate 2026-10-08 10:00:48 +08:00
   check   its PQP rows equal SingStat's PQP shifted one month in all 20 overlapping months
+
+== 12 October 2026, window 2 start (checker's ruling A: windows set by rule changes)
+
+c2b_lta_news_coe_quota_may_jul_2022.html
+  source  https://www.lta.gov.sg/content/ltagov/en/newsroom/2022/4/news-releases/certificate-of-entitlement-quota-for-may-2022-to-july-2022.html
+  title   "Certificate of Entitlement Quota for May 2022 to July 2022", LTA news release, 14 Apr 2022
+  retrieved 2026-10-12 20:31 SGT (12:31 UTC)
+  bytes   49886
+  md5     8be98a2592818eebeff3492b7a819e88
+  method  curl -L, saved byte-for-byte as served (HTTP 200)
+  used    para 3: "the Category A Maximum Power Output threshold for electric cars will be
+          revised from 97kW to 110kW ... This change will take effect from the first COE
+          bidding exercise in May 2022, which will take place from 4 to 6 May 2022."
+          -> window 2 starts at May 2022, exercise 1 (10_facts.py W2_START)
+
+REFUSED (not routed around)
+  https://onemotoring.lta.gov.sg/content/dam/onemotoring/pdf/Circulars%20to%20ESAs/2022/VRL_04_2022.pdf
+          CONNECT 403, network policy (onemotoring.lta.gov.sg). LTA circular of 8 Mar 2022 on
+          the same change; not needed, as the news release above gives the effective exercise.

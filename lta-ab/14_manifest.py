@@ -28,6 +28,7 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 NOTE = os.path.join(HERE, "NOTE.md")
+FORM = os.path.join(HERE, "FORM_TEXT.md")
 MANIFEST = os.path.join(HERE, "number_manifest.csv")
 CHECKSUMS = os.path.join(HERE, "CHECKSUMS.md5")
 WORD_CAP = 800
@@ -48,7 +49,7 @@ def tracked():
     files += sorted(glob.glob(os.path.join(HERE, "figs", "*.svg")))
     files += sorted(glob.glob(os.path.join(HERE, "figs", "*.png")))
     files += sorted(glob.glob(os.path.join(HERE, "fonts", "*")))
-    files += [NOTE]
+    files += [NOTE, FORM]
     return [f for f in files if os.path.isfile(f)]
 
 
@@ -75,6 +76,7 @@ def note_numbers(text):
     t = re.sub(r"\]\([^)]*\)", "]", t)
     t = re.sub(r"\bd_[0-9a-f]{32}\b", "", t)
     t = re.sub(r"\b\d+[a-z]?_[\w.-]+", "", t)
+    t = re.sub(r"\b\d{1,2} (?:January|February|March|April|May|June|July|August|September|October|November|December) \d{4}\b", "", t)
     t = re.sub(r"\(ORCID \d{4}-\d{4}-\d{4}-\d{3}[\dX]\)", "", t)
     t = re.sub(r"\b(?:[Pp]aragraphs?|paras?|footnotes?|Tables?|Figures?)\s+[\d.]+(?:\([a-z]\))?(?:\s*(?:-|to|and|,)\s*[\d.]+(?:\([a-z]\))?)*", "", t)
     t = re.sub(r"\(\s*[a-z]\s*\)", "", t)
@@ -114,7 +116,8 @@ def check():
         ok = False
     printed = {r["printed"].lstrip("-") for r in csv.DictReader(open(MANIFEST, encoding="utf-8"))}
     text = open(NOTE, encoding="utf-8").read()
-    nums = note_numbers(text)
+    form = open(FORM, encoding="utf-8").read() if os.path.isfile(FORM) else ""
+    nums = note_numbers(text) + note_numbers(form)
     for n in nums:
         v = n.lstrip("-")
         if v in printed:
@@ -123,11 +126,11 @@ def check():
             continue
         print(f"  NUMBER NOT IN MANIFEST: {n}")
         ok = False
-    bad = [c for c in text if ord(c) > 127]
+    bad = [c for c in text + form if ord(c) > 127]
     if bad:
         print(f"  NON-ASCII characters: {sorted(set(bad))}")
         ok = False
-    low = text.lower()
+    low = (text + form).lower()
     for wd in BANNED_WORDS:
         if re.search(rf"\b{wd}\b", low):
             print(f"  BANNED WORD: {wd}")
@@ -140,7 +143,7 @@ def check():
     if words > WORD_CAP:
         print(f"  WORD COUNT {words} (prose) over {WORD_CAP}")
         ok = False
-    print(f"  NOTE.md: {len(nums)} numbers checked, {words} words of prose (cap {WORD_CAP}), {total} words in all before Data and method")
+    print(f"  NOTE.md and FORM_TEXT.md: {len(nums)} numbers checked, {words} words of prose (cap {WORD_CAP}), {total} words in all before Data and method")
     print(f"  {len(have)} checksums, {len(printed)} distinct printed values in the manifest")
     return ok
 
