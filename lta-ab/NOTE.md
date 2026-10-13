@@ -5,7 +5,7 @@ Submission to LTA's public consultation on COE categorisation for cars
 # COE Categories A and B: Evidence from the Bidding Record, 2010-2026
 
 ::: meta
-**Jacob Ong**, independent researcher, writing in a personal capacity (ORCID 0009-0005-4438-9657).
+**Jacob Ong**, writing in a personal capacity (ORCID 0009-0005-4438-9657).
 This note takes no view on the proposals.
 Data and code: github.com/jacobbuildmodel/coe-analysis, folder lta-ab. Data to October 2026, first bidding exercise.
 :::
@@ -15,14 +15,14 @@ Data and code: github.com/jacobbuildmodel/coe-analysis, folder lta-ab. Data to O
 
 Since May 2022 the Category B premium was $7,500 or more above Category A's in 82 per cent of bidding exercises (88 of 107); in the latest exercise in this note (October 2026, exercise 1) the gap was $99.
 
-- Category A cleared above Category B in 3 of the 10 bidding exercises from February to June 2026, consistent with paragraph 1.8 of the consultation paper, and in 21 of 397 exercises since January 2010 (403 were scheduled to October 2026, exercise 1; no bidding was held in April to June 2020, six exercises).
+- Category A cleared above Category B in 3 of the 10 bidding exercises from February to June 2026, matching the count in paragraph 1.8 of the consultation paper, and in 21 of 397 exercises since January 2010 (403 were scheduled to October 2026, exercise 1; no bidding was held in April to June 2020, six exercises).
 - Premium gap: the median gap between the Category B and Category A premiums was $9,010 since January 2010 and $17,999 since May 2022; median gap as a share of Category A's premium: 16 and 18 per cent. The consultation paper's example band steps are $7,500 and $15,000.
 - Renewal-price (PQP) gap: in October 2026 the Prevailing Quota Premium (PQP), a three-month average of premiums used to price COE renewals, was $2,901 higher for Category B than for Category A (2.3 per cent of Category A's PQP). The median monthly difference was $4,930 (4 per cent) over the last 12 months and $19,254 (20 per cent) since May 2022.
 :::
 
 ## 1. Crossings of the Category A and B premiums (consultation question 1)
 
-Paragraph 1.8 of the consultation paper states that "from Feb to Jun 2026, Category A price exceeded the Category B price on three occasions". The bidding record is consistent with this: Category A cleared above Category B in the second exercises of February, April and June 2026, and in none of the other 16 exercises held in 2026 up to the cut-off. Category A cleared above Category B in 21 of 397 exercises since January 2010 (in 2013, 2016-2018, 2020 and 2026), in 3 of 107 since May 2022, in 3 of the last 24, and not in the latest exercise (Figure 1, panel A). The largest amount by which Category A cleared above Category B was $16,599, in the first exercise of March 2013. Category A's eligibility criteria changed in 2014 and 2022 (para 1.6), so the composition of each category was not constant over the period.
+Paragraph 1.8 of the consultation paper states that "from Feb to Jun 2026, Category A price exceeded the Category B price on three occasions". The bidding record matches this count: Category A cleared above Category B in the second exercises of February, April and June 2026, and in none of the other 16 exercises held in 2026 up to the cut-off. Category A cleared above Category B in 21 of 397 exercises since January 2010 (in 2013, 2016-2018, 2020 and 2026), in 3 of 107 since May 2022, in 3 of the last 24, and not in the latest exercise (Figure 1, panel A). The largest amount by which Category A cleared above Category B was $16,599, in the first exercise of March 2013. Category A's eligibility criteria changed in 2014 and 2022 (para 1.6), so the composition of each category was not constant over the period.
 
 ## 2. The size of the gap between Categories A and B (consultation question 1)
 
@@ -60,7 +60,7 @@ Paragraph 2.19 states that owners of Category A and B cars "already pay broadly 
 
 ## 4. Quota shares and Category E (consultation question 2)
 
-Category E, the open category that can register any vehicle except motorcycles (para 1.3), received 15 per cent of the combined Category A, B and E quota since January 2010 and 11 per cent since May 2022. Category A received 57 and 59 per cent of the combined Category A and B quota. Category E cleared at or above both Categories A and B in 274 of 397 exercises since January 2010 and in 74 of 107 since May 2022 (Table 2).
+Category E is the open category that can register any vehicle except motorcycles (para 1.3). Its quota was 15 per cent of the combined Category A, B and E quota since January 2010 and 11 per cent since May 2022. Category A's quota was 57 and 59 per cent of the combined Category A and B quota. Category E cleared at or above both Categories A and B in 274 of 397 exercises since January 2010 and in 74 of 107 since May 2022 (Table 2).
 
 Table 2. Category E against Categories A and B, by window
 
