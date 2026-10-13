@@ -83,7 +83,7 @@ The figures describe clearing prices and quotas. A premium is the price that cle
 ## Data and method
 
 ::: method
-- **Windows:** (1) January 2010, exercise 1, to October 2026, exercise 1; (2) since May 2022, exercise 1, when Category A's power threshold for electric cars rose from 97kW to 110kW (LTA news release, 14 April 2022); (3) the last 12 months, 24 exercises; (4) the latest exercise, or for the PQP the latest month. PQP windows cover the months from the same dates. Windows were set by the start of the record and the 2022 rule change, not by the results; the 2014 change falls inside window 1 (section 1).
+- **Windows:** (1) January 2010, exercise 1, to October 2026, exercise 1; (2) since May 2022, exercise 1, when Category A's power threshold for electric cars rose from 97kW to 110kW (LTA news release, 14 April 2022); (3) the last 12 months, 24 exercises; (4) the latest exercise, or for the PQP the latest month. PQP windows cover the same periods by month (window 3: November 2025 to October 2026). Windows were set by the start of the record and the 2022 rule change, not by the results; the 2014 change falls inside window 1 (section 1).
 - **Bidding results:** LTA via data.gov.sg (dataset d_69b3380ad7e51aff3a7dcc84eba52b8a), retrieved 11 October 2026.
 - **PQP:** SingStat table M651121 via data.gov.sg (dataset d_22094bf608253d36c0c63b52d852dd6e) and LTA, M11 COE Results 2025-2026.
 - **Cross-checks:** the bidding file matched an earlier copy in all 1,965 overlapping rows; its Category A and B premiums matched SingStat in all 394 exercises SingStat covers; the PQP, recomputed as a three-month average of premiums, matched all 392 published values to within $1. Two documented corrections to 2010 values were applied.

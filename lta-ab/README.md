@@ -31,6 +31,8 @@ It runs, in order:
 - `14_manifest.py --check`: checksums, plus every number in NOTE.md checked against the
   number manifest, ASCII, banned words, and the 800-word cap on the prose.
 
+Figure 1's PNG bytes depend on the machine's rasteriser, and on Windows matplotlib writes the SVG with CRLF line endings; on another machine expect a checksum mismatch for `figs/lta_ab_fig1.png` (and, on Windows, the SVG) only, while every file in `out/` reproduces exactly.
+
 **Word cap (checker's ruling, 12 Oct 2026).** The 800-word cap applies to the prose only:
 the paragraphs of sections 1-4 and Scope, without the Summary box, Tables 1 and 2, captions,
 Notes lines and the figure block (the Sources lines under the tables count as prose). `14_manifest.py --check` prints the current count. The whole note,
