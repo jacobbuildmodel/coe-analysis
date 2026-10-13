@@ -28,9 +28,11 @@ Other pieces (GST, HDB affordability, HDB loan) live in other repos (e.g. hdb-af
 - **No open PRs in this repo.** PR #5 (`sgd-review`, rounds 4-5 of outside review) was
   merged on 11 Oct 2026 as merge commit, head d57f873; the seal 9e46034 and key 59789e4
   are on main.
-- **Next step for sgd: the publication-day PR in the site repo (by 14 Nov)** updates the
-  scorecard and the open question page. Site repo PR #32 (`sgd-final`, merged) already copied the
-  article, FOR_RESEARCHERS and the four figures.
+- **Next step for sgd: the publication-day PR in the site repo (by 14 Nov).** It updates
+  the scorecard, marks the sgd open question page answered, and switches the article's
+  "What to watch next" link from /open/ to /open/2026-10-12-million-dollar-flats/. Site
+  repo PR #32 (`sgd-final`, merged) already copied the article, FOR_RESEARCHERS and the
+  four figures.
 - **`handover-2026-10`:** this file (PR #6 merged; this update is its follow-up).
 - **All other branches** (`erp-wip`, `erp-merge`, `pwm-wip`, `pwm-merge`, `sgd-wip`,
   `phase3-shared-tokens`) are fully merged into main. Leave them; never delete `pwm-wip`.
