@@ -32,13 +32,14 @@ It runs, in order:
   number manifest, ASCII, banned words, and the 800-word cap on the prose.
 
 **Word cap (checker's ruling, 12 Oct 2026).** The 800-word cap applies to the prose only:
-the paragraphs of sections 1-4 and Scope, without the Summary box, Table 1, captions, Notes
-lines and the figure block. `14_manifest.py --check` prints the current count. The whole note,
+the paragraphs of sections 1-4 and Scope, without the Summary box, Tables 1 and 2, captions,
+Notes lines and the figure block (the Sources lines under the tables count as prose). `14_manifest.py --check` prints the current count. The whole note,
 everything before "Data and method", is reported but not capped. The check covers
 `FORM_TEXT.md` too.
 
-`python3 lta-ab/20_pdf.py` rebuilds NOTE.pdf (A4, 2 pages, fonts embedded). It needs
-playwright and Chromium. The versions used are in `requirements.txt`.
+`python3 lta-ab/20_pdf.py` rebuilds NOTE.pdf (A4, fonts embedded; three pages since Table 2
+was added, as no table is split from its notes). It needs playwright and Chromium, and
+pymupdf and uharfbuzz for its glyph check (copied text must not break inside words). The versions used are in `requirements.txt`.
 
 ## What is here
 

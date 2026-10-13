@@ -18,8 +18,17 @@ paragraph starting "Notes:" takes the small notes style.
 The route is NOTE.md, then HTML, then a PDF printed by headless Chromium
 through Playwright, with Figure 1 embedded as figs/lta_ab_fig1.png (220 dpi).
 Chromium stamps a creation date, so NOTE.pdf is not byte-reproducible and is
-not in CHECKSUMS.md5. The build asserts pure-ASCII text, two pages, and fonts
-embedded.
+not in CHECKSUMS.md5. The build asserts pure-ASCII text, two pages (three only
+if a table and its notes would otherwise split), and fonts embedded.
+
+Chromium runs with --font-render-hinting=none. With hinting on, headless
+Chromium rounded glyph advances to whole pixels, so in Source Serif 4 at 9.6pt
+the glyph after a "g" sat about 1pt past the g's advance and copied text read
+"Categ ory". The build checks the result with pymupdf: within every span, each
+letter that follows a letter starts within GLYPH_TOL pt of the previous
+letter's origin plus its shaped advance (kerning and CSS letter-spacing
+included; see glyph_check), and the text of both pages, as pypdf and
+pymupdf extract it, contains none of BROKEN.
 """
 import html
 import os
@@ -32,6 +41,8 @@ NOTE = os.path.join(HERE, "NOTE.md")
 PDF = os.path.join(HERE, "NOTE.pdf")
 FONTS = os.path.join(HERE, "fonts")
 TITLE = "COE Categories A and B: Evidence from the Bidding Record, 2010-2026"
+GLYPH_TOL = 0.25
+BROKEN = ("Categ ory", "g ap", "hig her")
 
 # note.html's stylesheet, verbatim except for the font URLs and the rules added at the end.
 CSS = """
@@ -82,11 +93,17 @@ td:not(:first-child),th:not(:first-child){white-space:nowrap}
 h2{margin:8.5pt 0 3pt}
 .summary li{margin-bottom:3pt}
 .meta{margin-bottom:10pt}
+/* added 13 Oct 2026: a year range never breaks at its hyphen; Notes and
+   Sources lines sit close under their table */
+.tblock .note{margin:0 0 2pt}
+.tblock{margin-bottom:6pt}
+.nowrap{white-space:nowrap}
 """
 
 
 def inline(s):
     s = html.escape(s, quote=False)
+    s = re.sub(r"\b(\d{4}-\d{4})\b", r'<span class="nowrap">\1</span>', s)
     return re.sub(r"\*\*([^*]+)\*\*", r"<b>\1</b>", s)
 
 
@@ -123,7 +140,7 @@ def blocks(lines):
 def render(bl, ul_class=None):
     h, pending_caption, table_open = [], None, False
     for kind, v in bl:
-        if table_open and not (kind == "p" and v.startswith("Notes:")):
+        if table_open and not (kind == "p" and v.startswith(("Notes:", "Sources:"))):
             h.append("</div>")
             table_open = False
         if kind == "h":
@@ -132,11 +149,8 @@ def render(bl, ul_class=None):
         elif kind == "p" and re.match(r"Table \d+\. ", v):
             pending_caption = v
         elif kind == "p":
-            cls = ' class="note"' if v.startswith("Notes:") else ""
+            cls = ' class="note"' if v.startswith(("Notes:", "Sources:")) else ""
             h.append(f"<p{cls}>{inline(v)}</p>")
-            if table_open:
-                h.append("</div>")
-                table_open = False
         elif kind == "ul":
             cls = f' class="{ul_class}"' if ul_class else ""
             h.append(f"<ul{cls}>" + "".join(f"<li>{inline(x)}</li>" for x in v) + "</ul>")
@@ -146,7 +160,7 @@ def render(bl, ul_class=None):
         elif kind == "table":
             rows = [[c.strip() for c in r.strip().strip("|").split("|")] for r in v]
             rows = [r for r in rows if not all(re.fullmatch(r"-+", c) for c in r)]
-            # a table, its caption and the Notes line after it form one block
+            # a table, its caption and the Notes and Sources lines after it form one block
             # that never splits across a page (PRESENTATION_STANDARD)
             t = ['<div class="tblock"><table>']
             if pending_caption:
@@ -175,7 +189,7 @@ def to_html(md):
             if name == "kicker":
                 out.append(f'<div class="kicker">{inline(" ".join(inner).strip())}</div>')
             elif name == "meta":
-                out.append(f'<div class="meta">{inline(" ".join(x.strip() for x in inner))}</div>')
+                out.append(f'<div class="meta">{"<br>".join(inline(x.strip()) for x in inner)}</div>')
             elif name == "summary":
                 out.append(f'<div class="summary">{render(blocks(inner))}</div>')
             elif name == "method":
@@ -208,7 +222,7 @@ def main():
         page_html = os.path.join(tmp, "note.html")
         open(page_html, "w", encoding="utf-8").write(doc)
         with sync_playwright() as p:
-            b = p.chromium.launch()
+            b = p.chromium.launch(args=["--font-render-hinting=none"])
             pg = b.new_page()
             pg.emulate_media(media="print", color_scheme="light")
             pg.goto("file://" + page_html, wait_until="load")
@@ -228,11 +242,64 @@ def main():
             fonts.add((str(fo.get("/BaseFont")).split("+")[-1], embedded))
     print(f"  wrote NOTE.pdf: {len(r.pages)} pages; fonts {sorted(fonts)}; "
           f"non-ASCII in extracted text: {nonascii or 'none'}")
-    assert len(r.pages) == 2, "NOTE.pdf is not 2 pages"
+    assert len(r.pages) in (2, 3), "NOTE.pdf is not 2 or 3 pages"
     assert all(e for _, e in fonts), "a font is not embedded"
     assert not nonascii
+    glyph_check(r)
     return 0
 
+
+def glyph_check(reader):
+    """Fail if a letter inside a word is displaced from where its font puts it.
+
+    For each pair of adjacent letters in a span, the expected start of the
+    second is the first's origin plus its shaped advance: the font's advance
+    with its kerning pair applied (HarfBuzz, kern on, ligatures off, as the
+    CSS sets them), plus the CSS letter-spacing (the kicker's 0.06em only).
+    """
+    import pymupdf
+    import uharfbuzz as hb
+    files = {os.path.splitext(f)[0]: os.path.join(FONTS, f) for f in os.listdir(FONTS) if f.endswith(".ttf")}
+    fonts, cache = {}, {}
+
+    def advance(name, size, a, b):
+        key = (name, a, b)
+        if key not in cache:
+            if name not in fonts:
+                face = hb.Face(open(files[name], "rb").read())
+                fonts[name] = (hb.Font(face), face.upem)
+            font, upem = fonts[name]
+            buf = hb.Buffer()
+            buf.add_str(a + b)
+            buf.guess_segment_properties()
+            hb.shape(font, buf, {"kern": True, "liga": False, "clig": False, "dlig": False})
+            cache[key] = buf.glyph_positions[0].x_advance / upem
+        return cache[key] * size
+
+    kicker = re.search(r"::: kicker\n(.*?)\n:::", open(NOTE, encoding="utf-8").read(), re.S)[1].strip().upper()
+    doc = pymupdf.open(PDF)
+    pairs, worst, bad = 0, 0.0, []
+    for pno, page in enumerate(doc, 1):
+        for block in page.get_text("rawdict")["blocks"]:
+            for line in block.get("lines", []):
+                for span in line["spans"]:
+                    ch = span["chars"]
+                    name = span["font"].split("+")[-1]
+                    ls = 0.06 * span["size"] if "".join(c["c"] for c in ch).strip() == kicker else 0.0
+                    for a, b in zip(ch, ch[1:]):
+                        if not (a["c"].isalpha() and b["c"].isalpha()):
+                            continue
+                        pairs += 1
+                        off = b["origin"][0] - (a["origin"][0] + advance(name, span["size"], a["c"], b["c"]) + ls)
+                        worst = max(worst, abs(off))
+                        if abs(off) > GLYPH_TOL:
+                            bad.append((pno, name, a["c"] + b["c"], round(off, 2)))
+    texts = [p.get_text() for p in doc] + [p.extract_text() for p in reader.pages]
+    found = sorted({s for t in texts for s in BROKEN if s in t})
+    print(f"  glyph check: {pairs} letter pairs, largest offset {worst:.3f}pt (tolerance {GLYPH_TOL}pt), "
+          f"{len(bad)} over; broken words in pypdf/pymupdf text: {found or 'none'}")
+    assert not bad, bad[:20]
+    assert not found
 
 if __name__ == "__main__":
     sys.exit(main())

@@ -1,5 +1,7 @@
 key,printed,script,file
 cutoff_label,"October 2026, exercise 1",10_facts.py,out/facts.csv
+n_scheduled_w1,403,10_facts.py,out/facts.csv
+n_no_bidding_w1,6,10_facts.py,out/facts.csv
 n_ex_w1,397,10_facts.py,out/facts.csv
 start_w1,"January 2010, exercise 1",10_facts.py,out/facts.csv
 gap_median_w1,"9,010",10_facts.py,out/facts.csv
@@ -143,16 +145,36 @@ quota_A_share_w4,57,10_facts.py,out/facts.csv
 quota_E_share_w4,10,10_facts.py,out/facts.csv
 e_below_b_w1,116,10_facts.py,out/facts.csv
 e_at_or_above_both_w1,274,10_facts.py,out/facts.csv
+e_at_or_above_b_below_a_w1,7,10_facts.py,out/facts.csv
 gap_EB_median_w1,623,10_facts.py,out/facts.csv
 e_below_b_w2,33,10_facts.py,out/facts.csv
 e_at_or_above_both_w2,74,10_facts.py,out/facts.csv
+e_at_or_above_b_below_a_w2,0,10_facts.py,out/facts.csv
 gap_EB_median_w2,888,10_facts.py,out/facts.csv
 e_below_b_w3,4,10_facts.py,out/facts.csv
 e_at_or_above_both_w3,20,10_facts.py,out/facts.csv
+e_at_or_above_b_below_a_w3,0,10_facts.py,out/facts.csv
 gap_EB_median_w3,"2,720",10_facts.py,out/facts.csv
 e_below_b_w4,0,10_facts.py,out/facts.csv
 e_at_or_above_both_w4,1,10_facts.py,out/facts.csv
+e_at_or_above_b_below_a_w4,0,10_facts.py,out/facts.csv
 gap_EB_median_w4,"6,900",10_facts.py,out/facts.csv
+quota_median_A_w1,966,10_facts.py,out/facts.csv
+bids_per_cert_median_A_w1,1.42,10_facts.py,out/facts.csv
+quota_median_B_w1,711,10_facts.py,out/facts.csv
+bids_per_cert_median_B_w1,1.46,10_facts.py,out/facts.csv
+quota_median_A_w2,978,10_facts.py,out/facts.csv
+bids_per_cert_median_A_w2,1.41,10_facts.py,out/facts.csv
+quota_median_B_w2,671,10_facts.py,out/facts.csv
+bids_per_cert_median_B_w2,1.46,10_facts.py,out/facts.csv
+quota_median_A_w3,"1,265",10_facts.py,out/facts.csv
+bids_per_cert_median_A_w3,1.42,10_facts.py,out/facts.csv
+quota_median_B_w3,831,10_facts.py,out/facts.csv
+bids_per_cert_median_B_w3,1.44,10_facts.py,out/facts.csv
+quota_median_A_w4,"1,232",10_facts.py,out/facts.csv
+bids_per_cert_median_A_w4,1.27,10_facts.py,out/facts.csv
+quota_median_B_w4,945,10_facts.py,out/facts.csv
+bids_per_cert_median_B_w4,1.19,10_facts.py,out/facts.csv
 check_1,"1,965",10_facts.py,out/checks.csv
 check_2,0,10_facts.py,out/checks.csv
 check_3,2,10_facts.py,out/checks.csv
