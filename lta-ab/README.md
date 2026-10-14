@@ -5,11 +5,11 @@ and B into one passenger car category with a feebate (8 October to 2 November 20
 out what the published bidding record showed on four points the consultation paper raised.
 It takes no view on the proposal. Written by Jacob Ong in a personal capacity.
 
-- **`NOTE.pdf`** is the submitted version.
+- **`NOTE.pdf`** is the version linked from the submitted reply.
 - **`NOTE.md`** is its source; the PDF's text comes only from it. The three-line
   feedback-form version at its end stays out of the PDF.
-- **Submitted on:** ____________ (date to be filled in by Jacob)
-- **`FORM_TEXT.md`** holds the text for the feedback form's three boxes, from the same numbers.
+- **Submitted on:** 15 October 2026 (Jacob's reply as submitted: SUBMITTED_REPLY.md)
+- **`FORM_TEXT.md`** is an earlier descriptive draft of the feedback form's three boxes, from the same numbers; it was not used.
 - **Cut-off:** the data run to the first October 2026 bidding exercise.
 - **Windows** (checker's ruling of 12 Oct 2026), the same in every section, table and figure,
   in this order:

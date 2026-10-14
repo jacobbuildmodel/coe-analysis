@@ -1,3 +1,5 @@
+An earlier descriptive draft. It was not used; the reply as submitted is SUBMITTED_REPLY.md.
+
 # Feedback form text
 
 Text for the three boxes of LTA's feedback form (go.gov.sg/coe-pcd-feedback). Every number

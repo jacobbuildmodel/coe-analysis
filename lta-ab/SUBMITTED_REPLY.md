@@ -1,0 +1,35 @@
+# Reply to LTA's consultation on COE categories, as submitted
+
+Submitted by Jacob Ong on 15 October 2026 (00:44 SGT) through LTA's feedback form. These are his own views, given in a personal capacity. The evidence note (NOTE.pdf) is descriptive and takes no position.
+
+## Box 1. Merging Categories A and B with a feebate
+
+I support merging Categories A and B into one car category with a feebate. Category A no longer separates mass-market cars from higher-value ones. It cleared above Category B in 3 of the 10 exercises from February to June 2026, as paragraph 1.8 says, and in 21 of 397 exercises since January 2010. A feebate based on value fits the aim better than engine size or power, which software can now change. On the design, my first choice is a sliding scale; if LTA keeps bands, five rather than three.
+
+1. Avoid cliffs. Where the amount jumps at a cut-off, makers gain by moving a model to the cheaper side of it: economists call this bunching at a notch. Carmakers have tuned fuel-economy ratings to clear US tax thresholds and added weight to reach laxer Japanese targets (Sallee and Slemrod 2012; Ito and Sallee 2018). Paragraph 1.8 notes makers adjusting specifications to fit Category A's power limit, and Tables 1 and 2 list two variants named for a 110 kW rating ("Tesla Model 3 RWD 110", "Volvo EX30 110kW"), consistent with that. The same is likely at the feebate's OMV band edges. A sliding scale avoids this: the amount would be -$15,000 + $30,000 x p, where p is the model's registration-weighted percentile (0 to 1) of median OMV among the previous year's registrations. It is $0 at the median and would be published for each model every year, as paragraph 2.16 proposes for bands. No single step would be worth gaming; shaving a model's value would save only a little, in proportion. The trade-off is that amounts shift a little each year as the mix of cars changes. If LTA keeps bands, five ($7,500 steps) are better than three ($15,000 steps).
+
+2. Make gaming visible. The tables band variants separately (BYD Sealion 7 Dynamic and Performance), so LTA could publish each year how many registrations sit just on the cheaper side of each cut-off, watch for new variants launched there, and count dealer-fitted extras sold with the car toward its value.
+
+3. Balance rebates and surcharges. On Tables 1 and 2, half of cars would pay a surcharge and 35 per cent would get a rebate. At an unchanged COE price, both options add $2,250 per car on average. That puts pressure on bids, and paragraph 2.10 says moving the COE price is not the aim. I ask LTA to centre whichever is chosen so that rebates and surcharges balance on the registrations they are set from (the scale does so by design) and to publish the balance yearly. Centring removes that pressure, but the price still depends on demand and the quota.
+
+4. Review the amounts each year. The A-B gap LTA offers as a reference (paragraph 2.17) has moved a lot, a median $17,999 since May 2022 against $3,784 over the last 12 months, so the amounts should be reviewed with the bands each year.
+
+5. Renewals. I would not apply the feebate at renewal. At renewal the owner chooses whether to keep the car, not which car to buy, and OMV is the car's value when new, not ten years on. The A and B PQPs were close over the last 12 months (a median 4 per cent apart) but 15 to 20 per cent apart over longer windows, so any transitional help (paragraph 2.19) should be set by the gap at the time of the merger.
+
+## Box 2. Category E
+
+I support LTA's option in paragraph 2.23: keep Category E for cars only, so that buyers with urgent needs keep an option without taking quota from Category C. Removing it would be simpler, but LTA has already weighed that against urgent buyers (paragraph 2.23).
+
+My one condition: the feebate must apply to every car by its band, whatever certificate it was registered with, including a Category E certificate. The paper does not say so. Since May 2022 Category E cleared at or above both Categories A and B in 74 of 107 exercises. Across all 107, its median premium over Category B was $888 ($2,720 over the last 12 months). That premium is far below a $15,000 surcharge. Past premiums do not forecast the premium after a merger, but the gap to a $15,000 surcharge is wide. Without this condition, Category E could become the cheaper way to register the dearest cars. I would also ask LTA to publish each year how many cars in each band were registered with Category E certificates.
+
+## Box 3. Other comments
+
+Private-hire and leasing cars. In 2024 and 2025 about 10 per cent of Category A and B registrations were cars owned by leasing companies and about 9 per cent were private-hire cars owned by individuals (Minister for Transport, written reply, 5 August 2026). I do not ask for a surcharge on them. It would be a charge on use, not value. By the logic of paragraph 3.16, a cost that shrinks the private-hire fleet could raise rentals for drivers and fares for commuters, including people who do not own cars. But a rebate meant to keep mass-market cars within reach of households could flow disproportionately to fleets if fleets mostly buy lower-value models. I ask LTA to publish each year the share of private-hire and leasing registrations in each band, and to review this in two years.
+
+Before the change starts, I ask LTA to state how it will judge success (for example the effective COE cost gap between the cheapest and dearest bands, registrations just below and just above each cut-off, and Category E use by feebate band) and to publish an evaluation after two years. Because the feebate is applied to the prevailing COE price (paragraph 2.9), I ask LTA to say whether the COE rebate on early deregistration is computed on the amount actually paid, that is the COE price plus any surcharge or minus any rebate, pro-rated for the unused months as today. I suggest that it is, as off-peak cars' rebates already use the net QP after their upfront rebates. LTA should also say how Category E's lower-of-two-QPs rule works once Categories A and B are one category.
+
+The Vehicular Emissions Scheme for cars is already stepped, and its amounts change in 2027 (OneMotoring, "Emissions charges"). LTA could compare registrations just below and above each CO2 cut-off, before and after 2027, counting only cars banded by CO2 (the worst pollutant sets the band). This is a limited diagnostic of how buyers and makers respond to steps, not proof either way for OMV bands: emissions are measured, while OMV is the import value documented to Customs (paragraph 2.14). I think it is worth a look before the bands are fixed.
+
+The evidence note at https://github.com/jacobbuildmodel/coe-analysis/blob/main/lta-ab/NOTE.pdf is descriptive and takes no position; the views above are my own, given in a personal capacity (Jacob Ong, ORCID 0009-0005-4438-9657). Every figure from the bidding record can be rerun from https://github.com/jacobbuildmodel/coe-analysis (folder lta-ab).
+
+I prepared this response with the help of AI tools; the views and choices are mine.
