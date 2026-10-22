@@ -1,194 +1,225 @@
-key,printed,script,file
-cutoff_label,"October 2026, exercise 1",10_facts.py,out/facts.csv
-n_scheduled_w1,403,10_facts.py,out/facts.csv
-n_no_bidding_w1,6,10_facts.py,out/facts.csv
-n_ex_w1,397,10_facts.py,out/facts.csv
-start_w1,"January 2010, exercise 1",10_facts.py,out/facts.csv
-gap_median_w1,"9,010",10_facts.py,out/facts.csv
-gap_mean_w1,"11,140",10_facts.py,out/facts.csv
-gap_rel_median_w1,16,10_facts.py,out/facts.csv
-a_over_b_max_w1,"16,599",10_facts.py,out/facts.csv
-a_over_b_max_when_w1,"March 2013, exercise 1",10_facts.py,out/facts.csv
-gap_max_w1,"50,335",10_facts.py,out/facts.csv
-gap_max_when_w1,"November 2023, exercise 2",10_facts.py,out/facts.csv
-gap_change_6m_median_w1,"5,453",10_facts.py,out/facts.csv
-gap_change_6m_n_w1,379,10_facts.py,out/facts.csv
-gap_change_12m_median_w1,"6,603",10_facts.py,out/facts.csv
-gap_change_12m_n_w1,367,10_facts.py,out/facts.csv
-a_above_b_w1,21,10_facts.py,out/facts.csv
-a_equal_b_w1,0,10_facts.py,out/facts.csv
-gap_ge_step_option_b_w1,225,10_facts.py,out/facts.csv
-gap_ge_step_option_b_w1_pct,57,10_facts.py,out/facts.csv
-gap_ge_step_option_a_w1,117,10_facts.py,out/facts.csv
-gap_ge_step_option_a_w1_pct,29,10_facts.py,out/facts.csv
-gap_ge_span_both_w1,11,10_facts.py,out/facts.csv
-gap_ge_span_both_w1_pct,3,10_facts.py,out/facts.csv
-n_ex_w2,107,10_facts.py,out/facts.csv
-start_w2,"May 2022, exercise 1",10_facts.py,out/facts.csv
-gap_median_w2,"17,999",10_facts.py,out/facts.csv
-gap_mean_w2,"17,480",10_facts.py,out/facts.csv
-gap_rel_median_w2,18,10_facts.py,out/facts.csv
-a_over_b_max_w2,"2,009",10_facts.py,out/facts.csv
-a_over_b_max_when_w2,"April 2026, exercise 2",10_facts.py,out/facts.csv
-gap_max_w2,"50,335",10_facts.py,out/facts.csv
-gap_max_when_w2,"November 2023, exercise 2",10_facts.py,out/facts.csv
-gap_change_6m_median_w2,"7,001",10_facts.py,out/facts.csv
-gap_change_6m_n_w2,107,10_facts.py,out/facts.csv
-gap_change_12m_median_w2,"9,512",10_facts.py,out/facts.csv
-gap_change_12m_n_w2,107,10_facts.py,out/facts.csv
-a_above_b_w2,3,10_facts.py,out/facts.csv
-a_equal_b_w2,0,10_facts.py,out/facts.csv
-gap_ge_step_option_b_w2,88,10_facts.py,out/facts.csv
-gap_ge_step_option_b_w2_pct,82,10_facts.py,out/facts.csv
-gap_ge_step_option_a_w2,64,10_facts.py,out/facts.csv
-gap_ge_step_option_a_w2_pct,60,10_facts.py,out/facts.csv
-gap_ge_span_both_w2,9,10_facts.py,out/facts.csv
-gap_ge_span_both_w2_pct,8,10_facts.py,out/facts.csv
-n_ex_w3,24,10_facts.py,out/facts.csv
-start_w3,"October 2025, exercise 2",10_facts.py,out/facts.csv
-gap_median_w3,"3,784",10_facts.py,out/facts.csv
-gap_mean_w3,"5,311",10_facts.py,out/facts.csv
-gap_rel_median_w3,3,10_facts.py,out/facts.csv
-a_over_b_max_w3,"2,009",10_facts.py,out/facts.csv
-a_over_b_max_when_w3,"April 2026, exercise 2",10_facts.py,out/facts.csv
-gap_max_w3,"20,890",10_facts.py,out/facts.csv
-gap_max_when_w3,"November 2025, exercise 2",10_facts.py,out/facts.csv
-gap_change_6m_median_w3,"7,929",10_facts.py,out/facts.csv
-gap_change_6m_n_w3,24,10_facts.py,out/facts.csv
-gap_change_12m_median_w3,"15,228",10_facts.py,out/facts.csv
-gap_change_12m_n_w3,24,10_facts.py,out/facts.csv
-a_above_b_w3,3,10_facts.py,out/facts.csv
-a_equal_b_w3,0,10_facts.py,out/facts.csv
-gap_ge_step_option_b_w3,5,10_facts.py,out/facts.csv
-gap_ge_step_option_b_w3_pct,21,10_facts.py,out/facts.csv
-gap_ge_step_option_a_w3,3,10_facts.py,out/facts.csv
-gap_ge_step_option_a_w3_pct,13,10_facts.py,out/facts.csv
-gap_ge_span_both_w3,0,10_facts.py,out/facts.csv
-gap_ge_span_both_w3_pct,0,10_facts.py,out/facts.csv
-n_ex_w4,1,10_facts.py,out/facts.csv
-start_w4,"October 2026, exercise 1",10_facts.py,out/facts.csv
-gap_median_w4,99,10_facts.py,out/facts.csv
-gap_mean_w4,99,10_facts.py,out/facts.csv
-gap_rel_median_w4,0.1,10_facts.py,out/facts.csv
-gap_max_w4,99,10_facts.py,out/facts.csv
-gap_max_when_w4,"October 2026, exercise 1",10_facts.py,out/facts.csv
-gap_change_6m_median_w4,"2,901",10_facts.py,out/facts.csv
-gap_change_6m_n_w4,1,10_facts.py,out/facts.csv
-gap_change_12m_median_w4,"12,796",10_facts.py,out/facts.csv
-gap_change_12m_n_w4,1,10_facts.py,out/facts.csv
-a_above_b_w4,0,10_facts.py,out/facts.csv
-a_equal_b_w4,0,10_facts.py,out/facts.csv
-gap_ge_step_option_b_w4,0,10_facts.py,out/facts.csv
-gap_ge_step_option_b_w4_pct,0,10_facts.py,out/facts.csv
-gap_ge_step_option_a_w4,0,10_facts.py,out/facts.csv
-gap_ge_step_option_a_w4_pct,0,10_facts.py,out/facts.csv
-gap_ge_span_both_w4,0,10_facts.py,out/facts.csv
-gap_ge_span_both_w4_pct,0,10_facts.py,out/facts.csv
-span_both,"30,000",10_facts.py,out/facts.csv
-claim_exercises,10,10_facts.py,out/facts.csv
-claim_a_above_b,3,10_facts.py,out/facts.csv
-claim_agrees,agrees,10_facts.py,out/facts.csv
-a_above_b_2026,3,10_facts.py,out/facts.csv
-n_ex_2026,19,10_facts.py,out/facts.csv
-n_ex_2026_other,16,10_facts.py,out/facts.csv
-a_above_b_before_2026,18,10_facts.py,out/facts.csv
-gap_rel_year_min,2,10_facts.py,out/facts.csv
-gap_rel_year_min_year,2026,10_facts.py,out/facts.csv
-gap_rel_year_max,39,10_facts.py,out/facts.csv
-gap_rel_year_max_year,2012,10_facts.py,out/facts.csv
-gap_cutoff,99,10_facts.py,out/facts.csv
-pqp_n_w1,202,10_facts.py,out/facts.csv
-pqp_start_w1,January 2010,10_facts.py,out/facts.csv
-pqp_gap_median_w1,"8,668",10_facts.py,out/facts.csv
-pqp_gap_min_w1,-308,10_facts.py,out/facts.csv
-pqp_a_ge_b_months_w1,June 2013; June 2018; July 2018,10_facts.py,out/facts.csv
-pqp_gap_max_w1,"36,738",10_facts.py,out/facts.csv
-pqp_gap_pct_median_w1,15,10_facts.py,out/facts.csv
-pqp_a_ge_b_w1,3,10_facts.py,out/facts.csv
-pqp_n_w2,54,10_facts.py,out/facts.csv
-pqp_start_w2,May 2022,10_facts.py,out/facts.csv
-pqp_gap_median_w2,"19,254",10_facts.py,out/facts.csv
-pqp_gap_min_w2,"1,390",10_facts.py,out/facts.csv
-pqp_a_ge_b_months_w2,none,10_facts.py,out/facts.csv
-pqp_gap_max_w2,"36,738",10_facts.py,out/facts.csv
-pqp_gap_pct_median_w2,20,10_facts.py,out/facts.csv
-pqp_a_ge_b_w2,0,10_facts.py,out/facts.csv
-pqp_n_w3,12,10_facts.py,out/facts.csv
-pqp_start_w3,November 2025,10_facts.py,out/facts.csv
-pqp_gap_median_w3,"4,930",10_facts.py,out/facts.csv
-pqp_gap_min_w3,"1,390",10_facts.py,out/facts.csv
-pqp_a_ge_b_months_w3,none,10_facts.py,out/facts.csv
-pqp_gap_max_w3,"16,941",10_facts.py,out/facts.csv
-pqp_gap_pct_median_w3,4,10_facts.py,out/facts.csv
-pqp_a_ge_b_w3,0,10_facts.py,out/facts.csv
-pqp_n_w4,1,10_facts.py,out/facts.csv
-pqp_start_w4,October 2026,10_facts.py,out/facts.csv
-pqp_gap_median_w4,"2,901",10_facts.py,out/facts.csv
-pqp_gap_min_w4,"2,901",10_facts.py,out/facts.csv
-pqp_a_ge_b_months_w4,none,10_facts.py,out/facts.csv
-pqp_gap_max_w4,"2,901",10_facts.py,out/facts.csv
-pqp_gap_pct_median_w4,2,10_facts.py,out/facts.csv
-pqp_a_ge_b_w4,0,10_facts.py,out/facts.csv
-pqp_gap_oct2026,"2,901",10_facts.py,out/facts.csv
-pqp_gap_pct_oct2026,2.3,10_facts.py,out/facts.csv
-w2_start_label,"May 2022, exercise 1",10_facts.py,out/facts.csv
-w2_start_month,2022-05,10_facts.py,out/facts.csv
-pqp_A_oct2026,"128,715",10_facts.py,out/facts.csv
-pqp_B_oct2026,"131,616",10_facts.py,out/facts.csv
-quota_A_share_w1,57,10_facts.py,out/facts.csv
-quota_E_share_w1,15,10_facts.py,out/facts.csv
-quota_A_share_w2,59,10_facts.py,out/facts.csv
-quota_E_share_w2,11,10_facts.py,out/facts.csv
-quota_A_share_w3,60,10_facts.py,out/facts.csv
-quota_E_share_w3,11,10_facts.py,out/facts.csv
-quota_A_share_w4,57,10_facts.py,out/facts.csv
-quota_E_share_w4,10,10_facts.py,out/facts.csv
-e_below_b_w1,116,10_facts.py,out/facts.csv
-e_at_or_above_both_w1,274,10_facts.py,out/facts.csv
-e_at_or_above_b_below_a_w1,7,10_facts.py,out/facts.csv
-gap_EB_median_w1,623,10_facts.py,out/facts.csv
-e_below_b_w2,33,10_facts.py,out/facts.csv
-e_at_or_above_both_w2,74,10_facts.py,out/facts.csv
-e_at_or_above_b_below_a_w2,0,10_facts.py,out/facts.csv
-gap_EB_median_w2,888,10_facts.py,out/facts.csv
-e_below_b_w3,4,10_facts.py,out/facts.csv
-e_at_or_above_both_w3,20,10_facts.py,out/facts.csv
-e_at_or_above_b_below_a_w3,0,10_facts.py,out/facts.csv
-gap_EB_median_w3,"2,720",10_facts.py,out/facts.csv
-e_below_b_w4,0,10_facts.py,out/facts.csv
-e_at_or_above_both_w4,1,10_facts.py,out/facts.csv
-e_at_or_above_b_below_a_w4,0,10_facts.py,out/facts.csv
-gap_EB_median_w4,"6,900",10_facts.py,out/facts.csv
-quota_median_A_w1,966,10_facts.py,out/facts.csv
-bids_per_cert_median_A_w1,1.42,10_facts.py,out/facts.csv
-quota_median_B_w1,711,10_facts.py,out/facts.csv
-bids_per_cert_median_B_w1,1.46,10_facts.py,out/facts.csv
-quota_median_A_w2,978,10_facts.py,out/facts.csv
-bids_per_cert_median_A_w2,1.41,10_facts.py,out/facts.csv
-quota_median_B_w2,671,10_facts.py,out/facts.csv
-bids_per_cert_median_B_w2,1.46,10_facts.py,out/facts.csv
-quota_median_A_w3,"1,265",10_facts.py,out/facts.csv
-bids_per_cert_median_A_w3,1.42,10_facts.py,out/facts.csv
-quota_median_B_w3,831,10_facts.py,out/facts.csv
-bids_per_cert_median_B_w3,1.44,10_facts.py,out/facts.csv
-quota_median_A_w4,"1,232",10_facts.py,out/facts.csv
-bids_per_cert_median_A_w4,1.27,10_facts.py,out/facts.csv
-quota_median_B_w4,945,10_facts.py,out/facts.csv
-bids_per_cert_median_B_w4,1.19,10_facts.py,out/facts.csv
-check_1,"1,965",10_facts.py,out/checks.csv
-check_2,0,10_facts.py,out/checks.csv
-check_3,2,10_facts.py,out/checks.csv
-check_4,394,10_facts.py,out/checks.csv
-check_5,0,10_facts.py,out/checks.csv
-check_6,20,10_facts.py,out/checks.csv
-check_7,20,10_facts.py,out/checks.csv
-check_8,392,10_facts.py,out/checks.csv
-check_9,392,10_facts.py,out/checks.csv
-lta_step_option_a,"15,000",LTA consultation paper,office/LTA_CONSTANTS.csv
-lta_step_option_b,"7,500",LTA consultation paper,office/LTA_CONSTANTS.csv
-lta_rebate_max,"15,000",LTA consultation paper,office/LTA_CONSTANTS.csv
-lta_surcharge_max,"15,000",LTA consultation paper,office/LTA_CONSTANTS.csv
-lta_claim_occasions,three,LTA consultation paper,office/LTA_CONSTANTS.csv
-lta_claim_from_month,February,LTA consultation paper,office/LTA_CONSTANTS.csv
-lta_claim_to_month,June,LTA consultation paper,office/LTA_CONSTANTS.csv
-lta_e_share_pct,10,LTA consultation paper,office/LTA_CONSTANTS.csv
+key,printed,script,file,row
+cutoff_label,"October 2026, exercise 1",10_facts.py,out/facts.csv,1
+n_scheduled_w1,403,10_facts.py,out/facts.csv,2
+n_no_bidding_w1,6,10_facts.py,out/facts.csv,3
+n_ex_w1,397,10_facts.py,out/facts.csv,4
+start_w1,"January 2010, exercise 1",10_facts.py,out/facts.csv,5
+gap_median_w1,"9,010",10_facts.py,out/facts.csv,6
+gap_mean_w1,"11,140",10_facts.py,out/facts.csv,7
+gap_rel_median_w1,16,10_facts.py,out/facts.csv,8
+a_over_b_max_w1,"16,599",10_facts.py,out/facts.csv,9
+a_over_b_max_when_w1,"March 2013, exercise 1",10_facts.py,out/facts.csv,10
+gap_max_w1,"50,335",10_facts.py,out/facts.csv,11
+gap_max_when_w1,"November 2023, exercise 2",10_facts.py,out/facts.csv,12
+gap_change_6m_median_w1,"5,453",10_facts.py,out/facts.csv,13
+gap_change_6m_n_w1,379,10_facts.py,out/facts.csv,14
+gap_change_12m_median_w1,"6,603",10_facts.py,out/facts.csv,15
+gap_change_12m_n_w1,367,10_facts.py,out/facts.csv,16
+a_above_b_w1,21,10_facts.py,out/facts.csv,17
+a_equal_b_w1,0,10_facts.py,out/facts.csv,18
+gap_ge_step_option_b_w1,225,10_facts.py,out/facts.csv,19
+gap_ge_step_option_b_w1_pct,57,10_facts.py,out/facts.csv,20
+gap_ge_step_option_a_w1,117,10_facts.py,out/facts.csv,21
+gap_ge_step_option_a_w1_pct,29,10_facts.py,out/facts.csv,22
+gap_ge_span_both_w1,11,10_facts.py,out/facts.csv,23
+gap_ge_span_both_w1_pct,3,10_facts.py,out/facts.csv,24
+n_ex_w2,107,10_facts.py,out/facts.csv,25
+start_w2,"May 2022, exercise 1",10_facts.py,out/facts.csv,26
+gap_median_w2,"17,999",10_facts.py,out/facts.csv,27
+gap_mean_w2,"17,480",10_facts.py,out/facts.csv,28
+gap_rel_median_w2,18,10_facts.py,out/facts.csv,29
+a_over_b_max_w2,"2,009",10_facts.py,out/facts.csv,30
+a_over_b_max_when_w2,"April 2026, exercise 2",10_facts.py,out/facts.csv,31
+gap_max_w2,"50,335",10_facts.py,out/facts.csv,32
+gap_max_when_w2,"November 2023, exercise 2",10_facts.py,out/facts.csv,33
+gap_change_6m_median_w2,"7,001",10_facts.py,out/facts.csv,34
+gap_change_6m_n_w2,107,10_facts.py,out/facts.csv,35
+gap_change_12m_median_w2,"9,512",10_facts.py,out/facts.csv,36
+gap_change_12m_n_w2,107,10_facts.py,out/facts.csv,37
+a_above_b_w2,3,10_facts.py,out/facts.csv,38
+a_equal_b_w2,0,10_facts.py,out/facts.csv,39
+gap_ge_step_option_b_w2,88,10_facts.py,out/facts.csv,40
+gap_ge_step_option_b_w2_pct,82,10_facts.py,out/facts.csv,41
+gap_ge_step_option_a_w2,64,10_facts.py,out/facts.csv,42
+gap_ge_step_option_a_w2_pct,60,10_facts.py,out/facts.csv,43
+gap_ge_span_both_w2,9,10_facts.py,out/facts.csv,44
+gap_ge_span_both_w2_pct,8,10_facts.py,out/facts.csv,45
+n_ex_w3,24,10_facts.py,out/facts.csv,46
+start_w3,"October 2025, exercise 2",10_facts.py,out/facts.csv,47
+gap_median_w3,"3,784",10_facts.py,out/facts.csv,48
+gap_mean_w3,"5,311",10_facts.py,out/facts.csv,49
+gap_rel_median_w3,3,10_facts.py,out/facts.csv,50
+a_over_b_max_w3,"2,009",10_facts.py,out/facts.csv,51
+a_over_b_max_when_w3,"April 2026, exercise 2",10_facts.py,out/facts.csv,52
+gap_max_w3,"20,890",10_facts.py,out/facts.csv,53
+gap_max_when_w3,"November 2025, exercise 2",10_facts.py,out/facts.csv,54
+gap_change_6m_median_w3,"7,929",10_facts.py,out/facts.csv,55
+gap_change_6m_n_w3,24,10_facts.py,out/facts.csv,56
+gap_change_12m_median_w3,"15,228",10_facts.py,out/facts.csv,57
+gap_change_12m_n_w3,24,10_facts.py,out/facts.csv,58
+a_above_b_w3,3,10_facts.py,out/facts.csv,59
+a_equal_b_w3,0,10_facts.py,out/facts.csv,60
+gap_ge_step_option_b_w3,5,10_facts.py,out/facts.csv,61
+gap_ge_step_option_b_w3_pct,21,10_facts.py,out/facts.csv,62
+gap_ge_step_option_a_w3,3,10_facts.py,out/facts.csv,63
+gap_ge_step_option_a_w3_pct,13,10_facts.py,out/facts.csv,64
+gap_ge_span_both_w3,0,10_facts.py,out/facts.csv,65
+gap_ge_span_both_w3_pct,0,10_facts.py,out/facts.csv,66
+n_ex_w4,1,10_facts.py,out/facts.csv,67
+start_w4,"October 2026, exercise 1",10_facts.py,out/facts.csv,68
+gap_median_w4,99,10_facts.py,out/facts.csv,69
+gap_mean_w4,99,10_facts.py,out/facts.csv,70
+gap_rel_median_w4,0.1,10_facts.py,out/facts.csv,71
+gap_max_w4,99,10_facts.py,out/facts.csv,72
+gap_max_when_w4,"October 2026, exercise 1",10_facts.py,out/facts.csv,73
+gap_change_6m_median_w4,"2,901",10_facts.py,out/facts.csv,74
+gap_change_6m_n_w4,1,10_facts.py,out/facts.csv,75
+gap_change_12m_median_w4,"12,796",10_facts.py,out/facts.csv,76
+gap_change_12m_n_w4,1,10_facts.py,out/facts.csv,77
+a_above_b_w4,0,10_facts.py,out/facts.csv,78
+a_equal_b_w4,0,10_facts.py,out/facts.csv,79
+gap_ge_step_option_b_w4,0,10_facts.py,out/facts.csv,80
+gap_ge_step_option_b_w4_pct,0,10_facts.py,out/facts.csv,81
+gap_ge_step_option_a_w4,0,10_facts.py,out/facts.csv,82
+gap_ge_step_option_a_w4_pct,0,10_facts.py,out/facts.csv,83
+gap_ge_span_both_w4,0,10_facts.py,out/facts.csv,84
+gap_ge_span_both_w4_pct,0,10_facts.py,out/facts.csv,85
+span_both,"30,000",10_facts.py,out/facts.csv,86
+claim_exercises,10,10_facts.py,out/facts.csv,87
+claim_a_above_b,3,10_facts.py,out/facts.csv,88
+claim_agrees,agrees,10_facts.py,out/facts.csv,89
+a_above_b_2026,3,10_facts.py,out/facts.csv,90
+n_ex_2026,19,10_facts.py,out/facts.csv,91
+n_ex_2026_other,16,10_facts.py,out/facts.csv,92
+a_above_b_before_2026,18,10_facts.py,out/facts.csv,93
+gap_rel_year_min,2,10_facts.py,out/facts.csv,94
+gap_rel_year_min_year,2026,10_facts.py,out/facts.csv,95
+gap_rel_year_max,39,10_facts.py,out/facts.csv,96
+gap_rel_year_max_year,2012,10_facts.py,out/facts.csv,97
+gap_cutoff,99,10_facts.py,out/facts.csv,98
+pqp_n_w1,202,10_facts.py,out/facts.csv,99
+pqp_start_w1,January 2010,10_facts.py,out/facts.csv,100
+pqp_gap_median_w1,"8,668",10_facts.py,out/facts.csv,101
+pqp_gap_min_w1,-308,10_facts.py,out/facts.csv,102
+pqp_a_ge_b_months_w1,June 2013; June 2018; July 2018,10_facts.py,out/facts.csv,103
+pqp_gap_max_w1,"36,738",10_facts.py,out/facts.csv,104
+pqp_gap_pct_median_w1,15,10_facts.py,out/facts.csv,105
+pqp_a_ge_b_w1,3,10_facts.py,out/facts.csv,106
+pqp_n_w2,54,10_facts.py,out/facts.csv,107
+pqp_start_w2,May 2022,10_facts.py,out/facts.csv,108
+pqp_gap_median_w2,"19,254",10_facts.py,out/facts.csv,109
+pqp_gap_min_w2,"1,390",10_facts.py,out/facts.csv,110
+pqp_a_ge_b_months_w2,none,10_facts.py,out/facts.csv,111
+pqp_gap_max_w2,"36,738",10_facts.py,out/facts.csv,112
+pqp_gap_pct_median_w2,20,10_facts.py,out/facts.csv,113
+pqp_a_ge_b_w2,0,10_facts.py,out/facts.csv,114
+pqp_n_w3,12,10_facts.py,out/facts.csv,115
+pqp_start_w3,November 2025,10_facts.py,out/facts.csv,116
+pqp_gap_median_w3,"4,930",10_facts.py,out/facts.csv,117
+pqp_gap_min_w3,"1,390",10_facts.py,out/facts.csv,118
+pqp_a_ge_b_months_w3,none,10_facts.py,out/facts.csv,119
+pqp_gap_max_w3,"16,941",10_facts.py,out/facts.csv,120
+pqp_gap_pct_median_w3,4,10_facts.py,out/facts.csv,121
+pqp_a_ge_b_w3,0,10_facts.py,out/facts.csv,122
+pqp_n_w4,1,10_facts.py,out/facts.csv,123
+pqp_start_w4,October 2026,10_facts.py,out/facts.csv,124
+pqp_gap_median_w4,"2,901",10_facts.py,out/facts.csv,125
+pqp_gap_min_w4,"2,901",10_facts.py,out/facts.csv,126
+pqp_a_ge_b_months_w4,none,10_facts.py,out/facts.csv,127
+pqp_gap_max_w4,"2,901",10_facts.py,out/facts.csv,128
+pqp_gap_pct_median_w4,2,10_facts.py,out/facts.csv,129
+pqp_a_ge_b_w4,0,10_facts.py,out/facts.csv,130
+pqp_gap_oct2026,"2,901",10_facts.py,out/facts.csv,131
+pqp_gap_pct_oct2026,2.3,10_facts.py,out/facts.csv,132
+w2_start_label,"May 2022, exercise 1",10_facts.py,out/facts.csv,133
+w2_start_month,2022-05,10_facts.py,out/facts.csv,134
+pqp_A_oct2026,"128,715",10_facts.py,out/facts.csv,135
+pqp_B_oct2026,"131,616",10_facts.py,out/facts.csv,136
+quota_A_share_w1,57,10_facts.py,out/facts.csv,137
+quota_E_share_w1,15,10_facts.py,out/facts.csv,138
+quota_A_share_w2,59,10_facts.py,out/facts.csv,139
+quota_E_share_w2,11,10_facts.py,out/facts.csv,140
+quota_A_share_w3,60,10_facts.py,out/facts.csv,141
+quota_E_share_w3,11,10_facts.py,out/facts.csv,142
+quota_A_share_w4,57,10_facts.py,out/facts.csv,143
+quota_E_share_w4,10,10_facts.py,out/facts.csv,144
+e_below_b_w1,116,10_facts.py,out/facts.csv,145
+e_at_or_above_both_w1,274,10_facts.py,out/facts.csv,146
+e_at_or_above_b_below_a_w1,7,10_facts.py,out/facts.csv,147
+gap_EB_median_w1,623,10_facts.py,out/facts.csv,148
+e_below_b_w2,33,10_facts.py,out/facts.csv,149
+e_at_or_above_both_w2,74,10_facts.py,out/facts.csv,150
+e_at_or_above_b_below_a_w2,0,10_facts.py,out/facts.csv,151
+gap_EB_median_w2,888,10_facts.py,out/facts.csv,152
+e_below_b_w3,4,10_facts.py,out/facts.csv,153
+e_at_or_above_both_w3,20,10_facts.py,out/facts.csv,154
+e_at_or_above_b_below_a_w3,0,10_facts.py,out/facts.csv,155
+gap_EB_median_w3,"2,720",10_facts.py,out/facts.csv,156
+e_below_b_w4,0,10_facts.py,out/facts.csv,157
+e_at_or_above_both_w4,1,10_facts.py,out/facts.csv,158
+e_at_or_above_b_below_a_w4,0,10_facts.py,out/facts.csv,159
+gap_EB_median_w4,"6,900",10_facts.py,out/facts.csv,160
+quota_median_A_w1,966,10_facts.py,out/facts.csv,161
+bids_per_cert_median_A_w1,1.42,10_facts.py,out/facts.csv,162
+quota_median_B_w1,711,10_facts.py,out/facts.csv,163
+bids_per_cert_median_B_w1,1.46,10_facts.py,out/facts.csv,164
+quota_median_A_w2,978,10_facts.py,out/facts.csv,165
+bids_per_cert_median_A_w2,1.41,10_facts.py,out/facts.csv,166
+quota_median_B_w2,671,10_facts.py,out/facts.csv,167
+bids_per_cert_median_B_w2,1.46,10_facts.py,out/facts.csv,168
+quota_median_A_w3,"1,265",10_facts.py,out/facts.csv,169
+bids_per_cert_median_A_w3,1.42,10_facts.py,out/facts.csv,170
+quota_median_B_w3,831,10_facts.py,out/facts.csv,171
+bids_per_cert_median_B_w3,1.44,10_facts.py,out/facts.csv,172
+quota_median_A_w4,"1,232",10_facts.py,out/facts.csv,173
+bids_per_cert_median_A_w4,1.27,10_facts.py,out/facts.csv,174
+quota_median_B_w4,945,10_facts.py,out/facts.csv,175
+bids_per_cert_median_B_w4,1.19,10_facts.py,out/facts.csv,176
+check_1,"1,965",10_facts.py,out/checks.csv,1
+check_2,0,10_facts.py,out/checks.csv,2
+check_3,2,10_facts.py,out/checks.csv,3
+check_4,394,10_facts.py,out/checks.csv,4
+check_5,0,10_facts.py,out/checks.csv,5
+check_6,20,10_facts.py,out/checks.csv,6
+check_7,20,10_facts.py,out/checks.csv,7
+check_8,392,10_facts.py,out/checks.csv,8
+check_9,392,10_facts.py,out/checks.csv,9
+lta_step_option_a,"15,000",LTA consultation paper,office/LTA_CONSTANTS.csv,1
+lta_step_option_b,"7,500",LTA consultation paper,office/LTA_CONSTANTS.csv,2
+lta_rebate_max,"15,000",LTA consultation paper,office/LTA_CONSTANTS.csv,3
+lta_surcharge_max,"15,000",LTA consultation paper,office/LTA_CONSTANTS.csv,4
+lta_claim_occasions,three,LTA consultation paper,office/LTA_CONSTANTS.csv,5
+lta_claim_from_month,February,LTA consultation paper,office/LTA_CONSTANTS.csv,6
+lta_claim_to_month,June,LTA consultation paper,office/LTA_CONSTANTS.csv,7
+lta_e_share_pct,10,LTA consultation paper,office/LTA_CONSTANTS.csv,8
+bands_n_models,30,16_bands.py,out/bands_summary.csv,1
+bands_avg_adjustment_A,"2,250",16_bands.py,out/bands_summary.csv,2
+bands_surcharge_share_A,50,16_bands.py,out/bands_summary.csv,3
+bands_rebate_share_A,35,16_bands.py,out/bands_summary.csv,4
+bands_zero_share_A,15,16_bands.py,out/bands_summary.csv,5
+bands_surcharge_avg_A,"7,500",16_bands.py,out/bands_summary.csv,6
+bands_rebate_avg_A,"5,250",16_bands.py,out/bands_summary.csv,7
+bands_avg_adjustment_B,"2,250",16_bands.py,out/bands_summary.csv,8
+bands_surcharge_share_B,50,16_bands.py,out/bands_summary.csv,9
+bands_rebate_share_B,35,16_bands.py,out/bands_summary.csv,10
+bands_zero_share_B,15,16_bands.py,out/bands_summary.csv,11
+bands_surcharge_avg_B,"5,625",16_bands.py,out/bands_summary.csv,12
+bands_rebate_avg_B,"3,375",16_bands.py,out/bands_summary.csv,13
+bands_sealion_gap_A,"15,000",16_bands.py,out/bands_summary.csv,14
+bands_sealion_gap_B,"7,500",16_bands.py,out/bands_summary.csv,15
+bands_pct_from_A1,0,16_bands.py,out/bands_summary.csv,16
+bands_pct_to_A1,35,16_bands.py,out/bands_summary.csv,17
+bands_pct_from_A2,35,16_bands.py,out/bands_summary.csv,18
+bands_pct_to_A2,50,16_bands.py,out/bands_summary.csv,19
+bands_pct_from_A3,50,16_bands.py,out/bands_summary.csv,20
+bands_pct_to_A3,100,16_bands.py,out/bands_summary.csv,21
+bands_pct_from_B1,0,16_bands.py,out/bands_summary.csv,22
+bands_pct_to_B1,10,16_bands.py,out/bands_summary.csv,23
+bands_pct_from_B2,10,16_bands.py,out/bands_summary.csv,24
+bands_pct_to_B2,35,16_bands.py,out/bands_summary.csv,25
+bands_pct_from_B3,35,16_bands.py,out/bands_summary.csv,26
+bands_pct_to_B3,50,16_bands.py,out/bands_summary.csv,27
+bands_pct_from_B4,50,16_bands.py,out/bands_summary.csv,28
+bands_pct_to_B4,75,16_bands.py,out/bands_summary.csv,29
+bands_pct_from_B5,75,16_bands.py,out/bands_summary.csv,30
+bands_pct_to_B5,100,16_bands.py,out/bands_summary.csv,31

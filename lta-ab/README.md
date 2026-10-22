@@ -9,6 +9,8 @@ It takes no view on the proposal. Written by Jacob Ong in a personal capacity.
 - **`NOTE.md`** is its source; the PDF's text comes only from it. The three-line
   feedback-form version at its end stays out of the PDF.
 - **Submitted on:** 15 October 2026 (Jacob's reply as submitted: SUBMITTED_REPLY.md)
+- **`ONEPAGER.md`** is the one-page public version of the consultation (under 800 words); its
+  numbers, quotes from SUBMITTED_REPLY.md and model rows are checked by `14_manifest.py --check`.
 - **`FORM_TEXT.md`** is an earlier descriptive draft of the feedback form's three boxes, from the same numbers; it was not used.
 - **Cut-off:** the data run to the first October 2026 bidding exercise.
 - **Windows** (checker's ruling of 12 Oct 2026), the same in every section, table and figure,
@@ -28,6 +30,8 @@ bash lta-ab/run_all.sh
 It runs, in order:
 - `10_facts.py`: every number, into `out/`;
 - `12_figures.py`: Figure 1 (two panels, matplotlib, house fonts);
+- `16_bands.py`: LTA's example bands per model (Tables 1-2) into `out/bands.csv`, and the
+  numbers ONEPAGER.md uses into `out/bands_summary.csv`, with their checks;
 - `14_manifest.py --check`: checksums, plus every number in NOTE.md checked against the
   number manifest, ASCII, banned words, and the 800-word cap on the prose.
 

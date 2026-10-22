@@ -30,6 +30,9 @@ from pathlib import Path
 HERE = os.path.dirname(os.path.abspath(__file__))
 NOTE = os.path.join(HERE, "NOTE.md")
 FORM = os.path.join(HERE, "FORM_TEXT.md")
+ONEPAGER = os.path.join(HERE, "ONEPAGER.md")
+REPLY = os.path.join(HERE, "SUBMITTED_REPLY.md")
+ONEPAGER_CAP = 800
 MANIFEST = os.path.join(HERE, "number_manifest.csv")
 CHECKSUMS = os.path.join(HERE, "CHECKSUMS.md5")
 WORD_CAP = 800
@@ -50,20 +53,22 @@ def tracked():
     files += sorted(glob.glob(os.path.join(HERE, "figs", "*.svg")))
     files += sorted(glob.glob(os.path.join(HERE, "figs", "*.png")))
     files += sorted(glob.glob(os.path.join(HERE, "fonts", "*")))
-    files += [NOTE, FORM]
+    files += [NOTE, FORM, ONEPAGER, REPLY]
     return [f for f in files if os.path.isfile(f)]
 
 
 def build_manifest():
     buf = io.StringIO()
     w = csv.writer(buf, lineterminator="\n")
-    w.writerow(["key", "printed", "script", "file"])
-    for r in csv.DictReader(open(os.path.join(HERE, "out", "facts.csv"), encoding="utf-8")):
-        w.writerow([r["key"], r["printed"], "10_facts.py", "out/facts.csv"])
+    w.writerow(["key", "printed", "script", "file", "row"])
+    for i, r in enumerate(csv.DictReader(open(os.path.join(HERE, "out", "facts.csv"), encoding="utf-8"))):
+        w.writerow([r["key"], r["printed"], "10_facts.py", "out/facts.csv", i + 1])
     for i, r in enumerate(csv.DictReader(open(os.path.join(HERE, "out", "checks.csv"), encoding="utf-8"))):
-        w.writerow([f"check_{i + 1}", "{:,}".format(int(r["result"])), "10_facts.py", "out/checks.csv"])
-    for r in csv.DictReader(open(os.path.join(HERE, "office", "LTA_CONSTANTS.csv"), encoding="utf-8")):
-        w.writerow([f"lta_{r['key']}", r["printed"], "LTA consultation paper", "office/LTA_CONSTANTS.csv"])
+        w.writerow([f"check_{i + 1}", "{:,}".format(int(r["result"])), "10_facts.py", "out/checks.csv", i + 1])
+    for i, r in enumerate(csv.DictReader(open(os.path.join(HERE, "office", "LTA_CONSTANTS.csv"), encoding="utf-8"))):
+        w.writerow([f"lta_{r['key']}", r["printed"], "LTA consultation paper", "office/LTA_CONSTANTS.csv", i + 1])
+    for i, r in enumerate(csv.DictReader(open(os.path.join(HERE, "out", "bands_summary.csv"), encoding="utf-8"))):
+        w.writerow([f"bands_{r['key']}", r["printed"], "16_bands.py", "out/bands_summary.csv", i + 1])
     return buf.getvalue()
 
 
@@ -78,6 +83,7 @@ def note_numbers(text):
     t = re.sub(r"\bd_[0-9a-f]{32}\b", "", t)
     t = re.sub(r"\b\d+[a-z]?_[\w.-]+", "", t)
     t = re.sub(r"\b\d{1,2} (?:January|February|March|April|May|June|July|August|September|October|November|December) \d{4}\b", "", t)
+    t = re.sub(r"\b\d{2}:\d{2}\b", "", t)  # clock times (23:59)
     t = re.sub(r"\(ORCID \d{4}-\d{4}-\d{4}-\d{3}[\dX]\)", "", t)
     t = re.sub(r"\b(?:[Pp]aragraphs?|paras?|footnotes?|Tables?|Figures?)\s+[\d.]+(?:\([a-z]\))?(?:\s*(?:-|to|and|,)\s*[\d.]+(?:\([a-z]\))?)*", "", t)
     t = re.sub(r"\(\s*[a-z]\s*\)", "", t)
@@ -144,8 +150,68 @@ def check():
     if words > WORD_CAP:
         print(f"  WORD COUNT {words} (prose) over {WORD_CAP}")
         ok = False
+    ok = check_onepager(printed) and ok
     print(f"  NOTE.md and FORM_TEXT.md: {len(nums)} numbers checked, {words} words of prose (cap {WORD_CAP}), {total} words in all before Data and method")
     print(f"  {len(have)} checksums, {len(printed)} distinct printed values in the manifest")
+    return ok
+
+
+def check_onepager(printed):
+    """ONEPAGER.md: numbers, ASCII, banned words, word cap, quotes, model rows."""
+    ok = True
+    page = open(ONEPAGER, encoding="utf-8").read()
+    nums = note_numbers(page)
+    for n in nums:
+        v = n.lstrip("-")
+        if v in printed or (re.fullmatch(r"\d+", v) and (int(v) <= 10 or YEAR_LO <= int(v) <= YEAR_HI)):
+            continue
+        print(f"  ONEPAGER NUMBER NOT IN MANIFEST: {n}")
+        ok = False
+    bad = sorted({c for c in page if ord(c) > 127})
+    if bad:
+        print(f"  ONEPAGER NON-ASCII characters: {bad}")
+        ok = False
+    low = page.lower()
+    for wd in BANNED_WORDS:
+        if re.search(rf"\b{wd}\b", low):
+            print(f"  ONEPAGER BANNED WORD: {wd}")
+            ok = False
+    for ph in BANNED_PHRASES:
+        if ph in low:
+            print(f"  ONEPAGER BANNED PHRASE: {ph}")
+            ok = False
+    # words: tokens with a letter or digit (table pipes and rules are not words)
+    words = sum(1 for t in re.findall(r"\S+", re.sub(r"https?://\S+", "URL", page)) if re.search(r"[A-Za-z0-9]", t))
+    if words >= ONEPAGER_CAP:
+        print(f"  ONEPAGER WORD COUNT {words}, cap under {ONEPAGER_CAP}")
+        ok = False
+    # Quotes in "What I sent" must appear verbatim in SUBMITTED_REPLY.md.
+    reply = open(REPLY, encoding="utf-8").read()
+    sent = page.split("## What I sent", 1)[1].split("\n## ", 1)[0]
+    quotes = re.findall(r'"([^"]+)"', sent)
+    for q in quotes:
+        if q not in reply:
+            print(f"  ONEPAGER QUOTE NOT IN SUBMITTED_REPLY.md: {q}")
+            ok = False
+    # Each table row naming a model must match out/bands.csv.
+    bands = {r["model"]: r for r in csv.DictReader(open(os.path.join(HERE, "out", "bands.csv"), encoding="utf-8"))}
+
+    def amt(v):
+        v = int(v)
+        return "$0" if v == 0 else ("-" if v < 0 else "+") + "${:,}".format(abs(v))
+    rows = 0
+    for line in page.splitlines():
+        cells = [c.strip() for c in line.strip().strip("|").split("|")] if line.startswith("|") else []
+        if cells and cells[0] in bands:
+            r = bands[cells[0]]
+            want = [f"Band {r['option_A_band']}, {amt(r['option_A_amount'])}",
+                    f"Band {r['option_B_band']}, {amt(r['option_B_amount'])}"]
+            rows += 1
+            if cells[1:3] != want:
+                print(f"  ONEPAGER ROW DIFFERS FROM out/bands.csv: {cells} vs {want}")
+                ok = False
+    print(f"  ONEPAGER.md: {len(nums)} numbers checked, {words} words (cap under {ONEPAGER_CAP}), "
+          f"{len(quotes)} quotes found in SUBMITTED_REPLY.md, {rows} model rows match out/bands.csv")
     return ok
 
 

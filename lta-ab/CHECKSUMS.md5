@@ -11,10 +11,13 @@ dac8d85770a81011556068c0a4f23adf  raw/d1_coe_bidding_results_20261011.csv
 682a15339cf4ce51494f39955d07050d  office/LTA_CONSTANTS.csv
 b241efb2b4fb326e6e8cccc0998963eb  10_facts.py
 4249052480110cff6395d378e498737c  12_figures.py
-79faf6320071015000c7ff65d35d5edc  14_manifest.py
+efc2255db632974f9880890756564687  14_manifest.py
+d7c00f6cb5a0333463aae7ec3f1b3da4  16_bands.py
 3ab5ce66c9a97d547a1f88c7e4e03002  20_pdf.py
-6301e85072323ee17023f01985829862  run_all.sh
+adaa30bc21194e62ba6ebef0cee9b62f  run_all.sh
 00ae6fb3f099500c8b77dba0887114ea  out/a_above_b.csv
+8d7c5ce36ba5e13600ef418a36295de4  out/bands.csv
+765a32c9650233584848d11f85dd4523  out/bands_summary.csv
 b9500c85294a91da910b536c2b009c8c  out/checks.csv
 6da40a869e7e038a241a28db1729af5c  out/exercises.csv
 cb5397da2eb65688cf014b7a4612b737  out/facts.csv
@@ -32,3 +35,5 @@ afae59d126e379ca6abdd1e3717dce2b  fonts/SourceSerif4-It.ttf
 2b770f46d16fb0624e200586dc1b8517  fonts/SourceSerif4-Semibold.ttf
 d0d60bc73d911c064d736aac4a071f10  NOTE.md
 a6ff96e15ae5b7ab89ec8b762ed11004  FORM_TEXT.md
+9701db44e1a1ac8f0b47a891910dba91  ONEPAGER.md
+6e552ec5ec78f10a6679f28d044da4c2  SUBMITTED_REPLY.md
