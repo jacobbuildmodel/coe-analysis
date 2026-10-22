@@ -1,0 +1,32 @@
+key,value,printed,definition
+n_models,30,30,models named in Tables 1-2 (the same in both)
+avg_adjustment_A,2250,"2,250","Option A: registration-weighted average adjustment at the 2025 mix, dollars a car (positive: surcharges exceed rebates)"
+surcharge_share_A,50,50,Option A: per cent of 2025 registrations in surcharge bands
+rebate_share_A,35,35,Option A: per cent of 2025 registrations in rebate bands
+zero_share_A,15,15,Option A: per cent in the $0 band
+surcharge_avg_A,7500.0,"7,500","Option A: surcharges per car, averaged over all 2025 registrations, dollars"
+rebate_avg_A,5250.0,"5,250","Option A: rebates per car, averaged over all 2025 registrations, dollars"
+avg_adjustment_B,2250,"2,250","Option B: registration-weighted average adjustment at the 2025 mix, dollars a car (positive: surcharges exceed rebates)"
+surcharge_share_B,50,50,Option B: per cent of 2025 registrations in surcharge bands
+rebate_share_B,35,35,Option B: per cent of 2025 registrations in rebate bands
+zero_share_B,15,15,Option B: per cent in the $0 band
+surcharge_avg_B,5625.0,"5,625","Option B: surcharges per car, averaged over all 2025 registrations, dollars"
+rebate_avg_B,3375.0,"3,375","Option B: rebates per car, averaged over all 2025 registrations, dollars"
+sealion_gap_A,15000,"15,000","Option A: Sealion 7 Performance minus Dynamic, dollars"
+sealion_gap_B,7500,"7,500","Option B: Sealion 7 Performance minus Dynamic, dollars"
+pct_from_A1,0,0,Option A band 1: OMV percentile from
+pct_to_A1,35,35,Option A band 1: OMV percentile to
+pct_from_A2,35,35,Option A band 2: OMV percentile from
+pct_to_A2,50,50,Option A band 2: OMV percentile to
+pct_from_A3,50,50,Option A band 3: OMV percentile from
+pct_to_A3,100,100,Option A band 3: OMV percentile to
+pct_from_B1,0,0,Option B band 1: OMV percentile from
+pct_to_B1,10,10,Option B band 1: OMV percentile to
+pct_from_B2,10,10,Option B band 2: OMV percentile from
+pct_to_B2,35,35,Option B band 2: OMV percentile to
+pct_from_B3,35,35,Option B band 3: OMV percentile from
+pct_to_B3,50,50,Option B band 3: OMV percentile to
+pct_from_B4,50,50,Option B band 4: OMV percentile from
+pct_to_B4,75,75,Option B band 4: OMV percentile to
+pct_from_B5,75,75,Option B band 5: OMV percentile from
+pct_to_B5,100,100,Option B band 5: OMV percentile to

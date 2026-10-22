@@ -3,9 +3,9 @@
 #
 #   bash lta-ab/run_all.sh
 #
-# Builds every number (10) and Figure 1 (12), then verifies checksums and
-# every number in NOTE.md (14 --check). NOTE.pdf is built separately by
-# 20_pdf.py (needs playwright + Chromium).
+# Builds every number (10), Figure 1 (12) and LTA's example bands (16), then
+# verifies checksums and every number in NOTE.md and ONEPAGER.md (14 --check).
+# NOTE.pdf is built separately by 20_pdf.py (needs playwright + Chromium).
 # Exits non-zero if any step fails. CHECKSUMS.md5 and number_manifest.csv are
 # never written here; regenerate them by hand, last, with
 #   python3 lta-ab/14_manifest.py
@@ -22,6 +22,9 @@ python3 lta-ab/10_facts.py
 
 echo; echo "== 12 Figure 1 (matplotlib, Source Sans 3 from lta-ab/fonts/)"
 python3 lta-ab/12_figures.py
+
+echo; echo "== 16 LTA's example bands per model (Tables 1-2), with their checks"
+python3 lta-ab/16_bands.py
 
 echo; echo "== 14 checksums and number manifest, verified"
 python3 lta-ab/14_manifest.py --check
