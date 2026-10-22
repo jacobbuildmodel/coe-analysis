@@ -6,7 +6,7 @@
 
 LTA proposes one car COE category, with a rebate or surcharge set by model value.
 
-- **Named cars:** the two BYD Sealion 7 versions would be $15,000 apart under three bands and $7,500 under five (as proposed, not final).
+- **Named cars:** the two BYD Sealion 7 versions would be $15,000 apart in surcharge under three bands and $7,500 under five (as proposed, not final).
 - **Record:** Category A's COE price was higher than Category B's in 21 of 397 bidding exercises, from January 2010 to the first exercise of October 2026.
 - **Balance:** at the 2025 mix behind LTA's tables, surcharges exceed rebates by $2,250 a car on average; a starting point, not a forecast.
 
@@ -41,7 +41,7 @@ Category A cleared above B in 21 of 397 exercises from January 2010 to October 2
 
 ## Where the design could go wrong
 
-**(a) Balance.** Of the 2025 registrations behind LTA's tables, about 50 per cent sit in surcharge bands and 35 per cent in rebate bands, so at that mix surcharges exceed rebates by $2,250 a car on average under both options. A starting point, not a forecast: once set, a model's band follows its value, and a rebate makes those cars cheaper, so buyers can shift towards them, shrinking the net, possibly reversing it. Bands are set by OMV percentile and reviewed annually (para 2.15), method not stated; if cut-offs are re-set by percentile at each review, the tilt returns each time. A centred design starts neutral; a yearly published balance shows where it stands.
+**(a) Balance.** Of the 2025 registrations behind LTA's tables, about 50 per cent sit in surcharge bands and 35 per cent in rebate bands, so at that mix surcharges exceed rebates by $2,250 a car on average under both options. A starting point, not a forecast: once set, a model's band follows its value, and a rebate makes cars in rebate bands cheaper, so buyers can shift towards them, shrinking the net, possibly reversing it. Bands are set by OMV percentile and reviewed annually (para 2.15), method not stated; if cut-offs are re-set by percentile at each review, surcharges again exceed rebates. A centred design starts neutral; a yearly published balance shows where it stands.
 
 A merged premium clears where one quota meets all bids, so it need not equal the A and B average. A Straits Times illustration (Instagram, 18 October 2026) takes the merged price as the average of the A and B premiums. This page gives no direction for it; a sealed prediction follows in December.
 
