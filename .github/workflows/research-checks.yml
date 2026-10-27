@@ -21,22 +21,22 @@ permissions:
 
 jobs:
   seal:
-    uses: jacobbuildmodel/research-checks/.github/workflows/seal.yml@ef666c718db9510724f6cb338c10e02dcf83c82f
+    uses: jacobbuildmodel/research-checks/.github/workflows/seal.yml@d5fc40e3c5fd636eb07c17226b8c7d9cd66030c1
     with:
-      checks_sha: ef666c718db9510724f6cb338c10e02dcf83c82f
+      checks_sha: d5fc40e3c5fd636eb07c17226b8c7d9cd66030c1
 
   fast:
-    uses: jacobbuildmodel/research-checks/.github/workflows/fast.yml@ef666c718db9510724f6cb338c10e02dcf83c82f
+    uses: jacobbuildmodel/research-checks/.github/workflows/fast.yml@d5fc40e3c5fd636eb07c17226b8c7d9cd66030c1
     with:
-      checks_sha: ef666c718db9510724f6cb338c10e02dcf83c82f
+      checks_sha: d5fc40e3c5fd636eb07c17226b8c7d9cd66030c1
 
   standards:
-    uses: jacobbuildmodel/research-checks/.github/workflows/standards.yml@ef666c718db9510724f6cb338c10e02dcf83c82f
+    uses: jacobbuildmodel/research-checks/.github/workflows/standards.yml@d5fc40e3c5fd636eb07c17226b8c7d9cd66030c1
     with:
-      checks_sha: ef666c718db9510724f6cb338c10e02dcf83c82f
+      checks_sha: d5fc40e3c5fd636eb07c17226b8c7d9cd66030c1
 
   rebuild:
-    uses: jacobbuildmodel/research-checks/.github/workflows/rebuild.yml@ef666c718db9510724f6cb338c10e02dcf83c82f
+    uses: jacobbuildmodel/research-checks/.github/workflows/rebuild.yml@d5fc40e3c5fd636eb07c17226b8c7d9cd66030c1
     with:
-      checks_sha: ef666c718db9510724f6cb338c10e02dcf83c82f
+      checks_sha: d5fc40e3c5fd636eb07c17226b8c7d9cd66030c1
       blocking: false
