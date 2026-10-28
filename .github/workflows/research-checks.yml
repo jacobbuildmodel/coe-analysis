@@ -1,0 +1,42 @@
+# Seal integrity and the purpose gate, the fast checks (synthetic suites and
+# NN_manifest.py --check), the standards checks and a rebuild of every piece,
+# from jacobbuildmodel/research-checks. No AI, no secrets. Which pieces take
+# part in which tier, and why: .github/research-checks.toml.
+#
+# The rebuild is report-only for now (blocking: false): each piece is rebuilt
+# from clean on Linux and every difference from the committed files is listed
+# in the job summary and as a warning. It becomes blocking piece by piece once
+# a piece is shown to reproduce here byte for byte.
+#
+# research-checks is pinned by the same full sha in uses: and checks_sha.
+name: research-checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  seal:
+    uses: jacobbuildmodel/research-checks/.github/workflows/seal.yml@ace085dfd6fc8dce9962df39fefd5bdb8d3a3403
+    with:
+      checks_sha: ace085dfd6fc8dce9962df39fefd5bdb8d3a3403
+
+  fast:
+    uses: jacobbuildmodel/research-checks/.github/workflows/fast.yml@ace085dfd6fc8dce9962df39fefd5bdb8d3a3403
+    with:
+      checks_sha: ace085dfd6fc8dce9962df39fefd5bdb8d3a3403
+
+  standards:
+    uses: jacobbuildmodel/research-checks/.github/workflows/standards.yml@ace085dfd6fc8dce9962df39fefd5bdb8d3a3403
+    with:
+      checks_sha: ace085dfd6fc8dce9962df39fefd5bdb8d3a3403
+
+  rebuild:
+    uses: jacobbuildmodel/research-checks/.github/workflows/rebuild.yml@ace085dfd6fc8dce9962df39fefd5bdb8d3a3403
+    with:
+      checks_sha: ace085dfd6fc8dce9962df39fefd5bdb8d3a3403
+      blocking: false

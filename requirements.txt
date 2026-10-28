@@ -1,6 +1,7 @@
-# Verified on Python 3.11.15. Nothing here uses a recent API, so older
-# releases of pandas and statsmodels should also work.
-pandas>=2.0
-numpy>=1.24
-statsmodels>=0.14
-scipy>=1.10
+# Pinned (28 October 2026) to the versions erp/ and pwm/ pin, which are the
+# versions CI installs to rebuild the root pipeline; run_all.sh asserts that
+# analysis.csv comes out with its published md5. Python 3.11.
+pandas==3.0.2
+numpy==2.4.4
+statsmodels==0.15.0
+scipy==1.17.1

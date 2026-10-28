@@ -1,0 +1,108 @@
+# Pieces in this repository, for jacobbuildmodel/research-checks
+# (.github/workflows/research-checks.yml). A piece takes part in a tier when it
+# has that tier's table; every warn, skip, exclude and drift entry carries its
+# reason and is printed on every run.
+#
+# win-rate/ and motorcycles/ are not listed: their MANIFEST_*.txt files are
+# article number checklists, not md5 manifests, and neither has a script that
+# checks them.
+
+# The original COE piece at the root: analysis.csv and figs/, built by run_all.sh,
+# which also runs erp/ and pwm/ end to end.
+[pieces.coe]
+dir = "."
+requirements = "requirements.txt erp/requirements.txt pwm/requirements.txt"
+
+[pieces.coe.rebuild]
+clean = ""
+command = "bash run_all.sh"
+
+# ------------------------------------------------------------------ erp
+[pieces.erp]
+dir = "erp"
+requirements = "erp/requirements.txt"
+
+[pieces.erp.seal]
+kind = "record"           # erp/office/SEAL.txt names seal commit 6d2a345 and the THESIS md5
+thesis = "append"         # THESIS.md header: corrections go in appended, dated AMENDMENT blocks
+
+[pieces.erp.fast]
+manifest = "python3 erp/14_manifest.py --check"
+
+[pieces.erp.standards]
+
+[pieces.erp.rebuild]
+clean = "erp/out erp/figs"
+command = "bash erp/run_all.sh"
+
+# ------------------------------------------------------------------ pwm
+[pieces.pwm]
+dir = "pwm"
+requirements = "pwm/requirements.txt"
+
+[pieces.pwm.seal]
+kind = "manifest"         # pwm/SEAL_MANIFEST.md, added in e5f877b "pwm: SEAL"
+thesis = "strict"         # "After the seal it is never edited; changes go in THESIS_ADDENDUM.md"
+drift = [
+  { path = "12_figures.py", sealed_md5 = "d5112e9748ef097b9f33e56958dd86b4", why = "charts; THESIS_ADDENDUM items 2, 3, 7, 9, 10" },
+  { path = "13_results.py", sealed_md5 = "3dce1abb26037126f53448a4f7b0f918", why = "RESULTS.md presentation and post-results checks; THESIS_ADDENDUM items 1, 8" },
+  { path = "14_manifest.py", sealed_md5 = "a9a36c1ffde19085b6391a6bdcbf6b9e", why = "post-results checks and the article number check; THESIS_ADDENDUM item 8" },
+  { path = "run_all.sh", sealed_md5 = "e475040e845a57d190994f4becacb1c0", why = "runs 11b and the renamed figures; THESIS_ADDENDUM items 2, 8, 10" },
+  { path = "tests/test_pipeline.py", sealed_md5 = "509ec2027efdd93ade688cc2479ae3c5", why = "pre-seal guard test skipped once SEALED exists; THESIS_ADDENDUM item 4" },
+]
+
+[pieces.pwm.fast]
+tests = "pwm/tests"
+manifest = "python3 pwm/14_manifest.py --check"
+
+[pieces.pwm.standards]
+warn = { length = "STANDARDS v2's 1200-1800 word rule comes from hdb-affordability's check.sh and has not been applied in this repository before; pwm/2026-10-31.md is reported to the moderator, not changed here" }
+
+[pieces.pwm.rebuild]
+clean = "pwm/out pwm/figs"
+command = "bash pwm/run_all.sh"
+
+# ------------------------------------------------------------------ sgd
+[pieces.sgd]
+dir = "sgd"
+requirements = "sgd/requirements.txt"
+
+[pieces.sgd.seal]
+kind = "manifest"         # sgd/SEAL_MANIFEST.md, added in 9e46034 "sgd: SEAL"
+thesis = "strict"         # "After the seal this file is never edited; changes go in THESIS_ADDENDUM.md"
+drift = [
+  { path = "raw/RETRIEVED.txt", sealed_md5 = "8550c0cfcad82fe8771fc14ac4f9ef92", why = "two appended blocks for files added after outside review, sealed text unchanged; THESIS_ADDENDUM item 10" },
+  { path = "12_figures.py", sealed_md5 = "63dc2b90f5db6b62a3ce9c358782036a", why = "charts; THESIS_ADDENDUM items 2, 4, 6, 7, 9, 10" },
+  { path = "13_results.py", sealed_md5 = "f35f7add0fe2a6877d9fdcf93af39daa", why = "RESULTS layout and the article's numbers; THESIS_ADDENDUM items 1, 5, 10" },
+  { path = "14_manifest.py", sealed_md5 = "cbf89d662a0d9f95dedaa87120f192b6", why = "article and researchers' page number checks; THESIS_ADDENDUM items 5, 8, 10" },
+  { path = "run_all.sh", sealed_md5 = "17005d2a75d4818c1c0be59509e82970", why = "runs 11b and 16; THESIS_ADDENDUM items 5, 10" },
+  { path = "tests/test_pipeline.py", sealed_md5 = "8496283a9a9ec871e0e247ea050a5311", why = "fixture run includes step 11b; THESIS_ADDENDUM item 5" },
+]
+
+[pieces.sgd.fast]
+tests = "sgd/tests"
+manifest = "python3 sgd/14_manifest.py --check"
+
+[pieces.sgd.standards]
+warn = { length = "STANDARDS v2's 1200-1800 word rule comes from hdb-affordability's check.sh and has not been applied in this repository before; sgd/2026-11-14.md is reported to the moderator, not changed here" }
+
+[pieces.sgd.rebuild]
+clean = "sgd/out sgd/figs"
+command = "bash sgd/run_all.sh"
+
+# ------------------------------------------------------------------ lta-ab
+# The consultation evidence note: no prediction, so no seal.
+[pieces.lta-ab]
+dir = "lta-ab"
+requirements = "lta-ab/requirements.txt"
+
+[pieces.lta-ab.fast]
+manifest = "python3 lta-ab/14_manifest.py --check"
+
+[pieces.lta-ab.standards]
+exclude = { "fonts/" = "vendored Source Serif 4 and Source Sans 3 font files and their licences" }
+warn = { svg_dark = "Figure 1 is drawn for the consultation PDF (NOTE.pdf), on white; reported to the moderator", svg_390 = "Figure 1 is drawn for the consultation PDF (NOTE.pdf) at print size; reported to the moderator" }
+
+[pieces.lta-ab.rebuild]
+clean = "lta-ab/out lta-ab/figs"
+command = "bash lta-ab/run_all.sh"
