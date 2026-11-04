@@ -1,0 +1,19 @@
+{
+  "upload_type": "software",
+  "title": "COE analysis",
+  "creators": [
+    {
+      "name": "Ong, Jacob"
+    }
+  ],
+  "description": "Data and code behind three articles on Singapore's Certificate of Entitlement auction: \"The COE quota went up 62%. Prices tripled anyway.\", \"Perfect COE timing is worth $1,840. Nobody has it.\" and \"Two in three COE bidders win. It is not a lottery.\"",
+  "license": "mit",
+  "access_right": "open",
+  "keywords": [
+    "Singapore",
+    "COE",
+    "road pricing",
+    "public policy",
+    "registered report"
+  ]
+}

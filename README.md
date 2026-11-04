@@ -188,3 +188,32 @@ estimates.
 
 `notes/FINDINGS_EXOGENEITY.md` covers the strongest objection, which is that the quota is
 built from deregistrations and deregistration responds to price.
+
+---
+
+## How to cite
+
+Each published piece has its own folder. Cite the article for what it found, and the
+repository for the data and code.
+
+| Folder | Title as on the site | URL | Predictions sealed |
+|---|---|---|---|
+| root (`01_` to `10_`) | The COE quota went up 62%. Prices nearly quadrupled anyway. | https://jacobbuildmodel.github.io/economics/2026-08-22/ | Not sealed (written before the sealed-prediction method) |
+| root (`01_` to `10_`) | Perfect COE timing is worth $1,840. Nobody has it. | https://jacobbuildmodel.github.io/economics/2026-08-29/ | Not sealed (written before the sealed-prediction method) |
+| `win-rate/` | Two in three COE bids win. It is not a lottery. | https://jacobbuildmodel.github.io/economics/2026-09-05/ | Not sealed (written before the sealed-prediction method) |
+| `motorcycles/` | Motorcycle COEs fell 17%. Car COEs rose 43%. | https://jacobbuildmodel.github.io/economics/2026-09-12/ | Not sealed (written before the sealed-prediction method) |
+| `erp/` | Roads got about a quarter more crowded. Speeds held. | https://jacobbuildmodel.github.io/economics/2026-10-17/ | 26 September 2026 (`erp/THESIS.md`) |
+| `pwm/` | For low-paid gardeners, the floor became the pay | https://jacobbuildmodel.github.io/economics/2026-10-31/ | 28 September 2026 (`pwm/THESIS.md`) |
+
+A piece, for example:
+
+> Ong, J. (2026, October 17). Roads got about a quarter more crowded. Speeds held. *The New
+> Void Deck*. https://jacobbuildmodel.github.io/economics/2026-10-17/
+
+The repository:
+
+> Ong, J. (2026). *COE analysis* [Computer software].
+> https://github.com/jacobbuildmodel/coe-analysis
+
+`CITATION.cff` holds the same metadata, and GitHub's "Cite this repository" button turns it
+into APA and BibTeX. `.zenodo.json` carries it for a Zenodo archive of a future release.
