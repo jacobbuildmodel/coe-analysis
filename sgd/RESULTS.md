@@ -406,8 +406,8 @@ Written by `16_review.py` from `out/` and raw/s1c, raw/s8 (THESIS_ADDENDUM item 
 | A3_scored_JPY_s_real_pct0 | 15 | scored window: the Singapore dollar's real broad index, per cent, up, whole |
 | A3_scored_JPY_n_real_pct | 26.6 | scored window: the yen's real broad index, per cent, down |
 | A3_scored_JPY_n_real_pct0 | 27 | scored window: the yen's real broad index, per cent, down, whole |
-| A3_scored_JPY_tokyo_goods_pct | 32.1 | scored window: Tokyo goods per Singapore dollar (b - dln CPI_JP), per cent, up |
-| A3_scored_JPY_tokyo_goods_pct0 | 32 | scored window: Tokyo goods per Singapore dollar (b - dln CPI_JP), per cent, up, whole |
+| A3_scored_JPY_tokyo_goods_pct | 32.1 | scored window: goods per Singapore dollar at Japan's national consumer prices (b - dln CPI_JP), per cent, up |
+| A3_scored_JPY_tokyo_goods_pct0 | 32 | scored window: goods per Singapore dollar at Japan's national consumer prices (b - dln CPI_JP), per cent, up, whole |
 | A3_scored_JPY_S | 0.3146 | scored window, real: the Singapore dollar rising, share of the log change |
 | A3_scored_JPY_S_pct0 | 31 | scored window, real: the Singapore dollar rising, per cent of the log change, whole |
 | A3_scored_JPY_P | 0.7067 | scored window, real: the yen falling, share of the log change |
@@ -426,6 +426,10 @@ Written by `16_review.py` from `out/` and raw/s1c, raw/s8 (THESIS_ADDENDUM item 
 | A4_sgd_larger | 7 | of the windows where it rose, those where the Singapore dollar's own rise was larger |
 | A4_first_start_year | 2005 | first window starts (year) |
 | A4_last_end_year | 2026 | last window ends (year) |
+| A4_nonoverlap_windows | 4 | five-year windows that fit end to end without overlapping, August 2005 on |
+| A4_nonoverlap_rose | 2 | of those, windows in which the Singapore dollar rose against the yen |
+| A4_nonoverlap_yen_larger | 2 | of the non-overlapping windows where it rose, those where the yen's fall was the larger part |
+| A4_yen_larger_runs | 3 | runs of consecutive windows in which the yen's fall was the larger part |
 
 ### review_a5_t7.csv
 

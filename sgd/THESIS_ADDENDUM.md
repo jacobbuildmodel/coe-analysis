@@ -487,3 +487,99 @@ wording only.
 wording only.
 
 - **"Yardstick" reworded (site Vale rule Site.Jargon).** Article line 94 now reads "depended on what it was measured against"; FOR_RESEARCHERS A1 heading reads "reference currency", and its notes read "reference" and "the choice of reference". No number changed. md5, 2026-11-14.md: f386b95af10efc3fd8100a95d75d42d9 -> 89fdd1eed106d42e3987fe4e6bb4b46f; FOR_RESEARCHERS.md: 06301df82da33d7c7a05dad19a442861 -> c13530cb0d61376ce4539fce9b40157d.
+
+## 11. The results note, and the charts, keys and researchers' page brought into line with it (4 November 2026)
+
+The article is now a short results note, published on 14 November 2026. It
+passed a checker truth pass, a robustness table and a consequence check, a
+wording review and two outside rounds; Jacob approved its title on 4
+November. Everything below was added after outside review, is not sealed and
+is not scored. No sealed file changed: THESIS.md (8acdcf79b52383b9cee21cdf2e973dc0),
+SEAL_MANIFEST.md, 11_tests.py and `out/tests.csv` (8f311f1ec47b811824f84d36bdbf4801)
+are as they were.
+
+- **The article (commit 43ffe39, placed by the WEBSITE moderator).**
+  `2026-11-14.md` is replaced by the approved results note r5, titled
+  "2021-25: the yen fell further than the Singapore dollar rose". Not edited
+  here.
+  - md5: 89fdd1eed106d42e3987fe4e6bb4b46f -> 0ce617a8e34eca274fabaee98a34aace
+- **`12_figures.py`, chart wording.** Presentation only; no SVG edited by
+  hand. The cause-like "own" and the absolute "all" are gone from the chart
+  wording. Chart 3 is unchanged.
+  - Chart 1, title: "Yen: mostly the yen falling against its trading
+    partners. Ringgit: mostly the Singapore dollar rising against its trading
+    partners." (the SURVIVE and FAIL branches; the other branches unchanged).
+  - Chart 1, caption: "the Singapore dollar against its trading partners (BIS
+    broad index)" and "the other currency against its trading partners (BIS
+    broad index)".
+  - Chart 2, caption: "each bar is how much a currency's value against its
+    trading partners (BIS broad index) typically moved in a month".
+  - Chart 4, title: "In 39 of the 46 overlapping five-year stretches when the
+    Singapore dollar gained on the yen, the yen's fall was the larger part".
+  - Chart 4, legend: "Singapore dollar's rise", "Yen's fall".
+  - Chart 4, caption: "The windows overlap: only four five-year stretches fit
+    end to end without overlapping." (the count read from
+    `A4_nonoverlap_windows`); "Blue: the Singapore dollar's rise against its
+    trading partners ... Grey: the yen's fall against its trading partners".
+  - md5: f785232aed80b6b1ee343ef41fce830e -> 0e6bfbcd1e103477553519836d574e0e
+  - md5, figs/sgd_chart1_split.svg: 11a36cebf01e23ed484f29a14a8aee90 -> d8b45e0f37ade3fc670a64c3a77c2174
+  - md5, figs/sgd_chart2_steady.svg: 77f2ea041862e4ddbbde9c9d154eb74c -> cd38477aa18b173ce9f0977db84dbee7
+  - md5, figs/sgd_chart4_rolling.svg: 4911204aa8c3e4940980941e3389d1af -> 95106d29ae893bde595d615934ed149b
+  - figs/sgd_chart3_path.svg unchanged: da66e8cbfa2a72a3e65d25013e614968
+- **`16_review.py`.**
+  - (a) The meaning of `A3_scored_JPY_tokyo_goods_pct` and `_pct0` is now
+    "goods per Singapore dollar at Japan's national consumer prices (b - dln
+    CPI_JP)". The key names stay; the values (32.1, 32) do not change.
+  - (b) Four A4 keys: `A4_nonoverlap_windows` 4 (five-year windows that fit
+    end to end, from August 2005: every 20th window), `A4_nonoverlap_rose` 2,
+    `A4_nonoverlap_yen_larger` 2, `A4_yen_larger_runs` 3 (runs of consecutive
+    windows in which the yen's fall was the larger part).
+  - (c) `out/intervals.csv` is not rewritten. Recomputed from the committed
+    file, rho_g is 0.1144, D 0.3509 and the finer-coding D 0.3443, against
+    the sealed 0.1127, 0.3526 and 0.3460. Six decimals give the same 0.1144,
+    0.3509 and 0.3443, so they change nothing. The cause: some interval means
+    of growth that print alike differ in their last binary digit in the run
+    (1.5999999999999999 against 1.6, for example), so the sealed run ranks
+    them apart, while the printed file ties them. Only full precision (17
+    significant digits) reproduces the sealed values, and because
+    `16_review.py` reads this file for A5, it would move `A5_block4_lo` from
+    0.09 to 0.10 and `A5_block8_lo` from 0.14 to 0.15. RESULTS values may not
+    change, so the file stays as the sealed `11_tests.py` writes it, and the
+    researchers' page says in one line why the third decimals come from
+    unrounded values.
+  - md5: 3a64cd4205cb6df083d29ce14d7d792e -> 9149d86e4aeb2374736a96abce3844cb
+  - md5, out/review_a3_real.csv: fd3e6bc1f06654311818dcf7827af9ab -> 2aa52bd888d109004aea86cee92a28ec
+  - md5, out/review_a4_rolling.csv: 98f3b4b97cc2b4c0319bba0b6d2d2f98 -> 5dd06ab6c87444548215ebfaa24b6e8e
+  - out/intervals.csv unchanged: e174fe5c92264708b46bdbb0fe47bd3b
+- **`RESULTS.md` and `number_manifest.csv`, regenerated.** RESULTS changes in
+  the two A3 meanings and the four new A4 rows only; the manifest, which has
+  no meaning column, in the four A4 rows only. No printed number changed.
+  - md5, RESULTS.md: 6643d15edb50cc92eb0256152018604f -> 22807d6a6030d716c5b7d9fc17fbdb9a
+  - md5, number_manifest.csv: 1e6ce6f42f0cc98310904c82ec1d237c -> 78639b4e53e997f7e0217a8170d3af54
+- **`FOR_RESEARCHERS.md`.** The link text is the new title. Every sentence
+  that ranked the two decades on one measure now says the long split ranks
+  neither part (|R| 0.0782 is larger than the gap between S 0.5724 and P
+  0.5058) and that the other yardsticks disagree with each other: without
+  the other currency in each basket, S 0.5332, P 0.4924, R -0.0256, the
+  Singapore dollar's part first; against the US dollar, 57 per cent against
+  43, and on the sealed real indices, P 1.0349 against S 0.4740, the yen's
+  part first (section 5, its sensitivity table, A1 and A4). The page prints
+  the manifest's four-decimal values, not three-decimal forms, so that
+  `14_manifest.py --check` verifies each one. "Own rise" and "own fall" now
+  read "rise" and "fall against its trading partners" (and, in A1's
+  US-dollar formula, "move" and "fall against the US dollar"). "Tokyo goods"
+  now reads "goods at Japan's national consumer prices". A4 adds one
+  sentence on the four non-overlapping windows and the three runs, and
+  section 3 the one line on unrounded values. No number was removed.
+  - md5: c13530cb0d61376ce4539fce9b40157d -> fbcba3b7b017378bb154d073b44c98ea
+- **`CHECKSUMS.md5`**, regenerated last with `python3 sgd/14_manifest.py`.
+  Before: 2eeb3399cd6bfa9ed9f6a3752aff5265. It records this file's md5, so
+  its own after-md5, and this file's, are in the pull request, not here.
+  THESIS_ADDENDUM.md before this item: 8d211a41ebc79d86ad95de8eaf8c0c6e.
+- **Checks.** `bash sgd/run_all.sh`: the synthetic suite, steps 10 to 16, 56
+  numbers and outcomes reproduced with 0 differing, the four real charts and
+  the chart 1 to 3 fixtures of four outcome branches passing
+  `tools/check_figure_overflow.py`, and `14_manifest.py --check` with every
+  checksum and manifest number verified.
+
+No sealed number, outcome, threshold or verdict-rule wording changed.

@@ -6,3 +6,7 @@ A4_yen_larger,39,39,"of the windows where it rose, those where the yen's own fal
 A4_sgd_larger,7,7,"of the windows where it rose, those where the Singapore dollar's own rise was larger"
 A4_first_start_year,2005,2005,first window starts (year)
 A4_last_end_year,2026,2026,last window ends (year)
+A4_nonoverlap_windows,4,4,"five-year windows that fit end to end without overlapping, August 2005 on"
+A4_nonoverlap_rose,2,2,"of those, windows in which the Singapore dollar rose against the yen"
+A4_nonoverlap_yen_larger,2,2,"of the non-overlapping windows where it rose, those where the yen's fall was the larger part"
+A4_yen_larger_runs,3,3,runs of consecutive windows in which the yen's fall was the larger part
