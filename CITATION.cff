@@ -11,10 +11,11 @@ authors:
 repository-code: "https://github.com/jacobbuildmodel/coe-analysis"
 license: MIT
 abstract: >-
-  Data and code behind three articles on Singapore's Certificate of
-  Entitlement auction: "The COE quota went up 62%. Prices tripled anyway.",
-  "Perfect COE timing is worth $1,840. Nobody has it." and "Two in three COE
-  bidders win. It is not a lottery."
+  Data and code behind the articles on The New Void Deck
+  (https://jacobbuildmodel.github.io): Singapore's favourite arguments, tested
+  with public data. Each piece has its own folder; the How to cite section of
+  the README lists them with their titles, addresses and the dates their
+  predictions were sealed.
 keywords:
   - Singapore
   - COE
