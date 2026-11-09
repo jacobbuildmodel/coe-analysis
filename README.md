@@ -2,9 +2,9 @@
 
 Data and code behind three articles on Singapore's Certificate of Entitlement auction:
 
-- **The COE quota went up 62%. Prices tripled anyway.**
+- **The COE quota went up 62%. Prices nearly quadrupled anyway.**
 - **Perfect COE timing is worth $1,840. Nobody has it.**
-- **Two in three COE bidders win. It is not a lottery.** (`win-rate/`)
+- **Two in three COE bids win. It is not a lottery.** (`win-rate/`)
 
 Running the scripts in the order below reproduces every figure in every article, including
 all five SVGs, from the raw file as downloaded. Nothing is hand-entered downstream of
@@ -101,9 +101,9 @@ in the subdirectory in numerical order.
 
 | Directory | Scripts | Question | Article |
 |---|---|---|---|
-| `win-rate/` | `11_winrate.py`, `12_figures.py` | What share of COE bids actually succeed, and does the win rate or the price do the rationing? | Two in three COE bidders win. It is not a lottery. |
-| `erp/` | `10_load.py` to `15_reproduce.py`, run by `erp/run_all.sh` | COE or ERP: which one actually keeps Singapore's roads moving? Reads its own files in `erp/raw/`, not `analysis.csv`; tests sealed in `erp/THESIS.md` before the data was opened. | In draft |
-| `pwm/` | `10_load.py` to `15_reproduce.py`, run by `pwm/run_all.sh` | Minimum wage or the Progressive Wage Model: which actually lifts Singapore's lowest pay? Reads its own files in `pwm/raw/`, not `analysis.csv`; tests sealed in `pwm/THESIS.md` before the data was opened. | In draft |
+| `win-rate/` | `11_winrate.py`, `12_figures.py` | What share of COE bids actually succeed, and does the win rate or the price do the rationing? | Two in three COE bids win. It is not a lottery. |
+| `erp/` | `10_load.py` to `15_reproduce.py`, run by `erp/run_all.sh` | COE or ERP: which one actually keeps Singapore's roads moving? Reads its own files in `erp/raw/`, not `analysis.csv`; tests sealed in `erp/THESIS.md` before the data was opened. | Published 17 Oct 2026 |
+| `pwm/` | `10_load.py` to `15_reproduce.py`, run by `pwm/run_all.sh` | Minimum wage or the Progressive Wage Model: which actually lifts Singapore's lowest pay? Reads its own files in `pwm/raw/`, not `analysis.csv`; tests sealed in `pwm/THESIS.md` before the data was opened. | Published 31 Oct 2026 |
 
 One raw file and one cleaning step feed every analysis. A second repository would mean a
 second copy of `raw.csv` to keep identical, and the two would drift the first time the
@@ -188,3 +188,35 @@ estimates.
 
 `notes/FINDINGS_EXOGENEITY.md` covers the strongest objection, which is that the quota is
 built from deregistrations and deregistration responds to price.
+
+---
+
+## How to cite
+
+Each published piece has its own folder. Cite the article for what it found, and the
+repository for the data and code.
+
+| Folder | Title as on the site | URL | Predictions sealed |
+|---|---|---|---|
+| root (`01_` to `10_`) | The COE quota went up 62%. Prices nearly quadrupled anyway. | https://jacobbuildmodel.github.io/economics/2026-08-22/ | Not sealed (written before the sealed-prediction method) |
+| root (`01_` to `10_`) | Perfect COE timing is worth $1,840. Nobody has it. | https://jacobbuildmodel.github.io/economics/2026-08-29/ | Not sealed (written before the sealed-prediction method) |
+| `win-rate/` | Two in three COE bids win. It is not a lottery. | https://jacobbuildmodel.github.io/economics/2026-09-05/ | Not sealed (written before the sealed-prediction method) |
+| `motorcycles/` | Motorcycle COEs fell 17%. Car COEs rose 43%. | https://jacobbuildmodel.github.io/economics/2026-09-12/ | Not sealed (written before the sealed-prediction method) |
+| `erp/` | Roads got about a quarter more crowded. Speeds held. | https://jacobbuildmodel.github.io/economics/2026-10-17/ | 26 September 2026 (`erp/THESIS.md`) |
+| `pwm/` | For low-paid gardeners, the floor became the pay | https://jacobbuildmodel.github.io/economics/2026-10-31/ | 28 September 2026 (`pwm/THESIS.md`) |
+| `lta-ab/` | Merging COE Categories A and B: LTA's Proposal on One Page | https://jacobbuildmodel.github.io/decisions/lta-coe-categories/ | No predictions (an evidence note for LTA's consultation) |
+
+Code is under the MIT licence (LICENSE); `raw.csv` is under the Singapore Open Data Licence (DATA_LICENCE.md).
+
+A piece, for example:
+
+> Ong, J. (2026, October 17). Roads got about a quarter more crowded. Speeds held. *The New
+> Void Deck*. https://jacobbuildmodel.github.io/economics/2026-10-17/
+
+The repository:
+
+> Ong, J. (2026). *COE analysis* [Computer software].
+> https://github.com/jacobbuildmodel/coe-analysis
+
+`CITATION.cff` holds the same metadata, and GitHub's "Cite this repository" button turns it
+into APA and BibTeX. `.zenodo.json` carries it for a Zenodo archive of a future release.

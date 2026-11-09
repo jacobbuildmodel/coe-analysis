@@ -1,0 +1,19 @@
+{
+  "upload_type": "software",
+  "title": "COE analysis",
+  "creators": [
+    {
+      "name": "Ong, Jacob"
+    }
+  ],
+  "description": "Data and code behind the articles on The New Void Deck (https://jacobbuildmodel.github.io): Singapore's favourite arguments, tested with public data. Each piece has its own folder; the How to cite section of the README lists them with their titles, addresses and the dates their predictions were sealed.",
+  "license": "mit",
+  "access_right": "open",
+  "keywords": [
+    "Singapore",
+    "COE",
+    "road pricing",
+    "public policy",
+    "registered report"
+  ]
+}

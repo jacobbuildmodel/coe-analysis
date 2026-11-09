@@ -1,0 +1,24 @@
+# Citation metadata for this repository. GitHub reads this file for the
+# "Cite this repository" button. Zenodo reads .zenodo.json instead, which
+# carries the same metadata. Keep the two in step.
+cff-version: 1.2.0
+message: "If you use this data or code, please cite it as below."
+type: software
+title: "COE analysis"
+authors:
+  - family-names: Ong
+    given-names: Jacob
+repository-code: "https://github.com/jacobbuildmodel/coe-analysis"
+license: MIT
+abstract: >-
+  Data and code behind the articles on The New Void Deck
+  (https://jacobbuildmodel.github.io): Singapore's favourite arguments, tested
+  with public data. Each piece has its own folder; the How to cite section of
+  the README lists them with their titles, addresses and the dates their
+  predictions were sealed.
+keywords:
+  - Singapore
+  - COE
+  - road pricing
+  - public policy
+  - registered report
