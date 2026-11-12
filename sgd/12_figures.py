@@ -129,13 +129,13 @@ def num(T, k):
 
 def clause1(T, t, name):
     """One short clause per currency (THESIS_ADDENDUM item 9), for example
-    "Yen: mostly the yen's own fall"."""
+    "Yen: mostly the yen falling against its trading partners"."""
     o, why = T.get(f"{t}_outcome"), T.get(f"{t}_reason", "")
     lead = name.capitalize() + ": "
     if o == "SURVIVE":
-        return lead + f"mostly the {name}'s own fall"
+        return lead + f"mostly the {name} falling against its trading partners"
     if o == "FAIL":
-        return lead + "mostly the Singapore dollar's own rise"
+        return lead + "mostly the Singapore dollar rising against its trading partners"
     if o == "INCONCLUSIVE":
         return lead + "neither side did most"
     if why.startswith("premise"):
@@ -154,8 +154,9 @@ def chart1(T, figs):
     item 4). The shares stay in the text."""
     cap = ("How to read: each bar is a move in per cent, from the average of January to March 2021 to "
            "the average of October to December 2025. Blue, \"Singapore dollar vs all\": the Singapore "
-           "dollar against all its trading partners. Grey, \"yen vs all\" or \"ringgit vs all\": the "
-           "other currency against its own trading partners. Outlined, \"Singapore dollar vs yen\" or "
+           "dollar against its trading partners (BIS broad index). Grey, \"yen vs all\" or \"ringgit vs "
+           "all\": the other currency against its trading partners (BIS broad index). Outlined, "
+           "\"Singapore dollar vs yen\" or "
            "\"vs ringgit\": the Singapore dollar against that one currency. The moves compound "
            "rather than add, and a remainder that neither \"vs all\" move explains makes up the "
            "difference. "
@@ -254,8 +255,8 @@ def chart2(T, out, figs):
     post = os.path.join(out, "postresults.csv")
     printed = {r["key"]: r["printed"] for r in L.read_csv(post)} if os.path.exists(post) else {}
     labels = {a: printed[f"T4_{a}_sd_pct"] + "%" for a in LABELLED2 if f"T4_{a}_sd_pct" in printed}
-    cap = ("How to read: each bar is how much a currency's value against all its trading partners "
-           "typically moved in a month, August 2005 on, in per cent. Shorter is steadier; the "
+    cap = ("How to read: each bar is how much a currency's value against its trading partners "
+           "(BIS broad index) typically moved in a month, August 2005 on, in per cent. Shorter is steadier; the "
            "Singapore dollar is in blue.")
     muted = T.get("T4_outcome") == "NOT SCORED"
     if muted:
@@ -385,10 +386,11 @@ def title4(post):
     rose, yen = int(post["A4_rose"]), int(post["A4_yen_larger"])
     if rose == 0:
         return "The Singapore dollar did not gain on the yen in any five-year stretch"
-    who = "the yen's own fall" if 2 * yen > rose else "the Singapore dollar's own rise"
+    who = "the yen's fall" if 2 * yen > rose else "the Singapore dollar's rise"
     k = yen if 2 * yen > rose else rose - yen
+    # The count is of overlapping windows, and the title says so.
     count = f"all {rose}" if k == rose else f"{k} of the {rose}"
-    return (f"In {count} five-year stretches when the Singapore dollar gained on the yen, "
+    return (f"In {count} overlapping five-year stretches when the Singapore dollar gained on the yen, "
             f"{who} was the larger part")
 
 
@@ -404,10 +406,13 @@ def chart4(out, figs):
     rows = L.read_csv(path)
     post = {r["key"]: r["printed"] for r in L.read_csv(summ)}
     LO, HI, ST = -50, 150, 50
+    n_apart = int(post.get("A4_nonoverlap_windows", "0"))
+    apart = (f" The windows overlap: only {WORDS.get(n_apart, n_apart)} five-year stretches fit end to end "
+             "without overlapping." if n_apart else "")
     cap = ("How to read: each point is one five-year window, placed at the month it ends; windows "
-           "start every three months from August 2005, and each end is a three-month average. Blue: "
-           "the Singapore dollar's own rise against all its trading partners, as a share of its rise "
-           "against the yen. Grey: the yen's own fall against all of its partners, as a share of the "
+           "start every three months from August 2005, and each end is a three-month average." + apart +
+           " Blue: the Singapore dollar's rise against its trading partners, as a share of its rise "
+           "against the yen. Grey: the yen's fall against its trading partners, as a share of the "
            "same rise. The shares are of log changes; with the remainder they add to 100. The dashed "
            "line marks half. Shaded: "
            "windows in which the Singapore dollar did not rise against the yen, where no share is "
@@ -422,7 +427,7 @@ def chart4(out, figs):
     X = lambda i: LX + (RX - LX) * i / max(1, len(ends) - 1)
     # legend
     ly = y + 6
-    for i, (lab, col) in enumerate((("Singapore dollar's own rise", SUBJ), ("Yen's own fall", CTX))):
+    for i, (lab, col) in enumerate((("Singapore dollar's rise", SUBJ), ("Yen's fall", CTX))):
         x0 = 16 + i * 250
         s.append(f'<line x1="{x0}" x2="{x0 + 22}" y1="{ly:.1f}" y2="{ly:.1f}" stroke="{col}" stroke-width="3"/>')
         text(s, x0 + 28, ly + 5, lab, 14, INK)

@@ -11,7 +11,7 @@ c4134a08bde7729f350862b40becddbb  04_mps_coding.py
 9d9099e0b287ec27e06803301819b907  10_load.py
 72ce4aef5b1f459163823d2308664f8c  11_tests.py
 436f2967fba5a64fd8cfb44cec169dee  11b_postresults.py
-f785232aed80b6b1ee343ef41fce830e  12_figures.py
+0e6bfbcd1e103477553519836d574e0e  12_figures.py
 c80b6111ee90e52ac6f3cd9be2a47a1b  13_results.py
 9c17a563ed1d44010b649f425e3814ae  14_manifest.py
 47cea78053dfe319bc24e627ce4724d8  15_reproduce.py
@@ -19,12 +19,12 @@ c80b6111ee90e52ac6f3cd9be2a47a1b  13_results.py
 adb189f01d33697d952821ff28e5ed9e  requirements.txt
 4048323aeab9db33f65f86c841313ae1  tests/make_fixtures.py
 db3c95c08109f0f68176d082a24055aa  tests/test_pipeline.py
-3a64cd4205cb6df083d29ce14d7d792e  16_review.py
+9149d86e4aeb2374736a96abce3844cb  16_review.py
 8acdcf79b52383b9cee21cdf2e973dc0  THESIS.md
 535bab42fad7156a3a579a05275cc860  office/MPS_CODING.csv
-8d211a41ebc79d86ad95de8eaf8c0c6e  THESIS_ADDENDUM.md
-89fdd1eed106d42e3987fe4e6bb4b46f  2026-11-14.md
-c13530cb0d61376ce4539fce9b40157d  FOR_RESEARCHERS.md
+e479b14be846d8ee7d67331ff8b8ff4c  THESIS_ADDENDUM.md
+0ce617a8e34eca274fabaee98a34aace  2026-11-14.md
+fbcba3b7b017378bb154d073b44c98ea  FOR_RESEARCHERS.md
 e3467448791abd778b12b06b482bca79  raw/s1_bis_eer_neer_broad_monthly.csv
 d4c2f2770353fbda55f2493c43b58272  raw/s1b_bis_eer_reer_broad_monthly.csv
 1f740cf8c1d3832c5c9e13307cd0e4de  raw/s2_bis_xru_usd_monthly_avg.csv
@@ -39,10 +39,10 @@ a6ef0f94ae00a08f8f789add4cbe58c9  raw/s7a_singstat_cpi_monthly_M213751.json
 04f77fc1cb1a8689a52281486f46caf1  raw/RETRIEVED.txt
 
 # OUTPUTS
-11a36cebf01e23ed484f29a14a8aee90  figs/sgd_chart1_split.svg
-77f2ea041862e4ddbbde9c9d154eb74c  figs/sgd_chart2_steady.svg
+d8b45e0f37ade3fc670a64c3a77c2174  figs/sgd_chart1_split.svg
+cd38477aa18b173ce9f0977db84dbee7  figs/sgd_chart2_steady.svg
 da66e8cbfa2a72a3e65d25013e614968  figs/sgd_chart3_path.svg
-4911204aa8c3e4940980941e3389d1af  figs/sgd_chart4_rolling.svg
+95106d29ae893bde595d615934ed149b  figs/sgd_chart4_rolling.svg
 5bc878e3277768d459cb98224440d5ff  out/coverage.csv
 b381fb4cd9bacd2137e340b99382c9f9  out/cpi.csv
 f63f76c6abfda434fb03174abd225ae8  out/gdp.csv
@@ -54,8 +54,8 @@ e07f876ab7c7a71c3389a78e5eaac535  out/mps.csv
 bf5bea35154d9f7c4abb64f32a5363c2  out/reer.csv
 b7b03f891428c8dfde6d87b0008b43bc  out/review_a1_usd.csv
 bb2b1f65e2a33f8ca399a628aa37ed2e  out/review_a2_expair.csv
-fd3e6bc1f06654311818dcf7827af9ab  out/review_a3_real.csv
-98f3b4b97cc2b4c0319bba0b6d2d2f98  out/review_a4_rolling.csv
+2aa52bd888d109004aea86cee92a28ec  out/review_a3_real.csv
+5dd06ab6c87444548215ebfaa24b6e8e  out/review_a4_rolling.csv
 f4e5ab581db899a09696ff13fc2f1dbe  out/review_a5_t7.csv
 b66eb299f5dfec1ba9b5140d45d353c0  out/review_a6_context.csv
 5821c697dbce7799bde44e74a7a5666f  out/review_article.csv
@@ -65,5 +65,5 @@ b66eb299f5dfec1ba9b5140d45d353c0  out/review_a6_context.csv
 8f311f1ec47b811824f84d36bdbf4801  out/tests.csv
 e7dc854987a70e98bc1c645265275fa1  out/usd.csv
 f125b32d73ca881c406647df3ee3a520  out/usd_eop.csv
-6643d15edb50cc92eb0256152018604f  RESULTS.md
-1e6ce6f42f0cc98310904c82ec1d237c  number_manifest.csv
+22807d6a6030d716c5b7d9fc17fbdb9a  RESULTS.md
+78639b4e53e997f7e0217a8170d3af54  number_manifest.csv

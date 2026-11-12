@@ -214,6 +214,10 @@ A4_yen_larger,39,16_review.py,out/review_a4_rolling.csv,A4_yen_larger
 A4_sgd_larger,7,16_review.py,out/review_a4_rolling.csv,A4_sgd_larger
 A4_first_start_year,2005,16_review.py,out/review_a4_rolling.csv,A4_first_start_year
 A4_last_end_year,2026,16_review.py,out/review_a4_rolling.csv,A4_last_end_year
+A4_nonoverlap_windows,4,16_review.py,out/review_a4_rolling.csv,A4_nonoverlap_windows
+A4_nonoverlap_rose,2,16_review.py,out/review_a4_rolling.csv,A4_nonoverlap_rose
+A4_nonoverlap_yen_larger,2,16_review.py,out/review_a4_rolling.csv,A4_nonoverlap_yen_larger
+A4_yen_larger_runs,3,16_review.py,out/review_a4_rolling.csv,A4_yen_larger_runs
 A5_block2_lo,0.10,16_review.py,out/review_a5_t7.csv,A5_block2_lo
 A5_block2_hi,0.63,16_review.py,out/review_a5_t7.csv,A5_block2_hi
 A5_block4_lo,0.09,16_review.py,out/review_a5_t7.csv,A5_block4_lo

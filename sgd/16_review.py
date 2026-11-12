@@ -21,7 +21,8 @@ the number manifest):
                              b_real = b + dln CPI_SG - dln CPI_JP, against the
                              BIS real broad indices.
   out/review_a4_rolling.csv  A4. Rolling five-year windows for the yen: the
-                             counts.
+                             counts, the windows that fit end to end without
+                             overlapping, and the runs of yen-larger windows.
   out/review_a5_t7.csv       A5. T7: a moving-block bootstrap for D; growth
                              and CPI inflation led by 1 and 2 quarters; the
                              effective sample size.
@@ -208,9 +209,11 @@ def a3(D, W, cpi_jp):
         R.pct(k + "_b_real", br, f"{w} window: the Singapore dollar against the yen, real")
         R.pct(k + "_s_real", s_r, f"{w} window: the Singapore dollar's real broad index")
         R.pct(k + "_n_real", n_r, f"{w} window: the yen's real broad index")
-        # A traveller's figure (round 5): Tokyo goods per Singapore dollar,
-        # the nominal cross deflated by Japan's prices alone.
-        R.pct(k + "_tokyo_goods", sp["b"] - jp, f"{w} window: Tokyo goods per Singapore dollar (b - dln CPI_JP)")
+        # A traveller's figure (round 5): goods per Singapore dollar at
+        # Japan's national consumer prices, the nominal cross deflated by
+        # Japan's prices alone. The key keeps its round-5 name.
+        R.pct(k + "_tokyo_goods", sp["b"] - jp,
+              f"{w} window: goods per Singapore dollar at Japan's national consumer prices (b - dln CPI_JP)")
         if br > 0:
             R.share(k + "_S", s_r / br, f"{w} window, real: the Singapore dollar rising")
             R.share(k + "_P", -n_r / br, f"{w} window, real: the yen falling")
@@ -251,6 +254,19 @@ def a4(D, out):
     if rows:
         R.add("A4_first_start_year", int(rows[0]["start"][:4]), "{:d}", "first window starts (year)")
         R.add("A4_last_end_year", int(rows[-1]["end"][:4]), "{:d}", "last window ends (year)")
+    # The windows overlap (consecutive ones share 57 of 60 months). The ones
+    # that fit end to end, from August 2005: every (60 / 3)th window.
+    step = ROLL_MONTHS // ROLL_STEP
+    apart = rows[::step]
+    R.add("A4_nonoverlap_windows", len(apart), "{:d}",
+          "five-year windows that fit end to end without overlapping, August 2005 on")
+    R.add("A4_nonoverlap_rose", sum(r["rose"] for r in apart), "{:d}",
+          "of those, windows in which the Singapore dollar rose against the yen")
+    R.add("A4_nonoverlap_yen_larger", sum(r["yen_larger"] for r in apart), "{:d}",
+          "of the non-overlapping windows where it rose, those where the yen's fall was the larger part")
+    runs = sum(1 for i, r in enumerate(rows) if r["yen_larger"] and (i == 0 or not rows[i - 1]["yen_larger"]))
+    R.add("A4_yen_larger_runs", runs, "{:d}",
+          "runs of consecutive windows in which the yen's fall was the larger part")
     return R
 
 
