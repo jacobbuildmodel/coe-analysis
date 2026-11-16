@@ -1,14 +1,30 @@
 # COE analysis
 
-Data and code behind three articles on Singapore's Certificate of Entitlement auction:
+Data and code behind the pieces on [The New Void Deck](https://jacobbuildmodel.github.io)
+that started from Singapore's Certificate of Entitlement (COE) auction. Later pieces on road
+pricing, low-paid wages and the exchange rate share the repository. One line per piece: its
+article, then where its code is.
 
-- **The COE quota went up 62%. Prices nearly quadrupled anyway.**
-- **Perfect COE timing is worth $1,840. Nobody has it.**
-- **Two in three COE bids win. It is not a lottery.** (`win-rate/`)
+- [The COE quota went up 62%. Prices nearly quadrupled anyway.](https://jacobbuildmodel.github.io/economics/2026-08-22/)
+  Code: the numbered scripts `01_` to `10_` in this folder.
+- [Perfect COE timing is worth $1,840. Nobody has it.](https://jacobbuildmodel.github.io/economics/2026-08-29/)
+  Code: the same numbered scripts.
+- [Two in three COE bids win. It is not a lottery.](https://jacobbuildmodel.github.io/economics/2026-09-05/)
+  Folder: [`win-rate/`](win-rate/).
+- [Motorcycle COEs fell 17%. Car COEs rose 43%.](https://jacobbuildmodel.github.io/economics/2026-09-12/)
+  Folder: [`motorcycles/`](motorcycles/).
+- [Roads got about a quarter more crowded. Speeds held.](https://jacobbuildmodel.github.io/economics/2026-10-17/)
+  Folder: [`erp/`](erp/).
+- [For low-paid gardeners, the floor became the pay](https://jacobbuildmodel.github.io/economics/2026-10-31/)
+  Folder: [`pwm/`](pwm/).
+- [2021-25: the yen fell further than the Singapore dollar rose](https://jacobbuildmodel.github.io/economics/2026-11-14/)
+  Folder: [`sgd/`](sgd/).
+- [Merging COE Categories A and B: LTA's Proposal on One Page](https://jacobbuildmodel.github.io/decisions/lta-coe-categories/)
+  An evidence note for LTA's consultation, not an article. Folder: [`lta-ab/`](lta-ab/).
 
-Running the scripts in the order below reproduces every figure in every article, including
-all five SVGs, from the raw file as downloaded. Nothing is hand-entered downstream of
-`raw.csv`.
+Running the scripts in the order below reproduces every figure in the first three articles,
+including all five SVGs, from the raw file as downloaded. Nothing is hand-entered downstream
+of `raw.csv`. The later pieces sit in their own folders.
 
 ---
 
@@ -204,9 +220,8 @@ repository for the data and code.
 | `motorcycles/` | Motorcycle COEs fell 17%. Car COEs rose 43%. | https://jacobbuildmodel.github.io/economics/2026-09-12/ | Not sealed (written before the sealed-prediction method) |
 | `erp/` | Roads got about a quarter more crowded. Speeds held. | https://jacobbuildmodel.github.io/economics/2026-10-17/ | 26 September 2026 (`erp/THESIS.md`) |
 | `pwm/` | For low-paid gardeners, the floor became the pay | https://jacobbuildmodel.github.io/economics/2026-10-31/ | 28 September 2026 (`pwm/THESIS.md`) |
+| `sgd/` | 2021-25: the yen fell further than the Singapore dollar rose | https://jacobbuildmodel.github.io/economics/2026-11-14/ | 3 October 2026 (`sgd/THESIS.md`) |
 | `lta-ab/` | Merging COE Categories A and B: LTA's Proposal on One Page | https://jacobbuildmodel.github.io/decisions/lta-coe-categories/ | No predictions (an evidence note for LTA's consultation) |
-
-Code is under the MIT licence (LICENSE); `raw.csv` is under the Singapore Open Data Licence (DATA_LICENCE.md).
 
 A piece, for example:
 
@@ -220,3 +235,18 @@ The repository:
 
 `CITATION.cff` holds the same metadata, and GitHub's "Cite this repository" button turns it
 into APA and BibTeX. `.zenodo.json` carries it for a Zenodo archive of a future release.
+
+---
+
+## Licence
+
+- **Code** (the `.py` and `.sh` scripts) is under the MIT licence: see `LICENSE`.
+- **Text and figures** (the articles, write-ups and charts) are under
+  [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0).
+  Credit "Jacob Ong, The New Void Deck". Figures built from `raw.csv` also carry the
+  attribution notice in `DATA_LICENCE.md`.
+- **Data and third-party files** are covered by neither licence. `raw.csv` comes from
+  data.gov.sg under the Singapore Open Data Licence version 1.0; `DATA_LICENCE.md` has the
+  attribution wording, which also applies to `analysis.csv`. Other raw files, saved copies
+  of government documents and web pages, and vendored fonts keep their sources' own terms.
+  Where a folder has its own `raw/` folder, `raw/RETRIEVED.txt` records where each file came from.
