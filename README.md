@@ -23,7 +23,7 @@ article, then where its code is.
   An evidence note, not an article. Folder: [`lta-ab/`](lta-ab/).
 
 Running the scripts in the order below reproduces every figure in the first three articles,
-including all five SVGs, from the raw file as downloaded. Nothing is hand-entered downstream
+including all five SVGs (four in `figs/`, one in `win-rate/figs/`), from the raw file as downloaded. Nothing is hand-entered downstream
 of `raw.csv`. The later pieces sit in their own folders.
 
 ---
@@ -70,9 +70,9 @@ the row above.
 source file. If that assertion fires, the corrections are no longer needed and the article
 text about them needs updating.
 
-Five untouched records were spot-checked against published figures and match exactly:
-2023-10 exercise 2 Category E at 158,004; 2025-09 exercise 2 Category A at 119,003;
-2025-11 exercise 1 Category A at 110,002; 2010-02 exercise 1 Category A at 19,989; and the
+Five records were spot-checked against published figures and match exactly: four untouched
+ones (2023-10 exercise 2 Category E at 158,004; 2025-09 exercise 2 Category A at 119,003;
+2025-11 exercise 1 Category A at 110,002; 2010-02 exercise 1 Category A at 19,989) and the
 corrected 2010-01 Category D at 852.
 
 ### One loading trap
