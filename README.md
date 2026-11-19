@@ -1,14 +1,30 @@
 # COE analysis
 
-Data and code behind three articles on Singapore's Certificate of Entitlement auction:
+Data and code behind the pieces on [The New Void Deck](https://jacobbuildmodel.github.io)
+that started from Singapore's Certificate of Entitlement (COE) auction. Later pieces on road
+pricing, low-paid wages and the exchange rate share the repository. One line per piece: its
+article, then where its code is.
 
-- **The COE quota went up 62%. Prices nearly quadrupled anyway.**
-- **Perfect COE timing is worth $1,840. Nobody has it.**
-- **Two in three COE bids win. It is not a lottery.** (`win-rate/`)
+- [COE quota and premiums, 22 August 2026](https://jacobbuildmodel.github.io/economics/2026-08-22/)
+  Code: the numbered scripts `01_` to `10_` in this folder.
+- [COE bidding-round timing, 29 August 2026](https://jacobbuildmodel.github.io/economics/2026-08-29/)
+  Code: the same numbered scripts.
+- [COE win rates, 5 September 2026](https://jacobbuildmodel.github.io/economics/2026-09-05/)
+  Folder: [`win-rate/`](win-rate/).
+- [Motorcycle and car COE premiums, 12 September 2026](https://jacobbuildmodel.github.io/economics/2026-09-12/)
+  Folder: [`motorcycles/`](motorcycles/).
+- [COE, ERP and road crowding, 17 October 2026](https://jacobbuildmodel.github.io/economics/2026-10-17/)
+  Folder: [`erp/`](erp/).
+- [Low-paid wages and the Progressive Wage Model, 31 October 2026](https://jacobbuildmodel.github.io/economics/2026-10-31/)
+  Folder: [`pwm/`](pwm/).
+- [The Singapore dollar and the yen, 14 November 2026](https://jacobbuildmodel.github.io/economics/2026-11-14/)
+  Folder: [`sgd/`](sgd/).
+- [LTA's COE category consultation, 27 October 2026](https://jacobbuildmodel.github.io/decisions/lta-coe-categories/)
+  An evidence note, not an article. Folder: [`lta-ab/`](lta-ab/).
 
-Running the scripts in the order below reproduces every figure in every article, including
-all five SVGs, from the raw file as downloaded. Nothing is hand-entered downstream of
-`raw.csv`.
+Running the scripts in the order below reproduces every figure in the first three articles,
+including all five SVGs (four in `figs/`, one in `win-rate/figs/`), from the raw file as downloaded. Nothing is hand-entered downstream
+of `raw.csv`. The later pieces sit in their own folders.
 
 ---
 
@@ -54,9 +70,9 @@ the row above.
 source file. If that assertion fires, the corrections are no longer needed and the article
 text about them needs updating.
 
-Five untouched records were spot-checked against published figures and match exactly:
-2023-10 exercise 2 Category E at 158,004; 2025-09 exercise 2 Category A at 119,003;
-2025-11 exercise 1 Category A at 110,002; 2010-02 exercise 1 Category A at 19,989; and the
+Five records were spot-checked against published figures and match exactly: four untouched
+ones (2023-10 exercise 2 Category E at 158,004; 2025-09 exercise 2 Category A at 119,003;
+2025-11 exercise 1 Category A at 110,002; 2010-02 exercise 1 Category A at 19,989) and the
 corrected 2010-01 Category D at 852.
 
 ### One loading trap
@@ -92,18 +108,12 @@ Or one at a time, in this order. Every script reads and writes in the working di
 `02` must run before anything numbered higher. `03` through `10` are independent of each
 other and can run in any order.
 
-### Analyses in subdirectories
+### Later pieces
 
-Later analyses live in their own folders, numbered continuously so run order across the whole
-repository stays unambiguous. Each has its own README and its own checksums, and each reads
-`analysis.csv` produced by `02_clean.py` in this directory. Run `02` first, then the scripts
-in the subdirectory in numerical order.
-
-| Directory | Scripts | Question | Article |
-|---|---|---|---|
-| `win-rate/` | `11_winrate.py`, `12_figures.py` | What share of COE bids actually succeed, and does the win rate or the price do the rationing? | Two in three COE bids win. It is not a lottery. |
-| `erp/` | `10_load.py` to `15_reproduce.py`, run by `erp/run_all.sh` | COE or ERP: which one actually keeps Singapore's roads moving? Reads its own files in `erp/raw/`, not `analysis.csv`; tests sealed in `erp/THESIS.md` before the data was opened. | Published 17 Oct 2026 |
-| `pwm/` | `10_load.py` to `15_reproduce.py`, run by `pwm/run_all.sh` | Minimum wage or the Progressive Wage Model: which actually lifts Singapore's lowest pay? Reads its own files in `pwm/raw/`, not `analysis.csv`; tests sealed in `pwm/THESIS.md` before the data was opened. | Published 31 Oct 2026 |
+Later pieces live in their own folders, listed at the top. `win-rate/` and `motorcycles/`
+read the `analysis.csv` that `02_clean.py` builds in this directory, so run `02` first.
+`erp/`, `pwm/`, `sgd/` and `lta-ab/` read their own `raw/` folders and have their own
+`run_all.sh`; `erp/` and `lta-ab/` also cross-check against this directory's `raw.csv`.
 
 One raw file and one cleaning step feed every analysis. A second repository would mean a
 second copy of `raw.csv` to keep identical, and the two would drift the first time the
@@ -196,22 +206,21 @@ built from deregistrations and deregistration responds to price.
 Each published piece has its own folder. Cite the article for what it found, and the
 repository for the data and code.
 
-| Folder | Title as on the site | URL | Predictions sealed |
+| Folder | Piece | URL | Predictions sealed |
 |---|---|---|---|
-| root (`01_` to `10_`) | The COE quota went up 62%. Prices nearly quadrupled anyway. | https://jacobbuildmodel.github.io/economics/2026-08-22/ | Not sealed (written before the sealed-prediction method) |
-| root (`01_` to `10_`) | Perfect COE timing is worth $1,840. Nobody has it. | https://jacobbuildmodel.github.io/economics/2026-08-29/ | Not sealed (written before the sealed-prediction method) |
-| `win-rate/` | Two in three COE bids win. It is not a lottery. | https://jacobbuildmodel.github.io/economics/2026-09-05/ | Not sealed (written before the sealed-prediction method) |
-| `motorcycles/` | Motorcycle COEs fell 17%. Car COEs rose 43%. | https://jacobbuildmodel.github.io/economics/2026-09-12/ | Not sealed (written before the sealed-prediction method) |
-| `erp/` | Roads got about a quarter more crowded. Speeds held. | https://jacobbuildmodel.github.io/economics/2026-10-17/ | 26 September 2026 (`erp/THESIS.md`) |
-| `pwm/` | For low-paid gardeners, the floor became the pay | https://jacobbuildmodel.github.io/economics/2026-10-31/ | 28 September 2026 (`pwm/THESIS.md`) |
-| `lta-ab/` | Merging COE Categories A and B: LTA's Proposal on One Page | https://jacobbuildmodel.github.io/decisions/lta-coe-categories/ | No predictions (an evidence note for LTA's consultation) |
+| root (`01_` to `10_`) | COE quota and premiums, 22 August 2026 | https://jacobbuildmodel.github.io/economics/2026-08-22/ | Not sealed (written before the sealed-prediction method) |
+| root (`01_` to `10_`) | COE bidding-round timing, 29 August 2026 | https://jacobbuildmodel.github.io/economics/2026-08-29/ | Not sealed (written before the sealed-prediction method) |
+| `win-rate/` | COE win rates, 5 September 2026 | https://jacobbuildmodel.github.io/economics/2026-09-05/ | Not sealed (written before the sealed-prediction method) |
+| `motorcycles/` | Motorcycle and car COE premiums, 12 September 2026 | https://jacobbuildmodel.github.io/economics/2026-09-12/ | Not sealed (written before the sealed-prediction method) |
+| `erp/` | COE, ERP and road crowding, 17 October 2026 | https://jacobbuildmodel.github.io/economics/2026-10-17/ | 26 September 2026 (`erp/THESIS.md`) |
+| `pwm/` | Low-paid wages and the Progressive Wage Model, 31 October 2026 | https://jacobbuildmodel.github.io/economics/2026-10-31/ | 28 September 2026 (`pwm/THESIS.md`) |
+| `sgd/` | The Singapore dollar and the yen, 14 November 2026 | https://jacobbuildmodel.github.io/economics/2026-11-14/ | 3 October 2026 (`sgd/THESIS.md`) |
+| `lta-ab/` | LTA's COE category consultation, 27 October 2026 | https://jacobbuildmodel.github.io/decisions/lta-coe-categories/ | No predictions (an evidence note for LTA's consultation) |
 
-Code is under the MIT licence (LICENSE); `raw.csv` is under the Singapore Open Data Licence (DATA_LICENCE.md).
+A piece, with its title copied from the page you are citing:
 
-A piece, for example:
-
-> Ong, J. (2026, October 17). Roads got about a quarter more crowded. Speeds held. *The New
-> Void Deck*. https://jacobbuildmodel.github.io/economics/2026-10-17/
+> Ong, J. (2026, October 17). [Title as shown on the page]. *The New Void Deck*.
+> https://jacobbuildmodel.github.io/economics/2026-10-17/
 
 The repository:
 
@@ -220,3 +229,18 @@ The repository:
 
 `CITATION.cff` holds the same metadata, and GitHub's "Cite this repository" button turns it
 into APA and BibTeX. `.zenodo.json` carries it for a Zenodo archive of a future release.
+
+---
+
+## Licence
+
+- **Code** (the `.py` and `.sh` scripts) is under the MIT licence: see `LICENSE`.
+- **Text and figures** (the articles, write-ups and charts) are under
+  [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0).
+  Credit "Jacob Ong, The New Void Deck". Figures built from `raw.csv` also carry the
+  attribution notice in `DATA_LICENCE.md`.
+- **Data and third-party files** are covered by neither licence. `raw.csv` comes from
+  data.gov.sg under the Singapore Open Data Licence version 1.0; `DATA_LICENCE.md` has the
+  attribution wording, which also applies to `analysis.csv`. Other raw files, saved copies
+  of government documents and web pages, and vendored fonts keep their sources' own terms.
+  Where a folder has its own `raw/` folder, `raw/RETRIEVED.txt` records where each file came from.

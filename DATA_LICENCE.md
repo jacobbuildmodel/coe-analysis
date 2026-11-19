@@ -20,5 +20,4 @@ Prices**, published by the Land Transport Authority, and the attribution above u
 exact wording.
 
 The code in this repository is separate from the data and is not covered by that licence.
-Add whatever licence you want for the code in a `LICENSE` file; without one, default
-copyright applies and nobody may reuse it.
+It is under the MIT licence (see `LICENSE`).
