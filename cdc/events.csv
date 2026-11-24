@@ -1,0 +1,14 @@
+id,launch_date,year,month,amount_sgd,kind,role,source,date_status
+V1,2021-12-13,2021,12,100,cdc_voucher,T1_T2,"CDC media release, Dec 2021 (vouchers.cdc.gov.sg newsroom)",day from memory: hand-check before the seal
+V2,2022-05-11,2022,5,100,cdc_voucher,T1_T2,"PA, Spend and claim of CDC Vouchers Scheme (pa.gov.sg)",checked 24 Nov 2026
+V3,2023-01-03,2023,1,300,cdc_voucher,excluded_gst,"CDC media release, Jan 2023",day from memory: hand-check before the seal
+V4,2024-01-03,2024,1,500,cdc_voucher,excluded_gst,"CDC newsroom, All Singaporean households to get $500 worth of CDC Vouchers",checked 24 Nov 2026
+V5,2024-06-25,2024,6,300,cdc_voucher,T1_T2,"CDC media release, 25 Jun 2024 (cdc.gov.sg)",checked 24 Nov 2026
+V6,2025-01-03,2025,1,300,cdc_voucher,T3,"CDC newsroom, $300 worth of CDC Vouchers 2025 (January)",day from memory: hand-check before the seal
+V7,2025-05-13,2025,5,500,cdc_voucher,T1_T2,"MOF press release, All Singaporean Households to get $500 CDC Vouchers from 13 May 2025",checked 24 Nov 2026
+V8,2026-01-02,2026,1,300,cdc_voucher,T3,"CDC media release, CDC Vouchers Scheme 2026 (January)",checked 24 Nov 2026
+V9,2026-06-11,2026,6,500,cdc_voucher,T1_T2,"CNA 11 Jun 2026, as cited in the Checkpoint 0 note",as cited: hand-check before the seal
+V10,2027-01-01,2027,1,300,cdc_voucher,T4,"The Star 29 Jul 2026 (Second Minister for Finance): S$300 in January 2027",month announced; day not announced
+S1,2025-07-01,2025,7,0,sg60_voucher,descriptive,"SG60 Vouchers, from July 2025 (amounts differ by age)",month from memory: hand-check before the seal
+K1,2024-09-01,2024,9,0,cash_payout,descriptive,"Cost-of-Living Special Payment, September 2024 (MOF)",month from memory: hand-check before the seal
+K2,2026-09-09,2026,9,0,cash_payout,descriptive,"Cost-of-Living Special Payment from 9 Sep 2026, as cited in the Checkpoint 0 note",as cited: hand-check before the seal
