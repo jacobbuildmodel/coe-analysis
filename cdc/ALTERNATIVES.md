@@ -20,7 +20,7 @@ THESIS.md section 10 named before the models were asked.
 
 ## The alternatives
 
-| Code | Objection answered | What changes | The main result does not hold if |
+| Code | Objection answered | What changes | Counted as not keeping the result if |
 |---|---|---|---|
 | A1 | The window is too short: vouchers are spent over months (N2, E1) | Window from the month before the launch to three months after it (five launches: 2021 Nov to 2022 Mar, 2022 Apr to Aug, 2024 May to Sep, 2025 Apr to Aug, 2026 May to Sep; January launches: Dec to Apr) | the test gives a different result on the longer window |
 | A2 | Restaurants and fast food are substitutes for hawker food and some restaurants take vouchers, so the gap can stay flat while hawker prices rise (N1, E2) | Comparison is row 1 (All Items) alone | the hawker row steps against All Items |

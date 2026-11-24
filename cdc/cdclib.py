@@ -83,14 +83,16 @@ def change(rel, ym, pre, post, detrend=False):
 
 def placebo_years(month, pre, post, drop_years=(), detrend=False):
     """Years p whose window for calendar `month` lies wholly inside
-    FIRST_MONTH..LAST_PLACEBO_MONTH and touches no dropped year."""
+    FIRST_MONTH..LAST_PLACEBO_MONTH and touches no dropped year: every month
+    of the window, its first month included, is checked (A4: "Every placebo
+    window with a month in 2007, 2020 or 2021 is dropped")."""
     years = []
     for p in range(FIRST_MONTH[0], LAST_PLACEBO_MONTH[0] + 1):
         b, e = add((p, month), -pre), add((p, month), post)
         first_needed = add(b, -12) if detrend else b
         if first_needed < FIRST_MONTH or e > LAST_PLACEBO_MONTH:
             continue
-        months = [add(b, k) for k in range(1, pre + post + 1)]
+        months = [add(b, k) for k in range(0, pre + post + 1)]
         if any(y in drop_years for y, _ in months):
             continue
         years.append(p)

@@ -52,6 +52,8 @@ class Pipeline(unittest.TestCase):
             "T3": "HOLDS", "T4": "HOLDS"})
         main = [a for a in alts if a["spec"] == "main"]
         self.assertTrue(all(a["same_as_main"] == "yes" for a in main))
+        self.assertIn("A5 beside T2", tests["T2"]["note"])
+        self.assertNotIn("A5 beside T2", tests["T1"]["note"])
 
     def test_planted_every_test_fails(self):
         tests, alts = run_pipeline("planted")
@@ -97,6 +99,28 @@ class Pipeline(unittest.TestCase):
         self.assertEqual(lib.placebo_years(12, 1, 1), list(range(2005, 2021)))
         self.assertEqual(lib.placebo_years(1, 1, 1), list(range(2006, 2022)))
         self.assertEqual(lib.placebo_years(5, 1, 1), list(range(2005, 2022)))
+
+    def test_placebo_years_main_and_a4(self):
+        spec = importlib.util.spec_from_file_location("cdclib", CDC / "cdclib.py")
+        lib = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(lib)
+        # Main specification (THESIS section 4, step 2).
+        self.assertEqual(lib.placebo_years(12, 1, 1), list(range(2005, 2021)))  # 16
+        self.assertEqual(lib.placebo_years(5, 1, 1), list(range(2005, 2022)))   # 17
+        self.assertEqual(lib.placebo_years(6, 1, 1), list(range(2005, 2022)))   # 17
+        self.assertEqual(lib.placebo_years(1, 1, 1), list(range(2006, 2022)))   # 16
+        # A4: every placebo window with a month in 2007, 2020 or 2021 is
+        # dropped, its first month included, so January 2008 (window 2007 Dec
+        # to 2008 Feb) goes.
+        drop = (2007, 2020, 2021)
+        self.assertEqual(lib.placebo_years(1, 1, 1, drop_years=drop),
+                         [2006] + list(range(2009, 2020)))
+        self.assertNotIn(2008, lib.placebo_years(1, 1, 1, drop_years=drop))
+        self.assertEqual(lib.placebo_years(12, 1, 1, drop_years=drop),
+                         [2005] + list(range(2008, 2019)))
+        for m in (5, 6):
+            self.assertEqual(lib.placebo_years(m, 1, 1, drop_years=drop),
+                             [2005, 2006] + list(range(2008, 2020)))
 
 
 if __name__ == "__main__":

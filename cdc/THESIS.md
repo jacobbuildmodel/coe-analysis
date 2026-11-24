@@ -91,10 +91,12 @@ all Singaporean households: 13 Dec 2021, 11 May 2022, 3 Jan 2023, 3 Jan 2024,
 January 2027. The 2020 and January 2021 vouchers went to lower-income households
 only and are not launches here.
 
-**Release dates.** The 2026 Oct index was published on 23 November 2026. The
-2027 Feb index, which the forward test needs, is expected in the fourth week of
-March 2027 (SingStat's usual schedule; the date is confirmed on its advance
-release calendar before the seal).
+**Release dates.** The 2026 Oct index was published on 23 November 2026.
+SingStat's advance release calendar
+(https://www.singstat.gov.sg/data-tools-services/advance-release-calendar,
+read 24 November 2026) lists the 2027 Jan index for 23 February 2027 and the
+2027 Feb index, which the forward test needs, for 23 March 2027, both as
+upcoming releases.
 
 ## 4. Computation (the same for every test)
 
@@ -134,10 +136,20 @@ The test must be able to find steps that are known and dated.
   January, 1 April, 1 July and 1 October. In row 1.03.2.3, the absolute
   one-month change in those four months is larger than in the other eight
   months, 2015 Feb to 2026 Oct: one-sided rank-sum test, p below 0.05.
+  C1 is not the placebo-month test the purpose review named: tariffs change
+  in the same four months every year, so a placebo-month comparison
+  differences them away. C1 shows the index records dated steps; C2 checks
+  the estimator.
 - **C2. The January 2023 and 2024 steps in the hawker row.** GST rose on 1
   January 2023 and 1 January 2024. For row 1.11.3 alone (not the gap), the
   pooled excess of the two January windows (Dec to Feb) over Januaries 2006 to
   2021 has p below 0.05.
+  Most hawkers are not registered for GST, so a C2 that fails may mean the
+  hawker row did not step at the GST rises, not that the estimator cannot see
+  a step. The piece then scores nothing, reports "the monthly index cannot
+  see a step of this size", and says beside it that the GST step C2 looks for
+  may not have reached the row. The published GST article reports no figure
+  for a 1.11 row in January 2023 or 2024 (section 12).
 
 **If a control fails, no test is scored. If Gate D fails for T1, T2 or T3, that
 test is not scored.** The piece then reports "the monthly index cannot see a
@@ -151,12 +163,13 @@ gap). "Holds" and "fails" are complements.
 **T1. The size of the step at the five launches outside January.**
 Launches: Dec 2021, May 2022, Jun 2024, May 2025, Jun 2026. Windows: 2021 Nov to
 2022 Jan, 2022 Apr to Jun, 2024 May to Jul, 2025 Apr to Jun, 2026 May to Jul.
+Placebo years 2005 to 2020 (December), 2005 to 2021 (May and June).
 Statistic: the pooled excess S.
 Holds if S is below 0.5 percentage points. Fails if S is 0.5 or above.
 Confidence: (Jacob)
 
 **T2. Whether any step shows at those five launches.**
-Same launches, windows and series as T1.
+Same launches, windows, placebo years and series as T1.
 Statistic: the placebo p of S.
 Holds if p is 0.05 or above (S is not in the top 5 per cent of the placebo
 distribution). Fails if p is below 0.05.
@@ -182,8 +195,8 @@ possible p is 1/17) and cannot pass Gate D at 0.5, so T4 has its own line and
 no Gate D: January 2027 will not be the largest January excess on record. The
 line is a number fixed by the 2006 to 2021 data; it is published when the data
 is opened, before January 2027. Scored when the 2027 Feb index is published
-(expected late March 2027). If no tranche for all households is issued in
-January 2027, T4 is void and drops out.
+(23 March 2027 on SingStat's calendar). If no tranche for all households is
+issued in January 2027, T4 is void and drops out.
 Confidence: (Jacob)
 
 Expected number holding: (from Jacob's numbers)
@@ -207,7 +220,10 @@ is the stronger result, and even then the index shows a step in the same
 months, not its cause. T4 is weaker still: one January can only show a step
 large enough to beat every January from 2006 to 2021. And no test here can see
 a slow rise spread over the months in which vouchers are spent, or a lasting
-shift since 2021 that every tranche shares.
+shift since 2021 that every tranche shares. One case leans the other way: a
+steady rise of the gap after 2021 that has nothing to do with launches shows
+in every window, so T2 can fail with no launch step. A5 measures this; it is
+printed beside T2.
 
 ## 8. The verdict rule
 
@@ -222,8 +238,8 @@ shift since 2021 that every tranche shares.
   make a second verdict.
 
 Result headlines, fixed now:
-- Held: "Hawker prices did not step up in the months CDC vouchers were issued"
-- Failed: "Hawker prices rose faster than restaurant prices when CDC vouchers were issued"
+- Held: "Hawker prices did not step up by half a per cent in the months CDC vouchers were issued"
+- Failed: "Hawker prices rose faster than restaurant and fast-food prices when CDC vouchers were issued"
 - Not scored: "Monthly price data cannot show whether CDC vouchers moved hawker prices"
 
 ## 9. Described, not scored
@@ -283,3 +299,22 @@ will not report a null as "no link" when a control or Gate D fails.
   piece. The published GST article is public and Jacob has read it.
 - MOF's reply of 3 March 2026 cites annual all-items inflation (seen at
   Checkpoint 0).
+- The published GST article (`content/economics/2026-09-08.md` on the site;
+  `2026-09-08.md` in `gst-passthrough`) and that piece's THESIS, RESULTS,
+  README and addendum were searched on 24 November 2026 by a script that
+  printed flags, never text. They report no figure for a 1.11 row in January
+  2023 or 2024: the sentences that name hawkers or restaurants carry no figure
+  and no date, and the article's three charts carry no food-serving label.
+- `sgd/raw/` in this repository holds `s7a_singstat_cpi_monthly_M213751.json`,
+  from the published exchange-rate piece: table M213751, 1961 Jan to 2026 Aug,
+  the first 22 series as served, starting with row 1 (All Items)
+  (`sgd/office/SOURCES_REPORT.md`). `sgd/out/cpi.csv` holds row 1 alone, as
+  that piece loaded it (`sgd/10_load.py`). Row 1 is A2's comparison. The
+  checker, placing this note, read the labels and period counts in
+  `sgd/raw/RETRIEVED.txt` with every line holding a decimal filtered out, and
+  found rows 1 (All Items) and 1.0 (Food), the list ending at row 1.01.3.3: no
+  1.11 row and no 1.03.2.3 row. The drafting mission and the fix pass read
+  code and documents only. Apart from the checker's label read, no file in
+  `sgd/raw/` or `sgd/out/` was opened for this piece, and no value in them was
+  seen. `pwm/raw/` and `pwm/out/` hold annual CPI files of another piece;
+  they were not opened either.

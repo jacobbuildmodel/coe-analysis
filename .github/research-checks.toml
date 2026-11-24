@@ -106,3 +106,17 @@ warn = { svg_dark = "Figure 1 is drawn for the consultation PDF (NOTE.pdf), on w
 [pieces.lta-ab.rebuild]
 clean = "lta-ab/out lta-ab/figs"
 command = "bash lta-ab/run_all.sh"
+
+# ------------------------------------------------------------------ cdc
+# CDC vouchers and hawker food prices: an UNSEALED DRAFT (draft PR #21). No seal
+# table until the seal commit adds cdc/SEAL_MANIFEST.md with cdc/PURPOSE_REVIEW.md.
+# Until then 14_manifest.py --check compares with the draft list,
+# cdc/office/MANIFEST_DRAFT.md. The synthetic suite uses invented data only.
+[pieces.cdc]
+dir = "cdc"
+python = "3.12"           # cdc/requirements.txt: pinned on Python 3.12
+requirements = "cdc/requirements.txt"
+
+[pieces.cdc.fast]
+tests = "cdc/tests"
+manifest = "python3 cdc/14_manifest.py --check"

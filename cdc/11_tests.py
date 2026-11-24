@@ -80,6 +80,19 @@ def score(test_id, rule, res, controls_pass):
     return dict(id=test_id, statistic=stat, value=value, line=line, result=result, note=note)
 
 
+def a5_beside_t2(series, launch_list):
+    """THESIS section 7: a steady rise of the gap after 2021 that has nothing
+    to do with launches shows in every window, so T2 can fail with no launch
+    step. A5 (each window less its own earlier pace) measures this and is
+    printed beside T2. Reported here, never scored here: A5's own line is in
+    12_alternatives.py."""
+    r = L.pooled(series, launch_list, detrend=True)
+    if r is None:
+        return "; A5 beside T2: launch window not published yet"
+    return (f"; A5 beside T2 (each window less its own earlier pace; reported, "
+            f"not scored): S {r['s']:+.3f} pp; p {r['p']:.4f}")
+
+
 def describe(series, events):
     rows = []
     rel = L.relative(series, L.HAWKER, L.COMPARISON)
@@ -103,7 +116,11 @@ def run(series_path, events_path, out_dir):
     rows = controls(series)
     ok = all(r["result"] == "PASS" for r in rows)
     for test_id, role, rule in TESTS:
-        rows.append(score(test_id, rule, L.pooled(series, launches(events, role)), ok))
+        ls = launches(events, role)
+        row = score(test_id, rule, L.pooled(series, ls), ok)
+        if test_id == "T2":
+            row["note"] += a5_beside_t2(series, ls)
+        rows.append(row)
     out_dir.mkdir(parents=True, exist_ok=True)
     with open(out_dir / "tests.csv", "w", newline="", encoding="ascii") as f:
         w = csv.DictWriter(f, ["id", "statistic", "value", "line", "result", "note"],
