@@ -80,6 +80,19 @@ def score(test_id, rule, res, controls_pass):
     return dict(id=test_id, statistic=stat, value=value, line=line, result=result, note=note)
 
 
+def t1_headline(row, res, rows):
+    """THESIS section 8: result sentence, T2 sentence and title, filled by
+    L.headline from T1's own verdict. T2 never picks the title."""
+    if res is None:
+        return None
+    verdict = {"HOLDS": "HOLDS", "FAILS": "FAILS"}.get(row["result"], "NOT SCORED")
+    w = sum(res["changes"]) / len(res["changes"])
+    return L.headline(verdict, W=w, P=w - res["s"], S=res["s"], p=res["p"],
+                      m=res["mde"], d=res["detect"],
+                      failed_controls=[r["id"] for r in rows
+                                       if r["id"] in ("C1", "C2") and r["result"] != "PASS"])
+
+
 def a5_beside_t2(series, launch_list):
     """THESIS section 7: a steady rise of the gap after 2021 that has nothing
     to do with launches shows in every window, so T2 can fail with no launch
@@ -117,20 +130,29 @@ def run(series_path, events_path, out_dir):
     ok = all(r["result"] == "PASS" for r in rows)
     for test_id, role, rule in TESTS:
         ls = launches(events, role)
-        row = score(test_id, rule, L.pooled(series, ls), ok)
+        res = L.pooled(series, ls)
+        row = score(test_id, rule, res, ok)
+        if test_id == "T1":
+            row["headline"] = t1_headline(row, res, rows)
         if test_id == "T2":
             row["note"] += a5_beside_t2(series, ls)
         rows.append(row)
     out_dir.mkdir(parents=True, exist_ok=True)
     with open(out_dir / "tests.csv", "w", newline="", encoding="ascii") as f:
         w = csv.DictWriter(f, ["id", "statistic", "value", "line", "result", "note"],
-                           lineterminator="\n")
+                           lineterminator="\n", extrasaction="ignore")
         w.writeheader()
         for r in rows:
             r = dict(r)
             if isinstance(r["value"], float):
                 r["value"] = f"{r['value']:.4f}"
             w.writerow(r)
+    t1 = next((r.get("headline") for r in rows if r["id"] == "T1"), None)
+    with open(out_dir / "headline.txt", "w", encoding="ascii", newline="") as f:
+        if t1:
+            f.write(f"TITLE: {t1['title']}\nRESULT: {t1['result']}\n")
+            if t1["t2"]:
+                f.write(f"T2: {t1['t2']}\n")
     desc = describe(series, events)
     with open(out_dir / "launches.csv", "w", newline="", encoding="ascii") as f:
         w = csv.DictWriter(f, list(desc[0]), lineterminator="\n")
@@ -149,6 +171,11 @@ def main():
         v = f"{r['value']:.4f}" if isinstance(r["value"], float) else r["value"]
         print(f"{r['id']:3s} {r['result']:10s} {r['statistic']}: {v} (line: {r['line']})")
         print(f"      {r['note']}")
+        if r.get("headline"):
+            h = r["headline"]
+            print(f"      TITLE:  {h['title']}\n      RESULT: {h['result']}")
+            if h["t2"]:
+                print(f"      T2:     {h['t2']}")
     return 0
 
 

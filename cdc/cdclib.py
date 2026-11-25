@@ -191,3 +191,75 @@ def rank_sum_p(a, b):
         return 1.0
     z = (u - mu - 0.5) / math.sqrt(var)
     return 0.5 * math.erfc(z / math.sqrt(2.0))
+
+
+# ---------------------------------------------------------------------------
+# THESIS section 8: the sealed result sentence, T2 sentence and title. One pure
+# function, called by 11_tests.py and by the synthetic tests; nothing is chosen
+# by hand.
+
+TITLE_HELD = ("Hawker prices did not gain 0.5% more than usual on restaurants "
+              "when CDC vouchers came")
+TITLE_FAILED_UP = ("Hawker prices gained at least 0.5% more than usual on restaurants "
+                   "when CDC vouchers came")
+TITLE_FAILED_DOWN = ("Hawker prices lost at least 0.5% less than usual to restaurants "
+                     "when CDC vouchers came")
+TITLE_NOT_SCORED = "Hawker prices and CDC vouchers: the monthly price test could not give an answer"
+
+
+def _two(x):
+    return f"{abs(x):.2f}"
+
+
+def headline(verdict, W=None, P=None, S=None, p=None, m=None, d=None,
+             failed_controls=()):
+    """verdict: "HOLDS", "FAILS" or "NOT SCORED" (T1 alone picks it).
+    W, P, S in per cent / percentage points; p the placebo p; m the smallest
+    step seen four times in five; d the detection rate (0 to 1);
+    failed_controls: ids among "C1" (electricity tariff) and "C2" (GST).
+    Returns dict(result, t2, title). t2 is "" when T1 is not scored. The title
+    follows T1; for FAILS the sign of W picks between the two failed titles."""
+    if verdict == "NOT SCORED":
+        if failed_controls:
+            names = {"C1": "electricity-tariff", "C2": "GST"}
+            fc = [names[c] for c in ("C1", "C2") if c in failed_controls]
+            what = (f"{fc[0]} check" if len(fc) == 1 else f"{fc[0]} and {fc[1]} checks")
+            res = (f"The test was not scored: its {what}, which show whether this method "
+                   f"finds a known, dated step in the monthly index, failed, so the "
+                   f"monthly index cannot see a step of this size, and no verdict on the "
+                   f"vouchers is given.")
+            if "C2" in failed_controls:
+                res += (" The GST rises that check looks for may not have reached hawker "
+                        "prices, since most hawkers are not registered for GST.")
+        else:
+            # Rounded down: Gate D fails below 80, so the printed figure must
+            # stay below 80 as well.
+            res = (f"The test was not scored: at the five CDC voucher launches outside "
+                   f"January it would catch a step of 0.5 percentage points in hawker "
+                   f"prices against restaurant prices only {int(math.floor(100 * d + 1e-9))} "
+                   f"per cent of the time, short of the 80 per cent required, so the "
+                   f"monthly index cannot see a step of this size, and no verdict on the "
+                   f"vouchers is given.")
+        return dict(result=res, t2="", title=TITLE_NOT_SCORED)
+    held = verdict == "HOLDS"
+    s_txt = f"{abs(S):.3f}" if held and _two(S) == "0.50" else _two(S)
+    res = (f"At the five CDC voucher launches outside January (December 2021, May 2022, "
+           f"June 2024, May 2025 and June 2026), hawker prices {'rose' if W >= 0 else 'fell'} "
+           f"{_two(W)} per cent against restaurant prices (SingStat's restaurants, cafes "
+           f"and pubs and its fast-food restaurants, averaged) from the month before each "
+           f"launch to the month after, compared with an average "
+           f"{'rise' if P >= 0 else 'fall'} of {_two(P)} per cent in the same months of "
+           f"the years before the scheme (2005 to 2020 for December, 2005 to 2021 for May "
+           f"and June): {s_txt} percentage points {'more' if S >= 0 else 'less'} than "
+           f"usual, {'below' if held else 'at or above'} the 0.5-point step fixed in "
+           f"advance as the smallest that matters, so the thesis "
+           f"{'held' if held else 'failed'}.")
+    if not held:
+        res += " The index shows a step in the months the vouchers were issued, not its cause."
+    t2 = (f"A difference this large or larger turns up in {100 * p:.1f} per cent of "
+          f"comparisons drawn from the same months of the years before the scheme "
+          f"(p = {p:.3f}), so "
+          f"{'a step showed' if p < ALPHA else 'no step showed beyond the usual swings'}; "
+          f"the test sees a step of {_two(m)} percentage points four times in five.")
+    title = TITLE_HELD if held else (TITLE_FAILED_UP if W >= 0 else TITLE_FAILED_DOWN)
+    return dict(result=res, t2=t2, title=title)

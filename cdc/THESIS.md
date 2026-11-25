@@ -174,7 +174,7 @@ Statistic: the placebo p of S.
 Holds if p is 0.05 or above (S is not in the top 5 per cent of the placebo
 distribution). Fails if p is below 0.05.
 T2 is not independent of T1: both use the same S. When Gate D passes, a T1
-that fails means a T2 that fails; T2 can also fail alone, on a step that shows
+that fails almost always means a T2 that fails; T2 can also fail alone, on a step that shows
 but is smaller than 0.5.
 Confidence: (Jacob)
 
@@ -227,8 +227,8 @@ printed beside T2.
 
 ## 8. The verdict rule
 
-- The headline answer follows T1. Held: no launch step as large as 0.5
-  percentage points. Failed: a launch step of 0.5 percentage points or more.
+- The headline answer follows T1. Held: the measured step S is below 0.5
+  percentage points. Failed: S is 0.5 percentage points or more.
 - T2 says whether a smaller step was visible; T3 and T4 say whether January
   launches behave the same way.
 - If T1 is not scored, the answer is "cannot see", and no verdict on vouchers
@@ -237,10 +237,65 @@ printed beside T2.
   and reported beside them as the share that keeps each result. They never
   make a second verdict.
 
-Result headlines, fixed now:
-- Held: "Hawker prices did not step up by half a per cent in the months CDC vouchers were issued"
-- Failed: "Hawker prices rose faster than restaurant and fast-food prices when CDC vouchers were issued"
-- Not scored: "Monthly price data cannot show whether CDC vouchers moved hawker prices"
+**Result sentence and title.** Each outcome has a sealed result sentence and a
+sealed title, filled and chosen by `11_tests.py` by the rules below; nothing in
+them is chosen by hand. The answer article's first paragraph opens with the
+filled result sentence, word for word, then the T2 sentence. The title is
+published as sealed. Before publication it changes only through
+`THESIS_ADDENDUM.md`, dated and reported; after publication, only through a
+dated correction on the page. No title or sentence says the vouchers caused,
+lifted or moved prices (section 11): hawker prices are the subject, and "when"
+places them in the launch months.
+
+Numbers, for T1's five launches: W, the mean launch-window change of the hawker
+gap (per cent); P, the mean over the five launches of the placebo years' mean
+window change (per cent); S = W - P (percentage points); p, the smallest step
+seen four times in five (m) and the detection rate (d), from section 4. W, P, S
+and m print as two decimals of their absolute value; p prints to three
+decimals. "rose" or "rise" if the value is 0 or above, "fell" or "fall" if
+below; "more" if S is 0 or above, "less" if below. If T1 holds and S would
+print as 0.50, S prints to three decimals. "Restaurant prices" and
+"restaurants" mean rows 1.11.1 (Restaurants, Cafes & Pubs) and 1.11.2 (Fast
+Food Restaurants), averaged as in section 3.
+
+Result sentence, T1 held or failed:
+"At the five CDC voucher launches outside January (December 2021, May 2022,
+June 2024, May 2025 and June 2026), hawker prices [rose|fell] [W] per cent
+against restaurant prices (SingStat's restaurants, cafes and pubs and its
+fast-food restaurants, averaged) from the month before each launch to the
+month after, compared with an average [rise|fall] of [P] per cent in the same
+months of the years before the scheme (2005 to 2020 for December, 2005 to 2021
+for May and June): [S] percentage points [more|less] than usual, [below|at or
+above] the 0.5-point step fixed in advance as the smallest that matters, so the
+thesis [held|failed]."
+If T1 failed, the next sentence is: "The index shows a step in the months the
+vouchers were issued, not its cause."
+
+T2 sentence, after it:
+"A difference this large or larger turns up in [100p, one decimal] per cent of
+comparisons drawn from the same months of the years before the scheme
+(p = [p]), so [a step showed|no step showed beyond the usual swings]; the test
+sees a step of [m] percentage points four times in five."
+
+Result sentence, not scored:
+- A control failed: "The test was not scored: its [electricity-tariff check|GST
+  check|electricity-tariff and GST checks], which show whether this method finds
+  a known, dated step in the monthly index, failed, so the monthly index cannot
+  see a step of this size, and no verdict on the vouchers is given." If the GST
+  check failed, the next sentence is: "The GST rises that check looks for may
+  not have reached hawker prices, since most hawkers are not registered for
+  GST."
+- Gate D failed for T1: "The test was not scored: at the five CDC voucher
+  launches outside January it would catch a step of 0.5 percentage points in
+  hawker prices against restaurant prices only [100d, whole number] per cent of
+  the time, short of the 80 per cent required, so the monthly index cannot see
+  a step of this size, and no verdict on the vouchers is given."
+
+Titles (at most 90 characters; fixed now):
+- T1 held: "Hawker prices did not gain 0.5% more than usual on restaurants when CDC vouchers came"
+- T1 failed, W 0 or above: "Hawker prices gained at least 0.5% more than usual on restaurants when CDC vouchers came"
+- T1 failed, W below 0: "Hawker prices lost at least 0.5% less than usual to restaurants when CDC vouchers came"
+- T1 not scored: "Hawker prices and CDC vouchers: the monthly price test could not give an answer"
 
 ## 9. Described, not scored
 
