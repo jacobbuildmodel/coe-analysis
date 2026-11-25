@@ -40,12 +40,15 @@ def controls(series):
     a = [v for (y, m), v in ch.items() if m in REVISION_MONTHS]
     b = [v for (y, m), v in ch.items() if m not in REVISION_MONTHS]
     p1 = L.rank_sum_p(a, b)
-    c2 = L.pooled(series, GST_JANUARIES, comps=())
+    # C2: the restaurant rows of the gap as one row (their geometric mean), at
+    # the two GST Januaries, each window less its own earlier pace (A5's measure).
+    rest = dict(series, RESTAURANTS=L.geometric_mean_row(series, L.COMPARISON))
+    c2 = L.pooled(rest, GST_JANUARIES, hawker="RESTAURANTS", comps=(), detrend=True)
     return [
         dict(id="C1", statistic="rank-sum p, electricity, revision months above other months",
              value=p1, line="p < 0.05", result="PASS" if p1 < L.ALPHA else "FAIL",
              note=f"{len(a)} revision months, {len(b)} other months"),
-        dict(id="C2", statistic="placebo p, hawker row alone, January 2023 and 2024",
+        dict(id="C2", statistic="placebo p, restaurant rows, January 2023 and 2024, less earlier pace",
              value=c2["p"], line="p < 0.05", result="PASS" if c2["p"] < L.ALPHA else "FAIL",
              note=f"mean excess {c2['s']:+.3f} pp; placebo draws {c2['null_n']} ({c2['null_how']})"),
     ]
@@ -80,17 +83,22 @@ def score(test_id, rule, res, controls_pass):
     return dict(id=test_id, statistic=stat, value=value, line=line, result=result, note=note)
 
 
-def t1_headline(row, res, rows):
-    """THESIS section 8: result sentence, T2 sentence and title, filled by
-    L.headline from T1's own verdict. T2 never picks the title."""
+def t1_headline(row, res, rows, t3_row=None, t3_res=None):
+    """THESIS section 8: result sentence, T2 sentence, T3 sentence and title,
+    filled by L.headline from T1's verdict, T2's p (the held title with a
+    step) and T3's verdict (the T3 sentence)."""
     if res is None:
         return None
     verdict = {"HOLDS": "HOLDS", "FAILS": "FAILS"}.get(row["result"], "NOT SCORED")
     w = sum(res["changes"]) / len(res["changes"])
+    t3 = None
+    if t3_row is not None and t3_res is not None and t3_row["result"] != "PENDING":
+        t3 = dict(verdict=t3_row["result"], S=t3_res["s"], d=t3_res["detect"])
     return L.headline(verdict, W=w, P=w - res["s"], S=res["s"], p=res["p"],
                       m=res["mde"], d=res["detect"],
                       failed_controls=[r["id"] for r in rows
-                                       if r["id"] in ("C1", "C2") and r["result"] != "PASS"])
+                                       if r["id"] in ("C1", "C2") and r["result"] != "PASS"],
+                      t3=t3)
 
 
 def a5_beside_t2(series, launch_list):
@@ -128,15 +136,17 @@ def run(series_path, events_path, out_dir):
     series, events = L.load_series(series_path), L.load_events(events_path)
     rows = controls(series)
     ok = all(r["result"] == "PASS" for r in rows)
+    found = {}
     for test_id, role, rule in TESTS:
         ls = launches(events, role)
         res = L.pooled(series, ls)
         row = score(test_id, rule, res, ok)
-        if test_id == "T1":
-            row["headline"] = t1_headline(row, res, rows)
+        found[test_id] = (row, res)
         if test_id == "T2":
             row["note"] += a5_beside_t2(series, ls)
         rows.append(row)
+    t1_row, t1_res = found["T1"]
+    t1_row["headline"] = t1_headline(t1_row, t1_res, rows, *found["T3"])
     out_dir.mkdir(parents=True, exist_ok=True)
     with open(out_dir / "tests.csv", "w", newline="", encoding="ascii") as f:
         w = csv.DictWriter(f, ["id", "statistic", "value", "line", "result", "note"],
@@ -153,6 +163,8 @@ def run(series_path, events_path, out_dir):
             f.write(f"TITLE: {t1['title']}\nRESULT: {t1['result']}\n")
             if t1["t2"]:
                 f.write(f"T2: {t1['t2']}\n")
+            if t1["t3"]:
+                f.write(f"T3: {t1['t3']}\n")
     desc = describe(series, events)
     with open(out_dir / "launches.csv", "w", newline="", encoding="ascii") as f:
         w = csv.DictWriter(f, list(desc[0]), lineterminator="\n")
@@ -176,6 +188,8 @@ def main():
             print(f"      TITLE:  {h['title']}\n      RESULT: {h['result']}")
             if h["t2"]:
                 print(f"      T2:     {h['t2']}")
+            if h["t3"]:
+                print(f"      T3:     {h['t3']}")
     return 0
 
 

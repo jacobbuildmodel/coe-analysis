@@ -9,11 +9,17 @@ Scenarios (all share one seed, so they differ only by what is planted):
              and 2024 step in every food row and in All Items
   planted    as null, plus a lasting 0.8 per cent step in the hawker row in
              every CDC launch month of events.csv
-  noisy      as planted, with six times the month-to-month noise (gate D
-             must then refuse to score)
+  noisy      as planted, with six times the month-to-month noise in the
+             hawker row (gate D must then refuse to score; the restaurant rows
+             keep their noise, so C2 still passes)
   flat_power as null, with no tariff steps in electricity (C1 must fail)
-  no_gst     as null, with no January 2023 and 2024 step in the hawker row
-             (C2 must fail)
+  no_gst     as null, with no January 2023 and 2024 step in the restaurant
+             rows 1.11.1 and 1.11.2 (C2 must fail)
+  regime     as no_gst, with the restaurant rows rising 0.6 per cent a month
+             faster from 2022 Jan (C2 must fail: a faster pace is not a step)
+  jan_only   as null, plus a lasting 0.8 per cent step in the hawker row in
+             January 2025 and January 2026 only (T3 fails, T1 holds: the T3
+             sentence prints)
 """
 import csv
 import json
@@ -43,15 +49,21 @@ def months(first, last):
 def build(directory, scenario, end=(2027, 2)):
     rng = random.Random(20261127)
     scale = 6.0 if scenario == "noisy" else 1.0
+    restaurants = ("1.11.1", "1.11.2")
     launches = cdc_launches()
     rows = {}
     for code, sd in FOOD.items():
         level, obs = math.log(60.0), {}
         for y, m in months((2005, 1), end):
-            step = 0.18 + (0.25 if m == 1 else 0.0) + rng.gauss(0.0, sd * scale)
+            noise = rng.gauss(0.0, sd * (scale if code == "1.11.3" else 1.0))
+            step = 0.18 + (0.25 if m == 1 else 0.0) + noise
             if (y, m) in ((2023, 1), (2024, 1)):
-                if not (scenario == "no_gst" and code == "1.11.3"):
+                if not (scenario in ("no_gst", "regime") and code in restaurants):
                     step += 1.0
+            if scenario == "regime" and code in restaurants and (y, m) >= (2022, 1):
+                step += 0.6
+            if scenario == "jan_only" and code == "1.11.3" and (y, m) in ((2025, 1), (2026, 1)):
+                step += PLANT
             if code == "1.11.3" and scenario in ("planted", "noisy") and (y, m) in launches:
                 step += PLANT
             level += step / 100.0

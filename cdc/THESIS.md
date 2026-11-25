@@ -38,11 +38,17 @@ launch, set against the same calendar months in the years before the scheme.
 
 **Decision.** MOF, Budget 2027 (expected February 2027): the tranche after
 January 2027, its size, and vouchers against untied cash (the Cost-of-Living
-Special Payment, GST Voucher cash). If prices stepped up, part of each voucher
-reaches sellers, which counts for cash or tighter targeting. If not, the
-demand-pull objection falls and the case for vouchers rests on support for
-hawkers and heartland shops. The piece evaluates the policy. It says nothing
-about what a household should buy or where.
+Special Payment, GST Voucher cash). MOF answered the demand-pull question on 3
+March 2026 with annual all-items inflation; this test asks it of monthly
+hawker prices at the launches. If hawker prices averaged 0.5 percentage points
+or more above usual against restaurant prices at the five launches outside
+January, the index shows a step of a size that matters in the months the
+vouchers were issued, not its cause. If they did not, it shows no average step
+of that size at those launches, which does not rule out a smaller step, a slow
+rise over the months the vouchers are spent, or a rise shared with
+restaurants. The piece tests one claim made about the policy; it does not say
+whether vouchers are good policy, and gives no advice on what a household buys
+or where.
 
 ## 2. My thesis
 
@@ -140,20 +146,28 @@ The test must be able to find steps that are known and dated.
   in the same four months every year, so a placebo-month comparison
   differences them away. C1 shows the index records dated steps; C2 checks
   the estimator.
-- **C2. The January 2023 and 2024 steps in the hawker row.** GST rose on 1
-  January 2023 and 1 January 2024. For row 1.11.3 alone (not the gap), the
-  pooled excess of the two January windows (Dec to Feb) over Januaries 2006 to
-  2021 has p below 0.05.
-  Most hawkers are not registered for GST, so a C2 that fails may mean the
-  hawker row did not step at the GST rises, not that the estimator cannot see
-  a step. The piece then scores nothing, reports "the monthly index cannot
-  see a step of this size", and says beside it that the GST step C2 looks for
-  may not have reached the row. The published GST article reports no figure
-  for a 1.11 row in January 2023 or 2024 (section 12).
+- **C2. The GST rises of 1 January 2023 and 1 January 2024 in the restaurant
+  rows.** Restaurants and fast-food chains charge GST, and the rate rose by one
+  point on each date: a step that is known and dated. Most hawkers are not
+  registered for GST, so the hawker row is not used. For the two comparison rows
+  taken as one (the geometric mean of rows 1.11.1 and 1.11.2, as in the gap),
+  the pooled excess of the two January windows (Dec to Feb), each window less
+  its own earlier pace as in A5 (the change over the 12 months to the window's
+  first month, scaled to the window's two months), over the Januaries 2007 to
+  2021 measured the same way, has p below 0.05.
+  Why these rows and this measure: both Januaries were also CDC voucher
+  launches (section 6). A C2 on the gap would be muted by any voucher step in
+  hawker prices, so it would tend to fail when the thesis is false. The
+  vouchers are taken by hawkers and merchants in HDB heartlands, not by
+  merchants in commercial malls, so the restaurant rows carry the voucher months
+  far less. A row on its own also carries the pace of inflation of its time;
+  taking away its own earlier pace leaves the step. A price rise made in
+  December, before the GST rise, sits in the window's first month and is not
+  counted.
 
 **If a control fails, no test is scored. If Gate D fails for T1, T2 or T3, that
-test is not scored.** The piece then reports "the monthly index cannot see a
-step of this size". It never reports "no link".
+test is not scored.** The piece then reports that the test cannot be relied on
+to see a step, in the words of section 8. It never reports "no link".
 
 ## 6. Scored predictions
 
@@ -206,7 +220,7 @@ scored (section 5) or void drops out of the count and of the Brier score.
 
 The January 2023 and January 2024 launches are in no scored test: GST rose in
 the same month, restaurants and fast-food chains charge GST and most hawkers are
-not registered for it, so the gap moves for a reason that is not the voucher.
+not registered for it, so the gap moves for a reason that is not the voucher. They are used once, in control C2, on the restaurant rows alone (section 5).
 
 ## 7. Weak-evidence sentence
 
@@ -215,7 +229,7 @@ month and the next, while vouchers are spent over as long as 18 months; row
 1.11.3 includes food courts and coffee shops, and not every stall in it takes
 the vouchers; and a rise that also lifted restaurant and fast-food prices is
 differenced away. So "held" is weak evidence that vouchers leave hawker prices
-alone: it says no launch step of 0.5 percentage points, not no effect. "Failed"
+alone: it says no average launch step of 0.5 percentage points at the five launches, not no effect. "Failed"
 is the stronger result, and even then the index shows a step in the same
 months, not its cause. T4 is weaker still: one January can only show a step
 large enough to beat every January from 2006 to 2021. And no test here can see
@@ -227,74 +241,99 @@ printed beside T2.
 
 ## 8. The verdict rule
 
-- The headline answer follows T1. Held: the measured step S is below 0.5
-  percentage points. Failed: S is 0.5 percentage points or more.
-- T2 says whether a smaller step was visible; T3 and T4 say whether January
-  launches behave the same way.
-- If T1 is not scored, the answer is "cannot see", and no verdict on vouchers
-  is given.
+- The headline answer follows T1. Held: the measured average step S is below
+  0.5 percentage points. Failed: S is 0.5 percentage points or more.
+- T2 says whether a smaller step was visible, and picks between the two held
+  titles; T3 and T4 say whether January launches behave the same way.
+- If T1 is not scored, the answer is that the test could not give one, and no
+  verdict on vouchers is given.
 - The alternative specifications in `ALTERNATIVES.md` are run with the tests
   and reported beside them as the share that keeps each result. They never
   make a second verdict.
 
 **Result sentence and title.** Each outcome has a sealed result sentence and a
-sealed title, filled and chosen by `11_tests.py` by the rules below; nothing in
-them is chosen by hand. The answer article's first paragraph opens with the
-filled result sentence, word for word, then the T2 sentence. The title is
-published as sealed. Before publication it changes only through
-`THESIS_ADDENDUM.md`, dated and reported; after publication, only through a
-dated correction on the page. No title or sentence says the vouchers caused,
-lifted or moved prices (section 11): hawker prices are the subject, and "when"
-places them in the launch months.
+sealed title, filled and picked by `11_tests.py` by the rules below; nothing in
+them is picked by hand. The answer article's first paragraph opens with the
+filled result sentence, word for word, then the T2 sentence, then the T3
+sentence when the rule below prints it. The title is published as sealed.
+Before publication it changes only through `THESIS_ADDENDUM.md`, dated and
+reported; after publication, only through a dated correction on the page. No
+title or sentence says the vouchers caused, lifted or moved prices (section
+11): hawker prices are the subject, and "at" and "when" place them in the
+launch months. Every title speaks of the average over T1's five launches
+outside January only.
 
 Numbers, for T1's five launches: W, the mean launch-window change of the hawker
 gap (per cent); P, the mean over the five launches of the placebo years' mean
 window change (per cent); S = W - P (percentage points); p, the smallest step
-seen four times in five (m) and the detection rate (d), from section 4. W, P, S
-and m print as two decimals of their absolute value; p prints to three
-decimals. "rose" or "rise" if the value is 0 or above, "fell" or "fall" if
-below; "more" if S is 0 or above, "less" if below. If T1 holds and S would
-print as 0.50, S prints to three decimals. "Restaurant prices" and
-"restaurants" mean rows 1.11.1 (Restaurants, Cafes & Pubs) and 1.11.2 (Fast
-Food Restaurants), averaged as in section 3.
+seen four times in five (m) and the detection rate (d), from section 4. For
+T3's two launches: S3, its pooled excess, and d3, its detection rate. "rose" or
+"rise" if the value is 0 or above, "fell" or "fall" if below; "more" if S (or
+S3) is 0 or above, "less" if below. "Usual" is the mean over the placebo years
+of section 4. "Restaurant prices" and "restaurants" mean rows 1.11.1
+(Restaurants, Cafes & Pubs) and 1.11.2 (Fast Food Restaurants), averaged as in
+section 3.
+
+Rounding. W, P, S, S3 and m print as two decimals of their absolute value, p
+to three decimals, 100p to one decimal, 100d and 100d3 as whole numbers. No
+printed figure reaches a bar its value does not reach: the absolute value of S
+or S3 against 0.5 when its test held; p against 0.05 and 100p against 5 when p
+is below 0.05; 100d and 100d3 against 80. Such a figure keeps its default
+decimals unless the printed figure would reach the bar; it then gains one
+decimal at a time until it does not.
 
 Result sentence, T1 held or failed:
 "At the five CDC voucher launches outside January (December 2021, May 2022,
-June 2024, May 2025 and June 2026), hawker prices [rose|fell] [W] per cent
-against restaurant prices (SingStat's restaurants, cafes and pubs and its
-fast-food restaurants, averaged) from the month before each launch to the
-month after, compared with an average [rise|fall] of [P] per cent in the same
-months of the years before the scheme (2005 to 2020 for December, 2005 to 2021
-for May and June): [S] percentage points [more|less] than usual, [below|at or
-above] the 0.5-point step fixed in advance as the smallest that matters, so the
-thesis [held|failed]."
+June 2024, May 2025 and June 2026), hawker prices [rose|fell] by an average of
+[W] per cent against restaurant prices (SingStat's restaurants, cafes and pubs
+and its fast-food restaurants, averaged) from the month before each launch to
+the month after, compared with an average [rise|fall] of [P] per cent in the
+same months of the years before the scheme (2005 to 2020 for December, 2005 to
+2021 for May and June): [S] percentage points [more|less] than usual, [below|at
+or above] the 0.5-point step fixed in advance as the smallest that matters, so
+the thesis [held|failed]."
 If T1 failed, the next sentence is: "The index shows a step in the months the
 vouchers were issued, not its cause."
 
 T2 sentence, after it:
-"A difference this large or larger turns up in [100p, one decimal] per cent of
-comparisons drawn from the same months of the years before the scheme
-(p = [p]), so [a step showed|no step showed beyond the usual swings]; the test
-sees a step of [m] percentage points four times in five."
+"A difference this large or larger turns up in [100p] per cent of comparisons
+drawn from the same months of the years before the scheme (p = [p]), so [a step
+showed|no step showed beyond the usual swings]; the test sees a step of [m]
+percentage points four times in five."
+
+T3 sentence, after the T2 sentence. Printed only when T1 is scored and T3's
+result (held, failed or not scored) differs from T1's; never when T1 is not
+scored or T3 is pending.
+- T3 scored: "At the two January launches without a GST rise (January 2025 and
+  January 2026), the same comparison came to an average of [S3] percentage
+  points [more|less] than usual for January (the Januaries of 2006 to 2021),
+  [below|at or above] the 0.5-point step, so the prediction for those two
+  launches [held.|failed; the index shows a step in those months, not its
+  cause.] The title covers only the five launches outside January."
+- T3 not scored: "At the two January launches without a GST rise (January 2025
+  and January 2026), the test was not scored: it would catch an average step of
+  0.5 percentage points only [100d3] per cent of the time, short of the 80 per
+  cent required. The title covers only the five launches outside January."
 
 Result sentence, not scored:
-- A control failed: "The test was not scored: its [electricity-tariff check|GST
-  check|electricity-tariff and GST checks], which show whether this method finds
-  a known, dated step in the monthly index, failed, so the monthly index cannot
-  see a step of this size, and no verdict on the vouchers is given." If the GST
-  check failed, the next sentence is: "The GST rises that check looks for may
-  not have reached hawker prices, since most hawkers are not registered for
-  GST."
+- A control failed: "The test was not scored: [its electricity-tariff check,
+  which shows|its GST check, which shows|its electricity-tariff and GST checks,
+  which show] whether this method finds a known, dated step in the monthly
+  index, failed, so the test cannot be relied on to see a step in hawker
+  prices, and no verdict on the vouchers is given." If the GST check failed,
+  the next sentence is: "The GST rises that check looks for may have reached
+  restaurant prices outside the December to February window, or not at all."
 - Gate D failed for T1: "The test was not scored: at the five CDC voucher
-  launches outside January it would catch a step of 0.5 percentage points in
-  hawker prices against restaurant prices only [100d, whole number] per cent of
-  the time, short of the 80 per cent required, so the monthly index cannot see
-  a step of this size, and no verdict on the vouchers is given."
+  launches outside January it would catch an average step of 0.5 percentage
+  points in hawker prices against restaurant prices only [100d] per cent of the
+  time, short of the 80 per cent required, so the test cannot be relied on to
+  see a step of that size, and no verdict on the vouchers is given."
 
-Titles (at most 90 characters; fixed now):
-- T1 held: "Hawker prices did not gain 0.5% more than usual on restaurants when CDC vouchers came"
-- T1 failed, W 0 or above: "Hawker prices gained at least 0.5% more than usual on restaurants when CDC vouchers came"
-- T1 failed, W below 0: "Hawker prices lost at least 0.5% less than usual to restaurants when CDC vouchers came"
+Titles (at most 100 characters; fixed now; picked by T1 and, for a held T1, by
+T2):
+- T1 held, with p 0.05 or above or S at or below 0: "Hawker prices did not average 0.5 points above usual against restaurants at 5 CDC voucher launches"
+- T1 held, with p below 0.05 and S above 0: "Hawker prices averaged under 0.5 points above usual against restaurants at 5 CDC voucher launches"
+- T1 failed, either sign of W: "Hawker prices averaged at least 0.5 points above usual against restaurants at 5 CDC voucher launches"
 - T1 not scored: "Hawker prices and CDC vouchers: the monthly price test could not give an answer"
 
 ## 9. Described, not scored
@@ -373,3 +412,5 @@ will not report a null as "no link" when a control or Gate D fails.
   `sgd/raw/` or `sgd/out/` was opened for this piece, and no value in them was
   seen. `pwm/raw/` and `pwm/out/` hold annual CPI files of another piece;
   they were not opened either.
+- The checker read two MCCY parliamentary replies on which merchants may take CDC vouchers
+  (22 September 2025, 12 February 2026) on 25 November 2026, for control C2; they hold no price.
